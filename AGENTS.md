@@ -40,6 +40,55 @@ This file is the canonical repository-wide agent contract. Surface-specific file
 - `lab/` — experiments not yet canonical.
 - `archive/` — retired history.
 
+## Outcome-first modular commercial architecture
+
+DRF does **not** define a business by the current AI model, CRM, messaging provider or automation vendor.
+
+Use this hierarchy:
+
+```text
+1. Outcome — what measurable business result is created or protected?
+2. Niche — exactly who has the pain and will pay?
+3. Customer channel — where does the customer/prospect interaction actually happen?
+4. System of record — where does durable business state live?
+5. Agent layer — which AI/agent performs judgement, orchestration or autonomous work?
+```
+
+The canonical commercial deployment unit is:
+
+`Outcome × Niche × Customer Channel × System of Record × Agent Layer`
+
+Examples of components include WhatsApp, email or voice as channels; HighLevel or HubSpot as systems of record; and Grok Bot, ChatGPT, Claude or future agents as replaceable operating layers.
+
+### Architecture rules
+
+1. **Outcome first.** Sell recovered revenue, faster quotes, booked appointments, better conversion, lower leakage or another measurable result — not a vendor name.
+2. **Niche second.** Narrow to a specific vertical, sub-niche, geography, ICP and trigger/problem before scaling distribution.
+3. **Channel follows market reality.** Use the channel customers already rely on rather than forcing a preferred stack.
+4. **System of record owns durable state.** Contacts, opportunities, lifecycle state, consent, attribution and other operational truth must have one clear canonical home.
+5. **Agents are replaceable.** Select the agent/model that best performs the job. Do not make the commercial product dependent on one model unless the model itself is the product.
+6. **Deterministic work stays deterministic.** Use APIs, workflows, scripts and native automation for predictable steps; use agents for judgement, research, exceptions and orchestration.
+7. **Avoid duplicate ownership.** Do not let two platforms simultaneously own the same workflow state without a deliberate reason and reconciliation rule.
+8. **Prefer the minimum viable stack.** Add another vendor only when it creates measurable reliability, capability, portability, speed or economic advantage.
+
+### UAE service-business default
+
+For UAE service-business opportunities, treat **WhatsApp as the default first-class customer channel unless evidence for the niche says otherwise**.
+
+Use this default decision sequence:
+
+```text
+WhatsApp/customer channel
+→ CRM/system of record
+→ deterministic lifecycle automation
+→ native AI where sufficient
+→ external agent only where it adds material value
+```
+
+HighLevel, Kapso, HubSpot, Grok Bot, ChatGPT, Claude and future platforms are implementation options inside this architecture, not the business definition.
+
+Canonical rationale: `knowledge/architecture/outcome-first-modular-revenue-architecture.md`.
+
 ## Change workflow
 
 Use the shortest lifecycle proportional to risk.
@@ -82,7 +131,7 @@ When uncertain, choose the standard path. Do not create branches/PRs for trivial
 3. Research before invention when material uncertainty exists.
 4. Do not build infrastructure without a current commercial or operating blocker.
 5. Existing warm assets and channels come before paid acquisition unless evidence says otherwise.
-6. A business experiment must define the customer, problem, offer, channel, success metric and stop condition.
+6. A business experiment must define the customer, problem, measurable outcome/offer, niche, customer channel, system of record, agent/delivery layer where relevant, success metric and stop condition.
 7. Measure cash collected and qualified commercial movement before vanity activity.
 8. Every active commercial opportunity needs a next action.
 9. Use deterministic automation for certainty; agents for judgement.
