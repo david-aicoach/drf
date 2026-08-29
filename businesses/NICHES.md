@@ -1,14 +1,14 @@
 # DRF Niche Opportunity Register
 
 **Status:** Canonical niche register  
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 29 August 2026  
 **Scoring framework:** `knowledge/guidelines/niche-attractiveness-scoring-framework.md`  
 **Governing issue:** #26
 
 ## Purpose
 
-This register is the second commercial-selection layer below `businesses/OPPORTUNITIES.md`.
+This register is the second commercial-selection layer below `businesses/OPPORTUNITIES.md` and the source for the **Niche attractiveness ranking** rendered in root `index.html`.
 
 The portfolio table scores the **business/product**. This register scores the **specific market target for that product**.
 
