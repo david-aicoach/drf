@@ -1,11 +1,12 @@
 # DRF Niche Opportunity Register
 
 **Status:** Canonical niche register  
-**Version:** 1.5  
+**Version:** 1.6  
 **Date:** 29 August 2026  
 **Scoring framework:** `knowledge/guidelines/niche-attractiveness-scoring-framework.md`  
-**Governing issues:** #26, #28, #40, #41  
-**Canonical evidence library:** `research/niches/README.md`
+**Governing issues:** #26, #28, #40, #41, #44  
+**Canonical evidence library:** `research/niches/README.md`  
+**Comprehensive dossier standard:** `research/niches/_research-standard-v2.md`
 
 ## Purpose
 
@@ -15,15 +16,15 @@ Atomic target:
 
 `commercial layer × outcome/product × delivery rail × vertical × sub-niche × geography × ICP × pain/trigger`
 
-Scores are desk-research scores until live prospect/customer evidence exists. **Niche Evidence Confidence is separate from Niche Attractiveness Score.** Each current row now has its own dedicated research file under `research/niches/`.
+Scores are desk-research scores until live prospect/customer evidence exists. **Niche Evidence Confidence is separate from Niche Attractiveness Score.** Each row has a dedicated research file under `research/niches/`.
 
-### Evidence rule — issue #41
+### Evidence rule
 
 - **80–100%** — strong enough for a bounded live test; not proof of PMF.
-- **60–79%** — desk evidence is useful, but one or more material workflow/economics assumptions still require live proof.
+- **60–79%** — useful desk evidence, but a material workflow/economics assumption still requires live proof.
 - Macro market evidence does not substitute for exact ICP workflow evidence.
-- Confidence should not be increased merely to make a niche look stronger.
-- The next confidence increase after this research pass should come primarily from interviews, workflow samples and live operating data.
+- A deeper research pass can **lower the score while raising Evidence Confidence** when strong incumbents, integration friction or weaker-than-assumed product fit are discovered.
+- Future confidence increases should come primarily from interviews, workflow samples and live operating data.
 
 ### Commercial layers
 
@@ -36,26 +37,26 @@ Scores are desk-research scores until live prospect/customer evidence exists. **
 
 | Commercial layer | Parent opportunity | Offer / product | Vertical | Sub-niche / ICP | Geography | Core pain / trigger | Niche Score | Evidence Confidence | Decision | Current read | Next evidence | Canonical detail |
 |---|---|---|---|---|---|---|---:|---:|---|---|---|---|
-| **Foundation** | **WhatsApp + CRM Revenue Core** | Managed WhatsApp CRM + pipeline + follow-up foundation | MEP / HVAC | HVAC/AC maintenance and emergency-service contractors with frequent inbound enquiries, quotes and recurring service customers | UAE, priority Dubai | Customer conversations live in phones/staff memory; enquiries, quotes and AMC/service follow-up lack one visible next-action system | **92/100** | **87%** | **Sniper** | $1.465B 2026 UAE HVAC-maintenance market plus recurring AMC/service economics and severe HVAC call-answer leakage support the strongest foundation beachhead. | Validate exact ICP count, quote/AMC values, staff adoption and one live account. | `research/niches/01-whatsapp-crm-hvac-service-contractors.md` |
-| **Outcome** | **AI Voice Receptionist & Booking Agent** | 24/7 inbound voice qualification + booking | Home / field services | Emergency HVAC/AC repair contractors with high-value urgent inbound calls | Dubai / UAE | Urgent calls are missed after hours or while technicians/front desk are occupied | **91/100** | **86%** | **Sniper** | 2026 home-services evidence reports only 34% HVAC call-answer rate; the problem is unusually direct and measurable. | Validate UAE job values, call volumes, call quality and fully loaded cost per captured job. | `research/niches/02-ai-voice-emergency-hvac-contractors.md` |
-| **Outcome** | **Revenue Recovery & Reactivation Engine** | Quote + maintenance revenue recovery | MEP / HVAC | HVAC maintenance contractors with recurring service contracts and frequent quotations | UAE, priority Dubai | Quotes go cold, maintenance renewals lapse and stale opportunities are not followed consistently | **91/100** | **85%** | **Sniper** | Current market, AMC and procurement evidence confirms repeated high-value recoverable commercial events. | Obtain qualified-contractor count, quote/AMC samples and one recovery campaign. | `research/niches/03-revenue-recovery-hvac-maintenance-contractors.md` |
-| **Foundation** | **WhatsApp + CRM Revenue Core** | Managed WhatsApp CRM + quote/pipeline operating core | Construction services | Specialist MEP contractors handling project quotations, service enquiries and maintenance work | UAE | Enquiries, quotations and client follow-up fragment across WhatsApp, email and staff | **91/100** | **84%** | **Sniper** | Large outsourced hard-FM/MEP ecosystem and repeated procurement support a sticky commercial system of record. | Validate CRM penetration and 10 contractor workflow interviews. | `research/niches/04-whatsapp-crm-specialist-mep-contractors.md` |
-| **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp enquiry + booking + customer pipeline core | Mobility / rentals | Car-rental operators with roughly 10–100 vehicles | Dubai | Fast availability/price enquiries are fragmented and lack one follow-up queue | **90/100** | **86%** | **Sniper** | RTA's 3,494 active rental companies and 71,040 vehicles provide unusually strong market-density evidence. | Map fleet-software boundary, enquiry volume and current CRM gaps. | `research/niches/05-whatsapp-crm-dubai-car-rental.md` |
-| **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp lead + consultation + patient pipeline core | Healthcare / aesthetics | Aesthetic/dermatology/cosmetic clinics with meaningful paid-media spend and WhatsApp-first enquiries | Dubai | Expensive leads move from marketing to reception without reliable ownership or next action | **90/100** | **87%** | **Sniper** | Large growing aesthetics market, paid-lead economics and healthcare response leakage strongly support the foundation. | Audit 10 clinics' CRM/WhatsApp hand-off and staff adoption. | `research/niches/06-whatsapp-crm-dubai-aesthetic-clinics.md` |
-| **Outcome** | **Missed Lead & Appointment Conversion Engine** | Speed-to-lead + booking + no-show rescue | Mobility / rentals | Car-rental operators with roughly 10–100 vehicles and WhatsApp/phone/web enquiries | Dubai | Availability and price enquiries go unanswered or unconverted while customers comparison-shop | **89/100** | **83%** | **Sniper** | Strong RTA density/growth supports the niche; exact local response-time leakage remains the live gate. | Sample enquiry timestamps and booking conversion from 10 operators. | `research/niches/07-missed-lead-dubai-car-rental.md` |
-| **Outcome** | **Revenue Recovery & Reactivation Engine** | Declined-estimate + service-recall + dormant-customer recovery | Automotive services | Organised independent/multi-brand workshops with meaningful monthly service volume and customer history | UAE, priority Dubai | Declined repairs, overdue service and dormant customers are not systematically reactivated | **89/100** | **84%** | **Sniper** | $1.29B service market, ~2,675 players and recurring vehicle maintenance strengthen the recovery case. | Validate DMS exports, declined-work value and one campaign. | `research/niches/08-revenue-recovery-automotive-workshops.md` |
-| **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp patient lead + consultation pipeline core | Dental | Implant, full-arch and cosmetic dentistry clinics buying/receiving inbound demand | Dubai | High-ticket prospective patients need persistent history, ownership and consultation follow-up | **89/100** | **86%** | **Sniper** | $3.495B UAE dental market and high implant/full-arch treatment values support strong WTP and measurable pipeline value. | Validate CRM adoption and consultation leakage on 10–20 clinics. | `research/niches/09-whatsapp-crm-dental-implant-clinics.md` |
-| **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp booking + estimate + service-history CRM core | Automotive services | Organised independent/multi-brand workshops with significant service volume | UAE, priority Dubai | Booking, approvals, updates and reminders fragment between front desk, DMS and messaging | **89/100** | **84%** | **Sniper** | Large recurring service base supports the CRM layer; DMS coexistence is the primary architecture constraint. | Map 3–5 DMS/WhatsApp workflows and system-of-record boundaries. | `research/niches/10-whatsapp-crm-automotive-workshops.md` |
+| **Foundation** | **WhatsApp + CRM Revenue Core** | Managed WhatsApp CRM + pipeline + follow-up foundation | MEP / HVAC | HVAC/AC maintenance and emergency-service contractors with frequent inbound enquiries, quotes and recurring service customers | UAE, priority Dubai | Conversations live in phones/staff memory; enquiries, quotes and AMC/service follow-up lack one visible next-action system | **92/100** | **88%** | **Sniper** | Deep pass confirms a $1.465B 2026 maintenance market, dense Dubai provider universe, recurring AMC economics and several attachable outcome modules. | Build clean ICP universe, obtain quote/AMC samples and run one live account. | `research/niches/01-whatsapp-crm-hvac-service-contractors.md` |
+| **Outcome** | **AI Voice Receptionist & Booking Agent** | 24/7 inbound voice qualification + booking | Home / field services | Emergency HVAC/AC repair contractors with high-value urgent inbound calls | Dubai / UAE | Urgent calls are missed after hours or while technicians/front desk are occupied | **91/100** | **87%** | **Sniper** | Invoca's 2026 HVAC benchmark reports only 34% answer rate; the narrow after-hours/overflow workflow is highly measurable. | Validate UAE call mix, job GP, voice quality, carrier cost and completed jobs. | `research/niches/02-ai-voice-emergency-hvac-contractors.md` |
+| **Outcome** | **Revenue Recovery & Reactivation Engine** | Quote + maintenance revenue recovery | MEP / HVAC | HVAC maintenance contractors with recurring service contracts and frequent quotations | UAE, priority Dubai | Quotes go cold, maintenance renewals lapse and stale opportunities lack disciplined follow-up | **91/100** | **87%** | **Sniper** | Market/AMC evidence is strong; exact recoverable pool must come from contractor data, not generic benchmarks. | Audit 15–20 contractors and run one controlled stale-quote or AMC campaign. | `research/niches/03-revenue-recovery-hvac-maintenance-contractors.md` |
+| **Foundation** | **WhatsApp + CRM Revenue Core** | Managed WhatsApp CRM + quote/pipeline operating core | Construction services | Specialist MEP contractors handling project quotations, service enquiries and maintenance work | UAE | RFQs, quotations and client follow-up fragment across WhatsApp, email, portals and staff | **90/100** | **87%** | **Sniper** | Score reduced after confirming Odoo/ERP/CRM competition and integration complexity; the opportunity is commercial next-action control, not ERP replacement. | Validate CRM/ERP penetration, quote volumes and system boundaries on 10–15 contractors. | `research/niches/04-whatsapp-crm-specialist-mep-contractors.md` |
+| **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp lead + consultation + patient pipeline core | Healthcare / aesthetics | Aesthetic/dermatology/cosmetic clinics with meaningful paid-media spend and WhatsApp-first enquiries | Dubai | Expensive leads move from marketing to reception without reliable ownership or next action | **90/100** | **91%** | **Sniper** | Large fast-growing aesthetic market, strong paid-lead economics and regulator-backed facility data; software competition is mature, so sell conversion visibility. | Filter DHA facility data and audit 15 clinics' source-to-consult funnel. | `research/niches/06-whatsapp-crm-dubai-aesthetic-clinics.md` |
+| **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp patient lead + consultation pipeline core | Dental | Implant, full-arch and cosmetic dentistry clinics buying/receiving inbound demand | Dubai | High-ticket prospective patients need persistent ownership and consultation follow-up | **89/100** | **92%** | **Sniper** | DHA reports 1,043 facilities providing dental services; implant/full-arch economics are high, while conflicting TAM estimates and strong clinic software require disciplined positioning. | Build implant/full-arch subset and validate lead→consult→accepted-case funnel. | `research/niches/09-whatsapp-crm-dental-implant-clinics.md` |
 | **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp quote + move-booking pipeline core | Moving / relocation | Residential and SME office movers with repeatable local-move enquiries | UAE, priority Dubai | Quote requests, survey status, scheduling and follow-up are handled manually | **89/100** | **85%** | **Sniper** | 300+ players, 270k paid moves and 10.6% growth support dense recurring quote demand. | Validate enquiry volume, quote tracking and current CRM usage. | `research/niches/11-whatsapp-crm-movers.md` |
 | **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp lead-routing + broker pipeline core | Real estate brokerage | Broker teams/agencies with roughly 5–50 brokers and large lead databases | Dubai | Leads/conversations fragment across brokers and management lacks next-action visibility | **89/100** | **86%** | **Sniper** | DLD reports 32,294 brokers, 9,785 offices and AED13.59B commissions in 2025; reachability is exceptional. | Validate adoption, consent/data provenance and lead-routing pain. | `research/niches/12-whatsapp-crm-real-estate-broker-teams.md` |
-| **Outcome** | **Revenue Recovery & Reactivation Engine** | Quote + pipeline recovery | Construction services | Specialist MEP contractors handling project quotations and maintenance work | UAE | Large quotations stall without systematic next actions | **88/100** | **82%** | **Sniper** | Hard-FM/MEP market and real procurement evidence now validate repeated quote opportunity; exact SME leakage still needs live proof. | Segment contractor types and obtain quote-aging samples. | `research/niches/13-revenue-recovery-specialist-mep-contractors.md` |
+| **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp enquiry + booking + customer pipeline overlay | Mobility / rentals | Car-rental operators with roughly 10–100 vehicles whose rental OS lacks strong pre-booking conversation lifecycle | Dubai | Fast WhatsApp/phone enquiries are delayed or unowned before confirmed booking | **87/100** | **91%** | **Sniper — narrowed ICP** | Score falls from 90 after finding strong UAE-specific rental systems such as Cardash, PRO-VIA, Fleexa, Charm, Settli and Floti. Do not replace a capable rental OS. | Segment 20 operators by incumbent software and prove an unsolved pre-booking gap. | `research/niches/05-whatsapp-crm-dubai-car-rental.md` |
+| **Outcome** | **Revenue Recovery & Reactivation Engine** | Quote + pipeline recovery | Construction services | Specialist MEP contractors handling project quotations and maintenance work | UAE | Large quotations stall without systematic next actions | **88/100** | **82%** | **Sniper** | Hard-FM/MEP market and real procurement evidence validate repeated quote opportunity; exact SME leakage still needs live proof. | Segment contractor types and obtain quote-aging samples. | `research/niches/13-revenue-recovery-specialist-mep-contractors.md` |
 | **Vertical Platform** | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | HighLevel Rentals + owned direct-booking website + guest CRM | Hospitality / property | Professional holiday-home operators/property managers managing roughly 10–100 units | Dubai | OTA dependence and weak owned repeat-demand channel | **88/100** | **84%** | **Sniper** | Dubai Chamber reports 2,928 holiday-home companies; AirDNA tracks 19,022 active listings. PMS/OTA overlap remains the key constraint. | Validate PMS stack, direct-booking share and switching friction. | `research/niches/14-highlevel-rentals-holiday-home-operators.md` |
 | **Outcome** | **Missed Lead & Appointment Conversion Engine** | WhatsApp/phone speed-to-lead + consultation booking + no-show rescue | Healthcare / aesthetics | Aesthetic/dermatology/cosmetic clinics with meaningful paid-media spend | Dubai | Expensive paid enquiries go cold before consultation booking | **88/100** | **85%** | **Sniper** | Local CPL/ad-spend proxies plus 2026 healthcare response data create a strong conversion-economics case. | Validate clinic-specific lead-to-book, response time and lost-lead value. | `research/niches/15-missed-lead-aesthetic-clinics.md` |
+| **Outcome** | **Missed Lead & Appointment Conversion Engine** | Speed-to-lead + booking rescue | Mobility / rentals | Car-rental operators with roughly 10–100 vehicles and verified response/follow-up leakage | Dubai | Availability/rate enquiries go unanswered or quoted-and-forgotten while customers comparison-shop | **87/100** | **89%** | **Sniper** | Still attractive as an outcome overlay, but specialist rental platforms already solve parts of the workflow; disqualify operators with good existing response control. | Sample 7–30 days of timestamps/bookings from 20 operators and run one controlled pilot. | `research/niches/07-missed-lead-dubai-car-rental.md` |
 | **Agentic Operations** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | Tender/RFQ research + bid-preparation worker | MEP / HVAC | Specialist MEP/HVAC subcontractors repeatedly bidding for projects/maintenance contracts | UAE, priority Dubai | Opportunities, deadlines and requirements are scattered across portals, inboxes and documents | **87/100** | **85%** | **Sniper** | eSupply, DEWA and other procurement surfaces validate repeated high-value cross-system bid-prep work. | Benchmark one real tender workflow: quota, failures, recovery and cost/job. | `research/niches/16-grok-tender-rfq-mep-hvac.md` |
 | **Agentic Operations** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | Recruitment research + screening operations worker | Recruitment / talent | Boutique recruitment agencies and lean internal TA teams with recurring vacancies | UAE / GCC | Recruiters spend large time on research, evidence extraction, screening prep and pipeline admin | **87/100** | **86%** | **Sniper** | 42% of UAE employers planned Q3 hiring and Talent Bridge provides a direct controlled proving ground. | Benchmark 10 vacancies for minutes saved, errors, quota and cost/workflow. | `research/niches/17-grok-recruitment-research-screening.md` |
 | **Agentic Operations** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | Accounts-receivable coordination worker | MEP / FM / B2B services | SME contractors with recurring invoices, statements, promises-to-pay and disputes | UAE | Finance/admin repeatedly reconcile aging and lose collection follow-up continuity | **87/100** | **84%** | **Sniper** | 2026 UAE B2B payment evidence says roughly two in five invoices settle late, with construction/industrial especially affected. | Run controlled AR workflow and measure DSO/cash/admin impact and approvals. | `research/niches/18-grok-accounts-receivable-mep-fm.md` |
 | **Outcome** | **Missed Lead & Appointment Conversion Engine** | High-ticket patient lead conversion + consultation booking | Dental | Implant, full-arch and cosmetic dentistry clinics | Dubai | High-value prospective patients are lost through slow contact and weak consultation booking | **87/100** | **85%** | **Sniper** | Strong treatment economics plus healthcare response/booking leakage support a narrow high-value conversion offer. | Validate treatment-specific CPL, consultation/show and acceptance rates. | `research/niches/19-missed-lead-dental-implant-full-arch.md` |
+| **Outcome** | **Revenue Recovery & Reactivation Engine** | Declined-estimate + service-recall + dormant-customer recovery | Automotive services | Organised independent/multi-brand workshops with usable DMS/customer history | UAE, priority Dubai | Declined repairs, overdue service and dormant customers are not systematically monetised | **86/100** | **91%** | **Sniper — outcome-led** | Score falls from 89 because Garij, GRX, AutoFixia and other UAE DMS already include reminders/win-back features. The opportunity is managed recovery through incumbent data, not feature duplication. | Audit 10 workshops across DMS types and run one declined-work campaign tied to completed gross profit. | `research/niches/08-revenue-recovery-automotive-workshops.md` |
 | **Agentic Operations** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | Account/lead research + pipeline preparation worker | Real estate brokerage | Broker teams/agencies with roughly 5–50 brokers and large active lead databases | Dubai | Brokers waste time researching/prioritising leads while opportunities decay | **86/100** | **84%** | **Sniper** | Very large high-value broker economy supports research/prep economics; native CRM should handle routine mutations/outreach. | Run review-first 2-week benchmark on completed jobs, quota and broker minutes saved. | `research/niches/20-grok-real-estate-lead-research.md` |
+| **Foundation** | **WhatsApp + CRM Revenue Core** | Customer/communication layer only where workshop DMS is weak | Automotive services | Organised independent/multi-brand workshops still relying materially on paper/Excel/WhatsApp or weak legacy DMS | UAE, priority Dubai | Booking, approvals, updates and reminders lack one usable system | **85/100** | **92%** | **Sniper — narrowed legacy segment** | Score falls from 89: Garij, GRX and AutoFixia already provide customer history, WhatsApp, approvals and reminders at low SME prices. Prefer vertical DMS optimisation over a second CRM. | Build 200-workshop software map and validate what share of organised independents remain in legacy/basic systems. | `research/niches/10-whatsapp-crm-automotive-workshops.md` |
 | **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp enquiry + guest/customer lifecycle CRM core | Hospitality / property | Professional holiday-home operators/property managers managing roughly 10–100 units | Dubai | Direct/guest enquiries need one follow-up layer while PMS owns booking state | **85/100** | **84%** | **Sniper** | Strong operator/listing density validates the market; product fit depends on a clean PMS/CRM boundary. | Validate direct-enquiry volume and system-of-record split. | `research/niches/21-whatsapp-crm-holiday-home-operators.md` |
 | **Outcome** | **Instant Quote Generator & Quote-to-Cash System** | Structured instant range/estimate + booking follow-up | Moving / relocation | Residential and SME office movers with repeatable local-move enquiries | UAE, priority Dubai | Staff repeatedly estimate similar jobs while prospects comparison-shop | **85/100** | **84%** | **Sniper** | 300+ players, 270k moves and structured public price ranges strengthen parameterisation evidence. | Test 100 historical quotes against final invoices and survey thresholds. | `research/niches/22-instant-quote-movers.md` |
 | **Outcome** | **AI Voice Receptionist & Booking Agent** | Inbound booking/quote/status voice assistant | Automotive services | Organised independent/multi-brand workshops with significant inbound call volume | UAE, priority Dubai | Calls compete with front-desk/workshop operations | **85/100** | **79%** | **Sniper — bounded test** | Large service market and general automotive phone leakage support the thesis, but UAE workshop-specific missed-call evidence is still absent. | Instrument 3–5 workshops before productising; measure call mix, missed rate and value. | `research/niches/23-ai-voice-automotive-workshops.md` |
@@ -77,23 +78,23 @@ All factor scores are 0–10. Weighted scoring follows the canonical niche frame
 | WhatsApp + CRM × HVAC/AC service contractors | 10 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 10 | 9 | **91.5 → 92** |
 | Emergency HVAC/AC × AI Voice | 10 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 10 | 8 | **91.0 → 91** |
 | HVAC maintenance × Revenue Recovery | 9 | 9 | 9 | 9 | 9 | 8 | 10 | 9 | 10 | 8 | **90.5 → 91** |
-| WhatsApp + CRM × Specialist MEP | 9 | 9 | 8 | 9 | 9 | 8 | 10 | 10 | 10 | 8 | **90.5 → 91** |
-| WhatsApp + CRM × Car rental | 9 | 8 | 10 | 10 | 9 | 7 | 9 | 10 | 10 | 9 | **90.4 → 90** |
+| WhatsApp + CRM × Specialist MEP | 9 | 9 | 8 | 9 | 9 | **7** | 10 | **9** | 10 | **7** | **89.5 → 90** |
 | WhatsApp + CRM × Aesthetic clinics | 10 | 9 | 9 | 9 | 8 | 5 | 10 | 10 | 10 | 9 | **89.5 → 90** |
-| Car rental × Missed Lead | 9 | 8 | 10 | 10 | 9 | 7 | 9 | 9 | 10 | 8 | **88.9 → 89** |
-| Automotive workshops × Revenue Recovery | 9 | 8 | 9 | 8 | 9 | 8 | 10 | 9 | 10 | 8 | **88.5 → 89** |
 | WhatsApp + CRM × Dental implant/full-arch | 10 | 10 | 9 | 8 | 8 | 5 | 10 | 10 | 9 | 9 | **89.1 → 89** |
-| WhatsApp + CRM × Automotive workshops | 9 | 8 | 9 | 8 | 9 | 8 | 9 | 10 | 10 | 9 | **88.8 → 89** |
 | WhatsApp + CRM × Movers | 9 | 8 | 9 | 9 | 8 | 8 | 9 | 10 | 10 | 9 | **88.6 → 89** |
 | WhatsApp + CRM × Real-estate broker teams | 9 | 9 | 9 | 10 | 10 | 5 | 9 | 10 | 10 | 7 | **88.6 → 89** |
+| WhatsApp + CRM × Car rental | 9 | 8 | 10 | 10 | 9 | **5** | 9 | **9** | 10 | **8** | **86.9 → 87** |
 | MEP contractors × Revenue Recovery | 9 | 9 | 8 | 9 | 9 | 8 | 10 | 9 | 9 | 7 | **88.2 → 88** |
 | Holiday homes × HighLevel Rentals | 9 | 9 | 9 | 9 | 8 | 7 | 10 | 9 | 10 | 6 | **87.5 → 88** |
 | Aesthetic clinics × Missed Lead | 10 | 9 | 9 | 9 | 8 | 5 | 10 | 9 | 10 | 7 | **87.5 → 88** |
+| Car rental × Missed Lead | 9 | 8 | 10 | 10 | 9 | **6** | 9 | 9 | 10 | **7** | **87.4 → 87** |
 | Grok Bot × MEP tender/RFQ | 9 | 9 | 8 | 9 | 8 | 9 | 9 | 9 | 10 | 6 | **87.3 → 87** |
 | Grok Bot × Recruitment Ops | 9 | 9 | 9 | 8 | 8 | 8 | 9 | 9 | 10 | 7 | **87.0 → 87** |
 | Grok Bot × MEP/FM Accounts Receivable | 10 | 8 | 8 | 8 | 9 | 8 | 10 | 8 | 10 | 5 | **86.5 → 87** |
 | Dental implant/full-arch × Missed Lead | 10 | 10 | 9 | 8 | 8 | 5 | 10 | 9 | 9 | 7 | **87.1 → 87** |
+| Automotive workshops × Revenue Recovery | 9 | 8 | 9 | 8 | 9 | **6** | 10 | 9 | 10 | **7** | **86.0 → 86** |
 | Grok Bot × Real-estate broker teams | 9 | 9 | 9 | 10 | 10 | 5 | 9 | 8 | 10 | 5 | **85.6 → 86** |
+| WhatsApp + CRM × Automotive workshops | 9 | 8 | 9 | 8 | 9 | **6** | 9 | **9** | 10 | **8** | **85.3 → 85** |
 | WhatsApp + CRM × Holiday-home operators | 8 | 9 | 9 | 9 | 8 | 7 | 9 | 9 | 10 | 7 | **85.3 → 85** |
 | Movers × Instant Quote | 9 | 8 | 9 | 9 | 8 | 8 | 9 | 10 | 6 | 9 | **85.4 → 85** |
 | Automotive workshops × AI Voice | 8 | 8 | 9 | 8 | 9 | 7 | 9 | 9 | 10 | 8 | **84.8 → 85** |
@@ -108,64 +109,52 @@ All factor scores are 0–10. Weighted scoring follows the canonical niche frame
 
 Weights: Pain 15; Purchasing Power 12; Reachability 10; Growth 8; Volume 10; Underserved 10; ROI 12; Product Fit 10; Recurring Pain 8; Sales/Fulfilment Simplicity 5.
 
-## Issue #41 deep-research result
+## Issue #44 — first comprehensive dossier pass
 
-The 31-row evidence library is complete. The deeper research mainly increased **Evidence Confidence**, not headline scores. No score was raised solely because more sources were found.
+The prior one-file-per-niche pass was an evidence-note layer, not decision-grade research. Issue #44 establishes `research/niches/_research-standard-v2.md` and comprehensively rewrites the first ten niches from the previous ranking.
 
-Largest confidence improvements:
+### Material ranking corrections from deeper research
 
-| Niche | Previous | V1.5 |
-|---|---:|---:|
-| MEP Revenue Recovery | 72% | **82%** |
-| Automotive Voice | 68% | **79%** |
-| Drywall Instant Quote | 68% | **78%** |
-| Veterinary Missed Lead | 71% | **81%** |
-| Holiday-home AI Support | 72% | **82%** |
-| Cleaning Instant Quote | 73% | **83%** |
-| Holiday Homes Direct Booking | 76% | **84%** |
-| Movers Instant Quote | 76% | **84%** |
-| Car Rental Missed Lead | 76% | **83%** |
-| MEP/FM AR | 77% | **84%** |
+| Niche | V1.5 | V1.6 | Why |
+|---|---:|---:|---|
+| Specialist MEP CRM | 91 | **90** | Strong ERP/CRM competition and higher integration complexity. |
+| Dubai car-rental CRM | 90 | **87** | UAE vertical rental systems already combine CRM, WhatsApp, booking and fleet state. |
+| Dubai car-rental Missed Lead | 89 | **87** | Outcome remains valid, but vertical platforms already solve part of response/follow-up. |
+| Automotive workshop Recovery | 89 | **86** | Local DMS products already include win-back/reminder features; sell managed outcome through incumbent data. |
+| Automotive workshop CRM | 89 | **85** | Local vertical DMS is often the better foundation; target legacy/manual workshops only. |
 
-Two niches remain intentionally below 80% desk confidence:
-
-1. **Automotive workshops × AI Voice — 79%:** exact UAE workshop call mix/missed-call data is still Missing.
-2. **Drywall/gypsum/ceilings × Instant Quote — 78%:** exact pre-site-survey quote accuracy/parameterisation remains Missing.
-
-Those gaps now require live workflow evidence rather than more generic desk research.
+Aesthetic and dental scores did **not** rise despite stronger evidence because local clinic software/marketing competition remains mature.
 
 ## Current holistic validation staircase
 
-Do not treat every row as a separate business. Cluster by beachhead ICP and sell modularly.
-
 1. **HVAC/AC stack** — WhatsApp + CRM **92** → AI Voice **91** → Revenue Recovery **91** → optional Tender/RFQ **87**.
-2. **Specialist MEP stack** — WhatsApp + CRM **91** → Revenue Recovery **88** / Tender/RFQ **87** / AR **87**.
-3. **Dubai car-rental stack** — WhatsApp + CRM **90** → Missed Lead **89** → optional Back-office Ops **84**.
-4. **Aesthetic-clinic stack** — WhatsApp + CRM **90** → Missed Lead **88**.
-5. **Automotive-workshop stack** — WhatsApp + CRM **89** → Revenue Recovery **89** → AI Voice **85** after live call validation.
-6. **Dental implant/full-arch stack** — WhatsApp + CRM **89** → Missed Lead **87**.
-7. **Movers stack** — WhatsApp + CRM **89** → Instant Quote **85**.
-8. **Real-estate broker stack** — WhatsApp + CRM **89** → optional Grok Research/Pipeline Prep **86**.
-9. **Holiday-home stack** — Direct Booking **88** + WhatsApp + CRM **85** → AI Support **85** → optional Owner Ops **82**.
+2. **Specialist MEP stack** — WhatsApp + CRM **90** → Revenue Recovery **88** / Tender/RFQ **87** / AR **87**.
+3. **Aesthetic-clinic stack** — WhatsApp + CRM **90** → Missed Lead **88**.
+4. **Dental implant/full-arch stack** — WhatsApp + CRM **89** → Missed Lead **87**.
+5. **Movers stack** — WhatsApp + CRM **89** → Instant Quote **85**.
+6. **Real-estate broker stack** — WhatsApp + CRM **89** → optional Grok Research/Pipeline Prep **86**.
+7. **Dubai car-rental stack** — use incumbent rental OS as foundation where capable; WhatsApp/CRM overlay **87** only when an acquisition gap exists → Missed Lead **87** → optional Back-office Ops **84**.
+8. **Holiday-home stack** — Direct Booking **88** + WhatsApp + CRM **85** → AI Support **85** → optional Owner Ops **82**.
+9. **Automotive-workshop stack** — capable DMS is often the foundation; Revenue Recovery **86** → CRM overlay **85** only for legacy/weak-DMS segment → AI Voice **85** after live call validation.
 
-The **first recommended beachhead remains HVAC/AC**.
+The **first recommended beachhead remains HVAC/AC** and its lead over the most crowded verticals is now better substantiated.
 
 ## Next evidence gate
 
-Desk research is now complete enough for test selection. Future confidence/score movement should come from:
+Future confidence/score movement should come from:
 
-- clean prospect universe;
-- 10–20 buyer/workflow interviews where practical;
-- real onboarding time;
+- clean prospect universes;
+- 10–20 buyer/workflow interviews;
+- incumbent-software mapping;
+- real quote/call/message samples;
 - baseline leakage/time/cost;
-- actual quote, call, message or workflow samples;
+- live onboarding time;
 - staff adoption;
 - automation/agent failure rate;
-- quota/usage consumption where relevant;
 - measured commercial outcome;
 - support/recovery minutes;
-- cost per successful completed job;
+- cost per successful outcome;
 - gross margin;
-- MRR retention and expansion.
+- MRR retention/expansion.
 
 Canonical per-niche evidence: `research/niches/README.md`.
