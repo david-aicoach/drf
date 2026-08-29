@@ -18,35 +18,35 @@ Each surface column contains both readiness and the authenticated identity where
 
 | Integration | **ChatGPT Web / CCO** | **ChatGPT Desktop / Codex** | **Hermes** | **Claude** | CCO requirement / note |
 |---|---|---|---|---|---|
-| **GoHighLevel** | 🟨 Partial — read works; location identity unresolved | 🟨 Partial — contacts `0`; location unresolved | ⏳ Pending | ❌ Missing — no MCP/CLI; browser-only, untested | Primary commercial spine; require exact location + bounded writes |
-| **Outlook Email** | ✅ `careers@talentbridgedubai.com` | ✅ `careers@talentbridgedubai.com` | ⏳ Pending | ✅ `info@talentbridgedubai.com` (differs from Web/Codex) | Sender identity is critical |
-| **Outlook Calendar** | ✅ `info@talentbridgedubai.com` | ✅ `info@talentbridgedubai.com` | ⏳ Pending | ✅ `info@talentbridgedubai.com` | Calendar identity differs from Outlook Email |
-| **LinkedIn** | ❌ No authenticated operating route | ❌ No direct route | ⏳ Pending | 🟨 Research-read via `agent-reach`/browser; no auth action, no messaging | Research/relationship intelligence; no unauthorised bot messaging |
-| **WhatsApp Business** | ❌ Not connected | ❌ No direct route | ⏳ Pending | ❌ Not connected | Prefer official WhatsApp Business through HighLevel |
-| **Stripe** | 🟨 CLI/infrastructure known; no bounded action here | ❌ No connector or CLI | ⏳ Pending | ❌ Missing — no MCP, no `stripe` CLI | Payment links, invoices, subscriptions, payment status |
-| **Web research** | ✅ Native ChatGPT | ✅ Native web route | ⏳ Pending | ✅ Native Claude (WebSearch / WebFetch) | Prospect/company/competitor/buying-signal research |
-| **Lead enrichment** | ❌ None | ❌ No direct route | ⏳ Pending | 🟨 Manual — agent/web research; no provider API | Add only if existing data proves insufficient |
-| **OneDrive / SharePoint** | ✅ `info@talentbridgedubai.com` | ✅ `info@talentbridgedubai.com` | ⏳ Pending | ✅ `info@talentbridgedubai.com` (`tbhrc-my.sharepoint.com`) | Commercial documents/source files |
-| **FolderDesk** | ✅ Connected; identity not exposed | 🟨 Partial — health works; DRF unresolved | ⏳ Pending | ✅ FD0 connector v3.34 | Durable coordination where required |
-| **GitHub / DRF** | ✅ `tbhrc` / `talentbridgedubai@gmail.com` | ✅ `tbhrc` / `talentbridgedubai@gmail.com` | ⏳ Pending | ✅ `tbhrc` (write exercised on this Issue) | Canonical DRF control plane |
-| **ATS / recruitment database** | 🟨 Existing system; no direct connector | 🟨 Partial — no direct connector | ⏳ Pending | 🟨 "ATS" sheet readable via Drive; no connector | Use only where commercially relevant |
-| **GulfTalent** | 🟨 Existing account; no direct connector | 🟨 Partial — manual browser only | ⏳ Pending | 🟨 Account exists; browser-only | Browser/manual route if useful |
-| **Google Contacts** | ✅ `talentbridgedubai@gmail.com` | ✅ `talentbridgedubai@gmail.com` | ⏳ Pending | 🟨 `google_workspace` MCP not authenticated | Warm relationship/contact resolution |
-| **Canva** | ✅ Connected; identity not exposed | ✅ Connected; identity not exposed | ⏳ Pending | ❌ No connector | Sales collateral |
-| **E-signature / contracts** | ❌ No dedicated provider | ❌ No direct route | ⏳ Pending | ❌ None | Prefer HighLevel contracts if sufficient |
-| **Calling / voice** | ❌ No direct telephony route | ❌ No direct route | ⏳ Pending | ❌ None | Prefer HighLevel telephony or one provider |
-| **Meeting intelligence** | 🟨 Teams `info@talentbridgedubai.com` | ✅ Teams `info@talentbridgedubai.com` | ⏳ Pending | 🟨 Teams `info@talentbridgedubai.com`; transcription unproven | Read works; transcription automation unproven |
-| **Paid advertising** | ❌ No ads-platform control | ❌ No direct route | ⏳ Pending | ❌ None | Phase 2 only after outbound conversion is proven |
-| **Website / landing pages** | 🟨 HubSpot `talentbridgedubai@gmail.com` | 🟨 HubSpot `talentbridgedubai@gmail.com`; reauth needed | ⏳ Pending | 🟨 HubSpot landing-page read+write available (portal `148333343`) | HighLevel preferred; HubSpot page access needs reauthorisation |
-| **Commercial analytics** | 🟨 Multiple readable systems | 🟨 HubSpot portal `148333343` readable; no unified layer | ⏳ Pending | 🟨 HubSpot CRM + DRF readable; no unified layer | Start with HighLevel + DRF |
-| **Gmail** | ✅ `talentbridgedubai@gmail.com` | ✅ `talentbridgedubai@gmail.com` | ⏳ Pending | ✅ `talentbridgedubai@gmail.com` (dedicated Gmail MCP) | Alternative sender mailbox |
-| **Google Calendar** | ✅ `implementai.ae@gmail.com` | ✅ `implementai.ae@gmail.com` | ⏳ Pending | 🟨 `google_workspace` MCP not authenticated | iMPLEMENTAi calendar identity |
-| **Google Drive** | ✅ `talentbridgedubai@gmail.com` | ✅ `talentbridgedubai@gmail.com` | ⏳ Pending | ✅ `talentbridgedubai@gmail.com` (dedicated Drive MCP) | Google file access |
-| **Microsoft Teams** | ✅ `info@talentbridgedubai.com` | ✅ `info@talentbridgedubai.com` | ⏳ Pending | ✅ `info@talentbridgedubai.com` | Messaging/search/read |
-| **HubSpot** | ✅ `talentbridgedubai@gmail.com` | ✅ `talentbridgedubai@gmail.com`; portal `148333343` | ⏳ Pending | ✅ Portal `148333343` (`app-eu1`) / `talentbridgedubai@gmail.com`; CRM writes available | Secondary CRM; multiple writes available |
-| **Zoho Books** | 🟨 Connected; organisation identity unresolved | 🟨 Financial MCP registered; org unresolved | ⏳ Pending | 🟨 Connected; organisation identity unresolved | Block financial writes until identity confirmed |
-| **Asana** | ✅ `talentbridgedubai@gmail.com` | ✅ `talentbridgedubai@gmail.com`; workspace `1214255580616938` | ⏳ Pending | ❌ No connector | Available but not required for DRF control |
-| **Hindsight Memory** | ✅ Shared FolderDesk memory | ✅ Shared FolderDesk memory | ⏳ Pending | ✅ Shared bank `folderdesk` | Continuity layer only |
+| **GoHighLevel** | 🟨 Partial — read works; location identity unresolved | 🟨 Partial — no Hermes connector/API; browser route unavailable (dependency/auth prompt); location unresolved | ⏳ Pending | ❌ Missing — no MCP/CLI; browser-only, untested | Primary commercial spine; require exact location + bounded writes |
+| **Outlook Email** | ✅ `careers@talentbridgedubai.com` | ❌ Missing — no Hermes email/Microsoft 365 connector; sender not exposed | ⏳ Pending | ✅ `info@talentbridgedubai.com` (differs from Web/Codex) | Sender identity is critical |
+| **Outlook Calendar** | ✅ `info@talentbridgedubai.com` | ❌ Missing — no Hermes calendar connector; identity not exposed | ⏳ Pending | ✅ `info@talentbridgedubai.com` | Calendar identity differs from Outlook Email |
+| **LinkedIn** | ❌ No authenticated operating route | 🟨 Partial — public web research only; no authenticated route or messaging | ⏳ Pending | 🟨 Research-read via `agent-reach`/browser; no auth action, no messaging | Research/relationship intelligence; no unauthorised bot messaging |
+| **WhatsApp Business** | ❌ Not connected | 🟨 Partial — Hermes WhatsApp transport is configured, but Business account identity/API is not exposed; no Business read/write test | ⏳ Pending | ❌ Not connected | Prefer official WhatsApp Business through HighLevel |
+| **Stripe** | 🟨 CLI/infrastructure known; no bounded action here | ❌ Missing — local stripe CLI absent; no Stripe MCP/API; account not exposed | ⏳ Pending | ❌ Missing — no MCP, no `stripe` CLI | Payment links, invoices, subscriptions, payment status |
+| **Web research** | ✅ Native ChatGPT | ✅ Verified — native web search/extract read tested; no account | ⏳ Pending | ✅ Native Claude (WebSearch / WebFetch) | Prospect/company/competitor/buying-signal research |
+| **Lead enrichment** | ❌ None | 🟨 Partial — manual web research route; no enrichment provider/API | ⏳ Pending | 🟨 Manual — agent/web research; no provider API | Add only if existing data proves insufficient |
+| **OneDrive / SharePoint** | ✅ `info@talentbridgedubai.com` | ❌ Missing — no MCP/CLI/API; browser route unavailable for authenticated test | ⏳ Pending | ✅ `info@talentbridgedubai.com` (`tbhrc-my.sharepoint.com`) | Commercial documents/source files |
+| **FolderDesk** | ✅ Connected; identity not exposed | ✅ Verified — local file read access tested against FolderDesk canon; identity not exposed | ⏳ Pending | ✅ FD0 connector v3.34 | Durable coordination where required |
+| **GitHub / DRF** | ✅ `tbhrc` / `talentbridgedubai@gmail.com` | ✅ Verified — `gh` CLI read tested as `tbhrc` (GitHub ID `239958985`); email not exposed | ⏳ Pending | ✅ `tbhrc` (write exercised on this Issue) | Canonical DRF control plane |
+| **ATS / recruitment database** | 🟨 Existing system; no direct connector | ❌ Missing — no ATS connector/CLI/API; no authenticated read | ⏳ Pending | 🟨 "ATS" sheet readable via Drive; no connector | Use only where commercially relevant |
+| **GulfTalent** | 🟨 Existing account; no direct connector | 🟨 Partial — browser/manual route only; browser dependency unavailable; identity not exposed | ⏳ Pending | 🟨 Account exists; browser-only | Browser/manual route if useful |
+| **Google Contacts** | ✅ `talentbridgedubai@gmail.com` | ❌ Missing — no Google Contacts connector/API; identity not exposed | ⏳ Pending | 🟨 `google_workspace` MCP not authenticated | Warm relationship/contact resolution |
+| **Canva** | ✅ Connected; identity not exposed | ❌ Missing — no Canva MCP/API/CLI; browser route unavailable | ⏳ Pending | ❌ No connector | Sales collateral |
+| **E-signature / contracts** | ❌ No dedicated provider | ❌ Missing — no provider connector/API/CLI | ⏳ Pending | ❌ None | Prefer HighLevel contracts if sufficient |
+| **Calling / voice** | ❌ No direct telephony route | ❌ Missing — no telephony connector/API/CLI | ⏳ Pending | ❌ None | Prefer HighLevel telephony or one provider |
+| **Meeting intelligence** | 🟨 Teams `info@talentbridgedubai.com` | 🟨 Partial — no Teams/meeting connector; native web research only; transcription not exposed | ⏳ Pending | 🟨 Teams `info@talentbridgedubai.com`; transcription unproven | Read works; transcription automation unproven |
+| **Paid advertising** | ❌ No ads-platform control | ❌ Missing — no ads-platform connector/API/CLI | ⏳ Pending | ❌ None | Phase 2 only after outbound conversion is proven |
+| **Website / landing pages** | 🟨 HubSpot `talentbridgedubai@gmail.com` | ✅ Verified — public website read tested via web search/extract; no authenticated CMS write route | ⏳ Pending | 🟨 HubSpot landing-page read+write available (portal `148333343`) | HighLevel preferred; HubSpot page access needs reauthorisation |
+| **Commercial analytics** | 🟨 Multiple readable systems | 🟨 Partial — public web plus local/runtime diagnostics; no connected commercial analytics system | ⏳ Pending | 🟨 HubSpot CRM + DRF readable; no unified layer | Start with HighLevel + DRF |
+| **Gmail** | ✅ `talentbridgedubai@gmail.com` | ❌ Missing — no Gmail connector/CLI/API; account not exposed | ⏳ Pending | ✅ `talentbridgedubai@gmail.com` (dedicated Gmail MCP) | Alternative sender mailbox |
+| **Google Calendar** | ✅ `implementai.ae@gmail.com` | ❌ Missing — no Google Calendar connector/API; account not exposed | ⏳ Pending | 🟨 `google_workspace` MCP not authenticated | iMPLEMENTAi calendar identity |
+| **Google Drive** | ✅ `talentbridgedubai@gmail.com` | ❌ Missing — no Drive connector/CLI/API; account not exposed | ⏳ Pending | ✅ `talentbridgedubai@gmail.com` (dedicated Drive MCP) | Google file access |
+| **Microsoft Teams** | ✅ `info@talentbridgedubai.com` | ❌ Missing — no Teams connector/API; account not exposed | ⏳ Pending | ✅ `info@talentbridgedubai.com` | Messaging/search/read |
+| **HubSpot** | ✅ `talentbridgedubai@gmail.com` | ❌ Missing — no HubSpot MCP/API/CLI; account/portal not exposed | ⏳ Pending | ✅ Portal `148333343` (`app-eu1`) / `talentbridgedubai@gmail.com`; CRM writes available | Secondary CRM; multiple writes available |
+| **Zoho Books** | 🟨 Connected; organisation identity unresolved | ❌ Missing — no Zoho Books connector/API/CLI; organisation not exposed | ⏳ Pending | 🟨 Connected; organisation identity unresolved | Block financial writes until identity confirmed |
+| **Asana** | ✅ `talentbridgedubai@gmail.com` | ❌ Missing — no Asana connector/API/CLI; account not exposed | ⏳ Pending | ❌ No connector | Available but not required for DRF control |
+| **Hindsight Memory** | ✅ Shared FolderDesk memory | ✅ Verified — Hermes memory context/provider is available; shared FolderDesk identity | ⏳ Pending | ✅ Shared bank `folderdesk` | Continuity layer only |
 
 **Slack is intentionally excluded. It is not used or required.**
 
@@ -128,41 +128,56 @@ Each surface column contains both readiness and the authenticated identity where
 
 # 4. Surface — Hermes
 
-**Status: ⏳ not yet tested.** Test local CLI, MCP, browser, API, credential and scheduled-agent capabilities.
+**Tested 2026-08-29.** Hermes was tested from the native macOS runtime with one harmless narrow read per available route. No customer-facing, CRM, messaging, financial or external write was exercised. The browser route could not be authenticated-tested because Browser Use required macOS remote-debugging approval and then failed on a missing `oci` dependency; this is recorded as an access limitation, not as evidence of an authenticated account.
 
-| Integration | Status | Authenticated account / identity | Read | Write / send |
-|---|---|---|---|---|
-| GoHighLevel | ⏳ | Pending | Pending | Test location identity + CRM writes |
-| Outlook Email | ⏳ | Pending | Pending | Pending |
-| Outlook Calendar | ⏳ | Pending | Pending | Pending |
-| LinkedIn | ⏳ | Pending | Pending | Pending |
-| WhatsApp Business | ⏳ | Pending | Pending | Pending |
-| Stripe | ⏳ | Pending | Pending | Test CLI/API + account identity |
-| Web research | ⏳ | Pending | Pending | N/A |
-| Lead enrichment | ⏳ | Pending | Pending | Pending |
-| OneDrive / SharePoint | ⏳ | Pending | Pending | Pending |
-| FolderDesk | ⏳ | Pending | Pending | Pending |
-| GitHub / DRF | ⏳ | Pending | Pending | Pending |
-| ATS / recruitment database | ⏳ | Pending | Pending | Pending |
-| GulfTalent | ⏳ | Pending | Pending | Pending |
-| Google Contacts | ⏳ | Pending | Pending | Pending |
-| Canva | ⏳ | Pending | Pending | Pending |
-| E-signature / contracts | ⏳ | Pending | Pending | Pending |
-| Calling / voice | ⏳ | Pending | Pending | Pending |
-| Meeting intelligence | ⏳ | Pending | Pending | Pending |
-| Paid advertising | ⏳ | Pending | Pending | Pending |
-| Website / landing pages | ⏳ | Pending | Pending | Pending |
-| Commercial analytics | ⏳ | Pending | Pending | Pending |
-| Gmail | ⏳ | Pending | Pending | Pending |
-| Google Calendar | ⏳ | Pending | Pending | Pending |
-| Google Drive | ⏳ | Pending | Pending | Pending |
-| Microsoft Teams | ⏳ | Pending | Pending | Pending |
-| HubSpot | ⏳ | Pending | Pending | Pending |
-| Zoho Books | ⏳ | Pending | Pending | Pending |
-| Asana | ⏳ | Pending | Pending | Pending |
-| Hindsight Memory | ⏳ | Pending | Pending | Pending |
+**Hermes runtime evidence:**
 
----
+```text
+Hermes local runtime → GitHub / DRF → authenticated `gh` CLI → `tbhrc` (GitHub ID 239958985; email not exposed)
+Hermes local runtime → FolderDesk → local filesystem → /Users/david/FolderDesk-OS (canon read tested)
+Hermes local runtime → Web research → native web search + web extract (public Talent Bridge page read)
+Hermes local runtime → Hindsight Memory → holographic provider / shared FolderDesk memory context
+Hermes local runtime → WhatsApp transport → configured gateway, Business account identity not exposed
+Hermes local runtime → all other listed CCO connectors → no MCP servers configured; no dedicated CLI/API route found
+```
+
+| Integration | Status | Authenticated account / identity | Read capability actually tested | Write/send exposed; exercised? | API, MCP, CLI, browser or local access |
+|---|---|---|---|---|---|
+| GoHighLevel | 🟨 Partial | None exposed; location/sub-account unresolved | No authenticated read. Browser route attempted but blocked by Browser Use/macOS debugging approval and missing `oci` dependency | No CRM write route exposed; **not exercised** | Browser tooling present but not operationally authenticated; no MCP/CLI/API |
+| Outlook Email | ❌ Missing | None exposed | No email read route | No send/write route; **not exercised** | No Email/Microsoft 365 MCP, CLI or API |
+| Outlook Calendar | ❌ Missing | None exposed | No calendar read route | No calendar write route; **not exercised** | No Calendar/Microsoft 365 MCP, CLI or API |
+| LinkedIn | 🟨 Partial | None; public identity only | Public web research route available; no authenticated LinkedIn read | No authenticated messaging/write; **not exercised** | Native web search/extract; browser route not authenticated-tested |
+| WhatsApp Business | 🟨 Partial | Hermes WhatsApp gateway is configured, but Business account/sender identity is not exposed | Gateway transport configuration/status read; no WhatsApp Business API conversation/profile read | No Business send/write route exercised; **not exercised** | Hermes WhatsApp gateway transport only; no Business MCP/API/CLI |
+| Stripe | ❌ Missing | None exposed | No account read; local `stripe` CLI absent | No payment/invoice/subscription write route; **not exercised** | No Stripe MCP/API/CLI; browser route not authenticated-tested |
+| Web research | ✅ Verified | No account applicable | `web_search` and `web_extract` read tested against Talent Bridge public contact page | N/A | Native Hermes web tools |
+| Lead enrichment | 🟨 Partial | None | Manual public-web research only; no provider lookup | No write route; **not exercised** | Native web tools; no enrichment API/MCP/CLI |
+| OneDrive / SharePoint | ❌ Missing | None exposed | No authenticated read route | No file write/send route; **not exercised** | No MCP/CLI/API; browser route not authenticated-tested |
+| FolderDesk | ✅ Verified | Local desk `/Users/david/FolderDesk-OS`; user identity not exposed | Local `read_file` read of `AGENTS.md` and FolderDesk canon succeeded | File edits available through Hermes tools; **not exercised on CCO records** | Native local filesystem/file tools; no FD0 MCP configured |
+| GitHub / DRF | ✅ Verified | `tbhrc`, GitHub ID `239958985`; email not exposed | `gh auth status`, `gh api user`, repository metadata and Issue #5 reads succeeded | Issue/file/comment writes exposed through `gh`; **not exercised in this Hermes test** | Authenticated local `gh` CLI; no GitHub MCP configured |
+| ATS / recruitment database | ❌ Missing | None exposed | No authenticated ATS read | No ATS write route; **not exercised** | No ATS MCP/CLI/API; browser route not authenticated-tested |
+| GulfTalent | 🟨 Partial | Existing account not exposed | No authenticated read; only possible browser/manual route | No write route; **not exercised** | Browser tooling present but blocked before authenticated test |
+| Google Contacts | ❌ Missing | None exposed | No contacts read route | No contact write route; **not exercised** | No Google MCP/CLI/API |
+| Canva | ❌ Missing | None exposed | No design/account read route | No design write route; **not exercised** | No Canva MCP/CLI/API; browser route not authenticated-tested |
+| E-signature / contracts | ❌ Missing | None exposed | No provider read route | No contract/send route; **not exercised** | No connector/API/CLI |
+| Calling / voice | ❌ Missing | None exposed | No telephony read route | No calling route; **not exercised** | No telephony connector/API/CLI |
+| Meeting intelligence | 🟨 Partial | None exposed | No Teams/transcript read route; public web only | No meeting-message/transcription write route; **not exercised** | Native web tools only; no Teams/meeting MCP |
+| Paid advertising | ❌ Missing | None exposed | No ads-platform read route | No ads write route; **not exercised** | No ads MCP/API/CLI |
+| Website / landing pages | ✅ Verified | Public Talent Bridge website; CMS identity not exposed | Public contact page read/extracted successfully; Dubai address and `info@talentbridgedubai.com` visible | No authenticated CMS write route; **not exercised** | Native web search/extract; no CMS MCP/API/CLI |
+| Commercial analytics | 🟨 Partial | No connected commercial account exposed | Hermes runtime/health diagnostics and public-site read available; no CRM/payment analytics read | No unified analytics write; **not exercised** | Local CLI + web tools; no analytics MCP/API |
+| Gmail | ❌ Missing | None exposed | No Gmail read route | No send/write route; **not exercised** | No Gmail MCP/CLI/API |
+| Google Calendar | ❌ Missing | None exposed | No calendar read route | No calendar write route; **not exercised** | No Google Calendar MCP/CLI/API |
+| Google Drive | ❌ Missing | None exposed | No Drive read route | No Drive write route; **not exercised** | No Drive MCP/CLI/API |
+| Microsoft Teams | ❌ Missing | None exposed | No Teams read route | No Teams message/write route; **not exercised** | No Teams MCP/CLI/API |
+| HubSpot | ❌ Missing | None exposed | No HubSpot account/CRM read route | No CRM write route; **not exercised** | No HubSpot MCP/CLI/API |
+| Zoho Books | ❌ Missing | None exposed | No organisation/account read route | No financial write/send route; **not exercised** | No Zoho Books MCP/CLI/API |
+| Asana | ❌ Missing | None exposed | No Asana read route | No task/project write route; **not exercised** | No Asana MCP/CLI/API |
+| Hindsight Memory | ✅ Verified | Shared FolderDesk memory; no separate account identity exposed | Hermes memory context loaded; doctor reports holographic provider active | Memory retain/update capability exposed by Hermes; **not exercised for CCO data** | Native Hermes memory tool/provider; no external MCP configured |
+
+## Hermes-only autonomous and scheduled capability
+
+- ✅ **Native cron scheduler:** two active scheduled jobs were verified with `hermes cron list --all` (`daily-model-reminder` and `brain-approve-daily`). Hermes exposes recurring schedules and script-only (`no-agent`) delivery.
+- ✅ **Autonomous runtime/tool surface:** local terminal, filesystem, web, browser, code execution, delegation, memory and cron toolsets are enabled in the CLI/runtime configuration.
+- ⚠️ **Not a CCO integration:** no Hermes cron job currently monitors GoHighLevel, Stripe, WhatsApp Business, LinkedIn, or other commercial systems. No external CCO automation write was attempted.
 
 # 5. Surface — Claude
 
