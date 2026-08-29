@@ -1,0 +1,73 @@
+name: Release DRF v0.1.0
+
+on:
+  issues:
+    types: [closed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: release-v0.1.0
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.event_name == 'workflow_dispatch' || github.event.issue.number == 29
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: v0.1.0
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify Issue 29 release gate is closed
+        shell: bash
+        run: |
+          state="$(gh issue view 29 --repo "$GITHUB_REPOSITORY" --json state --jq '.state')"
+          if [ "$state" != "CLOSED" ]; then
+            echo "Issue #29 is still $state. v0.1.0 will not be published."
+            exit 1
+          fi
+
+      - name: Check release and tag do not already exist
+        id: gate
+        shell: bash
+        run: |
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "v0.1.0 already exists; nothing to do."
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG exists without a GitHub release. Refusing automatic publication for safety."
+            exit 1
+          fi
+
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish first DRF prerelease
+        if: steps.gate.outputs.publish == 'true'
+        shell: bash
+        run: |
+          gh release create "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target main \
+            --title "DRF v0.1 — Foundation Preview" \
+            --notes-file RELEASE-NOTES-v0.1.0.md \
+            --prerelease
+
+      - name: Verify published release
+        if: steps.gate.outputs.publish == 'true'
+        shell: bash
+        run: |
+          gh release view "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --json tagName,name,isDraft,isPrerelease,url
