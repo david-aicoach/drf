@@ -10,6 +10,44 @@ A GitHub-native factory for creating, testing, operating and scaling revenue-pro
 
 DRF exists to turn founder intent, existing assets and AI capability into measurable commercial outcomes. Infrastructure is useful only when it helps produce or protect revenue.
 
+## Strategic commercial architecture
+
+DRF designs businesses **outcome first**, then selects the market and delivery stack.
+
+```text
+Outcome
+× Niche
+× Customer Channel
+× System of Record
+× Agent Layer
+```
+
+Use the layers in this order:
+
+1. **Outcome** — the measurable commercial result sold to the client.
+2. **Niche** — the vertical, sub-niche, geography, ICP and trigger/problem.
+3. **Customer channel** — where the customer/prospect relationship actually happens.
+4. **System of record** — where durable operational state lives.
+5. **Agent layer** — the replaceable AI/agent used for judgement, orchestration and autonomous work.
+
+Vendors are components, not the business. HighLevel, Kapso, HubSpot, Grok Bot, ChatGPT, Claude and future platforms are selected only where they improve the outcome.
+
+### UAE default
+
+For UAE service-business opportunities, assume **WhatsApp is the first-class customer channel unless niche evidence proves otherwise**.
+
+The default sequence is:
+
+```text
+WhatsApp/customer channel
+→ CRM/system of record
+→ deterministic lifecycle automation
+→ native AI where sufficient
+→ external agent where it adds material value
+```
+
+Canonical architecture: `knowledge/architecture/outcome-first-modular-revenue-architecture.md`.
+
 ## Core model
 
 > **Everything important is a folder. Everything durable is a file. GitHub supplies work state, history and automation. Agents remain replaceable.**
@@ -65,6 +103,7 @@ Issue
 ```text
 opportunity
 → evidence
+→ define outcome + niche + delivery architecture
 → smallest viable offer/test
 → execute
 → measure revenue signal
