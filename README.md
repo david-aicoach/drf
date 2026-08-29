@@ -2,6 +2,8 @@
 
 A GitHub-native factory for creating, testing, operating and scaling revenue-producing businesses, software, agents and setups.
 
+**Public dashboard:** https://tbhrc.github.io/drf/
+
 ## Number-one commercial rule
 
 > **Traction before build. Revenue work before optional build work.**
