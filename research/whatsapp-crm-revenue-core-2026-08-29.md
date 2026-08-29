@@ -1,10 +1,11 @@
 # WhatsApp + CRM Revenue Core — Research and Niche Scoring
 
 **Date:** 29 August 2026  
-**Issue:** #28  
+**Governing issues:** #28, #40  
 **Status:** Desk research complete for first-class opportunity scoring  
 **Canonical business profile:** `businesses/whatsapp-crm-revenue-core/README.md`  
-**Canonical niche register:** `businesses/NICHES.md`
+**Canonical niche register:** `businesses/NICHES.md`  
+**AI economics:** `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 
 ## Research question
 
@@ -32,6 +33,8 @@ This preserves the core DRF rule that clients buy measurable outcomes while reco
 > every legitimate enquiry is captured, customer history is visible, every qualified opportunity has a next action, and management has pipeline visibility.
 
 The foundation can therefore be sold and retained monthly even before an advanced outcome module is added.
+
+Issue #40 strengthens the economics of the HighLevel-native implementation family: AI Employee Unlimited at **US$97/month per enabled location** makes Conversation AI and inbound/outbound/widget Voice AI unlimited subject to fair use, while deterministic CRM/lifecycle actions do not need a browser agent. This does not make general computer use unlimited; Ask AI remains window-limited and Agent Studio remains pay-per-use.
 
 ## Market evidence
 
@@ -68,7 +71,8 @@ Current HighLevel documentation verifies the infrastructure required for this pr
 - wait-for-reply and delivery-status controls;
 - voice notes;
 - WhatsApp voice calling in eligible configurations;
-- agency WhatsApp billing/rebilling.
+- agency WhatsApp billing/rebilling;
+- current AI Employee Growth/Unlimited options for Conversation and Voice AI.
 
 Sources:
 
@@ -77,10 +81,11 @@ Sources:
 - https://help.gohighlevel.com/support/solutions/articles/155000001624-whatsapp-workflow-integration
 - https://help.gohighlevel.com/support/solutions/articles/155000007989-whatsapp-voice-calling-in-highlevel
 - https://help.gohighlevel.com/support/solutions/articles/155000001428-whatsapp-pricing-billing-and-rebilling-guide
+- https://help.gohighlevel.com/support/solutions/articles/155000006652
 
 Important implementation constraint: WhatsApp Calling and Coexistence have configuration/eligibility differences. Do not promise every feature on every existing number before checking the account/number state.
 
-## Business opportunity score
+## Business opportunity score — framework v1.5
 
 Underlying 0–10 factors:
 
@@ -96,19 +101,21 @@ Underlying 0–10 factors:
 | Low Human Dependency | 9 |
 | Startup Capital Efficiency | 10 |
 | Speed to Revenue | 10 |
-| Margin Potential | 9 |
+| **Margin Potential** | **10** |
 | Scalability | 10 |
 | Paid Growth Potential | 9 |
 | Defensibility / Moat | 7 |
 | MRR / Recurring Revenue Quality | 10 |
 
-**Weighted Opportunity Score: 94.4 → 94/100.**  
+**Weighted Opportunity Score: 94.9 → 95/100.**  
 **MRR: 10/10.**  
 **AI Autonomy: 95/100.**  
-**Evidence Confidence: 92%.**  
-**Research Completeness: 93%.**  
+**Evidence Confidence: 96%.**  
+**Research Completeness: 100%.**  
 **Execution Velocity: 93/100.**  
-**Execution Priority: 93.7 → 94/100.**
+**Execution Priority: 94.4/100.**
+
+The only structural factor uplift from the previous score is Margin Potential 9→10. The larger confidence/completeness increase reflects better current evidence, not score inflation.
 
 ## Niche scoring
 
@@ -158,7 +165,7 @@ WhatsApp/CRM has value for enquiries and lifecycle operations, but PMS/channel-m
 
 ## Commercial-layer rule for the niche register
 
-The niche table should classify rows by layer:
+The niche table classifies rows by layer:
 
 - **Foundation** — WhatsApp + CRM Revenue Core.
 - **Outcome** — Revenue Recovery, Missed Lead, Voice, Instant Quote, Support, Reputation.
@@ -186,8 +193,9 @@ For the strongest beachhead verticals, sell in this order:
 ```text
 1. WhatsApp + CRM foundation
 2. highest-value measurable outcome module
-3. second module only after data proves the leakage
-4. external agent layer only when HighLevel-native capability is insufficient
+3. native/deterministic execution for recurring volume
+4. second module only after data proves the leakage
+5. external agent only when native capability is insufficient or cross-system judgement adds material value
 ```
 
 For HVAC this becomes:
@@ -201,16 +209,19 @@ WhatsApp + CRM Revenue Core
 
 ## Remaining evidence gate
 
-No desk-research item remains blocking for Issue #28 acceptance. The remaining uncertainty is operating evidence:
+Desk research is sufficient for Candidate status. The remaining uncertainty is operating evidence:
 
 - 10–20 buyer/workflow interviews in the first beachhead;
 - real onboarding time;
 - number/Meta approval exceptions;
 - staff adoption;
+- native workflow success rate;
+- external-agent quota/overage and recovery where used;
 - measurable conversion/recovery improvement;
 - support minutes;
+- cost per successful completed revenue workflow;
 - MRR retention;
 - gross margin;
 - module expansion rate.
 
-Those are live-test metrics, not further desk-research prerequisites.
+Those are live-test metrics, not further generic desk-research prerequisites.
