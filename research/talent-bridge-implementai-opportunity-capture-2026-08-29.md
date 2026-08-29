@@ -1,152 +1,165 @@
 # Talent Bridge + iMPLEMENTAi Opportunity Capture — 29 August 2026
 
 **Status:** Provisional portfolio capture  
-**Purpose:** Capture previously discussed or already-supported business opportunities that are not yet represented as first-class DRF opportunities, then score them under the current MRR-weighted framework v1.1.
+**Governing issue:** #23  
+**Scoring framework:** v1.1 — MRR weighted 11/100  
+**Purpose:** Capture previously discussed or already-supported business opportunities that are not yet represented as first-class DRF opportunities, then score them without pretending each has completed a full market-validation cycle.
 
 ## Source basis
 
-This pass uses current DRF assets, prior Talent Bridge/iMPLEMENTAi operating context, connected OneDrive evidence, and previously discussed commercial models. These are **capture scores**, not equivalent to fully validated market studies. Where external/operating evidence is incomplete, Evidence Confidence is intentionally lower and the opportunity remains Researching or Idea.
+This pass uses:
+
+- current DRF starting assets;
+- Talent Bridge and iMPLEMENTAi operating context;
+- prior founder discussions and commercial models;
+- connected OneDrive/SharePoint search where relevant;
+- existing Talent Bridge assessment, recruitment, career and automation work.
+
+These are **capture scores**. Evidence Confidence and Research Completeness deliberately remain below the stronger fully researched DRF opportunities where market/operating evidence is incomplete.
 
 ## Asset leverage already available
 
-DRF currently records meaningful owned assets: 22,000+ LinkedIn connections, Talent Bridge clients and relationships, a candidate/recruitment ecosystem, ATS, GulfTalent, iMPLEMENTAi leads, OneDrive lead data, HighLevel, websites/domains, payment infrastructure, AI subscriptions, GitHub/FolderDesk and existing proposals/research. This materially improves capital efficiency and speed-to-revenue for opportunities that reuse these assets.
+DRF records 22,000+ LinkedIn connections, Talent Bridge clients and business relationships, a candidate/recruitment ecosystem, ATS, GulfTalent, existing iMPLEMENTAi leads, OneDrive lead data, HighLevel, websites/domains, payment infrastructure, AI subscriptions, GitHub/FolderDesk, proposals and market research.
 
 Canonical asset source: `knowledge/assets/starting-asset-base.md`.
 
 ## Opportunities captured
 
-| Rank | Opportunity | Score | MRR | AI Autonomy | Evidence Confidence | Stage | Core leverage |
-|---:|---|---:|---:|---:|---:|---|---|
-| 1 | **Talent Bridge Assessment & AI Interview Platform** | **91/100** | **10/10** | **90/100** | **88%** | Candidate | Existing assessment IP, pricing, reports, client proof and digital delivery |
-| 2 | **Recruitment OS / Hiring Intelligence SaaS** | **89/100** | **10/10** | **90/100** | **80%** | Candidate | Existing recruitment workflow IP, ATS, assessment and AI-reporting capability |
-| 3 | **Partner-Delivered Recruitment / Score Hire Model** | **87/100** | **7/10** | **75/100** | **82%** | Candidate | Talent Bridge client acquisition/brand + delivery partner leverage |
-| 4 | **Pre-Assessed Talent Pool Subscription** | **86/100** | **10/10** | **85/100** | **72%** | Researching | Candidate database + assessment/evaluation layer + employer access |
-| 5 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85/100** | **10/10** | **95/100** | **68%** | Researching | Recruitment data, job briefs, salary intelligence and candidate market knowledge |
-| 6 | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84/100** | **10/10** | **85/100** | **74%** | Candidate | Existing domains, AI content/SEO capability, HighLevel lead routing, UAE local market knowledge |
-| 7 | **Executive Career Accelerator / Job Search Platform** | **82/100** | **7/10** | **85/100** | **80%** | Candidate | Existing 6-stage career programme, CV/profile IP, recruitment network and assessment capability |
-| 8 | **AI Job Board + Screened Talent Marketplace** | **81/100** | **9/10** | **88/100** | **70%** | Researching | Job seeker demand + employer demand + screening/assessment differentiation |
-| 9 | **Assessment-as-a-Service Managed Retainer** | **81/100** | **9/10** | **78/100** | **88%** | Candidate | Existing assessment suite and employer-facing reporting; simple land-and-expand model |
-| 10 | **Saffa.ae Community + Trusted Local Business Marketplace** | **79/100** | **8/10** | **82/100** | **66%** | Researching | Existing community build, UAE/South African niche, directory/referral/sponsorship monetisation |
-| 11 | **HowToFindAJobInUAE Media + Recruitment Funnel** | **78/100** | **7/10** | **90/100** | **69%** | Researching | Existing domain/content thesis, automated social distribution, Talent Bridge downstream offers |
-| 12 | **White-Label Hiring Portal for Employers/Agencies** | **86/100** | **10/10** | **90/100** | **75%** | Researching | Recruitment OS + assessments + AI shortlist/reporting packaged per client |
+| Rank | Opportunity | Score | MRR | AI Autonomy | Evidence Confidence | Research Completeness | Stage |
+|---:|---|---:|---:|---:|---:|---:|---|
+| 1 | **Talent Bridge Assessment & AI Interview Platform** | **91/100** | **10/10** | **90/100** | **88%** | **87%** | Candidate |
+| 2 | **Recruitment OS / Hiring Intelligence SaaS** | **91/100** | **10/10** | **85/100** | **80%** | **80%** | Candidate |
+| 3 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **88/100** | **10/10** | **95/100** | **68%** | **67%** | Researching |
+| 4 | **White-Label Hiring Portal for Employers/Agencies** | **88/100** | **10/10** | **88/100** | **75%** | **73%** | Researching |
+| 5 | **Pre-Assessed Talent Pool Subscription** | **86/100** | **10/10** | **88/100** | **72%** | **70%** | Researching |
+| 6 | **Partner-Delivered Recruitment / Score Hire Model** | **85/100** | **7/10** | **80/100** | **82%** | **80%** | Candidate |
+| 7 | **Assessment-as-a-Service Managed Retainer** | **85/100** | **9/10** | **78/100** | **88%** | **87%** | Candidate |
+| 8 | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84/100** | **10/10** | **93/100** | **74%** | **70%** | Candidate |
+| 9 | **AI Job Board + Screened Talent Marketplace** | **84/100** | **9/10** | **88/100** | **70%** | **67%** | Researching |
+| 10 | **Executive Career Accelerator / Job Search Platform** | **83/100** | **7/10** | **83/100** | **80%** | **80%** | Candidate |
+| 11 | **Saffa.ae Community + Trusted Local Business Marketplace** | **80/100** | **8/10** | **88/100** | **66%** | **60%** | Researching |
+| 12 | **HowToFindAJobInUAE Media + Recruitment Funnel** | **81/100** | **7/10** | **98/100** | **69%** | **60%** | Researching |
 
 ---
 
 # 1. Talent Bridge Assessment & AI Interview Platform — 91/100
 
-Talent Bridge already has a concrete three-layer product model: general assessment, customised role-specific AI interview with scoring, and EQ-i for management-level roles. Prior commercial work included general assessment around AED 220/candidate, AI interview at AED 100/candidate with role setup economics, and EQ-i at AED 2,000/candidate versus a higher standard rate. Earlier assessment packages also contemplated annual subscriptions and bulk credits.
+Talent Bridge already has a concrete three-layer model:
 
-The strongest version is a self-service employer platform with candidate credits, role templates, AI scoring, psychometric results, job-fit reports, consent/audit history and human final-decision positioning.
+1. general assessment covering Big Five/OCEAN and practical soft-skill dimensions;
+2. customised role-specific AI interview with scoring;
+3. EQ-i for management-level candidates.
 
-**Why MRR is strong:** employer subscription + credits + recurring role/candidate usage. High-volume clients can produce predictable recurring assessment volume.
+Prior commercial work established real price architecture around **AED 220/candidate** for the general assessment, **AED 100/candidate/interview** for the customised AI interview with a role setup fee model, and **AED 2,000/candidate** for EQ-i versus a materially higher standard price. Earlier package work also considered bulk credits and annual subscriptions.
 
-**Primary risk:** assessment validity, privacy, consent, interpretation quality and customer acquisition need disciplined operating proof.
+The strongest business is a self-service employer platform with candidate credits, role templates, AI scoring, psychometric results, job-fit reports, consent/audit history and human final-decision positioning.
 
-# 2. Recruitment OS / Hiring Intelligence SaaS — 89/100
+**MRR:** employer subscription + recurring candidate credits + assessment/interview usage.  
+**Why it is attractive:** existing IP, pricing, report formats and delivery proof materially reduce build and GTM risk.  
+**Main risk:** assessment validity, privacy, consent, interpretation quality and enterprise acquisition.
 
-Productise the existing Talent Bridge recruitment operating system rather than using it only internally. Core flow: role intake -> company research -> success profile -> sourcing/screening -> assessment -> AI interview -> evaluation -> shortlist/reporting.
+# 2. Recruitment OS / Hiring Intelligence SaaS — 91/100
 
-Possible customers: boutique agencies, internal HR teams and recruitment consultants.
+Productise the operating system Talent Bridge is already developing internally:
 
-**MRR:** per recruiter/team subscription plus usage for interviews/assessments/data.
+`role intake -> company research -> success profile -> sourcing/screening -> assessment -> AI interview -> evaluation -> shortlist/reporting`.
 
-**Moat:** real recruitment workflow knowledge, accumulated evaluation/reporting IP and Talent Bridge as proving ground.
+Potential customers are boutique agencies, independent recruiters and internal HR/talent teams.
 
-# 3. Partner-Delivered Recruitment / Score Hire Model — 87/100
+**MRR:** recruiter/team subscription + usage for interviews, assessments and data.  
+**Moat:** real recruitment process knowledge, evaluation/reporting IP, workflow depth and Talent Bridge as proving ground.  
+**Main risk:** avoid rebuilding a generic ATS; win on the intelligence/evaluation layer and integration into existing systems.
 
-Talent Bridge owns client acquisition, qualification, commercial relationship, role calibration, assessment/evaluation and final quality control; a partner agency performs labour-heavy sourcing/delivery under agreed economics.
+# 3. UAE/GCC Talent Intelligence & Salary Data Subscription — 88/100
 
-This materially changes the recruitment-service score because delivery labour no longer scales directly with David/Talent Bridge headcount.
+Turn recurring recruitment-market knowledge into structured, privacy-safe intelligence around salary ranges, skill scarcity, talent availability, notice periods, candidate expectations and role demand by function/industry.
 
-**Revenue:** placement fees / retained search fees / partner margin share. MRR is weaker than SaaS but recurring client hiring demand can create repeat revenue.
+**MRR:** employer/recruiter subscription, premium reports and eventually API/data access.  
+**AI autonomy:** exceptionally high for ingestion, anonymisation, categorisation, reporting and query.  
+**Main risk:** the data set must be large and current enough to justify claims; thin samples must never be presented as authoritative benchmarks.
 
-**Critical test:** partner SLA, ownership of client relationship, candidate quality, replacement guarantee allocation, margin split and non-circumvention.
+# 4. White-Label Hiring Portal for Employers/Agencies — 88/100
 
-# 4. Pre-Assessed Talent Pool Subscription — 86/100
+Package Talent Bridge assessment, AI interview, recruitment workflow, reporting and shortlist intelligence as a branded employer/agency portal.
+
+Prior commercial ideation already considered white-label hiring portals with setup plus recurring monthly fees.
+
+**MRR:** platform subscription + candidate/assessment/interview usage.  
+**Strategic position:** a productised bridge between the Assessment Platform and Recruitment OS, without requiring the much harder two-sided job-board model.  
+**Main risk:** integration/support burden and avoiding custom-project sprawl.
+
+# 5. Pre-Assessed Talent Pool Subscription — 86/100
 
 Create a permissioned pool of pre-screened, assessed and structured candidate profiles that employers subscribe to access, with Talent Bridge evaluation layers above raw CVs.
 
-**MRR:** employer subscription, seat access, alerts, premium introductions, assessment refreshes.
+**MRR:** employer subscription, seats, alerts, premium introductions and assessment refreshes.  
+**Asset leverage:** existing candidate ecosystem and assessment capability.  
+**Main risk:** consent/privacy, profile freshness and employer willingness to pay for ongoing access.
 
-**Advantage:** converts an existing candidate/recruitment ecosystem into a reusable data/distribution asset.
+# 6. Partner-Delivered Recruitment / Score Hire Model — 85/100
 
-**Constraint:** candidate consent, privacy, freshness and employer willingness to pay for access must be validated.
+Talent Bridge owns client acquisition, role qualification, commercial relationship, assessment/evaluation and final quality control. A partner recruitment agency performs the labour-heavy sourcing and delivery under agreed economics.
 
-# 5. UAE/GCC Talent Intelligence & Salary Data Subscription — 85/100
+This specifically incorporates the founder direction that recruitment delivery can be fulfilled through another agency, allowing Talent Bridge to apply leverage rather than scaling delivery headcount proportionally.
 
-Turn recurring recruitment market knowledge into structured salary ranges, talent availability, notice periods, skill scarcity, candidate expectations and role-demand intelligence by function/industry.
+**Revenue:** placement/retained-search fees with partner margin share.  
+**MRR:** moderate rather than native SaaS MRR; repeat client hiring and retained/RPO structures can improve recurrence.  
+**Critical test:** partner SLA, client ownership, candidate quality, replacement guarantee allocation, margin split, data protection and non-circumvention.
 
-**MRR:** employer/recruiter subscription, reports/API, premium benchmarks.
+# 7. Assessment-as-a-Service Managed Retainer — 85/100
 
-**Strong AI fit:** ingestion, anonymisation, categorisation, reporting and query interface can be heavily automated.
+A lighter commercial model than requiring every employer to adopt a platform. Employers outsource assessment operations to Talent Bridge for a monthly minimum/retainer plus per-candidate usage.
 
-**Constraint:** useful sample sizes and privacy-safe aggregation are required; thin data must not be presented as authoritative market benchmarks.
+Includes invitations, monitoring, general assessment, AI interviews, reports and shortlist intelligence.
 
-# 6. Local SEO Rank-and-Rent Lead Asset Portfolio — 84/100
+**MRR:** monthly programme retainer + usage.  
+**Strength:** can be sold now using existing capability before a standalone SaaS platform is complete.  
+**Trade-off:** lower autonomy/scalability than pure SaaS because account servicing remains material.
 
-Build niche/location websites that rank for high-intent UAE local services and rent the lead flow to service providers for recurring monthly fees. Existing DRF discussion used sofa cleaning in Dubai as a representative niche and targeted roughly AED 2,000–10,000/month per asset depending on economics.
+# 8. Local SEO Rank-and-Rent Lead Asset Portfolio — 84/100
 
-**MRR:** fixed monthly site/lead rental, optional per-lead or exclusive territory subscription.
+Build niche/location websites that rank for high-intent UAE local services and rent the lead flow to service providers for recurring monthly fees. Existing DRF discussion used **sofa cleaning in Dubai** as a representative niche, with a target model of roughly **AED 2,000–10,000 monthly per asset** depending on niche economics.
 
-**Asset leverage:** AI-assisted SEO/content, existing domains/web capability, HighLevel lead capture/routing and automated follow-up.
+**MRR:** fixed monthly site/lead rental, optional per-lead or exclusive-territory subscription.  
+**Asset leverage:** AI-assisted SEO/content, existing domains/web capability, HighLevel lead capture/routing and automated follow-up.  
+**Main risk:** time-to-rank, algorithm dependence and niche-specific economics.
 
-**Risk:** SEO time-to-rank, algorithm dependency and local niche economics vary materially.
+# 9. AI Job Board + Screened Talent Marketplace — 84/100
 
-# 7. Executive Career Accelerator / Job Search Platform — 82/100
+Differentiate from generic job boards by attaching screening, assessment and evidence to candidate profiles and giving employers access to AI-screened talent.
 
-Talent Bridge has an existing six-stage executive career package covering UAE strategy, executive/ATS CV positioning, LinkedIn and platform setup, video/portfolio assets, interview/salary coaching and targeted distribution to recruiters/HR/hiring managers, with assessment layers.
+Prior commercial concepts included job-seeker membership, paid CV/application products, employer job-post fees, employer talent subscriptions and white-label portals.
 
-Productise the repeatable elements into a digital platform + premium human upgrade.
+**MRR:** employer subscription + job-seeker membership + premium access.  
+**Main risk:** two-sided marketplace liquidity and customer acquisition make this harder than the white-label hiring portal or assessment platform.
 
-**Revenue:** package fees, membership/subscription, premium coaching/review, recruiter distribution and assessment upgrades.
+# 10. Executive Career Accelerator / Job Search Platform — 83/100
 
-**MRR quality:** moderate because the customer lifecycle is finite; strongest if structured as a 3–6 month programme rather than indefinite subscription.
+Talent Bridge has an existing six-stage executive career programme covering UAE strategy, executive/ATS CV positioning, LinkedIn/platform setup, video/portfolio assets, interview/salary coaching, targeted recruiter/HR distribution and assessments.
 
-# 8. AI Job Board + Screened Talent Marketplace — 81/100
+Productise repeatable elements into a digital platform with premium human review/coaching.
 
-Differentiate from generic job boards by attaching structured screening, assessment and evidence to candidate profiles and letting employers access AI-screened talent. Prior concepts included job-seeker membership, paid application/CV packages, employer job-post fees, employer talent subscriptions and white-label hiring portals.
+**Revenue:** package fees, 3–6 month membership, premium coaching/review, assessment and recruiter-distribution upgrades.  
+**MRR:** useful but finite-duration rather than perpetual.  
+**Main advantage:** existing product IP and Talent Bridge recruitment credibility.
 
-**MRR:** employer subscriptions, job-seeker membership and premium access.
+# 11. Saffa.ae Community + Trusted Local Business Marketplace — 80/100
 
-**Risk:** marketplace liquidity and two-sided acquisition are materially harder than a single-sided SaaS product.
+Use the South African-in-UAE community asset as a trusted discovery, referral and community platform rather than only a content/community project.
 
-# 9. Assessment-as-a-Service Managed Retainer — 81/100
+Potential revenue layers include premium/verified business listings, sponsorships, recruitment/referrals, lead generation, events, affiliate offers and selected community services.
 
-A lighter commercial layer than building a standalone platform: employers outsource assessment operations to Talent Bridge for a monthly minimum/retainer plus per-candidate usage.
+**MRR:** recurring business listing/sponsorship packages.  
+**Main constraint:** community trust must remain primary; monetisation cannot turn the platform into a low-trust directory.
 
-Includes invitations, monitoring, assessment administration, reports, AI interviews and shortlist intelligence.
+# 12. HowToFindAJobInUAE Media + Recruitment Funnel — 81/100
 
-**MRR:** monthly programme retainer + usage. Strong fit for high-volume employers that do not want another software platform.
+A UAE job-search knowledge/media property designed for automated multi-channel distribution into an owned website knowledge base. Earlier planning included driving content from **7–15 channels** into `HowToFindAJobInUAE.com`.
 
-**Trade-off:** lower scalability than pure SaaS because client servicing remains material.
+Revenue can feed Talent Bridge career products, assessments, employer/recruiter products, sponsorship/affiliate offers and the job/talent ecosystem.
 
-# 10. Saffa.ae Community + Trusted Local Business Marketplace — 79/100
-
-Use the South African-in-UAE community asset as a trusted discovery, community and referral platform rather than only a content/community project.
-
-Potential revenue layers: business listings, verified/premium listings, sponsorships, recruitment/referrals, events, affiliate offers, lead generation and selected community services.
-
-**MRR:** recurring business listing/sponsorship packages and community-partner subscriptions.
-
-**Risk:** community trust must remain primary; monetisation cannot degrade the usefulness of the platform.
-
-# 11. HowToFindAJobInUAE Media + Recruitment Funnel — 78/100
-
-A UAE job-search knowledge/media property designed for automated multi-channel distribution into an owned website knowledge base. Earlier planning contemplated distribution across 7–15 social/content channels and substantial organic traffic potential.
-
-Revenue can flow into Talent Bridge career products, assessments, recruiter/employer offers, sponsorship/affiliate products and job/talent products.
-
-**MRR:** indirect and weaker than SaaS; strongest when tied to recurring employer/job-board products rather than ad revenue alone.
-
-# 12. White-Label Hiring Portal for Employers/Agencies — 86/100
-
-Package Talent Bridge recruitment OS, assessments, AI interviews, reporting and workflow into a branded employer/agency portal rather than requiring the customer to adopt a generic ATS stack.
-
-Prior commercial ideation included white-label hiring portals with setup plus recurring monthly fees.
-
-**MRR:** platform subscription + candidate/assessment/interview usage.
-
-**Strategic position:** can become the productised bridge between Assessment Platform and Recruitment OS, while avoiding the much harder open-market job-board problem.
+**AI autonomy:** extremely high for research, content production, repurposing and distribution.  
+**MRR:** indirect; strongest when media feeds recurring employer/assessment/job-board products rather than depending on advertising alone.
 
 ---
 
@@ -154,24 +167,24 @@ Prior commercial ideation included white-label hiring portals with setup plus re
 
 Weights: MS9 MG9 TW5 WP7 AB7 AM7 AD9 HD4 SC6 SR6 MP5 SCALE6 PG4 MOAT5 MRR11.
 
-| Opportunity | MS | MG | TW | WP | AB | AM | AD | HD | SC | SR | MP | SCALE | PG | MOAT | MRR | Score |
+| Opportunity | MS | MG | TW | WP | AB | AM | AD | HD | SC | SR | MP | SCALE | PG | MOAT | MRR | Weighted Score |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Assessment & AI Interview Platform | 9 | 9 | 8 | 9 | 9 | 8 | 10 | 9 | 9 | 9 | 10 | 10 | 8 | 8 | 10 | **91** |
-| Recruitment OS / Hiring Intelligence SaaS | 10 | 9 | 8 | 9 | 9 | 8 | 9 | 8 | 9 | 8 | 10 | 10 | 8 | 9 | 10 | **89** |
-| Partner-Delivered Recruitment / Score Hire | 10 | 8 | 7 | 10 | 8 | 9 | 7 | 8 | 10 | 10 | 9 | 8 | 9 | 8 | 7 | **87** |
-| Pre-Assessed Talent Pool Subscription | 9 | 8 | 7 | 8 | 9 | 8 | 9 | 9 | 8 | 7 | 10 | 10 | 7 | 8 | 10 | **86** |
-| Talent Intelligence & Salary Data | 8 | 9 | 8 | 8 | 10 | 8 | 10 | 10 | 9 | 6 | 10 | 10 | 6 | 8 | 10 | **85** |
-| Local SEO Rank-and-Rent | 8 | 8 | 6 | 9 | 9 | 10 | 9 | 9 | 8 | 5 | 10 | 9 | 7 | 7 | 10 | **84** |
-| Executive Career Accelerator | 9 | 7 | 6 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 9 | 8 | 8 | 8 | 7 | **82** |
-| AI Job Board + Screened Talent Marketplace | 10 | 9 | 6 | 8 | 9 | 8 | 9 | 9 | 7 | 5 | 9 | 10 | 7 | 8 | 9 | **81** |
-| Assessment-as-a-Service Retainer | 9 | 8 | 7 | 9 | 9 | 8 | 8 | 6 | 10 | 10 | 9 | 8 | 8 | 8 | 9 | **81** |
-| Saffa.ae Marketplace | 7 | 8 | 8 | 7 | 9 | 9 | 9 | 8 | 8 | 6 | 9 | 9 | 6 | 8 | 8 | **79** |
-| HowToFindAJobInUAE Media Funnel | 8 | 8 | 6 | 7 | 10 | 10 | 9 | 10 | 9 | 5 | 9 | 10 | 5 | 7 | 7 | **78** |
-| White-Label Hiring Portal | 9 | 9 | 8 | 9 | 9 | 8 | 9 | 9 | 8 | 7 | 10 | 10 | 7 | 8 | 10 | **86** |
+| Assessment & AI Interview Platform | 9 | 9 | 8 | 9 | 9 | 8 | 10 | 9 | 9 | 9 | 10 | 10 | 8 | 8 | 10 | **91.0 -> 91** |
+| Recruitment OS / Hiring Intelligence SaaS | 10 | 9 | 8 | 9 | 9 | 8 | 9 | 8 | 9 | 8 | 10 | 10 | 8 | 9 | 10 | **90.5 -> 91** |
+| Talent Intelligence & Salary Data | 8 | 9 | 8 | 8 | 10 | 8 | 10 | 10 | 9 | 6 | 10 | 10 | 6 | 8 | 10 | **87.9 -> 88** |
+| White-Label Hiring Portal | 9 | 9 | 8 | 9 | 9 | 8 | 9 | 9 | 8 | 7 | 10 | 10 | 7 | 8 | 10 | **87.9 -> 88** |
+| Pre-Assessed Talent Pool Subscription | 9 | 8 | 7 | 8 | 9 | 8 | 9 | 9 | 8 | 7 | 10 | 10 | 7 | 8 | 10 | **85.8 -> 86** |
+| Partner-Delivered Recruitment / Score Hire | 10 | 8 | 7 | 10 | 8 | 9 | 7 | 8 | 10 | 10 | 9 | 8 | 9 | 8 | 7 | **84.7 -> 85** |
+| Assessment-as-a-Service Retainer | 9 | 8 | 7 | 9 | 9 | 8 | 8 | 6 | 10 | 10 | 9 | 8 | 8 | 8 | 9 | **85.0 -> 85** |
+| Local SEO Rank-and-Rent | 8 | 8 | 6 | 9 | 9 | 10 | 9 | 9 | 8 | 5 | 10 | 9 | 7 | 7 | 10 | **84.2 -> 84** |
+| AI Job Board + Screened Talent Marketplace | 10 | 9 | 6 | 8 | 9 | 8 | 9 | 9 | 7 | 5 | 9 | 10 | 7 | 8 | 9 | **83.7 -> 84** |
+| Executive Career Accelerator | 9 | 7 | 6 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 9 | 8 | 8 | 8 | 7 | **82.5 -> 83** |
+| Saffa.ae Marketplace | 7 | 8 | 8 | 7 | 9 | 9 | 9 | 8 | 8 | 6 | 9 | 9 | 6 | 8 | 8 | **79.8 -> 80** |
+| HowToFindAJobInUAE Media Funnel | 8 | 8 | 6 | 7 | 10 | 10 | 9 | 10 | 9 | 5 | 9 | 10 | 5 | 7 | 7 | **80.5 -> 81** |
 
 ## Portfolio interpretation
 
-The strongest overlooked assets are concentrated in **Talent Bridge IP that can be converted from labour into recurring software/data economics**. The priority pattern is:
+The strongest overlooked assets are concentrated in **Talent Bridge IP that can be converted from labour into recurring software/data economics**:
 
 ```text
 Recruitment expertise + candidate ecosystem
@@ -187,8 +200,8 @@ Talent Intelligence Data
 Partner-delivered recruitment for high-value human fulfilment
 ```
 
-This creates a more leveraged model than treating recruitment itself as the only product.
+The partner-delivered recruitment model is particularly important because it preserves the high-value commercial side of recruitment while moving repetitive delivery effort to a specialist partner.
 
 ## Next validation rule
 
-These opportunities should now exist in the portfolio so they are not lost. The next research/operating pass should prioritise the top group by score and asset advantage, and should increase or decrease Evidence Confidence based on current market, direct customer and operating evidence rather than preserving these capture scores.
+These opportunities now need to exist in the canonical portfolio so they are not lost. Future score movement should come from targeted market research and direct operating evidence: MRR collected, conversion, CAC, gross margin, support burden, churn/retention, partner economics and measurable client outcomes.
