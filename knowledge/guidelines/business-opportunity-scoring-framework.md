@@ -1,13 +1,14 @@
 # DRF Business Opportunity Scoring Framework
 
 **Status:** Canonical guideline  
-**Version:** 1.4  
+**Version:** 1.5  
 **Date:** 29 August 2026  
 **Original governing issue:** #11  
 **MRR revision issue:** #20  
 **Execution-velocity revision issue:** #24  
 **Niche-selection revision issue:** #26  
-**Outcome-first architecture revision issue:** #33
+**Outcome-first architecture revision issue:** #33  
+**AI-delivery-economics revision issue:** #40
 
 ## Purpose
 
@@ -69,6 +70,26 @@ Score every factor from **0 to 10** and multiply by its weight. Weights sum to 1
 | 0 | No credible recurring-revenue model |
 
 MRR is not passive income by itself. Heavy monthly human delivery must reduce AI Deliverability and Low Human Dependency.
+
+### Sustained AI delivery economics guardrail
+
+**Technical capability is not the same as sustained economic autonomy.** A platform or agent does not deserve a high delivery/scalability score merely because it can complete a task in a demo.
+
+For AI-heavy opportunities, score the following factors against **representative production volume**, not headline subscription price or theoretical capability:
+
+- **AI Deliverability:** can the AI execute the recurring workload reliably at the required volume without repeatedly exhausting hidden/finite quotas, failing on browser/UI state, or needing frequent manual recovery?
+- **Low Human Dependency:** include authentication takeovers, CAPTCHA/2FA, broken UI selectors, exception handling, approval burden, quota management and manual recovery.
+- **Startup Capital Efficiency:** include the realistic plan/tier required to complete a credible workload, not merely the cheapest plan that grants access.
+- **Margin Potential:** include AI compute, on-demand overages, telephony/messaging/provider charges, support minutes and failed/repeated runs.
+- **Scalability:** penalise architectures where usage cost, browser interactions, exception handling or human recovery grows materially with every task, client or run.
+
+Do not award **9–10** on AI Deliverability or Scalability until evidence supports sustained representative throughput or the architecture avoids variable agent work through deterministic/native execution.
+
+When comparing delivery rails, prefer this order for recurring high-volume work:
+
+`native deterministic action/API → native domain AI → bounded paid reasoning → browser/computer-use agent only where a robust native path does not exist`
+
+The benchmark is **cost per successful production outcome**, not subscription price, token count or agent novelty.
 
 ## 2. Evidence Confidence — independent 0–100%
 
@@ -170,6 +191,18 @@ Use Execution Priority Score to identify the **top five staircase**, then apply 
 
 Useful evidence includes TAM/SAM, growth, pricing, platform/customer counts, search trends, competitor economics, actual workflows, integration requirements, support load, approval requirements, CAC, sales cycle, retention, gross margin and recurring value.
 
+For AI-heavy delivery, explicitly capture:
+
+- plan/tier and included usage model;
+- quotas/reset windows/fair-use limits where known;
+- pay-per-use or on-demand spillover pricing;
+- input/cache/output or other resource consumption where exposed;
+- successful completed jobs, failed/repeated runs and elapsed runtime;
+- human recovery/approval minutes;
+- channel/provider charges;
+- total cost per successful completed job;
+- business value created/protected per successful job.
+
 For Execution Velocity specifically, investigate:
 
 - existing snapshots/templates/components available to buy, fork or install;
@@ -208,6 +241,7 @@ If evidence does not exist, mark it **Missing / Needs more research** rather tha
 - Prefer **SELL / USE / INTEGRATE / AUTOMATE / BUILD**, in that order when practical.
 - Do not treat a vendor-specific limitation as proof the business outcome is weak if a practical alternate channel/system/agent architecture exists.
 - Do not reward a fashionable agent if the niche's customer channel, CRM or lifecycle requirements are missing.
+- For high-frequency recurring work, prefer native/deterministic execution over browser/computer-use where both can produce the same outcome reliably.
 
 Tie-break similar opportunities by: (1) higher MRR, (2) higher Execution Velocity, (3) higher AI Autonomy, (4) faster first revenue, (5) lower startup capital.
 
