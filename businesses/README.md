@@ -1,53 +1,68 @@
 # Businesses
 
-`businesses/` is the canonical offer library: one folder per parent business opportunity.
+`businesses/` is the canonical DRF offer library: **one folder per parent business opportunity**.
 
-Every parent offer must have:
+Every parent offer has:
 
 - `README.md` — commercial truth: customer, pain, outcome, delivery shape, business model, stage and next action;
-- `RESEARCH.md` — opportunity-local research synthesis: scores, evidence, unknowns, test and links to deeper cross-portfolio research.
+- `RESEARCH.md` — opportunity-local research: evidence, economics, competition, risks, unknowns and validation test.
 
-Shared evidence may remain under `research/`, but it must be surfaced from the relevant business folder so the offer is self-contained when browsing `businesses/`.
+Shared evidence may remain under `research/`, but each offer folder must surface the relevant conclusions.
 
-Use the canonical deployment model:
+Canonical deployment model:
 
 `Outcome × Niche × Customer Channel × System of Record × Agent Layer`
 
 Do not define a business primarily by a vendor unless the vendor itself is the product. For UAE service businesses, WhatsApp is the default first-class customer channel unless niche evidence says otherwise.
 
-Canonical portfolio scoring remains in [`OPPORTUNITIES.md`](./OPPORTUNITIES.md). Niche scoring remains in [`NICHES.md`](./NICHES.md).
+Canonical portfolio scoring: [`OPPORTUNITIES.md`](./OPPORTUNITIES.md).  
+Canonical niche selection: [`NICHES.md`](./NICHES.md).
 
-## Offer directory
+## Offer directory — recalculated 29 August 2026
 
-| Parent opportunity | Score | Stage | Folder |
-|---|---:|---|---|
-| WhatsApp + CRM Revenue Core | 95 | Candidate | [`whatsapp-crm-revenue-core/`](./whatsapp-crm-revenue-core/) |
-| Revenue Recovery & Reactivation Engine | 94 | Candidate | [`revenue-recovery-reactivation-engine/`](./revenue-recovery-reactivation-engine/) |
-| AI Voice Receptionist & Booking Agent | 94 | Candidate | [`ai-voice-receptionist-booking-agent/`](./ai-voice-receptionist-booking-agent/) |
-| Missed Lead & Appointment Conversion Engine | 93 | Candidate | [`missed-lead-appointment-conversion-engine/`](./missed-lead-appointment-conversion-engine/) |
-| HighLevel Vertical SaaS Snapshot Business-in-a-Box | 93 | Candidate | [`highlevel-vertical-saas-snapshot/`](./highlevel-vertical-saas-snapshot/) |
-| AI Support & Sales Assistant | 93 | Candidate | [`ai-support-sales-assistant/`](./ai-support-sales-assistant/) |
-| Instant Quote Generator & Quote-to-Cash System | 91 | Candidate | [`instant-quote-quote-to-cash/`](./instant-quote-quote-to-cash/) |
-| Talent Bridge Assessment & AI Interview Platform | 91 | Candidate | [`talent-bridge-assessment-ai-interview-platform/`](./talent-bridge-assessment-ai-interview-platform/) |
-| Recruitment OS / Hiring Intelligence SaaS | 91 | Candidate | [`recruitment-os-hiring-intelligence-saas/`](./recruitment-os-hiring-intelligence-saas/) |
-| Agentic Commerce Visibility & Conversion Engine | 90 | Candidate | [`agentic-commerce-visibility-conversion-engine/`](./agentic-commerce-visibility-conversion-engine/) |
-| Vertical AI Operating Systems & Agent Integration Packs | 88 | Candidate | [`vertical-ai-operating-systems-agent-integration-packs/`](./vertical-ai-operating-systems-agent-integration-packs/) |
-| Reputation & Local Visibility Engine | 88 | Candidate | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
-| UAE/GCC Talent Intelligence & Salary Data Subscription | 88 | Researching | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
-| White-Label Hiring Portal for Employers/Agencies | 88 | Researching | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
-| Niche API & Data Product Factory | 87 | Candidate | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
-| Grok Bot AI-First Revenue Operations Business-in-a-Box | 87 | Candidate | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
-| Pre-Assessed Talent Pool Subscription | 86 | Researching | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
-| Partner-Delivered Recruitment / Score Hire Model | 85 | Candidate | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
-| Assessment-as-a-Service Managed Retainer | 85 | Candidate | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
-| ChatGPT Plugin / App Factory | 84 | Candidate | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
-| Local SEO Rank-and-Rent Lead Asset Portfolio | 84 | Candidate | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
-| AI Job Board + Screened Talent Marketplace | 84 | Researching | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
-| Executive Career Accelerator / Job Search Platform | 83 | Candidate | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
-| Whop Business Blueprints | 82 | Candidate | [`whop-business-blueprints/`](./whop-business-blueprints/) |
-| HowToFindAJobInUAE Media + Recruitment Funnel | 81 | Researching | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
-| Saffa.ae Community + Trusted Local Business Marketplace | 80 | Researching | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
-| AI Website Template & Launch Kit Factory | 79 | Candidate | [`ai-website-template-launch-kit-factory/`](./ai-website-template-launch-kit-factory/) |
-| AI-First Marketplace Directory | 77 | Researching | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
+| Rank | Parent opportunity | Score | Stage | Best validated niche | Folder |
+|---:|---|---:|---|---|---|
+| **1** | **WhatsApp + CRM Revenue Core** | **95** | Candidate | HVAC/AC service contractors (92/100) | [`whatsapp-crm-revenue-core/`](./whatsapp-crm-revenue-core/) |
+| **2** | **Revenue Recovery & Reactivation Engine** | **94** | Candidate | HVAC maintenance contractors (91/100) | [`revenue-recovery-reactivation-engine/`](./revenue-recovery-reactivation-engine/) |
+| **3** | **AI Voice Receptionist & Booking Agent** | **94** | Candidate | Emergency HVAC/AC repair (91/100) | [`ai-voice-receptionist-booking-agent/`](./ai-voice-receptionist-booking-agent/) |
+| **4** | **Missed Lead & Appointment Conversion Engine** | **93** | Candidate | Dubai aesthetic clinics (88/100) | [`missed-lead-appointment-conversion-engine/`](./missed-lead-appointment-conversion-engine/) |
+| **5** | **Instant Quote Generator & Quote-to-Cash System** | **91** | Candidate | Drywall / gypsum / false-ceiling installers (87/100) | [`instant-quote-quote-to-cash/`](./instant-quote-quote-to-cash/) |
+| **6** | **AI Support & Sales Assistant** | **90** | Candidate | Dubai holiday-home operators (78/100) | [`ai-support-sales-assistant/`](./ai-support-sales-assistant/) |
+| **7** | **Talent Bridge Assessment & AI Interview Platform** | **89** | Candidate | Not yet canonically scored | [`talent-bridge-assessment-ai-interview-platform/`](./talent-bridge-assessment-ai-interview-platform/) |
+| **8** | **Agentic Commerce Visibility & Conversion Engine** | **89** | Candidate | Not yet canonically scored | [`agentic-commerce-visibility-conversion-engine/`](./agentic-commerce-visibility-conversion-engine/) |
+| **9** | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **89** | Candidate | Dubai holiday-home operators (82/100) | [`highlevel-vertical-saas-snapshot/`](./highlevel-vertical-saas-snapshot/) |
+| **10** | **Vertical AI Operating Systems & Agent Integration Packs** | **88** | Candidate | Not yet canonically scored | [`vertical-ai-operating-systems-agent-integration-packs/`](./vertical-ai-operating-systems-agent-integration-packs/) |
+| **11** | **Recruitment OS / Hiring Intelligence SaaS** | **87** | Candidate | Not yet canonically scored | [`recruitment-os-hiring-intelligence-saas/`](./recruitment-os-hiring-intelligence-saas/) |
+| **12** | **Assessment-as-a-Service Managed Retainer** | **85** | Candidate | Not yet canonically scored | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
+| **13** | **Reputation & Local Visibility Engine** | **85** | Candidate | Dubai dental / aesthetic clinics (79/100) | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
+| **14** | **White-Label Hiring Portal for Employers/Agencies** | **85** | Researching | Not yet canonically scored | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
+| **15** | **Partner-Delivered Recruitment / Score Hire Model** | **85** | Candidate | Not yet canonically scored | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
+| **16** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | Researching | Not yet canonically scored | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
+| **17** | **Niche API & Data Product Factory** | **84** | Candidate | Not yet canonically scored | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
+| **18** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84** | Candidate | Not yet canonically scored | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
+| **19** | **Executive Career Accelerator / Job Search Platform** | **81** | Candidate | Not yet canonically scored | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
+| **20** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | Candidate | MEP/HVAC tender & RFQ operations (84/100) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
+| **21** | **Pre-Assessed Talent Pool Subscription** | **81** | Researching | Not yet canonically scored | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
+| **22** | **ChatGPT Plugin / App Factory** | **79** | Candidate | Not yet canonically scored | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
+| **23** | **Whop Business Blueprints** | **79** | Candidate | Not yet canonically scored | [`whop-business-blueprints/`](./whop-business-blueprints/) |
+| **24** | **HowToFindAJobInUAE Media + Recruitment Funnel** | **78** | Researching | Not yet canonically scored | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
+| **25** | **AI Job Board + Screened Talent Marketplace** | **76** | Researching | Not yet canonically scored | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
+| **26** | **Saffa.ae Community + Trusted Local Business Marketplace** | **76** | Researching | Not yet canonically scored | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
+| **27** | **AI-First Marketplace Directory** | **72** | Researching | Not yet canonically scored | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
+| **28** | **AI Website Template & Launch Kit Factory** | **71** | Candidate | Not yet canonically scored | [`ai-website-template-launch-kit-factory/`](./ai-website-template-launch-kit-factory/) |
+
+### Portfolio rule
+
+Opportunity Score and Niche Attractiveness are deliberately separate. A high-scoring parent offer does not enter the primary sales lane until DRF has selected an exact market or defined a bounded market test. Niche research may correct parent assumptions, but its numerical score is not mechanically added to the parent score.
+
+### Current top commercial cluster
+
+1. WhatsApp + CRM Revenue Core — **95**
+2. Revenue Recovery & Reactivation — **94**
+3. AI Voice Receptionist — **94**
+4. Missed Lead Conversion — **93**
+5. Instant Quote / Quote-to-Cash — **91**
+
+The near-term UAE service strategy is to sell one measurable outcome into a strong niche, use the minimum viable system of record/delivery stack, measure commercial value, then add modules only when account data proves another leakage point.
 
 Add campaign, operations, finance or delivery subfolders only when real work exists.
