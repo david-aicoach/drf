@@ -31,8 +31,12 @@ for p in files:
         problems.append(f'{p}: failed checks {failed}')
     records.append({'path': str(p), 'name': p.name, 'score': score, 'conf': conf, 'decision': decision, 'words': len(text.split()), 'checks': checks})
 
+problem_file = ROOT / '_V3-VALIDATION-PROBLEMS.md'
 if problems:
+    problem_file.write_text('# V3 Validation Problems\n\n' + '\n'.join(f'- `{x}`' for x in problems) + '\n')
     raise SystemExit('\n'.join(problems))
+elif problem_file.exists():
+    problem_file.unlink()
 
 # Reconcile canonical register numeric/decision fields from dossier metadata and sort the ranked table.
 reg = Path('businesses/NICHES.md')
@@ -68,8 +72,7 @@ for line in lines[row_start:row_end]:
     cols[10] = f' **{r["decision"]}** '
     if old_score != r['score'] or old_conf != r['conf']:
         cols[11] = f' Comprehensive v3 research reconciles this niche to **{r["score"]}/100** with **{r["conf"]}%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. '
-    new_line = '|'.join(cols)
-    updated_rows.append((r['score'], new_line))
+    updated_rows.append((r['score'], '|'.join(cols)))
 
 ranked = [x for x in updated_rows if x[0] is not None]
 other = [x for x in updated_rows if x[0] is None]
@@ -87,11 +90,9 @@ r = r.replace('**Comprehensive v2**', '**Comprehensive v3**')
 r = r.replace('Evidence note v1', '**Comprehensive v3**')
 r = r.replace('## Comprehensive v2 requirements', '## Comprehensive v3 requirements')
 r = r.replace('A v2 niche dossier must support an investment/market-entry decision', 'A v3 niche dossier must support an investment/market-entry decision')
-if 'SEO and AI-discovery/GEO' not in r:
-    r = r.replace('and a pass/fail live-validation plan.', 'and a pass/fail live-validation plan. V3 additionally requires niche-specific SEO competition/content strategy and AI-discovery/GEO strategy grounded in normal indexing, entity authority, sourceable evidence and third-party trust signals.')
 readme.write_text(r)
 
-# Produce deterministic completion audit.
+# Deterministic completion audit.
 report = ['# Comprehensive Niche Research v3 Completion Audit', '', '**Date:** 29 August 2026  ', '**Governing issue:** #46  ', '**Status:** COMPLETE', '', 'All 31 canonical niche dossiers passed the required structural checks below. Scores and evidence confidence were reconciled back into `businesses/NICHES.md` and the ranked table was re-sorted by current score.', '', '## Validation checks', '', '- comprehensive v3 marker/standard;', '- competitive analysis;', '- SEO opportunity/competition;', '- AI discovery/GEO;', '- source ledger/sources;', '- live-validation plan.', '', '## Dossiers', '', '| # | File | Score | Evidence | Decision | Words |', '|---:|---|---:|---:|---|---:|']
 for i, rec in enumerate(records, 1):
     report.append(f'| {i:02d} | `{rec["name"]}` | **{rec["score"]}/100** | **{rec["conf"]}%** | {rec["decision"]} | {rec["words"]:,} |')
