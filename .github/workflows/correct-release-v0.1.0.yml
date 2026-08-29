@@ -1,0 +1,97 @@
+name: Correct DRF release to v0.1.0
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/correct-release-v0.1.0.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: correct-release-v0.1.0
+  cancel-in-progress: false
+
+jobs:
+  correct-release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      WRONG_TAG: v1.0.0
+      TAG: v0.1.0
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify Issue 29 is closed
+        shell: bash
+        run: |
+          state="$(gh issue view 29 --repo "$GITHUB_REPOSITORY" --json state --jq '.state')"
+          if [ "$state" != "CLOSED" ]; then
+            echo "Issue #29 is still $state. Release correction will not proceed."
+            exit 1
+          fi
+
+      - name: Remove mistaken v1.0.0 release and tag
+        shell: bash
+        run: |
+          if gh release view "$WRONG_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release delete "$WRONG_TAG" --repo "$GITHUB_REPOSITORY" --cleanup-tag --yes
+          elif git ls-remote --exit-code --tags origin "refs/tags/$WRONG_TAG" >/dev/null 2>&1; then
+            git push origin ":refs/tags/$WRONG_TAG"
+          else
+            echo "No mistaken $WRONG_TAG release/tag remains."
+          fi
+
+      - name: Verify mistaken v1.0.0 is gone
+        shell: bash
+        run: |
+          if gh release view "$WRONG_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Mistaken $WRONG_TAG release still exists."
+            exit 1
+          fi
+          if git ls-remote --exit-code --tags origin "refs/tags/$WRONG_TAG" >/dev/null 2>&1; then
+            echo "Mistaken $WRONG_TAG tag still exists."
+            exit 1
+          fi
+
+      - name: Check v0.1.0 state
+        id: gate
+        shell: bash
+        run: |
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "v0.1.0 already exists; no new release required."
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG exists without a GitHub release. Refusing automatic publication."
+            exit 1
+          fi
+
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish DRF v0.1 foundation preview
+        if: steps.gate.outputs.publish == 'true'
+        shell: bash
+        run: |
+          gh release create "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target main \
+            --title "DRF v0.1 — Foundation Preview" \
+            --notes-file RELEASE-NOTES-v0.1.0.md \
+            --prerelease
+
+      - name: Verify corrected release
+        shell: bash
+        run: |
+          gh release view "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --json tagName,name,isDraft,isPrerelease,url

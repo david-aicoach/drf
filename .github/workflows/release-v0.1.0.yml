@@ -1,4 +1,4 @@
-name: Release DRF v1.0.0
+name: Release DRF v0.1.0
 
 on:
   issues:
@@ -10,7 +10,7 @@ permissions:
   issues: read
 
 concurrency:
-  group: release-v1.0.0
+  group: release-v0.1.0
   cancel-in-progress: false
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
-      TAG: v1.0.0
+      TAG: v0.1.0
     steps:
       - name: Checkout current main
         uses: actions/checkout@v4
@@ -32,7 +32,7 @@ jobs:
         run: |
           state="$(gh issue view 29 --repo "$GITHUB_REPOSITORY" --json state --jq '.state')"
           if [ "$state" != "CLOSED" ]; then
-            echo "Issue #29 is still $state. v1.0.0 will not be published."
+            echo "Issue #29 is still $state. v0.1.0 will not be published."
             exit 1
           fi
 
@@ -41,7 +41,7 @@ jobs:
         shell: bash
         run: |
           if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            echo "v1.0.0 already exists; nothing to do."
+            echo "v0.1.0 already exists; nothing to do."
             echo "publish=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
@@ -53,15 +53,16 @@ jobs:
 
           echo "publish=true" >> "$GITHUB_OUTPUT"
 
-      - name: Publish first GitHub release
+      - name: Publish first DRF prerelease
         if: steps.gate.outputs.publish == 'true'
         shell: bash
         run: |
           gh release create "$TAG" \
             --repo "$GITHUB_REPOSITORY" \
             --target main \
-            --title "DRF v1.0.0 — Foundation Release" \
-            --notes-file RELEASE-NOTES-v1.0.0.md
+            --title "DRF v0.1 — Foundation Preview" \
+            --notes-file RELEASE-NOTES-v0.1.0.md \
+            --prerelease
 
       - name: Verify published release
         if: steps.gate.outputs.publish == 'true'

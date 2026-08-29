@@ -1,10 +1,12 @@
-# DRF v1.0.0 — Foundation Release
+# DRF v0.1 — Foundation Preview
 
-DRF's first release establishes the durable operating foundation for a GitHub-native Revenue Factory: research opportunities, choose high-value niches, package measurable outcomes, execute through the smallest reliable stack, and feed evidence back into the system.
+DRF v0.1 is the first versioned checkpoint for David's Revenue Factory. It establishes the operating foundation, but it is **not** the full public v1.0 release.
 
-## What this release establishes
+This release captures the current GitHub-native system for researching opportunities, selecting high-value niches, packaging measurable business outcomes, choosing modular delivery architecture and feeding evidence back into the factory.
 
-### GitHub-native operating system
+## What v0.1 establishes
+
+### GitHub-native operating foundation
 
 - Root `AGENTS.md` as the shared repository contract.
 - GitHub Issues as durable work orders and acceptance criteria.
@@ -14,7 +16,7 @@ DRF's first release establishes the durable operating foundation for a GitHub-na
 
 ### Outcome-first modular commercial architecture
 
-DRF now uses the governing commercial model:
+DRF uses the governing commercial model:
 
 `Outcome × Niche × Customer Channel × System of Record × Agent Layer`
 
@@ -33,24 +35,34 @@ For UAE service businesses, WhatsApp is treated as the default first-class custo
 
 ### Initial revenue portfolio
 
-The repository now contains researched and scored opportunities spanning revenue recovery, missed-lead conversion, AI voice, support/sales assistants, instant quoting, vertical SaaS, AI operating systems, recruitment/assessment products, data products, local visibility and other recurring-revenue models.
+The repository contains researched and scored opportunities spanning revenue recovery, missed-lead conversion, AI voice, support/sales assistants, instant quoting, vertical SaaS, AI operating systems, recruitment/assessment products, data products, local visibility and other recurring-revenue models.
 
-Dedicated deeper business research includes Grok Bot / agentic revenue operations and the UAE WhatsApp-first delivery architecture, with HighLevel, Kapso, HubSpot and external agent layers evaluated as components rather than client-facing product definitions.
+Dedicated deeper research includes Grok Bot / agentic revenue operations and the UAE WhatsApp-first delivery architecture, with HighLevel, Kapso, HubSpot and external agent layers treated as implementation components rather than client-facing product definitions.
 
 ### Research and execution discipline
 
-DRF's commercial rules prioritise:
+DRF prioritises:
 
 `SELL → USE → INTEGRATE → AUTOMATE → BUILD`
 
 The system distinguishes market evidence from hype, operating proof from installation/connection, deterministic automation from agent judgement, and measurable commercial traction from completed technical work.
 
-## Important status
+## Pre-1.0 status
 
-This is a **foundation release**, not a claim that every scored business has been commercially proven.
+This is an **early foundation preview / prerelease**.
+
+It does not claim that:
+
+- the DRF operating model is complete;
+- every scored opportunity has been commercially proven;
+- all agent/runtime integrations are production-ready;
+- the public product experience is final;
+- the repository has reached the stability expected of v1.0.
+
+The 0.x line exists specifically so DRF can continue to iterate, test, simplify and harden before a future full public `v1.0.0` milestone.
 
 Opportunity scores, niche scores and architecture-fit estimates remain decision-support instruments until replaced by live customer, reliability, unit-economics and retention evidence.
 
 ## Release gate
 
-This release is published only after Issue #29 completes the current WhatsApp/CRM delivery-stack reconciliation so the first public release includes the corrected UAE channel architecture and cost model.
+This prerelease is published only after Issue #29 completes the current WhatsApp/CRM delivery-stack reconciliation so v0.1 includes the corrected UAE channel architecture and cost model.
