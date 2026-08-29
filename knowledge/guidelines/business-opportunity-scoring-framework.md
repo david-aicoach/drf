@@ -1,17 +1,20 @@
 # DRF Business Opportunity Scoring Framework
 
 **Status:** Canonical guideline  
-**Version:** 1.2  
+**Version:** 1.3  
 **Date:** 29 August 2026  
 **Original governing issue:** #11  
 **MRR revision issue:** #20  
-**Execution-velocity revision issue:** #24
+**Execution-velocity revision issue:** #24  
+**Niche-selection revision issue:** #26
 
 ## Purpose
 
 Use this framework to compare DRF business opportunities consistently, expose missing research, and prioritise businesses that can produce durable recurring revenue with low proportional human labour **and can reach the market without unnecessary build resistance**.
 
 The framework deliberately separates commercial attractiveness from execution velocity. A strategically excellent business can therefore remain highly rated while being sequenced behind a nearly-as-good opportunity that can be sold next week.
+
+**This framework selects the business/product vehicle. It does not by itself select the market.** Once an opportunity is attractive, apply the separate canonical `niche-attractiveness-scoring-framework.md` to score `product × vertical × sub-niche × geography × ICP` before choosing a beachhead market.
 
 ## 1. Opportunity Score — 0 to 100
 
@@ -188,7 +191,21 @@ If evidence does not exist, mark it **Missing / Needs more research** rather tha
 
 Tie-break similar opportunities by: (1) higher MRR, (2) higher Execution Velocity, (3) higher AI Autonomy, (4) faster first revenue, (5) lower startup capital.
 
-## 10. Canonical implementation
+## 10. Second-stage niche selection
+
+Once an opportunity passes portfolio screening, apply:
+
+`knowledge/guidelines/niche-attractiveness-scoring-framework.md`
+
+The niche framework scores Pain/Urgency, Purchasing Power, Reachability, Growth, Volume/Density, Underserved/Competition Gap, Measurable ROI, Product-System Fit, Recurring Pain/Retention and Sales/Fulfilment Simplicity.
+
+Use this hierarchy:
+
+`market → vertical → sub-niche → geography → firmographic ICP → trigger/problem → product`
+
+A high Opportunity Score never justifies shotgun distribution across generic industries. Select a beachhead niche through evidence, then build the offer, messaging, snapshot and acquisition system around that niche.
+
+## 11. Canonical implementation
 
 Portfolio: `businesses/OPPORTUNITIES.md`
 
@@ -208,5 +225,7 @@ Every active opportunity must show at minimum:
 - all 15 Opportunity Score factors
 - next action
 - canonical detail/research link
+
+For verticalised offers, also maintain a separate ranked niche table using `niche-attractiveness-scoring-framework.md` before selecting the market.
 
 Markdown remains canonical. CSV/XLSX may support analytics but must not silently become conflicting truth.
