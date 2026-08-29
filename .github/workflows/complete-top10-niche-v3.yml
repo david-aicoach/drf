@@ -1,4 +1,4 @@
-name: Complete top ten niche v3
+name: Complete niche research v3
 
 on:
   push:
@@ -9,22 +9,24 @@ permissions:
   contents: write
 
 jobs:
-  retrofit:
+  reconcile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Run niche retrofit
+      - name: Ensure top ten retrofit is applied
         run: python3 technical/automation/_tmp_complete_top10_niche_v3.py
-      - name: Commit research updates
+      - name: Validate and reconcile all niche dossiers
+        run: python3 technical/automation/_tmp_reconcile_niche_v3.py
+      - name: Commit canonical reconciliation
         run: |
           git config user.name 'DRF Research Automation'
           git config user.email 'actions@users.noreply.github.com'
-          git add research/niches/01-whatsapp-crm-hvac-service-contractors.md research/niches/02-ai-voice-emergency-hvac-contractors.md research/niches/03-revenue-recovery-hvac-maintenance-contractors.md research/niches/04-whatsapp-crm-specialist-mep-contractors.md research/niches/05-whatsapp-crm-dubai-car-rental.md research/niches/06-whatsapp-crm-dubai-aesthetic-clinics.md research/niches/07-missed-lead-dubai-car-rental.md research/niches/08-revenue-recovery-automotive-workshops.md research/niches/09-whatsapp-crm-dental-implant-clinics.md research/niches/10-whatsapp-crm-automotive-workshops.md
+          git add research/niches businesses/NICHES.md
           if git diff --cached --quiet; then
             echo 'No changes required'
           else
-            git commit -m 'Complete top ten niche SEO and AI discovery v3'
+            git commit -m 'Complete and reconcile all 31 niche research dossiers v3'
             git push
           fi
