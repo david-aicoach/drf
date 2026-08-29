@@ -18,8 +18,10 @@ jobs:
       - name: Ensure top ten retrofit is applied
         run: python3 technical/automation/_tmp_complete_top10_niche_v3.py
       - name: Validate and reconcile all niche dossiers
+        id: validate
+        continue-on-error: true
         run: python3 technical/automation/_tmp_reconcile_niche_v3.py
-      - name: Commit canonical reconciliation
+      - name: Commit reconciliation or diagnostic
         run: |
           git config user.name 'DRF Research Automation'
           git config user.email 'actions@users.noreply.github.com'
@@ -27,6 +29,9 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No changes required'
           else
-            git commit -m 'Complete and reconcile all 31 niche research dossiers v3'
+            git commit -m 'Run niche v3 validation and reconciliation'
             git push
           fi
+      - name: Fail if validation failed
+        if: steps.validate.outcome == 'failure'
+        run: exit 1
