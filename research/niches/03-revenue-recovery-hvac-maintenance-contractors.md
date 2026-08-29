@@ -1,14 +1,14 @@
 # Revenue Recovery × HVAC Maintenance Contractors
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Outcome  
 **Geography:** UAE, priority Dubai  
 **Decision:** **Sniper**  
 **Niche Score:** **91/100**  
 **Evidence Confidence:** **87%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -484,3 +484,45 @@ Pause if:
 - HighLevel WhatsApp pricing/billing: https://help.gohighlevel.com/support/solutions/articles/155000001428-whatsapp-pricing-and-billing-full-guide
 - Kapso WhatsApp pricing explanation: https://kapso.com/guides/whatsapp-pricing/how-pricing-works/what-meta-charges-for
 - DRF delivery stack matrix: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- HVAC quote follow up software;
+- recover lost HVAC quotes;
+- HVAC sales follow up;
+- AMC renewal software UAE;
+- AC maintenance contract renewal reminders;
+- stale quotation recovery;
+- HVAC customer reactivation;
+
+**Competitive read:** Most search competition is broader CRM/FSM, sales-follow-up content and HVAC marketing services rather than a precise quote-ageing plus AMC-renewal product, leaving a useful long-tail outcome gap.
+
+**Recommended money page:** `/solutions/hvac-revenue-recovery-uae/ — HVAC Quote & AMC Revenue Recovery`.
+
+**Supporting content cluster:** quote-ageing calculator; AMC renewal checklist; why HVAC quotes go cold; 7/14/30-day follow-up; stale-customer reactivation; CRM/FSM boundaries; recovery case studies.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "how do HVAC companies follow up quotes";
+- "best way to automate AC maintenance contract renewals";
+- "how much revenue do HVAC companies lose from stale quotes";
+- "HVAC reactivation system UAE";
+
+**Best authority asset to build:** UAE HVAC Quote Ageing & AMC Renewal Benchmark with transparent recoverable-pool definitions and case-study methodology.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

@@ -1,14 +1,14 @@
 # Revenue Recovery × Automotive Workshops
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Outcome  
 **Geography:** UAE, priority Dubai  
 **Decision:** **Sniper outcome — preferably delivered through the workshop's existing management system/data**  
 **Niche Score:** **86/100** — revised from 89 after local workshop-software review  
 **Evidence Confidence:** **91%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -510,3 +510,44 @@ One cohort, preferably declined work with clear line-item history, 30–60 days.
 - GRX pricing: https://shop.grx.ae/pricing
 - AutoFixia: https://www.autofixia.com/
 - GarageBuddy Dubai service pricing (local provider/planning proxy): https://garagebuddyuae.com/car-service-prices-dubai-2026/
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- garage customer reactivation UAE;
+- auto workshop declined estimate follow up;
+- car service reminder software UAE;
+- garage CRM follow up;
+- automotive workshop revenue recovery;
+- declined repair recovery;
+
+**Competitive read:** UAE-native DMS products GRX, Garij and AutoFixia already cover customers, vehicles, estimates, jobs, reminders, invoicing and WhatsApp. The search wedge is managed recovered gross profit through incumbent data, not feature duplication.
+
+**Recommended money page:** `/solutions/garage-revenue-recovery-uae/ — Declined Work & Service Revenue Recovery for UAE Workshops`.
+
+**Supporting content cluster:** declined-estimate recovery; overdue-service campaigns; DMS vs managed recovery; recovery ROI; GRX/Garij/AutoFixia integration; case study.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "how do garages recover declined repair estimates";
+- "best customer reactivation system for UAE workshops";
+- "does garage software already send service reminders";
+- "how to improve workshop repeat revenue";
+
+**Best authority asset to build:** UAE Workshop Declined-Estimate Recovery Benchmark with completed gross profit, not message or appointment vanity metrics.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

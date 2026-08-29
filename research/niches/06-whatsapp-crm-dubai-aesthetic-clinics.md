@@ -1,14 +1,14 @@
 # WhatsApp + CRM × Dubai Aesthetic Clinics
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Foundation  
 **Geography:** Dubai  
 **Decision:** **Sniper**  
 **Niche Score:** **90/100**  
 **Evidence Confidence:** **91%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -514,3 +514,44 @@ One clinic with ≥150 monthly qualified leads is ideal for signal, though small
 - Super Clinic CRM: https://supercliniccrm.com/
 - MOVO-X Dubai aesthetic clinic software: https://www.movo-x.com/locations/uae/dubai/aesthetic-clinic-software
 - DRF WhatsApp delivery stack: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- aesthetic clinic CRM Dubai;
+- WhatsApp CRM for clinics UAE;
+- clinic lead management Dubai;
+- cosmetic clinic CRM;
+- aesthetic clinic lead follow up;
+- clinic consultation booking automation;
+
+**Competitive read:** Clinic-management/PMS vendors, generic CRM tools and specialised WhatsApp CRM marketers already target this intent; current 2026 Dubai clinic/salon CRM comparison content confirms active SEO competition. Position around paid-lead-to-consultation visibility and conversion.
+
+**Recommended money page:** `/solutions/aesthetic-clinic-lead-conversion-dubai/ — Aesthetic Clinic Lead-to-Consultation Revenue System`.
+
+**Supporting content cluster:** WhatsApp CRM comparison; response benchmark; paid-lead leakage calculator; consultation/no-show recovery; clinic CRM vs PMS; compliant messaging; case studies.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "best CRM for aesthetic clinics in Dubai";
+- "WhatsApp CRM for cosmetic clinic UAE";
+- "how to convert aesthetic clinic leads faster";
+- "clinic CRM vs practice management software";
+
+**Best authority asset to build:** Dubai Aesthetic Lead Response & Consultation Benchmark with facility/credential-safe methodology and real funnel data.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

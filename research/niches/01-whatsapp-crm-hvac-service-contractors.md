@@ -1,14 +1,14 @@
 # WhatsApp + CRM × HVAC/AC Service Contractors
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Foundation  
 **Geography:** UAE, priority Dubai  
 **Decision:** **Sniper**  
 **Niche Score:** **92/100**  
 **Evidence Confidence:** **88%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -575,3 +575,45 @@ Pause/reposition if:
 - Kapso pricing: https://kapso.com/pricing
 - DRF Kapso architecture: `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md`
 - DRF delivery-cost matrix: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- HVAC CRM UAE;
+- WhatsApp CRM for AC maintenance companies;
+- HVAC lead management software;
+- HVAC quotation follow-up software;
+- HVAC AMC renewal software;
+- AC maintenance CRM;
+- field service CRM UAE;
+
+**Competitive read:** Generic CRM and field-service vendors such as HighLevel, Zoho, HubSpot and Odoo compete with HVAC/FSM products. The positioning gap is enquiry, quote and AMC revenue control rather than generic CRM features.
+
+**Recommended money page:** `/solutions/hvac-revenue-crm-uae/ — WhatsApp Revenue CRM for UAE HVAC Contractors`.
+
+**Supporting content cluster:** HVAC quote follow-up; AMC renewal system; HVAC WhatsApp CRM; CRM vs field-service software; UAE HVAC response benchmark; recovered-revenue case studies.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "best CRM for an HVAC company in UAE";
+- "how do AC maintenance companies manage WhatsApp leads";
+- "how to stop HVAC quotes going cold";
+- "best way to automate AMC renewals in Dubai";
+
+**Best authority asset to build:** UAE HVAC Enquiry & Quote Leakage Benchmark using real response-time, quote-ageing, AMC renewal and recovered-gross-profit data.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

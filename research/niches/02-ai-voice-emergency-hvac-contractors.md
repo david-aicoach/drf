@@ -1,14 +1,14 @@
 # AI Voice × Emergency HVAC/AC Repair Contractors
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Outcome  
 **Geography:** Dubai / UAE  
 **Decision:** **Sniper**  
 **Niche Score:** **91/100**  
 **Evidence Confidence:** **87%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -543,3 +543,44 @@ Stop/reconfigure if:
 - HighLevel LC Phone pricing guide, modified 20 Jul 2026: https://help.gohighlevel.com/support/solutions/articles/48001223556
 - HighLevel outbound Voice AI compliance checks: https://help.gohighlevel.com/support/solutions/articles/155000006679-voice-ai-outbound-calling-compliance-checks
 - DRF HighLevel AI economics: `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- AI receptionist for HVAC;
+- HVAC answering service UAE;
+- 24/7 AC call answering Dubai;
+- HVAC AI voice agent;
+- missed call automation HVAC;
+- after-hours AC booking service;
+
+**Competitive read:** Generic AI-voice platforms, BPO/call-answering providers and field-service/CRM voice products compete directly. The page should sell measurable urgent-job capture, not AI voice novelty.
+
+**Recommended money page:** `/solutions/hvac-missed-call-booking-uae/ — 24/7 HVAC Missed-Call & Booking Recovery`.
+
+**Supporting content cluster:** after-hours HVAC call benchmark; AI voice vs human answering; call-cost/booking ROI; safe call flows; multilingual UAE handling; overflow-only case study.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "best AI receptionist for HVAC companies";
+- "how can an AC company answer calls after hours";
+- "AI voice agent for emergency AC bookings UAE";
+- "HVAC answering service vs AI receptionist";
+
+**Best authority asset to build:** UAE HVAC Missed Call & Booking Benchmark based on instrumented contractors, with answer rate, qualified-call mix, booked jobs and cost per incremental booking.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

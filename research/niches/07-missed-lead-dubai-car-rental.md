@@ -1,14 +1,14 @@
 # Missed Lead × Dubai Car-Rental Operators
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Outcome  
 **Geography:** Dubai  
 **Decision:** **Sniper**  
 **Niche Score:** **87/100** — revised from 89 after specialist-software competition review  
 **Evidence Confidence:** **89%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -427,3 +427,44 @@ Use one operator with obvious baseline leakage. Prefer an A/B or pre/post design
 - Settli: https://www.settli.ae/
 - Floti: https://floti.ae/
 - DRF delivery stack: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- car rental lead follow up;
+- WhatsApp car rental booking automation;
+- car rental enquiry response software;
+- missed lead recovery car rental;
+- car rental speed to lead;
+- abandoned car rental quote follow up;
+
+**Competitive read:** Rental OS vendors, CRM/WhatsApp tools and agencies solve parts of the workflow. Outcome-specific response-to-booking content is less crowded than generic rental software.
+
+**Recommended money page:** `/solutions/car-rental-missed-lead-recovery-dubai/ — Car Rental Missed-Lead & Quote Recovery`.
+
+**Supporting content cluster:** first-response benchmark; quote follow-up sequences; comparison-shopping behaviour; rental-OS integration; WhatsApp consent; recovered-booking cases.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "how quickly should a car rental company reply in Dubai";
+- "how to automate WhatsApp car rental enquiries";
+- "best missed lead system for car rental";
+- "how to recover unbooked rental quotes";
+
+**Best authority asset to build:** Dubai Car Rental Response & Booking Benchmark using real timestamp-to-booking distributions.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

@@ -1,14 +1,14 @@
 # WhatsApp + CRM × Automotive Workshops
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Foundation  
 **Geography:** UAE, priority Dubai  
 **Decision:** **Sniper only for workshops whose existing DMS lacks a strong customer/communication layer**  
 **Niche Score:** **85/100** — revised from 89 after deep incumbent-software review  
 **Evidence Confidence:** **92%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -514,3 +514,44 @@ If modern DMS adoption dominates, retire standalone Workshop CRM and sell:
 - AutoFixia: https://www.autofixia.com/
 - Invoca Automotive 2026: https://www.invoca.com/reports/the-invoca-automotive-lead-conversion-benchmarks-report-2026
 - DRF delivery stack: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- garage management software UAE;
+- workshop management software Dubai;
+- auto repair software UAE;
+- garage CRM Dubai;
+- workshop WhatsApp software;
+- digital job cards UAE;
+
+**Competitive read:** This is a heavily contested UAE SERP. GRX, Garij and AutoFixia have dedicated local pages, trials and broad operational suites. GRX currently publishes annual UAE plan pricing on its Dubai page. iMPLEMENTAi should rank as an independent selection/implementation/outcome layer, not another generic DMS.
+
+**Recommended money page:** `/solutions/uae-workshop-digital-revenue-layer/ — UAE Workshop Software Selection, Migration & Revenue Layer`.
+
+**Supporting content cluster:** UAE garage-software comparison; Excel/WhatsApp migration; DMS selection; customer-recovery integration; AI voice integration; implementation checklist.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "best garage management software UAE 2026";
+- "Garij vs GRX vs AutoFixia";
+- "best workshop CRM Dubai";
+- "how to digitise a UAE auto workshop";
+
+**Best authority asset to build:** Dated UAE Garage Software Comparison plus migration/adoption benchmark and outcome-module compatibility matrix.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

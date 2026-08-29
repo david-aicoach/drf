@@ -1,14 +1,14 @@
 # WhatsApp + CRM × Dental Implant / Full-Arch Clinics
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Foundation  
 **Geography:** Dubai  
 **Decision:** **Sniper**  
 **Niche Score:** **89/100**  
 **Evidence Confidence:** **92%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -532,3 +532,44 @@ Prefer ≥50 premium leads/month or enough volume for 60–90 day measurement.
 - Modirify UAE dental software: https://modirify.com/ae/en/
 - MOHAP Federal Law No. 2 of 2019 health ICT: https://uaephl.mohap.gov.ae/en/health-policies-and-legislations-advocacy/health-legislations?itemId=1f1ec80d-5e69-4118-b476-1821bf4236a6
 - Invoca Healthcare 2026: https://www.invoca.com/reports/the-invoca-healthcare-lead-conversion-benchmarks-report-2026
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- dental CRM Dubai;
+- WhatsApp CRM for dentists UAE;
+- dental implant lead management;
+- dental patient follow up software;
+- implant consultation CRM;
+- dental lead conversion Dubai;
+
+**Competitive read:** Dental-practice software, generic WhatsApp CRM vendors and dental marketing agencies compete strongly. The B2B page should own implant lead-to-consultation pipeline intent rather than consumer treatment searches.
+
+**Recommended money page:** `/solutions/dental-implant-lead-crm-dubai/ — Dental Implant Lead-to-Consultation CRM`.
+
+**Supporting content cluster:** implant lead funnel; CRM vs dental PMS; WhatsApp consent; no-show rescue; treatment-acceptance follow-up; pipeline benchmark; case study.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "best CRM for a dental implant clinic in Dubai";
+- "WhatsApp CRM for dentists UAE";
+- "how to follow up dental implant leads";
+- "dental CRM vs practice management software";
+
+**Best authority asset to build:** Dubai Implant Lead-to-Consultation Benchmark with DHA/licensing-aware entity evidence and accepted-case attribution.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+

@@ -1,14 +1,14 @@
 # WhatsApp + CRM × Dubai Car-Rental Operators
 
-**Research version:** 2.0 — comprehensive dossier  
+**Research version:** 3.0 — comprehensive dossier  
 **Date:** 29 August 2026  
-**Governing issue:** #44  
+**Governing issue:** #46  
 **Commercial layer:** Foundation  
 **Geography:** Dubai  
 **Decision:** **Sniper — but only as an acquisition/conversation overlay where the rental OS does not already solve it**  
 **Niche Score:** **87/100** — revised from 90 after deep local competitor review  
 **Evidence Confidence:** **91%**  
-**Research standard:** `research/niches/_research-standard-v2.md`
+**Research standard:** `research/niches/_research-standard-v3.md`
 
 ## 1. Executive conclusion
 
@@ -548,3 +548,44 @@ Record incumbent platform and classify A/B/C/D as above.
 **DRF infrastructure**
 - `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
 - `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md`
+
+## SEO + AI discovery v3 addendum
+
+### SEO opportunity and competition
+
+High-intent B2B themes:
+
+- car rental software Dubai;
+- car rental CRM Dubai;
+- WhatsApp CRM car rental;
+- rent a car management software UAE;
+- car rental booking management system;
+- car rental lead management;
+
+**Competitive read:** UAE/GCC rental operating systems such as Settli, Cardash, PRO-VIA, Fleexa, Charm and Floti make broad car-rental-software intent highly competitive. The defensible search wedge is pre-booking WhatsApp enquiry conversion around the incumbent rental OS.
+
+**Recommended money page:** `/solutions/car-rental-lead-conversion-dubai/ — Car Rental WhatsApp Lead Conversion Overlay`.
+
+**Supporting content cluster:** rental OS vs CRM; response-time benchmark; availability-enquiry leakage; WhatsApp follow-up; UAE rental software comparison; integration case study.
+
+Do not invent search-volume or CPC numbers. Treat current SERPs as competitive surfaces; validate demand separately through Search Console/keyword tools and live enquiries.
+
+### AI discovery / GEO
+
+Priority buyer prompts to monitor:
+
+- "best car rental software in Dubai";
+- "how should Dubai car rental companies manage WhatsApp leads";
+- "CRM vs rental management software";
+- "how to improve car rental enquiry conversion";
+
+**Best authority asset to build:** Current UAE car-rental software comparison plus a Dubai response-time and booking benchmark using operator timestamps.
+
+
+### AI-discovery execution rules
+
+Use the shared DRF playbook rather than claiming a special AI-ranking hack: keep important pages indexable, allow legitimate search crawlers and `OAI-SearchBot` where ChatGPT Search discovery is desired, maintain consistent organisation/service/location entity facts, use accurate structured data only for visible facts, and build third-party authority through genuine reviews, directories, partners and client evidence. Publish dated methodology, comparisons and original local benchmark data that an answer engine can quote. Monitor the prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+
+
