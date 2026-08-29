@@ -1,0 +1,40 @@
+name: DRF CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: DRF CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate repository contracts
+        run: python3 technical/automation/validate_repository.py
+
+      - name: Validate YAML syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          ruby -e 'require "yaml"; Dir.glob("**/*.{yml,yaml}", File::FNM_DOTMATCH).sort.each { |f| YAML.load_file(f); puts "YAML OK: #{f}" }'
+
+      - name: Run declared software tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          found=false
+          if [ -d software ]; then
+            while IFS= read -r -d '' test_script; do
+              found=true
+              echo "Running ${test_script}"
+              bash "$test_script"
+            done < <(find software -mindepth 2 -maxdepth 2 -type f -name test.sh -print0 | sort -z)
+          fi
+          if [ "$found" = false ]; then
+            echo 'No software test.sh files yet; nothing to run.'
+          fi

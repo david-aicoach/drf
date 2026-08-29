@@ -1,0 +1,28 @@
+name: Setup DRF repository
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/setup-repository.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  labels:
+    if: github.actor == 'tbhrc'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Ensure routing labels
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh label create 'needs-research' --repo "$GITHUB_REPOSITORY" --color '6f42c1' --description 'Research required before execution' --force
+          gh label create 'research-complete' --repo "$GITHUB_REPOSITORY" --color '0e8a16' --description 'Research complete; ready for execution' --force
+          gh label create 'revenue-priority' --repo "$GITHUB_REPOSITORY" --color 'fbca04' --description 'Direct revenue/traction priority' --force
+          echo 'DRF routing labels are configured.' >> "$GITHUB_STEP_SUMMARY"
