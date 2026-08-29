@@ -1,95 +1,66 @@
 # DRF Business Opportunity Scoring Framework
 
 **Status:** Canonical guideline  
-**Version:** 1.1  
+**Version:** 1.2  
 **Date:** 29 August 2026  
 **Original governing issue:** #11  
-**MRR revision issue:** #20
+**MRR revision issue:** #20  
+**Execution-velocity revision issue:** #24
 
 ## Purpose
 
-Use this framework to compare DRF business opportunities consistently, expose missing research, and prevent attractive ideas from receiving capital simply because they sound exciting.
+Use this framework to compare DRF business opportunities consistently, expose missing research, and prioritise businesses that can produce durable recurring revenue with low proportional human labour **and can reach the market without unnecessary build resistance**.
 
-DRF is deliberately biased toward businesses that can produce **durable monthly recurring revenue with low proportional human labour**. Recurring revenue is therefore a first-class weighted factor rather than an implied benefit hidden inside scalability or margins.
+The framework deliberately separates commercial attractiveness from execution velocity. A strategically excellent business can therefore remain highly rated while being sequenced behind a nearly-as-good opportunity that can be sold next week.
 
-The framework has three separate scoring layers:
+## 1. Opportunity Score — 0 to 100
 
-1. **Opportunity Score — 0 to 100**: commercial attractiveness and operating quality.
-2. **Evidence Confidence — 0 to 100%**: how strongly the score is supported by current evidence.
-3. **Research Completeness — 0 to 100%**: how much of the required research has actually been completed.
-
-Evidence Confidence and Research Completeness never mathematically alter the Opportunity Score. They are independent decision controls.
-
-A fourth derived metric, **AI Autonomy Score**, measures how independently AI can build, market and deliver the business.
-
----
-
-## 1. Opportunity Score — 100 points
-
-Score every factor from **0 to 10**. Multiply by its weight. The weights sum to 100.
+Score every factor from **0 to 10** and multiply by its weight. Weights sum to 100.
 
 | Factor | Weight | Research question |
 |---|---:|---|
-| Market Size Now | 9 | How large is the current addressable market? Look for buyers, spend, transactions, TAM/SAM and competitor/platform scale. |
-| Market Growth | 9 | Is demand growing? Research YoY growth, adoption, investment, search trends and category expansion. |
-| Timing / First-Mover Window | 5 | Is this early enough for positioning advantage without being too early for demand? |
-| Willingness to Pay | 7 | Is there evidence that customers pay meaningful prices for the outcome? |
+| Market Size Now | 9 | How large is the current addressable market? |
+| Market Growth | 9 | Is demand growing? |
+| Timing / First-Mover Window | 5 | Is this early enough for advantage without being too early for demand? |
+| Willingness to Pay | 7 | Is there evidence customers pay meaningful prices for the outcome? |
 | AI Buildability | 7 | How much of creating the product/business can AI perform reliably? |
-| AI Marketability | 7 | How much of SEO, content, outreach, listing optimisation, advertising and funnel operation can AI perform? |
-| AI Deliverability | 9 | How much of fulfilment can AI execute repeatedly after a sale? |
-| Low Human Dependency | 4 | How little mandatory human labour, meetings, judgement or founder involvement is required? Higher is better. |
-| Startup Capital Efficiency | 6 | How cheaply can the business reach a credible first-sale test? Higher score = lower capital requirement. |
-| Speed to Revenue | 6 | How quickly can it realistically collect first revenue? |
-| Margin Potential | 5 | What contribution can remain after platform fees, inference, labour, support, advertising and tooling? |
-| Scalability | 6 | Can revenue grow substantially without proportional labour/cost growth? |
-| Paid Growth Potential | 4 | Is there a credible path to invest paid-acquisition budget at positive unit economics? |
-| Defensibility / Moat | 5 | Can the opportunity build durable advantage through data, SEO/AEO, network effects, distribution, integrations, IP, workflow or brand? |
-| **MRR / Recurring Revenue Quality** | **11** | Can the business produce durable monthly recurring revenue because customers receive continuing value and have a strong reason to remain subscribed? |
+| AI Marketability | 7 | How much of SEO, content, outreach, advertising and funnel operation can AI perform? |
+| AI Deliverability | 9 | How much fulfilment can AI execute repeatedly after a sale? |
+| Low Human Dependency | 4 | How little mandatory human labour or founder involvement is required? Higher is better. |
+| Startup Capital Efficiency | 6 | How cheaply can the business reach a credible first-sale test? |
+| Speed to Revenue | 6 | How quickly can it realistically collect first revenue, considering the entire path? |
+| Margin Potential | 5 | What contribution can remain after delivery and acquisition costs? |
+| Scalability | 6 | Can revenue grow without proportional labour/cost growth? |
+| Paid Growth Potential | 4 | Is there a credible positive-unit-economics paid acquisition path? |
+| Defensibility / Moat | 5 | Can the opportunity build durable advantage? |
+| **MRR / Recurring Revenue Quality** | **11** | Can it produce durable recurring revenue because customers receive continuing value? |
 | **Total** | **100** | |
-
-### Why MRR carries the largest weight
-
-DRF is intended to build compounding income, not merely a sequence of one-off projects. A business that repeatedly reacquires the same revenue every month is structurally stronger than an otherwise similar project business.
-
-However, **ability to charge monthly is not enough**. MRR must represent recurring value.
-
-Use this guide:
-
-| MRR score | Interpretation |
-|---:|---|
-| **9–10** | Native subscription, usage/rebilling or recurring-service economics; ongoing customer value; strong retention logic; largely automated billing/delivery. |
-| **7–8** | Credible recurring subscription/retainer with continuing value, but churn, support or renewal dependence remains material. |
-| **4–6** | Monthly billing is possible, but the underlying value is partly one-off or customers have weak reasons to remain subscribed. |
-| **1–3** | Primarily one-time/project/transactional revenue with only optional recurring add-ons. |
-| **0** | No credible recurring-revenue model. |
-
-**MRR is not passive income by itself.** A high-MRR business with heavy monthly human delivery should lose points under AI Deliverability and Low Human Dependency.
-
-### Formula
-
-For each factor:
 
 `weighted points = (factor score / 10) × factor weight`
 
-Then:
-
-`Opportunity Score = sum of all weighted points`
-
-Round the portfolio display to the nearest whole number. Keep decimal precision in detailed analysis when useful.
+`Opportunity Score = sum(weighted points)`
 
 ### Opportunity decision bands
 
-| Opportunity Score | Interpretation |
+| Score | Interpretation |
 |---:|---|
-| **85–100** | Exceptional — investigate/act quickly if evidence is sufficient |
-| **75–84** | Strong opportunity |
-| **65–74** | Worth a bounded test |
-| **50–64** | Conditional — research gaps or structural weakness |
-| **<50** | Low priority unless strategic reasons override |
+| 85–100 | Exceptional — investigate/act quickly if evidence is sufficient |
+| 75–84 | Strong opportunity |
+| 65–74 | Worth a bounded test |
+| 50–64 | Conditional |
+| <50 | Low priority unless strategic reasons override |
 
-A high Opportunity Score alone is not permission for material capital deployment.
+### MRR guide
 
----
+| MRR score | Interpretation |
+|---:|---|
+| 9–10 | Native subscription/usage/rebilling; continuing value and strong retention logic |
+| 7–8 | Credible recurring subscription/retainer but churn/support dependence remains material |
+| 4–6 | Monthly billing possible but underlying value partly one-off |
+| 1–3 | Primarily transactional with optional recurring add-ons |
+| 0 | No credible recurring-revenue model |
+
+MRR is not passive income by itself. Heavy monthly human delivery must reduce AI Deliverability and Low Human Dependency.
 
 ## 2. Evidence Confidence — independent 0–100%
 
@@ -97,122 +68,145 @@ Evidence Confidence answers: **How much should we trust the current scoring inpu
 
 | Confidence | Meaning |
 |---:|---|
-| **80–100%** | Strong — current first-party or multiple corroborated sources, plus operating evidence where relevant |
-| **60–79%** | Good enough for a small controlled test |
-| **40–59%** | Material assumptions remain; research before meaningful spend |
-| **20–39%** | Mostly hypothesis / indirect evidence |
-| **0–19%** | Speculative idea |
+| 80–100% | Strong — current first-party or corroborated evidence plus operating evidence where relevant |
+| 60–79% | Good enough for a small controlled test |
+| 40–59% | Material assumptions remain |
+| 20–39% | Mostly hypothesis / indirect evidence |
+| 0–19% | Speculative idea |
 
-Evidence labels:
-
-- **Verified** — supported by reliable current evidence or direct operating data.
-- **Estimated** — reasonable inference based on partial evidence.
-- **Missing** — required evidence has not yet been obtained.
-
-### Capital gate
-
-As a default, Evidence Confidence should be at least **60% before material capital deployment**. A lower-confidence idea can still receive a cheap, reversible validation test when the test itself is designed to increase confidence.
-
----
+Evidence labels: **Verified**, **Estimated**, **Missing**. Default capital gate: at least **60% confidence before material capital deployment**.
 
 ## 3. Research Completeness — independent 0–100%
 
-Use the **15 Opportunity Score factors** as the minimum research checklist. For each factor assign:
-
-- **Complete = 1** — enough evidence exists to score responsibly.
-- **Partial = 0.5** — some evidence exists but important gaps remain.
-- **Missing = 0** — materially unresearched.
-
-Formula:
+Use the 15 Opportunity Score factors as the minimum research checklist. Complete = 1, Partial = 0.5, Missing = 0.
 
 `Research Completeness = completed-equivalent factors / 15 × 100`
 
-Round to the nearest whole percentage.
-
-A low-quality factor can still be fully researched. Research Completeness measures whether we investigated it, not whether the result was favourable.
-
----
+Research Completeness measures investigation, not attractiveness.
 
 ## 4. AI Autonomy Score — derived 0–100
 
-AI Autonomy answers: **How independently can AI operate this business after compliant human ownership/setup?**
+Use AI Buildability, AI Marketability, AI Deliverability and Low Human Dependency.
 
-Use:
+`AI Autonomy Score = average(four scores) × 10`
 
-- AI Buildability
-- AI Marketability
-- AI Deliverability
-- Low Human Dependency
+## 5. Execution Velocity Score — independent 0–100
 
-Formula:
+Execution Velocity answers: **How quickly and with how little resistance can DRF turn this opportunity into a repeatable sale and successful client delivery using assets already available?**
 
-`AI Autonomy Score = average of the four 0–10 scores × 10`
+This is deliberately independent of Opportunity Score. It prevents a slow platform or marketplace build from displacing an almost equally attractive offer that can be packaged and sold immediately.
 
----
+Score each dimension 0–10. Higher is always better/faster/easier.
 
-## 5. Research requirements by factor
+| Execution factor | Weight | What it measures |
+|---|---:|---|
+| **Build / Setup Speed** | **25** | Time and effort to create a credible sellable version. Buying/forking/installing an existing snapshot or proven component should score much higher than custom platform development. |
+| **Go-to-Market Launch Speed** | **20** | Time to have offer, pricing, landing page, tracking, CRM, outreach and initial paid/owned channels live. |
+| **Sales-Cycle Speed** | **20** | Expected elapsed time from qualified prospect to cash collected. Existing warm relationships and obvious measurable ROI increase the score. |
+| **Client Delivery / Onboarding Speed** | **20** | Time and resistance from sale to a working customer implementation. Repeatable configuration scores higher than bespoke consulting. |
+| **Dependency / Resistance** | **15** | External approvals, data access, integrations, marketplace liquidity, SEO ranking, partner dependence, regulation and founder bottlenecks. Higher = fewer blockers. |
+| **Total** | **100** | |
 
-| Factor | Useful evidence |
-|---|---|
-| Market Size Now | TAM/SAM, platform/customer counts, buyer counts, transaction volume, competitor revenue |
-| Market Growth | YoY growth, adoption, search trends, funding/investment, technology/regulatory tailwinds |
-| Timing | Launch date, competitor density, SERP difficulty, product maturity, marketplace supply |
-| Willingness to Pay | Actual prices, subscriptions, ARPU, CPC, contract values, customer interviews, competitor earnings |
-| AI Buildability | Task decomposition, required tools, model capability, automation tests, QA requirements |
-| AI Marketability | Searchability, marketplace distribution, content scalability, APIs, ads and outreach rules |
-| AI Deliverability | Fulfilment workflow, exception rate, support load, integrations, reliability, SLA requirements |
-| Human Dependency | Calls, physical work, approvals, regulated judgement, identity/KYC, support burden |
-| Startup Capital Efficiency | Required software, subscriptions, licences, data, inventory, team and paid-traffic cost |
-| Speed to Revenue | Build/onboarding time, approvals, sales cycle, marketplace launch and customer-acquisition cycle |
-| Margin Potential | Price minus platform, inference, labour, support, refunds, acquisition and infrastructure costs |
-| Scalability | Marginal delivery cost, support scaling, automation, geographic limits and repeatability |
-| Paid Growth Potential | CPC/CPM, conversion, AOV/LTV, available audiences and testable CAC |
-| Defensibility | Proprietary data, workflow/IP, switching cost, distribution, SEO/AEO authority, integrations and brand |
-| **MRR / Recurring Revenue Quality** | Native subscription/usage billing, recurring customer need, renewal/retention evidence, churn, gross retention, expansion revenue, rebilling/markup economics, low servicing burden and switching cost |
+`Execution Velocity Score = Σ((execution factor / 10) × weight)`
 
-If evidence does not exist, mark the factor **Missing** rather than silently inventing certainty.
+### Execution bands
 
----
+| Score | Meaning |
+|---:|---|
+| 85–100 | Immediate lane — package/test now |
+| 70–84 | Fast lane — usually launchable within weeks |
+| 55–69 | Build lane — useful but requires meaningful setup |
+| 40–54 | Background lane — run alongside faster revenue work |
+| <40 | Long-horizon lane — research/incubate; do not let it block faster opportunities |
 
-## 6. Portfolio decision rules
+## 6. Required time estimates
 
-Use the scores together, not interchangeably.
+Every active opportunity must carry four explicit elapsed-time estimates:
 
-- **High opportunity + high confidence:** act or test quickly.
-- **High opportunity + low confidence:** prioritise validation before meaningful spend.
-- **High MRR + high AI autonomy:** particularly attractive because revenue can compound without proportional labour.
-- **High MRR + low human-dependency score:** recurring revenue may actually be a disguised managed-service business; investigate delivery burden.
-- **Low MRR:** acceptable only if margins, speed, distribution or strategic asset creation compensate materially.
-- **Low AI deliverability:** treat cautiously even when AI can build and market the offer.
+1. **Time to Build / Sellable MVP** — founder approval to something credible enough to sell.
+2. **Time to Market** — founder approval to offer + landing/funnel + CRM/tracking + first outbound/paid/owned acquisition live.
+3. **Time to First Revenue** — realistic elapsed time to first collected cash, including sales cycle.
+4. **Time to Deliver / Onboard One Client** — sale to working first-value implementation.
 
-### Tie-break rule
+Use ranges, not false precision: `1–3 days`, `1–2 weeks`, `1–3 months`, etc. If the estimate cannot responsibly be made, write **Needs more research**.
 
-When two opportunities have similar total scores and evidence confidence, prefer the one with:
+### Avoiding double counting
 
-1. higher MRR score;
-2. higher AI Autonomy;
-3. faster revenue;
-4. lower startup capital.
+- **Speed to Revenue** remains inside Opportunity Score because time-to-cash is a structural commercial quality.
+- **Execution Velocity** is a separate sequencing control. It decomposes *why* revenue is fast or slow and measures build, GTM, sales, fulfilment and blockers.
+- Do **not** add Execution Velocity points directly into the 100-point Opportunity Score.
 
----
+## 7. Combined Execution Priority Score — derived 0–100
 
-## 7. Canonical implementation
+For sequencing the portfolio, use:
 
-The portfolio lives at:
+`Execution Priority Score = Opportunity Score × 0.70 + Execution Velocity Score × 0.30`
 
-`businesses/OPPORTUNITIES.md`
+Why 70/30: DRF should not choose a weak business merely because it is easy to launch, but execution speed is material enough to reorder otherwise strong opportunities.
 
-That file must show at minimum for every active opportunity:
+### Confidence gate
+
+The numerical priority score does not erase uncertainty. Any opportunity below **60% Evidence Confidence** is automatically **Research First** regardless of ranking. Where timing itself is uncertain, mark the relevant estimate **Needs more research**.
+
+### Staircase rule
+
+Use Execution Priority Score to identify the **top five staircase**, then apply founder judgement for strategic overlap:
+
+1. Start the highest-value, fastest-to-cash opportunity.
+2. Reuse its assets, funnels, automation and customer learning in Stair 2.
+3. Add the next offer only when Stair 1 has reached a defined launch/traction checkpoint.
+4. Slow-burn asset businesses may run in a bounded background lane but must not consume the primary revenue lane.
+5. Prefer one reusable commercial engine across adjacent offers rather than five independent marketing stacks.
+
+## 8. Research requirements
+
+Useful evidence includes TAM/SAM, growth, pricing, platform/customer counts, search trends, competitor economics, actual workflows, integration requirements, support load, approval requirements, CAC, sales cycle, retention, gross margin and recurring value.
+
+For Execution Velocity specifically, investigate:
+
+- existing snapshots/templates/components available to buy, fork or install;
+- required customisation hours;
+- landing/funnel and checkout readiness;
+- CRM, WhatsApp, email, ad and calendar integration work;
+- availability of warm audiences and existing client relationships;
+- procurement/contract/payment friction;
+- onboarding data/access requirements;
+- repeatable versus bespoke delivery steps;
+- external approvals, ranking delays, marketplace liquidity and partner SLAs.
+
+If evidence does not exist, mark it **Missing / Needs more research** rather than inventing certainty.
+
+## 9. Portfolio decision rules
+
+- High opportunity + high confidence + high velocity: **primary execution lane**.
+- High opportunity + low confidence: **validate before meaningful spend**.
+- High opportunity + low velocity: **background/incubation lane**.
+- High MRR + high AI autonomy: particularly attractive.
+- High MRR + heavy human delivery: investigate disguised managed-service burden.
+- Existing warm assets/channels come before paid acquisition unless evidence says otherwise.
+- Prefer **SELL / USE / INTEGRATE / AUTOMATE / BUILD**, in that order when practical.
+
+Tie-break similar opportunities by: (1) higher MRR, (2) higher Execution Velocity, (3) higher AI Autonomy, (4) faster first revenue, (5) lower startup capital.
+
+## 10. Canonical implementation
+
+Portfolio: `businesses/OPPORTUNITIES.md`
+
+Every active opportunity must show at minimum:
 
 - Opportunity Score /100
-- **MRR score /10**
-- AI Autonomy Score /100
+- MRR /10
+- AI Autonomy /100
 - Evidence Confidence %
 - Research Completeness %
-- all 15 underlying factor scores (0–10)
+- Execution Velocity /100
+- Execution Priority /100
+- Time to Build
+- Time to Market
+- Time to First Revenue
+- Time to Deliver / Onboard One Client
+- all 15 Opportunity Score factors
 - next action
 - canonical detail/research link
 
-All early scores are provisional until supported by research. Update scores when material evidence changes rather than preserving stale rankings.
-
-Markdown remains canonical. CSV/XLSX may be created later for pivots, formulas, charts and portfolio analytics, but must not silently become a conflicting source of truth.
+Markdown remains canonical. CSV/XLSX may support analytics but must not silently become conflicting truth.
