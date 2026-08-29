@@ -1,12 +1,13 @@
 # DRF Business Opportunity Scoring Framework
 
 **Status:** Canonical guideline  
-**Version:** 1.3  
+**Version:** 1.4  
 **Date:** 29 August 2026  
 **Original governing issue:** #11  
 **MRR revision issue:** #20  
 **Execution-velocity revision issue:** #24  
-**Niche-selection revision issue:** #26
+**Niche-selection revision issue:** #26  
+**Outcome-first architecture revision issue:** #33
 
 ## Purpose
 
@@ -14,7 +15,11 @@ Use this framework to compare DRF business opportunities consistently, expose mi
 
 The framework deliberately separates commercial attractiveness from execution velocity. A strategically excellent business can therefore remain highly rated while being sequenced behind a nearly-as-good opportunity that can be sold next week.
 
-**This framework selects the business/product vehicle. It does not by itself select the market.** Once an opportunity is attractive, apply the separate canonical `niche-attractiveness-scoring-framework.md` to score `product × vertical × sub-niche × geography × ICP` before choosing a beachhead market.
+**This framework selects the business/outcome vehicle. It does not by itself select the market or lock the delivery vendor.** Once an opportunity is attractive, apply the separate canonical `niche-attractiveness-scoring-framework.md`, then choose the delivery architecture using the canonical model:
+
+`Outcome × Niche × Customer Channel × System of Record × Agent Layer`
+
+Vendors and models are components. Do not inflate or suppress an opportunity merely because a currently fashionable vendor can or cannot deliver it alone.
 
 ## 1. Opportunity Score — 0 to 100
 
@@ -177,6 +182,19 @@ For Execution Velocity specifically, investigate:
 - repeatable versus bespoke delivery steps;
 - external approvals, ranking delays, marketplace liquidity and partner SLAs.
 
+For architecture selection, investigate:
+
+- dominant customer channel in the niche;
+- current system of record and switching friction;
+- native versus third-party messaging economics;
+- API/MCP/webhook availability;
+- data ownership, consent and compliance boundaries;
+- deterministic versus agentic task split;
+- integration and sync failure risk;
+- recurring vendor cost per client;
+- support burden introduced by each extra platform boundary;
+- portability if an AI model, CRM or channel provider changes.
+
 If evidence does not exist, mark it **Missing / Needs more research** rather than inventing certainty.
 
 ## 9. Portfolio decision rules
@@ -188,10 +206,41 @@ If evidence does not exist, mark it **Missing / Needs more research** rather tha
 - High MRR + heavy human delivery: investigate disguised managed-service burden.
 - Existing warm assets/channels come before paid acquisition unless evidence says otherwise.
 - Prefer **SELL / USE / INTEGRATE / AUTOMATE / BUILD**, in that order when practical.
+- Do not treat a vendor-specific limitation as proof the business outcome is weak if a practical alternate channel/system/agent architecture exists.
+- Do not reward a fashionable agent if the niche's customer channel, CRM or lifecycle requirements are missing.
 
 Tie-break similar opportunities by: (1) higher MRR, (2) higher Execution Velocity, (3) higher AI Autonomy, (4) faster first revenue, (5) lower startup capital.
 
-## 10. Second-stage niche selection
+## 10. Delivery architecture gate
+
+After an opportunity and target niche are attractive, define the smallest viable delivery architecture:
+
+`Outcome × Niche × Customer Channel × System of Record × Agent Layer`
+
+### Required architecture questions
+
+1. What measurable outcome is actually being sold?
+2. Where do prospects/customers naturally communicate?
+3. Which platform owns canonical contacts, opportunities, lifecycle state, consent and attribution?
+4. Which steps should remain deterministic?
+5. Where is agent judgement genuinely needed?
+6. Can the agent/model be replaced without rebuilding the business?
+7. What recurring cost and support burden does each additional system boundary create?
+8. What is the fallback if a vendor changes price, access, policy or capability?
+
+### UAE service-business default
+
+For UAE service businesses, treat WhatsApp as the default first-class customer channel unless evidence for the specific niche shows otherwise.
+
+Start with:
+
+`WhatsApp/customer channel → CRM/system of record → deterministic automation → native AI → external agent where materially useful`
+
+Do not assume HighLevel, Kapso, HubSpot, Grok Bot, ChatGPT, Claude or any other vendor must own all layers.
+
+Canonical rationale: `knowledge/architecture/outcome-first-modular-revenue-architecture.md`.
+
+## 11. Second-stage niche selection
 
 Once an opportunity passes portfolio screening, apply:
 
@@ -201,11 +250,11 @@ The niche framework scores Pain/Urgency, Purchasing Power, Reachability, Growth,
 
 Use this hierarchy:
 
-`market → vertical → sub-niche → geography → firmographic ICP → trigger/problem → product`
+`market → vertical → sub-niche → geography → firmographic ICP → trigger/problem → measurable outcome/product`
 
-A high Opportunity Score never justifies shotgun distribution across generic industries. Select a beachhead niche through evidence, then build the offer, messaging, snapshot and acquisition system around that niche.
+A high Opportunity Score never justifies shotgun distribution across generic industries. Select a beachhead niche through evidence, then build the offer, messaging, delivery architecture, acquisition system and reusable setup around that niche.
 
-## 11. Canonical implementation
+## 12. Canonical implementation
 
 Portfolio: `businesses/OPPORTUNITIES.md`
 
@@ -225,6 +274,16 @@ Every active opportunity must show at minimum:
 - all 15 Opportunity Score factors
 - next action
 - canonical detail/research link
+
+Every active launch candidate should additionally record a delivery-architecture hypothesis covering:
+
+- measurable outcome;
+- beachhead niche;
+- primary customer channel;
+- system of record;
+- deterministic automation layer;
+- agent layer where relevant;
+- architecture cost/support risks.
 
 For verticalised offers, also maintain a separate ranked niche table using `niche-attractiveness-scoring-framework.md` before selecting the market.
 
