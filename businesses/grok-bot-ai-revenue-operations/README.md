@@ -27,6 +27,35 @@ revenue outcome
 
 Grok Bot is the delivery rail. The product is the business outcome.
 
+## UAE architecture update — WhatsApp first
+
+For UAE service-business delivery, Grok Bot should not be evaluated as a standalone business infrastructure replacement.
+
+The current architecture rule is:
+
+```text
+OUTCOME
+× NICHE
+× CUSTOMER CHANNEL
+× SYSTEM OF RECORD
+× AGENT LAYER
+```
+
+For UAE service businesses:
+
+- **WhatsApp is the mandatory first-class customer channel.**
+- **HighLevel remains the default all-in-one CRM/lifecycle system where simplicity and agency leverage matter.**
+- **Kapso is a validated dedicated WhatsApp-native alternative where direct agent access, MCP/API portability or modularity matters.**
+- **Grok Bot is the persistent operating-agent layer, not the CRM or WhatsApp infrastructure.**
+- **HubSpot Free/Starter is a credible lean CRM option when HighLevel's broader lifecycle stack is unnecessary.**
+
+Canonical architecture files:
+
+- `UAE-HYBRID-STACK.md` — UAE WhatsApp-first architecture and platform-selection rules.
+- `KAPSO-WHATSAPP-OPTION.md` — Kapso vs HighLevel WhatsApp, CRM alternatives, cost correction and side-by-side test plan.
+
+Current HighLevel documentation lists WhatsApp at **US$10/month per enabled sub-account**, while HighLevel's **US$50/month** figure applies to the AI Employee Growth plan. Kapso therefore should not be selected on the assumption that HighLevel charges US$50 merely for WhatsApp. Kapso's strategic advantage is its direct WhatsApp API/MCP/CLI/webhook surface for external agents.
+
 ## Customer
 
 Primary early customer profiles:
@@ -197,7 +226,7 @@ Use Grok Bot where the work genuinely benefits from:
 - drafting in context;
 - multi-step orchestration.
 
-The best client solution may therefore be Grok Bot above HighLevel/Make/Zapier/scripts rather than forcing all work into one platform.
+The best client solution may therefore be Grok Bot above HighLevel/Kapso/Make/Zapier/scripts rather than forcing all work into one platform.
 
 ## Acquisition channels
 
@@ -360,6 +389,13 @@ Recommended sequence:
 9. measure the first 30 days;
 10. rescore the opportunity from operating evidence.
 
+For the UAE WhatsApp-first variant, run the first workflow against at least two infrastructure patterns:
+
+- HighLevel-native WhatsApp + CRM;
+- Kapso WhatsApp + Grok Bot + HighLevel CRM.
+
+Use Kapso + HubSpot Free/Starter as a third lean benchmark only where the workflow does not require HighLevel's richer lifecycle stack.
+
 ## Stop / scale condition
 
 **Scale** when one package has repeatable demand, strong measurable ROI, stable delivery, manageable usage, low exception labour and recurring client retention.
@@ -373,6 +409,8 @@ Recommended sequence:
 - `OFFER-CATALOGUE.md` — productised offers, target niches, KPI and pricing hypotheses.
 - `PLAYBOOKS.md` — implementation, client delivery, QA, sales and management playbooks.
 - `TEMPLATE-LIBRARY.md` — public template ecosystem, sourcing rubric and reuse strategy.
+- `UAE-HYBRID-STACK.md` — WhatsApp-first UAE architecture.
+- `KAPSO-WHATSAPP-OPTION.md` — Kapso/HighLevel/HubSpot WhatsApp and CRM architecture comparison.
 
 Related earlier research:
 
@@ -382,4 +420,4 @@ Related earlier research:
 
 ## Operating rule
 
-> Do not build a Grok Bot agency around the novelty of Grok Bot. Build a niche revenue system that happens to use Grok Bot wherever it is the best delivery rail.
+> Do not build a Grok Bot agency around the novelty of Grok Bot. Build a niche revenue system that happens to use Grok Bot wherever it is the best delivery rail. For UAE service businesses, WhatsApp comes first, CRM comes second, and the agent/model remains replaceable.
