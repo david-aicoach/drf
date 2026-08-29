@@ -1,12 +1,16 @@
 # UAE WhatsApp-First Hybrid AI Revenue Stack
 
 **Status:** Canonical architecture for UAE service-business delivery  
-**Governing issue:** #28  
+**Governing issues:** #28, #40  
 **Date:** 29 August 2026
 
 ## Decision
 
-For UAE service-business deployments, **WhatsApp is the mandatory first-class customer channel. HighLevel remains the default all-in-one infrastructure and system-of-record option, while Kapso is now a validated alternative WhatsApp-native infrastructure layer when direct agent access, portability or lower-stack modularity matters.**
+For UAE service-business deployments, **WhatsApp is the mandatory first-class customer channel. HighLevel remains the default all-in-one infrastructure and system-of-record option, while Kapso is a validated alternative WhatsApp-native infrastructure layer when direct programmable access, portability or lower-stack modularity matters.**
+
+Issue #40 adds a critical operating rule:
+
+> **Use native/deterministic execution and native domain AI for recurring high-volume work. Use Grok Bot or another general computer-use agent only where cross-system judgement, research, browser-only access or exceptions create enough additional value to justify variable quota and recovery cost.**
 
 Do not position Grok Bot as a replacement for CRM, WhatsApp, lifecycle automation, email marketing, pipelines, calendars, payments or deterministic workflows.
 
@@ -20,21 +24,19 @@ HighLevel
 CRM | Conversations | pipelines | calendars | workflows | email | payments | attribution
         ↓
 HighLevel native AI
-Conversation AI | Voice AI | Managed Agents | Skills | Ask AI
+Conversation AI | Voice AI | Reviews AI | Content AI
         ↓
-MCP / API / webhooks
+Optional bounded reasoning / agent layer
+Ask AI | Agent Studio | Grok Bot | other approved agent
         ↓
-Optional external agent operating layer
-Grok Bot | Claude Code | ChatGPT
-        ↓
-Cross-system research | judgement | orchestration | browser/computer use | technical changes
+Cross-system research | judgement | exceptions | browser/computer use
         ↓
 HighLevel system of record
         ↓
 Customer follow-up through WhatsApp / email / voice
 ```
 
-A second architecture is now explicitly supported where a dedicated WhatsApp layer is preferable:
+A second architecture is supported where a dedicated WhatsApp layer is preferable:
 
 ```text
 WhatsApp
@@ -42,13 +44,13 @@ WhatsApp
 Kapso
 official API | coexistence | inbox | workflows | Flows | webhooks | MCP
    ↓
-Grok Bot / external AI agent
+HighLevel / HubSpot / Zoho / incumbent CRM
    ↓
-reasoning | orchestration | cross-system work
+native deterministic workflows/domain AI
    ↓
-HighLevel CRM or HubSpot CRM
+optional bounded Grok Bot / external agent for cross-system gaps
    ↓
-Kapso
+Kapso / CRM channel actions
    ↓
 WhatsApp
 ```
@@ -69,7 +71,7 @@ HighLevel currently provides first-party support for:
 - WhatsApp voice calling;
 - native WhatsApp voice notes and transcription;
 - CRM-linked conversations and contact records;
-- agency WhatsApp rebilling.
+- agency WhatsApp billing/rebilling.
 
 Current official sources:
 
@@ -82,22 +84,40 @@ Current official sources:
 
 This makes HighLevel substantially more suitable as the customer-facing infrastructure for UAE service businesses than an agent platform without a comparable native WhatsApp/CRM layer.
 
-## HighLevel WhatsApp cost correction
+## HighLevel WhatsApp and AI cost correction
 
 Current official HighLevel documentation states the WhatsApp subscription charge is **US$10/month per WhatsApp-enabled sub-account**, not US$50/month. Meta message fees are separate.
 
-The current **US$50/month** HighLevel figure applies to the AI Employee Growth plan, not basic WhatsApp access.
+The current HighLevel AI Employee plans are:
+
+- pay-per-use: **US$0 monthly AI subscription** for supported metered usage;
+- Growth: **US$50/month per enabled location**;
+- Unlimited: **US$97/month per enabled location**.
+
+Current Unlimited economics materially affect this architecture comparison:
+
+- Conversation AI — unlimited subject to fair use;
+- inbound/outbound/widget Voice AI — unlimited subject to fair use;
+- Reviews AI — unlimited subject to fair use;
+- Content AI — unlimited subject to fair use.
+
+This is **not unlimited general computer use**:
+
+- Ask AI / AI Studio use rolling 5-hour usage windows;
+- Unlimited receives 3× Growth usage in those windows;
+- Agent Studio / Managed Agents remain pay-per-use;
+- phone/SMS/WhatsApp/email/provider costs remain separate.
 
 Sources:
 
 - https://help.gohighlevel.com/support/solutions/articles/155000001428-whatsapp-pricing-and-billing-full-guide
 - https://help.gohighlevel.com/support/solutions/articles/155000006652
 
-This reduces the cost argument for moving WhatsApp away from HighLevel. Kapso should therefore be chosen for architectural benefits rather than assuming it is automatically cheaper.
+This strengthens HighLevel's case for high-frequency CRM/customer lifecycle work. Kapso should therefore be chosen for architectural benefits rather than assuming it is automatically cheaper.
 
 ## Kapso as a validated WhatsApp-native alternative
 
-Kapso materially changes the stack because it provides a dedicated official WhatsApp operating layer with:
+Kapso provides a dedicated official WhatsApp operating layer with:
 
 - WhatsApp Business API;
 - WhatsApp Business App coexistence;
@@ -107,9 +127,7 @@ Kapso materially changes the stack because it provides a dedicated official What
 - Workflows and serverless functions;
 - APIs and webhooks;
 - CLI;
-- a live Project MCP server that lets AI agents read conversations, send messages, manage templates, configure webhooks and provision/onboard customer numbers.
-
-This means Grok Bot or another MCP-capable agent can operate WhatsApp through a clean structured tool surface rather than browser automation.
+- a live Project MCP server that exposes WhatsApp operations to deterministic software and approved agents.
 
 Current sources:
 
@@ -123,8 +141,8 @@ Kapso does **not** remove the need for a CRM in the broader DRF service-business
 
 ```text
 Kapso = WhatsApp transport + WhatsApp operating layer
-CRM = HighLevel / HubSpot / another system of record
-Agent = Grok Bot / Claude / OpenAI / future agent
+CRM = HighLevel / HubSpot / Zoho / another system of record
+Agent = native AI + bounded Grok Bot / other agent only where needed
 ```
 
 ## Grok Bot integration reality
@@ -139,31 +157,25 @@ Current SpaceXAI documentation confirms Grok Bot can:
 - use terminal/computer capabilities;
 - work across multiple systems.
 
-Current first-party connector documentation does not list WhatsApp as a built-in Grok connector.
-
-However Grok supports custom MCP connectors, making Kapso's Project MCP a viable structured bridge for WhatsApp operations.
+Current first-party connector documentation does not list WhatsApp as a built-in Grok connector. Kapso's Project MCP can provide a structured bridge.
 
 Sources:
 
 - https://docs.x.ai/grok-bot/overview
 - https://docs.x.ai/grok/connectors
 
-Therefore the safe default is not:
+However, direct MCP/API availability should generally **reduce** the need for browser/computer use. If a reliable Kapso/CRM action can complete the event deterministically, use that action rather than spending Grok Bot quota to imitate the same click path.
+
+The safe patterns are therefore:
 
 ```text
-WhatsApp → Grok Bot directly
-```
-
-It is either:
-
-```text
-WhatsApp → HighLevel → Grok Bot / other agent
+WhatsApp → HighLevel native workflows/domain AI → bounded Grok for gaps
 ```
 
 or:
 
 ```text
-WhatsApp → Kapso → Grok Bot / other agent → CRM
+WhatsApp → Kapso API/MCP/workflows → CRM → bounded Grok for cross-system gaps
 ```
 
 ## CRM alternatives
@@ -179,7 +191,8 @@ Preferred when the agency account is already part of the operating base and the 
 - forms/funnels;
 - payments;
 - snapshots and SaaS packaging;
-- agency management.
+- agency management;
+- predictable high-volume Conversation/Voice AI economics.
 
 Kapso can own WhatsApp while HighLevel remains the system of record.
 
@@ -212,44 +225,61 @@ Source: https://knowledge.hubspot.com/inbox/connect-channels-to-the-conversation
 
 | Architecture | Best use | Main advantage | Main weakness |
 |---|---|---|---|
-| HighLevel WhatsApp + HighLevel native AI | Default simple deployment | One platform, mature CRM/lifecycle, low WhatsApp add-on cost | More vendor coupling; less direct agent-native WhatsApp surface |
-| HighLevel WhatsApp + HighLevel + Grok Bot | Premium all-in-one + agent | Strong CRM plus external autonomous worker | Grok reaches WhatsApp indirectly through HighLevel |
-| Kapso + HighLevel CRM + Grok Bot | Agent-first premium UAE stack | Direct WhatsApp MCP + mature CRM + portability | Two overlapping automation platforms; more integration complexity |
-| Kapso + HubSpot Free/Starter + Grok Bot | Lean low-fixed-cost stack | Cheap CRM + direct WhatsApp agent control | Weaker lifecycle/agency tooling than HighLevel |
-| Kapso + Grok Bot without CRM | Narrow WhatsApp agent product | Very clean and lightweight | Insufficient CRM/lifecycle depth for most service businesses |
+| **HighLevel WhatsApp + HighLevel native workflows/AI** | Default simple deployment | One platform, mature CRM/lifecycle, predictable domain-AI economics | More vendor coupling; less direct independent WhatsApp control |
+| **Kapso + HighLevel CRM + native workflows/AI + bounded Grok** | Composable premium UAE stack | Direct WhatsApp API/MCP + mature CRM + portability + cross-system specialist agent | Additional integration/support boundary |
+| **Kapso + HubSpot/Zoho + native automation + bounded Grok** | Lean/incumbent-preservation stack | CRM portability + direct WhatsApp control | Weaker unified lifecycle/agency tooling than HighLevel |
+| **HighLevel WhatsApp + HighLevel + Grok-heavy execution** | Only where cross-system/browser work dominates | Strong CRM plus general computer-use layer | Wastes scarce agent capacity on native work if poorly designed |
+| **Kapso + Grok without full CRM** | Narrow WhatsApp agent product | Clean and lightweight | Insufficient durable customer/pipeline state for most service businesses |
 
-## Indicative stack-fit scoring
+## Architecture-fit scoring v2 — Issue #40
 
-These are architecture-fit estimates, not DRF Opportunity Scores.
+These are architecture-fit estimates, not DRF Opportunity Scores. Each factor is 0–10 and equally weighted:
 
-| Stack | Indicative fit |
-|---|---:|
-| HighLevel WhatsApp + native AI | **92/100** |
-| HighLevel WhatsApp + HighLevel + Grok Bot | **94/100** |
-| Kapso + HighLevel CRM + Grok Bot | **95/100 provisional** |
-| Kapso + HubSpot Free/Starter + Grok Bot | **91/100 provisional** |
-| Kapso + Grok Bot without CRM | **85/100 provisional** |
+1. WhatsApp-native capability.
+2. CRM/lifecycle depth.
+3. Agent/API-native control.
+4. Portability.
+5. SaaS onboarding/multi-client support.
+6. Fully loaded cost efficiency.
+7. Simplicity/support surface.
+8. Sustained delivery economics.
 
-The 95/100 hypothesis must be tested against the extra support and integration burden. HighLevel-native WhatsApp at only US$10/month may outperform the modular stack when simplicity dominates.
+| Stack | WA | CRM | Agent/API | Portability | SaaS | Cost | Simplicity | Sustained economics | Overall |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **Kapso + HighLevel CRM + native workflows/AI + bounded Grok** | 10 | 10 | 9 | 10 | 10 | 9 | 7 | 9 | **93/100** |
+| **HighLevel WhatsApp + HighLevel + native workflows/AI** | 9 | 10 | 8 | 6 | 9 | 10 | 10 | 10 | **90/100** |
+| **Kapso + HubSpot/Zoho + native automation + bounded Grok** | 10 | 8 | 9 | 10 | 10 | 8 | 8 | 8 | **89/100** |
+| **HighLevel WhatsApp + HighLevel + Grok-heavy execution** | 9 | 10 | 9 | 7 | 9 | 8 | 9 | 8 | **86/100** |
+| **Kapso + Grok without CRM** | 10 | 4 | 10 | 10 | 10 | 7 | 9 | 6 | **83/100** |
+
+The old **95/94/92** architecture-fit table is superseded. It did not separately price Grok Bot's finite production capacity or the hidden cost of browser/authentication recovery. The new table also recognises HighLevel Unlimited's stronger domain-AI economics.
+
+### Reading the scores correctly
+
+- **93 Kapso hybrid** = best generic composable architecture fit, not automatically the cheapest workload.
+- **90 HighLevel native** = best simplicity and predictable high-volume CRM/customer AI benchmark.
+- A client with 90% native HighLevel work may rationally choose the 90 stack over the 93 stack because support surface and cost per successful workflow dominate portability.
+- A client needing direct WhatsApp productisation, CRM independence and genuine cross-system work may rationally choose the 93 stack.
 
 ## Deterministic versus agent rule
 
-Use deterministic software for tasks where certainty, cost and repeatability dominate:
+Use deterministic/native software for tasks where certainty, cost and repeatability dominate:
 
 - routing;
 - field mapping;
 - simple arithmetic;
 - standard formatting;
 - scheduled exports;
-- fixed API calls;
-- high-volume repetitive transforms.
+- fixed API/MCP calls;
+- CRM state changes;
+- high-volume repetitive customer lifecycle events.
 
 Use external AI agents where the work genuinely benefits from:
 
 - judgement;
 - research;
 - cross-system context;
-- browser/computer use;
+- browser/computer use where no reliable native path exists;
 - messy inputs;
 - exceptions;
 - drafting in context;
@@ -259,48 +289,36 @@ Use external AI agents where the work genuinely benefits from:
 
 Do not install Grok Bot, Claude and ChatGPT as mandatory parallel runtimes for every client.
 
-Use one primary external agent surface unless another has a clear bounded role.
+Use native/deterministic execution first and one primary external agent surface only when another layer has a clear bounded role.
 
 Typical roles:
 
 | Layer | Role |
 |---|---|
-| HighLevel native AI | CRM-native customer-facing automation |
-| Grok Bot | Persistent autonomous operating worker |
+| HighLevel native workflows | Deterministic lifecycle execution |
+| HighLevel Conversation/Voice AI | High-volume CRM-native customer-facing AI |
+| Kapso Workflows/API/MCP | WhatsApp-native deterministic/programmatic execution |
+| Grok Bot | Cross-system research, judgement, browser gaps and exceptions |
 | ChatGPT | Optional conversational executive/business cockpit |
 | Claude Code / Codex | Technical build, scripts, APIs, MCP, maintenance |
 
 ## KISS deployment rule
 
-Default:
+Default greenfield:
 
 ```text
-HighLevel + WhatsApp + native AI
+HighLevel + WhatsApp + native workflows/domain AI
 ```
 
-Escalate to:
+Escalate to composable:
 
 ```text
-HighLevel + WhatsApp + Grok Bot
+Kapso + CRM + native workflows + bounded Grok
 ```
 
-when the workflow needs persistent cross-system reasoning.
+when direct programmable WhatsApp control, portability or cross-system work creates measurable value.
 
-Use:
-
-```text
-Kapso + HighLevel CRM + Grok Bot
-```
-
-when direct agent-native WhatsApp control, portability or SaaS-style customer WhatsApp onboarding justifies the additional system boundary.
-
-Use:
-
-```text
-Kapso + HubSpot + Grok Bot
-```
-
-for a deliberately lean product where HighLevel's broader lifecycle platform is unnecessary.
+Do **not** escalate merely because Grok Bot can technically click through the same workflow.
 
 ## Validation requirement
 
@@ -308,24 +326,30 @@ Run a side-by-side operating test before standardising the stack.
 
 Minimum comparison:
 
-1. HighLevel-native WhatsApp + CRM + AI.
-2. Kapso + Grok Bot + HighLevel CRM.
-3. Kapso + Grok Bot + HubSpot Free/Starter where the use case permits.
+1. **HighLevel-native WhatsApp + CRM + native workflows/domain AI.**
+2. **Kapso + HighLevel CRM + native workflows/domain AI + bounded Grok for defined cross-system gaps.**
+3. Kapso + HubSpot/Zoho + bounded agent only where the use case makes the lean CRM architecture relevant.
 
 Measure:
 
 - onboarding time;
 - fixed software cost;
-- message cost;
+- Meta/provider/message cost;
+- native AI cost;
+- external-agent quota/reset consumption;
+- on-demand/overage spend;
 - response latency;
-- successful autonomous completion rate;
+- native workflow successful completion rate;
+- external-agent successful completion rate;
 - CRM sync failure rate;
+- browser/authentication failure rate;
 - human handoff rate;
-- human support minutes;
+- human recovery/support minutes;
+- cost per successful completed revenue workflow;
 - revenue/conversion KPI;
 - client usability;
 - gross margin.
 
 ## Operating rule
 
-> For UAE service businesses, WhatsApp comes first, CRM comes second, and the AI model is a replaceable operating layer. Use the simplest stack that achieves the commercial outcome; add Kapso when its direct WhatsApp agent surface creates measurable value over HighLevel-native WhatsApp.
+> For UAE service businesses, WhatsApp comes first, CRM comes second, native/deterministic execution handles recurring volume, and the external AI model is a replaceable specialist layer. Use the simplest stack that achieves the commercial outcome; add Kapso or Grok Bot only when the additional boundary creates measurable value.
