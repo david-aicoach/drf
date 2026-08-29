@@ -483,4 +483,4 @@ Pause if:
 - Barajeel AC AMC guide: https://barajeelac.com/ac-amc-cost-dubai/
 - HighLevel WhatsApp pricing/billing: https://help.gohighlevel.com/support/solutions/articles/155000001428-whatsapp-pricing-and-billing-full-guide
 - Kapso WhatsApp pricing explanation: https://kapso.com/guides/whatsapp-pricing/how-pricing-works/what-meta-charges-for
-- DRF delivery stack matrix: `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+- DRF delivery stack matrix: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`

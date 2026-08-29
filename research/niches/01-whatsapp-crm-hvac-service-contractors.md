@@ -574,4 +574,4 @@ Pause/reposition if:
 - HighLevel WhatsApp coexistence: https://help.gohighlevel.com/support/solutions/articles/155000003417-whatsapp-coexistence-feature
 - Kapso pricing: https://kapso.com/pricing
 - DRF Kapso architecture: `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md`
-- DRF delivery-cost matrix: `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+- DRF delivery-cost matrix: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`

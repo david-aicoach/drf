@@ -354,9 +354,9 @@ Accessed/reviewed 29 August 2026 unless otherwise noted.
 
 ## Canonical DRF research
 
-- [`../../research/whatsapp-crm-revenue-core-2026-08-29.md`](../../research/whatsapp-crm-revenue-core-2026-08-29.md)
-- [`../../research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`](../../research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md)
-- [`../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
+- [`../../businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-revenue-core-2026-08-29.md`](../../businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-revenue-core-2026-08-29.md)
+- [`../../businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`](../../businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
 - [`../../research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`](../../research/ai-delivery-economics-portfolio-rescore-2026-08-29.md)
 - [`../../research/niches/01-whatsapp-crm-hvac-service-contractors.md`](../../research/niches/01-whatsapp-crm-hvac-service-contractors.md)
 - [`../NICHES.md`](../NICHES.md)

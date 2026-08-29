@@ -6,7 +6,7 @@
 **Governing issues:** #28, #29, #40  
 **Delivery principle:** Vendor-neutral outcome product; select from approved CRM + WhatsApp + agent stacks  
 **First-class WhatsApp families:** Kapso composable stack OR CRM-native/all-in-one stack  
-**Cost research:** `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md` + `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`  
+**Cost research:** `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md` + `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`  
 **Kapso architecture:** `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md`
 
 ## Business definition
@@ -176,7 +176,7 @@ The same client may therefore score twice in the niche register: once for the fo
 
 ## Approved delivery-stack catalogue
 
-Detailed costs and evidence: `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`.
+Detailed costs and evidence: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`.
 
 | Delivery class | Typical stack | Best use | Current DRF read |
 |---|---|---|---|

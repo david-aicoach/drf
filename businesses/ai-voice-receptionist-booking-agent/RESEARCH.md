@@ -384,8 +384,8 @@ The offer has strong technical and economic support, but the next proof must be 
 
 ## Canonical DRF research
 
-- [`../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
-- [`../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
 - [`../../research/niches/02-ai-voice-emergency-hvac-contractors.md`](../../research/niches/02-ai-voice-emergency-hvac-contractors.md)
 - [`../../research/niches/23-ai-voice-automotive-workshops.md`](../../research/niches/23-ai-voice-automotive-workshops.md)
 - [`../OPPORTUNITIES.md`](../OPPORTUNITIES.md)

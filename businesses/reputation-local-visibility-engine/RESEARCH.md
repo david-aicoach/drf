@@ -235,7 +235,7 @@ Proceed when legitimate review velocity and response quality improve, no platfor
 
 ### Internal DRF
 
-- `../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
-- `../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- `../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
+- `../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 - `../../research/niches/30-reputation-dental-aesthetic-clinics.md`
 - `../OPPORTUNITIES.md`

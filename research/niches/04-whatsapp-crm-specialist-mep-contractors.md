@@ -483,4 +483,4 @@ Choose one with 20+ active quotes and obvious fragmentation.
 - UAE Yellow Pages MEP Contractors: https://www.yellowpages-uae.com/uae/dubai/mep-contractors
 - Odoo UAE, CRM for Construction Contractors: https://odooerp.ae/en/blog/crm-for-construction-contractors
 - UAE government tendering overview: https://u.ae/information-and-services/business/public-private-people-partnership/ppp/government-tendering-and-awarding
-- DRF WhatsApp CRM delivery stack: `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+- DRF WhatsApp CRM delivery stack: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`

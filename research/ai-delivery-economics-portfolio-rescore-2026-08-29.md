@@ -29,9 +29,9 @@ The benchmark going forward is **cost per successful production outcome**, not s
 
 Evidence basis:
 
-- `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 - `businesses/grok-bot-ai-revenue-operations/RESEARCH.md`
-- `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
+- `businesses/grok-bot-ai-revenue-operations/research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
 - `knowledge/guidelines/business-opportunity-scoring-framework.md`
 
 ---

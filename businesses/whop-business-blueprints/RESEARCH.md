@@ -8,7 +8,7 @@ Research status: **Comprehensive offer-local synthesis complete; existing deep s
 
 **Recommendation: retain at 82/100 and treat Whop Business Blueprints as a productisation/distribution channel for operating systems DRF has already proven—not as a reason to invent generic “make money” products.**
 
-Whop's Business Blueprints surface is live and explicitly organises community blueprints around creating a business. DRF already completed a much deeper platform, traffic, productisation, SEO and distribution study in `research/whop-business-blueprints-productisation.md`; that research remains the canonical evidence base rather than being duplicated here.
+Whop's Business Blueprints surface is live and explicitly organises community blueprints around creating a business. DRF already completed a much deeper platform, traffic, productisation, SEO and distribution study in `businesses/whop-business-blueprints/research/whop-business-blueprints-productisation.md`; that research remains the canonical evidence base rather than being duplicated here.
 
 The strongest model is simple: whenever DRF proves an operating system, niche playbook or repeatable revenue workflow internally, package the reusable non-confidential layer into a Blueprint with templates, setup steps, economics, tools and an optional implementation/managed-service upsell.
 
@@ -168,6 +168,6 @@ Scale when a proven DRF workflow sells without excessive support and creates eit
 ## Sources
 
 - Whop Business Blueprints: https://whop.com/blueprints/
-- `../../research/whop-business-blueprints-productisation.md`
+- `../../businesses/whop-business-blueprints/research/whop-business-blueprints-productisation.md`
 - `../../research/business-opportunity-validation-2026-08-29.md`
 - `../OPPORTUNITIES.md`

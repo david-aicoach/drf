@@ -513,4 +513,4 @@ One clinic with ≥150 monthly qualified leads is ideal for signal, though small
 **Competitors**
 - Super Clinic CRM: https://supercliniccrm.com/
 - MOVO-X Dubai aesthetic clinic software: https://www.movo-x.com/locations/uae/dubai/aesthetic-clinic-software
-- DRF WhatsApp delivery stack: `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+- DRF WhatsApp delivery stack: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`

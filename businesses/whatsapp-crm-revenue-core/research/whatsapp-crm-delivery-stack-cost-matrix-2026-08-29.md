@@ -37,7 +37,7 @@ Meta / WhatsApp Business Platform
 Canonical evidence:
 
 - `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md`
-- `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 - `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`
 
 ## Cost model

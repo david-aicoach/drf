@@ -416,7 +416,7 @@ Use Kapso + HubSpot Free/Starter as a third lean benchmark only where the workfl
 
 Related earlier research:
 
-- `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
+- `businesses/grok-bot-ai-revenue-operations/research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
 - `businesses/OPPORTUNITIES.md`
 - `businesses/NICHES.md`
 

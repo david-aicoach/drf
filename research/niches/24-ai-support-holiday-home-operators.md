@@ -35,4 +35,4 @@ Sample 1,000+ anonymised guest messages across 3 operators. Classify repeatable 
 - https://www.mediaoffice.ae/en/news/2026/january/19-01/dubai-chamber-of-commerce-launches-holiday-homes-business-group
 - https://www.airdna.co/vacation-rental-data/app/ae/default/dubai/overview
 - https://www.dubaidet.gov.ae/our-services/for-consumers-and-students/register-as-a-holiday-home-operator
-- `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`

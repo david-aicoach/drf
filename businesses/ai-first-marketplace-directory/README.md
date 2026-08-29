@@ -130,7 +130,7 @@ That research is not discarded. It becomes seed data and market architecture for
 
 Whop Business Blueprints are one specific downstream supply class:
 
-`research/whop-business-blueprints-productisation.md`
+`businesses/whop-business-blueprints/research/whop-business-blueprints-productisation.md`
 
 ## Minimum viable test
 

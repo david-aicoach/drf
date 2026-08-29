@@ -5,7 +5,7 @@
 **Status:** Desk research complete for first-class opportunity scoring  
 **Canonical business profile:** `businesses/whatsapp-crm-revenue-core/README.md`  
 **Canonical niche register:** `businesses/NICHES.md`  
-**AI economics:** `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+**AI economics:** `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 
 ## Research question
 

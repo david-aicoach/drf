@@ -542,4 +542,4 @@ Stop/reconfigure if:
 - HighLevel AI Product Pricing, modified 21 Aug 2026: https://help.gohighlevel.com/support/solutions/articles/155000006652
 - HighLevel LC Phone pricing guide, modified 20 Jul 2026: https://help.gohighlevel.com/support/solutions/articles/48001223556
 - HighLevel outbound Voice AI compliance checks: https://help.gohighlevel.com/support/solutions/articles/155000006679-voice-ai-outbound-calling-compliance-checks
-- DRF HighLevel AI economics: `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- DRF HighLevel AI economics: `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`

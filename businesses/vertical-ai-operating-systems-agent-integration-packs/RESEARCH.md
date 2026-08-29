@@ -241,7 +241,7 @@ Proceed only if deployment #2 reuses most of the same workflow architecture, hum
 ### Internal DRF
 
 - `../../research/five-golden-business-opportunities-2026-08-29.md`
-- `../../research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
+- `../../businesses/grok-bot-ai-revenue-operations/research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
 - `../../research/niches/16-grok-tender-rfq-mep-hvac.md`
 - `../../research/niches/17-grok-recruitment-research-screening.md`
 - `../../research/niches/18-grok-accounts-receivable-mep-fm.md`

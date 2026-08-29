@@ -261,7 +261,7 @@ Proceed when the assistant produces measurable response/resolution or booking im
 
 ### Internal DRF
 
-- `../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
-- `../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- `../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
+- `../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 - `../../research/niches/24-ai-support-holiday-home-operators.md`
 - `../OPPORTUNITIES.md`

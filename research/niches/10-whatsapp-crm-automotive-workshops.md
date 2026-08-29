@@ -513,4 +513,4 @@ If modern DMS adoption dominates, retire standalone Workshop CRM and sell:
 - GRX pricing: https://shop.grx.ae/pricing
 - AutoFixia: https://www.autofixia.com/
 - Invoca Automotive 2026: https://www.invoca.com/reports/the-invoca-automotive-lead-conversion-benchmarks-report-2026
-- DRF delivery stack: `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+- DRF delivery stack: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`

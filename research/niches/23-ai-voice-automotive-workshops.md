@@ -45,4 +45,4 @@ Instrument 3–5 workshops for 2 weeks before launch. Measure call mix, missed/a
 - https://www.kenresearch.com/industry-reports/uae-automotive-aftermarket-service-market
 - https://www.invoca.com/blog/5-insights-60-million-phone-conversations
 - https://garagebuddyuae.com/car-service-prices-dubai-2026/
-- `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`

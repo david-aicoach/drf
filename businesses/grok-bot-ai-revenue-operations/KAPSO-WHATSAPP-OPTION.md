@@ -29,7 +29,7 @@ The current generic architecture-fit benchmark is **93/100 for the composable Ka
 
 Canonical AI-economics evidence:
 
-- `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
+- `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 - `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`
 
 ## Company signal

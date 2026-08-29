@@ -242,7 +242,7 @@ Proceed when at least one narrow quote class can be handled accurately with a lo
 
 ### Internal DRF
 
-- `../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
+- `../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
 - `../../research/niches/22-instant-quote-movers.md`
 - `../../research/niches/26-instant-quote-drywall-gypsum-ceilings.md`
 - `../../research/niches/29-instant-quote-cleaning-services.md`

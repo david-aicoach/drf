@@ -496,8 +496,8 @@ The infrastructure is ready. Building more platform features before selling woul
 
 ## Canonical DRF research
 
-- [`../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
-- [`../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
 - [`../../research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`](../../research/ai-delivery-economics-portfolio-rescore-2026-08-29.md)
 - [`../../research/niches/14-highlevel-rentals-holiday-home-operators.md`](../../research/niches/14-highlevel-rentals-holiday-home-operators.md)
 - [`../NICHES.md`](../NICHES.md)

@@ -426,4 +426,4 @@ Use one operator with obvious baseline leakage. Prefer an A/B or pre/post design
 - Charm Rental: https://charm-rental.com/en/crm
 - Settli: https://www.settli.ae/
 - Floti: https://floti.ae/
-- DRF delivery stack: `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+- DRF delivery stack: `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`

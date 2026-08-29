@@ -339,8 +339,8 @@ Of the top-five opportunities, this is one of the fastest to validate because ba
 
 ## Canonical DRF research
 
-- [`../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
-- [`../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
 - [`../../research/niches/07-missed-lead-dubai-car-rental.md`](../../research/niches/07-missed-lead-dubai-car-rental.md)
 - [`../../research/niches/15-missed-lead-aesthetic-clinics.md`](../../research/niches/15-missed-lead-aesthetic-clinics.md)
 - [`../../research/niches/19-missed-lead-dental-implant-full-arch.md`](../../research/niches/19-missed-lead-dental-implant-full-arch.md)

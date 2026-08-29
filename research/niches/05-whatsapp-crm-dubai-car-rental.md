@@ -546,5 +546,5 @@ Record incumbent platform and classify A/B/C/D as above.
 - Floti: https://floti.ae/
 
 **DRF infrastructure**
-- `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+- `businesses/whatsapp-crm-revenue-core/research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
 - `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md`

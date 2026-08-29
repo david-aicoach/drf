@@ -346,8 +346,8 @@ The opportunity remains commercially attractive because it sells a measurable fi
 
 ## Canonical DRF research
 
-- [`../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
-- [`../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md)
+- [`../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`](../../businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md)
 - [`../../research/niches/03-revenue-recovery-hvac-maintenance-contractors.md`](../../research/niches/03-revenue-recovery-hvac-maintenance-contractors.md)
 - [`../../research/niches/08-revenue-recovery-automotive-workshops.md`](../../research/niches/08-revenue-recovery-automotive-workshops.md)
 - [`../../research/niches/13-revenue-recovery-specialist-mep-contractors.md`](../../research/niches/13-revenue-recovery-specialist-mep-contractors.md)

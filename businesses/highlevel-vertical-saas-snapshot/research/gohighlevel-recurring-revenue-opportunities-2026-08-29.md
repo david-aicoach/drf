@@ -3,7 +3,7 @@
 **Research date:** 29 August 2026  
 **Governing issues:** #20, #40  
 **Purpose:** Convert HighLevel's current product, AI, workflow, snapshot, SaaS and rebilling surface into productised DRF recurring-revenue opportunities.  
-**Current scoring:** framework v1.5; re-scored after `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
+**Current scoring:** framework v1.5; re-scored after `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
 
 ## Executive conclusion
 
@@ -25,7 +25,7 @@ Source: https://www.gohighlevel.com/post/highlevel-named-to-g2-2026-best-softwar
 
 Issue #40 materially strengthens the HighLevel thesis for **high-volume recurring customer-facing work**. AI Employee Unlimited at **US$97/month per enabled location** includes Conversation AI, inbound/outbound/widget Voice AI, Reviews AI and Content AI as unlimited subject to fair use. This does **not** mean unlimited general computer use: Ask AI has rolling-window allowances and Agent Studio remains pay-per-use. HighLevel's advantage is that many CRM/lifecycle operations can execute natively rather than paying a browser agent to click through every event.
 
-Canonical economics: `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
+Canonical economics: `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
 
 The key DRF model is therefore:
 
@@ -107,7 +107,7 @@ Sources:
 - https://help.gohighlevel.com/support/solutions/articles/155000006652
 - https://help.gohighlevel.com/support/solutions/articles/155000003906-ai-employee-access-rebilling-and-reselling
 
-Full economics: `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
+Full economics: `businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
 
 ## 1.5 Marketplace economics support recurring software products
 
