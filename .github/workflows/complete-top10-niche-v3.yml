@@ -1,0 +1,393 @@
+name: Complete top ten niche v3
+
+on:
+  push:
+    paths:
+      - '.github/workflows/complete-top10-niche-v3.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  retrofit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Add tailored SEO and AI discovery sections
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          additions = {
+          'research/niches/01-whatsapp-crm-hvac-service-contractors.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+### Search intent
+
+The B2B acquisition opportunity is narrower than consumer searches such as `AC repair Dubai`. iMPLEMENTAi should target contractor-owner/problem intent:
+
+- HVAC CRM UAE / Dubai;
+- WhatsApp CRM for AC maintenance companies;
+- HVAC lead management software;
+- HVAC quotation follow-up software;
+- HVAC AMC renewal software;
+- AC maintenance CRM;
+- field service CRM UAE;
+- HVAC sales pipeline / quote tracking.
+
+The SERP is split between generic CRM/field-service vendors, HVAC software vendors, local implementation agencies and informational comparison pages. HighLevel, Zoho, HubSpot, Odoo and field-service platforms are substitutes; the niche page must therefore lead with **enquiry/quote/AMC revenue control**, not “CRM features”.
+
+### Content gap and money page
+
+Recommended money page: `/solutions/hvac-revenue-crm-uae/` — **“WhatsApp Revenue CRM for UAE HVAC Contractors”**.
+
+Supporting cluster:
+
+- `/hvac-quote-follow-up/`;
+- `/hvac-amc-renewal-system/`;
+- `/hvac-whatsapp-crm/`;
+- `/hvac-crm-vs-field-service-software/`;
+- `/guides/hvac-lead-response-benchmark-uae/`;
+- case studies showing enquiry → quote → won/recovered revenue.
+
+The strongest SEO moat is original UAE operating evidence: response-time distribution, quote-ageing, AMC renewal rates and recovered gross profit. Do not manufacture search-volume estimates.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target answer-engine prompts such as:
+
+- “best CRM for an HVAC company in UAE”;
+- “how do AC maintenance companies manage WhatsApp leads?”;
+- “how to stop HVAC quotes going cold?”;
+- “best way to automate AMC renewals in Dubai?”
+
+Build sourceable assets answering those questions with dated UAE data, transparent methodology, workflow diagrams, stack comparisons and case studies. Publish a **UAE HVAC Enquiry & Quote Leakage Benchmark** after sufficient audits. Keep organisation/service/location facts consistent across iMPLEMENTAi, Google Business Profile and trusted directories; keep pages indexable and allow `OAI-SearchBot` where ChatGPT Search discovery is desired. Use accurate Organisation/Service schema only where supported by visible facts. Monitor a fixed prompt set monthly across ChatGPT, Gemini and Perplexity and record cited domains/share-of-answer.
+
+Reference strategy: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+''',
+          'research/niches/02-ai-voice-emergency-hvac-contractors.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+Commercial B2B themes:
+
+- AI receptionist for HVAC;
+- HVAC answering service UAE;
+- 24/7 AC call answering Dubai;
+- HVAC AI voice agent;
+- missed call automation HVAC;
+- after-hours AC booking service;
+- AI booking agent for home services UAE.
+
+Search competition comes from generic AI-voice platforms, call-answering/BPO services, HighLevel-style voice products and home-service software. The page should not compete on “AI voice” novelty. It should answer the buyer's real question: **how many urgent jobs are lost when nobody answers, and can an overflow agent book safely?**
+
+Primary money page: `/solutions/hvac-missed-call-booking-uae/`.
+
+Cluster: after-hours HVAC call benchmark; AI voice vs human answering service; call-cost/booking ROI calculator; safe call flows; multilingual UAE call handling; overflow-only case study.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “best AI receptionist for HVAC companies”;
+- “how can an AC company answer calls after hours?”;
+- “AI voice agent for emergency AC bookings UAE”; and
+- “HVAC answering service vs AI receptionist”.
+
+To earn citations, publish call-flow methodology, explicit safety/escalation boundaries, current telephony/voice cost assumptions, anonymised answer→booking outcomes and audio/transcript quality examples where consent permits. The strongest future authority asset is an **UAE HVAC Missed Call & Booking Benchmark** based on instrumented contractors rather than generic global statistics. Keep pages crawlable/indexable, allow `OAI-SearchBot` where desired, and earn third-party mentions from HVAC/business associations, integration partners and client case studies.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+''',
+          'research/niches/03-revenue-recovery-hvac-maintenance-contractors.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+This niche has a useful long-tail gap because most vendors sell CRM/FSM broadly rather than the exact commercial outcome.
+
+Target themes:
+
+- HVAC quote follow up software;
+- recover lost HVAC quotes;
+- HVAC sales follow up;
+- AMC renewal software UAE;
+- AC maintenance contract renewal reminders;
+- stale quotation recovery;
+- HVAC customer reactivation;
+- HVAC revenue recovery.
+
+SERPs are likely to mix generic CRM/FSM vendors, sales-follow-up content and HVAC marketing agencies. The opportunity is to own the specific vocabulary of **quote ageing + AMC renewal leakage**.
+
+Primary money page: `/solutions/hvac-revenue-recovery-uae/`.
+
+Cluster: quote-ageing calculator; AMC renewal checklist; “why HVAC quotes go cold”; 7/14/30-day follow-up sequences; stale-customer reactivation; CRM/FSM system boundary; recovered-revenue case studies.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “how do HVAC companies follow up quotes?”;
+- “best way to automate AC maintenance contract renewals?”;
+- “how much revenue do HVAC companies lose from stale quotes?”;
+- “HVAC reactivation system UAE”.
+
+Create concise sourceable definitions for quote ageing, recoverable pool and renewal pipeline; publish transparent calculators with labelled assumptions; and later publish original UAE audit distributions. AI systems need evidence they can cite, so dated benchmark tables and real case-study methodology are stronger than generic marketing copy. Maintain indexability/entity consistency and monitor prompt citations monthly.
+
+Reference: `research/niches/_shared/seo-ai-discovery-playbook-2026-08-29.md`.
+''',
+          'research/niches/04-whatsapp-crm-specialist-mep-contractors.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+Target B2B themes:
+
+- MEP CRM UAE;
+- contractor CRM Dubai;
+- MEP quotation management software;
+- MEP sales pipeline;
+- contractor WhatsApp CRM;
+- construction quotation follow up;
+- MEP tender CRM;
+- CRM for maintenance contractors UAE.
+
+Current organic competition includes broad ERP/contracting systems such as Odoo and UAE-built qaflo, plus generic CRM vendors and construction-management software. qaflo explicitly positions around quote→BOQ→procurement→ledger for UAE project businesses, so iMPLEMENTAi should not claim to replace project/finance truth. The SEO wedge is **commercial next-action control before and around ERP**.
+
+Primary money page: `/solutions/mep-revenue-pipeline-uae/`.
+
+Cluster: CRM vs ERP for MEP; quotation ageing; WhatsApp/email RFQ capture; tender-to-quote pipeline; MEP follow-up benchmark; Odoo/qaflo integration patterns; case studies.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “best CRM for MEP contractors UAE”;
+- “do MEP contractors need CRM if they use Odoo?”;
+- “how to track MEP quotations and follow ups?”;
+- “best WhatsApp pipeline for contractors Dubai”.
+
+Publish vendor-neutral comparison pages that explicitly preserve ERP/accounting boundaries. Create original UAE data on quote turnaround, stale value and channel fragmentation. Cite official procurement/industry sources and vendor documentation instead of unsupported claims. Keep entity facts consistent and pages indexable; allow `OAI-SearchBot` where desired.
+
+Current competitor evidence: https://www.qaflo.com/ and existing source ledger in this dossier.
+''',
+          'research/niches/05-whatsapp-crm-dubai-car-rental.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+The SEO research reinforces the narrowed strategy. High-intent B2B terms include:
+
+- car rental software Dubai / UAE;
+- car rental CRM Dubai;
+- WhatsApp CRM car rental;
+- rent a car management software UAE;
+- car rental booking management system;
+- car rental lead management;
+- car rental enquiry follow up.
+
+These SERPs are commercially crowded by UAE/GCC rental operating systems such as Settli, Cardash, PRO-VIA, Fleexa, Charm and Floti plus global fleet/rental software. Competing head-on for “car rental software” is strategically weak.
+
+Better money page: `/solutions/car-rental-lead-conversion-dubai/` — sell **pre-booking WhatsApp enquiry conversion around the incumbent rental OS**.
+
+Cluster: rental OS vs CRM; response-time benchmark; availability enquiry leakage; WhatsApp follow-up; software comparison; integration case study.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “best car rental software in Dubai”;
+- “how should Dubai car rental companies manage WhatsApp leads?”;
+- “CRM vs rental management software”; and
+- “how to improve car rental enquiry conversion”.
+
+AI answers should be won through honest comparison, not by pretending incumbent rental systems do not exist. Publish a current comparison matrix of UAE rental platforms, clearly state where each owns booking/fleet/compliance truth, and show the remaining pre-booking conversion gap with original response-time data. This transparency is more citeable than a vendor-only landing page. Maintain crawler/index access and third-party client/integration proof.
+''',
+          'research/niches/06-whatsapp-crm-dubai-aesthetic-clinics.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+B2B buyer terms:
+
+- aesthetic clinic CRM Dubai;
+- WhatsApp CRM for clinics UAE;
+- clinic lead management Dubai;
+- cosmetic clinic CRM;
+- aesthetic clinic lead follow up;
+- clinic consultation booking automation;
+- medical clinic CRM UAE.
+
+Current search competition includes clinic-management/PMS vendors, generic CRM vendors and specialised WhatsApp CRM content. Remarketly, for example, currently publishes a 2026 Dubai clinic/salon WhatsApp CRM guide, showing that the exact search intent is already being targeted. The page must therefore lead with **paid-lead-to-consultation visibility and conversion**, not shared inbox features.
+
+Primary money page: `/solutions/aesthetic-clinic-lead-conversion-dubai/`.
+
+Cluster: WhatsApp CRM comparison; lead-response benchmark; paid-lead leakage calculator; consultation/no-show recovery; clinic CRM vs PMS; compliant messaging; case studies.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “best CRM for aesthetic clinics in Dubai”;
+- “WhatsApp CRM for cosmetic clinic UAE”;
+- “how to convert aesthetic clinic leads faster?”;
+- “clinic CRM vs practice management software”.
+
+Because healthcare/aesthetics is high-trust, build clinician/facility/entity accuracy and cite DHA/regulatory evidence. Publish dated comparison methodology, actual lead→consultation benchmarks and explicit privacy/compliance boundaries. Do not publish unsupported clinical claims. Consistent facility/service/location facts, real client proof, indexability and reputable third-party mentions improve both conventional search and answer-engine citation potential.
+
+Current search evidence: https://remarketly.io/blog/whatsapp-crm-dubai-clinics-salons
+''',
+          'research/niches/07-missed-lead-dubai-car-rental.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+Outcome-specific terms are more attractive than broad rental-software terms:
+
+- car rental lead follow up;
+- WhatsApp car rental booking automation;
+- car rental enquiry response software;
+- missed lead recovery car rental;
+- car rental speed to lead;
+- abandoned car rental quote follow up;
+- Dubai car rental conversion automation.
+
+SERP competition includes rental OS vendors, CRM/WhatsApp tools and marketing agencies. The differentiation is a measurable **enquiry timestamp → first response → quote → booking** benchmark layered onto the current rental system.
+
+Primary money page: `/solutions/car-rental-missed-lead-recovery-dubai/`.
+
+Cluster: first-response benchmark; quote-follow-up sequences; comparison-shopping behaviour; rental OS integration; WhatsApp consent; recovered-booking case studies.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “how quickly should a car rental company reply in Dubai?”;
+- “how to automate WhatsApp car rental enquiries?”;
+- “best missed lead system for car rental”; and
+- “how to recover unbooked rental quotes”.
+
+The strongest citation asset will be a **Dubai Car Rental Response & Booking Benchmark** using real timestamp/booking data across operators. Publish methodology and distribution, not just averages. Also publish clear integration boundaries with Settli/Cardash/PRO-VIA/Fleexa/other OSs so answer engines can cite a vendor-neutral operational guide.
+''',
+          'research/niches/08-revenue-recovery-automotive-workshops.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+Commercial terms:
+
+- garage customer reactivation UAE;
+- auto workshop declined estimate follow up;
+- car service reminder software UAE;
+- garage CRM follow up;
+- automotive workshop revenue recovery;
+- declined repair recovery;
+- dormant customer reactivation garage.
+
+Current UAE workshop software is unusually strong. GRX, Garij and AutoFixia publish dedicated UAE landing pages and cover customer/vehicle records, estimates, jobs, reminders, invoicing and WhatsApp communication. Therefore SEO should not position the product as missing software; position it as a **managed recovered-gross-profit outcome using the incumbent DMS data**.
+
+Primary money page: `/solutions/garage-revenue-recovery-uae/`.
+
+Cluster: declined-estimate recovery; overdue-service campaigns; DMS vs managed recovery; recovery ROI calculator; GRX/Garij/AutoFixia integration playbooks; case study.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “how do garages recover declined repair estimates?”;
+- “best customer reactivation system for UAE workshops?”;
+- “does garage software already send service reminders?”;
+- “how to improve workshop repeat revenue”.
+
+Earn citations by acknowledging native DMS features and publishing comparative outcome evidence: number/value of declined jobs, recovery rate, completed gross profit and contact rules. Current competitor sources include https://grx.ae/, https://www.mygarij.com/ and https://www.autofixia.com/. Original recovery benchmarks and real integrations are more defensible than generic automation content.
+''',
+          'research/niches/09-whatsapp-crm-dental-implant-clinics.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+B2B terms:
+
+- dental CRM Dubai;
+- WhatsApp CRM for dentists UAE;
+- dental implant lead management;
+- dental patient follow up software;
+- implant consultation CRM;
+- dental lead conversion Dubai;
+- clinic CRM vs dental practice software.
+
+The SERP is split among dental-practice software, generic CRM/WhatsApp vendors and dental marketing agencies. Consumer implant searches are much more competitive and should belong to the clinic's own SEO programme, not the B2B implementation landing page.
+
+Primary money page: `/solutions/dental-implant-lead-crm-dubai/`.
+
+Cluster: implant lead→consultation funnel; CRM vs dental PMS; WhatsApp consent; no-show rescue; treatment-acceptance follow-up; high-ticket patient pipeline benchmark; implementation case study.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “best CRM for a dental implant clinic in Dubai”;
+- “WhatsApp CRM for dentists UAE”;
+- “how to follow up dental implant leads?”;
+- “dental CRM vs practice management software”.
+
+Healthcare trust rules apply. Publish regulatory/credential-aware material, transparent workflow boundaries, actual lead→consultation→accepted-case data and current vendor comparisons. Avoid unsupported treatment claims. For clinic-side AI visibility, clinician credentials, DHA-licensed facility facts, genuine reviews, detailed implant cost/methodology pages and reputable third-party citations are stronger signals than promotional “best clinic” copy.
+''',
+          'research/niches/10-whatsapp-crm-automotive-workshops.md': r'''
+
+## 24. SEO opportunity and competition — v3 addendum
+
+High-intent B2B terms:
+
+- garage management software UAE;
+- workshop management software Dubai;
+- auto repair software UAE;
+- garage CRM Dubai;
+- workshop WhatsApp software;
+- digital job cards UAE;
+- garage customer management system.
+
+This is now a **heavily contested SERP**. GRX, Garij and AutoFixia have highly optimised UAE/Dubai pages, localised feature sets, trials and transparent/local pricing. GRX currently publishes Basic AED2,500/year, Premium AED3,600/year and Enterprise AED7,500/year per branch on its Dubai page. Garij and AutoFixia also position directly against paper/WhatsApp/Excel.
+
+Therefore iMPLEMENTAi should not try to rank/sell as “another garage software”. Better money page: `/solutions/legacy-garage-digital-revenue-layer-uae/` or an implementation/comparison page explaining when to use GRX/Garij/AutoFixia versus an overlay.
+
+Content cluster: UAE garage software comparison; migration from Excel/WhatsApp; DMS selection guide; customer-recovery integration; AI voice integration; workshop software implementation checklist.
+
+## 25. AI discovery / GEO — v3 addendum
+
+Target prompts:
+
+- “best garage management software UAE 2026”;
+- “Garij vs GRX vs AutoFixia”;
+- “best workshop CRM Dubai”; and
+- “how to digitise a UAE auto workshop”.
+
+The strongest answer-engine position is **independent implementation/comparison authority**, not claiming proprietary superiority without evidence. Maintain a dated feature/pricing matrix sourced from vendor pages, publish migration benchmarks and show which outcome modules can sit on top of each DMS. Current competitor evidence: https://grx.ae/garage-management-software-uae, https://www.mygarij.com/garage-software-dubai and https://www.autofixia.com/. Allow search crawlers/OAI-SearchBot where desired and monitor citations for the comparison prompts monthly.
+'''
+          }
+
+          changed = []
+          for file, addition in additions.items():
+              p = Path(file)
+              text = p.read_text()
+              if 'v3 addendum' in text:
+                  continue
+              text = text.replace('**Research version:** 2.0 — comprehensive dossier', '**Research version:** 3.0 — comprehensive dossier')
+              text = text.replace('**Governing issue:** #44', '**Governing issue:** #46')
+              text = text.replace('research/niches/_research-standard-v2.md', 'research/niches/_research-standard-v3.md')
+              text = text.rstrip() + addition + '\n'
+              p.write_text(text)
+              changed.append(file)
+
+          if not changed:
+              print('No changes required')
+          else:
+              print('Updated', len(changed), 'files')
+              for f in changed:
+                  print(f)
+          PY
+          git config user.name 'DRF Research Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add research/niches/0*.md research/niches/10-whatsapp-crm-automotive-workshops.md
+          if git diff --cached --quiet; then
+            echo 'No research changes to commit'
+          else
+            git commit -m 'Complete top ten niche SEO and AI discovery v3'
+            git push
+          fi
