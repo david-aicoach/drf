@@ -1,7 +1,7 @@
 # DRF Sniper Niche Evidence Library
 
 **Date:** 29 August 2026  
-**Governing issues:** #41, #44, **#46**  
+**Governing issues:** #41, #44, #46, **#46**  
 **Status:** Canonical one-file-per-niche research layer  
 **Parent register:** `businesses/NICHES.md`  
 **Comprehensive dossier standard:** `research/niches/_research-standard-v3.md`
