@@ -35,7 +35,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:#fff;padding:
   <div class="wrap topin">
     <a class="brand" href="./"><span class="brandmark">DRF</span><span>Revenue Factory</span></a>
     <nav class="nav" aria-label="Dashboard navigation">
-      <a href="#overview">Overview</a><a href="#opportunities">Opportunities</a><a href="#market">Market Data</a><a href="#work">Work</a><a href="#research">Research</a><a href="#sources">Sources</a>
+      <a href="#overview">Overview</a><a href="#opportunities">Opportunities</a><a href="#niches">Niches</a><a href="#market">Market Data</a><a href="#work">Work</a><a href="#research">Research</a><a href="#sources">Sources</a>
     </nav>
   </div>
 </header>
@@ -66,6 +66,11 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:#fff;padding:
       <div class="panel-head"><div class="panel-title"><h3>Portfolio summary</h3><span class="count" id="portfolio-count">0 rows</span></div><div class="toolbar"><input class="search" id="portfolio-search" placeholder="Filter opportunities…" aria-label="Filter opportunities"><button class="toolbtn" id="portfolio-reset" type="button">Reset columns</button></div></div>
       <div id="portfolio-grid" class="portfolio-desktop"></div>
       <div id="portfolio-cards" class="mobile-cards"></div>
+    </div>
+
+    <div class="panel" id="niches" style="margin-top:8px">
+      <div class="panel-head"><div class="panel-title"><h3>Niche attractiveness ranking</h3><span class="count" id="niche-count">0 rows</span></div><div class="toolbar"><input class="search" id="niche-search" placeholder="Filter niches…" aria-label="Filter niches"><button class="toolbtn" id="niche-reset" type="button">Reset columns</button></div></div>
+      <div id="niche-grid"></div>
     </div>
 
     <details class="data-panel">
@@ -109,6 +114,8 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:#fff;padding:
       <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/business-opportunity-validation-2026-08-29.md">Opportunity validation<span>Cross-opportunity research and validation.</span></a>
       <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/five-golden-business-opportunities-2026-08-29.md">Golden opportunities<span>Highest-potential opportunities research.</span></a>
       <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md">GoHighLevel MRR<span>Recurring-revenue product opportunities.</span></a>
+      <a class="external" href="https://github.com/tbhrc/drf/blob/main/businesses/NICHES.md">Niche register<span>Ranked product × micro-niche targets and evidence.</span></a>
+      <a class="external" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/niche-attractiveness-scoring-framework.md">Niche scoring framework<span>Second-stage sniper-market scoring model.</span></a>
       <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/ai-first-digital-marketplaces-and-service-platforms.md">Internet revenue map<span>Macro marketplace and services map.</span></a>
       <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/whop-business-blueprints-productisation.md">Whop Blueprints<span>Whop productisation research.</span></a>
       <a class="external" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/business-opportunity-scoring-framework.md">Scoring framework<span>Canonical weighted opportunity model.</span></a>
@@ -123,6 +130,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:#fff;padding:
       <div class="src"><strong>README.md</strong><span id="src-readme">Loading…</span></div>
       <div class="src"><strong>VERSION</strong><span id="src-version">Loading…</span></div>
       <div class="src"><strong>OPPORTUNITIES.md</strong><span id="src-opps">Loading…</span></div>
+      <div class="src"><strong>NICHES.md</strong><span id="src-niches">Loading…</span></div>
       <div class="src"><strong>Macro research</strong><span id="src-macro">Loading…</span></div>
       <div class="src"><strong>Open Issues</strong><span id="src-open">Loading…</span></div>
       <div class="src"><strong>Closed Issues</strong><span id="src-closed">Loading…</span></div>
@@ -150,7 +158,7 @@ function macroSignals(md){const block=(md.match(/The macro opportunity is substa
 function numericValue(v){if(v===null||v===undefined)return null;const s=String(v).replace(/,/g,'').trim();const m=s.match(/-?\d+(?:\.\d+)?/);return m?Number(m[0]):null}
 function scoreClass(v){const n=numericValue(v);if(n===null)return'';if(String(v).includes('/10'))return n>=8?'good':n>=6?'warn':'bad';if(n>=80)return'good';if(n>=60)return'warn';return'bad'}
 function sourceLinks(value){const paths=String(value||'').match(/(?:businesses|research|knowledge)\/[A-Za-z0-9_./-]+\.md/g)||[];if(!paths.length)return null;const frag=document.createDocumentFragment();[...new Set(paths)].forEach((p,i)=>{if(i)frag.append(document.createTextNode(' · '));const a=document.createElement('a');a.href=`https://github.com/${REPO}/blob/main/${p}`;a.target='_blank';a.rel='noopener noreferrer';a.className='extlink';a.textContent=paths.length>1?`Source ${i+1} ↗`:'Open ↗';frag.append(a)});return frag}
-function defaultWidth(name){const n=name.toLowerCase();if(n==='rank'||n==='#')return 54;if(n.includes('opportunity'))return 250;if(n.includes('current read'))return 380;if(n.includes('next action'))return 350;if(n.includes('verified evidence')||n.includes('missing evidence'))return 360;if(n.includes('what drf')||n.includes('demand')||n.includes('economics')||n.includes('human/compliance')||n.includes('automation'))return 280;if(n.includes('canonical detail'))return 110;if(n.includes('title'))return 360;if(n.includes('updated'))return 135;if(n.includes('state')||n.includes('stage')||n.includes('priority')||n.includes('mode')||n.includes('discovery'))return 120;if(n.length<=4)return 72;return 150}
+function defaultWidth(name){const n=name.toLowerCase();if(n==='rank'||n==='#')return 54;if(n.includes('opportunity'))return 250;if(n.includes('sub-niche')||n.includes('core pain'))return 300;if(n.includes('current read'))return 380;if(n.includes('next action')||n.includes('next evidence'))return 350;if(n.includes('verified evidence')||n.includes('missing evidence'))return 360;if(n.includes('what drf')||n.includes('demand')||n.includes('economics')||n.includes('human/compliance')||n.includes('automation'))return 280;if(n.includes('canonical detail'))return 110;if(n.includes('title'))return 360;if(n.includes('updated'))return 135;if(n.includes('state')||n.includes('stage')||n.includes('priority')||n.includes('mode')||n.includes('discovery')||n.includes('decision'))return 120;if(n.includes('score')||n.includes('confidence'))return 120;if(n.length<=4)return 72;return 150}
 function renderMobilePortfolio(rows){const host=$('portfolio-cards');host.innerHTML='';rows.forEach((r,i)=>{const c=document.createElement('article');c.className='oppcard';const links=sourceLinks(r['Canonical detail']);c.innerHTML=`<div class="oppcard-head"><h3>#${i+1} ${escapeHtml(r['Opportunity'])}</h3><span class="stage">${escapeHtml(r['Stage'])}</span></div><div class="scoregrid"><div class="scorebox"><small>Score</small><strong class="${scoreClass(r['Opportunity Score'])}">${escapeHtml(r['Opportunity Score'])}</strong></div><div class="scorebox"><small>MRR</small><strong class="${scoreClass(r['MRR'])}">${escapeHtml(r['MRR'])}</strong></div><div class="scorebox"><small>AI</small><strong class="${scoreClass(r['AI Autonomy'])}">${escapeHtml(r['AI Autonomy'])}</strong></div><div class="scorebox"><small>Evidence</small><strong class="${scoreClass(r['Evidence Confidence'])}">${escapeHtml(r['Evidence Confidence'])}</strong></div></div><div class="opp-copy"><strong>Current read</strong><p>${escapeHtml(r['Current read'])}</p></div><div class="opp-copy"><strong>Next action</strong><p>${escapeHtml(r['Next action'])}</p></div>`;if(links){const d=document.createElement('div');d.append(links);c.append(d)}host.append(c)})}
 function escapeHtml(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function createGrid(hostId,rows,opts={}){
@@ -170,14 +178,15 @@ async function fetchIssues(state,statusId){try{const r=await fetch(`${API}/issue
 function issueRows(openRows,closedRows){return [...openRows,...closedRows.slice(0,40)].map(i=>({Issue:`#${i.number}`,State:i.state==='open'?'Open':'Closed',Title:i.title,Updated:new Date(i.updated_at).toLocaleString(),Link:i.html_url}))}
 async function load(){
   $('refresh').textContent=`Refreshed ${new Date().toLocaleTimeString()}`;
-  const [readme,version,opps,macro,openIssues,closedIssues]=await Promise.all([
-    text('README.md','src-readme').catch(()=>''),text('VERSION','src-version').catch(()=>''),text('businesses/OPPORTUNITIES.md','src-opps').catch(()=>''),text('research/ai-first-digital-marketplaces-and-service-platforms.md','src-macro').catch(()=>''),fetchIssues('open','src-open'),fetchIssues('closed','src-closed')
+  const [readme,version,opps,niches,macro,openIssues,closedIssues]=await Promise.all([
+    text('README.md','src-readme').catch(()=>''),text('VERSION','src-version').catch(()=>''),text('businesses/OPPORTUNITIES.md','src-opps').catch(()=>''),text('businesses/NICHES.md','src-niches').catch(()=>''),text('research/ai-first-digital-marketplaces-and-service-platforms.md','src-macro').catch(()=>''),fetchIssues('open','src-open'),fetchIssues('closed','src-closed')
   ]);
   $('version').textContent=version.trim()||'—';
   $('intro').textContent=(readme.match(/A GitHub-native factory[^\n]+/)||['GitHub-native factory for measurable commercial outcomes.'])[0];
   $('revenue-loop').textContent=fenced(readme,'Revenue execution loop')||'Revenue loop unavailable.';
-  const ot=parseTables(opps),mt=parseTables(macro);
+  const ot=parseTables(opps),nt=parseTables(niches),mt=parseTables(macro);
   const portfolio=findTable(ot,'portfolio summary').rows;
+  const nicheRows=findTable(nt,'ranked niche summary').rows;
   const scorecard=findTable(ot,'validated scores').rows;
   const evidence=findTable(ot,'independent evidence controls').rows;
   const autonomy=findTable(ot,'ai autonomy').rows;
@@ -188,6 +197,7 @@ async function load(){
   const topMrr=portfolio.reduce((m,r)=>Math.max(m,numericValue(r['MRR'])||0),0);$('top-mrr').textContent=topMrr?`${topMrr}/10`:'—';
   $('open-count').textContent=openIssues.length;
   createGrid('portfolio-grid',portfolio,{rank:true,defaultSort:'Opportunity Score',defaultDir:'desc',searchId:'portfolio-search',resetId:'portfolio-reset',countId:'portfolio-count',afterRender:renderMobilePortfolio});renderMobilePortfolio(portfolio);
+  createGrid('niche-grid',nicheRows,{rank:true,defaultSort:'Niche Score',defaultDir:'desc',searchId:'niche-search',resetId:'niche-reset',countId:'niche-count'});
   createGrid('scorecard-grid',scorecard,{rank:true,defaultSort:'Weighted Score',defaultDir:'desc',searchId:'scorecard-search',resetId:'scorecard-reset',countId:'scorecard-count'});
   createGrid('evidence-grid',evidence,{rank:true,defaultSort:'Evidence Confidence',defaultDir:'desc',searchId:'evidence-search',resetId:'evidence-reset',countId:'evidence-count'});
   createGrid('autonomy-grid',autonomy,{rank:true,defaultSort:'AI Autonomy',defaultDir:'desc',searchId:'autonomy-search',resetId:'autonomy-reset',countId:'autonomy-count'});
