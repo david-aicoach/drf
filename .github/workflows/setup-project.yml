@@ -1,0 +1,105 @@
+name: Setup DRF Project
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/setup-project.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  setup:
+    if: github.actor == 'tbhrc'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECT_MANAGEMENT_TOKEN }}
+      PROJECT_TITLE: DRF — Revenue Factory
+
+    steps:
+      - name: Preflight Project credential
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${GH_TOKEN:-}" || { echo 'PROJECT_MANAGEMENT_TOKEN is missing.' >&2; exit 1; }
+
+      - name: Create or reconcile DRF Project
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          base_query='query { viewer { id projectsV2(first: 100) { nodes { id number title } } } repository(owner: "tbhrc", name: "drf") { id } }'
+          base="$(gh api graphql -f query="$base_query" --jq '.data')"
+          owner_id="$(jq -r '.viewer.id' <<<"$base")"
+          repo_id="$(jq -r '.repository.id' <<<"$base")"
+          project_id="$(jq -r --arg title "$PROJECT_TITLE" '.viewer.projectsV2.nodes[] | select(.title == $title) | .id' <<<"$base" | head -n1)"
+          project_number="$(jq -r --arg title "$PROJECT_TITLE" '.viewer.projectsV2.nodes[] | select(.title == $title) | .number' <<<"$base" | head -n1)"
+
+          if [ -z "$project_id" ]; then
+            create='mutation($ownerId: ID!, $repositoryId: ID!, $title: String!) { createProjectV2(input: {ownerId: $ownerId, repositoryId: $repositoryId, title: $title}) { projectV2 { id number title } } }'
+            project="$(gh api graphql -f query="$create" -f ownerId="$owner_id" -f repositoryId="$repo_id" -f title="$PROJECT_TITLE" --jq '.data.createProjectV2.projectV2')"
+            project_id="$(jq -r '.id' <<<"$project")"
+            project_number="$(jq -r '.number' <<<"$project")"
+            echo "Created DRF Project #${project_number}."
+          else
+            echo "DRF Project #${project_number} already exists; reconciling fields."
+          fi
+
+          update_project='mutation($projectId: ID!) { updateProjectV2(input: {projectId: $projectId, shortDescription: "GitHub-native control plane for David’s Revenue Factory."}) { projectV2 { id } } }'
+          gh api graphql -f query="$update_project" -f projectId="$project_id" >/dev/null
+
+          refresh_fields() {
+            gh api -H 'Accept: application/vnd.github+json' -H 'X-GitHub-Api-Version: 2026-03-10' "/users/tbhrc/projectsV2/${project_number}/fields"
+          }
+
+          fields="$(refresh_fields)"
+          status_id="$(jq -r '.[] | select(.name == "Status") | .node_id' <<<"$fields" | head -n1)"
+          test -n "$status_id" || { echo 'Built-in Project Status field was not found.' >&2; exit 1; }
+
+          current_status="$(jq -r '.[] | select(.name == "Status") | .options[].name.raw' <<<"$fields" | paste -sd '|' -)"
+          desired_status='Inbox|Research|Ready|Executing|Review|QA|Done'
+          if [ "$current_status" != "$desired_status" ]; then
+            update_status="mutation { updateProjectV2Field(input: {fieldId: \"$status_id\", singleSelectOptions: [{name:\"Inbox\",color:GRAY,description:\"New work\"},{name:\"Research\",color:PURPLE,description:\"Evidence before execution\"},{name:\"Ready\",color:BLUE,description:\"Ready for action\"},{name:\"Executing\",color:YELLOW,description:\"Execution in progress\"},{name:\"Review\",color:ORANGE,description:\"PR or commercial review\"},{name:\"QA\",color:PINK,description:\"Acceptance verification\"},{name:\"Done\",color:GREEN,description:\"Accepted and complete\"}]}) { projectV2Field { ... on ProjectV2SingleSelectField { id } } } }"
+            gh api graphql -f query="$update_status" >/dev/null
+            fields="$(refresh_fields)"
+          fi
+
+          ensure_text() {
+            local name="$1"
+            local mutation
+            if ! jq -e --arg name "$name" '.[] | select(.name == $name)' <<<"$fields" >/dev/null; then
+              mutation="mutation { createProjectV2Field(input: {projectId: \"$project_id\", dataType: TEXT, name: \"$name\"}) { projectV2Field { ... on ProjectV2Field { id } } } }"
+              gh api graphql -f query="$mutation" >/dev/null
+              fields="$(refresh_fields)"
+            fi
+          }
+
+          ensure_single_select() {
+            local name="$1"
+            local expected="$2"
+            local options="$3"
+            local current mutation
+            if ! jq -e --arg name "$name" '.[] | select(.name == $name)' <<<"$fields" >/dev/null; then
+              mutation="mutation { createProjectV2Field(input: {projectId: \"$project_id\", dataType: SINGLE_SELECT, name: \"$name\", singleSelectOptions: [$options]}) { projectV2Field { ... on ProjectV2SingleSelectField { id } } } }"
+              gh api graphql -f query="$mutation" >/dev/null
+              fields="$(refresh_fields)"
+            fi
+            current="$(jq -r --arg name "$name" '.[] | select(.name == $name) | .options[].name.raw' <<<"$fields" | paste -sd '|' -)"
+            [ "$current" = "$expected" ] || { echo "Existing field '$name' has unexpected options: $current" >&2; exit 1; }
+          }
+
+          ensure_single_select 'DRF Priority' 'P0|P1|P2|P3' '{name:"P0",color:RED,description:"Critical/revenue blocking"},{name:"P1",color:ORANGE,description:"High"},{name:"P2",color:YELLOW,description:"Normal"},{name:"P3",color:GRAY,description:"Low"}'
+          ensure_text 'Executor'
+          ensure_text 'Business'
+          ensure_single_select 'Work Type' 'Business|Offer|Campaign|Research|System|Chore' '{name:"Business",color:BLUE,description:"Business/venture work"},{name:"Offer",color:GREEN,description:"Offer/product work"},{name:"Campaign",color:YELLOW,description:"Acquisition/revenue campaign"},{name:"Research",color:PURPLE,description:"Evidence and decision"},{name:"System",color:ORANGE,description:"Automation/software/setup"},{name:"Chore",color:GRAY,description:"Maintenance"}'
+
+          fields="$(refresh_fields)"
+          final_status="$(jq -r '.[] | select(.name == "Status") | .options[].name.raw' <<<"$fields" | paste -sd '|' -)"
+          {
+            echo '## DRF Project configured'
+            echo "Project number: ${project_number}"
+            echo "Status: ${final_status}"
+            echo 'Fields: DRF Priority, Executor, Business, Work Type'
+          } >> "$GITHUB_STEP_SUMMARY"
