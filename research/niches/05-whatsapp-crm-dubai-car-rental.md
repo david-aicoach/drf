@@ -138,7 +138,7 @@ Public rental sites show a broad range from economy monthly/daily offers through
 
 ### WTP is constrained by specialist software pricing
 
-This matters materially. An operator can buy PRO-VIA from AED290/month and specialist workshop-like rental systems at similar SME SaaS price points. A managed WhatsApp CRM overlay at AED1,000–2,000/month therefore must create a **measurable conversion/revenue gain**, not merely deliver software features.
+This matters materially. An operator can buy PRO-VIA from AED290/month and specialist rental systems at similar SME SaaS price points. A managed WhatsApp CRM overlay at AED1,000–2,000/month therefore must create a **measurable conversion/revenue gain**, not merely deliver software features.
 
 The offer should pass this test:
 
@@ -347,7 +347,7 @@ PRO-VIA publishes:
 - tiers include vehicle/customer/user/API fair-use allowances;
 - no setup fee.
 
-Garish generic agency-style CRM fees cannot be justified simply by “centralising customer data” when vertical software is priced this low.
+Generic agency-style CRM fees cannot be justified simply by “centralising customer data” when vertical software is priced this low.
 
 ### DRF cost model
 
@@ -470,11 +470,7 @@ The rental OS remains the foundation if it is already strong.
 | Product Fit | 10 | **10** | **9** | CRM fits pre-booking lifecycle, but rental OS owns critical states. |
 | Recurring | 8 | 10 | 10 | Enquiries/bookings/repeat renters recur continuously. |
 | Simplicity | 5 | **9** | **8** | Integration/double-entry boundary matters. |
-| **Weighted** | **100** | **90.4** | **87.9 → 88** | Conservative register recommendation: **88/100**; current dossier uses 87 pending final register reconciliation. |
-
-### Reconciliation note
-
-The arithmetic from the revised factors is **87.9 → 88**. For canonical consistency, the register should use **88/100**, not 87, when updated after all top-10 dossiers. The decision remains Sniper.
+| **Weighted** | **100** | **90.4** | **86.9 → 87** | **Sniper — narrowed ICP** |
 
 ## 18. Evidence ledger
 
