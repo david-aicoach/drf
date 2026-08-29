@@ -21,11 +21,11 @@ Each surface column contains both readiness and the authenticated identity where
 | **GoHighLevel** | 🟨 Partial — read works; location identity unresolved | 🟨 Partial — contacts `0`; location unresolved | ⏳ Pending | ❌ Missing — no MCP/CLI; browser-only, untested | Primary commercial spine; require exact location + bounded writes |
 | **Outlook Email** | ✅ `careers@talentbridgedubai.com` | ✅ `careers@talentbridgedubai.com` | ⏳ Pending | ✅ `info@talentbridgedubai.com` (differs from Web/Codex) | Sender identity is critical |
 | **Outlook Calendar** | ✅ `info@talentbridgedubai.com` | ✅ `info@talentbridgedubai.com` | ⏳ Pending | ✅ `info@talentbridgedubai.com` | Calendar identity differs from Outlook Email |
-| **LinkedIn** | ❌ No authenticated operating route | ❌ No direct route | ⏳ Pending | ❌ No authenticated route; browser-only | Research/relationship intelligence; no unauthorised bot messaging |
+| **LinkedIn** | ❌ No authenticated operating route | ❌ No direct route | ⏳ Pending | 🟨 Research-read via `agent-reach`/browser; no auth action, no messaging | Research/relationship intelligence; no unauthorised bot messaging |
 | **WhatsApp Business** | ❌ Not connected | ❌ No direct route | ⏳ Pending | ❌ Not connected | Prefer official WhatsApp Business through HighLevel |
 | **Stripe** | 🟨 CLI/infrastructure known; no bounded action here | ❌ No connector or CLI | ⏳ Pending | ❌ Missing — no MCP, no `stripe` CLI | Payment links, invoices, subscriptions, payment status |
 | **Web research** | ✅ Native ChatGPT | ✅ Native web route | ⏳ Pending | ✅ Native Claude (WebSearch / WebFetch) | Prospect/company/competitor/buying-signal research |
-| **Lead enrichment** | ❌ None | ❌ No direct route | ⏳ Pending | ❌ None | Add only if existing data proves insufficient |
+| **Lead enrichment** | ❌ None | ❌ No direct route | ⏳ Pending | 🟨 Manual — agent/web research; no provider API | Add only if existing data proves insufficient |
 | **OneDrive / SharePoint** | ✅ `info@talentbridgedubai.com` | ✅ `info@talentbridgedubai.com` | ⏳ Pending | ✅ `info@talentbridgedubai.com` (`tbhrc-my.sharepoint.com`) | Commercial documents/source files |
 | **FolderDesk** | ✅ Connected; identity not exposed | 🟨 Partial — health works; DRF unresolved | ⏳ Pending | ✅ FD0 connector v3.34 | Durable coordination where required |
 | **GitHub / DRF** | ✅ `tbhrc` / `talentbridgedubai@gmail.com` | ✅ `tbhrc` / `talentbridgedubai@gmail.com` | ⏳ Pending | ✅ `tbhrc` (write exercised on this Issue) | Canonical DRF control plane |
@@ -187,15 +187,15 @@ Claude → Composio CLI                                                         
 | GoHighLevel | ❌ Missing | None on Claude surface | No connector/CLI; nothing tested | No CRM write route; **not exercised** | No MCP/CLI. Only route is browser automation to `app.gohighlevel.com` (untested). No OAuth/MCP location identity. |
 | Outlook Email | ✅ Verified | `info@talentbridgedubai.com` (Microsoft 365 MCP, user `294d2f39-…`) — **differs from ChatGPT Web and Codex, both `careers@talentbridgedubai.com`** | `get_me` + mailbox thread search | Send/reply/reply-all/forward/draft exposed; **not exercised** | Microsoft 365 MCP |
 | Outlook Calendar | ✅ Verified | `info@talentbridgedubai.com` (same MS account) | `outlook_calendar_search` returned events | Create/update/delete event + respond-to-invite exposed; **not exercised** | Microsoft 365 MCP |
-| LinkedIn | ❌ Missing | None | No authenticated route tested | No write route | No connector/MCP/CLI. Real-Chrome session may exist (untested); no bot messaging. |
+| LinkedIn | 🟨 Partial (research only) | None (public data) | ✅ Public profile/company reads via `agent-reach` skill + browser | No authenticated write; no messaging | No connector/MCP/CLI for authenticated actions. Real-Chrome session may exist (untested). Research/relationship intelligence is reachable; bot messaging is not. |
 | WhatsApp Business | ❌ Missing | None | No route tested | No send route | No connector/MCP/CLI |
 | Stripe | ❌ Missing | None | Local `stripe` CLI absent; no MCP | No bounded payment/invoice write route | No Stripe MCP or CLI. Browser to `dashboard.stripe.com` only (untested). |
 | Web research | ✅ Verified | Native Claude; no account applicable | WebSearch + WebFetch + `agent-reach` skill available | N/A | Native Claude tools |
-| Lead enrichment | ❌ Missing | None | No enrichment read route | No write route | No dedicated connector |
+| Lead enrichment | 🟨 Partial (manual) | None | ✅ Agent/web research enrichment via WebSearch + `agent-reach` + sub-agents | No write route | No enrichment-data-provider API. Manual/agent research enrichment is available; add a paid provider only if this proves insufficient. |
 | OneDrive / SharePoint | ✅ Verified | `info@talentbridgedubai.com` — tenant `tbhrc-my.sharepoint.com` (~5,361 docs) | `sharepoint_search` returned documents | Upload/update/move/copy/rename/delete file + create folder exposed; **not exercised** | Microsoft 365 MCP |
 | FolderDesk | ✅ Verified | FD0 connector v3.34 (`find / project / task / file / website / coordinate / connector`) | `connector(version)` + `find` succeeded | Bounded task/file/coordination writes exposed; **not exercised in this test** | Native FD0 MCP connector; no local `fd0` CLI |
 | GitHub / DRF | ✅ Verified | `tbhrc` via `gh` CLI (GitHub ID `239958985`) | Repo + Issue #5 read | Issues/comments/commit tools; **Issue #5 update and this documentation are the only exercised repository writes** | Authenticated local `gh` CLI |
-| ATS / recruitment database | 🟨 Partial | Google Sheet "ATS" owned by `talentbridgedubai@gmail.com` | Visible via Drive MCP `list_recent_files` | No ATS write route; sheet edits only | No ATS connector/API; Google Drive indirect only |
+| ATS / recruitment database | 🟨 Partial | Google Sheet "ATS" owned by `talentbridgedubai@gmail.com`; Manatal (no live API tested) | ✅ Sheet visible via Drive MCP; `manatal-ats` skill documents the Manatal screening procedure | No ATS API write route; sheet edits only | No live ATS connector. Google Drive indirect + `manatal-ats` skill are the concrete routes. |
 | GulfTalent | 🟨 Partial | Existing account; no credentials on surface | No authenticated read route | No write route | Browser/manual route only (untested) |
 | Google Contacts | 🟨 Partial | Would be `talentbridgedubai@gmail.com` | ❌ `google_workspace` MCP **not authenticated** (OAuth consent required) | Blocked pending consent | No dedicated Google Contacts MCP on this surface (Codex has one; Claude does not) |
 | Canva | ❌ Missing | None | No connector | No write route | No Canva MCP on Claude surface (Codex has one) |
@@ -221,6 +221,23 @@ Claude → Composio CLI                                                         
 - **Sub-agent dispatch:** `agent-intern` MCP delegates to Codex / Antigravity (Gemini) / Copilot / Cursor on the user's own quota, and generates images.
 - **Composio broker:** CLI authenticated (`talentbridgedubai_workspace`) with active `gmail` and `outlook` (alias `katrina`) connections and an expired `github` connection — a potential future broker path, not currently wired to CCO commercial apps; the Composio plugin is not installed in Claude Code.
 - **Identity divergence:** Claude's single Microsoft 365 connector authenticates Outlook **Email** as `info@talentbridgedubai.com`, whereas both ChatGPT Web and ChatGPT Desktop/Codex send Outlook Email as `careers@talentbridgedubai.com`. Confirm the intended sender per surface before any outbound mail.
+
+## Additional Claude surfaces beyond the fixed unified table
+
+Surfaces found in discovery that are not rows in the section-1 matrix. Per the governing rule these are **not** promoted into the unified matrix unless they unblock a measurable part of the commercial loop; they are recorded here so the Claude picture is complete and not artificially capped at the original 29 rows.
+
+| Surface / capability | Status on Claude | Identity / auth | What it does | Commercial-loop relevance |
+|---|---|---|---|---|
+| **Autonomous scheduling** (`scheduled-tasks` MCP + cron/`CronCreate`) | ✅ Available | Local to Claude Code | Time-based recurring agent runs — follow-up cadence, pipeline/inbox monitoring, scheduled digests | High — the Claude equivalent of the "Hermes-only runtime capability" Issue #5 asks each surface to record |
+| **Sub-agent dispatch** (`agent-intern` MCP) | ✅ Available | Runs on David's own Codex / Gemini / Copilot / Cursor quota | Parallel delegation of research or drafting; **only image generator** on this surface (`antigravity_image`) | Medium — research throughput + sales-collateral/image generation without spending Claude tokens |
+| **Cross-agent / cross-stream dispatch** (`coordinate` FD0 action, `vps-control` skill) | ✅ Available | FolderDesk FD0 connector | Hand a bounded task to Hermes / Codex / LocalStream and verify from durable files | Medium — lets Claude route commercial work to a surface that has the connector it lacks |
+| **Public / social research** (`agent-reach` skill) | ✅ Available | No login (public data); paywall-bypass helpers | Read X / Reddit / LinkedIn-public / YouTube transcripts; company & prospect signal scraping | High — augments Web research, partial LinkedIn **research** intelligence, and manual lead enrichment |
+| **ChatGPT Web handoff** (`chatgpt-web-handoff` skill) | 🟨 Available, needs Chrome session | David's authenticated ChatGPT in Chrome | Offload heavy public research to ChatGPT Web and retrieve cited results | Medium — heavy-research overflow route |
+| **Manatal ATS** (`manatal-ats` skill) | 🟨 Skill only | No live API tested | Documented candidate screening / shortlisting procedure over Manatal | Medium — this is the concrete route behind the "ATS / recruitment database" row, which the fixed matrix marks as "no connector" |
+| **Hostinger Reach** (`hostinger-reach` MCP) | ❌ Not authorised | OAuth not completed on this surface | Email-marketing platform — campaigns, contacts, segments, automations, forms | Medium — an outbound email-campaign route if authorised; currently unusable |
+| **FolderDesk commercial skills** (`talent-bridge-recruitment-proposal`, `instant-quote`, `tb-lead-research`, `talent-bridge-cv-writer`, `talent-bridge-jd-writer`, `tb-finances-zoho-books`, …) | ✅ Available | Operate through the connectors already listed above | Proposal / quote / JD / CV generation, lead research, finance procedures | High — direct commercial-loop tooling unique to this surface |
+| **Google Workspace authoring** (`google_workspace` MCP — Docs / Sheets / Slides / Forms / Chat / Tasks / Apps Script) | ❌ Not authenticated | OAuth consent required | Document/spreadsheet/deck authoring, Google Chat messaging, Apps Script automation | Medium if authorised — collateral authoring + a second messaging surface |
+| **Infrastructure MCPs** (`supabase`, Hostinger `vps`/`dns`/`domains`/`hosting`/`wordpress`, Cloudflare via SOP-033) | Mixed — Supabase ✅, Hostinger ❌ not authorised, Cloudflare via scoped token | Per service | Database, hosting, DNS, CDN/WAF control | Low — infrastructure, not the commercial loop; listed for completeness only |
 
 ---
 
@@ -259,7 +276,7 @@ Claude → Google Calendar / Google Contacts → google_workspace MCP NOT AUTHEN
 - [x] **ChatGPT Web / CCO** tested and recorded.
 - [x] **ChatGPT Desktop / Codex** tested and reconciled with ChatGPT Web.
 - [ ] **Hermes** pending.
-- [x] **Claude** tested and recorded (2026-08-29) — 🟨 partial: strong on Microsoft 365, Gmail, Google Drive, HubSpot, GitHub/DRF, FolderDesk, Hindsight; no route to HighLevel / Stripe / WhatsApp / LinkedIn / Canva / Asana; Google Calendar + Contacts blocked on OAuth.
+- [x] **Claude** tested and recorded (2026-08-29) — 🟨 partial: strong on Microsoft 365, Gmail, Google Drive, HubSpot, GitHub/DRF, FolderDesk, Hindsight; no route to HighLevel / Stripe / WhatsApp / Canva / Asana; LinkedIn + lead enrichment are research-read only; Google Calendar + Contacts blocked on OAuth. See §5 "Additional Claude surfaces beyond the fixed unified table" for scheduling, sub-agent dispatch, cross-agent dispatch, public-research and commercial-skill capabilities.
 
 Keep GitHub Issue #5 open until Desktop/Codex, Hermes and Claude are tested and reconciled against the unified table. **Web, Codex and Claude are now done; Hermes remains.**
 
