@@ -16,37 +16,37 @@
 
 This is the master table. Each operating surface gets its own status and account/identity columns.
 
-| Integration | **ChatGPT Web / CCO — this assistant** | **Web account / identity** | **ChatGPT Desktop / Codex** | **Desktop / Codex account / identity** | CCO requirement / note |
-|---|---|---|---|---|---|
-| **GoHighLevel** | 🟨 Partial — contacts + opportunities reads work; writes not exposed | Connected, but **location/sub-account identity not exposed** | ⏳ Pending | ⏳ Pending | Primary commercial operating spine; need exact location identity + bounded CRM writes |
-| **Outlook Email** | ✅ Verified | `careers@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | Email sender identity is critical |
-| **Outlook Calendar** | ✅ Verified | `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | Calendar identity differs from Outlook Email |
-| **LinkedIn** | ❌ Missing direct authenticated operating route | None exposed | ⏳ Pending | ⏳ Pending | Research/relationship intelligence; no unauthorised scraping or bot messaging |
-| **WhatsApp Business** | ❌ Missing | Not connected | ⏳ Pending | ⏳ Pending | Prefer official WhatsApp Business through HighLevel |
-| **Stripe** | 🟨 Partial — wider CLI/infrastructure exists, no direct bounded action here | Identity not exposed here | ⏳ Pending | ⏳ Pending | Payment links, invoices, subscriptions, payment status only |
-| **Web research** | ✅ Verified | Native ChatGPT public web | ⏳ Pending | ⏳ Pending | Prospect/company/competitor/buying-signal research |
-| **Lead enrichment** | ❌ Missing | None | ⏳ Pending | ⏳ Pending | Add only if existing data proves insufficient |
-| **OneDrive / SharePoint** | ✅ Verified | `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | Commercial documents/source files |
-| **FolderDesk** | ✅ Verified | Connected; identity not exposed | ⏳ Pending | ⏳ Pending | Durable/local coordination where required |
-| **GitHub / DRF** | ✅ Verified | `tbhrc` / `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | Canonical DRF control plane |
-| **ATS / recruitment database** | 🟨 Partial — existing system, no dedicated connector here | Existing business system | ⏳ Pending | ⏳ Pending | Use only where commercially relevant |
-| **GulfTalent** | 🟨 Partial — existing account, no direct connector here | Existing account | ⏳ Pending | ⏳ Pending | Manual/browser route if useful |
-| **Google Contacts** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | Warm relationship/contact resolution |
-| **Canva** | ✅ Verified | Connected; account identity not exposed | ⏳ Pending | ⏳ Pending | Sales collateral when directly useful |
-| **E-signature / contracts** | ❌ Missing dedicated provider | None | ⏳ Pending | ⏳ Pending | Prefer HighLevel contracts if sufficient |
-| **Calling / voice** | ❌ Missing direct telephony route | None | ⏳ Pending | ⏳ Pending | Prefer HighLevel telephony or one provider |
-| **Meeting intelligence** | 🟨 Partial | Teams: `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | Search/read works; transcription automation not proven |
-| **Paid advertising** | ❌ Missing direct ads-platform control | None | ⏳ Pending | ⏳ Pending | Phase 2 after organic/outbound conversion is proven |
-| **Website / landing pages** | 🟨 Partial via HubSpot | HubSpot: `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | HubSpot landing-page access requires reauthorisation; HighLevel preferred |
-| **Commercial analytics** | 🟨 Partial | Multiple systems; no unified identity | ⏳ Pending | ⏳ Pending | Start with HighLevel + DRF; no separate BI until required |
-| **Gmail** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | Alternative sender mailbox |
-| **Google Calendar** | ✅ Verified | `implementai.ae@gmail.com` | ⏳ Pending | ⏳ Pending | iMPLEMENTAi calendar identity |
-| **Google Drive** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | Google file access |
-| **Microsoft Teams** | ✅ Verified | `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | Messaging/search/read available |
-| **HubSpot** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | CRM reads + several writes available; not intended as primary CCO spine |
-| **Zoho Books** | 🟨 Partial | Connector present; organisation identity unresolved | ⏳ Pending | ⏳ Pending | Financial actions blocked until organisation identity is confirmed |
-| **Asana** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | Available but not required for DRF control |
-| **Hindsight Memory** | ✅ Verified | Shared FolderDesk memory bank | ⏳ Pending | ⏳ Pending | Recall/continuity layer only |
+| Integration | **ChatGPT Web / CCO — this assistant** | **Web account / identity** | **ChatGPT Desktop / Codex** | **Desktop / Codex account / identity** | **Hermes** | **Hermes account / identity** | CCO requirement / note |
+|---|---|---|---|---|---|---|---|
+| **GoHighLevel** | 🟨 Partial — contacts + opportunities reads work; writes not exposed | Connected, but **location/sub-account identity not exposed** | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Primary commercial operating spine; need exact location identity + bounded CRM writes |
+| **Outlook Email** | ✅ Verified | `careers@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Email sender identity is critical |
+| **Outlook Calendar** | ✅ Verified | `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Calendar identity differs from Outlook Email |
+| **LinkedIn** | ❌ Missing direct authenticated operating route | None exposed | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Research/relationship intelligence; no unauthorised scraping or bot messaging |
+| **WhatsApp Business** | ❌ Missing | Not connected | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Prefer official WhatsApp Business through HighLevel |
+| **Stripe** | 🟨 Partial — wider CLI/infrastructure exists, no direct bounded action here | Identity not exposed here | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Payment links, invoices, subscriptions, payment status only |
+| **Web research** | ✅ Verified | Native ChatGPT public web | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Prospect/company/competitor/buying-signal research |
+| **Lead enrichment** | ❌ Missing | None | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Add only if existing data proves insufficient |
+| **OneDrive / SharePoint** | ✅ Verified | `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Commercial documents/source files |
+| **FolderDesk** | ✅ Verified | Connected; identity not exposed | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Durable/local coordination where required |
+| **GitHub / DRF** | ✅ Verified | `tbhrc` / `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Canonical DRF control plane |
+| **ATS / recruitment database** | 🟨 Partial — existing system, no dedicated connector here | Existing business system | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Use only where commercially relevant |
+| **GulfTalent** | 🟨 Partial — existing account, no direct connector here | Existing account | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Manual/browser route if useful |
+| **Google Contacts** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Warm relationship/contact resolution |
+| **Canva** | ✅ Verified | Connected; account identity not exposed | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Sales collateral when directly useful |
+| **E-signature / contracts** | ❌ Missing dedicated provider | None | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Prefer HighLevel contracts if sufficient |
+| **Calling / voice** | ❌ Missing direct telephony route | None | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Prefer HighLevel telephony or one provider |
+| **Meeting intelligence** | 🟨 Partial | Teams: `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Search/read works; transcription automation not proven |
+| **Paid advertising** | ❌ Missing direct ads-platform control | None | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Phase 2 after organic/outbound conversion is proven |
+| **Website / landing pages** | 🟨 Partial via HubSpot | HubSpot: `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | HubSpot landing-page access requires reauthorisation; HighLevel preferred |
+| **Commercial analytics** | 🟨 Partial | Multiple systems; no unified identity | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Start with HighLevel + DRF; no separate BI until required |
+| **Gmail** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Alternative sender mailbox |
+| **Google Calendar** | ✅ Verified | `implementai.ae@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | iMPLEMENTAi calendar identity |
+| **Google Drive** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Google file access |
+| **Microsoft Teams** | ✅ Verified | `info@talentbridgedubai.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Messaging/search/read available |
+| **HubSpot** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | CRM reads + several writes available; not intended as primary CCO spine |
+| **Zoho Books** | 🟨 Partial | Connector present; organisation identity unresolved | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Financial actions blocked until organisation identity is confirmed |
+| **Asana** | ✅ Verified | `talentbridgedubai@gmail.com` | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Available but not required for DRF control |
+| **Hindsight Memory** | ✅ Verified | Shared FolderDesk memory bank | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | Recall/continuity layer only |
 
 **Slack is intentionally excluded. It is not used or required.**
 
@@ -86,31 +86,11 @@ This is the master table. Each operating surface gets its own status and account
 | ✅ | **Asana** | `talentbridgedubai@gmail.com` | ✅ Authenticated user lookup | Task/project writes exposed; not exercised |
 | ✅ | **Hindsight Memory** | Shared FolderDesk memory bank | ✅ Recall succeeded | Retain available |
 
-## Current Web sender/account map
-
-| System | Authenticated identity |
-|---|---|
-| Outlook Email | `careers@talentbridgedubai.com` |
-| Outlook Calendar | `info@talentbridgedubai.com` |
-| OneDrive / SharePoint | `info@talentbridgedubai.com` |
-| Microsoft Teams | `info@talentbridgedubai.com` |
-| Gmail | `talentbridgedubai@gmail.com` |
-| Google Contacts | `talentbridgedubai@gmail.com` |
-| Google Drive | `talentbridgedubai@gmail.com` |
-| Google Calendar | `implementai.ae@gmail.com` |
-| HubSpot | `talentbridgedubai@gmail.com` |
-| Asana | `talentbridgedubai@gmail.com` |
-| GitHub | `tbhrc` / `talentbridgedubai@gmail.com` |
-| GoHighLevel | Connected; location/sub-account identity unresolved |
-| Canva | Connected; identity not exposed |
-| FolderDesk | Connected; identity not exposed |
-| Zoho Books | Connected; organisation identity unresolved |
-
 ---
 
 # 3. Surface table — ChatGPT Desktop / Codex
 
-**Status: not yet tested.** This table is intentionally ready for the second surface pass.
+**Status: not yet tested.**
 
 | Status | Integration | Authenticated account / identity | Read test | Write / send test status |
 |---|---|---|---|---|
@@ -146,13 +126,49 @@ This is the master table. Each operating surface gets its own status and account
 
 ---
 
+# 4. Surface table — Hermes
+
+**Status: not yet tested.** Test Hermes as its own autonomous/runtime surface. Record local CLI, MCP, browser, API, credential and scheduled-agent capabilities separately from ChatGPT Web and Desktop/Codex.
+
+| Status | Integration | Authenticated account / identity | Read test | Write / send test status |
+|---|---|---|---|---|
+| ⏳ | **GoHighLevel** | Pending | Pending | Pending — test exact location identity + CRM writes |
+| ⏳ | **Outlook Email** | Pending | Pending | Pending |
+| ⏳ | **Outlook Calendar** | Pending | Pending | Pending |
+| ⏳ | **LinkedIn** | Pending | Pending | Pending |
+| ⏳ | **WhatsApp Business** | Pending | Pending | Pending |
+| ⏳ | **Stripe** | Pending | Pending | Pending — test CLI/API + authenticated account |
+| ⏳ | **Web research** | Pending | Pending | N/A |
+| ⏳ | **Lead enrichment** | Pending | Pending | Pending |
+| ⏳ | **OneDrive / SharePoint** | Pending | Pending | Pending |
+| ⏳ | **FolderDesk** | Pending | Pending | Pending |
+| ⏳ | **GitHub / DRF** | Pending | Pending | Pending |
+| ⏳ | **ATS** | Pending | Pending | Pending |
+| ⏳ | **GulfTalent** | Pending | Pending | Pending |
+| ⏳ | **Google Contacts** | Pending | Pending | Pending |
+| ⏳ | **Canva** | Pending | Pending | Pending |
+| ⏳ | **E-signature / Contracts** | Pending | Pending | Pending |
+| ⏳ | **Calling / Voice** | Pending | Pending | Pending |
+| ⏳ | **Meeting Intelligence** | Pending | Pending | Pending |
+| ⏳ | **Paid Advertising** | Pending | Pending | Pending |
+| ⏳ | **Website / Landing Pages** | Pending | Pending | Pending |
+| ⏳ | **Commercial Analytics** | Pending | Pending | Pending |
+| ⏳ | **Gmail** | Pending | Pending | Pending |
+| ⏳ | **Google Calendar** | Pending | Pending | Pending |
+| ⏳ | **Google Drive** | Pending | Pending | Pending |
+| ⏳ | **Microsoft Teams** | Pending | Pending | Pending |
+| ⏳ | **HubSpot** | Pending | Pending | Pending |
+| ⏳ | **Zoho Books** | Pending | Pending | Pending |
+| ⏳ | **Asana** | Pending | Pending | Pending |
+| ⏳ | **Hindsight Memory** | Pending | Pending | Pending |
+
+---
+
 # CCO account safety rule
 
-Before any outbound message, invitation, CRM mutation, financial action or customer-facing write, identify the **surface + connector + authenticated account/location** that will execute it.
+Before any outbound message, invitation, CRM mutation, financial action or customer-facing write, identify the **surface + connector/tool + authenticated account/location** that will execute it.
 
 Never infer identity from another connector or another surface.
-
-Example:
 
 ```text
 ChatGPT Web → Outlook Email → careers@talentbridgedubai.com
@@ -161,6 +177,7 @@ ChatGPT Web → Gmail → talentbridgedubai@gmail.com
 ChatGPT Web → Google Calendar → implementai.ae@gmail.com
 ChatGPT Web → GoHighLevel → connected, location identity unresolved
 ChatGPT Desktop / Codex → NOT YET TESTED
+Hermes → NOT YET TESTED
 ```
 
 # Current biggest CCO gaps
@@ -175,8 +192,9 @@ ChatGPT Desktop / Codex → NOT YET TESTED
 
 - [x] **ChatGPT Web / CCO — this assistant** tested and recorded.
 - [ ] **ChatGPT Desktop / Codex** pending.
+- [ ] **Hermes** pending.
 
-Keep GitHub Issue #5 open until the Desktop/Codex surface is tested and reconciled against the unified table.
+Keep GitHub Issue #5 open until Desktop/Codex and Hermes are tested and reconciled against the unified table.
 
 ## Governing rule
 
