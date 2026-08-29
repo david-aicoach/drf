@@ -1,0 +1,182 @@
+name: DRF Agent dispatch
+
+on:
+  issues:
+    types: [opened, reopened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: DRF Issue number
+        required: true
+        type: string
+      executor:
+        description: Executor
+        required: true
+        type: choice
+        options: [copilot, codex, claude, gemini]
+
+permissions:
+  contents: read
+
+jobs:
+  resolve:
+    if: github.actor == 'tbhrc'
+    runs-on: ubuntu-latest
+    outputs:
+      issue: ${{ steps.route.outputs.issue }}
+      executor: ${{ steps.route.outputs.executor }}
+      supported: ${{ steps.route.outputs.supported }}
+    steps:
+      - id: route
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          ISSUE_EVENT_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          INPUT_ISSUE: ${{ inputs.issue_number }}
+          INPUT_EXECUTOR: ${{ inputs.executor }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" = 'workflow_dispatch' ]; then
+            issue="$INPUT_ISSUE"
+            executor="$INPUT_EXECUTOR"
+          else
+            issue="$ISSUE_EVENT_NUMBER"
+            case "$ISSUE_TITLE" in
+              '[copilot]'*) executor='copilot' ;;
+              '[codex]'*) executor='codex' ;;
+              '[claude]'*) executor='claude' ;;
+              '[gemini]'*) executor='gemini' ;;
+              *) executor='' ;;
+            esac
+          fi
+
+          if ! [[ "$issue" =~ ^[0-9]+$ ]]; then
+            echo "Invalid Issue number: $issue" >&2
+            exit 1
+          fi
+
+          supported=false
+          case "$executor" in
+            copilot|codex|claude|gemini) supported=true ;;
+          esac
+
+          echo "issue=$issue" >> "$GITHUB_OUTPUT"
+          echo "executor=$executor" >> "$GITHUB_OUTPUT"
+          echo "supported=$supported" >> "$GITHUB_OUTPUT"
+
+  cloud-agent:
+    needs: resolve
+    if: needs.resolve.outputs.supported == 'true' && needs.resolve.outputs.executor != 'gemini'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    env:
+      AGENT_DISPATCH_TOKEN: ${{ secrets.AGENT_DISPATCH_TOKEN }}
+      ISSUE_NUMBER: ${{ needs.resolve.outputs.issue }}
+      EXECUTOR: ${{ needs.resolve.outputs.executor }}
+    steps:
+      - name: Preflight dispatch credential
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${AGENT_DISPATCH_TOKEN:-}" || { echo 'AGENT_DISPATCH_TOKEN is missing.' >&2; exit 1; }
+
+      - name: Assign DRF agent
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$EXECUTOR" in
+            copilot) bot='copilot-swe-agent[bot]' ;;
+            codex) bot='openai-code-agent[bot]' ;;
+            claude) bot='anthropic-code-agent[bot]' ;;
+            *) echo "Unsupported cloud executor: $EXECUTOR" >&2; exit 1 ;;
+          esac
+
+          instructions="Treat Issue #${ISSUE_NUMBER} as the complete task specification. Read root AGENTS.md first and follow the DRF repository workflow. Prioritise commercial traction and the smallest safe solution. Work on an isolated branch, commit substantive work, and open a Pull Request to main. The PR body must use 'Refs #${ISSUE_NUMBER}' and must not use Fixes, Closes or Resolves. Stop before self-merge or Issue closure. Never expose secrets."
+          payload="$(jq -cn \
+            --arg bot "$bot" \
+            --arg repo "$GITHUB_REPOSITORY" \
+            --arg instructions "$instructions" \
+            '{assignees:[$bot],agent_assignment:{target_repo:$repo,base_branch:"main",custom_instructions:$instructions,custom_agent:"",model:""}}')"
+
+          response="$(mktemp)"
+          code="$(curl -sS -o "$response" -w '%{http_code}' \
+            -X POST \
+            -H 'Accept: application/vnd.github+json' \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            -H "Authorization: Bearer $AGENT_DISPATCH_TOKEN" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/assignees" \
+            -d "$payload")"
+
+          echo "Agent assignment HTTP status: $code" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$code" != '201' ]; then
+            cat "$response" >&2
+            exit 1
+          fi
+          echo "Executor: $EXECUTOR" >> "$GITHUB_STEP_SUMMARY"
+          echo "Issue: #$ISSUE_NUMBER" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Record accepted dispatch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "DRF dispatch accepted by GitHub for **${EXECUTOR}**. Watch this Issue for the agent session and resulting Pull Request. The agent must stop before self-merge."
+
+  gemini:
+    needs: resolve
+    if: needs.resolve.outputs.supported == 'true' && needs.resolve.outputs.executor == 'gemini'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    env:
+      ISSUE_NUMBER: ${{ needs.resolve.outputs.issue }}
+    steps:
+      - name: Preflight Gemini credential
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${GEMINI_API_KEY:-}" || { echo 'GEMINI_API_KEY is missing.' >&2; exit 1; }
+
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Run Gemini executor
+        uses: google-github-actions/run-gemini-cli@v0
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GEMINI_CLI_TRUST_WORKSPACE: 'true'
+        with:
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          prompt: |
+            You are the Gemini executor for David's Revenue Factory repository ${{ github.repository }}.
+            Treat GitHub Issue #${{ needs.resolve.outputs.issue }} as the complete task specification. Read it with GitHub CLI, then read root AGENTS.md and relevant repository contracts.
+
+            Execute the Issue safely:
+            1. Prioritise revenue/traction and the smallest viable solution.
+            2. Create branch `issue-${{ needs.resolve.outputs.issue }}-gemini` from current main.
+            3. Make only the changes required by the Issue.
+            4. Run the smallest relevant verification.
+            5. Commit and push the branch.
+            6. Open a Pull Request to main with `Refs #${{ needs.resolve.outputs.issue }}` only; do not use closing keywords.
+            7. Do not merge and do not close the Issue.
+            8. Never expose secrets.
+
+      - name: Record Gemini completion
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "Gemini executor workflow finished its agent step. Inspect this Actions run and any resulting branch/commit/PR before accepting the work."
