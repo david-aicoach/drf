@@ -5,7 +5,7 @@
 
 ## Status key
 
-- [x] **Verified:** harmless read/search/profile action succeeded on this surface.
+- [x] **Verified:** harmless read/search/profile action succeeded on this surface and the operating identity is sufficiently known.
 - [~] **Partial:** connector/infrastructure exists, but access is incomplete, blocked, identity is unresolved, or the required commercial capability is not yet proven.
 - [ ] **Not connected:** no direct operating route is available on this surface.
 - **Write exposed:** the connector exposes a write/send action, but no live external write was performed unless explicitly stated.
@@ -15,7 +15,7 @@
 
 | Current ChatGPT | Integration | Authenticated account / sender identity | Read test | Write / send availability | ChatGPT Desktop / Codex | Commercial note |
 |---|---|---|---|---|---|---|
-| [ ] | **GoHighLevel** | Not connected | Not available | Not available | ⏳ Pending | Highest-priority gap; intended primary commercial operating spine |
+| [~] | **GoHighLevel** | **Connected HighLevel CRM, but authenticated location/sub-account name and ID are not exposed by this connector** | ✅ Contacts read succeeded: **0 contacts**. ✅ Opportunities read succeeded: **0 opportunities**. Repeated location/profile probes did not expose identity | ❌ Current ChatGPT HighLevel connector exposes only `search` and `fetch`; no CRM write actions are exposed | ⏳ Pending | Connection is live but not yet sufficient for CCO operation. Need exact location identity plus bounded contact/opportunity/conversation/calendar/workflow write capability |
 | [x] | **Microsoft Outlook Email** | **Careers & Job Portal of Talent Bridge — `careers@talentbridgedubai.com`** | ✅ Mailbox read/list succeeded | ✅ Send, reply, forward and draft actions exposed; **no live send performed** | ⏳ Pending | Critical: normal sends through this connector originate from the careers mailbox unless a delegated/shared mailbox is explicitly selected |
 | [x] | **Microsoft Outlook Calendar** | **Talent Bridge Dubai — `info@talentbridgedubai.com`** | ✅ Calendar search succeeded | 🟨 Calendar write capability exists; not exercised in this test | ⏳ Pending | Different authenticated Microsoft account from Outlook Email; never assume the same identity |
 | [ ] | **LinkedIn** | No authenticated LinkedIn operating account exposed | Public web research only | No approved direct posting/DM route exposed | ⏳ Pending | Relationship intelligence, content and manual high-value engagement; no unauthorised scraping/bot messaging |
@@ -35,7 +35,7 @@
 | [~] | **Meeting intelligence** | **Microsoft Teams: Talent Bridge Dubai — `info@talentbridgedubai.com`** | ✅ Teams search/read access succeeded | Teams messaging actions exposed; meeting recording/transcription control not proven | ⏳ Pending | Meeting → transcript/notes → CRM remains partially proven |
 | [ ] | **Paid advertising** | No LinkedIn Ads / Google Ads / Meta Ads operating connector exposed | Not available | Not available | ⏳ Pending | Phase 2 after warm/outbound conversion is proven |
 | [~] | **Website / landing-page control** | **HubSpot: Talent Bridge HR Consultancy — `talentbridgedubai@gmail.com`** | ✅ HubSpot account/profile and permissions returned | 🟨 Landing-page capability exists but currently requires reauthorisation; portal reports onboarding incomplete | ⏳ Pending | HighLevel remains preferred commercial site/funnel route unless evidence says otherwise |
-| [~] | **Commercial analytics** | Multiple authenticated systems; no single unified identity | DRF/GitHub + HubSpot + connected business-system reads available | No unified CCO telemetry yet | ⏳ Pending | Start with HighLevel + DRF; do not add another BI layer without a proven need |
+| [~] | **Commercial analytics** | Multiple authenticated systems; no single unified identity | DRF/GitHub + HubSpot + HighLevel read access + connected business-system reads available | No unified CCO telemetry yet | ⏳ Pending | Start with HighLevel + DRF; do not add another BI layer without a proven need |
 
 ## Additional useful connectors already verified on current ChatGPT surface
 
@@ -56,6 +56,7 @@
 
 | System | Authenticated identity |
 |---|---|
+| GoHighLevel | Connected; location/sub-account identity **not exposed** by current connector |
 | Outlook Email | `careers@talentbridgedubai.com` |
 | Outlook Calendar | `info@talentbridgedubai.com` |
 | OneDrive / SharePoint | `info@talentbridgedubai.com` |
@@ -72,11 +73,11 @@
 | Hindsight | Connected shared memory bank; identity not exposed |
 | Zoho Books | Connector present; organisation/account identity unresolved |
 
-## CCO sender rule
+## CCO sender / account rule
 
 Before any outbound message, invitation, CRM mutation or customer-facing write, the CCO must identify the authenticated account that will perform the action.
 
-**Never infer sender identity from the brand, conversation, another connector, or a different Microsoft/Google connection.**
+**Never infer sender or CRM location identity from the brand, conversation, another connector, or a different Microsoft/Google/HighLevel connection.**
 
 Examples from the current surface:
 
@@ -85,9 +86,10 @@ Outlook Email send → careers@talentbridgedubai.com
 Gmail send         → talentbridgedubai@gmail.com
 Outlook Calendar   → info@talentbridgedubai.com
 Google Calendar    → implementai.ae@gmail.com
+GoHighLevel CRM    → connected, but location identity unresolved
 ```
 
-If the required sender/account differs, use an explicitly authorised delegated/shared mailbox or another confirmed connection rather than silently sending from the wrong identity.
+If the required sender/account differs, use an explicitly authorised delegated/shared mailbox or another confirmed connection rather than silently sending or mutating the wrong identity/location.
 
 ## CCO minimum viable operating loop
 
@@ -117,6 +119,7 @@ REACTIVATE / UPSELL / REPEAT
 
 ```text
 GitHub / DRF              → tbhrc / talentbridgedubai@gmail.com
+HighLevel                 → READ LIVE; contacts 0; opportunities 0; location identity unresolved
 Outlook Email             → careers@talentbridgedubai.com
 Outlook Calendar          → info@talentbridgedubai.com
 OneDrive / SharePoint     → info@talentbridgedubai.com
@@ -136,7 +139,7 @@ Hindsight                 → connected shared memory bank
 ## Biggest blockers to full CCO autonomy
 
 ```text
-1. GoHighLevel MCP/API
+1. HighLevel — expose exact authenticated location/sub-account identity + bounded CRM write actions
 2. Official WhatsApp Business route
 3. Approved LinkedIn operating route
 4. Stripe bounded sales/collection actions
@@ -145,7 +148,7 @@ Hindsight                 → connected shared memory bank
 
 ## Surface test progress
 
-- [x] **Current ChatGPT surface** — core and useful connected integrations tested and identities recorded.
+- [x] **Current ChatGPT surface** — core and useful connected integrations tested and identities recorded. HighLevel read access verified; identity/write scope remains partial.
 - [ ] **ChatGPT Desktop / Codex** — pending. Test the same matrix from that surface and record its local/MCP/CLI access separately.
 
 Do not close the surface-verification Issue until the Desktop/Codex pass is complete.
