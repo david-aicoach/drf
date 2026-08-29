@@ -1,8 +1,9 @@
 # GoHighLevel Recurring-Revenue Opportunities
 
 **Research date:** 29 August 2026  
-**Governing issue:** #20  
-**Purpose:** Convert HighLevel's current product, AI, workflow, snapshot, SaaS and rebilling surface into productised DRF recurring-revenue opportunities.
+**Governing issues:** #20, #40  
+**Purpose:** Convert HighLevel's current product, AI, workflow, snapshot, SaaS and rebilling surface into productised DRF recurring-revenue opportunities.  
+**Current scoring:** framework v1.5; re-scored after `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
 
 ## Executive conclusion
 
@@ -22,6 +23,10 @@ HighLevel reported in March 2026 that more than 1 million businesses use the pla
 
 Source: https://www.gohighlevel.com/post/highlevel-named-to-g2-2026-best-software-awards
 
+Issue #40 materially strengthens the HighLevel thesis for **high-volume recurring customer-facing work**. AI Employee Unlimited at **US$97/month per enabled location** includes Conversation AI, inbound/outbound/widget Voice AI, Reviews AI and Content AI as unlimited subject to fair use. This does **not** mean unlimited general computer use: Ask AI has rolling-window allowances and Agent Studio remains pay-per-use. HighLevel's advantage is that many CRM/lifecycle operations can execute natively rather than paying a browser agent to click through every event.
+
+Canonical economics: `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
+
 The key DRF model is therefore:
 
 ```text
@@ -30,8 +35,10 @@ proven vertical problem
 → configure working sub-account
 → create/use snapshot
 → attach to SaaS subscription or Marketplace distribution
-→ automate onboarding and recurring fulfilment
+→ deterministic native automation for recurring events
+→ native domain AI where needed
 → rebill AI/phone/other usage where appropriate
+→ external computer-use agent only for justified gaps/exceptions
 → collect MRR
 → improve centrally
 → redeploy across the same vertical
@@ -74,7 +81,7 @@ Important commercial distinction:
 
 Use Marketplace licensing/distribution exactly as HighLevel permits. Build our own snapshot when we need proprietary reusable IP.
 
-## 1.4 HighLevel supports recurring usage markup
+## 1.4 HighLevel supports recurring AI economics and markup
 
 Rebilling allows agencies to pass ongoing costs to sub-accounts. On supported plans, the agency can add markup and retain the difference. This applies to categories including phone, email and AI usage.
 
@@ -82,15 +89,25 @@ Source: https://help.gohighlevel.com/support/solutions/articles/155000001156-hig
 
 The current AI Employee plans are:
 
-- Growth: **$50/month per enabled location**;
-- Unlimited: **$97/month per enabled location**;
-- pay-per-use option for supported products.
+- pay-per-use: **US$0 subscription** for supported usage;
+- Growth: **US$50/month per enabled location**;
+- Unlimited: **US$97/month per enabled location**.
+
+Current Growth allowances include **1,000 Conversation AI agent responses/month** and **100 Voice AI agent minutes/month**. Current Unlimited covers Conversation AI and Voice AI, plus Reviews AI and Content AI, as unlimited subject to fair use.
+
+Important exclusions/limits:
+
+- Ask AI and AI Studio use rolling **5-hour windows**; Unlimited receives 3× Growth usage, but HighLevel does not publish the exact numeric allowance in the current pricing canon.
+- Agent Studio / Managed Agents remain pay-per-use.
+- phone, SMS, WhatsApp, email and other transport/provider costs remain separate.
 
 The $497/month agency plan is required for AI Employee rebilling. HighLevel also allows agencies to configure customer-facing AI Employee resale pricing.
 
 Sources:
 - https://help.gohighlevel.com/support/solutions/articles/155000006652
 - https://help.gohighlevel.com/support/solutions/articles/155000003906-ai-employee-access-rebilling-and-reselling
+
+Full economics: `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`.
 
 ## 1.5 Marketplace economics support recurring software products
 
@@ -146,17 +163,17 @@ Feature sources:
 
 # 3. Seven strongest HighLevel-specific opportunities
 
-## Ranking under DRF scoring framework v1.1
+## Ranking under DRF scoring framework v1.5
 
 | Rank | Opportunity | Opportunity Score | MRR | AI Autonomy | Evidence Confidence | Research Completeness | Stage |
 |---:|---|---:|---:|---:|---:|---:|---|
-| 1 | **Revenue Recovery & Reactivation Engine** | **94/100** | **10/10** | **93/100** | **89%** | **93%** | Candidate |
-| 2 | **Missed Lead & Appointment Conversion Engine** | **93/100** | **10/10** | **95/100** | **86%** | **90%** | Candidate |
-| 3 | **AI Voice Receptionist & Booking Agent** | **92/100** | **10/10** | **88/100** | **90%** | **93%** | Candidate |
-| 4 | **AI Support & Sales Assistant** | **92/100** | **10/10** | **88/100** | **88%** | **90%** | Candidate |
-| 5 | **Instant Quote Generator & Quote-to-Cash System** | **91/100** | **9/10** | **98/100** | **86%** | **90%** | Candidate |
-| 6 | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **91/100** | **10/10** | **88/100** | **91%** | **93%** | Candidate |
-| 7 | **Reputation & Local Visibility Engine** | **88/100** | **10/10** | **93/100** | **88%** | **90%** | Candidate |
+| 1 | **Revenue Recovery & Reactivation Engine** | **94/100** | **10/10** | **93/100** | **94%** | **97%** | Candidate |
+| 2 | **AI Voice Receptionist & Booking Agent** | **94/100** | **10/10** | **90/100** | **96%** | **100%** | Candidate |
+| 3 | **Missed Lead & Appointment Conversion Engine** | **93/100** | **10/10** | **95/100** | **92%** | **97%** | Candidate |
+| 4 | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **93/100** | **10/10** | **93/100** | **95%** | **97%** | Candidate |
+| 5 | **AI Support & Sales Assistant** | **93/100** | **10/10** | **90/100** | **95%** | **100%** | Candidate |
+| 6 | **Instant Quote Generator & Quote-to-Cash System** | **91/100** | **9/10** | **98/100** | **89%** | **93%** | Candidate |
+| 7 | **Reputation & Local Visibility Engine** | **88/100** | **10/10** | **93/100** | **92%** | **93%** | Candidate |
 
 These are desk-research scores, not operating proof. The high scores reflect unusually strong structural economics; real retention, CAC, support load and contribution margin still need testing.
 
@@ -210,7 +227,44 @@ Do not promise guaranteed recovered revenue. Attribution, list quality and merch
 
 ---
 
-## 4.2 Missed Lead & Appointment Conversion Engine — 93/100
+## 4.2 AI Voice Receptionist & Booking Agent — 94/100
+
+### Offer
+
+A white-labelled 24/7 voice agent that:
+
+- answers inbound calls;
+- makes approved outbound calls;
+- qualifies leads;
+- answers business questions;
+- books appointments;
+- collects information;
+- transfers/escalates when needed;
+- triggers post-call workflows.
+
+HighLevel Voice AI officially supports inbound/outbound calls, knowledge-base integration, multi-language use, appointment booking and post-call actions.
+
+Source: https://help.gohighlevel.com/support/solutions/articles/155000003911-ai-employee-voice-call-capabilities
+
+Current HighLevel AI pricing materially strengthens the economics: Unlimited is $97/month/location and covers inbound/outbound/widget Voice AI subject to fair use. Phone/carrier/provider costs remain separate.
+
+Source: https://help.gohighlevel.com/support/solutions/articles/155000006652
+
+External demand is accelerating: Gartner reported on 26 August 2026 that customer-service AI spending increased **38%** while overall service budgets rose only 2%, and respondents expect GenAI voicebots to become one of the most valuable support technologies over the next two years.
+
+Source: https://www.gartner.com/en/newsroom/press-releases/2026-08-26-gartner-survey-finds-ai-spending-by-customer-service-leaders-has-surged-by-38-percent-despite-overall-service-and-support-function-budgets-rising-by-just-2-percent
+
+### MRR logic
+
+Base monthly subscription + telephony/AI usage/resale economics + premium vertical setup/knowledge layer.
+
+### Main risk
+
+Voice mistakes carry reputational cost. Escalation, call recording/consent, jurisdictional rules and human fallback must be configured appropriately.
+
+---
+
+## 4.3 Missed Lead & Appointment Conversion Engine — 93/100
 
 ### Offer
 
@@ -242,44 +296,50 @@ Local service businesses with valuable inbound calls/leads: dental, medical, leg
 
 ---
 
-## 4.3 AI Voice Receptionist & Booking Agent — 92/100
+## 4.4 HighLevel Vertical SaaS Snapshot Business-in-a-Box — 93/100
 
 ### Offer
 
-A white-labelled 24/7 voice agent that:
+Build or license a proven vertical snapshot and sell a narrowly positioned business operating system under recurring SaaS pricing.
 
-- answers inbound calls;
-- makes approved outbound calls;
-- qualifies leads;
-- answers business questions;
-- books appointments;
-- collects information;
-- transfers/escalates when needed;
-- triggers post-call workflows.
+Example:
 
-HighLevel Voice AI officially supports inbound/outbound calls, knowledge-base integration, multi-language use, appointment booking and post-call actions.
+```text
+Dental Lead Conversion OS
+Home Services Revenue Recovery OS
+Aesthetic Clinic Booking OS
+Recruitment Agency Client Acquisition OS
+Restaurant Review & Loyalty OS
+```
 
-Source: https://help.gohighlevel.com/support/solutions/articles/155000003911-ai-employee-voice-call-capabilities
+The client buys the outcome, not “GoHighLevel”.
 
-Current HighLevel AI pricing creates a clean MRR/markup base: Growth is $50/month/location; Unlimited is $97/month/location; pay-per-use Voice AI is also available, and agencies on the appropriate plan can rebill AI usage.
+HighLevel supports automatic snapshot inclusion when a new customer purchases a SaaS plan. Marketplace snapshots can be included where licensing/distribution permits.
 
-Source: https://help.gohighlevel.com/support/solutions/articles/155000006652
-
-External demand is accelerating: Gartner reported on 26 August 2026 that customer-service AI spending increased **38%** while overall service budgets rose only 2%, and respondents expect GenAI voicebots to become one of the most valuable support technologies over the next two years.
-
-Source: https://www.gartner.com/en/newsroom/press-releases/2026-08-26-gartner-survey-finds-ai-spending-by-customer-service-leaders-has-surged-by-38-percent-despite-overall-service-and-support-function-budgets-rising-by-just-2-percent
+Sources:
+- https://help.gohighlevel.com/support/solutions/articles/155000004187-selling-marketplace-snapshots-with-saas-plans
+- https://help.gohighlevel.com/support/solutions/articles/48000982512-creating-new-snapshots
 
 ### MRR logic
 
-Base monthly subscription + telephony/AI usage markup + premium vertical setup/knowledge layer.
+This is the purest HighLevel recurring model:
 
-### Main risk
+```text
+monthly SaaS subscription
++ optional AI Employee resale
++ phone/email/WhatsApp/listings/app markup
++ optional onboarding/setup fee
+```
 
-Voice mistakes carry reputational cost. Escalation, call recording/consent, jurisdictional rules and human fallback must be configured appropriately.
+Current native AI economics strengthen this model because a vertical account can use deterministic workflows plus predictable Conversation/Voice AI rather than requiring an external computer-use agent for every recurring event.
+
+### Defensibility
+
+Do not compete on “CRM access”. Build vertical workflows, prompts, forms, calculators, nurture logic, reporting, benchmark data and integrations that get better across customers in the same niche.
 
 ---
 
-## 4.4 AI Support & Sales Assistant — 92/100
+## 4.5 AI Support & Sales Assistant — 93/100
 
 ### Offer
 
@@ -296,11 +356,12 @@ A trained multichannel customer-facing assistant for:
 - basic sales questions;
 - routing to humans.
 
-HighLevel Conversation AI can use business knowledge and operate across supported communication channels to answer questions, collect lead information and assist with booking.
+HighLevel Conversation AI can use business knowledge and operate across supported communication channels to answer questions, collect lead information and assist with booking. Unlimited covers Conversation AI subject to fair use, materially improving high-volume economics.
 
 Sources:
 - https://help.gohighlevel.com/support/solutions/articles/155000001335
 - https://www.gohighlevel.com/ai-chatbot
+- https://help.gohighlevel.com/support/solutions/articles/155000006652
 
 ### Demand evidence
 
@@ -320,7 +381,7 @@ Recurring per-location AI subscription/rebilling plus ongoing knowledge-base and
 
 ---
 
-## 4.5 Instant Quote Generator & Quote-to-Cash System — 91/100
+## 4.6 Instant Quote Generator & Quote-to-Cash System — 91/100
 
 ### Offer
 
@@ -366,47 +427,6 @@ Do not deploy automatic fixed pricing where scope complexity, legal requirements
 
 ---
 
-## 4.6 HighLevel Vertical SaaS Snapshot Business-in-a-Box — 91/100
-
-### Offer
-
-Build or license a proven vertical snapshot and sell a narrowly positioned business operating system under recurring SaaS pricing.
-
-Example:
-
-```text
-Dental Lead Conversion OS
-Home Services Revenue Recovery OS
-Aesthetic Clinic Booking OS
-Recruitment Agency Client Acquisition OS
-Restaurant Review & Loyalty OS
-```
-
-The client buys the outcome, not “GoHighLevel”.
-
-HighLevel supports automatic snapshot inclusion when a new customer purchases a SaaS plan. Marketplace snapshots can be included where licensing/distribution permits.
-
-Sources:
-- https://help.gohighlevel.com/support/solutions/articles/155000004187-selling-marketplace-snapshots-with-saas-plans
-- https://help.gohighlevel.com/support/solutions/articles/48000982512-creating-new-snapshots
-
-### MRR logic
-
-This is the purest HighLevel recurring model:
-
-```text
-monthly SaaS subscription
-+ optional AI Employee resale
-+ phone/email/WhatsApp/listings/app markup
-+ optional onboarding/setup fee
-```
-
-### Defensibility
-
-Do not compete on “CRM access”. Build vertical workflows, prompts, forms, calculators, nurture logic, reporting, benchmark data and integrations that get better across customers in the same niche.
-
----
-
 ## 4.7 Reputation & Local Visibility Engine — 88/100
 
 ### Offer
@@ -423,12 +443,13 @@ A recurring local-business reputation/visibility product combining:
 - negative-feedback routing;
 - monthly reporting.
 
-HighLevel supports reputation management, automated review requests, AI review replies, GBP scheduling and Listings reselling. HighLevel explicitly describes Listings as a subscription product agencies can mark up to generate recurring revenue.
+HighLevel supports reputation management, automated review requests, AI review replies, GBP scheduling and Listings reselling. HighLevel explicitly describes Listings as a subscription product agencies can mark up to generate recurring revenue. Reviews AI and Content AI are included as unlimited subject to fair use on the current AI Employee Unlimited plan.
 
 Sources:
 - https://www.gohighlevel.com/
 - https://help.gohighlevel.com/support/solutions/articles/155000007212-google-business-profile-gbp-post-scheduler-in-highlevel
 - https://help.gohighlevel.com/support/solutions/articles/155000001901-how-to-resell-listings-to-your-clients
+- https://help.gohighlevel.com/support/solutions/articles/155000006652
 
 External demand evidence: BrightLocal's 2026 survey reports **47% of consumers won't use a business with fewer than 20 reviews**, **74% care only about reviews from the last three months**, and **31% will only use businesses rated 4.5+**.
 
@@ -442,17 +463,17 @@ Fresh reviews, current listings and recurring GBP content are continuous needs, 
 
 # 5. Detailed factor scores
 
-Weights use scoring framework v1.1.
+Weights use scoring framework v1.5. Factor values changed only where the 29 August AI-economics research materially changed sustained delivery assumptions.
 
 | Opportunity | MS | MG | TW | WP | AB | AM | AD | HD | SC | SR | MP | SCALE | PG | MOAT | MRR | Weighted |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Revenue Recovery & Reactivation Engine | 10 | 9 | 8 | 10 | 9 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 7 | 10 | **94.4** |
-| Missed Lead & Appointment Conversion Engine | 10 | 8 | 7 | 9 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 6 | 10 | **92.5** |
-| AI Voice Receptionist & Booking Agent | 10 | 10 | 9 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 9 | 7 | 10 | **92.1** |
-| AI Support & Sales Assistant | 10 | 10 | 9 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 8 | 7 | 10 | **91.7** |
-| Instant Quote Generator & Quote-to-Cash System | 9 | 8 | 8 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 10 | 10 | 9 | 6 | 9 | **91.4** |
-| HighLevel Vertical SaaS Snapshot Business-in-a-Box | 10 | 9 | 8 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 9 | 8 | 10 | **91.2** |
-| Reputation & Local Visibility Engine | 9 | 8 | 7 | 8 | 9 | 8 | 10 | 10 | 9 | 9 | 9 | 10 | 8 | 6 | 10 | **87.8** |
+| Revenue Recovery & Reactivation Engine | 10 | 9 | 8 | 10 | 9 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 7 | 10 | **94.4 → 94** |
+| AI Voice Receptionist & Booking Agent | 10 | 10 | 9 | 9 | 9 | 9 | **10** | 8 | 9 | 9 | **10** | 10 | 9 | 7 | 10 | **93.5 → 94** |
+| Missed Lead & Appointment Conversion Engine | 10 | 8 | 7 | 9 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 6 | 10 | **92.5 → 93** |
+| HighLevel Vertical SaaS Snapshot Business-in-a-Box | 10 | 9 | 8 | 9 | 9 | 9 | **10** | **9** | 9 | 9 | **10** | 10 | 9 | 8 | 10 | **93.0 → 93** |
+| AI Support & Sales Assistant | 10 | 10 | 9 | 9 | 9 | 9 | **10** | 8 | 9 | 9 | **10** | 10 | 8 | 7 | 10 | **93.1 → 93** |
+| Instant Quote Generator & Quote-to-Cash System | 9 | 8 | 8 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 10 | 10 | 9 | 6 | 9 | **91.4 → 91** |
+| Reputation & Local Visibility Engine | 9 | 8 | 7 | 8 | 9 | 8 | 10 | 10 | 9 | 9 | **10** | 10 | 8 | 6 | 10 | **88.3 → 88** |
 
 Factor codes:
 
@@ -485,6 +506,8 @@ vertical
 → pain / measurable leakage
 → choose product module
 → working HighLevel sub-account
+→ deterministic/native recurring workflow
+→ native AI where needed
 → snapshot
 → SaaS plan
 → AI / usage rebilling
@@ -508,6 +531,8 @@ Core Vertical SaaS
 
 That creates **land-and-expand MRR** rather than repeatedly finding a new customer for every product.
 
+Use external computer-use agents such as Grok Bot where a real cross-system/browser gap exists, not as the default executor of native HighLevel actions.
+
 ---
 
 # 7. Recommended first tests
@@ -522,7 +547,18 @@ Pick one existing business with enough historic contacts/orders. Run a bounded r
 - complaints/unsubscribes;
 - contribution after delivery cost.
 
-## Test 2 — Instant Quote
+## Test 2 — AI Voice
+
+Deploy on one high-value inbound-call use case. Measure:
+
+- answer rate;
+- qualification rate;
+- booking rate;
+- transfer/escalation rate;
+- cost per completed call including carrier/provider cost;
+- failure/complaint rate.
+
+## Test 3 — Instant Quote
 
 Choose one simple, rules-based service vertical. Build the form/calculator → estimate → payment workflow. Measure:
 
@@ -531,18 +567,7 @@ Choose one simple, rules-based service vertical. Build the form/calculator → e
 - time-to-quote reduction;
 - lead-to-payment conversion.
 
-## Test 3 — AI Voice
-
-Deploy on one high-value inbound-call use case. Measure:
-
-- answer rate;
-- qualification rate;
-- booking rate;
-- transfer/escalation rate;
-- cost per completed call;
-- failure/complaint rate.
-
-The portfolio should be re-scored after operating evidence exists.
+The portfolio should be re-scored again after operating evidence exists.
 
 ---
 
@@ -555,7 +580,11 @@ The portfolio should be re-scored after operating evidence exists.
 - Marketplace snapshot subscription pricing is supported.
 - Marketplace snapshots can be attached to SaaS plans.
 - SaaS/rebilling/markup mechanisms exist.
-- AI Employee Growth/Unlimited recurring plans exist.
+- AI Employee pay-per-use/Growth/Unlimited plans exist.
+- Growth includes documented Conversation AI responses and Voice AI minutes.
+- Unlimited covers Conversation AI, inbound/outbound/widget Voice AI, Reviews AI and Content AI subject to fair use.
+- Ask AI/AI Studio use rolling 5-hour usage windows; Unlimited receives 3× Growth allocation.
+- Agent Studio remains pay-per-use.
 - Voice AI and Conversation AI capabilities are live.
 - forms/surveys calculator, Send Estimate and contract workflow capabilities are live.
 - abandoned checkout and failed-payment workflow triggers exist.
@@ -578,22 +607,26 @@ The portfolio should be re-scored after operating evidence exists.
 - contribution margin after phone/AI/support;
 - deployment exception rate;
 - refund/complaint rate;
-- vertical-specific ROI benchmarks.
+- vertical-specific ROI benchmarks;
+- actual fair-use boundary under unusually heavy client workloads;
+- exact public Ask AI numeric allowance.
 
 ---
 
 # Decision
 
-HighLevel-specific products should become a **major DRF opportunity family**, not a single generic agency offer.
+HighLevel-specific products are a **major DRF opportunity family**, not a single generic agency offer.
 
-The strongest commercial sequence is:
+For **structural Opportunity Score**, the current HighLevel-specific order is:
 
-1. **Revenue Recovery & Reactivation** — easiest ROI story.
-2. **Missed Lead & Appointment Conversion** — protects existing acquisition spend.
-3. **Instant Quote Generator** — accelerates lead-to-money.
-4. **AI Voice Agent** — high-value recurring labour replacement/augmentation.
-5. **AI Support & Sales Assistant** — multichannel recurring customer handling.
-6. **Vertical SaaS Snapshot Business-in-a-Box** — bundles the proven modules into the core subscription.
-7. **Reputation & Local Visibility** — sticky recurring expansion module.
+1. **Revenue Recovery & Reactivation — 94**.
+2. **AI Voice Receptionist & Booking — 94**.
+3. **Missed Lead & Appointment Conversion — 93**.
+4. **HighLevel Vertical SaaS Snapshot Business-in-a-Box — 93**.
+5. **AI Support & Sales Assistant — 93**.
+6. **Instant Quote Generator — 91**.
+7. **Reputation & Local Visibility — 88**.
 
-Once a vertical works, package the whole stack into the vertical SaaS snapshot rather than continuing to sell bespoke implementations.
+For actual sequencing, use the separate Execution Priority table in `research/opportunity-execution-velocity-and-staircase-2026-08-29.md`; an opportunity with a slightly lower structural score can still launch earlier when delivery is faster.
+
+Once a vertical works, package the proven foundation + outcome stack into the vertical SaaS snapshot rather than continuing to sell bespoke implementations.
