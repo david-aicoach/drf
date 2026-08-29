@@ -1,0 +1,105 @@
+name: Set DRF Project status
+description: Add a DRF Issue to the Revenue Factory Project when needed and set its lifecycle Status.
+
+inputs:
+  token:
+    description: Token with GitHub Projects read/write access.
+    required: true
+  issue-number:
+    description: DRF repository Issue number.
+    required: true
+  target-status:
+    description: Target DRF Status option.
+    required: true
+  allowed-current-statuses:
+    description: Optional comma-separated Status names allowed before the transition.
+    required: false
+  add-if-missing:
+    description: Add the Issue to the Project when it is not already present.
+    required: false
+    default: "true"
+
+outputs:
+  previous-status:
+    description: Status observed before the update.
+    value: ${{ steps.set.outputs.previous-status }}
+
+runs:
+  using: composite
+  steps:
+    - id: set
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        ISSUE_NUMBER: ${{ inputs.issue-number }}
+        TARGET_STATUS: ${{ inputs.target-status }}
+        ALLOWED_CURRENT_STATUSES: ${{ inputs.allowed-current-statuses }}
+        ADD_IF_MISSING: ${{ inputs.add-if-missing }}
+        PROJECT_TITLE: DRF — Revenue Factory
+      run: |
+        set -euo pipefail
+
+        query='query($number: Int!) { viewer { projectsV2(first: 100) { nodes { id number title fields(first: 50) { nodes { ... on ProjectV2SingleSelectField { id name options { id name } } } } items(first: 100) { nodes { id content { ... on Issue { number repository { nameWithOwner } } } fieldValueByName(name: "Status") { ... on ProjectV2ItemFieldSingleSelectValue { name } } } } } } } repository(owner: "tbhrc", name: "drf") { issue(number: $number) { id } } }'
+        data="$(gh api graphql -f query="$query" -F number="$ISSUE_NUMBER" --jq '.data')"
+        project="$(jq -c --arg title "$PROJECT_TITLE" '.viewer.projectsV2.nodes[] | select(.title == $title)' <<<"$data" | head -n1)"
+
+        if [ -z "$project" ]; then
+          echo "DRF Project '${PROJECT_TITLE}' was not found." >&2
+          exit 1
+        fi
+
+        project_id="$(jq -r '.id' <<<"$project")"
+        status_field_id="$(jq -r '.fields.nodes[] | select(.name == "Status") | .id' <<<"$project" | head -n1)"
+        option_id="$(jq -r --arg target "$TARGET_STATUS" '.fields.nodes[] | select(.name == "Status") | .options[] | select(.name == $target) | .id' <<<"$project" | head -n1)"
+        issue_node_id="$(jq -r '.repository.issue.id // empty' <<<"$data")"
+        item="$(jq -c --argjson issue "$ISSUE_NUMBER" '.items.nodes[] | select(.content.number == $issue and .content.repository.nameWithOwner == "tbhrc/drf")' <<<"$project" | head -n1)"
+
+        if [ -z "$status_field_id" ] || [ -z "$option_id" ]; then
+          echo "Status field or target option '${TARGET_STATUS}' is missing." >&2
+          exit 1
+        fi
+
+        if [ -z "$item" ]; then
+          if [ "$ADD_IF_MISSING" != "true" ]; then
+            echo "Issue #${ISSUE_NUMBER} is not on the DRF Project." >&2
+            exit 1
+          fi
+          if [ -z "$issue_node_id" ]; then
+            echo "DRF Issue #${ISSUE_NUMBER} was not found." >&2
+            exit 1
+          fi
+          mutation='mutation($projectId: ID!, $contentId: ID!) { addProjectV2ItemById(input: {projectId: $projectId, contentId: $contentId}) { item { id } } }'
+          item_id="$(gh api graphql -f query="$mutation" -f projectId="$project_id" -f contentId="$issue_node_id" --jq '.data.addProjectV2ItemById.item.id')"
+          previous_status=""
+        else
+          item_id="$(jq -r '.id' <<<"$item")"
+          previous_status="$(jq -r '.fieldValueByName.name // ""' <<<"$item")"
+        fi
+
+        echo "previous-status=$previous_status" >> "$GITHUB_OUTPUT"
+
+        if [ "$previous_status" = "$TARGET_STATUS" ]; then
+          echo "Issue #${ISSUE_NUMBER} is already ${TARGET_STATUS}."
+          exit 0
+        fi
+
+        if [ -n "$ALLOWED_CURRENT_STATUSES" ] && [ -n "$previous_status" ]; then
+          allowed=false
+          IFS=',' read -ra statuses <<< "$ALLOWED_CURRENT_STATUSES"
+          for status in "${statuses[@]}"; do
+            status="${status#${status%%[![:space:]]*}}"
+            status="${status%${status##*[![:space:]]}}"
+            if [ "$previous_status" = "$status" ]; then
+              allowed=true
+              break
+            fi
+          done
+          if [ "$allowed" != "true" ]; then
+            echo "Transition ${previous_status} -> ${TARGET_STATUS} is not allowed by this event." >&2
+            exit 1
+          fi
+        fi
+
+        mutation='mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $optionId: String!) { updateProjectV2ItemFieldValue(input: {projectId: $projectId, itemId: $itemId, fieldId: $fieldId, value: {singleSelectOptionId: $optionId}}) { projectV2Item { id } } }'
+        gh api graphql -f query="$mutation" -f projectId="$project_id" -f itemId="$item_id" -f fieldId="$status_field_id" -f optionId="$option_id" >/dev/null
+        echo "Issue #${ISSUE_NUMBER}: ${previous_status:-unset} -> ${TARGET_STATUS}"
