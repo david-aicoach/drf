@@ -15,6 +15,7 @@ Research:
 - `research/business-opportunity-validation-2026-08-29.md`
 - `research/five-golden-business-opportunities-2026-08-29.md`
 - `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
+- `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
 - `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md`
 
 ## Status legend
@@ -34,6 +35,7 @@ Scores are provisional until supported by operating evidence. **Opportunity Scor
 | Opportunity | Stage | Opportunity Score | MRR | AI Autonomy | Evidence Confidence | Research Completeness | Current read | Next action | Canonical detail |
 |---|---|---:|---:|---:|---:|---:|---|---|---|
 | **Revenue Recovery & Reactivation Engine** | **Candidate** | **94/100** | **10/10** | **93/100** | **89%** | **93%** | HighLevel can automate abandoned-checkout, failed-payment/dunning, dormant-lead/customer and stale-opportunity recovery. Value is directly measurable in recovered cash and repeats continuously. | Run one controlled recovery campaign against an existing database/order base and measure recovered contribution after messaging/AI/support cost. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
+| **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **Candidate** | **93/100** | **9/10** | **95/100** | **84%** | **87%** | Grok Bot provides always-on cloud-computer agents, skills/routines and public share links that let a recipient add a copy of a Bot configuration. The strongest model is outcome-led deployment plus recurring operation, not generic Bot setup. | Run one internal 7–14 day revenue-linked workflow test, measure failures/human minutes/value, then package the proven configuration for one niche. | `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md` |
 | **Missed Lead & Appointment Conversion Engine** | **Candidate** | **93/100** | **10/10** | **95/100** | **86%** | **90%** | Missed-call text back, multichannel response, AI qualification, booking, reminders and no-show rescue protect existing acquisition spend with very low marginal labour. | Deploy to one inbound-lead business and measure response time, contact rate, booked appointments and recovered leads. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
 | **AI Voice Receptionist & Booking Agent** | **Candidate** | **92/100** | **10/10** | **88/100** | **90%** | **93%** | HighLevel Voice AI supports inbound/outbound calls, qualification, knowledge, booking and actions; AI plans and rebilling make monthly subscription + usage markup native. | Deploy one narrow inbound-call agent with human escalation and measure booking, transfer, cost and failure rates. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
 | **AI Support & Sales Assistant** | **Candidate** | **92/100** | **10/10** | **88/100** | **88%** | **90%** | Conversation AI can serve SMS, chat, WhatsApp and social messaging with business knowledge, qualification and booking. Recurring need is strong, but human escalation is mandatory product design. | Launch one vertical knowledge/support assistant with explicit human handoff and measure resolution, booking and escalation rates. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
@@ -90,6 +92,7 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 | Opportunity | MS | MG | TW | WP | AB | AM | AD | HD | SC | SR | MP | SCALE | PG | MOAT | MRR | Weighted Score |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | **Revenue Recovery & Reactivation Engine** | 10 | 9 | 8 | 10 | 9 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 7 | 10 | **94.4 → 94** |
+| **Grok Bot AI-First Revenue Operations Business-in-a-Box** | 10 | 10 | 10 | 8 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 8 | 5 | 9 | **93.1 → 93** |
 | **Missed Lead & Appointment Conversion Engine** | 10 | 8 | 7 | 9 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 6 | 10 | **92.5 → 93** |
 | **AI Voice Receptionist & Booking Agent** | 10 | 10 | 9 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 9 | 7 | 10 | **92.1 → 92** |
 | **AI Support & Sales Assistant** | 10 | 10 | 9 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 8 | 7 | 10 | **91.7 → 92** |
@@ -121,6 +124,7 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 | Opportunity | Evidence Confidence | Research Completeness | Key verified / current evidence | Key estimated / missing evidence |
 |---|---:|---:|---|---|
 | Revenue Recovery & Reactivation Engine | **89%** | **93%** | HighLevel abandoned checkout, payment-failure/dunning, workflows, databases/reactivation; large external abandonment problem. | DRF recovery rates, CAC, churn, contribution and vertical benchmarks. |
+| Grok Bot AI-First Revenue Operations Business-in-a-Box | **84%** | **87%** | First-party launch/pricing/FAQ verify always-on cloud computers, scheduled routines, tool sign-in and public share links that let recipients add a copy of a Bot. | DRF client reliability, usage limits, support burden, CAC, churn, gross margin and outcome attribution. |
 | Missed Lead & Appointment Conversion Engine | **86%** | **90%** | Missed Call Text Back, Conversation AI, calendars, reminders, workflows and multichannel inbox. | DRF contact/booking uplift, subscription retention and vertical pricing. |
 | AI Voice Receptionist & Booking Agent | **90%** | **93%** | Live Voice AI capabilities, recurring AI plans, rebilling and strong current customer-service AI investment. | DRF call quality, failure rate, client willingness to pay, churn and support burden. |
 | AI Support & Sales Assistant | **88%** | **90%** | Live Conversation AI, multichannel support, AI plans/rebilling and strong service-AI demand. | DRF resolution/booking uplift, escalation load, churn and vertical pricing. |
@@ -154,6 +158,7 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 | Opportunity | AI Build | AI Market | AI Deliver | Low Human Dependency | AI Autonomy |
 |---|---:|---:|---:|---:|---:|
 | Revenue Recovery & Reactivation Engine | 9 | 9 | 10 | 9 | **93** |
+| Grok Bot AI-First Revenue Operations Business-in-a-Box | 10 | 9 | 10 | 9 | **95** |
 | Missed Lead & Appointment Conversion Engine | 10 | 9 | 10 | 9 | **95** |
 | AI Voice Receptionist & Booking Agent | 9 | 9 | 9 | 8 | **88** |
 | AI Support & Sales Assistant | 9 | 9 | 9 | 8 | **88** |
@@ -207,6 +212,16 @@ The Score Hire / partner-delivered recruitment model should be evaluated separat
 ### MRR changes the ranking for the right reason
 
 Framework v1.1 rewards opportunities where revenue can recur without repeatedly recreating the product or reacquiring the same customer. This moves recurring SaaS/API/data/recovery products upward and one-time asset businesses downward.
+
+### Delivery rails are replaceable; outcomes are the product
+
+HighLevel and Grok Bot should be treated as delivery rails that can carry the same outcome-specific offer. DRF should select the rail — or hybrid stack — by niche based on reliability, onboarding speed, integration fit, support load and gross margin rather than building the commercial identity around one vendor.
+
+```text
+Revenue outcome × niche × delivery rail
+```
+
+For example, Revenue Recovery or Instant Quote may be delivered through HighLevel, Grok Bot, or HighLevel + Grok Bot. This preserves the product thesis while allowing DRF to exploit Grok Bot's low entry cost, AI-first execution and copyable configurations.
 
 ### HighLevel remains a first-class DRF opportunity family
 
