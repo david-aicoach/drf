@@ -8,14 +8,16 @@ Canonical scoring method:
 
 `knowledge/guidelines/business-opportunity-scoring-framework.md`
 
-Current scoring framework: **v1.3 — 100-point Opportunity Score plus independent Evidence Confidence, Research Completeness, Execution Velocity and second-stage Niche Attractiveness. MRR / Recurring Revenue Quality remains the largest single Opportunity Score factor at 11 points.**
+Current scoring framework: **v1.5 — 100-point Opportunity Score plus independent Evidence Confidence, Research Completeness, Execution Velocity and second-stage Niche Attractiveness. MRR / Recurring Revenue Quality remains the largest single Opportunity Score factor at 11 points. AI-heavy opportunities are scored on sustained production economics, not merely technical capability or headline subscription price.**
 
 Research:
 
 - `research/business-opportunity-validation-2026-08-29.md`
 - `research/five-golden-business-opportunities-2026-08-29.md`
 - `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
+- `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md`
 - `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
+- `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`
 - `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md`
 - `research/whatsapp-crm-revenue-core-2026-08-29.md`
 - `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
@@ -36,22 +38,22 @@ Scores are provisional until supported by operating evidence. **Opportunity Scor
 
 | Opportunity | Stage | Opportunity Score | MRR | AI Autonomy | Evidence Confidence | Research Completeness | Current read | Next action | Canonical detail |
 |---|---|---:|---:|---:|---:|---:|---|---|---|
-| **Revenue Recovery & Reactivation Engine** | **Candidate** | **94/100** | **10/10** | **93/100** | **89%** | **93%** | HighLevel can automate abandoned-checkout, failed-payment/dunning, dormant-lead/customer and stale-opportunity recovery. Value is directly measurable in recovered cash and repeats continuously. | Run one controlled recovery campaign against an existing database/order base and measure recovered contribution after messaging/AI/support cost. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
-| **WhatsApp + CRM Revenue Core** | **Candidate** | **94/100** | **10/10** | **95/100** | **93%** | **96%** | First-class foundation service for WhatsApp-first businesses with two first-class delivery families: **Kapso composable/agent-first** or **CRM-native/all-in-one**. Kapso now has verified $25 Pro / $299 Platform pricing, Project MCP, customer-owned onboarding, coexistence, Flows, human handoff and managed Meta billing; HighLevel remains the simplicity/lifecycle benchmark. | Run the same HVAC/AC design-partner workflow through **Kapso + HighLevel CRM + Grok Bot** and **HighLevel-native WhatsApp + HighLevel**, measuring onboarding, reliability, agent completion, support burden, total cost and revenue outcome. | `businesses/whatsapp-crm-revenue-core/README.md` + `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md` + `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md` |
-| **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **Candidate** | **93/100** | **9/10** | **95/100** | **84%** | **87%** | Grok Bot provides always-on cloud-computer agents, skills/routines and public share links that let a recipient add a copy of a Bot configuration. The strongest model is outcome-led deployment plus recurring operation, not generic Bot setup. | Run one internal 7–14 day revenue-linked workflow test, measure failures/human minutes/value, then package the proven configuration for one niche. | `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md` |
-| **Missed Lead & Appointment Conversion Engine** | **Candidate** | **93/100** | **10/10** | **95/100** | **86%** | **90%** | Missed-call text back, multichannel response, AI qualification, booking, reminders and no-show rescue protect existing acquisition spend with very low marginal labour. | Deploy to one inbound-lead business and measure response time, contact rate, booked appointments and recovered leads. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
-| **AI Voice Receptionist & Booking Agent** | **Candidate** | **92/100** | **10/10** | **88/100** | **90%** | **93%** | HighLevel Voice AI supports inbound/outbound calls, qualification, knowledge, booking and actions; AI plans and rebilling make monthly subscription + usage markup native. | Deploy one narrow inbound-call agent with human escalation and measure booking, transfer, cost and failure rates. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
-| **AI Support & Sales Assistant** | **Candidate** | **92/100** | **10/10** | **88/100** | **88%** | **90%** | Conversation AI can serve SMS, chat, WhatsApp and social messaging with business knowledge, qualification and booking. Recurring need is strong, but human escalation is mandatory product design. | Launch one vertical knowledge/support assistant with explicit human handoff and measure resolution, booking and escalation rates. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
-| **Instant Quote Generator & Quote-to-Cash System** | **Candidate** | **91/100** | **9/10** | **98/100** | **86%** | **90%** | HighLevel calculators, conditional logic, automated estimates, contracts and payments can turn structured service enquiries into priced offers and payment with almost no marginal delivery. | Build one rules-based quote flow in a simple service vertical and measure quote completion, booking/payment conversion and time-to-quote. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
-| **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **Candidate** | **91/100** | **10/10** | **88/100** | **91%** | **93%** | Snapshots + SaaS plans + automatic install + AI/app/usage rebilling create an unusually clean recurring vertical-software model. Strongest when selling a business outcome, not generic CRM access. | Pick one vertical and sell one fixed SaaS plan containing only the proven modules required for that vertical. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
+| **WhatsApp + CRM Revenue Core** | **Candidate** | **95/100** | **10/10** | **95/100** | **96%** | **100%** | First-class foundation for WhatsApp-first businesses. The HighLevel-native route now has clearer predictable economics: deterministic lifecycle automation plus $97/location Unlimited Conversation/Voice AI subject to fair use. Kapso remains a first-class composable option where direct agent access, portability or customer-owned onboarding matters. | Run one HVAC/AC design-partner account and compare actual onboarding, reliability, support burden, total delivery cost and revenue outcome across the smallest viable HighLevel-native and composable architectures. | `businesses/whatsapp-crm-revenue-core/README.md` + `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md` + `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md` |
+| **Revenue Recovery & Reactivation Engine** | **Candidate** | **94/100** | **10/10** | **93/100** | **94%** | **97%** | HighLevel can automate abandoned-checkout, failed-payment/dunning, dormant-lead/customer and stale-opportunity recovery. Native workflows and AI make high-volume execution economically strong; Grok Bot should be reserved for cross-system exceptions rather than every recovery event. | Run one controlled recovery campaign against an existing database/order base and measure recovered contribution after messaging/AI/support cost. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` + `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md` |
+| **AI Voice Receptionist & Booking Agent** | **Candidate** | **94/100** | **10/10** | **90/100** | **96%** | **100%** | HighLevel Unlimited covers inbound/outbound/widget Voice AI subject to fair use, materially improving predictable high-volume delivery economics. Phone/carrier charges, call quality and human escalation remain real constraints. | Deploy one narrow inbound-call agent with human escalation and measure booking, transfer, AI minutes, carrier cost and failure rates. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` + `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md` |
+| **Missed Lead & Appointment Conversion Engine** | **Candidate** | **93/100** | **10/10** | **95/100** | **92%** | **97%** | Missed-call text back, native multichannel response, AI qualification, booking, reminders and no-show rescue protect existing acquisition spend with very low marginal labour. HighLevel's current AI economics strengthen confidence without requiring a higher structural score. | Deploy to one inbound-lead business and measure response time, contact rate, booked appointments, recovered leads and fully loaded delivery cost. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` + `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md` |
+| **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **Candidate** | **93/100** | **10/10** | **93/100** | **95%** | **97%** | Snapshots + SaaS plans + automatic install + rebilling now combine with predictable native AI economics. The strongest model is a fixed vertical outcome stack, not generic CRM resale. | Pick one vertical and prove a second customer can be deployed from substantially the same foundation + outcome snapshot with bounded onboarding/support. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` + `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md` |
+| **AI Support & Sales Assistant** | **Candidate** | **93/100** | **10/10** | **90/100** | **95%** | **100%** | Unlimited Conversation AI subject to fair use materially strengthens high-volume support, qualification and booking economics across supported channels. Human escalation remains mandatory product design. | Launch one vertical knowledge/support assistant with explicit human handoff and measure resolution, booking, escalation and fully loaded message cost. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` + `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md` |
+| **Instant Quote Generator & Quote-to-Cash System** | **Candidate** | **91/100** | **9/10** | **98/100** | **89%** | **93%** | HighLevel calculators, conditional logic, automated estimates, contracts and payments already create near-deterministic economics. New AI evidence strengthens confidence but does not justify artificial score inflation. | Build one rules-based quote flow in a simple service vertical and measure quote completion, booking/payment conversion and time-to-quote. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
 | **Talent Bridge Assessment & AI Interview Platform** | **Candidate** | **91/100** | **10/10** | **90/100** | **88%** | **87%** | Existing Talent Bridge assessment/IP, pricing, AI-interview model and reporting materially reduce build/GTM risk. Strong subscription + usage economics. | Turn the existing three-layer assessment offer into one self-service employer pilot and measure recurring candidate volume, support load and gross margin. | `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md` |
 | **Recruitment OS / Hiring Intelligence SaaS** | **Candidate** | **91/100** | **10/10** | **85/100** | **80%** | **80%** | Talent Bridge already owns much of the workflow/IP. Strongest as an intelligence/evaluation layer around existing ATS systems, not another generic ATS rebuild. | Prove the operating system internally, then sell one fixed module/workflow to a boutique agency or HR team. | `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md` |
 | **Agentic Commerce Visibility & Conversion Engine** | **Candidate** | **90/100** | **9/10** | **83/100** | **84%** | **87%** | AI shopping traffic and transaction infrastructure are accelerating. Recurring optimisation/monitoring is a credible subscription, but retention economics remain unproven. | Run a 3–5 merchant baseline/optimisation test and measure AI inclusion, referral traffic and attributable conversion uplift. | `research/five-golden-business-opportunities-2026-08-29.md` |
 | **Vertical AI Operating Systems & Agent Integration Packs** | **Candidate** | **88/100** | **9/10** | **78/100** | **86%** | **90%** | Strong willingness to pay and excellent DRF fit. Recurring value can be high when embedded operationally; main risk is collapsing into bespoke consulting. | Sell one fixed-outcome vertical operating pack using an existing DRF/Talent Bridge proving-ground workflow. | `research/five-golden-business-opportunities-2026-08-29.md` |
-| **Reputation & Local Visibility Engine** | **Candidate** | **88/100** | **10/10** | **93/100** | **88%** | **90%** | Reviews, listings and GBP visibility require continuous freshness. HighLevel supports automated review operations, GBP scheduling and recurring Listings resale. | Package review growth + replies + GBP + Listings for one local vertical and measure retention and lead/reputation lift. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
+| **Reputation & Local Visibility Engine** | **Candidate** | **88/100** | **10/10** | **93/100** | **92%** | **93%** | Reviews AI and Content AI can be unlimited subject to fair use, improving fulfilment economics, while Listings/GBP operations remain recurring. Commercial proof of lead/reputation lift remains the main constraint. | Package review growth + replies + GBP + Listings for one local vertical and measure retention and lead/reputation lift. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` + `research/gohighlevel-ai-employee-usage-economics-2026-08-29.md` |
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **Researching** | **88/100** | **10/10** | **95/100** | **68%** | **67%** | Strong asset fit and exceptionally automated recurring-data economics, but data depth, sample quality and buyer willingness still need direct validation. | Define a privacy-safe schema and publish one narrow salary/talent benchmark from existing data before building a broad product. | `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md` |
 | **White-Label Hiring Portal for Employers/Agencies** | **Researching** | **88/100** | **10/10** | **88/100** | **75%** | **73%** | Assessment, AI interview, recruitment workflow and reporting can be packaged into a recurring branded portal. Cleaner GTM than a two-sided job board. | Pilot one branded portal for an existing employer/agency and measure onboarding, usage, support and willingness to renew. | `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md` |
 | **Niche API & Data Product Factory** | **Candidate** | **87/100** | **10/10** | **90/100** | **80%** | **87%** | APIs are naturally agent-consumable, usage-billable and highly scalable; recurring usage materially strengthens this opportunity under the MRR-weighted framework. | Identify one recurring expensive data problem and require first paid API usage before expanding endpoints. | `research/five-golden-business-opportunities-2026-08-29.md` |
+| **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **Candidate** | **87/100** | **9/10** | **85/100** | **90%** | **97%** | Grok Bot remains a strong general cross-system operator, but current weekly usage economics make it a weaker default for high-volume repetitive work. Its best role is bounded high-value research, preparation, browser work and exceptions around native systems. | Run one 7–14 day controlled workload benchmark measuring quota %, `sand-*` usage where exposed, successful jobs, human recovery minutes, on-demand spend and cost per completed job before packaging externally. | `businesses/grok-bot-ai-revenue-operations/RESEARCH.md` + `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md` |
 | **Pre-Assessed Talent Pool Subscription** | **Researching** | **86/100** | **10/10** | **88/100** | **72%** | **70%** | Existing candidate ecosystem + assessment/evaluation capability could become a recurring employer-access product, but privacy, freshness and subscription demand need proof. | Build a permissioned 100-candidate pilot in one role family and test employer willingness to subscribe/access. | `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md` |
 | **Partner-Delivered Recruitment / Score Hire Model** | **Candidate** | **85/100** | **7/10** | **80/100** | **82%** | **80%** | Talent Bridge retains the client/commercial/evaluation layer while a partner agency performs labour-heavy sourcing/delivery, materially improving founder/team leverage. | Run one live role through a partner with written SLA, margin split, client ownership, replacement and non-circumvention rules. | `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md` |
 | **Assessment-as-a-Service Managed Retainer** | **Candidate** | **85/100** | **9/10** | **78/100** | **88%** | **87%** | Existing assessment capability can be sold immediately as a recurring managed programme before the SaaS platform is complete. | Offer one current employer a 3-month assessment retainer with monthly minimum + usage and measure servicing burden/margin. | `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md` |
@@ -67,7 +69,7 @@ Scores are provisional until supported by operating evidence. **Opportunity Scor
 
 ## Detailed opportunity scorecard
 
-All underlying factor scores are **0–10**. Weighted scoring uses framework v1.3.
+All underlying factor scores are **0–10**. Weighted scoring uses framework v1.5.
 
 ### Factor key
 
@@ -90,23 +92,23 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 | **MRR** | **MRR / Recurring Revenue Quality** | **11** |
 | **Total** |  | **100** |
 
-### Scores — framework v1.3, 29 August 2026
+### Scores — framework v1.5, 29 August 2026
 
 | Opportunity | MS | MG | TW | WP | AB | AM | AD | HD | SC | SR | MP | SCALE | PG | MOAT | MRR | Weighted Score |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | **Revenue Recovery & Reactivation Engine** | 10 | 9 | 8 | 10 | 9 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 7 | 10 | **94.4 → 94** |
-| **WhatsApp + CRM Revenue Core** | 10 | 9 | 9 | 9 | 9 | 10 | 10 | 9 | 10 | 10 | 9 | 10 | 9 | 7 | 10 | **94.4 → 94** |
-| **Grok Bot AI-First Revenue Operations Business-in-a-Box** | 10 | 10 | 10 | 8 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 8 | 5 | 9 | **93.1 → 93** |
+| **WhatsApp + CRM Revenue Core** | 10 | 9 | 9 | 9 | 9 | 10 | 10 | 9 | 10 | 10 | **10** | 10 | 9 | 7 | 10 | **94.9 → 95** |
+| **Grok Bot AI-First Revenue Operations Business-in-a-Box** | 10 | 10 | 10 | 8 | 10 | 9 | **8** | **7** | **8** | 10 | **8** | **8** | 8 | 5 | 9 | **87.1 → 87** |
 | **Missed Lead & Appointment Conversion Engine** | 10 | 8 | 7 | 9 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 6 | 10 | **92.5 → 93** |
-| **AI Voice Receptionist & Booking Agent** | 10 | 10 | 9 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 9 | 7 | 10 | **92.1 → 92** |
-| **AI Support & Sales Assistant** | 10 | 10 | 9 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 8 | 7 | 10 | **91.7 → 92** |
+| **AI Voice Receptionist & Booking Agent** | 10 | 10 | 9 | 9 | 9 | 9 | **10** | 8 | 9 | 9 | **10** | 10 | 9 | 7 | 10 | **93.5 → 94** |
+| **AI Support & Sales Assistant** | 10 | 10 | 9 | 9 | 9 | 9 | **10** | 8 | 9 | 9 | **10** | 10 | 8 | 7 | 10 | **93.1 → 93** |
 | **Instant Quote Generator & Quote-to-Cash System** | 9 | 8 | 8 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 10 | 10 | 9 | 6 | 9 | **91.4 → 91** |
-| **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | 10 | 9 | 8 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 9 | 8 | 10 | **91.2 → 91** |
+| **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | 10 | 9 | 8 | 9 | 9 | 9 | **10** | **9** | 9 | 9 | **10** | 10 | 9 | 8 | 10 | **93.0 → 93** |
 | **Talent Bridge Assessment & AI Interview Platform** | 9 | 9 | 8 | 9 | 9 | 8 | 10 | 9 | 9 | 9 | 10 | 10 | 8 | 8 | 10 | **91.0 → 91** |
 | **Recruitment OS / Hiring Intelligence SaaS** | 10 | 9 | 8 | 9 | 9 | 8 | 9 | 8 | 9 | 8 | 10 | 10 | 8 | 9 | 10 | **90.5 → 91** |
 | **Agentic Commerce Visibility & Conversion Engine** | 10 | 10 | 10 | 9 | 9 | 9 | 8 | 7 | 9 | 9 | 9 | 9 | 8 | 8 | 9 | **89.7 → 90** |
 | **Vertical AI Operating Systems & Agent Integration Packs** | 10 | 10 | 9 | 9 | 9 | 8 | 8 | 6 | 9 | 9 | 9 | 9 | 8 | 8 | 9 | **88.1 → 88** |
-| **Reputation & Local Visibility Engine** | 9 | 8 | 7 | 8 | 9 | 8 | 10 | 10 | 9 | 9 | 9 | 10 | 8 | 6 | 10 | **87.8 → 88** |
+| **Reputation & Local Visibility Engine** | 9 | 8 | 7 | 8 | 9 | 8 | 10 | 10 | 9 | 9 | **10** | 10 | 8 | 6 | 10 | **88.3 → 88** |
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | 8 | 9 | 8 | 8 | 10 | 8 | 10 | 10 | 9 | 6 | 10 | 10 | 6 | 8 | 10 | **87.9 → 88** |
 | **White-Label Hiring Portal for Employers/Agencies** | 9 | 9 | 8 | 9 | 9 | 8 | 9 | 9 | 8 | 7 | 10 | 10 | 7 | 8 | 10 | **87.9 → 88** |
 | **Niche API & Data Product Factory** | 8 | 9 | 8 | 8 | 9 | 7 | 10 | 10 | 9 | 7 | 10 | 10 | 6 | 8 | 10 | **87.1 → 87** |
@@ -127,19 +129,19 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 
 | Opportunity | Evidence Confidence | Research Completeness | Key verified / current evidence | Key estimated / missing evidence |
 |---|---:|---:|---|---|
-| Revenue Recovery & Reactivation Engine | **89%** | **93%** | HighLevel abandoned checkout, payment-failure/dunning, workflows, databases/reactivation; large external abandonment problem. | DRF recovery rates, CAC, churn, contribution and vertical benchmarks. |
-| WhatsApp + CRM Revenue Core | **93%** | **96%** | Meta business-messaging scale; UAE SME base; HighLevel native WhatsApp/CRM lifecycle; **Kapso first-party $25/$299 pricing, Project MCP, customer onboarding, coexistence, Flows, inbox/handoff and managed Meta billing; $1.4M August 2026 round and 28,000+ developer traction.** | Live DRF comparison of Kapso vs HighLevel: onboarding exceptions, agent completion, CRM sync, support minutes, real vendor/Meta cost, churn, gross margin and module expansion. |
-| Grok Bot AI-First Revenue Operations Business-in-a-Box | **84%** | **87%** | First-party launch/pricing/FAQ verify always-on cloud computers, scheduled routines, tool sign-in and public share links that let recipients add a copy of a Bot. | DRF client reliability, usage limits, support burden, CAC, churn, gross margin and outcome attribution. |
-| Missed Lead & Appointment Conversion Engine | **86%** | **90%** | Missed Call Text Back, Conversation AI, calendars, reminders, workflows and multichannel inbox. | DRF contact/booking uplift, subscription retention and vertical pricing. |
-| AI Voice Receptionist & Booking Agent | **90%** | **93%** | Live Voice AI capabilities, recurring AI plans, rebilling and strong current customer-service AI investment. | DRF call quality, failure rate, client willingness to pay, churn and support burden. |
-| AI Support & Sales Assistant | **88%** | **90%** | Live Conversation AI, multichannel support, AI plans/rebilling and strong service-AI demand. | DRF resolution/booking uplift, escalation load, churn and vertical pricing. |
-| Instant Quote Generator & Quote-to-Cash System | **86%** | **90%** | Forms calculator, conditional logic, Send Estimate, automated contracts and payments are live. | Vertical-specific quote accuracy, conversion uplift, pricing and retention. |
-| HighLevel Vertical SaaS Snapshot Business-in-a-Box | **91%** | **93%** | Snapshots, Marketplace subscription pricing, SaaS attachment/auto-install and rebilling documented by HighLevel. | Best first vertical, CAC, support exceptions, churn and retail price. |
+| Revenue Recovery & Reactivation Engine | **94%** | **97%** | HighLevel abandoned checkout, payment-failure/dunning, workflows, database reactivation plus current AI Employee/native execution economics. | DRF recovery rates, CAC, churn, contribution and vertical benchmarks. |
+| WhatsApp + CRM Revenue Core | **96%** | **100%** | Meta business-messaging scale; UAE SME base; HighLevel native WhatsApp/CRM lifecycle and current AI Employee economics; Kapso first-party pricing, Project MCP, customer onboarding, coexistence, Flows, inbox/handoff and managed Meta billing. | Live DRF comparison of architectures: onboarding exceptions, support minutes, real vendor/Meta cost, churn, gross margin and module expansion. |
+| Grok Bot AI-First Revenue Operations Business-in-a-Box | **90%** | **97%** | First-party launch/pricing/FAQ plus current weekly-usage documentation and corroborated community telemetry show strong computer-use capability but finite/opaque production capacity and potential on-demand spend. | Controlled DRF cost-per-completed-job benchmark, live client reliability, CAC, churn and gross margin. |
+| Missed Lead & Appointment Conversion Engine | **92%** | **97%** | Missed Call Text Back, Conversation AI, calendars, reminders, workflows, multichannel inbox and current AI Employee economics. | DRF contact/booking uplift, subscription retention and vertical pricing. |
+| AI Voice Receptionist & Booking Agent | **96%** | **100%** | Live Voice AI capabilities; inbound/outbound/widget Voice AI Unlimited subject to fair use; documented PPU economics, rebilling and current service-AI demand. | DRF call quality, failure rate, client willingness to pay, churn and support burden. |
+| AI Support & Sales Assistant | **95%** | **100%** | Live Conversation AI; Unlimited subject to fair use; multichannel support, AI plans/rebilling and strong service-AI demand. | DRF resolution/booking uplift, escalation load, churn and vertical pricing. |
+| Instant Quote Generator & Quote-to-Cash System | **89%** | **93%** | Forms calculator, conditional logic, Send Estimate, automated contracts and payments are live; deterministic architecture limits AI-cost exposure. | Vertical-specific quote accuracy, conversion uplift, pricing and retention. |
+| HighLevel Vertical SaaS Snapshot Business-in-a-Box | **95%** | **97%** | Snapshots, Marketplace subscription pricing, SaaS attachment/auto-install, rebilling and current per-location native AI economics documented by HighLevel. | Best first vertical, CAC, support exceptions, churn and retail price. |
 | Talent Bridge Assessment & AI Interview Platform | **88%** | **87%** | Existing Talent Bridge assessment architecture, pricing, reports and prior client proposal/use-case work. | Self-service conversion, churn, enterprise CAC and actual recurring platform usage. |
 | Recruitment OS / Hiring Intelligence SaaS | **80%** | **80%** | Existing recruitment-process IP, ATS/candidate ecosystem and internal Recruitment OS work. | External buyer conversion, scope boundary, integration burden and retention. |
 | Agentic Commerce Visibility & Conversion Engine | **84%** | **87%** | Agentic-commerce infrastructure and AI-shopping/referral growth. | Recurring optimisation retention, DRF CAC and attributable uplift. |
 | Vertical AI Operating Systems & Agent Integration Packs | **86%** | **90%** | Agent adoption and direct DRF operating assets. | Repeatability boundary, support burden, CAC/LTV and churn. |
-| Reputation & Local Visibility Engine | **88%** | **90%** | Review/GBP/Listings features, recurring Listings resale, strong review-recency demand. | DRF lead impact, churn, retail pricing and support burden. |
+| Reputation & Local Visibility Engine | **92%** | **93%** | Review/GBP/Listings features, Unlimited Reviews/Content AI subject to fair use, recurring Listings resale and strong review-recency demand. | DRF lead impact, churn, retail pricing and support burden. |
 | UAE/GCC Talent Intelligence & Salary Data Subscription | **68%** | **67%** | Talent Bridge has recruitment/candidate/role-market data and direct UAE/GCC market exposure. | Data depth, sample validity, privacy-safe aggregation, subscription WTP and benchmark accuracy. |
 | White-Label Hiring Portal for Employers/Agencies | **75%** | **73%** | Existing assessment/AI interview/recruitment/reporting components and prior recurring portal commercial concept. | Live customer usage, integration/support cost, CAC and churn. |
 | Niche API & Data Product Factory | **80%** | **87%** | Usage billing and machine-consumable recurring model. | First lawful niche, acquisition economics and retention. |
@@ -164,12 +166,12 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 |---|---:|---:|---:|---:|---:|
 | Revenue Recovery & Reactivation Engine | 9 | 9 | 10 | 9 | **93** |
 | WhatsApp + CRM Revenue Core | 9 | 10 | 10 | 9 | **95** |
-| Grok Bot AI-First Revenue Operations Business-in-a-Box | 10 | 9 | 10 | 9 | **95** |
+| Grok Bot AI-First Revenue Operations Business-in-a-Box | 10 | 9 | **8** | **7** | **85** |
 | Missed Lead & Appointment Conversion Engine | 10 | 9 | 10 | 9 | **95** |
-| AI Voice Receptionist & Booking Agent | 9 | 9 | 9 | 8 | **88** |
-| AI Support & Sales Assistant | 9 | 9 | 9 | 8 | **88** |
+| AI Voice Receptionist & Booking Agent | 9 | 9 | **10** | 8 | **90** |
+| AI Support & Sales Assistant | 9 | 9 | **10** | 8 | **90** |
 | Instant Quote Generator & Quote-to-Cash System | 10 | 9 | 10 | 10 | **98** |
-| HighLevel Vertical SaaS Snapshot Business-in-a-Box | 9 | 9 | 9 | 8 | **88** |
+| HighLevel Vertical SaaS Snapshot Business-in-a-Box | 9 | 9 | **10** | **9** | **93** |
 | Talent Bridge Assessment & AI Interview Platform | 9 | 8 | 10 | 9 | **90** |
 | Recruitment OS / Hiring Intelligence SaaS | 9 | 8 | 9 | 8 | **85** |
 | Agentic Commerce Visibility & Conversion Engine | 9 | 9 | 8 | 7 | **83** |
@@ -193,6 +195,22 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 
 ## Strategic portfolio interpretation
 
+### AI delivery economics changed the comparative ranking
+
+The portfolio no longer treats a cheap computer-use subscription as proof of cheap autonomous labour.
+
+```text
+repeatable high-volume event
+→ native deterministic action/API
+→ native domain AI where needed
+→ bounded paid reasoning
+→ browser/computer-use only for cross-system gaps/exceptions
+```
+
+This strengthens HighLevel-native Voice, Support and vertical SaaS economics while moving Grok Bot into the specialist agent layer. Grok Bot remains strategically important because it can cross systems and operate interfaces that lack clean APIs; it is simply no longer assumed to be the cheapest rail for every recurring event.
+
+Canonical re-score rationale: `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`.
+
 ### WhatsApp + CRM is now the first-class UAE foundation service
 
 Do not hide WhatsApp/CRM underneath every outcome module, and do not sell it as generic software configuration.
@@ -207,14 +225,14 @@ Missed Lead / Revenue Recovery / Instant Quote / AI Voice / AI Support / Reputat
 optional Grok Bot or other external agent only where cross-system work justifies it
 ```
 
-The foundation now has **two first-class architecture families**:
+The foundation has **two first-class architecture families**:
 
 ```text
 Composable AI-first
-Kapso → Grok/approved agent → CRM
+Kapso → approved agent → CRM
 
 All-in-one
-HighLevel native WhatsApp → HighLevel CRM/lifecycle → native AI/Grok as needed
+HighLevel native WhatsApp → HighLevel CRM/lifecycle → native AI → external agent only as needed
 ```
 
 This makes the foundation separately sellable and separately retainable while preserving outcome-led positioning. It also makes account expansion visible: one client can start with the core and add modules based on measured leakage.
@@ -243,7 +261,7 @@ The Score Hire / partner-delivered recruitment model should be evaluated separat
 
 ### MRR changes the ranking for the right reason
 
-Framework v1.3 rewards opportunities where revenue can recur without repeatedly recreating the product or reacquiring the same customer. This moves recurring SaaS/API/data/recovery products upward and one-time asset businesses downward.
+Framework v1.5 rewards opportunities where revenue can recur without repeatedly recreating the product or reacquiring the same customer. This moves recurring SaaS/API/data/recovery products upward and one-time asset businesses downward.
 
 ### Delivery rails are replaceable; outcomes are the product
 
@@ -253,11 +271,11 @@ Kapso, HighLevel, Grok Bot and other approved platforms are **delivery rails**. 
 Revenue outcome × niche × WhatsApp rail × CRM/system of record × agent layer
 ```
 
-Kapso is particularly strong where direct agent access to WhatsApp, customer-owned onboarding, managed billing and CRM portability matter. HighLevel is particularly strong where one-vendor CRM/lifecycle simplicity and agency deployment economics dominate. The customer-facing offer remains the measurable outcome.
+Kapso is particularly strong where direct agent access to WhatsApp, customer-owned onboarding, managed billing and CRM portability matter. HighLevel is particularly strong where one-vendor CRM/lifecycle simplicity and predictable native AI economics dominate. Grok Bot is strongest where broad cross-system/browser capability creates value unavailable from robust native actions. The customer-facing offer remains the measurable outcome.
 
 ### HighLevel remains a first-class DRF opportunity family
 
-HighLevel remains highly valuable as a CRM/lifecycle and vertical SaaS rail, but it no longer implicitly owns the WhatsApp layer in DRF architecture.
+HighLevel is valuable as a CRM/lifecycle and vertical SaaS rail, but it does not implicitly own every channel or agent layer.
 
 A modular client account can therefore be:
 
@@ -279,13 +297,15 @@ AI Voice
 Revenue Recovery
       ↓
 Reputation / Local Visibility
+      ↓
+external computer-use agent only for justified gaps/exceptions
 ```
 
 The foundation makes the customer record, conversations, pipeline and attribution durable. Outcome modules are added because the data proves a commercial gap, not because every client should buy every feature.
 
 ### Portfolio operating rule
 
-> Prefer opportunities with high MRR and high AI Autonomy where the recurring value is embedded in the customer's ongoing operating flow. Use existing Talent Bridge/iMPLEMENTAi distribution and proof before paid acquisition or new infrastructure.
+> Prefer opportunities with high MRR and high **sustained** AI Autonomy where the recurring value is embedded in the customer's ongoing operating flow. Use existing Talent Bridge/iMPLEMENTAi distribution and proof before paid acquisition or new infrastructure.
 
 ## Research-gap rule
 
@@ -315,6 +335,7 @@ The next score movement should come primarily from:
 - contribution margin;
 - support burden;
 - automation exception rates;
+- cost per successful production outcome;
 - measurable client ROI.
 
 ## Table format rule
