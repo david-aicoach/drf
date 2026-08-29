@@ -4,6 +4,8 @@
 **Issue:** #27  
 **Status:** Candidate opportunity research
 
+> **Superseded scoring notice — Issue #40:** This file preserves the original preliminary v1.1 scoring as historical research. After current Grok Bot weekly-usage evidence was compared with HighLevel's native AI economics under framework v1.5, the canonical Grok Bot score is now **87/100**, AI Autonomy **85/100**, Evidence Confidence **90%**, Research Completeness **97%**. Do **not** use the older 93/95 figures below for current portfolio comparison. See `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md` and `businesses/OPPORTUNITIES.md`.
+
 ## Executive conclusion
 
 Grok Bot should be treated as a **delivery platform**, not the product itself.
@@ -117,6 +119,8 @@ The exact automation boundary must be tested niche by niche. High-risk financial
 
 ## Preliminary DRF scoring — framework v1.1
 
+> Historical preliminary scoring only. Current canonical scoring is in `businesses/OPPORTUNITIES.md` and `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`.
+
 | Factor | Score /10 | Reason |
 |---|---:|---|
 | Market Size Now | 10 | Broad applicability across SMB/service/business operations. |
@@ -135,10 +139,10 @@ The exact automation boundary must be tested niche by niche. High-risk financial
 | Defensibility / Moat | 5 | Platform/configurations alone are copyable; moat must come from niche knowledge, data, proof, integrations and operating IP. |
 | MRR / Recurring Revenue Quality | 9 | 24/7 continuing operation supports recurring service/software economics, but client retention is unproven. |
 
-**Weighted Opportunity Score: 93.1/100 → 93/100.**  
-**AI Autonomy: 95/100.**  
-**Evidence Confidence: 84%.**  
-**Research Completeness: 87%.**
+**Historical weighted Opportunity Score: 93.1/100 → 93/100.**  
+**Historical AI Autonomy: 95/100.**  
+**Historical Evidence Confidence: 84%.**  
+**Historical Research Completeness: 87%.**
 
 ## Recommended positioning
 
@@ -176,6 +180,6 @@ Use an existing DRF/Talent Bridge/iMPLEMENTAi-owned workflow where access and fe
 
 ## Decision
 
-**Candidate — high priority for a bounded live test.**
+**Candidate — bounded specialist-agent test.**
 
-The opportunity is compelling because Grok Bot lowers the cost and build resistance of deploying an AI-first digital worker, while copyable configurations improve repeatability. The unresolved question is not whether the platform can execute work; it is whether DRF can turn one revenue-linked configuration into a reliable, niche-specific recurring offer with low support burden and provable client ROI.
+The opportunity remains compelling because Grok Bot lowers the build resistance of deploying a general cross-system worker and copyable configurations improve repeatability. The unresolved question is no longer only whether the platform can execute work; it is whether one revenue-linked configuration can deliver enough **successful high-value jobs per unit of weekly quota, on-demand spend and support labour** to support reliable recurring margins. High-frequency native CRM/workflow events should default to deterministic/native execution until a Grok Bot benchmark proves a superior outcome.
