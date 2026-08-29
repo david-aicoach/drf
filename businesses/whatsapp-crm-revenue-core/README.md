@@ -1,12 +1,13 @@
 # WhatsApp + CRM Revenue Core
 
 **Status:** Candidate business opportunity  
-**Version:** 1.1  
+**Version:** 1.2  
 **Date:** 29 August 2026  
 **Governing issues:** #28, #29  
 **Delivery principle:** Vendor-neutral outcome product; select from approved CRM + WhatsApp + agent stacks  
-**Default DRF stack:** HighLevel + native WhatsApp; add native AI or Grok Bot only when justified  
-**Cost research:** `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`
+**First-class WhatsApp families:** Kapso composable stack OR CRM-native/all-in-one stack  
+**Cost research:** `research/whatsapp-crm-delivery-stack-cost-matrix-2026-08-29.md`  
+**Kapso architecture:** `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md`
 
 ## Business definition
 
@@ -40,18 +41,77 @@ The product is fixed. The backend is interchangeable.
 
 ```text
 Agent layer
-Grok Bot | CRM-native AI | other approved agent
+Grok Bot | CRM-native AI | Kapso agent/workflows | other approved agent
         ↓
-CRM layer
-HighLevel | Kommo | Zoho CRM | HubSpot | approved incumbent CRM
+CRM / system-of-record layer
+HighLevel | Kommo | Zoho CRM | HubSpot | incumbent CRM
         ↓
-WhatsApp layer
-CRM-native WhatsApp | WATI | respond.io | SleekFlow | CEQUENS | Unifonic | approved BSP
+WhatsApp operating layer
+Kapso | HighLevel native WhatsApp | Kommo direct | Zoho direct
+| WATI | respond.io | SleekFlow | CEQUENS | Unifonic
         ↓
 Meta / WhatsApp Business Platform
 ```
 
 **Rule:** do not force a client to migrate systems when preserving an existing CRM produces lower resistance and equal or better commercial outcomes.
+
+## Two first-class architecture families
+
+### Family A — composable AI-first
+
+```text
+WhatsApp
+→ Kapso
+→ MCP / API / Workflows / webhooks
+→ Grok Bot or approved agent
+→ CRM / system of record
+```
+
+Use when:
+
+- WhatsApp is a primary product surface;
+- direct agent operation of WhatsApp matters;
+- customer-owned number onboarding matters;
+- CRM portability matters;
+- WhatsApp Flows are strategically useful;
+- iMPLEMENTAi wants to own the product layer rather than merely resell another vendor UI;
+- managed Meta billing and multi-client platform tooling improve the SaaS/managed-service experience.
+
+Kapso is now treated as **first-class WhatsApp infrastructure**, not a minor specialist integration.
+
+Current first-party signals:
+
+- **$25/month Pro** — 100,000 messages and 3 connected numbers;
+- **$299/month Platform** — 1,000,000 messages and 50 connected numbers;
+- Project MCP for customers, setup links, WhatsApp numbers, conversations, messages, templates and webhooks;
+- WhatsApp Business App coexistence;
+- customer-owned WhatsApp onboarding links;
+- Workflows, AI agents, functions, inbox/handoff and WhatsApp Flows;
+- Managed Billing with no Kapso markup on Meta message rates;
+- **28,000+ developers**;
+- **US$1.4M funding round announced 23 August 2026**;
+- Kapso says it recently became a **Meta Solutions Partner**.
+
+Sources are maintained in `businesses/grok-bot-ai-revenue-operations/KAPSO-WHATSAPP-OPTION.md` and the cost matrix.
+
+### Family B — all-in-one CRM-native
+
+```text
+WhatsApp
+→ HighLevel / Kommo / other CRM-native channel
+→ CRM + pipeline + workflows + native AI
+→ optional Grok Bot for non-native cross-system work
+```
+
+Use when:
+
+- simplicity is more valuable than architectural portability;
+- one-vendor support materially lowers fulfilment effort;
+- CRM/lifecycle features are central;
+- native voice, quote, reputation, payment and workflow modules are likely to be attached;
+- the client is comfortable adopting the selected CRM.
+
+For a greenfield UAE service-business account, **HighLevel remains the simplicity benchmark**.
 
 ## Why this is separate from Revenue Recovery or Missed Lead Conversion
 
@@ -117,133 +177,76 @@ Detailed costs and evidence: `research/whatsapp-crm-delivery-stack-cost-matrix-2
 
 | Delivery class | Typical stack | Best use | Current DRF read |
 |---|---|---|---|
-| **Default factory** | HighLevel + native WhatsApp + native AI as needed | UAE SMB/service clients where iMPLEMENTAi owns the operating system | **Default** |
-| **Agentic hybrid** | HighLevel + native WhatsApp + Grok Bot | Same market when persistent browser/cross-system work adds value | **Best hybrid** |
-| **WhatsApp-first CRM** | Kommo + direct WhatsApp + optional Grok | Sales teams that want messenger-first CRM and may resist HighLevel | **Best all-in-one alternative** |
-| **Low-cost CRM-first** | Zoho CRM + direct WhatsApp + optional Grok | Existing Zoho or cost-sensitive customers | **Best low-cost CRM alternative** |
-| **Modular WhatsApp specialist** | Zoho/HubSpot + WATI or respond.io + optional Grok | High WhatsApp volume, routing, inbox or omnichannel requirements | **Specialist route** |
-| **Regional MENA** | Zoho/other CRM + CEQUENS | Regional enterprise/CPaaS requirements | **Regional alternative** |
-| **GCC enterprise** | Existing CRM + Unifonic | Larger clients prioritising regional support and multichannel CPaaS | **Enterprise only** |
+| **Composable agent-first** | **Kapso + HighLevel CRM + Grok Bot** | WhatsApp-first AI revenue systems where iMPLEMENTAi owns orchestration | **Highest-potential architecture — 97/100 provisional fit** |
+| **All-in-one factory** | HighLevel + native WhatsApp + native AI/Grok as needed | Fast UAE SMB/service deployment with lowest system complexity | **Simplicity benchmark — 94/100 provisional fit** |
+| **Lean composable** | Kapso + Zoho/HubSpot + Grok | Cost-sensitive or incumbent-CRM clients | **Best modular alternative** |
+| **WhatsApp-first CRM** | Kommo + direct WhatsApp + optional Grok | Sales teams wanting messenger-first CRM | **Best self-contained alternative** |
+| **Packaged WhatsApp specialist** | Zoho/HubSpot + WATI/respond.io | Team inbox/omnichannel-first use cases | **Specialist route** |
+| **Regional MENA** | CRM + CEQUENS | Regional CPaaS requirements | **Regional alternative** |
+| **GCC enterprise** | Existing CRM + Unifonic | Larger clients prioritising regional support/multichannel CPaaS | **Enterprise only** |
 
 ### Current cost anchors
 
-All figures are current public pricing as at 29 August 2026 and exclude Meta message usage unless stated.
+All figures are current public pricing as at 29 August 2026 and exclude Meta usage unless stated.
 
-- HighLevel: $97 Starter / $297 Unlimited / $497 Agency Pro; WhatsApp $10/month per sub-account.
-- HighLevel AI: $50/location Growth or $97/location Unlimited; pay-per-use also available.
-- Grok Bot: from $20/month via Cursor Pro or $30/month via SuperGrok; usage terms apply.
-- Kommo: current $15/$25/$45 per user; Base and Advanced rise to $25/$35 for new customers from 1 September 2026.
-- Zoho CRM: $14 Standard / $23 Professional / $40 Enterprise per user/month billed annually.
-- WATI: $49 Growth / $99 Pro / $299 Business plus message charges.
-- respond.io: $79 Starter / $159 Growth / $279 Advanced plus Meta usage.
-- SleekFlow: starts around $79/month plus approximately $15 WhatsApp phone connection/hosting and usage.
-- CEQUENS Engage: $45 Starter / $225 Professional / $600 Enterprise, excluding carrier fees.
-- Unifonic: $499 Connect / $999 Engagement / custom Intelligence.
-
-### HighLevel factory economics
-
-Because the HighLevel agency subscription is shared, the allocated platform cost falls with account count.
-
-| Plan | Client count | Approx. allocated platform + WhatsApp/client |
-|---|---:|---:|
-| Starter $97 | 3 | **$42.33/month** |
-| Unlimited $297 | 10 | **$39.70** |
-| Unlimited $297 | 25 | **$21.88** |
-| Unlimited $297 | 50 | **$15.94** |
-| Agency Pro $497 | 10 | **$59.70** |
-| Agency Pro $497 | 25 | **$29.88** |
-| Agency Pro $497 | 50 | **$19.94** |
-
-This excludes Meta usage, optional AI plans, telephony and iMPLEMENTAi support labour.
+- **Kapso:** Free $0 / Pro $25 / Platform $299. Pro: 100k messages + 3 numbers. Platform: 1M messages + 50 numbers. Meta usage separate; Kapso says no markup on Meta rates.
+- **HighLevel:** $97 Starter / $297 Unlimited / $497 Agency Pro; WhatsApp $10/month per sub-account.
+- **HighLevel AI:** $50/location Growth or $97/location Unlimited; pay-per-use also available.
+- **Grok Bot:** from $20/month via Cursor Pro or $30/month via SuperGrok; allocation/isolation must be validated per deployment.
+- **Kommo:** current $15/$25/$45 per user; Base and Advanced rise to $25/$35 for new customers from 1 September 2026.
+- **Zoho CRM:** $14 Standard / $23 Professional / $40 Enterprise per user/month billed annually.
+- **WATI:** $49 Growth / $99 Pro / $299 Business plus message charges.
+- **respond.io:** $79 Starter / $159 Growth / $279 Advanced plus Meta usage.
+- **SleekFlow:** starts around $79/month plus approximately $15 WhatsApp connection/hosting and usage.
+- **CEQUENS Engage:** $45 Starter / $225 Professional / $600 Enterprise, excluding carrier fees.
+- **Unifonic:** $499 Connect / $999 Engagement / custom Intelligence.
 
 ## Cost architecture
 
 Never compare vendors using only the headline subscription.
 
 ```text
-CRM/platform
-+ WhatsApp/BSP platform fee
+CRM/system of record
++ WhatsApp/BSP platform
 + Meta messaging/calling usage
-+ AI/agent subscription and usage
-+ integration middleware if any
++ AI/agent subscription and inference
++ integration/middleware where required
 + implementation/support labour
 = true delivery cost
 ```
 
-Current UAE WhatsApp rate-card anchor before provider transaction fees:
+Current UAE WhatsApp anchor before provider-specific transaction fees:
 
 - Marketing template: **$0.0524/message**;
 - Utility template outside the active service window: **$0.0165/message**;
 - current August 2026 service replies: free.
 
-A further Meta pricing change is reported for **1 October 2026**, so WhatsApp rate assumptions must be refreshed before future quoting.
+Meta changes the pricing model again on **1 October 2026**, so these rates must be refreshed before future quoting.
 
 ## Opportunity score
 
 Framework: `knowledge/guidelines/business-opportunity-scoring-framework.md`
 
-| Factor | Score /10 | Reason |
-|---|---:|---|
-| Market Size Now | 10 | UAE has a very large SME/service-business base and WhatsApp is globally embedded in business messaging. |
-| Market Growth | 9 | Business messaging, CRM digitisation and AI-assisted customer operations continue to expand. |
-| Timing / First-Mover Window | 9 | 2026 coexistence, calling, CRM workflow and AI improvements across multiple platforms reduce implementation friction. |
-| Willingness to Pay | 9 | CRM, WhatsApp Business Platform, lead management and managed automation already have established business budgets. |
-| AI Buildability | 9 | Most of the core is configuration/template work rather than custom software. |
-| AI Marketability | 10 | Pain is simple to demonstrate: lost chats, no pipeline visibility, slow follow-up and staff-memory dependency. |
-| AI Deliverability | 10 | Multiple mature CRM/BSP combinations can deliver the foundation; AI can support configuration, monitoring and optimisation. |
-| Low Human Dependency | 9 | Initial onboarding requires access/verification and workflow design; recurring operation can be highly standardised. |
-| Startup Capital Efficiency | 10 | Existing iMPLEMENTAi capability and reusable templates keep incremental build cost low. |
-| Speed to Revenue | 10 | A verticalised sellable setup can be demonstrated and sold without custom platform development. |
-| Margin Potential | 9 | SaaS/rebilling plus managed optimisation can carry strong margins if support scope and vendor cost are bounded. |
-| Scalability | 10 | Approved stack templates support repeated deployment while avoiding single-vendor dependency. |
-| Paid Growth Potential | 9 | Clear before/after operational pain supports targeted outbound, WhatsApp, Meta and search acquisition. |
-| Defensibility / Moat | 7 | Underlying software is available to others; moat comes from niche playbooks, workflow IP, benchmarks, proof and integration quality. |
-| MRR / Recurring Revenue Quality | 10 | CRM, WhatsApp, monitoring and optimisation remain valuable every month and form the base for module expansion. |
+The discovery of Kapso strengthens delivery optionality but does not change the client problem or market size enough to justify mechanically inflating the business score.
 
-**Weighted Opportunity Score: 94.4/100 → 94/100.**  
+**Weighted Opportunity Score: 94/100.**  
 **MRR: 10/10.**  
 **AI Autonomy: 95/100.**  
 **Evidence Confidence: 93%.**  
-**Research Completeness: 95%.**
+**Research Completeness: 96%.**
+
+The score remains provisional until live operating evidence proves gross margin, support burden and retention.
 
 ## Execution velocity
 
-| Execution factor | Score /10 | Read |
-|---|---:|---|
-| Build / Setup Speed | 9 | Approved vertical templates can be assembled quickly, especially on HighLevel/Kommo. |
-| Go-to-Market Launch Speed | 10 | Offer is easy to demonstrate and can reuse the same DRF GTM stack. |
-| Sales-Cycle Speed | 10 | Pain is operational and visible; one demo can expose the gap quickly. |
-| Client Delivery / Onboarding Speed | 9 | Typical setup is fast once account, number, permissions and data are available. |
-| Dependency / Resistance | 8 | WhatsApp eligibility, migration/coexistence, templates and incumbent-system constraints create some external friction. |
-
 **Execution Velocity: 93/100.**  
-**Execution Priority: 94/100** (`94 × 0.70 + 93 × 0.30 = 93.7`).
+**Execution Priority: 94/100.**
 
-## Evidence basis
-
-### Meta / WhatsApp
-
-Current Meta evidence includes more than two billion daily WhatsApp users and very large business-messaging activity. Current vendor documentation confirms WhatsApp Business Platform pricing is usage-based and changing over time.
-
-Sources:
-- https://about.fb.com/news/2025/04/ways-to-manage-your-businesses-chats-on-whatsapp/
-- https://about.fb.com/news/2026/01/2026-ai-drives-performance/
-- https://about.fb.com/news/2026/06/meta-business-agent/
-
-### UAE market
-
-The UAE Ministry of Economy & Tourism reported in 2026 that SMEs number about **1.33 million**, represent nearly **95% of UAE companies**, more than **85% of private-sector jobs** and around **63% of GDP**.
-
-Source:
-- https://www.moet.gov.ae/en/-/second-edition-of-the-national-forum-for-smes-government-procurement-2026-offers-government-contracts-and-tenders-worth-aed-2.445-billion
-
-### Delivery alternatives
-
-Current first-party/vendor research confirms credible delivery via HighLevel, Kommo, Zoho CRM, WATI, respond.io, SleekFlow, CEQUENS, Unifonic and HubSpot combinations. Full links and pricing assumptions are maintained in the cost-matrix research file rather than duplicated here.
+Kapso may improve onboarding/productisation for agent-first deployments, while HighLevel-native remains the faster lowest-complexity path. Both should be benchmarked.
 
 ## Best initial niches
 
-The canonical scores live in `businesses/NICHES.md`.
+Canonical scores live in `businesses/NICHES.md`.
 
 Current foundation-service priorities:
 
@@ -265,7 +268,7 @@ Fixed implementation fee for CRM, WhatsApp, pipeline, workflows, permissions and
 
 ### Monthly
 
-Recurring managed fee covering platform access where bundled, monitoring, optimisation and bounded support.
+Recurring managed fee covering bundled platform access where applicable, monitoring, optimisation and bounded support.
 
 ### Usage
 
@@ -273,7 +276,7 @@ Meta messaging/calling and AI/agent usage should either be transparently passed 
 
 ### Expansion
 
-Outcome modules are sold as upgrades when the foundation data shows a measurable opportunity.
+Outcome modules are sold as upgrades when foundation data exposes measurable leakage.
 
 ```text
 Foundation MRR
@@ -285,16 +288,43 @@ Foundation MRR
 ## Stack-selection rule
 
 1. Start with the client's existing CRM and WhatsApp state.
-2. Use **HighLevel** by default when iMPLEMENTAi owns the full system and no strong incumbent exists.
-3. Preserve **Kommo, Zoho or HubSpot** when migration resistance exceeds the benefit.
-4. Add **WATI/respond.io/SleekFlow/CEQUENS/Unifonic** only when specialist WhatsApp/CPaaS capability justifies another system.
-5. Use CRM-native AI first for CRM-native tasks.
-6. Add **Grok Bot** only for persistent cross-system/browser/research/exception workflows.
-7. Re-check current vendor and Meta pricing before every material quote.
+2. Test **Kapso + CRM + agent** whenever WhatsApp is a primary product surface and direct agent operation/productisation matters.
+3. Use **HighLevel-native WhatsApp** when simplicity and all-in-one lifecycle breadth dominate.
+4. Preserve **Kommo, Zoho or HubSpot** when migration resistance exceeds the benefit of replacing the CRM.
+5. Use **WATI/respond.io/SleekFlow** when a packaged team inbox/omnichannel product is more important than developer/agent infrastructure.
+6. Use **CEQUENS/Unifonic** when regional enterprise/CPaaS requirements justify them.
+7. Keep the AI layer replaceable; use Grok Bot only where its persistent cross-system work creates measurable value.
+8. Re-check Meta/vendor pricing before every material quote.
+
+## Required benchmark
+
+### Benchmark A — simplicity
+
+**HighLevel native WhatsApp + HighLevel CRM + native AI/Grok where justified**
+
+### Benchmark B — composable AI-first
+
+**Kapso + HighLevel CRM + Grok Bot**
+
+Track:
+
+- setup and customer-onboarding time;
+- number/coexistence reliability;
+- message latency/reliability;
+- MCP/agent successful-completion rate;
+- CRM sync failures;
+- WhatsApp Flow build time;
+- human-handoff quality;
+- support minutes/account;
+- actual fixed vendor cost/client;
+- Meta cost;
+- gross margin;
+- customer usability;
+- deployment time for client #2.
 
 ## Scale rule
 
-Do not market this as generic CRM implementation.
+Do not market this as generic CRM or WhatsApp implementation.
 
 Verticalise the promise:
 
@@ -308,15 +338,19 @@ Desk evidence is sufficient for Candidate status, not product-market fit.
 
 Before scale, measure:
 
-- onboarding hours by delivery stack;
+- onboarding hours by stack;
 - WhatsApp approval/verification/migration exceptions;
-- actual vendor and Meta cost per client;
-- baseline versus post-install response time;
-- pipeline completeness;
+- actual vendor and Meta cost/client;
+- response and pipeline improvement;
 - follow-up completion;
 - booking/quote/close improvement;
 - staff adoption;
-- support minutes per account;
+- support minutes;
+- automation/agent failure rate;
 - churn/retention;
-- gross margin by stack;
+- gross margin;
 - expansion into outcome modules.
+
+## Governing conclusion
+
+> **Kapso and HighLevel should both be first-class architecture families. Kapso is the composable, agent-native WhatsApp infrastructure option; HighLevel is the all-in-one CRM/lifecycle option. iMPLEMENTAi owns the customer outcome, workflow logic and operating standard — not the vendor.**
