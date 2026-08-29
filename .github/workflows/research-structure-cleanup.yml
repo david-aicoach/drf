@@ -35,7 +35,7 @@ jobs:
           extensions = {'.md', '.html', '.json', '.yml', '.yaml', '.txt', '.js', '.ts', '.css'}
           changed = []
           for p in Path('.').rglob('*'):
-              if not p.is_file() or '.git' in p.parts or p.suffix.lower() not in extensions:
+              if not p.is_file() or '.git' in p.parts or '.github' in p.parts or p.suffix.lower() not in extensions:
                   continue
               text = p.read_text(encoding='utf-8')
               new = text
