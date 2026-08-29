@@ -29,7 +29,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No changes required'
           else
-            git commit -m 'Run niche v3 validation and reconciliation'
+            git commit -m 'Complete and reconcile all 31 niche research dossiers v3'
             git push
           fi
       - name: Fail if validation failed
