@@ -8,7 +8,7 @@ Canonical scoring method:
 
 `knowledge/guidelines/business-opportunity-scoring-framework.md`
 
-Current scoring framework: **v1.1 — includes MRR / Recurring Revenue Quality as the largest single weighted factor (11 points).**
+Current scoring framework: **v1.3 — 100-point Opportunity Score plus independent Evidence Confidence, Research Completeness, Execution Velocity and second-stage Niche Attractiveness. MRR / Recurring Revenue Quality remains the largest single Opportunity Score factor at 11 points.**
 
 Research:
 
@@ -17,6 +17,7 @@ Research:
 - `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md`
 - `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md`
 - `research/talent-bridge-implementai-opportunity-capture-2026-08-29.md`
+- `research/whatsapp-crm-revenue-core-2026-08-29.md`
 
 ## Status legend
 
@@ -35,6 +36,7 @@ Scores are provisional until supported by operating evidence. **Opportunity Scor
 | Opportunity | Stage | Opportunity Score | MRR | AI Autonomy | Evidence Confidence | Research Completeness | Current read | Next action | Canonical detail |
 |---|---|---:|---:|---:|---:|---:|---|---|---|
 | **Revenue Recovery & Reactivation Engine** | **Candidate** | **94/100** | **10/10** | **93/100** | **89%** | **93%** | HighLevel can automate abandoned-checkout, failed-payment/dunning, dormant-lead/customer and stale-opportunity recovery. Value is directly measurable in recovered cash and repeats continuously. | Run one controlled recovery campaign against an existing database/order base and measure recovered contribution after messaging/AI/support cost. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
+| **WhatsApp + CRM Revenue Core** | **Candidate** | **94/100** | **10/10** | **95/100** | **92%** | **93%** | First-class foundation service for WhatsApp-first businesses: one customer record, visible conversations, one pipeline and reliable next actions. HighLevel now supports WhatsApp onboarding/coexistence, CRM-linked workflows, calling/voice features and agency rebilling; the same account can then attach Recovery, Voice, Quote and other outcome modules. | Deploy one HVAC/AC design-partner account and measure onboarding time, staff adoption, response/pipeline completeness, support burden and expansion into Voice/Recovery. | `businesses/whatsapp-crm-revenue-core/README.md` + `research/whatsapp-crm-revenue-core-2026-08-29.md` |
 | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **Candidate** | **93/100** | **9/10** | **95/100** | **84%** | **87%** | Grok Bot provides always-on cloud-computer agents, skills/routines and public share links that let a recipient add a copy of a Bot configuration. The strongest model is outcome-led deployment plus recurring operation, not generic Bot setup. | Run one internal 7–14 day revenue-linked workflow test, measure failures/human minutes/value, then package the proven configuration for one niche. | `research/grok-bot-revenue-delivery-opportunity-2026-08-29.md` |
 | **Missed Lead & Appointment Conversion Engine** | **Candidate** | **93/100** | **10/10** | **95/100** | **86%** | **90%** | Missed-call text back, multichannel response, AI qualification, booking, reminders and no-show rescue protect existing acquisition spend with very low marginal labour. | Deploy to one inbound-lead business and measure response time, contact rate, booked appointments and recovered leads. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
 | **AI Voice Receptionist & Booking Agent** | **Candidate** | **92/100** | **10/10** | **88/100** | **90%** | **93%** | HighLevel Voice AI supports inbound/outbound calls, qualification, knowledge, booking and actions; AI plans and rebilling make monthly subscription + usage markup native. | Deploy one narrow inbound-call agent with human escalation and measure booking, transfer, cost and failure rates. | `research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md` |
@@ -64,7 +66,7 @@ Scores are provisional until supported by operating evidence. **Opportunity Scor
 
 ## Detailed opportunity scorecard
 
-All underlying factor scores are **0–10**. Weighted scoring uses framework v1.1.
+All underlying factor scores are **0–10**. Weighted scoring uses framework v1.3.
 
 ### Factor key
 
@@ -87,11 +89,12 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 | **MRR** | **MRR / Recurring Revenue Quality** | **11** |
 | **Total** |  | **100** |
 
-### Scores — framework v1.1, 29 August 2026
+### Scores — framework v1.3, 29 August 2026
 
 | Opportunity | MS | MG | TW | WP | AB | AM | AD | HD | SC | SR | MP | SCALE | PG | MOAT | MRR | Weighted Score |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | **Revenue Recovery & Reactivation Engine** | 10 | 9 | 8 | 10 | 9 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 7 | 10 | **94.4 → 94** |
+| **WhatsApp + CRM Revenue Core** | 10 | 9 | 9 | 9 | 9 | 10 | 10 | 9 | 10 | 10 | 9 | 10 | 9 | 7 | 10 | **94.4 → 94** |
 | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | 10 | 10 | 10 | 8 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 8 | 5 | 9 | **93.1 → 93** |
 | **Missed Lead & Appointment Conversion Engine** | 10 | 8 | 7 | 9 | 10 | 9 | 10 | 9 | 10 | 10 | 10 | 10 | 9 | 6 | 10 | **92.5 → 93** |
 | **AI Voice Receptionist & Booking Agent** | 10 | 10 | 9 | 9 | 9 | 9 | 9 | 8 | 9 | 9 | 9 | 10 | 9 | 7 | 10 | **92.1 → 92** |
@@ -124,6 +127,7 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 | Opportunity | Evidence Confidence | Research Completeness | Key verified / current evidence | Key estimated / missing evidence |
 |---|---:|---:|---|---|
 | Revenue Recovery & Reactivation Engine | **89%** | **93%** | HighLevel abandoned checkout, payment-failure/dunning, workflows, databases/reactivation; large external abandonment problem. | DRF recovery rates, CAC, churn, contribution and vertical benchmarks. |
+| WhatsApp + CRM Revenue Core | **92%** | **93%** | Meta business-messaging scale; UAE SME base; HighLevel WhatsApp onboarding/coexistence, CRM workflows, voice/calling and agency rebilling; reusable SaaS/sub-account architecture. | DRF onboarding exceptions, staff adoption, CAC, support burden, churn, gross margin and module expansion rate. |
 | Grok Bot AI-First Revenue Operations Business-in-a-Box | **84%** | **87%** | First-party launch/pricing/FAQ verify always-on cloud computers, scheduled routines, tool sign-in and public share links that let recipients add a copy of a Bot. | DRF client reliability, usage limits, support burden, CAC, churn, gross margin and outcome attribution. |
 | Missed Lead & Appointment Conversion Engine | **86%** | **90%** | Missed Call Text Back, Conversation AI, calendars, reminders, workflows and multichannel inbox. | DRF contact/booking uplift, subscription retention and vertical pricing. |
 | AI Voice Receptionist & Booking Agent | **90%** | **93%** | Live Voice AI capabilities, recurring AI plans, rebilling and strong current customer-service AI investment. | DRF call quality, failure rate, client willingness to pay, churn and support burden. |
@@ -158,6 +162,7 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 | Opportunity | AI Build | AI Market | AI Deliver | Low Human Dependency | AI Autonomy |
 |---|---:|---:|---:|---:|---:|
 | Revenue Recovery & Reactivation Engine | 9 | 9 | 10 | 9 | **93** |
+| WhatsApp + CRM Revenue Core | 9 | 10 | 10 | 9 | **95** |
 | Grok Bot AI-First Revenue Operations Business-in-a-Box | 10 | 9 | 10 | 9 | **95** |
 | Missed Lead & Appointment Conversion Engine | 10 | 9 | 10 | 9 | **95** |
 | AI Voice Receptionist & Booking Agent | 9 | 9 | 9 | 8 | **88** |
@@ -187,6 +192,22 @@ All underlying factor scores are **0–10**. Weighted scoring uses framework v1.
 
 ## Strategic portfolio interpretation
 
+### WhatsApp + CRM is now the first-class UAE foundation service
+
+Do not hide WhatsApp/CRM underneath every outcome module, and do not sell it as generic software configuration.
+
+The commercial hierarchy is:
+
+```text
+WhatsApp + CRM Revenue Core
+      ↓
+Missed Lead / Revenue Recovery / Instant Quote / AI Voice / AI Support / Reputation
+      ↓
+optional Grok Bot or other external agent only where cross-system work justifies it
+```
+
+This makes the foundation separately sellable and separately retainable while preserving outcome-led positioning. It also makes account expansion visible: one client can start with the core and add modules based on measured leakage.
+
 ### Talent Bridge has a hidden software/data portfolio
 
 The overlooked Talent Bridge opportunities are not simply more recruitment services. The strongest configuration converts existing recruitment knowledge, candidate relationships, assessment IP and reporting into recurring products:
@@ -211,7 +232,7 @@ The Score Hire / partner-delivered recruitment model should be evaluated separat
 
 ### MRR changes the ranking for the right reason
 
-Framework v1.1 rewards opportunities where revenue can recur without repeatedly recreating the product or reacquiring the same customer. This moves recurring SaaS/API/data/recovery products upward and one-time asset businesses downward.
+Framework v1.3 rewards opportunities where revenue can recur without repeatedly recreating the product or reacquiring the same customer. This moves recurring SaaS/API/data/recovery products upward and one-time asset businesses downward.
 
 ### Delivery rails are replaceable; outcomes are the product
 
@@ -225,10 +246,12 @@ For example, Revenue Recovery or Instant Quote may be delivered through HighLeve
 
 ### HighLevel remains a first-class DRF opportunity family
 
-The HighLevel opportunities remain strongest as modules around one client/vertical:
+The HighLevel opportunities are best treated as one modular client account rather than independent businesses:
 
 ```text
-HighLevel Vertical SaaS core
+WhatsApp + CRM Revenue Core
+      ↓
+HighLevel Vertical SaaS / vertical package
       ↓
 Missed Lead Conversion
       ↓
@@ -242,6 +265,8 @@ Revenue Recovery
       ↓
 Reputation / Local Visibility
 ```
+
+The foundation is what makes the customer record, conversations, pipeline and attribution durable. Outcome modules are added because the data proves a commercial gap, not because every client should buy every feature.
 
 ### Portfolio operating rule
 
