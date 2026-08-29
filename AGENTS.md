@@ -12,7 +12,6 @@ Read this first before substantive DRF work.
 Founder instruction
 → GitHub Issue / acceptance criteria
 → repository files
-→ branch + commits + PR
 → verification / commercial evidence
 → chat/session context
 ```
@@ -41,9 +40,28 @@ This file is the canonical repository-wide agent contract. Surface-specific file
 - `lab/` — experiments not yet canonical.
 - `archive/` — retired history.
 
-## Mandatory repository change workflow
+## Change workflow
 
-For every substantive repository change:
+Use the shortest lifecycle proportional to risk.
+
+### Simple-file fast path
+
+For a low-risk, easily reversible change such as a Markdown checklist, note, research file, README correction, small documentation update or similar non-runtime file change:
+
+```text
+Issue
+→ direct file change on main
+→ verify once
+→ close Issue
+```
+
+No branch or Pull Request is required.
+
+Do **not** use this fast path for code, workflows, GitHub Actions, automation, security/authentication, secrets, runtime/configuration changes, destructive changes, architecture/governance changes with material effect, or anything where review/CI materially reduces risk.
+
+### Standard path
+
+For substantive or higher-risk repository changes:
 
 ```text
 Issue
@@ -55,7 +73,7 @@ Issue
 → Issue closes
 ```
 
-Do not make substantive changes directly on `main`.
+When uncertain, choose the standard path. Do not create branches/PRs for trivial file work merely for ceremony.
 
 ## Commercial operating rules
 
