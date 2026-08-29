@@ -1,7 +1,7 @@
 # DRF Niche Attractiveness Scoring Framework
 
 **Status:** Canonical guideline  
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 29 August 2026  
 **Governing issue:** #26
 
@@ -127,7 +127,7 @@ Do not conclude that a niche is universally attractive because it fits one produ
 
 ## 8. Initial hypotheses from issue #26
 
-These are **research candidates, not locked scores**:
+These seed hypotheses have now been converted into provisional scored rows in `businesses/NICHES.md`. The canonical register, not this section, holds current scores.
 
 ### A. UAE HVAC / MEP contractors × Revenue Recovery
 
@@ -184,8 +184,10 @@ Live evidence decides whether DRF scales.
 
 ## 11. Canonical implementation
 
-- Portfolio/product score: `knowledge/guidelines/business-opportunity-scoring-framework.md`
-- Niche score: this file
+- Portfolio/product scoring framework: `knowledge/guidelines/business-opportunity-scoring-framework.md`
+- Niche scoring framework: this file
 - Portfolio index: `businesses/OPPORTUNITIES.md`
+- **Canonical scored niche register:** `businesses/NICHES.md`
+- **Dashboard:** root `index.html` renders the `Ranked niche summary` table directly below the portfolio opportunity table.
 
-Future HighLevel opportunity research should include a ranked niche table rather than only a generic list of 'strong verticals'.
+Future HighLevel opportunity research must add/update ranked niche rows rather than only generic lists of 'strong verticals'.
