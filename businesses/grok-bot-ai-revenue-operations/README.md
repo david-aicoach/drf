@@ -1,13 +1,17 @@
 # Grok Bot AI Revenue Operations
 
 **Stage:** Candidate  
-**Governing issue:** #28  
+**Governing issues:** #28, #40  
 **Initial opportunity issue:** #27  
 **Date:** 29 August 2026  
-**Opportunity Score:** 93/100  
+**Opportunity Score:** 87/100  
 **MRR Quality:** 9/10  
-**AI Autonomy:** 95/100  
-**Evidence Confidence:** 84%  
+**AI Autonomy:** 85/100  
+**Evidence Confidence:** 90%  
+**Research Completeness:** 97%  
+**Current re-score:** `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`
+
+> Issue #40 corrects the earlier 93/100 opportunity and 95/100 autonomy assumptions. The base Grok Bot subscription establishes access, not proven production labour capacity. Current weekly-usage evidence makes Grok Bot strongest as a bounded high-value cross-system research/judgement/browser worker rather than the default executor of high-frequency native CRM events.
 
 ## Business thesis
 
@@ -375,8 +379,6 @@ The business becomes **Active** only when at least one niche-specific package de
 ## First commercial experiment
 
 Start with one workflow where DRF can observe the full process and value quickly.
-
-Recommended sequence:
 
 1. choose one revenue-linked internal or friendly-business workflow;
 2. baseline current human effort and leakage;
