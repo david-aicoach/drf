@@ -1,10 +1,11 @@
 # DRF Opportunity Execution Velocity & Staircase
 
 **Date:** 29 August 2026  
-**Governing issues:** #24, #28, #40, #48  
+**Governing issues:** #24, #28, #40, #48, #49  
 **Framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md` v1.5  
 **Portfolio source:** `businesses/OPPORTUNITIES.md`  
-**Latest structural recalculation:** `research/opportunity-portfolio-rescore-after-niche-v3-2026-08-29.md`
+**Base structural recalculation:** `research/opportunity-portfolio-rescore-after-niche-v3-2026-08-29.md`  
+**Latest targeted update:** 30 August 2026 — Whop Business Blueprints 79→82
 
 ## Executive conclusion
 
@@ -15,6 +16,8 @@ Opportunity Score measures structural business quality. **Execution Velocity (EV
 The v3 niche research changes sequencing materially. The top structural cluster is still the UAE revenue stack, but **Instant Quote is now a top-five lane**, while broad Vertical SaaS, AI Support and agentic platform wrappers lose execution assumptions where incumbents or integration resistance are stronger than previously estimated.
 
 Two Talent Bridge lanes remain unusually important despite 85/100 structural scores: **Assessment-as-a-Service** and **Partner-Delivered Recruitment** can produce cash and commercial evidence faster than the larger Talent Bridge platform/data products.
+
+The 30 August Whop evidence update raises **Whop Business Blueprints from 79 to 82 structurally**. With EV unchanged at 82, its **Execution Priority becomes 82.0**, moving it to priority rank **#15**. This strengthens Blueprints as a distribution multiplier, but it still should package already-proven DRF systems rather than compete with the primary revenue lanes for build attention.
 
 ## Updated execution ranking
 
@@ -34,8 +37,8 @@ Two Talent Bridge lanes remain unusually important despite 85/100 structural sco
 | **12** | **Executive Career Accelerator / Job Search Platform** | **81** | **87** | **83.1** | 1–4 weeks | Fast / secondary lane |
 | **13** | **Vertical AI Operating Systems & Agent Integration Packs** | **88** | **70** | **82.7** | 2–6 weeks | Fast / secondary lane |
 | **14** | **Agentic Commerce Visibility & Conversion Engine** | **89** | **67** | **82.5** | 3–8 weeks | Fast / secondary lane |
-| **15** | **Recruitment OS / Hiring Intelligence SaaS** | **87** | **62** | **79.8** | 1–3 months | Build / bounded test lane |
-| **16** | **Whop Business Blueprints** | **79** | **82** | **79.8** | 1–4 weeks | Build / bounded test lane |
+| **15** | **Whop Business Blueprints** | **82** | **82** | **82.0** | 1–4 weeks | Build / bounded test lane; distribution multiplier |
+| **16** | **Recruitment OS / Hiring Intelligence SaaS** | **87** | **62** | **79.8** | 1–3 months | Build / bounded test lane |
 | **17** | **White-Label Hiring Portal for Employers/Agencies** | **85** | **65** | **78.9** | 1–3 months | Build / bounded test lane |
 | **18** | **Niche API & Data Product Factory** | **84** | **60** | **76.9** | 1–3 months | Build / bounded test lane |
 | **19** | **AI Website Template & Launch Kit Factory** | **71** | **90** | **76.9** | 1–3 weeks | Build / bounded test lane; only as attached revenue launch kit |
@@ -97,6 +100,24 @@ Gate: customer #2 deploys from materially the same vertical foundation+outcome c
 
 These two lanes should precede unnecessary Talent Bridge platform build.
 
+## Whop distribution lane
+
+**Whop Business Blueprints — Opportunity 82 / EV 82 / Priority 82.0.**
+
+Blueprints now have stronger recurring-economics and early-adoption evidence, but the execution rule is unchanged:
+
+```text
+prove workflow elsewhere in DRF
+→ package transferable system
+→ publish Blueprint
+→ measure deployment + payout + retention
+→ attach iMPLEMENTAi implementation / managed service where valuable
+```
+
+Do not create a generic Blueprint catalogue before real DRF systems have operating proof.
+
+Evidence: `businesses/whop-business-blueprints/research/whop-business-blueprints-evidence-update-2026-08-30.md`.
+
 ## Full execution-time matrix
 
 | Opportunity | Opp. | EV | Priority | Build / sellable MVP | Time to market | First revenue | One-client delivery | Main resistance |
@@ -115,8 +136,8 @@ These two lanes should precede unnecessary Talent Bridge platform build.
 | **Executive Career Accelerator / Job Search Platform** | **81** | **87** | **83.1** | 3–7 days | 5–10 days | 1–4 weeks | 1–3 days onboarding | Finite programme duration and support intensity. |
 | **Vertical AI Operating Systems & Agent Integration Packs** | **88** | **70** | **82.7** | 1–3 weeks | 1–3 weeks | 2–6 weeks | 3 days–3 weeks | Bespoke consulting creep; second-client reuse is the gate. |
 | **Agentic Commerce Visibility & Conversion Engine** | **89** | **67** | **82.5** | 2–4 weeks | 2–4 weeks | 3–8 weeks | 3–10 days | Attribution, merchant willingness-to-pay and retention. |
+| **Whop Business Blueprints** | **82** | **82** | **82.0** | 3–10 days after workflow proof | 3–10 days | 1–4 weeks | Mostly digital | Exact Blueprint terms, buyer conversion, downstream activation/retention and support burden. |
 | **Recruitment OS / Hiring Intelligence SaaS** | **87** | **62** | **79.8** | 3–8 weeks bounded module | 3–8 weeks | 1–3 months | 3–10 days | ATS integration/scope boundary and external buyer retention. |
-| **Whop Business Blueprints** | **79** | **82** | **79.8** | 3–10 days after workflow proof | 3–10 days | 1–4 weeks | Mostly digital | Creator economics, buyer conversion and downstream retention. |
 | **White-Label Hiring Portal for Employers/Agencies** | **85** | **65** | **78.9** | 3–8 weeks | 3–8 weeks | 1–3 months | 2–7 days | Portal scope/support and avoiding generic ATS rebuild. |
 | **Niche API & Data Product Factory** | **84** | **60** | **76.9** | 2–6 weeks after lawful niche chosen | 2–6 weeks | 1–3 months | Minutes–1 day after stable | Need proprietary lawful recurring data/function and paid repeated usage. |
 | **AI Website Template & Launch Kit Factory** | **71** | **90** | **76.9** | 2–5 days | 3–7 days | 1–3 weeks | Hours–2 days | Fast to ship but low standalone value; recurring attachment must sell. |
@@ -140,10 +161,13 @@ These two lanes should precede unnecessary Talent Bridge platform build.
 - Talent Data/Niche API: recurring economics can be excellent only after data rights/methodology/use cases are proven.
 - Local SEO: mature MRR model but ranking is an elapsed-time dependency.
 
+### Distribution multiplier with good execution speed
+
+- **Whop Business Blueprints — 82 structural / 82 EV / 82.0 Priority:** quick to package and distribute once the underlying workflow is proven. The opportunity is stronger after 30 August evidence, but its correct role is to monetise and distribute proven DRF IP rather than become an independent invention backlog.
+
 ### Lower structural score, fast execution
 
 - AI Website Launch Kit is quick to build, but the parent opportunity is only 71 because generic websites are commoditised. Its EV does **not** rescue it into the primary lane unless recurring revenue attaches.
-- Whop Blueprints is quick to package, but should only distribute workflows already proven in DRF.
 - Career Accelerator can generate cash quickly from existing Talent Bridge assets, but finite programme duration limits structural MRR quality.
 
 ## Background lane
