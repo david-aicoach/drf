@@ -18,7 +18,7 @@ Do not define a business primarily by a vendor unless the vendor itself is the p
 Canonical portfolio scoring: [`OPPORTUNITIES.md`](./OPPORTUNITIES.md).  
 Canonical niche selection: [`NICHES.md`](./NICHES.md).
 
-## Offer directory — recalculated 29 August 2026
+## Offer directory — latest targeted update 30 August 2026
 
 | Rank | Parent opportunity | Score | Stage | Best validated niche | Folder |
 |---:|---|---:|---|---|---|
@@ -40,11 +40,11 @@ Canonical niche selection: [`NICHES.md`](./NICHES.md).
 | **16** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | Researching | Not yet canonically scored | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
 | **17** | **Niche API & Data Product Factory** | **84** | Candidate | Not yet canonically scored | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
 | **18** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84** | Candidate | Not yet canonically scored | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
-| **19** | **Executive Career Accelerator / Job Search Platform** | **81** | Candidate | Not yet canonically scored | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
-| **20** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | Candidate | MEP/HVAC tender & RFQ operations (84/100) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
-| **21** | **Pre-Assessed Talent Pool Subscription** | **81** | Researching | Not yet canonically scored | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
-| **22** | **ChatGPT Plugin / App Factory** | **79** | Candidate | Not yet canonically scored | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
-| **23** | **Whop Business Blueprints** | **79** | Candidate | Not yet canonically scored | [`whop-business-blueprints/`](./whop-business-blueprints/) |
+| **19** | **Whop Business Blueprints** | **82** | Candidate | Not yet canonically scored | [`whop-business-blueprints/`](./whop-business-blueprints/) |
+| **20** | **Executive Career Accelerator / Job Search Platform** | **81** | Candidate | Not yet canonically scored | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
+| **21** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | Candidate | MEP/HVAC tender & RFQ operations (84/100) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
+| **22** | **Pre-Assessed Talent Pool Subscription** | **81** | Researching | Not yet canonically scored | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
+| **23** | **ChatGPT Plugin / App Factory** | **79** | Candidate | Not yet canonically scored | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
 | **24** | **HowToFindAJobInUAE Media + Recruitment Funnel** | **78** | Researching | Not yet canonically scored | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
 | **25** | **AI Job Board + Screened Talent Marketplace** | **76** | Researching | Not yet canonically scored | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
 | **26** | **Saffa.ae Community + Trusted Local Business Marketplace** | **76** | Researching | Not yet canonically scored | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
@@ -64,5 +64,7 @@ Opportunity Score and Niche Attractiveness are deliberately separate. A high-sco
 5. Instant Quote / Quote-to-Cash — **91**
 
 The near-term UAE service strategy is to sell one measurable outcome into a strong niche, use the minimum viable system of record/delivery stack, measure commercial value, then add modules only when account data proves another leakage point.
+
+Whop Business Blueprints is now **82/100 and rank #19**, reflecting stronger evidence for recurring downstream economics and early adoption. It remains a distribution multiplier for proven DRF systems, not a replacement for the core businesses that create the proof.
 
 Add campaign, operations, finance or delivery subfolders only when real work exists.
