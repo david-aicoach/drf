@@ -6,18 +6,22 @@ Standard structures for recurring DRF outputs. Use only the files required by th
 
 Use this pack for every new digital business opportunity, existing-business benchmark and systematic rebuild of the current portfolio.
 
-1. [`business-opportunity-readme.md`](./business-opportunity-readme.md) — 20-second founder summary: money, proof, capital, return and gate.
-2. [`business-opportunity-research.md`](./business-opportunity-research.md) — Version 2 investor-ready underwriting template built around the RBF-7 workflow.
-3. [`revenue-blueprint-financial-model.xlsx`](./revenue-blueprint-financial-model.xlsx) — reusable 12-month downside/base/upside model with staged capital, cash, ROI, payback, runway and founder-time returns.
-4. [`revenue-blueprint-financial-model.md`](./revenue-blueprint-financial-model.md) — financial-model definitions, inputs, formulas and decision rules.
-5. [`revenue-blueprint-investment-memo.md`](./revenue-blueprint-investment-memo.md) — 12-section investment memo/deck template.
-6. [`revenue-blueprint-specification.md`](./revenue-blueprint-specification.md) — operating recipe and P3–P6 Blueprint certification package.
-7. [`business-benchmark-scorecard.md`](./business-benchmark-scorecard.md) — benchmark an existing client/company, its departments, bottleneck, pivot or added revenue model.
-8. [`business-opportunity-worked-example-whop-blueprints.md`](./business-opportunity-worked-example-whop-blueprints.md) — Whop example showing why a promising opportunity can remain P1, test-only and not investor-ready.
+1. [`revenue-opportunity-scan-card.md`](./revenue-opportunity-scan-card.md) — fast P0 scan for thousands of ideas; decides Reject, Hold or Queue for Underwriting with $0 capital authorised.
+2. [`business-opportunity-readme.md`](./business-opportunity-readme.md) — 20-second founder summary: money, proof, capital, return and gate.
+3. [`business-opportunity-research.md`](./business-opportunity-research.md) — Version 2 investor-ready underwriting template built around the RBF-7 workflow.
+4. [`revenue-blueprint-financial-model.xlsx`](./revenue-blueprint-financial-model.xlsx) — reusable 12-month downside/base/upside model with staged capital, cash, ROI, payback, runway and founder-time returns.
+5. [`revenue-blueprint-financial-model.md`](./revenue-blueprint-financial-model.md) — financial-model definitions, inputs, formulas and decision rules.
+6. [`revenue-blueprint-investment-memo.md`](./revenue-blueprint-investment-memo.md) — 12-section investment memo/deck template.
+7. [`revenue-blueprint-specification.md`](./revenue-blueprint-specification.md) — operating recipe and P3–P6 Blueprint certification package.
+8. [`business-benchmark-scorecard.md`](./business-benchmark-scorecard.md) — benchmark an existing client/company, its departments, bottleneck, pivot or added revenue model.
+9. [`business-opportunity-worked-example-whop-blueprints.md`](./business-opportunity-worked-example-whop-blueprints.md) — Whop example showing why a promising opportunity can remain P1, test-only and not investor-ready.
 
 ## Canonical order
 
 ```text
+SCAN
+kill weak ideas cheaply → queue only coherent money models
+
 MONEY
 what is sold → who pays → price/basis → revenue streams → costs → contribution
 
