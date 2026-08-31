@@ -6,9 +6,22 @@ Read this first before substantive DRF work.
 
 **Do not over-engineer. Traction before build. Revenue work before optional build work.** Use the smallest safe, reversible action that can create or protect measurable commercial value.
 
-**Speak sales language.** In DRF business/revenue work, lead with what is sold, who pays, how much or on what basis, and label each revenue stream plainly as an upfront sale, recurring fee, royalty, commission or optional upsell before using platform, analyst or technical terminology.
+**Speak sales language.** In DRF business/revenue work, lead with what is sold, who pays, how much or on what basis, and label each revenue stream plainly as an upfront sale, recurring fee, royalty, commission, usage fee, licence or optional upsell before using platform, analyst or technical terminology.
 
-**Never call a business investor-ready, proven or Blueprint-certified from a score alone.** Show its Revenue Blueprint Score, P0–P6 Proof Level, Investment Gate and Return Profile together.
+**Never collapse a business decision into one score.** Preserve the complete decision stack:
+
+```text
+Business Opportunity
+→ Opportunity Score + MRR + AI Autonomy + Evidence Confidence + Research Completeness
+→ ranked Niche options + Niche Score
+→ selected Business × Niche
+→ External Market Proof
+→ Revenue Blueprint Score
+→ DRF Proof Level + Stage
+→ Capital + Return Profile + Next Proof
+```
+
+A high score never guarantees success or authorises capital. Equally, a market-proven business model must not be called unproven merely because DRF has not yet operated it.
 
 ## Canonical truth
 
@@ -38,7 +51,7 @@ Before substantive work starts, the agent must ensure the controlling Issue cont
 - **Final outcome / acceptance criteria** — what must be true before the Issue can close.
 - **Dependencies / sequence** — only when ordering materially matters.
 
-Do not reduce a multi-page founder instruction to a few summary lines if those omitted details could change implementation.
+Do not reduce a multi-page founder instruction to a few summary lines if omitted detail could change implementation.
 
 ### Live checklist rule
 
@@ -106,7 +119,7 @@ The Master Issue must contain a stage tracker that links forward to the actual S
 - [ ] [77.3] #80 — Research templates and V3 business plan
 ```
 
-This creates a deliberate **two-way link**:
+This creates a deliberate two-way link:
 
 ```text
 Master #77 → Stage #78
@@ -123,7 +136,7 @@ Stage #78 → Master #77
 6. Check off a Master stage only after its linked Stage Issue is closed and the stage output is verified.
 7. The Master Issue cannot close until every required linked Stage Issue is complete and the Master-level end-to-end acceptance criteria pass.
 8. If a Stage Issue discovers additional work large enough to become its own stage, update the Master first, then create and two-way-link the new Stage Issue.
-9. Native GitHub sub-issues may be used as an **optional enhancement** when the current surface supports them, but they are never required and must not be a dependency for normal DRF execution.
+9. Native GitHub sub-issues may be used as an optional enhancement when the current surface supports them, but they are never required and must not be a dependency for normal DRF execution.
 10. The Issue hierarchy must remain fully operable from ChatGPT Web using standard GitHub Issue create/read/update operations.
 
 ### Size rule
@@ -157,6 +170,144 @@ This file is the canonical repository-wide agent contract. Surface-specific file
 - `knowledge/architecture/` — system design and rationale.
 - `lab/` — experiments not yet canonical.
 - `archive/` — retired history.
+
+## DRF Revenue Opportunity Factory
+
+**DRF is David's Revenue Factory.** Its job is to discover, research, compare, select, adapt, test, improve, scale and optionally package revenue-producing businesses.
+
+The Revenue Blueprint Score, P0–P6 progression, investment stages and Blueprint certification are deeper underwriting and execution controls **inside DRF**. They are not the identity of DRF and they do not replace the original business-opportunity selection layer.
+
+### Canonical mental model
+
+```text
+                         DRF
+                  REVENUE FACTORY
+                         │
+                         ▼
+             BUSINESS OPPORTUNITY
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+ Opportunity Score    MRR / AI         Evidence
+                     Autonomy          / Research
+        │
+        ▼
+      NICHE
+        │
+   Niche Score
+        │
+        ▼
+ BUSINESS × NICHE
+        │
+        ├── Successful comparable operators
+        ├── External Market Proof
+        ├── Offer / Pricing
+        ├── Go-to-Market / acquisition
+        ├── Delivery architecture
+        ├── Revenue Blueprint Score
+        ├── DRF Proof Level
+        ├── Stage
+        ├── Capital
+        ├── Economics / Return Profile
+        ├── Risks / counter-evidence
+        └── Next Proof
+                 │
+                 ▼
+          REAL EXECUTION
+                 │
+        P4 → P5 → P6
+                 │
+                 ▼
+          SCALE THE BUSINESS
+                 │
+                 └── Optional:
+                     PACKAGE AS BLUEPRINT
+```
+
+### Three progressive layers
+
+V1, V2 and V3 are not competing definitions of DRF. They represent three progressive layers that must be synthesised.
+
+#### Layer 1 — Opportunity Discovery & Structural Selection
+
+Core question: **Do we want this kind of business?**
+
+Required first-class outputs:
+
+- Business Opportunity and pain/outcome;
+- Opportunity Score /100;
+- MRR / recurring-revenue quality /10;
+- AI Autonomy /100;
+- Evidence Confidence /100%;
+- Research Completeness /100%;
+- Execution Velocity where sequencing matters;
+- External Market Proof;
+- Reject / Hold / Advance decision.
+
+This layer selects the **business/service/outcome vehicle**. It must never be discarded as obsolete merely because deeper underwriting exists.
+
+#### Layer 2 — Niche Selection & Commercial Underwriting
+
+Core question: **Where, how and at what economics should this business be launched?**
+
+Required outputs:
+
+- ranked outcome/product × niche combinations;
+- Niche Score and Niche Evidence Confidence;
+- recommended beachhead niche;
+- proven-operator reverse engineering;
+- recommended offer and pricing;
+- GTM and customer-acquisition plan;
+- delivery architecture;
+- Revenue Blueprint Score;
+- External Market Proof and DRF Proof shown separately;
+- Stage, Capital, Return Profile and Next Proof.
+
+This layer selects the **target and commercial design**, then underwrites the selected Business × Niche.
+
+#### Layer 3 — Structured Factory Output
+
+Core question: **Can the opportunity now be represented as one complete, comparable business case?**
+
+The final dossier must combine Layer 1 and Layer 2 into a founder-readable mini business plan that can feed the V3 comparison table, guide execution and later support Blueprint packaging.
+
+Layer 3 does not magically raise DRF Proof. It reports the current proof honestly and updates as real execution progresses.
+
+### External Market Proof vs DRF Proof
+
+These are separate and must never be confused.
+
+- **External Market Proof** asks whether materially similar businesses already succeed in the real market. It uses live operators, offers, pricing, customers, ads, reviews, case studies, marketplace traction, longevity, expansion and counter-evidence.
+- **DRF Proof Level P0–P6** asks how far **our selected adaptation** has progressed from capture through underwriting, backtest, current-market test, paid delivery, repeatability and scale.
+
+A valid state is:
+
+`External Market Proof: Strong · DRF Proof: P1 Desk Underwritten`
+
+Strong external proof can support a high Opportunity Score, inform the Niche Score, price, offer, GTM and backtest, and reduce the uncertainties DRF must test. It cannot prove our exact local acquisition cost, delivery quality, unit economics or repeatability.
+
+### Copy before invent
+
+DRF prefers proven business models over unnecessary invention.
+
+For every material opportunity:
+
+1. find successful comparable operators where they exist;
+2. capture their exact offer, price, recurring model, acquisition approach, proof and delivery pattern;
+3. capture failures, weak reviews, churn, margin pressure and other counter-evidence;
+4. identify what transfers to the selected niche, geography, channel and DRF assets;
+5. adapt and improve the proven pattern rather than starting from a blank page;
+6. test only the remaining uncertainties specific to DRF's implementation.
+
+One successful operator is a signal, not a base rate. Prefer multiple independent operators and current evidence. External success increases confidence; it does not guarantee that every copy will succeed.
+
+### Business Blueprint distinction
+
+A **Business Blueprint** is an optional packaging output: a sufficiently evidenced business system documented so another competent operator can reproduce it.
+
+**Business Blueprints** may also exist as one separate DRF business opportunity that packages and sells proven systems through compatible channels such as the DRF-owned site, Whop, Gumroad, classifieds or specialist marketplaces.
+
+Do not redefine every DRF opportunity as “Business Blueprints”. WhatsApp + CRM, Revenue Recovery, AI Voice, Assessment-as-a-Service and other services remain distinct business opportunities even when they may later be packaged as Blueprints.
 
 ## Outcome-first modular commercial architecture
 
@@ -207,15 +358,17 @@ HighLevel, Kapso, HubSpot, Grok Bot, ChatGPT, Claude and future platforms are im
 
 Canonical rationale: `knowledge/architecture/outcome-first-modular-revenue-architecture.md`.
 
-## Revenue Blueprint Factory
+## Canonical opportunity workflow
 
-For every new business, existing-business benchmark, pivot or material revenue-model change, use:
+[77.2] #79 establishes one canonical end-to-end DRF Opportunity Factory workflow covering all three layers.
 
-- `workflows/revenue-blueprint-factory.md`;
-- `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`;
-- the canonical templates under `knowledge/templates/`.
+Until that workflow is merged, `workflows/revenue-blueprint-factory.md` is only the current underwriting/proof progression for RBS, backtesting, P0–P6, capital and Blueprint certification. Do not treat it as the complete DRF opportunity-discovery and selection workflow.
 
-The current v1.5 Opportunity Score is historical structural screening. It is not an investor-readiness, funding or Blueprint-certification decision.
+The governing scoring files are:
+
+- `knowledge/guidelines/business-opportunity-scoring-framework.md` — Layer 1 business selection;
+- `knowledge/guidelines/niche-attractiveness-scoring-framework.md` — Layer 2 target-market selection;
+- `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md` — Layer 2 Business × Niche underwriting, DRF proof and capital discipline.
 
 ## Change workflow
 
@@ -256,7 +409,7 @@ When uncertain, choose the standard path. Do not create branches/PRs for trivial
 
 1. Resolve/create the GitHub Issue before durable substantive work.
 2. Prefer **SELL / USE / INTEGRATE / AUTOMATE / BUILD**, in that order when practical.
-3. Research before invention when material uncertainty exists.
+3. Research successful comparable businesses before invention when material uncertainty exists.
 4. Do not build infrastructure without a current commercial or operating blocker.
 5. Existing warm assets and channels come before paid acquisition unless evidence says otherwise.
 6. A business experiment must define the customer, problem, measurable outcome/offer, niche, customer channel, system of record, agent/delivery layer where relevant, success metric and stop condition.
@@ -269,6 +422,8 @@ When uncertain, choose the standard path. Do not create branches/PRs for trivial
 13. Never treat installed/authorised/connected as proof that an operation works.
 14. Never commit credentials, tokens, private keys, customer secrets or payment data.
 15. Keep personal/customer data out of GitHub unless explicitly approved and appropriate; store safe references instead.
+16. Separate observed facts, external market evidence, estimates, inference and DRF actuals.
+17. Never invent market proof, customer results, deployment evidence, financial actuals or verification.
 
 ## Founder boundary
 
