@@ -1,30 +1,73 @@
 # Research — Whop Business Blueprints
 
-Updated: 2026-08-30  
+Updated: 2026-08-31  
 Issue: #49  
-Research status: **Comprehensive offer-local synthesis complete; 30 August material evidence update incorporated**
+Research status: **Comprehensive; commercial model simplified and evidence boundaries preserved**
 
-## Executive conclusion
+## Executive summary — read this first
 
-**Recommendation: raise Whop Business Blueprints from 79/100 to 82/100 and retain it as a productisation/distribution layer for operating systems DRF has already proven—not as a reason to invent generic “make money” products.**
+**Whop Business Blueprints is an 82/100 opportunity. Use it as a distribution and monetisation layer for DRF systems that are already proven.**
 
-The 30 August evidence materially strengthens three parts of the thesis:
+The commercial model is **not** “Whop takes 10% and we keep 90%.”
 
-1. Whop now officially documents a recurring business-referral economics layer through Whop Partners: up to 30% of Whop gross profit from successful referrals, recurring while the referred business earns, plus 1% of Whop ad spend and second-tier commissions.
-2. An early ecosystem operator publicly reports 580+ businesses referred via Blueprints and more than $400/day in recurring earnings. This is self-reported, not independently audited, but it is the first concrete operating signal tying Blueprint deployment to recurring downstream economics.
-3. Whop's public Blueprint catalogue remains extremely early while its broader commerce and agent infrastructure is already established, preserving the unusually strong first-mover window.
+There are **three separate income streams**:
 
-The exact Blueprint-specific creator payout formula remains unverified. The previously reported 10% of Whop gross profit must therefore remain a hypothesis until Whop publishes explicit Blueprint creator terms or the live creator UI confirms it.
+| Income stream | What we can earn | Basis | Status |
+|---|---|---|---|
+| **1. Blueprint creator economics** | Reported **10% of Whop's qualifying profit** generated from businesses deployed through our Blueprint | Whop's profit on qualifying Blueprint-attributed downstream sales — **not 10% of the business's gross revenue** | Strongly corroborated; exact official Docs/creator UI still needs direct capture |
+| **2. Whop Partner/referral economics** | Up to **30% of Whop gross profit** from successfully referred businesses, recurring while they earn, plus **1% of referred-business Whop ad spend** and second-tier commissions | Whop Partners programme | First-party Whop verified; separate eligibility and attribution rules apply |
+| **3. iMPLEMENTAi implementation + MRR** | Our own setup/customisation fee plus optional managed-service/software MRR | Fees charged directly for deployment, integration, support or operation | Controlled by us; commercial terms must be validated per offer |
 
-Detailed 30 August evidence and rescore rationale:
+### Simple money flow
 
-- `research/whop-business-blueprints-evidence-update-2026-08-30.md`
+```text
+A business deploys our Blueprint
+→ that business makes sales
+→ the business owner receives its revenue less applicable Whop/payment fees
+→ Whop earns its qualifying economics
+→ we may receive the Blueprint creator share from Whop
+→ we may separately receive Whop Partner/referral economics where eligible
+→ we can separately charge iMPLEMENTAi implementation and/or recurring service fees
+```
 
-The broader platform, traffic, productisation, SEO and agentic-distribution study remains:
+### What the 10% does NOT mean
 
-- `research/whop-business-blueprints-productisation.md`
+Do **not** model this:
 
-## Evidence snapshot
+```text
+$100 business revenue
+→ Whop takes $10
+→ Blueprint creator keeps $90
+```
+
+That is wrong.
+
+The current reported Blueprint economics are closer to:
+
+```text
+Business generates sales
+→ Whop earns qualifying profit
+→ Blueprint creator receives 10% of Whop's qualifying profit
+```
+
+Until the exact live Blueprint Docs/creator UI is captured, **do not forecast Blueprint creator revenue as a fixed percentage of gross business sales**.
+
+### The real strategic value
+
+One successful Blueprint could potentially create a revenue stack:
+
+```text
+Blueprint creator share
++ Whop Partner/referral share where eligible
++ iMPLEMENTAi implementation revenue
++ iMPLEMENTAi managed-service/software MRR where justified
+```
+
+Do not assume all layers automatically stack. Verify Whop eligibility and attribution rules before financial modelling.
+
+---
+
+## 1. Opportunity decision
 
 - Stage: **Candidate**
 - Opportunity score: **82/100**
@@ -33,99 +76,126 @@ The broader platform, traffic, productisation, SEO and agentic-distribution stud
 - Evidence confidence: **90%**
 - Research completeness: **100%**
 - Previous portfolio score: **79/100**
-- DRF decision: **use as a monetisation and distribution layer on proven IP, not a standalone invention factory**
 
-## Why the score increased
+**Decision:** use Business Blueprints as a monetisation and distribution layer on proven DRF IP, not as a generic “make money” product factory.
 
-The previous 79/100 score deliberately penalised unproven creator economics and buyer retention. The new evidence justifies a narrow correction rather than broad score inflation.
+The score increased from 79 to 82 because recurring economics and early adoption are now materially better evidenced. It remains below 85 because typical creator earnings, retention, CAC and DRF live economics are still unproven.
 
-| Factor | Previous | Revised | Rationale |
-|---|---:|---:|---|
-| Willingness to Pay | 6 | **7** | Early reported deployment volume is now non-trivial, but remains self-reported rather than median-market proof. |
-| Speed to Revenue | 7 | **8** | Early operator evidence shows a live route from Blueprint referrals to recurring earnings. DRF-specific time-to-cash is still unproven. |
-| Margin Potential | 7 | **8** | Whop officially confirms referral payments come from Whop's share of economics, with additional ad-spend revenue available. |
-| MRR / Recurring Revenue Quality | 8 | **9** | Whop officially documents ongoing referral revenue for as long as referred businesses earn; early Blueprint evidence links deployments to the tier-two layer. |
+---
 
-All other factors remain unchanged.
+## 2. The three income streams in detail
 
-**Weighted score: 81.7 → 82/100.**
+### Income stream 1 — Blueprint creator economics
 
-This is still a **Strong opportunity**, not yet an Exceptional 85+ opportunity, because Blueprint-specific contractual terms, typical creator results, downstream retention and DRF live economics remain unproven.
+Current ecosystem reporting converges on a Blueprint-specific creator formula of approximately **10% of Whop's qualifying profit** generated by downstream businesses deployed through the creator's Blueprint.
 
-## Product thesis
+Important:
 
-> **Prove a workflow in DRF first; package the transferable operating system as a Whop Blueprint second.**
+- this is **not 10% of downstream gross sales**;
+- the money is reported as coming from Whop's own economics;
+- exact attribution rules still need direct first-party capture;
+- the exact Blueprint Docs body was not directly retrieved in the 31 August evidence pass.
 
-Good Blueprint candidates could eventually include:
+Evidence classification: **strongly corroborated / pending direct Whop Docs or creator-UI capture**.
 
-- WhatsApp revenue systems by niche;
-- rank-and-rent asset operating process;
-- recruitment evidence workflows;
-- AI commerce readiness process;
-- agentic operating packs;
-- launch kits with proven conversion workflows.
+Detailed evidence:
 
-Do not publish client confidential data, proprietary licences or unsupported income claims.
+- `research/whop-business-blueprints-documentation-update-2026-08-31.md`
 
-## Business model
+### Income stream 2 — Whop Partner/referral economics
 
-The evidence now supports a four-layer commercial model.
+Whop's official Partners programme states that eligible partners can earn:
 
-### 1. Blueprint distribution
-
-A low-friction self-serve deployment product containing the transferable configuration, operating logic, templates, setup steps, tools and validation metrics.
-
-### 2. Recurring downstream Whop economics
-
-Whop's official Partners programme shows that successful business referrals can generate recurring revenue tied to Whop's gross profit, plus second-tier and ad-spend economics.
-
-This materially strengthens the Blueprints thesis, but the exact Blueprint-specific payout formula remains unverified.
-
-### 3. Implementation
-
-iMPLEMENTAi setup/customisation for buyers who do not want DIY.
-
-### 4. Managed service / recurring software
-
-For workflows where continuing operational value genuinely exists.
-
-The strongest economic stack is therefore:
-
-```text
-Blueprint distribution
-→ recurring downstream Whop economics where applicable
-→ iMPLEMENTAi implementation revenue
-→ managed-service / software MRR where justified
-```
-
-## Current first-party programme economics
-
-Whop's official Partners programme states:
-
-- up to **30% of Whop's gross profit** from successful referred businesses;
-- recurring economics for as long as the referred business earns;
+- up to **30% of Whop's gross profit** from successfully referred businesses;
+- recurring revenue for as long as the referred business earns;
 - **1% of referred-business Whop ad spend**;
 - second-tier commissions;
-- availability to users worldwide;
+- programme availability worldwide;
 - more than **$10M paid to Partners** to date.
 
 Source:
 
 - https://whop.com/blog/whop-partners/
 
-### Important boundary
+Important boundary:
 
-These are official **Whop Partners** terms. They are highly relevant to the Blueprint opportunity but are **not proof that every Blueprint creator automatically receives the same rate**.
+These are official **Whop Partner** terms. They are separate from the Blueprint creator formula. Do not assume every Blueprint creator automatically receives Partner economics or that all referral layers stack without checking eligibility and attribution.
 
-The exact Blueprint-specific creator agreement remains a live evidence gate.
+### Income stream 3 — iMPLEMENTAi implementation and recurring services
 
-## Early adoption evidence
+This is the income stream we control most directly.
+
+A Blueprint buyer may need:
+
+- deployment/setup;
+- integrations;
+- customisation;
+- data migration/configuration;
+- AI agent setup;
+- training;
+- ongoing monitoring/support;
+- managed operations;
+- recurring software or service modules.
+
+These services can be sold as:
+
+```text
+one-off implementation fee
++ optional monthly managed-service/software MRR
+```
+
+This layer may become more economically important than the Blueprint creator payout itself because it monetises buyers who want the outcome but do not want to implement the system alone.
+
+---
+
+## 3. Product thesis
+
+> **Prove a workflow in DRF first; package the transferable operating system as a Whop Blueprint second.**
+
+Good candidates include:
+
+- WhatsApp revenue systems by niche;
+- revenue recovery workflows;
+- instant quote/quote-to-cash systems;
+- rank-and-rent operating systems;
+- recruitment evidence/evaluation workflows;
+- AI commerce readiness processes;
+- agentic operating packs;
+- launch kits backed by real conversion evidence.
+
+Do not publish client-confidential data, proprietary licences or unsupported income claims.
+
+---
+
+## 4. Marketplace and launch mechanics
+
+Whop's live Blueprint surface currently exposes:
+
+- **Blueprints**;
+- a dedicated **Docs** route;
+- **Create a business**;
+- **Community blueprints**;
+- **Trending** discovery.
+
+Source:
+
+- https://whop.com/blueprints/
+
+The public catalogue remains early. That preserves a category-formation opportunity while the underlying Whop platform already has meaningful commerce infrastructure.
+
+**Timing / First-Mover Window remains 10/10.**
+
+The 31 August evidence also reports that Blueprints are designed as deployable business configurations rather than static PDFs/templates. Source-code portability and CLI operation further strengthen that thesis, but any detailed mechanics that have not been directly captured from Whop Docs remain evidence-gated.
+
+---
+
+## 5. Early adoption evidence
 
 An early ecosystem operator, Pierre Koutani, publicly reports:
 
-- 580+ businesses referred through Blueprints;
-- all becoming his tier-two affiliates;
-- more than $400/day in passive earnings at the reported run-rate.
+- **580+ businesses referred via Blueprints**;
+- those businesses becoming tier-two affiliates;
+- more than **$400/day** recurring/passive earnings at the reported run-rate.
 
 Archived evidence:
 
@@ -134,55 +204,33 @@ Archived evidence:
 
 Evidence classification: **self-reported / not independently audited**.
 
-This evidence should not be used to claim typical earnings. It is useful because it moves the opportunity from pure launch theory toward demonstrated early deployment and recurring economics.
+This is not typical-earnings evidence. It is useful because it shows that Blueprint deployments and recurring downstream economics are already occurring at non-trivial volume for at least one early operator.
 
-## Marketplace and timing
+---
 
-Whop's live Blueprints surface exposes:
+## 6. AI, agent and WebMCP opportunity
 
-- Create a business;
-- Community blueprints;
-- Trending discovery.
-
-Source:
-
-- https://whop.com/blueprints/
-
-The public catalogue remains extremely early. This preserves a strong category-formation opportunity while Whop's broader platform already has meaningful buyer traffic, commerce and business tooling.
-
-**Timing / First-Mover Window remains 10/10.**
-
-## SEO and AI discovery
-
-The SEO thesis remains unchanged from the detailed 29 August research.
-
-Do not wait for meaningful historic search volume around the newborn phrase `Whop Business Blueprints`.
-
-Use:
-
-```text
-existing commercial/niche search intent
-→ useful public content
-→ specific deployable Blueprint
-→ Whop conversion/deployment
-```
-
-The opportunity now spans three discovery layers:
-
-1. conventional SEO/search;
-2. Whop marketplace discovery;
-3. AI/agent discovery and execution.
-
-Whop's official CLI supports agent-driven business operations and exposes MCP/skills integration paths.
+Whop's official CLI documentation confirms agent-driven operation of Whop businesses and supports MCP/skills integration paths.
 
 Sources:
 
 - https://whop.com/blog/cli/
+- https://whop.com/blog/cli-guide/
 - https://whop.com/blog/run-business-with-cli/
 
-A Blueprint should therefore be written for both humans and machines: explicit niche, inputs, prerequisites, setup sequence, tools, measurable outcomes, limits and validation metrics.
+Whop's public positioning is increasingly AI-first: create or run businesses with AI.
 
-## WebMCP opportunity
+This means a Blueprint can be designed for both humans and machines:
+
+- explicit niche;
+- clear prerequisites;
+- structured setup sequence;
+- tool/API/CLI requirements;
+- measurable outcomes;
+- operating constraints;
+- validation metrics.
+
+### WebMCP
 
 Chrome's WebMCP origin trial allows websites to expose structured tools to agents rather than relying only on visual UI interpretation.
 
@@ -190,155 +238,151 @@ Source:
 
 - https://developer.chrome.com/blog/ai-webmcp-origin-trial
 
-No evidence currently shows native Blueprint-specific WebMCP support on Whop.
+No native Whop Blueprint-specific WebMCP implementation is currently verified.
 
-The strategic opportunity is the convergence:
+Strategic path:
 
 ```text
 SEO / AI discovery
-→ machine-readable business offer
-→ Whop CLI/MCP business operation
-→ future structured web-agent interaction via WebMCP-compatible surfaces
+→ machine-readable Blueprint offer
+→ Whop CLI/MCP operation
+→ future WebMCP-enabled web interaction
 → deploy / operate / measure business
 ```
 
-Treat this as a forward distribution advantage, not current Whop functionality.
+Treat this as future distribution leverage, not current Whop functionality.
 
-## Competitive landscape
+---
 
-- Whop's own Blueprint creators;
-- online courses/communities;
-- Gumroad/digital templates;
-- YouTube/free playbooks;
-- consultant frameworks;
-- AI-generated business plans.
+## 7. SEO and discoverability
 
-Generic information has near-zero moat. Evidence from an actually operated DRF system is the differentiator.
+Do not wait for large historic search volume around the newborn term `Whop Business Blueprints`.
 
-## Commercial model hypothesis
+Use existing high-intent niche/business searches:
 
-Pricing should match depth and proof. Test:
+```text
+existing commercial query
+→ useful public content
+→ specific deployable Blueprint
+→ Whop deployment
+→ downstream business economics
+```
 
-- low-ticket entry blueprint;
-- premium blueprint with templates/assets;
-- optional recurring updates/community where justified;
-- implementation upsell;
-- managed-service upsell;
-- recurring Whop referral economics where the live programme terms apply.
+Discovery currently has three layers:
 
-Do not set a portfolio-wide fixed price until the first product's conversion/refund/support data exists.
+1. Google/traditional search;
+2. Whop marketplace/internal discovery;
+3. AI/agent discovery and execution.
 
-## GTM
+The strongest Blueprint content should therefore state clearly:
 
-Use Whop discovery plus owned SEO/social/AI visibility and DRF case-study content. The strongest product page should show:
-
-- exactly who the system is for;
+- who it is for;
+- what problem it solves;
 - prerequisites;
 - what is included;
-- operating evidence;
-- realistic time/cost requirements;
-- what the Blueprint does **not** guarantee.
+- setup steps;
+- measurable outcomes;
+- limitations;
+- what it does **not** guarantee.
 
-## Defensibility
+---
 
-- continuously updated DRF operating evidence;
-- templates/assets generated from live business workflows;
-- deployment and outcome data;
-- cross-offer implementation ecosystem;
-- brand/reputation;
-- buyer community feedback;
-- optional managed implementation.
+## 8. Score rationale
 
-The Blueprint configuration itself is likely copyable. The moat is proof, data, reputation, distribution and continuous improvement.
+The 29–30 August rescore changed only four factors:
 
-## Risks
+| Factor | Previous | Revised | Why |
+|---|---:|---:|---|
+| Willingness to Pay | 6 | **7** | Early deployment volume is now non-trivial, although still self-reported. |
+| Speed to Revenue | 7 | **8** | Early operator evidence shows a live route from Blueprint deployment to recurring economics. |
+| Margin Potential | 7 | **8** | Whop Partner economics are paid from Whop's share, and the Blueprint thesis similarly points to platform-funded creator economics. |
+| MRR / Recurring Revenue Quality | 8 | **9** | Recurring Whop Partner economics are first-party verified and early Blueprint evidence shows repeat downstream earning potential. |
 
-- information-product saturation;
-- buyers expect effortless income;
-- refund/support burden;
-- platform dependency;
-- copying/piracy;
-- unproven DRF systems packaged too early;
-- distracting from higher-value direct sales;
-- downstream businesses fail to activate or retain;
-- Blueprint creator terms differ materially from the Partner economics now documented;
-- typical creator economics may be far below early self-reported examples.
+**Weighted score: 81.7 → 82/100.**
 
-## Evidence discipline
+Hold at **82/100** after the 31 August update. The newer evidence improves clarity but does not yet prove stronger median-market economics.
 
-### Verified first-party
+---
 
-- Whop Business Blueprints is a live product/discovery surface.
-- Whop Partners provides ongoing referral economics tied to Whop gross profit, plus ad-spend and second-tier economics.
-- Whop's CLI exposes substantial business operations to agents and supports MCP/agent skills.
-- Chrome WebMCP is an active experimental structured agent-web interface standard.
+## 9. Risks and evidence gaps
 
-### Self-reported / corroborative
+Still unproven:
 
-- one early operator reports 580+ Blueprint referrals and >$400/day recurring economics.
-
-### DRF judgement
-
-- only proven workflows should become Blueprints;
-- Blueprint revenue should compound core operating IP, not create a separate content treadmill;
-- implementation/managed-service upsells improve economics;
-- Blueprints can become a distribution multiplier for other DRF opportunities.
-
-### Still unproven
-
-- exact Blueprint-specific creator payout rate;
-- typical creator earnings;
-- first-product DRF conversion;
-- downstream activation and 30/60/90-day retention;
-- Whop organic discovery volume for DRF categories;
-- refund/support rate;
-- implementation upsell rate;
+- exact first-party Blueprint creator payout wording;
+- exact attribution window and qualifying-sale rules;
+- whether Blueprint and Partner economics stack automatically;
+- median Blueprint deployments per creator;
+- percentage of deployed businesses that produce revenue;
+- creator payout distribution;
+- downstream business retention/churn;
+- DRF conversion rate;
+- DRF implementation upsell rate;
+- support minutes per deployment;
 - paid CAC/ROAS;
 - native Whop Blueprint WebMCP support.
 
-## Validation experiment
+Main risks:
 
-Choose one DRF workflow that has live customer/economic evidence. Package the smallest complete Blueprint and launch it.
+- generic information-product saturation;
+- buyers expecting effortless income;
+- support/refund burden;
+- platform dependency;
+- copying/piracy;
+- packaging unproven DRF systems too early;
+- overstating the 10% creator formula;
+- assuming multiple Whop income streams stack when they may not.
+
+---
+
+## 10. Validation experiment
+
+Launch **one** Blueprint based on a DRF workflow that already has operating proof.
 
 Measure:
 
-- product-page traffic;
-- qualified Blueprint starts/deployments;
+- Blueprint views;
+- deployments/starts;
 - downstream activation;
-- purchase/deployment conversion;
-- refund rate;
-- support minutes;
-- time to first downstream transaction;
-- actual Blueprint creator payout formula and amount;
+- downstream sales;
+- exact Blueprint creator payout formula and amount;
+- Whop Partner attribution and whether it stacks;
+- time to first downstream revenue;
 - 30/60/90-day active-business retention;
-- implementation leads and conversion;
-- recurring/community conversion where relevant;
+- support minutes;
+- implementation enquiries;
+- implementation conversion;
+- managed-service/software MRR conversion;
 - net contribution.
 
 ### Pass gate
 
-Scale when a proven DRF workflow sells/deploys without excessive support and creates either healthy recurring downstream economics, strong digital-product margin or higher-value implementation/managed-service revenue.
+Scale when one proven DRF Blueprint creates healthy recurring downstream economics and/or profitable iMPLEMENTAi implementation/managed-service revenue without excessive support.
 
-## Ranking implication
+---
 
-**Raise to 82/100.**
+## 11. Sources and supporting files
 
-The opportunity improves materially because recurring referral economics and early deployment are now evidenced rather than purely theoretical. It should move above the 81/79 structural cluster, while remaining below the 84+ opportunities until real DRF deployment, retention and payout evidence exists.
-
-## Sources
-
-### 30 August update
+### Current Whop sources
 
 - Whop Business Blueprints: https://whop.com/blueprints/
 - Whop Partners: https://whop.com/blog/whop-partners/
 - Whop CLI: https://whop.com/blog/cli/
+- Whop CLI guide: https://whop.com/blog/cli-guide/
 - Running Whop via agents: https://whop.com/blog/run-business-with-cli/
+
+### WebMCP
+
 - Chrome WebMCP origin trial: https://developer.chrome.com/blog/ai-webmcp-origin-trial
-- Early Blueprint operator archive: https://zamantika.com/profile/eptwts
-- Detailed evidence update: `research/whop-business-blueprints-evidence-update-2026-08-30.md`
 
-### Existing baseline
+### Early ecosystem evidence
 
+- https://zamantika.com/profile/eptwts
+- https://www.twstalker.com/davidlanex
+
+### DRF evidence files
+
+- `research/whop-business-blueprints-documentation-update-2026-08-31.md`
+- `research/whop-business-blueprints-evidence-update-2026-08-30.md`
 - `research/whop-business-blueprints-productisation.md`
 - `../../research/business-opportunity-validation-2026-08-29.md`
 - `../OPPORTUNITIES.md`
