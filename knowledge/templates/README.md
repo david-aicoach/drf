@@ -15,7 +15,7 @@ Use this pack for every new digital business opportunity, existing-business benc
 7. [`revenue-blueprint-specification.md`](./revenue-blueprint-specification.md) — operating recipe and P3–P6 Blueprint certification package.
 8. [`business-benchmark-scorecard.md`](./business-benchmark-scorecard.md) — benchmark an existing client/company, its departments, bottleneck, pivot or added revenue model.
 9. [`revenue-blueprint-factory-dashboard.md`](./revenue-blueprint-factory-dashboard.md) — monthly factory throughput, proof conversion, capital efficiency, portfolio cash and Blueprint revenue dashboard.
-10. [`business-opportunity-worked-example-whop-blueprints.md`](./business-opportunity-worked-example-whop-blueprints.md) — Whop example showing why a promising opportunity can remain P1, test-only and not investor-ready.
+10. [`business-opportunity-worked-example-business-blueprints.md`](./business-opportunity-worked-example-business-blueprints.md) — platform-neutral Business Blueprints example showing Outcome × Niche → product format → channel portfolio, with proof and capital gates kept separate.
 
 ## Canonical order
 

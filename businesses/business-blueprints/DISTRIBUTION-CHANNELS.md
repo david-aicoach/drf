@@ -103,10 +103,12 @@ not:
 
 Whop evidence lives under `channels/whop/`.
 
-## Connection to Vertical Revenue Launch Kits
+## Website and launch kits as a product type
 
-The adjacent `ai-website-template-launch-kit-factory` opportunity can generate reusable website, landing-page and workflow assets. Once real client deployments prove reuse and outcome, those assets can be repackaged here and routed to Framer/Webflow plus general digital-product channels.
+A website/revenue launch kit is one **Business Blueprint SKU format**. If the Blueprint contains native Framer or Webflow assets, those specialist marketplaces can be added to the general channel portfolio.
 
-This creates an IP flywheel:
+This is a routing rule, not a second business opportunity:
 
-`service proof → reusable asset → Business Blueprint → multi-platform distribution → implementation upsell → more proof`
+`proven Outcome × Niche → Business Blueprint → website/launch-kit product format when useful → compatible channels → optional implementation → more proof`
+
+See [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md) and [`product-types/website-and-launch-kits.md`](./product-types/website-and-launch-kits.md).

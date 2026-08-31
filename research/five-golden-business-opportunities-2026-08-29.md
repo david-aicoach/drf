@@ -1,5 +1,7 @@
 # DRF — Five Golden Business Opportunities
 
+> **Current taxonomy notice — 31 August 2026 / Issue #72:** Of the original five working theses in this 29 August document, the website/template/launch-kit thesis is now **product-type research inside Business Blueprints**, not a fifth standalone parent opportunity. The original evidence is preserved below because it still informs Framer/Webflow and launch-kit SKU decisions.
+
 **Research date:** 29 August 2026  
 **Governing issue:** #16  
 **Scoring framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md`
@@ -53,7 +55,7 @@ The final five outranked the others because they combine current spend with unus
 | 2 | **Vertical AI Operating Systems & Agent Integration Packs** | **88/100** | **78/100** | **86%** | **89%** | Candidate |
 | 3 | **ChatGPT Plugin / App Factory** | **86/100** | **90/100** | **78%** | **82%** | Candidate |
 | 4 | **Niche API & Data Product Factory** | **85/100** | **90/100** | **80%** | **86%** | Candidate |
-| 5 | **AI Website Template & Launch Kit Factory** | **84/100** | **98/100** | **82%** | **86%** | Candidate |
+| 5 | **Business Blueprints — website/launch-kit product type (historical working thesis)** | **84/100** | **98/100** | **82%** | **86%** | Candidate |
 
 These are research-stage scores. None should receive material capital before a bounded test produces real operating evidence.
 
@@ -409,7 +411,7 @@ Research 20 expensive/repetitive data questions in one DRF-accessible industry, 
 
 ---
 
-# 5. AI Website Template & Launch Kit Factory
+# 5. Business Blueprints product-type research — Website & Revenue Launch Kits
 
 ## Thesis
 
@@ -509,7 +511,7 @@ Publish three narrowly targeted commercial templates for niches with high custom
 | Vertical AI Operating Systems & Agent Integration Packs | 10 | 10 | 9 | 9 | 9 | 8 | 8 | 6 | 9 | 9 | 9 | 9 | 8 | 8 | **88** |
 | ChatGPT Plugin / App Factory | 10 | 10 | 9 | 6 | 9 | 9 | 9 | 9 | 10 | 6 | 9 | 10 | 6 | 7 | **86** |
 | Niche API & Data Product Factory | 8 | 9 | 8 | 8 | 9 | 7 | 10 | 10 | 9 | 7 | 10 | 10 | 6 | 8 | **85** |
-| AI Website Template & Launch Kit Factory | 7 | 8 | 7 | 7 | 10 | 9 | 10 | 10 | 10 | 8 | 10 | 10 | 6 | 5 | **84** |
+| Business Blueprints — website/launch-kit product type (historical working thesis) | 7 | 8 | 7 | 7 | 10 | 9 | 10 | 10 | 10 | 8 | 10 | 10 | 6 | 5 | **84** |
 
 ## Evidence controls
 
@@ -519,7 +521,7 @@ Publish three narrowly targeted commercial templates for niches with high custom
 | Vertical AI Operating Systems & Agent Integration Packs | **86%** | **89%** | Exact repeatability boundary between reusable vertical pack and bespoke implementation. |
 | ChatGPT Plugin / App Factory | **78%** | **82%** | Native plugin monetisation economics and real distribution/activation rates for third-party apps. |
 | Niche API & Data Product Factory | **80%** | **86%** | Which first niche has sufficiently valuable, lawful, durable data and low acquisition cost. |
-| AI Website Template & Launch Kit Factory | **82%** | **86%** | Niche-specific sales conversion and whether referral economics remain meaningful at portfolio scale. |
+| Business Blueprints — website/launch-kit product type (historical working thesis) | **82%** | **86%** | Niche-specific sales conversion and whether referral economics remain meaningful at portfolio scale. |
 
 ---
 
@@ -535,9 +537,9 @@ Although ranked #2 mathematically, this is probably the fastest DRF revenue test
 
 This has the strongest pure market score and an unusually early timing window. The best initial route is productised service before software.
 
-## Priority 3 — AI Website Template & Launch Kit Factory
+## Priority 3 — Business Blueprints productisation
 
-This is the cheapest near-autonomous product factory and can also produce acquisition assets for Priority 1.
+Use the Business Blueprints productisation layer to package proven reusable assets; website/launch-kit files are only one possible SKU format.
 
 ## Priority 4 — ChatGPT Plugin / App Factory
 

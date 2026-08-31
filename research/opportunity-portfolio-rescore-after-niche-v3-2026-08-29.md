@@ -1,5 +1,7 @@
 # DRF Opportunity Portfolio Recalculation After Niche v3
 
+> **Current taxonomy notice — 31 August 2026 / Issue #72:** Current DRF has **27 parent opportunities**. Website/template/launch-kit assets are consolidated under **Business Blueprints** and are not separately ranked. Whop is a channel. The scoring below remains a historical recalculation snapshot where otherwise unchanged.
+
 **Date:** 29 August 2026  
 **Governing issue:** #48  
 **Portfolio:** 28 parent opportunities  
@@ -69,12 +71,11 @@ The niche layer most directly affected **Willingness to Pay, AI Marketability, A
 | **20** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | 16 | 87 | **81** | **-6** | **↓4** | MEP/HVAC tender & RFQ operations (84/100) |
 | **21** | **Pre-Assessed Talent Pool Subscription** | 17 | 86 | **81** | **-5** | **↓4** | Not yet canonically scored |
 | **22** | **ChatGPT Plugin / App Factory** | 20 | 84 | **79** | **-5** | **↓2** | Not yet canonically scored |
-| **23** | **Whop Business Blueprints** | 24 | 82 | **79** | **-3** | **↑1** | Not yet canonically scored |
+| **23** | **Business Blueprints** | 24 | 82 | **79** | **-3** | **↑1** | Not yet canonically scored |
 | **24** | **HowToFindAJobInUAE Media + Recruitment Funnel** | 25 | 81 | **78** | **-3** | **↑1** | Not yet canonically scored |
 | **25** | **AI Job Board + Screened Talent Marketplace** | 22 | 84 | **76** | **-8** | **↓3** | Not yet canonically scored |
 | **26** | **Saffa.ae Community + Trusted Local Business Marketplace** | 26 | 80 | **76** | **-4** | **—** | Not yet canonically scored |
 | **27** | **AI-First Marketplace Directory** | 28 | 77 | **72** | **-5** | **↑1** | Not yet canonically scored |
-| **28** | **AI Website Template & Launch Kit Factory** | 27 | 79 | **71** | **-8** | **↓1** | Not yet canonically scored |
 
 ## Major corrections
 
@@ -102,7 +103,6 @@ Generic ATS capability is already commoditised. The score only remains strong wh
 
 Software can be rented cheaply; the hard problem is two-sided liquidity, paid employer demand and screened-supply density. The prior structural score over-rewarded buildability/scalability before liquidity.
 
-### AI Website Template & Launch Kit Factory: 79 → 71
 
 Generic AI websites are now commodity. The only strategically useful form is a vertical conversion launch kit attached to recurring CRM/lead-conversion/optimisation revenue.
 
