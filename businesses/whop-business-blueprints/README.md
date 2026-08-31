@@ -187,7 +187,7 @@ Complete the P2 backtest using current terms, comparable paid-product conversion
 ## Files
 
 - [`RESEARCH.md`](./RESEARCH.md)
-- [`../../businesses/INVESTMENT-READINESS.md`](../INVESTMENT-READINESS.md)
+- [`../INVESTMENT-READINESS.md`](../INVESTMENT-READINESS.md)
 - [`../../knowledge/templates/business-opportunity-worked-example-whop-blueprints.md`](../../knowledge/templates/business-opportunity-worked-example-whop-blueprints.md)
 - [`research/whop-business-blueprints-documentation-update-2026-08-31.md`](./research/whop-business-blueprints-documentation-update-2026-08-31.md)
 - [`research/whop-business-blueprints-evidence-update-2026-08-30.md`](./research/whop-business-blueprints-evidence-update-2026-08-30.md)
