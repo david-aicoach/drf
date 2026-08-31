@@ -14,7 +14,7 @@ Canonical live opportunity:
 
 # 1. Founder investment summary
 
-> **Provisional Revenue Blueprint Score: 75/100 · Proof: P1 Desk Underwritten · Gate: TEST ONLY · Capital unlocked: up to $3,000 · Investor-ready: No**
+> **Provisional Revenue Blueprint Score: 72/100 · Proof: P1 Desk Underwritten · Gate: TEST ONLY · Capital unlocked: up to $3,000 · Investor-ready: No**
 
 The old 82/100 opportunity score remains historical structural screening. Under the new factory, Whop is not treated as proven merely because the platform and opportunity look strong.
 
@@ -99,15 +99,9 @@ This is a worked example of how the new score can differ from the old opportunit
 | Capital efficiency, payback and ROI | 10 | 7 | 7.0 | Small test is possible, but actual payback and ROI are missing |
 | Durability, moat and concentration | 5 | 5 | 2.5 | Evidence/brand can compound; configuration is copyable and platform concentration is high |
 | Operational, legal and platform risk | 5 | 7 | 3.5 | Digital delivery is manageable, but terms, attribution and Whop dependency remain material |
-| **Provisional RBS** | **100** | | **71.5 → 72/100** | **Structurally testable/strong edge, not yet investable** |
+| **Provisional RBS** | **100** | | **71.5 → 72/100** | **Testable opportunity; not yet investable** |
 
-### Why the headline says 75 but the table says 72
-
-This example deliberately exposes a control failure: the score must reconcile exactly before publication. The correct provisional score from the current row is **72/100**, not 75.
-
-> **Correct display: Revenue Blueprint Score 72/100 · P1 · TEST ONLY · up to $3,000 · Not investor-ready**
-
-This reconciliation check is mandatory in real work.
+The score reconciles to **72/100**. It measures structural potential; P1 and the TEST gate make the evidence limitation explicit.
 
 ---
 
