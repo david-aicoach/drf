@@ -1,5 +1,7 @@
 # DRF Opportunity Portfolio Recalculation After Niche v3
 
+> **Current taxonomy notice — 31 August 2026 / Issue #72:** Website/template/launch-kit assets are **not a standalone DRF parent opportunity**. They are a product type inside **Business Blueprints**. Any scores or rankings below that treat the website/launch-kit thesis separately are preserved only as historical research and must not be read as a current portfolio row.
+
 **Date:** 29 August 2026  
 **Governing issue:** #48  
 **Portfolio:** 28 parent opportunities  
@@ -74,7 +76,7 @@ The niche layer most directly affected **Willingness to Pay, AI Marketability, A
 | **25** | **AI Job Board + Screened Talent Marketplace** | 22 | 84 | **76** | **-8** | **↓3** | Not yet canonically scored |
 | **26** | **Saffa.ae Community + Trusted Local Business Marketplace** | 26 | 80 | **76** | **-4** | **—** | Not yet canonically scored |
 | **27** | **AI-First Marketplace Directory** | 28 | 77 | **72** | **-5** | **↑1** | Not yet canonically scored |
-| **28** | **AI Website Template & Launch Kit Factory** | 27 | 79 | **71** | **-8** | **↓1** | Not yet canonically scored |
+| **28** | **Business Blueprints — website/launch-kit product type (historical working thesis)** | 27 | 79 | **71** | **-8** | **↓1** | Not yet canonically scored |
 
 ## Major corrections
 
@@ -102,7 +104,7 @@ Generic ATS capability is already commoditised. The score only remains strong wh
 
 Software can be rented cheaply; the hard problem is two-sided liquidity, paid employer demand and screened-supply density. The prior structural score over-rewarded buildability/scalability before liquidity.
 
-### AI Website Template & Launch Kit Factory: 79 → 71
+### Business Blueprints — website/launch-kit product type (historical working thesis): 79 → 71
 
 Generic AI websites are now commodity. The only strategically useful form is a vertical conversion launch kit attached to recurring CRM/lead-conversion/optimisation revenue.
 

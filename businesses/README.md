@@ -25,7 +25,9 @@ Do not define a business primarily by a vendor unless the vendor itself is the p
 
 > **The scores below are legacy v1.5 structural screens. They are not investor-readiness ratings. Until an opportunity is rebuilt through RBF-7, its Revenue Blueprint Score, Proof Level, Investment Gate and Return Profile are pending.**
 
-## Legacy offer directory — latest targeted update 31 August 2026
+## Legacy offer directory — latest targeted update 31 August 2026 (Issue #72 taxonomy consolidation)
+
+**Current parent opportunity count: 27.** Website/launch-kit assets are a Business Blueprints product type, not a separate parent opportunity.
 
 | Rank | Parent opportunity | Legacy structural score | Stage | Best validated niche | Folder |
 |---:|---|---:|---|---|---|
@@ -56,7 +58,6 @@ Do not define a business primarily by a vendor unless the vendor itself is the p
 | **25** | **AI Job Board + Screened Talent Marketplace** | **76** | Researching | Not yet canonically scored | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
 | **26** | **Saffa.ae Community + Trusted Local Business Marketplace** | **76** | Researching | Not yet canonically scored | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
 | **27** | **AI-First Marketplace Directory** | **72** | Researching | Not yet canonically scored | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
-| **28** | **AI Website Template & Launch Kit Factory** | **71** | Candidate | Not yet canonically scored | [`ai-website-template-launch-kit-factory/`](./ai-website-template-launch-kit-factory/) |
 
 ### Legacy portfolio rule
 

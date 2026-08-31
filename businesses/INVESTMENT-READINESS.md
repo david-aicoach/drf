@@ -1,10 +1,10 @@
 # DRF Business Investment Readiness
 
 **Status:** Canonical migration and investment-gate register  
-**Version:** 1.3  
+**Version:** 1.4  
 **Date:** 31 August 2026  
 **Governing issue:** #60  
-**Latest targeted rebuild:** #67 — Business Blueprints generalised to multi-platform digital-product distribution  
+**Latest targeted rebuild:** #72 — duplicate website-template parent absorbed into Business Blueprints product taxonomy  
 **Source portfolio:** `businesses/OPPORTUNITIES.md`  
 **Niche source:** `businesses/NICHES.md`
 
@@ -26,6 +26,8 @@ Canonical standard: `knowledge/guidelines/revenue-blueprint-scoring-and-investme
 ### Outcome × niche × channel rule
 
 A platform, CRM, AI model or delivery vendor is not the commercial opportunity. DRF first defines the **measurable result sold**, then ranks the niches where that result has the strongest pain, economics and reachability.
+
+**Current parent opportunity count: 27.** Website/launch-kit assets are downstream Business Blueprint product formats and are not separately ranked.
 
 For digital products, distribution is a separate downstream layer:
 
@@ -74,7 +76,6 @@ The niche score remains separate from RBS. A niche can be attractive while the d
 | **3** | **AI Job Board + Screened Talent Marketplace** | Match screened talent with paying employers faster while monetising employer demand. | **76** | Pending | Pending | RESEARCH | $0 | Pending | No | Run paid employer-demand and supply-density backtest before platform spend. |
 | **3** | **Saffa.ae Community + Trusted Local Business Marketplace** | Turn trusted South African community discovery into sponsor, listing, lead and partner revenue. | **76** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild sponsor/listing/lead revenue and engagement-to-cash path. |
 | **3** | **AI-First Marketplace Directory** | Own a specific niche discovery surface and monetise qualified buyer intent. | **72** | Pending | Pending | RESEARCH | $0 | Pending | No | Identify one rights-safe niche with paid buyer demand. |
-| **3** | **AI Website Template & Launch Kit Factory** | Launch client websites quickly, then attach recurring conversion, CRM or managed-growth revenue. | **71** | Pending | Pending | RESEARCH | $0 | Pending | No | Test whether recurring CRM/conversion revenue attaches to the launch kit and whether proven reusable assets can later be productised into Business Blueprints. |
 
 ---
 
@@ -114,7 +115,7 @@ Rebuild only after the faster lanes are operating or when new evidence materiall
 
 ## Migration rules
 
-- Do not create 28 Issues before execution starts.
+- Do not create 27 Issues before execution starts.
 - Open one Issue when an opportunity enters active rebuild.
 - Start from the Version 2.0 template; do not edit the old score into a new result.
 - Preserve old research as source history.
