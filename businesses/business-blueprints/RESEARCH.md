@@ -247,59 +247,40 @@ Current strongest candidates from existing DRF evidence:
 |---|---|---:|---|
 | Enquiry-to-Revenue Control Blueprint | UAE HVAC/AC service contractors | **92/100** | Comprehensive niche research + P2 RBF assessment |
 | Fast Quote-to-Cash Blueprint | UAE drywall / gypsum / false-ceiling installers | **87/100** | Comprehensive niche research + P2 RBF assessment |
-| Vertical Revenue Launch Kit Blueprint | Exact vertical pending | **Pending** | Adjacent opportunity research complete; live reuse proof still required |
 
 The buyer market for the Blueprint itself must still be separately forward-tested. A strong end-customer niche does not automatically prove digital-product buyer demand.
 
-## 7. Connection to AI Website Template & Launch Kit Factory
+## 7. Product types inside Business Blueprints
 
-The previous website opportunity research already concluded that generic AI websites are commoditised and that the stronger thesis is a **vertical conversion launch kit** with:
+A Blueprint can be packaged in several formats without creating a new parent opportunity.
 
-- niche site pages;
-- WhatsApp/form/phone capture;
-- CRM/pipeline;
-- booking/quote workflow;
-- tracking;
-- recurring outcome-module attachment.
+Examples include:
 
-That remains a distinct client-service opportunity.
+- complete operating-business bundles;
+- website + revenue launch kits;
+- Notion/database operating systems;
+- workflow and automation packs;
+- prompt/agent/Skill packs;
+- software, licence or API components;
+- playbook/checklist bundles.
 
-But it can become an important **IP supplier** to Business Blueprints.
+The website/launch-kit research is therefore retained as a **Business Blueprint product-type evidence module**, not a client-service business with a separate portfolio score.
 
-### Flywheel
+See `PRODUCT-TYPES.md` and `product-types/website-and-launch-kits.md`.
+
+## 8. One business, multiple monetisation layers
+
+The same Blueprint IP can create several revenue layers without becoming several parent opportunities:
 
 ```text
-sell/deploy vertical launch kit to clients
-→ prove 80%+ asset reuse and commercial outcome
-→ extract reusable site/workflow assets
-→ package Blueprint/template product
-→ list on Framer/Webflow + general digital-product channels
-→ offer iMPLEMENTAi implementation
-→ capture more proof and improve the product
+Business Blueprint sale
++ optional bundle/licence/update revenue
++ channel-specific royalty/referral upside
++ optional iMPLEMENTAi implementation/customisation
++ optional underlying service/software expansion
 ```
 
-This is exactly the kind of DRF leverage the Blueprint model should create.
-
-## 8. Business model separation
-
-Do not collapse these into one score:
-
-### Business Blueprints
-
-- digital product/IP model;
-- buyer can self-deploy;
-- multi-platform distribution;
-- very low replication cost;
-- optional implementation.
-
-### Vertical Revenue Launch Kit
-
-- client implementation service;
-- setup revenue + recurring module attachment;
-- higher human fulfilment;
-- proof source for reusable assets.
-
-A single operating asset can feed both businesses while each retains its own economics and proof level.
+These are revenue streams and delivery options of **Business Blueprints**. They should be measured separately, but they do not require a second parent business merely because one SKU contains a website or launch kit.
 
 ## 9. Parent RBF score implication
 
@@ -359,7 +340,8 @@ It is:
 ### Canonical DRF
 
 - `../../research/ai-first-digital-marketplaces-and-service-platforms.md`
-- `../ai-website-template-launch-kit-factory/RESEARCH.md`
+- `PRODUCT-TYPES.md`
+- `product-types/website-and-launch-kits.md`
 - `../whatsapp-crm-revenue-core/RBF-ASSESSMENT-HVAC.md`
 - `../instant-quote-quote-to-cash/RBF-ASSESSMENT-DRYWALL-GYPSUM.md`
 - `channels/whop/WHOP-RESEARCH.md`

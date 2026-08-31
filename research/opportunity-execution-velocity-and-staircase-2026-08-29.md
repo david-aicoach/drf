@@ -1,5 +1,7 @@
 # DRF Opportunity Execution Velocity & Staircase
 
+> **Current taxonomy notice — 31 August 2026 / Issue #72:** Website/template/launch-kit assets are **not a standalone DRF parent opportunity**. They are a product type inside **Business Blueprints**. Any scores or rankings below that treat the website/launch-kit thesis separately are preserved only as historical research and must not be read as a current portfolio row.
+
 **Date:** 29 August 2026  
 **Governing issues:** #24, #28, #40, #48, #49  
 **Framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md` v1.5  
@@ -41,7 +43,7 @@ The 30 August Whop evidence update raises **Whop Business Blueprints from 79 to 
 | **16** | **Recruitment OS / Hiring Intelligence SaaS** | **87** | **62** | **79.8** | 1–3 months | Build / bounded test lane |
 | **17** | **White-Label Hiring Portal for Employers/Agencies** | **85** | **65** | **78.9** | 1–3 months | Build / bounded test lane |
 | **18** | **Niche API & Data Product Factory** | **84** | **60** | **76.9** | 1–3 months | Build / bounded test lane |
-| **19** | **AI Website Template & Launch Kit Factory** | **71** | **90** | **76.9** | 1–3 weeks | Build / bounded test lane; only as attached revenue launch kit |
+| **19** | **Business Blueprints — website/launch-kit product type (historical working thesis)** | **71** | **90** | **76.9** | 1–3 weeks | Build / bounded test lane; only as attached revenue launch kit |
 | **20** | **ChatGPT Plugin / App Factory** | **79** | **70** | **76.6** | 1–2 months | Build / bounded test lane |
 | **21** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | **65** | **76.0** | 2–6 weeks | Build / bounded test lane |
 | **22** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | **55** | **75.7** | 1–3 months | Build / bounded test lane |
@@ -140,7 +142,7 @@ Evidence: `businesses/whop-business-blueprints/research/whop-business-blueprints
 | **Recruitment OS / Hiring Intelligence SaaS** | **87** | **62** | **79.8** | 3–8 weeks bounded module | 3–8 weeks | 1–3 months | 3–10 days | ATS integration/scope boundary and external buyer retention. |
 | **White-Label Hiring Portal for Employers/Agencies** | **85** | **65** | **78.9** | 3–8 weeks | 3–8 weeks | 1–3 months | 2–7 days | Portal scope/support and avoiding generic ATS rebuild. |
 | **Niche API & Data Product Factory** | **84** | **60** | **76.9** | 2–6 weeks after lawful niche chosen | 2–6 weeks | 1–3 months | Minutes–1 day after stable | Need proprietary lawful recurring data/function and paid repeated usage. |
-| **AI Website Template & Launch Kit Factory** | **71** | **90** | **76.9** | 2–5 days | 3–7 days | 1–3 weeks | Hours–2 days | Fast to ship but low standalone value; recurring attachment must sell. |
+| **Business Blueprints — website/launch-kit product type (historical working thesis)** | **71** | **90** | **76.9** | 2–5 days | 3–7 days | 1–3 weeks | Hours–2 days | Fast to ship but low standalone value; recurring attachment must sell. |
 | **ChatGPT Plugin / App Factory** | **79** | **70** | **76.6** | 1–4 weeks | 1–4 weeks | 1–2 months | Near-instant digital | Recurring backend monetisation and activation/retention. |
 | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | **65** | **76.0** | 2–7 days bounded role | 3–10 days | 2–6 weeks | 1–5 days + auth/access | Quota, browser/UI fragility, auth recovery, variable spend and support minutes. |
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | **55** | **75.7** | 3–8 weeks narrow benchmark | 3–8 weeks | 1–3 months | Near-instant after product exists | Data rights, sample validity, methodology and buyer WTP. |

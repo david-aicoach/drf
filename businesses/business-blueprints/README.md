@@ -90,23 +90,18 @@ See [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md).
 
 These are not mutually exclusive.
 
-## Connection to AI Website Template & Launch Kit Factory
+## Product types — one business, many SKUs
 
-The **AI Website Template & Launch Kit Factory remains a separate business opportunity** because its primary model is client implementation plus recurring revenue attachment.
+Business Blueprints can be packaged as complete operating-business bundles, website/revenue launch kits, Notion systems, workflow/automation packs, prompt/agent/Skill packs, software/API components, or playbook bundles.
 
-However, the reusable IP from that opportunity can feed Business Blueprints:
+**These are product formats, not separate parent opportunities.**
 
-```text
-prove a vertical launch kit with real clients
-→ standardise the reusable template/workflow assets
-→ package a digital product / Business Blueprint
-→ distribute through Framer/Webflow + general digital-product channels
-→ retain implementation as an optional iMPLEMENTAi upsell
-```
+A website/launch kit is therefore one possible Blueprint SKU when the underlying Outcome × Niche is proven and the assets are genuinely reusable. It is not another business alongside Business Blueprints.
 
-This gives one piece of IP multiple monetisation paths without blending two different business models into one score.
+See:
 
-Adjacent source: [`../ai-website-template-launch-kit-factory/RESEARCH.md`](../ai-website-template-launch-kit-factory/RESEARCH.md).
+- [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md)
+- [`product-types/website-and-launch-kits.md`](./product-types/website-and-launch-kits.md)
 
 ## First Blueprint candidates from existing DRF evidence
 
@@ -114,7 +109,6 @@ Adjacent source: [`../ai-website-template-launch-kit-factory/RESEARCH.md`](../ai
 |---:|---|---|---:|---|
 | **1** | **Enquiry-to-Revenue Control** | UAE HVAC/AC service contractors | **92/100** | Highest validated niche combination already moved to P2 RBF backtest. |
 | **2** | **Fast Quote-to-Cash System** | UAE drywall / gypsum / false-ceiling installers | **87/100** | Strong standardisable workflow and repeatable operating logic. |
-| **3** | **Vertical Revenue Launch Kit** | Select vertical still to be scored | **Pending** | Website/template/workflow assets can become a distributable digital-product variant after live reuse is proven. |
 
 ## Current RBF decision
 
@@ -159,6 +153,7 @@ Those details are retained as **channel research**, not parent-business truth:
 
 - [`RESEARCH.md`](./RESEARCH.md) — Business Blueprint parent underwriting
 - [`RBF-ASSESSMENT.md`](./RBF-ASSESSMENT.md) — 10-factor RBF assessment and forward-test gate
+- [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md) — product-format taxonomy; website/launch kits are one SKU type, not another parent business
 - [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md) — product-to-channel routing matrix
 - [`../../research/ai-first-digital-marketplaces-and-service-platforms.md`](../../research/ai-first-digital-marketplaces-and-service-platforms.md) — DRF master marketplace map
 - [`../INVESTMENT-READINESS.md`](../INVESTMENT-READINESS.md) — portfolio gate register

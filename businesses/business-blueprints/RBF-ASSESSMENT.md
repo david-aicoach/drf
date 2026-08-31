@@ -163,40 +163,26 @@ A channel can fail while the parent business passes.
 |---|---:|---|---|
 | Enquiry-to-Revenue Control × HVAC/AC contractors | **92/100** | P2 RBF backtest | **First candidate** |
 | Fast Quote-to-Cash × drywall/gypsum/false-ceiling installers | **87/100** | P2 RBF backtest | **Second candidate** |
-| Vertical Revenue Launch Kit | Pending exact niche | Separate website/launch-kit opportunity has reusable IP thesis | Package only after reuse/outcome proof |
 
 The Blueprint product does not inherit P3/P4 proof from the underlying service automatically. Buyer demand for the packaged product must still be tested.
 
-## 8. Relationship to AI Website Template & Launch Kit Factory
+## 8. Product types are downstream of the parent business
 
-These are **adjacent, not duplicate opportunities**.
+A website/revenue launch kit is one possible **Business Blueprint product type**. It does not receive a second parent RBS.
 
-### Vertical Revenue Launch Kit
-
-Customer buys a client implementation/outcome:
-
-- website;
-- WhatsApp/lead capture;
-- CRM/quote/booking path;
-- tracking;
-- recurring outcome module.
-
-### Business Blueprints
-
-Buyer buys reusable IP that enables them to deploy/run a business system themselves or with optional implementation help.
-
-The same proven asset can create two revenue paths:
+The correct hierarchy is:
 
 ```text
-client service revenue
-→ operating proof
-→ reusable template/workflow
-→ Business Blueprint digital product
-→ multi-platform distribution
-→ optional implementation revenue
+underlying Outcome × Niche proof
+→ Business Blueprints parent underwriting
+→ select product format(s)
+→ select compatible distribution channels
+→ measure buyer demand and contribution
 ```
 
-This is an IP flywheel, not a reason to blend the two RBS scores.
+Website, Notion, workflow, prompt/Skill, software/API and document bundles are packaging choices. Optional iMPLEMENTAi implementation/customisation is a revenue stream, not a reason to duplicate the parent opportunity.
+
+See `PRODUCT-TYPES.md`.
 
 ## 9. Whop as a channel
 
