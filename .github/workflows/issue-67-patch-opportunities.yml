@@ -1,0 +1,54 @@
+name: Issue 67 patch legacy opportunity
+
+on:
+  push:
+    branches:
+      - issue-67-business-blueprints-multiplatform
+    paths:
+      - .github/workflows/issue-67-patch-opportunities.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: issue-67-business-blueprints-multiplatform
+          fetch-depth: 0
+      - name: Patch canonical legacy portfolio and final dashboard alias
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          p = Path('businesses/OPPORTUNITIES.md')
+          s = p.read_text()
+          s = s.replace('**Latest targeted evidence update:** 30 August 2026 — Issue #49 (Whop Business Blueprints)', '**Latest targeted evidence update:** 31 August 2026 — Issue #67 (Business Blueprints multi-platform generalisation)')
+          s = s.replace('Whop Business Blueprints', 'Business Blueprints')
+          s = s.replace('businesses/whop-business-blueprints/RESEARCH.md', 'businesses/business-blueprints/RESEARCH.md')
+          s = s.replace('businesses/whop-business-blueprints/README.md', 'businesses/business-blueprints/README.md')
+          s = s.replace('businesses/whop-business-blueprints/research/', 'businesses/business-blueprints/channels/whop/research/')
+          replacement = '| **Business Blueprints** | **Candidate** | **82/100** | **0** | **↑5** | **9/10** | **78/100** | **90%** | **100%** | HVAC/AC Enquiry-to-Revenue Blueprint | **92/100** | Platform-neutral parent opportunity. Existing DRF marketplace research supports multi-channel distribution; Whop is one high-value endpoint with additional channel-specific economics, not the business itself. Core viability must survive direct Blueprint sales without any single-platform subsidy. | Package one proven DRF Blueprint and test it across at least two compatible endpoints; measure traffic, conversion, fees, CAC, refunds, support, activation and contribution by channel. | `businesses/business-blueprints/RESEARCH.md` + `businesses/business-blueprints/DISTRIBUTION-CHANNELS.md` |'
+          s, count = re.subn(r'^\| \*\*Business Blueprints\*\* \| \*\*Candidate\*\* \| \*\*82/100\*\* .*$', replacement, s, count=1, flags=re.M)
+          if count != 1:
+            raise SystemExit(f'Expected one Business Blueprints portfolio row, found {count}')
+          p.write_text(s)
+
+          p = Path('index.html')
+          s = p.read_text()
+          old = "meta:name==='Proof-Backed Business Launch Blueprint'?'Underlying Blueprint target — not a Whop platform niche.':"
+          new = "meta:name==='Business Blueprints'?'Underlying Blueprint target; distribution channels are scored and selected separately.':"
+          if old not in s:
+            raise SystemExit('Expected old best-niche dashboard alias not found')
+          p.write_text(s.replace(old, new))
+      - name: Commit patches
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add businesses/OPPORTUNITIES.md index.html
+          git diff --cached --check
+          git commit -m 'Rename legacy portfolio parent to Business Blueprints'
+          git push origin HEAD:issue-67-business-blueprints-multiplatform
