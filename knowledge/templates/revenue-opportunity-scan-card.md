@@ -1,104 +1,165 @@
-# Revenue Opportunity Scan Card
+# DRF Golden Opportunity Scan Card
 
-**Status:** Canonical P0 intake template  
-**Version:** 1.0  
+**Status:** Canonical low-cost Layer 1 discovery screen  
+**Version:** 2.0  
 **Date:** 31 August 2026  
-**Governing issue:** #60
+**Master programme:** #77  
+**Governing stage:** [77.3] #80  
+**Workflow:** `workflows/drf-opportunity-factory.md`
 
-> Use this to scan many opportunities quickly. It decides only **Reject / Hold / Queue for Underwriting**. It does not authorise capital or claim investor readiness.
+> Use this card to screen many discoveries cheaply. It answers only **Reject / Hold / Advance**. It does not calculate a final RBS, authorise capital, award DRF Proof beyond P0 or create a full business folder by default.
 
-## Scan identity
+---
 
-**Opportunity:** <name>  
-**Date:** <date>  
-**Source:** <where found>  
-**Business model:** <Digital Product / SaaS / Marketplace / Service / AI Outcome / Hybrid>  
-**Blueprint maturity:** **P0 Blueprint Idea**
+# 1. Identity and duplicate check
 
-## Money in 20 seconds
+**Candidate name:** `<service/product/outcome>`  
+**Date:** `<YYYY-MM-DD>`  
+**Discovery source:** `<URL / post / operator / founder input / trend>`  
+**Mode:** `<Founder Intake / Automated Discovery>`  
+**Potential existing DRF opportunity:** `<name/path or None found>`  
+**Classification:** `<new opportunity / new niche / delivery variant / refresh / duplicate>`
 
-**What is sold:** <offer/outcome>  
-**Who pays:** <payer>  
-**Why they pay:** <pain/value>  
-**Price or payment basis:** <amount/range/%/usage>  
-**Revenue type:** <upfront sale / recurring fee / royalty / commission / usage / licence>  
-**Likely direct cost:** <main COGS>  
-**Likely acquisition route:** <channel>
+## Duplicate rule
 
-## Eight survival checks
+A new vendor, AI model, CRM, channel or snapshot does not automatically create a new business opportunity. The business is the service/product/outcome and pain solved.
 
-| Check | Yes / No / Unknown | One-line evidence |
+---
+
+# 2. Money in 20 seconds
+
+**What is sold:** `<outcome/offer>`  
+**Pain solved:** `<expensive/urgent/recurring pain>`  
+**Who pays:** `<payer>`  
+**Why they pay:** `<value>`  
+**Price or basis:** `<amount/range/%/usage/Pending>`  
+**Revenue type:** `<upfront / recurring / usage / licence / commission / royalty>`  
+**Likely direct cost:** `<main COGS>`  
+**Likely first customer route:** `<specific channel/list>`
+
+If there is no identifiable payer, outcome or revenue mechanism, reject without scoring.
+
+---
+
+# 3. External commercial signal
+
+Find at least several materially similar operators when practical.
+
+| Operator/signal | Live offer? | Price visible? | Customer/traction evidence? | Recurring model? | Source/date | Limitation |
+|---|---|---|---|---|---|---|
+| | | | | | | |
+
+**Negative/counter signal:** `<failure, complaints, churn, regulation, margin or platform risk>`
+
+## Provisional External Market Proof
+
+**EMP:** `<EMP0 / EMP1 / EMP2 / EMP3 / EMP4>`  
+**Confidence:** `<0–100>%`  
+**What the market already proves:** `<one sentence>`  
+**What DRF would still need to prove:** `<one sentence>`
+
+One viral post or one exceptional operator cannot establish EMP3/EMP4.
+
+---
+
+# 4. Ten survival checks
+
+| Check | Yes / No / Unknown | Evidence / implication |
 |---|---|---|
 | 1. Identifiable payer | | |
-| 2. Existing demand or spend | | |
-| 3. Pain/value large enough for payment | | |
-| 4. Credible route to first 10 customers | | |
-| 5. Credible positive contribution after direct costs and CAC | | |
-| 6. Deliverable outcome with bounded founder work | | |
-| 7. Repeatable, recurring or scalable potential | | |
-| 8. No obvious fatal legal, platform or capital barrier | | |
+| 2. Clear painful/valuable outcome | | |
+| 3. Current external demand/spend | | |
+| 4. Multiple comparable operators or evidence-backed innovation rationale | | |
+| 5. Credible recurring/repeat revenue | | |
+| 6. Plausible route to first 10 customers | | |
+| 7. Plausible positive contribution after direct cost/CAC | | |
+| 8. Deliverable with bounded founder/human work | | |
+| 9. Scalable/replicable beyond one customer | | |
+| 10. No obvious fatal legal/platform/capital barrier | | |
 
-## Immediate kill rules
+---
 
-Reject or hold when any of these is true and cannot be resolved cheaply:
+# 5. Rapid Layer 1 score
 
-- no identifiable payer;
-- no credible payment mechanism;
-- demand depends only on hype or free users;
-- delivery cost is likely greater than customer value/price;
-- customer acquisition has no plausible route;
-- the business requires major build/capital before a buying signal;
-- legal/platform terms appear fatal;
-- the idea is merely a technology without an outcome and buyer.
+Use the canonical 15-factor Opportunity Score. This is a quick E0–E1/EPM screen and must be replaced by full research before the score becomes canonical.
 
-## Preliminary Revenue Blueprint Score
-
-This is an **E0–E1 provisional screen**, not the final score.
-
-| Factor | Weight | Quick score 0–10 | Evidence class | Biggest unknown |
+| Opportunity factor | Weight | Quick score 0–10 | Evidence label | Biggest unknown |
 |---|---:|---:|---|---|
-| Demand, market and timing | 15 | | | |
-| Pain, willingness to pay and pricing power | 10 | | | |
-| Revenue quality and retention | 10 | | | |
-| Unit economics and margin | 15 | | | |
-| Customer acquisition and paid growth | 10 | | | |
-| Delivery repeatability and customer outcome | 10 | | | |
-| Scalability, leverage and founder independence | 10 | | | |
-| Capital efficiency, payback and ROI | 10 | | | |
-| Durability, moat and concentration | 5 | | | |
-| Operational, legal and platform risk | 5 | | | |
-| **Preliminary RBS** | **100** | **__/100** | **E0–E1** | |
+| Market Size Now | 9 | | | |
+| Market Growth | 9 | | | |
+| Timing / First-Mover Window | 5 | | | |
+| Willingness to Pay | 7 | | | |
+| AI Buildability | 7 | | | |
+| AI Marketability | 7 | | | |
+| AI Deliverability | 9 | | | |
+| Low Human Dependency | 4 | | | |
+| Startup Capital Efficiency | 6 | | | |
+| Speed to Revenue | 6 | | | |
+| Margin Potential | 5 | | | |
+| Scalability | 6 | | | |
+| Paid Growth Potential | 4 | | | |
+| Defensibility / Moat | 5 | | | |
+| MRR / Recurring Revenue Quality | 11 | | | |
+| **Provisional Opportunity Score** | **100** | **__/100** | | |
 
-## Scan decision
+## Quick supporting controls
 
-Choose one:
+**MRR:** `__/10`  
+**AI Autonomy:** `__/100`  
+**Evidence Confidence:** `__%`  
+**Research Completeness:** `__%`  
+**Execution Velocity:** `__/100 or Not assessed`
 
-- **REJECT** — fatal weakness or no coherent money model.
-- **HOLD** — potentially valuable, but dependent on timing/evidence not currently available.
-- **QUEUE FOR UNDERWRITING** — coherent buyer, money and test path; create/resolve the Issue and enter RBF-7 Stage 2.
+Do not calculate a preliminary RBS at this stage. RBS requires a selected Business × Niche, offer, price, GTM, delivery architecture and economics.
 
-**Decision:** <one>  
-**Why:** <one sentence>  
-**Fatal unknown to investigate first:** <one>  
-**Maximum desk research before next decision:** <timebox>  
-**Capital authorised:** **$0**
+---
 
-## Batch-ranking rule
+# 6. Immediate rejection/hold rules
 
-When scanning many opportunities, rank survivors by:
+Reject or hold when a fatal issue cannot be resolved cheaply:
 
-1. preliminary RBS;
-2. strength of current demand/payment evidence;
-3. speed and cost of the next proof test;
-4. fit with existing DRF assets, distribution and proof;
-5. downside if the test fails.
+- no payer or payment mechanism;
+- technology without a business outcome;
+- demand is only hype/free usage;
+- no credible acquisition route;
+- likely delivery cost exceeds customer value/price;
+- major build/capital is required before any buying signal;
+- fatal legal, platform, data-rights or compliance condition;
+- an existing DRF opportunity already covers the underlying outcome;
+- structurally weak score after adequate evidence.
 
-Do not compare a P0 preliminary score with a P4/P5 operating business as if the evidence is equal.
+---
 
-## Next action
+# 7. Decision
 
-Only one action:
+Use the configured threshold version. Default guidance:
 
-- reject and record the reason;
-- hold with a trigger/date; or
-- open/resolve the underwriting Issue and use `business-opportunity-research.md`.
+- **ADVANCE:** provisional Opportunity Score ≥75, Evidence ≥60%, no fatal gate, and EMP2+ or a documented innovation rationale.
+- **GOLDEN PRIORITY:** ≥85 with strong MRR and/or AI leverage plus a credible customer and contribution path.
+- **HOLD / RESEARCH:** 65–74, low confidence/completeness, or one material transferability uncertainty.
+- **REJECT / PARK:** below 65 after adequate research or a fatal payer/acquisition/delivery/legal/economics weakness.
+
+**Decision:** `<REJECT / HOLD / ADVANCE>`  
+**Why:** `<one sentence>`  
+**Largest uncertainty:** `<one>`  
+**Maximum next desk-research timebox:** `<time>`  
+**Capital authorised:** `$0`  
+**Next action:** `<one bounded action>`
+
+## Filing rule
+
+- Rejected candidates remain in the future discovery/rejection log; do not clutter the main portfolio.
+- Held candidates retain the trigger/evidence gap.
+- Advanced candidates enter the full `business-opportunity-research.md` dossier and the canonical workflow.
+
+---
+
+# 8. Scan verification
+
+- [ ] Duplicate/business-versus-vendor classification completed.
+- [ ] Payer, outcome and revenue mechanism are coherent.
+- [ ] At least one positive and one negative/counter signal were checked where available.
+- [ ] EMP is provisional and separately labelled from DRF Proof.
+- [ ] Opportunity Score, not RBS, controls the Layer 1 screen.
+- [ ] No unsupported number is presented as fact.
+- [ ] The decision, reason and one next action are explicit.
