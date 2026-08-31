@@ -1,0 +1,58 @@
+name: Issue 67 patch dashboard
+
+on:
+  push:
+    branches:
+      - issue-67-business-blueprints-multiplatform
+    paths:
+      - .github/workflows/issue-67-patch-index.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: issue-67-business-blueprints-multiplatform
+          fetch-depth: 0
+      - name: Patch Business Blueprints dashboard references
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+          replacements = {
+            'businesses/whop-business-blueprints/research/whop-business-blueprints-productisation.md': 'businesses/business-blueprints/README.md',
+            '>Whop Blueprints<span>Whop productisation research.</span>': '>Business Blueprints<span>Multi-platform Blueprint business and distribution model.</span>',
+            'businesses/whop-business-blueprints/OUTCOME-NICHE-MODEL.md': 'businesses/business-blueprints/DISTRIBUTION-CHANNELS.md',
+            '>Whop outcome × niche model<span>Whop is the distribution rail; underlying Blueprint businesses keep their own RBS and niche proof.</span>': '>Business Blueprint channels<span>Whop, Gumroad, Contra, Notion, Lemon Squeezy and other endpoints routed by product fit.</span>',
+            'businesses/whop-business-blueprints/RBF-ASSESSMENT.md': 'businesses/business-blueprints/RBF-ASSESSMENT.md',
+            '>Whop channel RBF assessment<span>79/100 P2 productisation/distribution economics.</span>': '>Business Blueprints RBF assessment<span>82/100 P2 multi-platform digital-product underwriting.</span>',
+            '<strong>Whop outcome model</strong>': '<strong>Business Blueprint channels</strong>',
+            "'Proof-Backed Business Launch Blueprint':{": "'Business Blueprints':{",
+            "subtitle:'Distribution rail: Whop Business Blueprints. The underlying business must still have its own result × niche proof.'": "subtitle:'Multi-platform digital product: prove the underlying result × niche, package it once, then route the compatible Blueprint across the best revenue endpoints.'",
+            "tests:[['Channel test','$199+'],['Paid buyers','≥ 5'],['Target CAC','≤ ~$104'],['Timebox','30 days']]": "tests:[['Paid buyers','≥ 5'],['Contribution','≥ 30%'],['Channel set','≥ 2'],['Capital cap','≤ $3K']]",
+            'function whopCandidateNiches(){': 'function blueprintCandidateNiches(){',
+            "if(name==='Proof-Backed Business Launch Blueprint')return whopCandidateNiches();": "if(name==='Business Blueprints')return blueprintCandidateNiches();",
+            "name==='Proof-Backed Business Launch Blueprint'?'Whop is a distribution/productisation rail. The rows shown here are candidate underlying Blueprint businesses; each must be proven before being packaged.'": "name==='Business Blueprints'?'The rows shown here are candidate underlying Blueprint businesses. Distribution is a separate multi-platform layer: Whop is one channel alongside Gumroad, Contra, owned storefronts and specialist marketplaces where the product fits.'",
+            "const scoreTables={'Proof-Backed Business Launch Blueprint':whopScore,'Enquiry-to-Revenue Control':hvacScore,'Fast Quote-to-Cash System':gypsumScore};": "const scoreTables={'Business Blueprints':whopScore,'Enquiry-to-Revenue Control':hvacScore,'Fast Quote-to-Cash System':gypsumScore};"
+          }
+          missing = []
+          for old, new in replacements.items():
+            if old not in s:
+              missing.append(old)
+            s = s.replace(old, new)
+          if missing:
+            raise SystemExit('Expected dashboard patterns missing: ' + repr(missing))
+          p.write_text(s)
+      - name: Commit dashboard patch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --cached --check
+          git commit -m 'Align V2 dashboard with multi-platform Business Blueprints'
+          git push origin HEAD:issue-67-business-blueprints-multiplatform
