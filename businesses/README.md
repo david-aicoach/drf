@@ -4,8 +4,8 @@
 
 Every parent offer has:
 
-- `README.md` — commercial truth: customer, pain, outcome, delivery shape, business model, stage and next action;
-- `RESEARCH.md` — opportunity-local research: evidence, economics, competition, risks, unknowns and validation test.
+- `README.md` — founder-facing commercial truth: customer, money model, proof, capital, return, gate and next action;
+- `RESEARCH.md` — opportunity underwriting: evidence, backtest, economics, competition, risks, unknowns and validation test.
 
 Shared evidence may remain under `research/`, but each offer folder must surface the relevant conclusions.
 
@@ -15,12 +15,17 @@ Canonical deployment model:
 
 Do not define a business primarily by a vendor unless the vendor itself is the product. For UAE service businesses, WhatsApp is the default first-class customer channel unless niche evidence says otherwise.
 
-Canonical portfolio scoring: [`OPPORTUNITIES.md`](./OPPORTUNITIES.md).  
-Canonical niche selection: [`NICHES.md`](./NICHES.md).
+## Read the right score
 
-## Offer directory — latest targeted update 30 August 2026
+- **Current investment and migration register:** [`INVESTMENT-READINESS.md`](./INVESTMENT-READINESS.md)
+- **Legacy structural opportunity ranking:** [`OPPORTUNITIES.md`](./OPPORTUNITIES.md)
+- **Niche selection:** [`NICHES.md`](./NICHES.md)
 
-| Rank | Parent opportunity | Score | Stage | Best validated niche | Folder |
+> **The scores below are legacy v1.5 structural screens. They are not investor-readiness ratings. Until an opportunity is rebuilt through RBF-7, its Revenue Blueprint Score, Proof Level, Investment Gate and Return Profile are pending.**
+
+## Legacy offer directory — latest targeted update 30 August 2026
+
+| Rank | Parent opportunity | Legacy structural score | Stage | Best validated niche | Folder |
 |---:|---|---:|---|---|---|
 | **1** | **WhatsApp + CRM Revenue Core** | **95** | Candidate | HVAC/AC service contractors (92/100) | [`whatsapp-crm-revenue-core/`](./whatsapp-crm-revenue-core/) |
 | **2** | **Revenue Recovery & Reactivation Engine** | **94** | Candidate | HVAC maintenance contractors (91/100) | [`revenue-recovery-reactivation-engine/`](./revenue-recovery-reactivation-engine/) |
@@ -51,20 +56,23 @@ Canonical niche selection: [`NICHES.md`](./NICHES.md).
 | **27** | **AI-First Marketplace Directory** | **72** | Researching | Not yet canonically scored | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
 | **28** | **AI Website Template & Launch Kit Factory** | **71** | Candidate | Not yet canonically scored | [`ai-website-template-launch-kit-factory/`](./ai-website-template-launch-kit-factory/) |
 
-### Portfolio rule
+### Legacy portfolio rule
 
-Opportunity Score and Niche Attractiveness are deliberately separate. A high-scoring parent offer does not enter the primary sales lane until DRF has selected an exact market or defined a bounded market test. Niche research may correct parent assumptions, but its numerical score is not mechanically added to the parent score.
+The old Opportunity Score and Niche Attractiveness Score remain separate historical screens. They may guide rebuild order, but no capital or investor-readiness conclusion may be based on these scores alone.
 
-### Current top commercial cluster
+### Current rebuild priority
 
-1. WhatsApp + CRM Revenue Core — **95**
-2. Revenue Recovery & Reactivation — **94**
-3. AI Voice Receptionist — **94**
-4. Missed Lead Conversion — **93**
-5. Instant Quote / Quote-to-Cash — **91**
+Wave 1 starts with:
 
-The near-term UAE service strategy is to sell one measurable outcome into a strong niche, use the minimum viable system of record/delivery stack, measure commercial value, then add modules only when account data proves another leakage point.
+1. Whop Business Blueprints;
+2. WhatsApp + CRM Revenue Core;
+3. Revenue Recovery & Reactivation;
+4. AI Voice Receptionist;
+5. Missed Lead Conversion;
+6. Instant Quote / Quote-to-Cash;
+7. Assessment-as-a-Service;
+8. Partner-Delivered Recruitment.
 
-Whop Business Blueprints is now **82/100 and rank #19**, reflecting stronger evidence for recurring downstream economics and early adoption. It remains a distribution multiplier for proven DRF systems, not a replacement for the core businesses that create the proof.
+See [`INVESTMENT-READINESS.md`](./INVESTMENT-READINESS.md) for the complete migration register, current gates and capital controls.
 
 Add campaign, operations, finance or delivery subfolders only when real work exists.

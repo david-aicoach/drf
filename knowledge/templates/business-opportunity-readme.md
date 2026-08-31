@@ -1,146 +1,138 @@
-# Business Opportunity README — <Opportunity Name>
+# Business Opportunity — <Opportunity Name>
 
-> **Purpose:** This is the founder-facing summary for a DRF business opportunity. It must explain the business and the money model in under 20 seconds. Detailed research belongs in `RESEARCH.md`.
+> **Purpose:** Founder-facing summary. Explain the business, money, proof, required investment and allowed decision in under 20 seconds. Detailed evidence belongs in `RESEARCH.md`.
 
-**Stage:** <Researching / Candidate / Testing / Live / Rejected>  
-**Opportunity score:** <0-100>/100  
-**MRR quality:** <0-10>/10  
-**AI autonomy:** <0-100>/100  
-**Evidence confidence:** <0-100>%  
-**Research completeness:** <0-100>%  
-**Execution velocity:** <0-100>/100  
-**Execution priority:** <0-100>/100  
-**Updated:** <YYYY-MM-DD>  
-**Issue:** #<number>
+**Updated:** <date>  
+**Issue:** #<number>  
+**Business model:** <Digital Product / SaaS / Marketplace / Service / AI Outcome / Hybrid>
+
+> **Revenue Blueprint Score: __/100 · Proof: P_ · Gate: ______ · Capital unlocked: $_____ · Investor-ready: Yes/No**
 
 ## Business summary — read this first
 
-**One sentence:** <What is the business, who buys it, and why do they pay?>
+**One sentence:** <What we sell + who pays + why they pay.>
 
-### What we sell
+### Money model
 
-<Plain-English description of the product/service/outcome. Do not lead with vendor or technical terminology.>
-
-### Who pays us
-
-<Exact buyer / decision-maker / payer.>
-
-### Revenue streams
-
-| # | Revenue stream | Who pays | What they pay for | Price / calculation basis | When we get paid | Type | Core or optional | Evidence status |
-|---|---|---|---|---|---|---|---|---|
-| 1 | <e.g. Upfront sale> | <payer> | <offer> | <AED/$/percentage/basis> | <checkout / invoice / monthly / usage> | <sale / recurring fee / royalty / commission / usage> | Core | <Verified / Estimated / Missing> |
-| 2 | <...> | | | | | | | |
-| 3 | <...> | | | | | | | |
-
-### Money flow
+| # | Revenue stream | Who pays | Price / calculation basis | When paid | Type | Core or optional | Evidence class |
+|---|---|---|---|---|---|---|---|
+| 1 | | | | | Upfront sale / recurring fee / royalty / commission / usage / licence | | |
+| 2 | | | | | | | |
+| 3 | | | | | | | |
 
 ```text
-<Customer pays / activity happens>
-→ <platform/payment costs if relevant>
-→ <our gross revenue>
-→ <direct delivery costs>
-→ <contribution margin>
+payer/activity
+→ gross revenue or payment basis
+→ direct fees and delivery cost
+→ CAC
+→ contribution
+→ fixed costs
+→ net cash
 ```
 
-If there are multiple revenue streams, show each one separately. Do not hide them under words such as “economics”, “monetisation layer” or “creator share”.
+### Investment and return
 
-## Customer problem
+| Capital now | Founder hours | Time to first cash | Base Month-12 net cash | Base Year-1 ROI | Maximum downside | Payback month |
+|---:|---:|---|---:|---:|---:|---|
+| | | | | | | |
 
-**Customer:** <specific ICP>  
-**Pain:** <expensive/urgent problem>  
-**Trigger:** <when the problem becomes acute>  
-**Current alternative:** <what they do today>  
-**Why they would switch/pay:** <clear commercial reason>
+**Owner monthly-income target:** <amount>  
+**Expected employment-replacement month:** <month / not in Year 1>
 
-## Outcome sold
+## Customer and value
 
-<Measurable business result: revenue recovered, quotes produced, bookings created, costs reduced, time saved, risk reduced, etc.>
+**Buyer/payer:** <exact ICP/role>  
+**Pain:** <expensive or urgent problem>  
+**Current alternative:** <what happens now>  
+**Outcome sold:** <measurable result>  
+**Customer ROI:** <value created/protected ÷ customer cost>  
+**Why now:** <timing>
 
-## Offer
+## Offer and sales
 
-**Core offer:** <what is included>  
-**Price hypothesis:** <price/range/model>  
-**Guarantee / commitment:** <if any; otherwise none>  
-**Optional upsells:** <clearly separate from core revenue>
-
-## Why now
-
-- <market/timing reason>
-- <technology/distribution reason>
-- <customer-behaviour reason>
-
-## Go-to-market
-
+**Core offer:** <what they receive>  
+**Price:** <amount/model>  
 **Beachhead niche:** <specific niche>  
-**Primary acquisition channel:** <warm network / outbound / SEO / marketplace / paid / partner / etc.>  
-**Sales motion:** <self-serve / transactional / demo / consultative / enterprise>  
-**Expected sales cycle:** <range>  
-**First 10 customers:** <how they will realistically be reached>
+**First 10 customers:** <exact route>  
+**Primary channel:** <channel>  
+**Paid acquisition:** <test budget, target CAC and break-even ROAS>  
+**Optional upsells:** <separate from core>
 
-## Delivery
+## Unit economics
 
-**From sale to first value:** <simple sequence>  
-**System of record:** <CRM/platform>  
-**Customer channel:** <WhatsApp/email/voice/web/etc.>  
-**Deterministic automation:** <what should be deterministic>  
-**Agent/AI layer:** <where judgement is required>  
-**Mandatory human work:** <minutes/tasks per customer or transaction>
+| Metric | Downside | Base | Upside | Actual/evidence |
+|---|---:|---:|---:|---|
+| Average sale / ARPU | | | | |
+| Gross margin | | | | |
+| Contribution after CAC | | | | |
+| CAC payback | | | | |
+| Retention/repeat/churn | | | | |
+| Founder hours/customer/month | | | | |
+| Cost per successful outcome | | | | |
 
-## Unit economics snapshot
+## Proof
 
-| Metric | Current estimate | Evidence status |
-|---|---:|---|
-| Average sale / ARPU | <value> | <status> |
-| Gross margin | <%> | |
-| Contribution margin | <%> | |
-| CAC | <value> | |
-| Payback period | <time> | |
-| Monthly churn / retention | <value> | |
-| LTV | <value> | |
-| Human delivery cost | <value> | |
-| AI/API/software cost | <value> | |
+**Current Proof Level:** <P0-P6>  
+**What is actually proven:** <cash/behaviour/outcome>  
+**What is not yet proven:** <next uncertainty>  
+**Evidence period/sample:** <dates and sample size>
 
-## Time to money
+| Stage | Result | Evidence link |
+|---|---|---|
+| Underwrite | | |
+| Backtest | | |
+| Forward test | | |
+| Live pilot | | |
+| Repeatability | | |
+| Scale | | |
 
-- **Time to Build / Sellable MVP:** <range>
-- **Time to Market:** <range>
-- **Time to First Revenue:** <range>
-- **Time to Deliver / Onboard One Client:** <range>
+## Three capital tiers
 
-## What makes this attractive
+| Tier | New capital | Cumulative | What it buys | Proof milestone |
+|---|---:|---:|---|---|
+| Validate | $3,000 | $3,000 | | P3–P4 |
+| Launch | +$7,000 | $10,000 | | P5 |
+| Scale | +$20,000 | $30,000 | | P6 |
 
-- <commercial reason>
-- <recurring revenue reason>
-- <speed/margin reason>
-- <distribution/asset reason>
+Only the current gate's capital is authorised.
+
+## Delivery and leverage
+
+**Sale to first value:** <simple sequence>  
+**Mandatory human work:** <hours/minutes>  
+**Deterministic automation:** <steps>  
+**AI/agent work:** <judgement>  
+**First capacity constraint:** <constraint>  
+**Founder dependency:** <low/medium/high and why>
+
+## What makes it durable
+
+**Retention/repeat reason:** <continuing value>  
+**Moat today:** <none/early/strong>  
+**Moat that can compound:** <data/workflow/brand/distribution/network/switching cost>  
+**Concentration risk:** <customer/channel/platform/vendor>
 
 ## What can kill it
 
-- <critical risk>
-- <critical assumption>
-- <platform/regulatory dependency>
+1. <fatal risk and threshold>
+2. <fatal risk and threshold>
+3. <fatal risk and threshold>
 
-## Evidence gaps
+## Decision and next gate
 
-- <unknown that can materially change the decision>
-- <unknown>
+**Decision:** <GO / KILL / HOLD / RECYCLE>  
+**Investment Gate:** <Reject / Research / Test / Pilot / Fund / Scale / Blueprint Certified>  
+**Capital released now:** <amount>  
+**Founder-time limit:** <hours>  
+**Next evidence milestone:** <exact cash/behaviour/result>  
+**Deadline:** <date>  
+**Next capital unlock:** <threshold>
 
-## Next action
+## Files
 
-**One action only:** <the next concrete action that creates commercial evidence>
+- [`RESEARCH.md`](./RESEARCH.md)
+- `financial-model.xlsx`
+- `investment-memo.md`
+- `blueprint.md`
 
-## Canonical files
-
-- `RESEARCH.md` — full business opportunity research
-- `research/` — detailed evidence and dated updates
-- relevant niche research
-- `businesses/OPPORTUNITIES.md` — portfolio score/rank
-
-## Founder test
-
-Before committing this README, answer:
-
-> **Can a founder understand in 20 seconds what we sell, who pays us, how much/on what basis, which revenue is upfront versus recurring, and what we do next?**
-
-If not, rewrite the summary.
+Create only the files required by the current stage.

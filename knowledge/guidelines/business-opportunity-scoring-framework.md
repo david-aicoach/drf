@@ -1,6 +1,6 @@
 # DRF Business Opportunity Scoring Framework
 
-**Status:** Canonical guideline  
+**Status:** Legacy structural screening framework  
 **Version:** 1.5  
 **Date:** 29 August 2026  
 **Original governing issue:** #11  
@@ -10,13 +10,15 @@
 **Outcome-first architecture revision issue:** #33  
 **AI-delivery-economics revision issue:** #40
 
+> **Investor-readiness warning:** This framework scores structural opportunity attractiveness only. It must not be used alone to call a business proven, investor-ready, fundable or Blueprint-certified. Current business decisions require the Revenue Blueprint Score, P0–P6 Proof Level, Investment Gate and Return Profile from `revenue-blueprint-scoring-and-investment-readiness.md` and the RBF-7 workflow.
+
 ## Purpose
 
 Use this framework to compare DRF business opportunities consistently, expose missing research, and prioritise businesses that can produce durable recurring revenue with low proportional human labour **and can reach the market without unnecessary build resistance**.
 
 The framework deliberately separates commercial attractiveness from execution velocity. A strategically excellent business can therefore remain highly rated while being sequenced behind a nearly-as-good opportunity that can be sold next week.
 
-**This framework selects the business/outcome vehicle. It does not by itself select the market or lock the delivery vendor.** Once an opportunity is attractive, apply the separate canonical `niche-attractiveness-scoring-framework.md`, then choose the delivery architecture using the canonical model:
+**This framework selects the business/outcome vehicle. It does not by itself select the market, prove the business, authorise investment or lock the delivery vendor.** Once an opportunity is attractive, apply the separate canonical `niche-attractiveness-scoring-framework.md`, then use the Revenue Blueprint Factory for underwriting, proof and investment decisions.
 
 `Outcome × Niche × Customer Channel × System of Record × Agent Layer`
 
@@ -53,11 +55,13 @@ Score every factor from **0 to 10** and multiply by its weight. Weights sum to 1
 
 | Score | Interpretation |
 |---:|---|
-| 85–100 | Exceptional — investigate/act quickly if evidence is sufficient |
-| 75–84 | Strong opportunity |
-| 65–74 | Worth a bounded test |
+| 85–100 | Structurally exceptional — prioritise underwriting if evidence is sufficient |
+| 75–84 | Structurally strong opportunity |
+| 65–74 | Worth a bounded underwriting/test review |
 | 50–64 | Conditional |
 | <50 | Low priority unless strategic reasons override |
+
+These bands do not authorise capital.
 
 ### MRR guide
 
@@ -97,13 +101,13 @@ Evidence Confidence answers: **How much should we trust the current scoring inpu
 
 | Confidence | Meaning |
 |---:|---|
-| 80–100% | Strong — current first-party or corroborated evidence plus operating evidence where relevant |
-| 60–79% | Good enough for a small controlled test |
+| 80–100% | Strong desk/operating evidence for the structural input; not automatically live proof |
+| 60–79% | Good enough for a small controlled underwriting/test |
 | 40–59% | Material assumptions remain |
 | 20–39% | Mostly hypothesis / indirect evidence |
 | 0–19% | Speculative idea |
 
-Evidence labels: **Verified**, **Estimated**, **Missing**. Default capital gate: at least **60% confidence before material capital deployment**.
+Evidence labels: **Verified**, **Estimated**, **Missing**. Default capital gate is now governed by the separate Proof Level and Investment Gate standard, not Evidence Confidence alone.
 
 ## 3. Research Completeness — independent 0–100%
 
@@ -111,7 +115,7 @@ Use the 15 Opportunity Score factors as the minimum research checklist. Complete
 
 `Research Completeness = completed-equivalent factors / 15 × 100`
 
-Research Completeness measures investigation, not attractiveness.
+Research Completeness measures investigation, not attractiveness, proof or investor readiness.
 
 ## 4. AI Autonomy Score — derived 0–100
 
@@ -123,7 +127,7 @@ Use AI Buildability, AI Marketability, AI Deliverability and Low Human Dependenc
 
 Execution Velocity answers: **How quickly and with how little resistance can DRF turn this opportunity into a repeatable sale and successful client delivery using assets already available?**
 
-This is deliberately independent of Opportunity Score. It prevents a slow platform or marketplace build from displacing an almost equally attractive offer that can be packaged and sold immediately.
+This is deliberately independent of Opportunity Score. It prevents a slow platform or marketplace build from displacing an almost equally attractive opportunity that can be sold next week.
 
 Score each dimension 0–10. Higher is always better/faster/easier.
 
@@ -167,11 +171,13 @@ Use ranges, not false precision: `1–3 days`, `1–2 weeks`, `1–3 months`, et
 
 ## 7. Combined Execution Priority Score — derived 0–100
 
-For sequencing the portfolio, use:
+For historical portfolio sequencing, use:
 
 `Execution Priority Score = Opportunity Score × 0.70 + Execution Velocity Score × 0.30`
 
 Why 70/30: DRF should not choose a weak business merely because it is easy to launch, but execution speed is material enough to reorder otherwise strong opportunities.
+
+This remains a legacy sequencing indicator. Capital decisions require RBF-7 Proof Level, Investment Gate and Return Profile.
 
 ### Confidence gate
 
@@ -179,9 +185,9 @@ The numerical priority score does not erase uncertainty. Any opportunity below *
 
 ### Staircase rule
 
-Use Execution Priority Score to identify the **top five staircase**, then apply founder judgement for strategic overlap:
+Use Execution Priority Score to identify the historical top five staircase, then apply founder judgement and the new RBF-7 capital gates:
 
-1. Start the highest-value, fastest-to-cash opportunity.
+1. Start the highest-value, fastest-to-cash opportunity that is authorised by its proof gate.
 2. Reuse its assets, funnels, automation and customer learning in Stair 2.
 3. Add the next offer only when Stair 1 has reached a defined launch/traction checkpoint.
 4. Slow-burn asset businesses may run in a bounded background lane but must not consume the primary revenue lane.
@@ -232,18 +238,18 @@ If evidence does not exist, mark it **Missing / Needs more research** rather tha
 
 ## 9. Portfolio decision rules
 
-- High opportunity + high confidence + high velocity: **primary execution lane**.
-- High opportunity + low confidence: **validate before meaningful spend**.
-- High opportunity + low velocity: **background/incubation lane**.
-- High MRR + high AI autonomy: particularly attractive.
+- High structural opportunity + high confidence + high velocity: prioritise RBF-7 underwriting.
+- High opportunity + low confidence: research before market spend.
+- High opportunity + low velocity: background/incubation lane.
+- High MRR + high AI autonomy: structurally attractive, still requires proof.
 - High MRR + heavy human delivery: investigate disguised managed-service burden.
 - Existing warm assets/channels come before paid acquisition unless evidence says otherwise.
 - Prefer **SELL / USE / INTEGRATE / AUTOMATE / BUILD**, in that order when practical.
-- Do not treat a vendor-specific limitation as proof the business outcome is weak if a practical alternate channel/system/agent architecture exists.
+- Do not treat a vendor-specific limitation as proof the business outcome is weak if a practical alternate architecture exists.
 - Do not reward a fashionable agent if the niche's customer channel, CRM or lifecycle requirements are missing.
 - For high-frequency recurring work, prefer native/deterministic execution over browser/computer-use where both can produce the same outcome reliably.
 
-Tie-break similar opportunities by: (1) higher MRR, (2) higher Execution Velocity, (3) higher AI Autonomy, (4) faster first revenue, (5) lower startup capital.
+Tie-break similar structural opportunities by: (1) higher MRR, (2) higher Execution Velocity, (3) higher AI Autonomy, (4) faster first revenue, (5) lower startup capital.
 
 ## 10. Delivery architecture gate
 
@@ -290,35 +296,38 @@ A high Opportunity Score never justifies shotgun distribution across generic ind
 
 ## 12. Canonical implementation
 
-Portfolio: `businesses/OPPORTUNITIES.md`
+Legacy portfolio: `businesses/OPPORTUNITIES.md`  
+Current investment-readiness register: `businesses/INVESTMENT-READINESS.md`
 
-Every active opportunity must show at minimum:
+For active opportunity rebuilds use:
 
-- Opportunity Score /100
-- MRR /10
-- AI Autonomy /100
-- Evidence Confidence %
-- Research Completeness %
-- Execution Velocity /100
-- Execution Priority /100
-- Time to Build
-- Time to Market
-- Time to First Revenue
-- Time to Deliver / Onboard One Client
-- all 15 Opportunity Score factors
-- next action
-- canonical detail/research link
+- `workflows/revenue-blueprint-factory.md`;
+- `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`;
+- `knowledge/templates/business-opportunity-research.md`;
+- `knowledge/templates/revenue-blueprint-financial-model.xlsx`.
 
-Every active launch candidate should additionally record a delivery-architecture hypothesis covering:
+The legacy portfolio may retain:
 
-- measurable outcome;
-- beachhead niche;
-- primary customer channel;
-- system of record;
-- deterministic automation layer;
-- agent layer where relevant;
-- architecture cost/support risks.
+- Opportunity Score /100;
+- MRR /10;
+- AI Autonomy /100;
+- Evidence Confidence %;
+- Research Completeness %;
+- Execution Velocity /100;
+- Execution Priority /100;
+- historical time estimates and factor scores.
 
-For verticalised offers, also maintain a separate ranked niche table using `niche-attractiveness-scoring-framework.md` before selecting the market.
+A current investment case must additionally show:
+
+- Revenue Blueprint Score /100;
+- Proof Level P0–P6;
+- Investment Gate;
+- capital unlocked;
+- founder hours;
+- downside/base/upside monthly Return Profile;
+- monthly and annual ROI;
+- maximum loss/runway;
+- investor-ready yes/no;
+- next proof milestone.
 
 Markdown remains canonical. CSV/XLSX may support analytics but must not silently become conflicting truth.

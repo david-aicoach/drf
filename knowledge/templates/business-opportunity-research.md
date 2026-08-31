@@ -1,1197 +1,462 @@
 # DRF Business Opportunity Research Template
 
 **Status:** Canonical template  
-**Purpose:** Use for every new DRF business opportunity and every full rebuild of an existing opportunity dossier.  
-**Governing principle:** **DRF is the Revenue Factory. Speak money first. Explain technology second.**
+**Version:** 2.0  
+**Date:** 31 August 2026  
+**Governing issue:** #60  
+**Workflow:** `workflows/revenue-blueprint-factory.md`  
+**Scoring standard:** `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`
+
+> **DRF is the Revenue Factory. Speak money first. A score without proof, return and a gate is not an investment case.**
+
+Use this template for every new digital business opportunity and every rebuild of an existing dossier.
 
 ---
 
-## 0. How to use this template
-
-This template is mandatory for substantial business-opportunity research.
-
-Use it when:
-
-- researching a new business opportunity;
-- creating a new folder under `businesses/`;
-- rebuilding an existing opportunity from zero;
-- materially rescoring an opportunity;
-- comparing a new platform/business model with existing DRF offers.
-
-### Founder-first rule
-
-The first page must answer these questions immediately:
-
-1. **What are we selling?**
-2. **Who pays us?**
-3. **How much do they pay, or what is payment based on?**
-4. **How do we get paid?**
-5. **Which income is upfront, recurring, royalty, commission, usage revenue, licence revenue or another clearly named type?**
-6. **Which revenue streams are core and which are optional upsells?**
-7. **What does it cost us to acquire and deliver?**
-8. **What is left as contribution margin?**
-
-Do not make the founder translate platform terms such as “creator economics”, “monetisation layer”, “downstream economics”, “platform share” or “implementation layer”. Use plain sales and revenue language first. Official programme terminology can appear later in the evidence section.
-
-### Rebuild-from-zero rule
-
-When revising an old opportunity dossier:
-
-- start from a blank copy of this template;
-- do **not** inherit the old score, ranking, pricing model, revenue model or conclusion;
-- treat old research only as a list of leads and possible evidence sources;
-- re-open and re-verify material sources;
-- rebuild the commercial model first;
-- then rebuild market, delivery, unit economics, evidence and score;
-- compare against the old dossier only after the new research is complete.
-
-The goal is not to “refresh” old prose. The goal is to **re-underwrite the business**.
-
-### Evidence labels
-
-Use these consistently:
-
-- **Verified — first-party:** official vendor/platform/company/government documentation, filings, pricing pages, product docs or direct operating evidence.
-- **Verified — independent:** credible third-party reporting, audited/industry data or multiple independent sources.
-- **Self-reported:** founder/operator/customer/community claim not independently audited.
-- **Estimated:** DRF calculation or assumption based on stated inputs.
-- **Missing:** important fact not yet known.
-- **DRF judgement:** reasoned commercial conclusion based on the evidence.
-
-Never make an unverified number sound contractual or typical.
-
----
-
-# PART A — FOUNDER COMMERCIAL SUMMARY
-
-## 1. Executive business summary — read this first
+# 1. Founder investment summary — read this first
 
 **Opportunity:** <name>  
-**Date:** <YYYY-MM-DD>  
+**Date:** <date>  
 **Issue:** #<number>  
-**Stage:** <Researching / Candidate / Testing / Live / Rejected>
+**Business model card:** <Digital Product / SaaS / Marketplace / Service / AI Outcome / Hybrid>
 
-### The business in one sentence
+> **Revenue Blueprint Score: __/100 · Proof: P_ · Gate: ______ · Capital unlocked: $_____ · Investor-ready: Yes/No**
 
-<What we sell + who buys + why they pay.>
+## The business in one sentence
 
-### What we sell
+<What we sell + who pays + why they pay.>
 
-<Describe the actual product/service/business outcome in plain language.>
+## Decision
 
-### Who pays us
+**GO / KILL / HOLD / RECYCLE:** <decision and one-sentence reason>
 
-**Buyer:** <company/person/role>  
-**Decision-maker:** <role>  
-**Economic buyer/payer:** <role/entity>  
+## Return headline
+
+| Capital now | Founder hours | Time to first cash | Base Month-12 net cash | Base Year-1 ROI | Maximum downside | Payback month |
+|---:|---:|---|---:|---:|---:|---|
+| | | | | | | |
+
+Do not leave these hidden in the detail. Mark unknowns **Missing**.
+
+---
+
+# 2. Money model
+
+## What we sell
+
+<Actual product, service or measurable outcome.>
+
+## Who pays
+
+**Buyer:** <who chooses>  
+**Payer:** <who sends the money>  
 **User:** <if different>
 
-### Why they pay
+## Revenue streams
 
-<Pain, economic value, avoided loss, saved labour, faster revenue, lower risk, convenience or other measurable value.>
-
----
-
-## 2. Revenue streams — the money model
-
-List every meaningful revenue stream separately.
-
-| # | Revenue stream | Who pays us | What they pay for | Price / percentage / calculation basis | When we get paid | Upfront or recurring | Core or optional | Evidence status |
+| # | Revenue stream | Who pays | What they pay for | Price / calculation basis | Payment timing | Type | Core or optional | Evidence class |
 |---|---|---|---|---|---|---|---|---|
-| 1 | <name> | <payer> | <thing/outcome> | <AED/$/%/usage basis> | <checkout/invoice/monthly/etc.> | <upfront/recurring> | <core/optional> | <status> |
+| 1 | | | | | | Upfront sale / recurring fee / royalty / commission / usage / licence | | |
 | 2 | | | | | | | | |
 | 3 | | | | | | | | |
-| 4 | | | | | | | | |
 
-### Revenue-stream naming rule
+Use plain labels. Do not hide revenue behind “economics”, “monetisation layer” or “creator share”.
 
-Use business-owner language:
+## Cash flow
 
-- **Sale** — customer pays an upfront purchase price.
-- **Subscription / recurring fee** — customer pays repeatedly for continuing value/access.
-- **Retainer** — recurring service payment.
-- **Usage revenue** — payment based on transactions, seats, calls, messages, jobs, API usage or another consumption unit.
-- **Royalty** — payment tied to another party using our IP/product/system or generating qualifying activity with it.
-- **Commission** — payment for introducing, referring, selling or facilitating business.
-- **Licence fee** — payment for rights to use software/IP.
-- **Advertising revenue** — payment for audience/distribution exposure.
-- **Marketplace fee** — share of transactions facilitated through a marketplace.
-- **Optional upsell** — additional non-core product/service.
-
-If the platform uses a different label, write the plain-English label first and the official programme name second.
-
-### Money flow
-
-Show the real cash path.
+Draw each materially different stream:
 
 ```text
-CUSTOMER / BUSINESS ACTIVITY
-→ gross transaction or invoice value
-→ payment/platform/marketplace fees
-→ our gross revenue or commission/royalty
-→ direct fulfilment/software/AI/provider costs
-→ mandatory human delivery/support cost
-→ contribution margin
+payer / qualifying activity
+→ gross sale or calculation basis
+→ refunds, payment and platform fees
+→ our revenue
+→ direct delivery, support and provider costs
+→ CAC
+→ contribution
+→ fixed costs
+→ net cash
 ```
 
-For multi-sided models, draw each stream separately.
-
-### What the revenue model is NOT
-
-Write any likely misunderstanding explicitly.
-
-Example:
+## Likely misunderstanding
 
 ```text
-Do NOT assume <incorrect interpretation>.
-The actual model is <correct interpretation>.
+DO NOT ASSUME: <wrong interpretation>
+ACTUAL MODEL: <correct interpretation>
 ```
 
 ---
 
-## 3. Pricing and commercial terms
+# 3. Customer, pain and outcome
 
-### Current pricing evidence
+**Beachhead niche:** <vertical + sub-niche + geography + firm size + trigger>  
+**Pain:** <financial/urgent pain>  
+**Current alternative:** <what happens now>  
+**Why they change:** <material advantage>  
+**Outcome sold:** <measurable business result>  
+**Time to first value:** <range>  
+**Customer ROI:** <value created/protected ÷ customer cost>
 
-| Offer / competitor / programme | Price | Billing type | Contract term | Setup fee | Usage/overage | Refund/cancellation | Source | Status |
-|---|---:|---|---|---:|---|---|---|---|
-| | | | | | | | | |
-
-### DRF pricing hypothesis
-
-**Core price:** <value/range>  
-**Billing model:** <one-time / monthly / annual / usage / hybrid>  
-**Minimum commitment:** <if any>  
-**Setup fee:** <if any>  
-**Discount policy:** <if any>  
-**Optional upsells:** <list separately>  
-**Reason customer will accept this price:** <evidence>
-
-Do not use “premium pricing” or “value pricing” without an actual price/range and evidence.
-
----
-
-## 4. Unit economics — what remains after the sale
-
-Build a simple per-customer or per-transaction model.
-
-| Metric | Base case | Low case | High case | Evidence status |
-|---|---:|---:|---:|---|
-| Gross sale / ARPU / GMV basis | | | | |
-| Payment processing | | | | |
-| Platform/marketplace fee | | | | |
-| Affiliate/referral cost | | | | |
-| Messaging/telephony/provider cost | | | | |
-| AI/API/compute cost | | | | |
-| Software cost allocated per customer | | | | |
-| Mandatory human fulfilment cost | | | | |
-| Support/recovery/refund cost | | | | |
-| Other direct COGS | | | | |
-| **Gross margin** | | | | |
-| **Contribution margin before CAC** | | | | |
-| CAC | | | | |
-| **Contribution after CAC** | | | | |
-| Payback period | | | | |
-| Monthly retention/churn | | | | |
-| LTV | | | | |
-| LTV:CAC | | | | |
-
-### Required formulas
-
-```text
-Gross margin = revenue - direct product/service COGS
-Contribution margin = gross margin - variable delivery/support costs
-Contribution after CAC = contribution margin - acquisition cost
-LTV = contribution per period × expected retained periods
-```
-
-Use ranges when evidence is weak. Mark unknowns as **Missing** rather than filling cells with invented precision.
-
----
-
-# PART B — CUSTOMER, PROBLEM AND OFFER
-
-## 5. Customer definition
-
-### Beachhead customer
-
-**Market:** <broad market>  
-**Vertical:** <vertical>  
-**Sub-niche:** <narrow niche>  
-**Geography:** <country/city>  
-**Company size:** <revenue/employees/locations>  
-**Buyer role:** <role>  
-**Trigger:** <event/problem that creates urgency>
-
-Use the separate niche framework once the parent opportunity passes screening:
-
-`knowledge/guidelines/niche-attractiveness-scoring-framework.md`
-
-### Customer job-to-be-done
-
-> When <situation>, the customer wants to <job>, so they can <measurable result>.
-
-### Pain
-
-- **Financial pain:** <lost revenue/cost/risk>
-- **Operational pain:** <friction/time/errors>
-- **Emotional/reputational pain:** <if commercially relevant>
-- **Urgency:** <why now>
-- **Frequency:** <how often>
-
-### Current alternatives
-
-- <manual process>
-- <incumbent software>
-- <agency/employee>
-- <do nothing>
-
-### Why change
-
-<What must be materially better than the current alternative?>
-
----
-
-## 6. Outcome sold
-
-Do not define the business by the vendor or AI model.
-
-**Measurable outcome:** <e.g. recovered revenue, faster quotes, more bookings, lower leakage, lower labour cost, shorter hiring cycle>.
-
-### Outcome proof
-
-| Metric | Current baseline | Target | Measurement method | Evidence status |
+| Outcome metric | Current baseline | Target | Measurement | Evidence class |
 |---|---:|---:|---|---|
 | | | | | |
 
-### Value equation
-
-```text
-Customer value created/protected
-- switching/onboarding cost
-- recurring fee
-- customer labour/time required
-= net perceived economic value
-```
-
 ---
 
-## 7. Product / service offer
+# 4. Demand, market and competition
 
-### Core offer
+## Demand evidence
 
-<Exactly what the buyer receives.>
+| Signal | Volume/result | What it proves | What it does not prove | Source/date | Evidence class |
+|---|---:|---|---|---|---|
+| Search demand | | | | | |
+| Existing spend/competitor sales | | | | | |
+| Interviews/replies/demos | | | | | |
+| Deposits/preorders/payments | | | | | |
+| Repeat/retention | | | | | |
 
-### Included
+## Market
 
-- <component>
-- <component>
+**Relevant first-100-customer market:** <size and calculation>  
+**Market growth:** <current evidence>  
+**Why now:** <timing>  
+**What closes the window:** <risk>
 
-### Excluded
+Avoid oversized global TAM that does not affect the first 100 customers.
 
-- <important boundary>
+## Competition
 
-### Optional upsells
-
-- <upsell>
-
-### Guarantee / service level
-
-<Only if evidence and delivery controls support it. Otherwise state none.>
-
-### Why this offer is easier to buy
-
-<Explain reduction of risk, time, complexity or uncertainty.>
-
----
-
-# PART C — MARKET AND COMPETITION
-
-## 8. Market size now
-
-Quantify the market relevant to the business model.
-
-### TAM / SAM / SOM
-
-| Layer | Definition | Customers / units | Annual spend basis | Estimated value | Evidence |
-|---|---|---:|---:|---:|---|
-| TAM | | | | | |
-| SAM | | | | | |
-| Initial SOM | | | | | |
-
-Avoid huge global TAM numbers that do not affect the first 100 customers.
-
-### Market reality
-
-- number of target companies/customers;
-- transaction volume;
-- current category spend;
-- software/service penetration;
-- platform traffic where marketplace-dependent;
-- search demand where search-dependent.
-
----
-
-## 9. Market growth
-
-Capture actual growth drivers:
-
-- category growth;
-- customer count growth;
-- regulation/platform shift;
-- technology adoption;
-- behaviour change;
-- search trend;
-- transaction growth.
-
-Separate **market growth** from **vendor hype**.
-
----
-
-## 10. Timing / first-mover window
-
-Answer:
-
-- Why is this possible now?
-- Why was it harder 12–24 months ago?
-- Is customer demand already real?
-- Is it early enough for distribution/SEO/brand advantage?
-- Is it too early for buyers to understand/pay?
-- What could close the window?
-
----
-
-## 11. Competitive landscape
-
-### Direct competitors
-
-| Competitor | Target customer | Offer | Price | Revenue model | Distribution | Strength | Weakness / gap | Source |
+| Competitor/substitute | Buyer | Offer | Price | Revenue model | Distribution | Why we win | Why we lose | Source |
 |---|---|---|---:|---|---|---|---|---|
 | | | | | | | | | |
 
-### Indirect competitors / substitutes
-
-- employees;
-- agencies;
-- spreadsheets/manual work;
-- incumbent software;
-- free/open-source tools;
-- AI generalists;
-- doing nothing.
-
-### Competitive question
-
-> **Why would a real buyer move money from the current alternative to us?**
-
-If this cannot be answered, do more research before scoring high willingness-to-pay or moat.
-
----
-
-# PART D — SALES AND DISTRIBUTION
-
-## 12. Go-to-market model
-
-### Primary channel
-
-<The fastest credible path to qualified buyers.>
-
-Examples:
-
-- existing client base;
-- founder network;
-- LinkedIn outbound;
-- email outbound;
-- WhatsApp;
-- marketplace;
-- SEO;
-- AI-answer-engine discovery;
-- paid search/social;
-- affiliates;
-- channel partners;
-- communities/events.
-
-### First 10 customers
-
-Explain exactly where they come from.
-
-```text
-1. <channel/list/relationship>
-2. <channel/list/relationship>
-...
-```
-
-### Funnel
-
-```text
-Reach
-→ qualified lead
-→ conversation/demo/checkout
-→ proposal/checkout
-→ payment
-→ onboarding
-→ first value
-→ retention/expansion
-```
-
-### Funnel assumptions
-
-| Stage | Volume | Conversion | Evidence status |
-|---|---:|---:|---|
-| Reach | | | |
-| Leads | | | |
-| Qualified | | | |
-| Sales conversations | | | |
-| Paid customers | | | |
-| Retained at 30/90 days | | | |
-
-### Sales cycle
-
-- first contact to qualified lead: <range>
-- qualified lead to payment: <range>
-- procurement/legal/security friction: <notes>
-- decision-maker count: <number>
-
----
-
-## 13. SEO and discovery
-
-Use only where relevant.
-
-### Search discovery
-
-- high-intent keywords;
-- niche queries;
-- category terms;
-- competitor terms;
-- local intent;
-- expected search maturity.
-
-### Marketplace discovery
-
-- marketplace traffic;
-- ranking/discovery mechanics;
-- category supply;
-- reviews/social proof;
-- listing conversion.
-
-### AI discovery
-
-Assess whether AI assistants/search systems can understand and surface the offer.
-
-- public crawlable pages;
-- machine-readable product/business information;
-- structured documentation;
-- APIs/MCP/agent skills;
-- WebMCP or similar agent-web interfaces where relevant.
-
-Do not describe future standards as current distribution unless verified.
-
----
-
-## 14. Paid growth
-
-Capture:
-
-- target CPC/CPM/CPL;
-- landing-page conversion;
-- sales conversion;
-- CAC target;
-- contribution margin;
-- payback;
-- retargeting/remarketing;
-- channel constraints.
-
-Paid growth is not “possible” merely because ads exist. It requires credible positive unit economics.
-
----
-
-# PART E — DELIVERY AND OPERATING MODEL
-
-## 15. Customer journey from payment to first value
-
-Write the actual steps.
-
-```text
-Payment
-→ access/data collection
-→ setup
-→ integration/configuration
-→ first output/outcome
-→ validation
-→ ongoing operation/support
-```
-
-For each step, identify:
-
-| Step | Owner | Tool/system | Automated? | Human minutes | Failure mode | Recovery path |
-|---|---|---|---|---:|---|---|
-| | | | | | | |
-
----
-
-## 16. Delivery architecture
-
-Use the canonical model:
-
-`Outcome × Niche × Customer Channel × System of Record × Agent Layer`
-
-**Outcome:** <measurable result>  
-**Niche:** <beachhead>  
-**Customer channel:** <WhatsApp/email/voice/web/etc.>  
-**System of record:** <CRM/ERP/PMS/etc.>  
-**Deterministic automation:** <APIs/workflows/scripts/native automations>  
-**Agent layer:** <where judgement/reasoning is genuinely needed>
-
-### Architecture rules
-
-- outcome first;
-- use the customer’s real channel;
-- one canonical system of record;
-- deterministic work stays deterministic;
-- agents handle judgement/exceptions;
-- vendors/models are replaceable;
-- avoid unnecessary platform boundaries.
-
----
-
-## 17. Human dependency
-
-List all mandatory human work:
-
-- sales calls;
-- onboarding;
-- approvals;
-- data cleanup;
-- creative work;
-- quality checks;
-- customer support;
-- exception handling;
-- account management;
-- legal/compliance review.
-
-Estimate minutes/customer/month and minutes/transaction where possible.
-
-Do not call a business “AI automated” if the human recovery burden scales with volume.
-
----
-
-## 18. AI and automation economics
-
-### AI Buildability
-
-What can AI create/configure before sale?
-
-### AI Marketability
-
-What can AI repeatedly do in content, outreach, SEO, ads, follow-up and sales enablement?
-
-### AI Deliverability
-
-What can AI reliably fulfil after sale at representative production volume?
-
-### Production cost and reliability
-
-Capture:
-
-- subscription/tier;
-- usage quotas;
-- API/token/compute cost;
-- telephony/messaging cost;
-- browser/computer-use cost;
-- retries/failures;
-- human recovery minutes;
-- cost per successful outcome;
-- value per successful outcome.
-
-Preferred recurring delivery order:
-
-`native deterministic action/API → native domain AI → bounded paid reasoning → browser/computer-use agent only where no robust native path exists`
-
----
-
-## 19. Vendor and platform dependency
-
-For each material vendor/platform:
-
-| Vendor | Role | Monthly cost | Variable cost | Lock-in | API/MCP/webhook | Replacement path | Commercial risk |
-|---|---|---:|---:|---|---|---|---|
-| | | | | | | | |
-
-Check:
-
-- pricing changes;
-- access/approval risk;
-- marketplace rules;
-- rev-share/commission changes;
-- data portability;
-- account bans/termination;
-- API limits;
-- geographic restrictions;
-- dependency on one model/provider.
-
----
-
-# PART F — RECURRING REVENUE, SCALE AND MOAT
-
-## 20. Recurring revenue quality
-
-State the recurring model in plain language.
-
-**Who pays repeatedly?** <payer>  
-**Why do they keep paying?** <continuing value>  
-**What stops if they cancel?** <real ongoing dependency/value>  
-**Expected retention/churn:** <evidence>  
-**Expansion path:** <seats/locations/usage/modules/etc.>
-
-### Recurring revenue test
-
-A high MRR score requires continuing customer value. Monthly billing alone is not enough.
-
-### Revenue mix
-
-| Revenue type | % of Year-1 revenue | % of mature revenue | Evidence status |
-|---|---:|---:|---|
-| Upfront sales | | | |
-| Subscription/retainer | | | |
-| Usage revenue | | | |
-| Royalty | | | |
-| Commission | | | |
-| Optional services | | | |
-
----
-
-## 21. Scalability
-
 Answer:
 
-- What grows when revenue doubles?
-- Which costs grow linearly?
-- Which human roles become bottlenecks?
-- Which integrations/configurations are bespoke?
-- Can the same product be deployed to client #2, #10 and #100 with limited change?
-- What are the infrastructure/provider limits?
+> **Why will a real buyer move money from the present alternative to us?**
 
 ---
 
-## 22. Defensibility / moat
+# 5. Offer, pricing and sales
 
-Potential moat sources:
+## Core offer
 
-- proprietary data;
-- workflow IP;
-- operating evidence;
-- brand/reputation;
-- exclusive relationships;
-- distribution;
-- network effects;
-- switching costs;
-- embedded workflow;
-- customer data/history;
-- SEO authority;
-- marketplace ranking/reviews;
-- regulatory licences;
-- ecosystem of integrations/templates.
+**Included:** <deliverables/outcome>  
+**Excluded:** <boundary>  
+**Price:** <amount/range>  
+**Billing:** <one-time/monthly/annual/usage/etc.>  
+**Terms:** <commitment/refund/cancellation>  
+**Optional upsells:** <separate>
 
-Do not call easily copied configuration a moat by itself.
+## First 10 customers
 
----
+<Exact list/channel/source—not “social media” generally.>
 
-# PART G — RISK, COMPLIANCE AND EVIDENCE
+## Funnel
 
-## 23. Risks
+```text
+reach → qualified lead → sale → payment → first value → retained/expanded
+```
 
-### Commercial risks
+| Stage | Volume | Conversion | Cost | Evidence class |
+|---|---:|---:|---:|---|
+| Reach | | | | |
+| Qualified leads | | | | |
+| Paid customers | | | | |
+| First value | | | | |
+| Retained/repeat | | | | |
 
-- weak willingness to pay;
-- low conversion;
-- long sales cycle;
-- high CAC;
-- churn;
-- refunds;
-- support burden;
-- commission/platform changes.
+## Advertising
 
-### Delivery risks
+**Paid channel:** <search/social/marketplace/affiliate/etc.>  
+**Test budget:** <amount>  
+**Target CAC:** <amount>  
+**Pre-ad contribution margin:** <%>  
+**Break-even ROAS:** <1 ÷ contribution margin>  
+**Pass threshold:** <result>  
+**Stop threshold:** <result/date>
 
-- reliability;
-- bad data;
-- human recovery;
-- integration failure;
-- vendor quotas;
-- customer adoption.
-
-### Platform risks
-
-- dependency;
-- policy changes;
-- marketplace ranking;
-- account access;
-- API limits.
-
-### Legal / compliance risks
-
-- privacy/data protection;
-- employment/fairness;
-- financial regulation;
-- healthcare regulation;
-- marketing consent;
-- telemarketing/messaging rules;
-- IP/licensing;
-- consumer protection;
-- tax/VAT;
-- sector-specific licences.
-
-Only include relevant risks; do not pad the document.
+Ads existing does not prove paid growth. Positive contribution after CAC does.
 
 ---
 
-## 24. Evidence register
+# 6. Delivery and repeatability
 
-Every material commercial number should appear here.
+## Sale to first value
 
-| Claim / number | Why it matters | Source | Source date | Evidence class | Verified? | Portfolio impact |
+```text
+payment → intake/access → setup → delivery → quality check → outcome → retention
+```
+
+| Step | Owner | Tool/system | Human minutes | Direct cost | Pass condition | Failure/recovery |
+|---|---|---|---:|---:|---|---|
+| | | | | | | |
+
+## Delivery architecture
+
+**Outcome:** <result>  
+**Customer channel:** <WhatsApp/email/voice/web/etc.>  
+**System of record:** <CRM/ERP/etc.>  
+**Deterministic automation:** <what remains rules/API/workflow>  
+**AI/agent work:** <where judgement is needed>  
+**Fallback:** <provider/model/system replacement>
+
+## Repeatability test
+
+- What changes from customer 1 to 2 to 10?
+- What requires founder judgement?
+- What cost/hours grow with volume?
+- What is the first capacity constraint?
+- Can another competent operator deliver from the documentation?
+
+Do not score repeatability or scale highly when founder rescue is hidden.
+
+---
+
+# 7. Unit economics
+
+Use the companion workbook:
+
+`knowledge/templates/revenue-blueprint-financial-model.xlsx`
+
+| Metric | Downside | Base | Upside | Actual where available | Evidence class |
+|---|---:|---:|---:|---:|---|
+| Average sale / ARPU / take rate | | | | | |
+| Payment/platform fees | | | | | |
+| Direct delivery/provider cost | | | | | |
+| Support/refund cost | | | | | |
+| Gross profit | | | | | |
+| Gross margin | | | | | |
+| CAC | | | | | |
+| Contribution after CAC | | | | | |
+| CAC payback | | | | | |
+| Retention/repeat/churn | | | | | |
+| LTV:CAC where valid | | | | | |
+| Founder hours/customer/month | | | | | |
+| Cost per successful outcome | | | | | |
+
+## Top three financial sensitivities
+
+1. <assumption>
+2. <assumption>
+3. <assumption>
+
+## What breaks the business first
+
+<single most dangerous variable and threshold>
+
+---
+
+# 8. Capital, founder time and return
+
+## Three staged tiers
+
+| Tier | New capital | Cumulative | Use of funds | Founder hours | Proof milestone | Stop condition |
+|---|---:|---:|---|---:|---|---|
+| **Validate** | **$3,000** | **$3,000** | <test assets/acquisition/delivery/reserve> | <hours> | **P3–P4** | <result/date> |
+| **Launch** | **+$7,000** | **$10,000** | <repeat acquisition/delivery/automation> | <hours> | **P5** | <result/date> |
+| **Scale** | **+$20,000** | **$30,000** | <proven channel/capacity/working capital> | <hours> | **P6** | <result/date> |
+
+Spend less when the evidence can be bought for less.
+
+## 12-month return summary
+
+| Metric | Downside | Base | Upside |
+|---|---:|---:|---:|
+| Capital invested | | | |
+| Year-1 revenue | | | |
+| Year-1 net cash flow | | | |
+| Break-even month | | | |
+| Maximum cash loss | | | |
+| Runway | | | |
+| Month-12 monthly ROI | | | |
+| Year-1 cash-on-cash ROI | | | |
+| Founder hours Year 1 | | | |
+| Cash per founder hour | | | |
+| Employment-replacement month | | | |
+
+State the owner monthly-income target used.
+
+---
+
+# 9. Proof record: underwrite → backtest → forward test → live
+
+## Current proof
+
+**Proof Level:** <P0-P6>  
+**Why this level is deserved:** <specific evidence>  
+**Why it is not the next level:** <missing proof>
+
+## Test history
+
+| Stage | Hypothesis | Test/data | Pre-written threshold | Actual result | Decision | Evidence link/class |
+|---|---|---|---|---|---|---|
+| Underwrite | | | | | | |
+| Backtest | | | | | | |
+| Forward test | | | | | | |
+| Live pilot | | | | | | |
+| Repeatability | | | | | | |
+| Scale | | | | | | |
+
+## Backtest
+
+Test downside/base/upside against the strongest available historical or comparable data.
+
+Required stress tests:
+
+- conversion/demand;
+- price;
+- CAC/ad cost;
+- churn/refunds;
+- direct delivery/provider cost;
+- founder hours;
+- launch delay;
+- platform/channel loss.
+
+State the base rates and failed comparables, not only winners.
+
+## Next Test Card
+
+```text
+HYPOTHESIS:
+TEST:
+METRIC:
+PASS THRESHOLD:
+FAIL / RECYCLE THRESHOLD:
+MAX BUDGET:
+FOUNDER HOURS:
+END DATE:
+```
+
+---
+
+# 10. Risk and durability
+
+| Risk | Probability | Cash impact | Earliest warning | Prevention/recovery | Stop condition |
+|---|---:|---:|---|---|---|
+| Demand | | | | | |
+| Acquisition/ads | | | | | |
+| Delivery/quality | | | | | |
+| Retention/refunds | | | | | |
+| Founder dependency | | | | | |
+| Platform/vendor | | | | | |
+| Legal/compliance | | | | | |
+| Concentration | | | | | |
+| Cash/runway | | | | | |
+
+## Moat
+
+**Moat today:** <none/early/strong>  
+**What can compound:** <data/workflow/brand/distribution/network/switching cost>  
+**Customer concentration:** <%>  
+**Channel/platform concentration:** <%>
+
+---
+
+# 11. Revenue Blueprint Score
+
+Score only after the underwriting is complete.
+
+| Factor | Weight | Score 0–10 | Evidence and counter-evidence |
+|---|---:|---:|---|
+| Demand, market and timing | 15 | | |
+| Pain, willingness to pay and pricing power | 10 | | |
+| Revenue quality and retention | 10 | | |
+| Unit economics and margin | 15 | | |
+| Customer acquisition and paid growth | 10 | | |
+| Delivery repeatability and customer outcome | 10 | | |
+| Scalability, leverage and founder independence | 10 | | |
+| Capital efficiency, payback and ROI | 10 | | |
+| Durability, moat and concentration | 5 | | |
+| Operational, legal and platform risk | 5 | | |
+| **Revenue Blueprint Score** | **100** | **__/100** | |
+
+## Additional controls
+
+**Evidence Confidence:** <0-100>%  
+**Research Completeness:** <0-100>%  
+**Execution Velocity:** <0-100>/100  
+**Model-specific benchmark card:** <name and findings>
+
+The previous v1.5 Opportunity Score may be retained as historical screening evidence, but it is not the current investor decision score.
+
+---
+
+# 12. Gate and next action
+
+**Proof Level:** <P0-P6>  
+**Gate:** <Reject / Research / Test / Pilot / Fund / Scale / Blueprint Certified>  
+**Decision:** <GO / KILL / HOLD / RECYCLE>  
+**Capital released:** <amount>  
+**Founder-time limit:** <hours>  
+**Next evidence milestone:** <exact cash/behaviour/result>  
+**Deadline:** <date>  
+**Next capital unlock:** <exact threshold>
+
+## Investor-readiness check
+
+- [ ] P4 or higher.
+- [ ] At least one verified payment and delivered/activated value.
+- [ ] Contribution margin measured or tightly bounded.
+- [ ] One acquisition route has real evidence.
+- [ ] Monthly 12-month downside/base/upside forecast exists.
+- [ ] Maximum downside and runway are visible.
+- [ ] Founder hours are visible.
+- [ ] Critical legal/platform terms are verified or gated.
+- [ ] Use of funds buys the next proof milestone.
+- [ ] No estimate is presented as an actual.
+
+**Investor-ready:** <Yes/No and why>  
+**Scale-investment-ready:** <Yes/No and why>
+
+---
+
+# 13. Evidence register
+
+| Claim/number | Source | Source date | Evidence class E0-E6 | Verified? | Limitation | Score/forecast impact |
 |---|---|---|---|---|---|---|
 | | | | | | | |
 
-### Source hierarchy
+Evidence classes:
 
-Prefer, in order:
-
-1. official programme/company/vendor/government documentation;
-2. direct product/pricing/terms pages;
-3. audited/credible independent market data;
-4. credible reporting;
-5. multiple corroborating community/operator sources;
-6. single self-reported claim;
-7. DRF estimate.
-
-Do not use an aggregator when the first-party source is available.
+- E0 assumption;
+- E1 published evidence;
+- E2 backtest;
+- E3 forward test;
+- E4 live operating evidence;
+- E5 repeated/cohort evidence;
+- E6 verified scale evidence.
 
 ---
 
-## 25. Critical unknowns
+# 14. Existing-dossier rebuild rule
 
-List only unknowns that could materially change the decision or score.
+When rebuilding an existing DRF opportunity:
 
-| Unknown | Why it matters | How to resolve | Blocks launch? |
-|---|---|---|---|
-| | | | <Yes/No> |
+1. preserve the old dossier and score as history;
+2. start from a blank Version 2.0 template;
+3. do not inherit the old price, revenue model, score, rank or recommendation;
+4. rebuild the money model first;
+5. reverify current critical sources;
+6. attach the correct business-model card;
+7. build the 12-month three-scenario model;
+8. backtest;
+9. assign RBS, Proof Level, Investment Gate and Return Profile;
+10. compare with the old conclusion only after the new underwriting is complete;
+11. reconcile the portfolio and retain the change trail.
 
----
+Until rebuilt, label the old result:
 
-# PART H — VALIDATION AND DECISION
+> **Legacy structural score — not investor-ready; Proof Level and Return Profile pending.**
 
-## 26. Smallest commercial validation experiment
+## Final quality test
 
-Do not build the full business before testing the buying signal.
+A completed dossier must let a founder or investor understand within 20 seconds:
 
-**Hypothesis:** <what must be true>  
-**Customer:** <specific niche>  
-**Offer:** <what is sold>  
-**Price:** <actual price>  
-**Channel:** <how prospects are reached>  
-**Sample:** <number of prospects/customers>  
-**Budget cap:** <amount>  
-**Timebox:** <days/weeks>
-
-### Success metrics
-
-- <cash collected>
-- <qualified conversion>
-- <activation>
-- <outcome produced>
-- <retention/repeat usage>
-- <contribution margin>
-
-### Stop condition
-
-<What evidence means stop/change/reject?>
-
-### Scale condition
-
-<What evidence allows more spend, automation or build?>
-
----
-
-## 27. Time estimates
-
-Required for every active opportunity:
-
-- **Time to Build / Sellable MVP:** <range>
-- **Time to Market:** <range>
-- **Time to First Revenue:** <range>
-- **Time to Deliver / Onboard One Client:** <range>
-
-Use realistic elapsed time, not coding time only.
-
----
-
-## 28. Opportunity Score — canonical v1.5
-
-Governing file:
-
-`knowledge/guidelines/business-opportunity-scoring-framework.md`
-
-Score every factor 0–10 with evidence-based rationale.
-
-| Factor | Weight | Score 0–10 | Evidence / rationale |
-|---|---:|---:|---|
-| Market Size Now | 9 | | |
-| Market Growth | 9 | | |
-| Timing / First-Mover Window | 5 | | |
-| Willingness to Pay | 7 | | |
-| AI Buildability | 7 | | |
-| AI Marketability | 7 | | |
-| AI Deliverability | 9 | | |
-| Low Human Dependency | 4 | | |
-| Startup Capital Efficiency | 6 | | |
-| Speed to Revenue | 6 | | |
-| Margin Potential | 5 | | |
-| Scalability | 6 | | |
-| Paid Growth Potential | 4 | | |
-| Defensibility / Moat | 5 | | |
-| MRR / Recurring Revenue Quality | 11 | | |
-| **Total weighted Opportunity Score** | **100** | **/100** | |
-
-Do not score first and then find evidence to justify it. Research first; score second.
-
----
-
-## 29. Evidence Confidence
-
-**Evidence Confidence:** <0–100>%
-
-Explain:
-
-- what is first-party verified;
-- what is independently corroborated;
-- what is self-reported;
-- what is estimated;
-- what is still missing.
-
-A complete document can still have low confidence if the market itself lacks real operating evidence.
-
----
-
-## 30. Research Completeness
-
-**Research Completeness:** <0–100>%
-
-Use the 15 Opportunity Score factors as the minimum checklist. Completeness means investigated, not proven.
-
----
-
-## 31. AI Autonomy Score
-
-```text
-AI Autonomy = average(
-  AI Buildability,
-  AI Marketability,
-  AI Deliverability,
-  Low Human Dependency
-) × 10
-```
-
-**AI Autonomy:** <0–100>/100
-
----
-
-## 32. Execution Velocity
-
-Score 0–10:
-
-| Execution factor | Weight | Score | Evidence / rationale |
-|---|---:|---:|---|
-| Build / Setup Speed | 25 | | |
-| Go-to-Market Launch Speed | 20 | | |
-| Sales-Cycle Speed | 20 | | |
-| Client Delivery / Onboarding Speed | 20 | | |
-| Dependency / Resistance | 15 | | |
-| **Execution Velocity** | **100** | **/100** | |
-
-### Execution Priority
-
-```text
-Execution Priority = Opportunity Score × 0.70 + Execution Velocity × 0.30
-```
-
-**Execution Priority:** <0–100>/100
-
----
-
-## 33. Founder decision
-
-Choose one:
-
-- **Primary execution lane**
-- **Fast bounded test**
-- **Research first**
-- **Background/incubation lane**
-- **Reject / archive**
-
-### SELL / USE / INTEGRATE / AUTOMATE / BUILD
-
-Choose the smallest viable path in that order.
-
-**Decision:** <one sentence>
-
-### Why
-
-- <commercial reason>
-- <evidence reason>
-- <timing reason>
-
-### Current next action
-
-**One action only:** <specific action>
-
----
-
-# PART I — CANONICAL FILE OUTPUT
-
-## 34. Required opportunity folder structure
-
-For a first-class business under `businesses/<slug>/`:
-
-```text
-businesses/<slug>/
-├── README.md                # founder-facing commercial summary
-├── RESEARCH.md              # full research using this template
-└── research/                # dated/deeper evidence files when needed
-```
-
-Use:
-
-- `knowledge/templates/business-opportunity-readme.md` for `README.md`;
-- this file for `RESEARCH.md`;
-- dated evidence files for substantial source-specific updates.
-
-Markdown is canonical.
-
----
-
-# PART J — EXISTING PORTFOLIO REBUILD CHECKLIST
-
-## 35. Rebuild an existing opportunity from zero
-
-Use this checklist for every existing DRF opportunity that predates this template.
-
-### Step 1 — Open an Issue
-
-Create one clear issue for the opportunity rebuild, or a controlled parent issue with one trackable subtask per opportunity if doing a portfolio programme.
-
-### Step 2 — Preserve old work, but do not inherit conclusions
-
-The old dossier is evidence history, not the new answer.
-
-Do **not** copy forward without re-underwriting:
-
-- score;
-- rank;
-- revenue model;
-- pricing;
-- MRR score;
-- margin assumptions;
-- market-size claims;
-- AI autonomy;
-- vendor assumptions;
-- recommendation.
-
-### Step 3 — Build the money model first
-
-Before market research, write:
-
-- what we sell;
+- what is sold;
 - who pays;
-- every core revenue stream;
-- every optional upsell;
-- price/calculation basis;
-- upfront versus recurring;
-- fees/COGS;
-- estimated contribution margin.
-
-If this is unclear, stop and resolve it before writing the rest.
-
-### Step 4 — Re-verify sources
-
-Re-open first-party sources for:
-
-- pricing;
-- fees;
-- rev-share/royalties/commissions;
-- product mechanics;
-- eligibility;
-- limits;
-- usage;
-- market/customer counts;
-- current integrations;
-- current terms.
-
-Mark older unverifiable sources accordingly.
-
-### Step 5 — Rebuild customer and offer
-
-Define:
-
-- buyer;
-- pain;
-- trigger;
-- measurable outcome;
-- beachhead niche;
-- offer;
-- actual sales motion.
-
-### Step 6 — Rebuild unit economics
-
-Estimate per-customer/per-transaction:
-
-- revenue;
-- platform/payment fees;
-- provider costs;
-- AI/software costs;
-- human delivery/support;
-- CAC;
-- contribution;
-- payback;
-- retention;
-- LTV.
-
-### Step 7 — Rebuild market and competition
-
-Research:
-
-- market size now;
-- growth;
-- timing;
-- WTP;
-- direct competitors;
-- substitutes;
-- pricing;
-- GTM saturation;
-- real distribution wedge.
-
-### Step 8 — Rebuild delivery and automation
-
-Map payment → onboarding → first value → recurring delivery.
-
-Separate deterministic automation from agent work and human work.
-
-### Step 9 — Re-score from evidence
-
-Score all 15 factors only after the rebuilt dossier is complete.
-
-Then calculate:
-
-- Opportunity Score;
-- MRR;
-- AI Autonomy;
-- Evidence Confidence;
-- Research Completeness;
-- Execution Velocity;
-- Execution Priority.
-
-### Step 10 — Reconcile canonical portfolio truth
-
-Update only where evidence changed:
-
-- `businesses/<slug>/README.md`;
-- `businesses/<slug>/RESEARCH.md`;
-- evidence files;
-- `businesses/OPPORTUNITIES.md`;
-- `businesses/README.md` if rank changes;
-- execution-priority research/table if required;
-- dashboard source data where architecture requires it.
-
-### Step 11 — Verify once
-
-Read back the changed files and confirm:
-
-- the founder summary is understandable in 20 seconds;
-- numbers reconcile across files;
-- sources and evidence labels are present;
-- no old score remains accidentally;
-- no optional upsell is presented as a core revenue stream;
-- no recurring billing is called strong MRR without continuing value.
-
-### Step 12 — Close the Issue
-
-Record the score change, major commercial corrections and next experiment.
-
----
-
-# PART K — FINAL QUALITY GATES
-
-## 36. 20-second founder test
-
-Before committing, ask:
-
-> **Can a business owner understand within 20 seconds what we sell, who pays, how much/on what basis, how the money arrives, what is upfront versus recurring, and which revenue streams are core?**
-
-If no, rewrite the first page.
-
----
-
-## 37. Sales-language test
-
-Replace vague lead terms where possible:
-
-| Vague / analyst-first | Founder-first |
-|---|---|
-| creator economics | royalty / commission / sale revenue |
-| downstream economics | recurring royalty/commission from business activity |
-| monetisation layer | revenue stream |
-| implementation layer | optional setup/consulting upsell |
-| creator share | royalty percentage / commission percentage |
-| platform economics | platform fees / platform-paid commission / platform-paid royalty |
-| user monetisation | customer price / revenue model |
-| engagement | lead / sale / activation / retained customer, whichever is actually measured |
-
----
-
-## 38. Evidence test
-
-For every material claim:
-
-- is the source current?
-- is a first-party source available?
-- is the number contractual, typical, reported or estimated?
-- does the wording reflect that distinction?
-- would the score change if this claim were false?
-
-If yes, resolve or flag the uncertainty prominently.
-
----
-
-## 39. Revenue test
-
-Before calling an opportunity attractive, verify or explicitly estimate:
-
-- how cash is collected;
-- gross revenue per customer/transaction;
-- recurring revenue source;
-- direct delivery costs;
-- human burden;
-- CAC path;
-- contribution margin;
-- retention logic;
-- time to first cash.
-
-DRF does not exist to collect interesting technologies. It exists to identify, prove and scale revenue.
-
----
-
-## 40. Final output rule
-
-The completed research must stand alone without chat history.
-
-The next agent should be able to open `README.md` and `RESEARCH.md` and know:
-
-1. **the business;**
-2. **the customer;**
-3. **the money model;**
-4. **the evidence;**
-5. **the score;**
-6. **the risks;**
-7. **the next commercial action.**
-
-If any of those require reading old chats, the dossier is incomplete.
+- how much/on what basis;
+- which revenue is upfront or recurring;
+- how much capital and founder time go in;
+- what monthly and annual cash may come out;
+- what is proven;
+- what decision is allowed now.

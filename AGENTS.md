@@ -8,6 +8,8 @@ Read this first before substantive DRF work.
 
 **Speak sales language.** In DRF business/revenue work, lead with what is sold, who pays, how much or on what basis, and label each revenue stream plainly as an upfront sale, recurring fee, royalty, commission or optional upsell before using platform, analyst or technical terminology.
 
+**Never call a business investor-ready, proven or Blueprint-certified from a score alone.** Show its Revenue Blueprint Score, P0–P6 Proof Level, Investment Gate and Return Profile together.
+
 ## Canonical truth
 
 ```text
@@ -90,6 +92,16 @@ WhatsApp/customer channel
 HighLevel, Kapso, HubSpot, Grok Bot, ChatGPT, Claude and future platforms are implementation options inside this architecture, not the business definition.
 
 Canonical rationale: `knowledge/architecture/outcome-first-modular-revenue-architecture.md`.
+
+## Revenue Blueprint Factory
+
+For every new business, existing-business benchmark, pivot or material revenue-model change, use:
+
+- `workflows/revenue-blueprint-factory.md`;
+- `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`;
+- the canonical templates under `knowledge/templates/`.
+
+The current v1.5 Opportunity Score is historical structural screening. It is not an investor-readiness, funding or Blueprint-certification decision.
 
 ## Change workflow
 
