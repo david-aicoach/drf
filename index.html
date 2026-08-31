@@ -1,454 +1,207 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="DRF — David's Revenue Factory public operating dashboard.">
-<meta name="theme-color" content="#ffffff">
-<title>DRF — Revenue Factory Dashboard</title>
-<style>
-:root{
-  --bg:#f6f8fa;--surface:#ffffff;--surface-2:#fbfcfd;--text:#1f2328;--muted:#656d76;
-  --line:#d8dee4;--line-strong:#b8c0c8;--accent:#0969da;--accent-soft:#ddf4ff;
-  --good:#1a7f37;--warn:#9a6700;--bad:#cf222e;--shadow:0 8px 24px rgba(31,35,40,.07);
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  --v2-ink:#101828;--v2-muted:#667085;--v2-line:#e4e7ec;--v2-soft:#f8fafc;--v2-green:#087443;--v2-green-soft:#ecfdf3;--v2-blue:#175cd3;--v2-blue-soft:#eff8ff;--v2-amber:#b54708;--v2-amber-soft:#fffaeb;
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 var(--font);overflow-x:hidden}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,input{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.wrap{width:min(1480px,calc(100% - 28px));margin:auto}
-.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.topin{height:52px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:9px;color:var(--text);font-weight:800;letter-spacing:-.01em}.brandmark{width:26px;height:26px;border-radius:6px;background:var(--text);color:#fff;display:grid;place-items:center;font-size:11px}.nav{display:flex;gap:6px;overflow:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{flex:none;min-height:36px;display:flex;align-items:center;padding:0 10px;border-radius:6px;color:var(--muted);font-size:12px;font-weight:700}.nav a:hover{background:var(--surface-2);color:var(--text);text-decoration:none}.nav .v2jump{background:var(--v2-green-soft);color:var(--v2-green)}
-.hero{background:linear-gradient(180deg,#fff 0%,#f8fafc 100%);border-bottom:1px solid var(--line)}.hero-in{padding:22px 0 16px}.hero-row{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}.hero h1{margin:0;font-size:clamp(27px,3vw,40px);line-height:1.05;letter-spacing:-.035em}.hero p{max-width:900px;margin:7px 0 0;color:var(--muted);font-size:14px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{min-height:36px;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text);display:inline-flex;align-items:center;font-weight:700;font-size:12px}.btn:hover{border-color:var(--line-strong);text-decoration:none}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-.metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:14px}.metric{min-width:0;border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:9px 11px}.metric small{display:block;color:var(--muted);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}.metric strong{display:block;margin-top:2px;font-size:18px;line-height:1.15;overflow-wrap:anywhere}.metric .sub{font-size:11px;color:var(--muted);margin-top:2px}
-main{padding:14px 0 36px}.section{margin-top:14px;scroll-margin-top:60px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px}.section-head h2{margin:0;font-size:17px;letter-spacing:-.015em}.section-head p{margin:2px 0 0;color:var(--muted);font-size:12px}.source-link{flex:none;font-size:11px;font-weight:700}.flow{margin:0;border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap}
-.signal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.signal{border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:9px 10px;min-width:0}.signal strong{display:block;font-size:12px;line-height:1.35}.signal span{display:block;margin-top:4px;color:var(--muted);font-size:10px}
-.panel{border:1px solid var(--line);border-radius:7px;background:var(--surface);overflow:hidden}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-bottom:1px solid var(--line);background:var(--surface-2)}.panel-title{display:flex;align-items:center;gap:8px;min-width:0}.panel-title h3{margin:0;font-size:13px}.panel-title .count,.count{padding:1px 6px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--muted);font-size:10px}.toolbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}.search{width:220px;max-width:40vw;height:30px;border:1px solid var(--line);border-radius:5px;background:#fff;padding:0 8px;color:var(--text)}.toolbtn{height:30px;border:1px solid var(--line);border-radius:5px;background:#fff;padding:0 8px;color:var(--muted);font-size:11px;font-weight:700;cursor:pointer}.toolbtn:hover{border-color:var(--line-strong);color:var(--text)}
-.grid-scroll{overflow:auto;max-height:520px;overscroll-behavior:contain;background:#fff}.data-grid{border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:11px}.data-grid th,.data-grid td{border-right:1px solid #eaeef2;border-bottom:1px solid #eaeef2;padding:6px 7px;vertical-align:top;background:#fff;overflow:hidden;text-overflow:ellipsis}.data-grid td{white-space:normal}.data-grid th{position:sticky;top:0;z-index:6;background:#f3f5f7;color:#4b5563;padding:0;font-weight:800}.data-grid th:last-child,.data-grid td:last-child{border-right:0}.data-grid tbody tr:hover td{background:#f8fbff}.sortbtn{width:100%;min-height:32px;border:0;background:transparent;color:inherit;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:5px 17px 5px 7px;text-align:left;font-weight:800;cursor:pointer}.sortbtn:hover{background:#edf3f9}.sortmark{font-size:9px;color:var(--accent)}.resizer{position:absolute;top:0;right:-2px;width:5px;height:100%;cursor:col-resize;z-index:10}.resizer:hover,.resizer.active{background:rgba(9,105,218,.25)}.rankcell{font-weight:800;color:var(--muted);text-align:right}.num{font-variant-numeric:tabular-nums;font-weight:750}.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}.extlink{font-weight:700;white-space:nowrap}.mobile-cards{display:none}
-.data-panel{margin-top:8px;border:1px solid var(--line);border-radius:7px;background:var(--surface);overflow:hidden}.data-panel summary{list-style:none;cursor:pointer;min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 10px;background:var(--surface-2);font-weight:800}.data-panel summary::-webkit-details-marker{display:none}.data-panel summary::after{content:"＋";color:var(--muted);font-size:16px}.data-panel[open] summary::after{content:"−"}.data-panel[open] summary{border-bottom:1px solid var(--line)}.summary-meta{color:var(--muted);font-size:10px;font-weight:600}.panel-body{background:#fff}
-.work-panel{margin-top:8px}.research-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.research-grid a{min-height:62px;border:1px solid var(--line);border-radius:6px;background:#fff;padding:8px 9px;color:var(--text);font-size:11px;font-weight:800}.research-grid a:hover{border-color:var(--line-strong);text-decoration:none;box-shadow:var(--shadow)}.research-grid span{display:block;margin-top:3px;color:var(--muted);font-weight:500;font-size:10px}.statusbox{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.src{border:1px solid var(--line);border-radius:6px;background:#fff;padding:7px 8px;min-width:0}.src strong{display:block;font-size:10px}.src span{display:block;margin-top:2px;color:var(--muted);font-size:10px;overflow-wrap:anywhere}.src .ok{color:var(--good)}.src .err{color:var(--bad)}
-
-/* Version 2 comparison preview */
-.version-divider{margin:54px calc(50% - 50vw) 0;width:100vw;background:var(--v2-ink);color:#fff;border-top:8px solid #000;border-bottom:1px solid #344054}.version-divider .inner{width:min(1480px,calc(100% - 28px));margin:auto;padding:28px 0}.version-kicker{font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#98a2b3}.version-divider h2{margin:5px 0 3px;font-size:clamp(25px,3vw,38px);letter-spacing:-.035em}.version-divider p{margin:0;color:#d0d5dd;max-width:980px}.compare-note{margin-top:14px;display:inline-flex;gap:8px;align-items:center;border:1px solid #475467;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800;color:#eaecf0}
-.v2{margin:0 calc(50% - 50vw);width:100vw;background:#fff;color:var(--v2-ink);padding:0 0 50px}.v2wrap{width:min(1480px,calc(100% - 28px));margin:auto}.v2hero{padding:30px 0 20px;border-bottom:1px solid var(--v2-line)}.v2hero-row{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}.v2badge{display:inline-flex;align-items:center;border:1px solid #abefc6;background:var(--v2-green-soft);color:var(--v2-green);border-radius:999px;padding:3px 9px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.v2hero h2{margin:8px 0 6px;font-size:clamp(28px,3.6vw,48px);line-height:1;letter-spacing:-.045em}.v2hero p{margin:0;color:var(--v2-muted);max-width:900px;font-size:14px}.v2actions{display:flex;gap:7px;flex-wrap:wrap}.v2btn{min-height:38px;display:inline-flex;align-items:center;padding:0 12px;border:1px solid var(--v2-line);border-radius:8px;background:#fff;color:var(--v2-ink);font-size:12px;font-weight:800}.v2btn:hover{text-decoration:none;border-color:#98a2b3}.v2btn.primary{background:var(--v2-ink);border-color:var(--v2-ink);color:#fff}.v2metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:18px}.v2metric{border:1px solid var(--v2-line);border-radius:10px;padding:11px;background:#fff;box-shadow:0 1px 2px rgba(16,24,40,.04)}.v2metric small{display:block;color:var(--v2-muted);text-transform:uppercase;font-size:9px;font-weight:900;letter-spacing:.05em}.v2metric strong{display:block;margin-top:3px;font-size:22px;line-height:1.1}.v2metric span{display:block;margin-top:3px;color:var(--v2-muted);font-size:10px}.v2section{padding:22px 0 0;scroll-margin-top:66px}.v2head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin-bottom:10px}.v2head h3{margin:0;font-size:20px;letter-spacing:-.025em}.v2head p{margin:3px 0 0;color:var(--v2-muted);font-size:12px}.v2eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;color:var(--v2-green)}
-.architecture-strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;margin:12px 0}.arch-step{border:1px solid var(--v2-line);background:var(--v2-soft);border-radius:8px;padding:8px 9px;font-size:10px;font-weight:900;text-align:center}.arch-step:first-child,.arch-step:nth-child(2){background:var(--v2-green-soft);border-color:#abefc6;color:var(--v2-green)}
-.v2panel{border:1px solid var(--v2-line);border-radius:12px;background:#fff;overflow:hidden}.v2panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-bottom:1px solid var(--v2-line);background:#fcfcfd}.v2panel-head h4{margin:0;font-size:13px}.v2panel .data-grid th{background:#f9fafb;color:#344054}.v2panel .data-grid tbody tr:hover td{background:#f9fafb}.v2links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.v2link{border:1px solid var(--v2-line);border-radius:10px;padding:10px;background:#fff;color:var(--v2-ink);font-size:11px;font-weight:900;min-height:70px}.v2link:hover{text-decoration:none;border-color:#98a2b3;box-shadow:0 2px 8px rgba(16,24,40,.06)}.v2link span{display:block;margin-top:4px;color:var(--v2-muted);font-weight:500;font-size:10px}.v2source{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.v2source .src{border-color:var(--v2-line);border-radius:9px}.v2backtop{display:flex;justify-content:center;margin-top:25px}.v2backtop a{display:inline-flex;padding:7px 12px;border:1px solid var(--v2-line);border-radius:999px;color:var(--v2-muted);font-size:11px;font-weight:800}.v2backtop a:hover{text-decoration:none;color:var(--v2-ink)}
-.abbr-tip{display:inline-flex;align-items:center;gap:0;text-decoration:underline dotted;text-underline-offset:2px;cursor:help;font-variant-numeric:inherit}.abbr-tip:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}.niche-lead{display:block;font-size:11px;line-height:1.35}.niche-tail{display:block;margin-top:2px;color:var(--v2-muted);font-size:10px;line-height:1.35}
-.v2legend{margin-top:14px;border:1px solid var(--v2-line);border-radius:12px;background:#fcfcfd;padding:10px 12px}.v2legend h4{margin:0;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:#475467}.v2legend-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:8px}.v2legend-item{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--v2-line);border-radius:8px;background:#fff;padding:7px}.v2legend-item b{font-size:10px}.v2legend-item span{font-size:10px;color:var(--v2-muted);line-height:1.35}
-
-/* Scalable opportunity table: every detail row is a collapsible opportunity */
-.opp-table-shell{border:1px solid var(--v2-line);border-radius:12px;overflow:hidden;background:#fff}.opp-table-head,.rbf-opportunity>summary{display:grid;grid-template-columns:minmax(240px,2.1fr) minmax(210px,1.8fr) 74px 74px 115px 110px 100px 90px minmax(250px,2fr);align-items:stretch}.opp-table-head{background:#f2f4f7;border-bottom:1px solid var(--v2-line);color:#475467;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.025em}.opp-table-head>div{padding:8px;border-right:1px solid var(--v2-line)}.opp-table-head>div:last-child{border-right:0}.rbf-opportunity{border:0;border-bottom:1px solid var(--v2-line);background:#fff}.rbf-opportunity:last-child{border-bottom:0}.rbf-opportunity>summary{list-style:none;cursor:pointer;min-height:61px}.rbf-opportunity>summary::-webkit-details-marker{display:none}.rbf-opportunity>summary:hover{background:#f9fafb}.rbf-opportunity[open]>summary{background:var(--v2-green-soft);border-bottom:1px solid #abefc6}.opp-cell{padding:9px 8px;border-right:1px solid #f0f2f5;min-width:0;overflow-wrap:anywhere}.opp-cell:last-child{border-right:0}.opp-result b{display:block;font-size:12px;color:var(--v2-ink)}.opp-result span,.opp-niche span,.opp-next span{display:block;margin-top:3px;color:var(--v2-muted);font-size:9px;line-height:1.35}.opp-niche b{display:block;font-size:10px}.opp-number{font-size:12px;font-weight:900;font-variant-numeric:tabular-nums}.opp-pill{display:inline-flex;align-items:center;min-height:24px;border-radius:999px;padding:2px 7px;background:#f2f4f7;color:#344054;font-size:9px;font-weight:900}.opp-pill.go{background:var(--v2-green-soft);color:var(--v2-green)}.opp-pill.pending{background:var(--v2-amber-soft);color:var(--v2-amber)}.opp-expand{font-size:9px;color:var(--v2-green);font-weight:900;margin-top:4px}.rbf-body{padding:14px;background:#fcfcfd}.rbf-body-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(310px,.85fr);gap:10px}.rbf-card{border:1px solid var(--v2-line);border-radius:10px;background:#fff;padding:12px}.rbf-card h4{margin:0 0 7px;font-size:13px}.rbf-card p{margin:5px 0;color:var(--v2-muted);font-size:11px}.decision-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin-top:9px}.decision-stat{background:#f9fafb;border:1px solid var(--v2-line);border-radius:7px;padding:7px}.decision-stat small{display:block;color:var(--v2-muted);font-size:8px;font-weight:900;text-transform:uppercase}.decision-stat strong{display:block;margin-top:2px;font-size:11px}.test-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin-top:8px}.test-mini{border:1px solid var(--v2-line);border-radius:7px;padding:7px;background:var(--v2-soft)}.test-mini small{display:block;color:var(--v2-muted);font-size:8px;text-transform:uppercase;font-weight:900}.test-mini strong{display:block;margin-top:2px;font-size:11px}.rbf-score-wrap{margin-top:10px}.rbf-links{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.rbf-link{display:inline-flex;align-items:center;min-height:31px;border:1px solid var(--v2-line);border-radius:7px;padding:0 9px;background:#fff;color:var(--v2-ink);font-size:9px;font-weight:900}.rbf-link:hover{text-decoration:none;border-color:#98a2b3}.empty-state{padding:12px;color:var(--v2-muted);font-size:11px}
-.opp-table-shell.opp-interactive{overflow-x:auto;--opp-cols:320px 260px 82px 82px 110px 110px 105px 92px 300px}.opp-table-shell.opp-interactive .opp-table-head,.opp-table-shell.opp-interactive .rbf-opportunity>summary{grid-template-columns:var(--opp-cols);grid-template-areas:none;width:max-content;min-width:100%}.opp-table-shell.opp-interactive .rbf-opportunity>summary .opp-cell{grid-area:auto}.opp-table-shell.opp-interactive .opp-table-head{position:sticky;top:0;z-index:12}.opp-head-cell{position:relative;display:flex;flex-direction:column;gap:4px;padding:5px 12px 6px 7px!important;min-width:0}.opp-head-sort{border:0;background:transparent;color:inherit;padding:0;min-height:22px;display:flex;align-items:center;justify-content:space-between;gap:6px;text-align:left;text-transform:uppercase;font-size:9px;font-weight:900;cursor:pointer}.opp-head-sort:hover{color:var(--v2-ink)}.opp-head-sortmark{color:var(--accent);font-size:9px}.opp-filter{width:100%;height:24px;border:1px solid #d0d5dd;border-radius:5px;background:#fff;padding:0 5px;color:var(--v2-ink);font-size:9px;font-weight:500;text-transform:none}.opp-filter::placeholder{color:#98a2b3}.opp-col-resizer{position:absolute;right:-2px;top:0;width:7px;height:100%;cursor:col-resize;z-index:15}.opp-col-resizer:hover,.opp-col-resizer.active{background:rgba(9,105,218,.22)}.opp-grid-tools{display:flex;align-items:center;justify-content:flex-end;gap:6px;padding:6px 8px;border:1px solid var(--v2-line);border-bottom:0;border-radius:10px 10px 0 0;background:#fcfcfd}.opp-grid-tools+.opp-table-shell{border-top-left-radius:0;border-top-right-radius:0}.opp-grid-help{margin-right:auto;color:var(--v2-muted);font-size:9px}.opp-grid-tools button{height:28px;border:1px solid var(--v2-line);border-radius:6px;background:#fff;color:#475467;padding:0 8px;font-size:9px;font-weight:800;cursor:pointer}.opp-grid-tools button:hover{border-color:#98a2b3;color:var(--v2-ink)}
-.v2collapse{margin-top:18px;border:1px solid var(--v2-line);border-radius:12px;background:#fff;overflow:hidden;scroll-margin-top:66px}.v2collapse>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 14px;background:#fcfcfd}.v2collapse>summary::-webkit-details-marker{display:none}.v2collapse>summary::after{content:"＋";font-size:18px;color:var(--v2-muted);font-weight:400}.v2collapse[open]>summary::after{content:"−"}.v2collapse[open]>summary{border-bottom:1px solid var(--v2-line)}.v2collapse-title b{display:block;font-size:15px}.v2collapse-title span{display:block;margin-top:2px;color:var(--v2-muted);font-size:10px}.v2collapse-body{padding:12px}.v2grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.v2card{border:1px solid var(--v2-line);border-radius:12px;background:#fff;padding:14px}.v2card h4{margin:0 0 8px;font-size:13px}
-footer{margin-top:0;border-top:1px solid var(--line);background:#fff;padding:14px 0;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:1100px){.metrics,.v2metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.signal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.research-grid,.v2links{grid-template-columns:repeat(2,minmax(0,1fr))}.statusbox,.v2source{grid-template-columns:repeat(3,minmax(0,1fr))}.architecture-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.opp-table-head{display:none}.rbf-opportunity>summary{grid-template-columns:2fr 1.5fr repeat(3,90px);grid-template-areas:"result niche rbs nscore proof" "result next gate capital investor"}.rbf-opportunity>summary .opp-cell:nth-child(1){grid-area:result}.rbf-opportunity>summary .opp-cell:nth-child(2){grid-area:niche}.rbf-opportunity>summary .opp-cell:nth-child(3){grid-area:rbs}.rbf-opportunity>summary .opp-cell:nth-child(4){grid-area:nscore}.rbf-opportunity>summary .opp-cell:nth-child(5){grid-area:proof}.rbf-opportunity>summary .opp-cell:nth-child(6){grid-area:gate}.rbf-opportunity>summary .opp-cell:nth-child(7){grid-area:capital}.rbf-opportunity>summary .opp-cell:nth-child(8){grid-area:investor}.rbf-opportunity>summary .opp-cell:nth-child(9){grid-area:next}.rbf-body-grid{grid-template-columns:1fr}.v2legend-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.opp-table-shell.opp-interactive .opp-table-head{display:grid}.opp-table-shell.opp-interactive .rbf-opportunity>summary{display:grid}}
-@media(max-width:740px){.wrap,.v2wrap,.version-divider .inner{width:min(100% - 18px,1480px)}.topin{height:auto;min-height:50px;align-items:flex-start;flex-direction:column;padding:8px 0}.nav{width:100%;margin-top:-2px}.hero-in{padding:14px 0 11px}.hero-row,.v2hero-row{display:block}.hero h1{font-size:27px}.hero p{font-size:12px}.actions,.v2actions{margin-top:10px}.btn,.v2btn{min-height:38px}.metrics,.v2metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-top:10px}.metric,.v2metric{padding:8px}.metric strong{font-size:16px}.metric:last-child{grid-column:1/-1}.section{margin-top:10px}.section-head{align-items:flex-start}.signal-grid,.research-grid,.statusbox,.v2links,.v2source,.v2grid2,.v2legend-grid{grid-template-columns:1fr}.panel-head,.v2panel-head{align-items:flex-start;flex-direction:column}.toolbar{width:100%;justify-content:stretch}.search{max-width:none;flex:1;min-width:0}.grid-scroll{max-height:420px}.portfolio-desktop{display:none}.mobile-cards{display:grid;gap:6px;padding:6px}.oppcard{border:1px solid var(--line);border-radius:6px;background:#fff;padding:8px}.oppcard-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}.oppcard h3{margin:0;font-size:13px;line-height:1.25}.stage{flex:none;padding:1px 5px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:9px;font-weight:800}.scoregrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-top:7px}.scorebox{background:#f6f8fa;border-radius:4px;padding:5px}.scorebox small{display:block;color:var(--muted);font-size:8px;text-transform:uppercase;font-weight:800}.scorebox strong{display:block;margin-top:1px;font-size:12px}.opp-copy{margin-top:6px;font-size:10px}.opp-copy strong{display:block;font-size:9px;text-transform:uppercase;color:var(--muted)}.opp-copy p{margin:1px 0 0}.oppcard .extlink{display:inline-flex;min-height:34px;align-items:center;margin-top:4px}.data-grid{font-size:10px}.data-grid th,.data-grid td{padding:5px}.resizer{display:none}.source-link{display:none}.version-divider{margin-top:36px}.version-divider .inner{padding:24px 0}.v2hero{padding:24px 0 16px}.v2hero h2{font-size:30px}.v2metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.v2metric strong{font-size:18px}.v2head{align-items:flex-start;flex-direction:column}.v2section{padding-top:18px}.architecture-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.rbf-opportunity>summary{display:block;padding:9px}.opp-cell{padding:4px 0;border:0}.opp-cell:nth-child(n+3):nth-child(-n+8){display:inline-block;margin-right:8px;min-width:64px}.opp-cell:nth-child(n+3):nth-child(-n+8)::before{display:block;color:var(--v2-muted);font-size:7px;font-weight:900;text-transform:uppercase}.opp-cell:nth-child(3)::before{content:"RBS"}.opp-cell:nth-child(4)::before{content:"Niche"}.opp-cell:nth-child(5)::before{content:"Proof"}.opp-cell:nth-child(6)::before{content:"Gate"}.opp-cell:nth-child(7)::before{content:"Capital"}.opp-cell:nth-child(8)::before{content:"Investor"}.decision-stats,.test-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.opp-table-shell.opp-interactive{overflow:visible}.opp-table-shell.opp-interactive .opp-table-head{display:none}.opp-table-shell.opp-interactive .rbf-opportunity>summary{display:block;width:auto;min-width:0}.opp-grid-tools{display:none}}
-@media(max-width:420px){.scoregrid{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics,.v2metrics{grid-template-columns:1fr}.metric:last-child{grid-column:auto}.architecture-strip,.decision-stats,.test-strip{grid-template-columns:1fr}}
-@media print{.top,.actions,.v2actions,.toolbar,.resizer,.source-link,.opp-grid-tools,.opp-filter,.opp-col-resizer{display:none!important}.grid-scroll{max-height:none;overflow:visible}.data-grid{width:100%!important;font-size:8px}details{display:block!important}details>summary{display:none!important}.mobile-cards{display:none!important}.portfolio-desktop{display:block!important}.rbf-body{display:block!important}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="David's Revenue Factory — A GitHub-native factory for finding, underwriting, testing and packaging revenue-producing businesses.">
+  <title>DRF — David's Revenue Factory Dashboard V3</title>
+  <link rel="stylesheet" href="assets/v3-dashboard.css">
+  <link rel="stylesheet" href="assets/v3-dashboard-tooltip-fix.css">
 </head>
 <body>
-<header class="top">
-  <div class="wrap topin">
-    <a class="brand" href="./"><span class="brandmark">DRF</span><span>Revenue Factory</span></a>
-    <nav class="nav" aria-label="Dashboard navigation">
-      <a href="#overview">Overview</a><a href="#opportunities">Opportunities</a><a href="#niches">Niches</a><a href="#market">Market Data</a><a href="#work">Work</a><a href="#research">Research</a><a href="#sources">Sources</a><a class="v2jump" href="#v2-preview">V2 Preview ↓</a>
-    </nav>
-  </div>
-</header>
-<div class="hero" id="overview">
-  <div class="wrap hero-in">
-    <div class="hero-row">
-      <div><h1>DRF Revenue Factory</h1><p id="intro">Loading canonical operating model…</p></div>
-      <div class="actions"><a class="btn primary external" href="https://github.com/tbhrc/drf">Repository ↗</a><a class="btn external" href="https://github.com/tbhrc/drf/issues">Issues ↗</a><a class="btn external" href="https://github.com/tbhrc/drf/blob/main/businesses/OPPORTUNITIES.md">Canonical opportunities ↗</a></div>
+  <header class="v3-header">
+    <div class="v3-wrap v3-header-inner">
+      <a class="v3-brand" href="#v3-top" aria-label="DRF Dashboard V3 home">
+        <span class="v3-brand-mark">DRF</span>
+        <span class="v3-brand-copy"><b>David's Revenue Factory</b><span>Dashboard Version 3</span></span>
+      </a>
+      <nav class="v3-nav" aria-label="Dashboard Version 3 navigation">
+        <a href="#v3-master">V3 Master</a>
+        <a href="#v3-layer1">Layer 1</a>
+        <a href="#v3-layer2">Layer 2</a>
+        <a href="#v3-layer3">Layer 3</a>
+        <a href="#v3-sources">Sources</a>
+        <a class="legacy-link" href="#dashboard-v2">Dashboard V2</a>
+        <a href="#dashboard-v1">Dashboard V1</a>
+      </nav>
     </div>
-    <div class="metrics">
-      <div class="metric"><small>Version</small><strong id="version">…</strong></div>
-      <div class="metric"><small>Opportunities</small><strong id="opp-count">…</strong></div>
-      <div class="metric"><small>Top Score</small><strong id="top-score">…</strong></div>
-      <div class="metric"><small>Top MRR</small><strong id="top-mrr">…</strong></div>
-      <div class="metric"><small>Open Work</small><strong id="open-count">…</strong><div class="sub" id="refresh">Loading…</div></div>
-    </div>
-  </div>
-</div>
-<main class="wrap">
-  <section class="section">
-    <div class="section-head"><div><h2>Revenue execution loop</h2><p>Direct from the root README.</p></div><a class="source-link external" href="https://github.com/tbhrc/drf/blob/main/README.md">Source ↗</a></div>
-    <pre class="flow" id="revenue-loop">Loading…</pre>
-  </section>
+  </header>
 
-  <section class="section" id="opportunities">
-    <div class="section-head"><div><h2>Business opportunity ranking</h2><p>Click any column header to rank. Drag header edges to resize columns. Search filters instantly.</p></div><a class="source-link external" href="https://github.com/tbhrc/drf/blob/main/businesses/OPPORTUNITIES.md">Source ↗</a></div>
-    <div class="panel">
-      <div class="panel-head"><div class="panel-title"><h3>Portfolio summary</h3><span class="count" id="portfolio-count">0 rows</span></div><div class="toolbar"><input class="search" id="portfolio-search" placeholder="Filter opportunities…" aria-label="Filter opportunities"><button class="toolbtn" id="portfolio-reset" type="button">Reset columns</button></div></div>
-      <div id="portfolio-grid" class="portfolio-desktop"></div>
-      <div id="portfolio-cards" class="mobile-cards"></div>
-    </div>
-
-    <div class="panel" id="niches" style="margin-top:8px">
-      <div class="panel-head"><div class="panel-title"><h3>Niche attractiveness ranking</h3><span class="count" id="niche-count">0 rows</span></div><div class="toolbar"><input class="search" id="niche-search" placeholder="Filter niches…" aria-label="Filter niches"><button class="toolbtn" id="niche-reset" type="button">Reset columns</button></div></div>
-      <div id="niche-grid"></div>
-    </div>
-
-    <details class="data-panel">
-      <summary><span>Detailed opportunity scorecard</span><span class="summary-meta">15 scoring factors + weighted score</span></summary>
-      <div class="panel-body"><div class="panel-head"><div class="panel-title"><h3>Validated scores</h3><span class="count" id="scorecard-count">0 rows</span></div><div class="toolbar"><input class="search" id="scorecard-search" placeholder="Filter scorecard…"><button class="toolbtn" id="scorecard-reset" type="button">Reset columns</button></div></div><div id="scorecard-grid"></div></div>
-    </details>
-
-    <details class="data-panel">
-      <summary><span>Evidence controls</span><span class="summary-meta">Confidence, completeness, verified and missing evidence</span></summary>
-      <div class="panel-body"><div class="panel-head"><div class="panel-title"><h3>Independent evidence controls</h3><span class="count" id="evidence-count">0 rows</span></div><div class="toolbar"><input class="search" id="evidence-search" placeholder="Filter evidence…"><button class="toolbtn" id="evidence-reset" type="button">Reset columns</button></div></div><div id="evidence-grid"></div></div>
-    </details>
-
-    <details class="data-panel">
-      <summary><span>AI autonomy</span><span class="summary-meta">Build, market, deliver and human-dependency scores</span></summary>
-      <div class="panel-body"><div class="panel-head"><div class="panel-title"><h3>AI Autonomy derivation</h3><span class="count" id="autonomy-count">0 rows</span></div><div class="toolbar"><input class="search" id="autonomy-search" placeholder="Filter autonomy…"><button class="toolbtn" id="autonomy-reset" type="button">Reset columns</button></div></div><div id="autonomy-grid"></div></div>
-    </details>
-
-    <details class="data-panel">
-      <summary><span>Scoring weights</span><span class="summary-meta">Framework factor key including MRR</span></summary>
-      <div class="panel-body"><div id="weights-grid"></div></div>
-    </details>
-  </section>
-
-  <section class="section" id="market">
-    <div class="section-head"><div><h2>Macroeconomics & marketplace data</h2><p>High-level market signals plus the full marketplace master table.</p></div><a class="source-link external" href="https://github.com/tbhrc/drf/blob/main/research/ai-first-digital-marketplaces-and-service-platforms.md">Source ↗</a></div>
-    <div class="signal-grid" id="macro-grid"><div class="signal">Loading macro signals…</div></div>
-    <details class="data-panel">
-      <summary><span>Master marketplace table</span><span class="summary-meta">Platforms, economics, AI mode, compliance and priority</span></summary>
-      <div class="panel-body"><div class="panel-head"><div class="panel-title"><h3>AI-first internet revenue marketplaces</h3><span class="count" id="market-count">0 rows</span></div><div class="toolbar"><input class="search" id="market-search" placeholder="Filter marketplaces…"><button class="toolbtn" id="market-reset" type="button">Reset columns</button></div></div><div id="market-grid"></div></div>
-    </details>
-  </section>
-
-  <section class="section" id="work">
-    <div class="section-head"><div><h2>Work in motion</h2><p>Open and recently completed GitHub Issues combined into one sortable work table.</p></div><a class="source-link external" href="https://github.com/tbhrc/drf/issues">Issues ↗</a></div>
-    <div class="panel work-panel"><div class="panel-head"><div class="panel-title"><h3>Issue workstream</h3><span class="count" id="work-count">0 rows</span></div><div class="toolbar"><input class="search" id="work-search" placeholder="Filter work…"><button class="toolbtn" id="work-reset" type="button">Reset columns</button></div></div><div id="work-grid"></div></div>
-  </section>
-
-  <section class="section" id="research">
-    <div class="section-head"><div><h2>Research & operating truth</h2><p>Direct navigation into the durable source material driving the dashboard.</p></div></div>
-    <div class="research-grid">
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/business-opportunity-validation-2026-08-29.md">Opportunity validation<span>Cross-opportunity research and validation.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/five-golden-business-opportunities-2026-08-29.md">Golden opportunities<span>Highest-potential opportunities research.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/businesses/highlevel-vertical-saas-snapshot/research/gohighlevel-recurring-revenue-opportunities-2026-08-29.md">GoHighLevel MRR<span>Recurring-revenue product opportunities.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/businesses/NICHES.md">Niche register<span>Ranked product × micro-niche targets and evidence.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/niche-attractiveness-scoring-framework.md">Niche scoring framework<span>Second-stage sniper-market scoring model.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/research/ai-first-digital-marketplaces-and-service-platforms.md">Internet revenue map<span>Macro marketplace and services map.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/businesses/business-blueprints/README.md">Business Blueprints<span>Multi-platform Blueprint business and distribution model.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/business-opportunity-scoring-framework.md">Scoring framework<span>Canonical weighted opportunity model.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/tree/main/businesses">Businesses<span>Revenue ventures and operating truth.</span></a>
-      <a class="external" href="https://github.com/tbhrc/drf/tree/main/research">Research library<span>All durable market evidence.</span></a>
-    </div>
-  </section>
-
-  <section class="section" id="sources">
-    <div class="section-head"><div><h2>Source health</h2><p>Dashboard data fails visibly instead of silently becoming stale.</p></div></div>
-    <div class="statusbox">
-      <div class="src"><strong>README.md</strong><span id="src-readme">Loading…</span></div>
-      <div class="src"><strong>VERSION</strong><span id="src-version">Loading…</span></div>
-      <div class="src"><strong>OPPORTUNITIES.md</strong><span id="src-opps">Loading…</span></div>
-      <div class="src"><strong>NICHES.md</strong><span id="src-niches">Loading…</span></div>
-      <div class="src"><strong>Macro research</strong><span id="src-macro">Loading…</span></div>
-      <div class="src"><strong>Open Issues</strong><span id="src-open">Loading…</span></div>
-      <div class="src"><strong>Closed Issues</strong><span id="src-closed">Loading…</span></div>
-    </div>
-  </section>
-
-  <section class="version-divider" id="v2-preview" aria-label="Version 2 comparison divider">
-    <div class="inner">
-      <div class="version-kicker">Version 1 ends here · comparison line</div>
-      <h2>Revenue Blueprint Factory — Version 2 Preview</h2>
-      <p>Designed for 30+ opportunities. Scan the result × niche portfolio as a compact table, then expand only the business you want to inspect.</p>
-      <span class="compare-note">Outcome first · niche second · proof before capital · every business collapsible</span>
-    </div>
-  </section>
-
-  <section class="v2" aria-label="Revenue Blueprint Factory Version 2 preview">
-    <div class="v2wrap">
-      <div class="v2hero">
-        <div class="v2hero-row">
-          <div>
-            <span class="v2badge">Proposed standard · scalable portfolio view</span>
-            <h2>Revenue Blueprint Factory</h2>
-            <p>The opportunity is the result a buyer pays for. The hidden gem is the right niche for that result. Vendors, platforms and agents come afterwards as replaceable delivery rails.</p>
-          </div>
-          <div class="v2actions">
-            <a class="v2btn primary external" href="https://github.com/tbhrc/drf/blob/main/businesses/INVESTMENT-READINESS.md">Investment register ↗</a>
-            <a class="v2btn external" href="https://github.com/tbhrc/drf/blob/main/businesses/NICHES.md">Niche register ↗</a>
-            <a class="v2btn external" href="https://github.com/tbhrc/drf/blob/main/workflows/revenue-blueprint-factory.md">RBF-7 workflow ↗</a>
-          </div>
+  <section class="v3-hero" id="v3-top">
+    <div class="v3-wrap v3-hero-inner">
+      <span class="v3-kicker">Dashboard Version 3 · consolidated founder control surface</span>
+      <div class="v3-hero-row">
+        <div class="v3-hero-copy">
+          <h1>Find the business. Find the niche. Build the revenue.</h1>
+          <p>DRF discovers, researches, compares, adapts, tests and scales revenue-producing business opportunities. Dashboard V3 restores the structural business metrics that made V1 powerful, adds the commercial and proof controls developed in V2, and keeps every score in its correct layer.</p>
         </div>
-        <div class="v2metrics">
-          <div class="v2metric"><small>Portfolio</small><strong id="v2-total">…</strong><span>result opportunities</span></div>
-          <div class="v2metric"><small>RBF rebuilt</small><strong id="v2-rebuilt">…</strong><span>new standard complete</span></div>
-          <div class="v2metric"><small>Scored niches</small><strong id="v2-niche-total">…</strong><span>target-market variants</span></div>
-          <div class="v2metric"><small>P4 revenue proven</small><strong id="v2-p4">…</strong><span>real payment + value</span></div>
-          <div class="v2metric"><small>P6 certified</small><strong id="v2-p6">…</strong><span>Blueprint certified</span></div>
+        <div class="v3-hero-actions">
+          <a class="v3-button primary" href="https://github.com/tbhrc/drf/blob/main/businesses/PORTFOLIO-V3.md">V3 portfolio ↗</a>
+          <a class="v3-button" href="https://github.com/tbhrc/drf/blob/main/workflows/drf-opportunity-factory.md">Factory workflow ↗</a>
+          <a class="v3-button" href="https://github.com/tbhrc/drf/issues/77">Master #77 ↗</a>
         </div>
       </div>
 
-      <section class="v2section" id="v2-portfolio">
-        <div class="v2head">
-          <div><div class="v2eyebrow">Core decision board</div><h3>Outcome × niche portfolio</h3><p>Every opportunity is collapsed by default. The row is the high-level decision; click it to open niche rankings, RBF evidence, score factors, test parameters and links.</p></div>
-          <span class="count" id="v2-portfolio-count">0 rows</span>
+      <div class="v3-architecture" aria-label="Three workflow layers">
+        <article class="v3-arch-card"><small>Workflow Layer 1</small><strong>Select the business</strong><p>Opportunity Score, MRR, AI Autonomy, Evidence, Research and External Market Proof answer: do we want this kind of business?</p></article>
+        <article class="v3-arch-card"><small>Workflow Layer 2</small><strong>Select the target and model</strong><p>Rank niches, learn from proven operators, then define the offer, price, GTM, delivery, RBS, economics, Stage, Capital and Next Proof.</p></article>
+        <article class="v3-arch-card"><small>Workflow Layer 3</small><strong>Structure the business case</strong><p>Produce one comparable founder dossier, preserve evidence and readiness, guide execution and optionally package a proven system as a Business Blueprint.</p></article>
+      </div>
+      <div class="v3-version-note"><strong>Dashboard Version 3 is not Workflow Layer 3.</strong> V3 is the website synthesis of all three workflow layers. Dashboard Versions 2 and 1 remain visible below as the evolution history.</div>
+    </div>
+  </section>
+
+  <main class="v3-wrap v3-main">
+    <section class="v3-section" id="v3-master">
+      <div class="v3-section-head">
+        <div class="v3-section-title"><div class="v3-eyebrow">Area 1 · all three workflow layers</div><h2>V3 consolidated master dashboard</h2><p>One parent row per business opportunity. Opportunity Score selects the business, Niche Score selects the market, RBS underwrites the selected Business × Niche, and DRF Proof records what DRF has actually achieved.</p></div>
+        <a class="v3-source-link" href="https://github.com/tbhrc/drf/blob/main/businesses/PORTFOLIO-V3.md">Canonical source ↗</a>
+      </div>
+
+      <div class="v3-metrics" id="v3-metrics" aria-live="polite">
+        <div class="v3-metric"><small>Parent opportunities</small><strong id="metric-total">…</strong><span>One row per business</span></div>
+        <div class="v3-metric positive"><small>Golden opportunities</small><strong id="metric-golden">…</strong><span>All Layer 1 gates passed</span></div>
+        <div class="v3-metric"><small>High MRR</small><strong id="metric-mrr">…</strong><span>MRR score ≥9</span></div>
+        <div class="v3-metric"><small>High AI autonomy</small><strong id="metric-ai">…</strong><span>AI Autonomy ≥85</span></div>
+        <div class="v3-metric"><small>Market proven</small><strong id="metric-emp">…</strong><span>EMP3 or EMP4</span></div>
+        <div class="v3-metric"><small>RBS complete</small><strong id="metric-rbs">…</strong><span>Business × Niche underwritten</span></div>
+        <div class="v3-metric"><small>P4 / P5 / P6</small><strong id="metric-proof">…</strong><span>Revenue / repeatability / scale</span></div>
+        <div class="v3-metric attention"><small>Deep work pending</small><strong id="metric-pending">…</strong><span>RBS or dossier incomplete</span></div>
+      </div>
+
+      <div class="v3-panel">
+        <div class="v3-panel-head"><div class="v3-panel-title"><h3>Proof funnel</h3><p>Click a level to filter the master portfolio. External Market Proof is a separate column.</p></div></div>
+        <div class="v3-funnel" id="proof-funnel" aria-label="DRF proof filter"></div>
+      </div>
+
+      <div class="v3-intel-grid">
+        <section class="v3-panel">
+          <div class="v3-panel-head"><div class="v3-panel-title"><h3>Founder decision queue</h3><p>Active proof work first, then the strongest research opportunities.</p></div></div>
+          <ol class="v3-list" id="decision-queue"><li class="v3-loading">Loading decision queue…</li></ol>
+        </section>
+        <section class="v3-panel">
+          <div class="v3-panel-head"><div class="v3-panel-title"><h3>Portfolio data quality</h3><p>Pending is visible work, not zero or failure.</p></div></div>
+          <div class="v3-quality-grid" id="quality-grid"><div class="v3-loading">Loading data quality…</div></div>
+        </section>
+      </div>
+
+      <section class="v3-panel" style="margin-top:9px">
+        <div class="v3-panel-head">
+          <div class="v3-panel-title"><h3>Complete founder comparison <span class="v3-count" id="master-count">0 rows</span></h3><p>Scroll inside the block. Drag header edges. Click headers to sort. Filter every column like a spreadsheet.</p></div>
+          <div class="v3-tools"><input class="v3-search" id="master-search" type="search" placeholder="Search all opportunities…" aria-label="Search the V3 master portfolio"><button class="v3-tool" id="master-clear" type="button">Clear filters</button><button class="v3-tool" id="master-reset" type="button">Reset widths</button></div>
         </div>
-        <div class="architecture-strip" aria-label="Revenue Blueprint Factory architecture">
-          <div class="arch-step">1. RESULT / PROMISE</div><div class="arch-step">2. NICHE RANKING</div><div class="arch-step">3. <abbr class="abbr-tip" tabindex="0" title="Revenue Blueprint Score">RBS</abbr></div><div class="arch-step">4. PROOF</div><div class="arch-step">5. CAPITAL</div><div class="arch-step">6. SCALE / BLUEPRINT</div>
-        </div>
-        <div class="opp-table-shell">
-          <div class="opp-table-head"><div>Result / promise</div><div>Best scored niche</div><div><abbr class="abbr-tip" tabindex="0" title="Revenue Blueprint Score">RBS</abbr></div><div>Niche</div><div>Proof</div><div>Gate</div><div>Capital</div><div>Investor</div><div>Next proof milestone</div></div>
-          <div id="v2-opportunity-modules"><div class="empty-state">Loading result × niche portfolio…</div></div>
+        <div id="master-grid"><div class="v3-loading">Loading the canonical 27-business V3 portfolio…</div></div>
+      </section>
+    </section>
+
+    <section class="v3-section" id="v3-layer1">
+      <div class="v3-section-head">
+        <div class="v3-section-title"><div class="v3-eyebrow">Area 2 · Workflow Layer 1</div><h2>Opportunity discovery and structural selection</h2><p><strong>Do we want this kind of business?</strong> Compare the service/outcome, recurring quality, AI leverage, evidence coverage and external proof before deep niche design.</p></div>
+        <a class="v3-source-link" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/business-opportunity-scoring-framework.md">Layer 1 standard ↗</a>
+      </div>
+      <section class="v3-panel">
+        <div class="v3-panel-head"><div class="v3-panel-title"><h3>Layer 1 portfolio <span class="v3-count" id="layer1-count">0 rows</span></h3><p>Golden, Advance and Hold are structural decisions; none authorises capital by itself.</p></div><div class="v3-tools"><input class="v3-search" id="layer1-search" type="search" placeholder="Filter Layer 1…" aria-label="Filter Workflow Layer 1"><button class="v3-tool" id="layer1-clear" type="button">Clear filters</button><button class="v3-tool" id="layer1-reset" type="button">Reset widths</button></div></div>
+        <div id="layer1-grid"><div class="v3-loading">Loading Workflow Layer 1…</div></div>
+      </section>
+    </section>
+
+    <section class="v3-section" id="v3-layer2">
+      <div class="v3-section-head">
+        <div class="v3-section-title"><div class="v3-eyebrow">Area 3 · Workflow Layer 2</div><h2>Niche selection and commercial underwriting</h2><p><strong>Where, how and at what economics should it operate?</strong> Every ranked niche remains visible. The parent opportunity contributes the current offer, price, GTM, RBS, DRF Proof, Stage, Capital and Next Proof where completed.</p></div>
+        <a class="v3-source-link" href="https://github.com/tbhrc/drf/blob/main/businesses/NICHES.md">Ranked niches ↗</a>
+      </div>
+      <section class="v3-panel">
+        <div class="v3-panel-head"><div class="v3-panel-title"><h3>Business × Niche matrix <span class="v3-count" id="layer2-count">0 rows</span></h3><p>Commercial Layer is intentionally excluded from this scan view to preserve width for the niche, pain, offer and decision.</p></div><div class="v3-tools"><input class="v3-search" id="layer2-search" type="search" placeholder="Filter niches, verticals or offers…" aria-label="Filter Workflow Layer 2"><button class="v3-tool" id="layer2-clear" type="button">Clear filters</button><button class="v3-tool" id="layer2-reset" type="button">Reset widths</button></div></div>
+        <div id="layer2-grid"><div class="v3-loading">Loading ranked Business × Niche intelligence…</div></div>
+      </section>
+    </section>
+
+    <section class="v3-section" id="v3-layer3">
+      <div class="v3-section-head">
+        <div class="v3-section-title"><div class="v3-eyebrow">Area 4 · Workflow Layer 3</div><h2>Structured business-case and Blueprint readiness</h2><p><strong>Can it be represented as one complete, comparable and executable business case?</strong> This view exposes dossier completeness, proof honesty, source freshness and what is still missing before execution or packaging.</p></div>
+        <a class="v3-source-link" href="https://github.com/tbhrc/drf/blob/main/knowledge/templates/business-opportunity-research.md">Layer 3 dossier ↗</a>
+      </div>
+      <section class="v3-panel">
+        <div class="v3-panel-head"><div class="v3-panel-title"><h3>Layer 3 readiness <span class="v3-count" id="layer3-count">0 rows</span></h3><p>A polished dossier does not raise DRF Proof. Readiness and operating proof remain separate.</p></div><div class="v3-tools"><input class="v3-search" id="layer3-search" type="search" placeholder="Filter dossiers or readiness…" aria-label="Filter Workflow Layer 3"><button class="v3-tool" id="layer3-clear" type="button">Clear filters</button><button class="v3-tool" id="layer3-reset" type="button">Reset widths</button></div></div>
+        <div id="layer3-grid"><div class="v3-loading">Loading Workflow Layer 3 readiness…</div></div>
+      </section>
+    </section>
+
+    <section class="v3-section" id="v3-sources">
+      <div class="v3-section-head">
+        <div class="v3-section-title"><div class="v3-eyebrow">Governance and definitions</div><h2>Source health, legends and operating truth</h2><p>Definitions appear immediately on hover or keyboard focus throughout V3. The panels below provide the complete reference and direct canonical links.</p></div>
+      </div>
+      <section class="v3-panel">
+        <div class="v3-panel-head"><div class="v3-panel-title"><h3>Abbreviation legend</h3><p>The complete meaning behind the compact master table.</p></div></div>
+        <div class="v3-definition-grid" id="definition-grid"></div>
+      </section>
+      <section class="v3-panel">
+        <div class="v3-panel-head"><div class="v3-panel-title"><h3>Canonical source health</h3><p>The dashboard fails visibly rather than silently creating stale or false data.</p></div></div>
+        <div class="v3-source-grid" id="source-grid"><div class="v3-loading">Checking canonical sources…</div></div>
+        <div class="v3-links">
+          <a href="https://github.com/tbhrc/drf/blob/main/businesses/PORTFOLIO-V3.md">V3 portfolio<span>Joined 27-business founder register.</span></a>
+          <a href="https://github.com/tbhrc/drf/blob/main/businesses/NICHES.md">Niche register<span>All ranked Business × Niche rows.</span></a>
+          <a href="https://github.com/tbhrc/drf/blob/main/workflows/drf-opportunity-factory.md">Opportunity workflow<span>One Layer 1 → 2 → 3 route.</span></a>
+          <a href="https://github.com/tbhrc/drf/blob/main/workflows/drf-recurring-intelligence-loops.md">Recurring intelligence<span>Discovery and portfolio refresh.</span></a>
+          <a href="https://github.com/tbhrc/drf/blob/main/knowledge/architecture/drf-v3-portfolio-data-contract.md">Data contract<span>Types, precedence and missing values.</span></a>
+          <a href="https://github.com/tbhrc/drf/blob/main/knowledge/templates/drf-opportunity-factory-intake-prompt.md">Founder prompt<span>Start any new business opportunity.</span></a>
+          <a href="https://github.com/tbhrc/drf/tree/main/businesses">Business library<span>Parent folders and current dossiers.</span></a>
+          <a href="https://github.com/tbhrc/drf/issues/77">Master programme<span>Architecture, workflow and acceptance.</span></a>
         </div>
       </section>
+    </section>
+  </main>
 
-      <details class="v2collapse" id="v2-intelligence">
-        <summary><span class="v2collapse-title"><b>Global niche + market intelligence</b><span>All niche rows, macro signals and marketplace intelligence. Supporting evidence — collapsed until needed.</span></span></summary>
-        <div class="v2collapse-body">
-          <div class="v2panel"><div class="v2panel-head"><h4>All ranked niches</h4><span class="count" id="v2-niche-count">0 rows</span></div><div id="v2-niche-grid"></div></div>
-          <div class="v2card" style="margin-top:10px"><h4>Macro signals</h4><div class="signal-grid" id="v2-macro-grid"><div class="signal">Loading macro signals…</div></div></div>
-          <details class="data-panel" style="margin-top:10px"><summary><span>Marketplace master table</span><span class="summary-meta">Supporting distribution/platform intelligence</span></summary><div class="v2panel"><div class="v2panel-head"><h4>AI-first internet revenue marketplaces</h4><span class="count" id="v2-market-count">0 rows</span></div><div id="v2-market-grid"></div></div></details>
-        </div>
-      </details>
-
-      <details class="v2collapse" id="v2-work">
-        <summary><span class="v2collapse-title"><b>Work in motion</b><span>GitHub execution stays available without consuming the main decision surface.</span></span></summary>
-        <div class="v2collapse-body"><div class="v2panel"><div class="v2panel-head"><h4>Issue workstream</h4><span class="count" id="v2-work-count">0 rows</span></div><div id="v2-work-grid"></div></div></div>
-      </details>
-
-      <details class="v2collapse" id="v2-research">
-        <summary><span class="v2collapse-title"><b>Research, models and operating truth</b><span>Direct links to the durable evidence and RBF standards.</span></span></summary>
-        <div class="v2collapse-body"><div class="v2links">
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/whatsapp-crm-revenue-core/RBF-ASSESSMENT-HVAC.md">HVAC RBF assessment<span>Enquiry-to-Revenue Control × HVAC: 86 RBS, 92 niche, P2.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/instant-quote-quote-to-cash/RBF-ASSESSMENT-DRYWALL-GYPSUM.md">Gypsum RBF assessment<span>Fast Quote-to-Cash × gypsum: 82 RBS, 87 niche, P2.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/business-blueprints/DISTRIBUTION-CHANNELS.md">Business Blueprint channels<span>Whop, Gumroad, Contra, Notion, Lemon Squeezy and other endpoints routed by product fit.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/business-blueprints/RBF-ASSESSMENT.md">Business Blueprints RBF assessment<span>82/100 P2 multi-platform digital-product underwriting.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/INVESTMENT-READINESS.md">Investment readiness<span>Outcome-first portfolio RBS, proof, gate and capital register.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/workflows/revenue-blueprint-factory.md">RBF-7 workflow<span>Capture → Underwrite → Backtest → Forward Test → Scale.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md">RBS scoring standard<span>Ten-factor score, P0–P6 and capital gates.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/NICHES.md">Niche register<span>Second commercial-selection layer and hidden-gem ranking.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/research/ai-first-digital-marketplaces-and-service-platforms.md">Internet revenue map<span>Marketplace, distribution and macro evidence.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/knowledge/templates/revenue-blueprint-financial-model.md">Financial model<span>Monthly return, payback, runway and downside rules.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/tree/main/businesses">All businesses<span>Every parent result opportunity and durable research.</span></a>
-          <a class="v2link external" href="https://github.com/tbhrc/drf/tree/main/research">Research library<span>All durable market evidence.</span></a>
-        </div></div>
-      </details>
-
-      <details class="v2collapse" id="v2-sources">
-        <summary><span class="v2collapse-title"><b>V2 source health</b><span>Data integrity checks — collapsed until needed.</span></span></summary>
-        <div class="v2collapse-body"><div class="v2source">
-          <div class="src"><strong>INVESTMENT-READINESS.md</strong><span id="src-v2-investment">Loading…</span></div>
-          <div class="src"><strong>NICHES.md</strong><span id="src-v2-niches">Loading…</span></div>
-          <div class="src"><strong>HVAC RBF assessment</strong><span id="src-v2-hvac">Loading…</span></div>
-          <div class="src"><strong>Gypsum RBF assessment</strong><span id="src-v2-gypsum">Loading…</span></div>
-          <div class="src"><strong>Business Blueprint channels</strong><span id="src-v2-whop-model">Loading…</span></div>
-          <div class="src"><strong>Marketplace research</strong><span id="src-v2-market">Loading…</span></div>
-        </div></div>
-      </details>
-      <div class="v2legend" aria-label="V2 abbreviation legend">
-        <h4>Legend</h4>
-        <div class="v2legend-grid">
-          <div class="v2legend-item"><b><abbr class="abbr-tip" tabindex="0" title="Revenue Blueprint Factory">RBF</abbr></b><span>Revenue Blueprint Factory workflow and decision system.</span></div>
-          <div class="v2legend-item"><b><abbr class="abbr-tip" tabindex="0" title="Revenue Blueprint Score">RBS</abbr></b><span>Weighted score used with Proof Level and Investment Gate.</span></div>
-          <div class="v2legend-item"><b><abbr class="abbr-tip" tabindex="0" title="Ideal Customer Profile">ICP</abbr></b><span>Specific buyer profile inside the sub-niche.</span></div>
-          <div class="v2legend-item"><b><abbr class="abbr-tip" tabindex="0" title="Customer Relationship Management">CRM</abbr></b><span>System of record for contacts and lifecycle state.</span></div>
-          <div class="v2legend-item"><b><abbr class="abbr-tip" tabindex="0" title="Artificial Intelligence">AI</abbr></b><span>Agent/model layer used for judgement and orchestration.</span></div>
-          <div class="v2legend-item"><b><abbr class="abbr-tip" tabindex="0" title="Monthly Recurring Revenue">MRR</abbr></b><span>Monthly recurring revenue run-rate indicator.</span></div>
-        </div>
-      </div>
-
-      <div class="v2backtop"><a href="#overview">↑ Back to Version 1</a></div>
-    </div>
+  <section class="legacy-zone" id="dashboard-v2" aria-labelledby="dashboard-v2-title">
+    <div class="legacy-divider"><div class="v3-wrap legacy-divider-inner"><small>Dashboard evolution · preserved implementation</small><h2 id="dashboard-v2-title">Dashboard Version 2</h2><p>The RBS, proof and capital experiment is preserved below with its original controls. V3 retains its useful commercial intelligence while correcting the RBF-first architectural drift.</p></div></div>
+    <iframe class="legacy-frame" id="legacy-v2-frame" src="dashboard-v1-v2.html?embedded=v2" title="Preserved Dashboard Version 2" loading="lazy"></iframe>
+    <div class="legacy-fallback"><a href="dashboard-v1-v2.html#v2-preview">Open the complete preserved V1/V2 dashboard ↗</a></div>
   </section>
-</main>
-<footer><div class="wrap foot"><span>DRF — David's Revenue Factory</span><span>Version 1 + proposed outcome × niche Revenue Blueprint Factory V2 · Repository = source of truth</span></div></footer>
-<script>
-const REPO='tbhrc/drf';
-const RAW=`https://raw.githubusercontent.com/${REPO}/main/`;
-const API=`https://api.github.com/repos/${REPO}`;
-const $=id=>document.getElementById(id);
-const grids={};
 
-document.querySelectorAll('.external').forEach(a=>{a.target='_blank';a.rel='noopener noreferrer'});
-function setSource(id,ok,msg){const el=$(id);if(!el)return;el.textContent=msg;el.className=ok?'ok':'err'}
-async function text(path,statusId){try{const r=await fetch(RAW+path,{cache:'no-store'});if(!r.ok)throw new Error(String(r.status));const t=await r.text();setSource(statusId,true,'Loaded from main');return t}catch(e){setSource(statusId,false,`Failed: ${e.message}`);throw e}}
-function stripMd(s){return (s||'').replace(/\*\*/g,'').replace(/`/g,'').replace(/\[([^\]]+)\]\(([^\)]+)\)/g,'$1').trim()}
-function parseRow(line){return line.slice(1,-1).split('|').map(stripMd)}
-function parseTables(md){const lines=md.split('\n');const tables=[];let heading='';for(let i=0;i<lines.length;i++){const hm=lines[i].match(/^(#{1,6})\s+(.+)$/);if(hm){heading=stripMd(hm[2]);continue}if(/^\|.*\|\s*$/.test(lines[i])&&i+1<lines.length&&/^\|[\s:|-]+\|\s*$/.test(lines[i+1])){const headers=parseRow(lines[i]);const rows=[];i+=2;while(i<lines.length&&/^\|.*\|\s*$/.test(lines[i])){const vals=parseRow(lines[i]);const row={};headers.forEach((h,j)=>row[h]=vals[j]||'');rows.push(row);i++}i--;tables.push({heading,headers,rows})}}return tables}
-function findTable(tables,needle){needle=needle.toLowerCase();return tables.find(t=>(t.heading||'').toLowerCase().includes(needle))||{heading:'',headers:[],rows:[]}}
-function section(md,title){const esc=title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const m=md.match(new RegExp(`## ${esc}\n([\s\S]*?)(?=\n## |$)`));return m?m[1]:''}
-function fenced(md,heading){const s=section(md,heading);const m=s.match(/```[^\n]*\n([\s\S]*?)```/);return m?m[1].trim():''}
-function macroSignals(md){const block=(md.match(/The macro opportunity is substantial:\s*([\s\S]*?)(?=\n\nThese numbers|\n## )/)||[])[1]||'';return block.split('\n').filter(l=>/^\s*- /.test(l)).map(l=>stripMd(l.replace(/^\s*- /,'')))}
-function numericValue(v){if(v===null||v===undefined)return null;const s=String(v).replace(/,/g,'').trim();const m=s.match(/-?\d+(?:\.\d+)?/);return m?Number(m[0]):null}
-function scoreClass(v){const n=numericValue(v);if(n===null)return'';if(String(v).includes('/10'))return n>=8?'good':n>=6?'warn':'bad';if(n>=80)return'good';if(n>=60)return'warn';return'bad'}
-function escapeHtml(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
-const ABBR_TITLES={RBF:'Revenue Blueprint Factory',RBS:'Revenue Blueprint Score',ICP:'Ideal Customer Profile',CRM:'Customer Relationship Management',AI:'Artificial Intelligence',MRR:'Monthly Recurring Revenue'};
-function abbrMarkup(term,label){const t=ABBR_TITLES[term]||term;const l=label||term;return `<abbr class="abbr-tip" tabindex="0" title="${escapeHtml(t)}">${escapeHtml(l)}</abbr>`}
-function labelWithAbbrs(text){return escapeHtml(String(text??'')).replace(/\bRBF\b/g,abbrMarkup('RBF')).replace(/\bRBS\b/g,abbrMarkup('RBS')).replace(/\bICP\b/g,abbrMarkup('ICP')).replace(/\bCRM\b/g,abbrMarkup('CRM')).replace(/\bAI\b/g,abbrMarkup('AI')).replace(/\bMRR\b/g,abbrMarkup('MRR'))}
-function splitSubNicheText(value){const txt=String(value||'').trim();if(!txt)return{lead:'',tail:''};const colon=txt.indexOf(':');if(colon>1)return{lead:txt.slice(0,colon+1).trim(),tail:txt.slice(colon+1).trim()};const words=txt.split(/\s+/);return{lead:words.slice(0,2).join(' '),tail:words.slice(2).join(' ')}}
-function sourceLinks(value){const paths=String(value||'').match(/(?:businesses|research|knowledge)\/[A-Za-z0-9_./-]+\.md/g)||[];if(!paths.length)return null;const frag=document.createDocumentFragment();[...new Set(paths)].forEach((p,i)=>{if(i)frag.append(document.createTextNode(' · '));const a=document.createElement('a');a.href=`https://github.com/${REPO}/blob/main/${p}`;a.target='_blank';a.rel='noopener noreferrer';a.className='extlink';a.textContent=paths.length>1?`Source ${i+1} ↗`:'Open ↗';frag.append(a)});return frag}
-function defaultWidth(name){const n=name.toLowerCase();if(n==='rank'||n==='#')return 54;if(n.includes('opportunity'))return 250;if(n.includes('result / promise'))return 360;if(n.includes('sub-niche')||n.includes('core pain'))return 300;if(n.includes('current read'))return 380;if(n.includes('current action')||n.includes('next action')||n.includes('next evidence'))return 350;if(n.includes('return profile'))return 330;if(n.includes('verified evidence')||n.includes('missing evidence'))return 360;if(n.includes('what drf')||n.includes('demand')||n.includes('economics')||n.includes('human/compliance')||n.includes('automation')||n.includes('founder read'))return 280;if(n.includes('canonical detail'))return 110;if(n.includes('title'))return 360;if(n.includes('updated'))return 135;if(n.includes('state')||n.includes('stage')||n.includes('priority')||n.includes('mode')||n.includes('discovery')||n.includes('decision')||n.includes('proof')||n.includes('gate')||n.includes('capital'))return 135;if(n.includes('score')||n.includes('confidence'))return 120;if(n.length<=4)return 72;return 150}
-function renderMobilePortfolio(rows){const host=$('portfolio-cards');host.innerHTML='';rows.forEach((r,i)=>{const c=document.createElement('article');c.className='oppcard';const links=sourceLinks(r['Canonical detail']);c.innerHTML=`<div class="oppcard-head"><h3>#${i+1} ${escapeHtml(r['Opportunity'])}</h3><span class="stage">${escapeHtml(r['Stage'])}</span></div><div class="scoregrid"><div class="scorebox"><small>Score</small><strong class="${scoreClass(r['Opportunity Score'])}">${escapeHtml(r['Opportunity Score'])}</strong></div><div class="scorebox"><small>MRR</small><strong class="${scoreClass(r['MRR'])}">${escapeHtml(r['MRR'])}</strong></div><div class="scorebox"><small>AI</small><strong class="${scoreClass(r['AI Autonomy'])}">${escapeHtml(r['AI Autonomy'])}</strong></div><div class="scorebox"><small>Evidence</small><strong class="${scoreClass(r['Evidence Confidence'])}">${escapeHtml(r['Evidence Confidence'])}</strong></div></div><div class="opp-copy"><strong>Current read</strong><p>${escapeHtml(r['Current read'])}</p></div><div class="opp-copy"><strong>Next action</strong><p>${escapeHtml(r['Next action'])}</p></div>`;if(links){const d=document.createElement('div');d.append(links);c.append(d)}host.append(c)})}
-function createGrid(hostId,rows,opts={}){
-  const host=$(hostId);if(!host)return;const id=hostId;const state={rows:[...rows],filtered:[...rows],sortKey:opts.defaultSort||null,dir:opts.defaultDir||'desc',query:'',widths:{}};grids[id]=state;
-  const baseHeaders=opts.columns||Object.keys(rows[0]||{});const headers=opts.rank?['Rank',...baseHeaders]:baseHeaders;
-  const defaultWidths=opts.defaultWidths||{};
-  const widthFor=h=>state.widths[h]||defaultWidths[h]||defaultWidth(h);
-  try{state.widths=JSON.parse(localStorage.getItem(`drf-widths-${id}`)||'{}')}catch{}
-  function applyFilter(){const q=state.query.trim().toLowerCase();state.filtered=q?state.rows.filter(r=>Object.values(r).some(v=>String(v).toLowerCase().includes(q))):[...state.rows];applySort()}
-  function applySort(){if(state.sortKey){state.filtered.sort((a,b)=>{const av=a[state.sortKey],bv=b[state.sortKey],an=numericValue(av),bn=numericValue(bv);let cmp;if(an!==null&&bn!==null)cmp=an-bn;else cmp=String(av??'').localeCompare(String(bv??''),undefined,{numeric:true,sensitivity:'base'});return state.dir==='asc'?cmp:-cmp})}render()}
-  function cellValue(r,h,index){if(h==='Rank')return index+1;return r[h]??''}
-  function render(){host.innerHTML='';const wrap=document.createElement('div');wrap.className='grid-scroll';const table=document.createElement('table');table.className='data-grid';const colgroup=document.createElement('colgroup');let total=0;headers.forEach(h=>{const col=document.createElement('col');const w=widthFor(h);col.style.width=`${w}px`;total+=w;colgroup.append(col)});table.style.width=`${Math.max(total,host.clientWidth||0)}px`;table.append(colgroup);const thead=document.createElement('thead');const trh=document.createElement('tr');headers.forEach((h,idx)=>{const th=document.createElement('th');th.style.position='sticky';if(h==='Rank'){const div=document.createElement('div');div.className='sortbtn';div.textContent='#';th.append(div)}else{const btn=document.createElement('button');btn.className='sortbtn';btn.type='button';btn.innerHTML=`<span>${labelWithAbbrs(h)}</span><span class="sortmark">${state.sortKey===h?(state.dir==='asc'?'▲':'▼'):''}</span>`;btn.addEventListener('click',()=>{if(state.sortKey===h)state.dir=state.dir==='asc'?'desc':'asc';else{state.sortKey=h;state.dir='desc'}applySort()});th.append(btn)}const rz=document.createElement('span');rz.className='resizer';rz.addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();rz.classList.add('active');const startX=e.clientX,startW=widthFor(h);const move=ev=>{const w=Math.max(48,startW+(ev.clientX-startX));state.widths[h]=w;const col=colgroup.children[idx];col.style.width=`${w}px`;const sum=headers.reduce((s,k)=>s+widthFor(k),0);table.style.width=`${sum}px`};const up=()=>{rz.classList.remove('active');document.removeEventListener('pointermove',move);document.removeEventListener('pointerup',up);try{localStorage.setItem(`drf-widths-${id}`,JSON.stringify(state.widths))}catch{}};document.addEventListener('pointermove',move);document.addEventListener('pointerup',up)});th.append(rz);trh.append(th)});thead.append(trh);table.append(thead);const tbody=document.createElement('tbody');state.filtered.forEach((r,index)=>{const tr=document.createElement('tr');headers.forEach(h=>{const td=document.createElement('td');const val=cellValue(r,h,index);if(h==='Rank'){td.className='rankcell';td.textContent=val}else if(h==='Canonical detail'){const links=sourceLinks(val);if(links)td.append(links);else td.textContent=val}else if(h==='Link'){const a=document.createElement('a');a.href=val;a.target='_blank';a.rel='noopener noreferrer';a.className='extlink';a.textContent='Open ↗';td.append(a)}else if(h==='Sub-niche / ICP'){const sp=splitSubNicheText(val);td.innerHTML=`<strong class="niche-lead">${labelWithAbbrs(sp.lead)}</strong>${sp.tail?`<span class="niche-tail">${labelWithAbbrs(sp.tail)}</span>`:''}`}else{td.innerHTML=labelWithAbbrs(val);if(numericValue(val)!==null){td.classList.add('num');const cls=scoreClass(val);if(cls&&(/score|mrr|autonomy|confidence|completeness|weighted/i.test(h)))td.classList.add(cls)}}tr.append(td)});tbody.append(tr)});table.append(tbody);wrap.append(table);host.append(wrap);if(opts.countId)$(opts.countId).textContent=`${state.filtered.length} rows`;if(opts.afterRender)opts.afterRender(state.filtered)}
-  if(state.sortKey)applySort();else render();
-  if(opts.searchId){const input=$(opts.searchId);input.addEventListener('input',()=>{state.query=input.value;applyFilter()})}
-  if(opts.resetId){$(opts.resetId).addEventListener('click',()=>{state.widths={};try{localStorage.removeItem(`drf-widths-${id}`)}catch{}render()})}
-}
-function renderSignals(items,hostId='macro-grid'){const g=$(hostId);g.innerHTML='';if(!items.length){g.innerHTML='<div class="signal">No macro signals found.</div>';return}items.slice(0,6).forEach((x,i)=>{const d=document.createElement('div');d.className='signal';d.innerHTML=`<strong>${escapeHtml(x)}</strong><span>Canonical macro signal ${i+1}</span>`;g.append(d)})}
-async function fetchIssues(state,statusId){try{const r=await fetch(`${API}/issues?state=${state}&sort=updated&direction=desc&per_page=100`,{cache:'no-store',headers:{Accept:'application/vnd.github+json'}});if(!r.ok)throw new Error(String(r.status));const rows=(await r.json()).filter(x=>!x.pull_request);setSource(statusId,true,`${rows.length} ${state}`);return rows}catch(e){setSource(statusId,false,`Failed: ${e.message}`);return[]}}
-function issueRows(openRows,closedRows){return [...openRows,...closedRows.slice(0,40)].map(i=>({Issue:`#${i.number}`,State:i.state==='open'?'Open':'Closed',Title:i.title,Updated:new Date(i.updated_at).toLocaleString(),Link:i.html_url}))}
+  <section class="legacy-zone" id="dashboard-v1" aria-labelledby="dashboard-v1-title">
+    <div class="legacy-divider"><div class="v3-wrap legacy-divider-inner"><small>Dashboard evolution · original structural portfolio</small><h2 id="dashboard-v1-title">Dashboard Version 1</h2><p>The original business-opportunity, MRR, AI Autonomy, Evidence, Research and niche views remain available at the bottom as requested. V3 synthesises rather than deletes them.</p></div></div>
+    <iframe class="legacy-frame" id="legacy-v1-frame" src="dashboard-v1-v2.html?embedded=v1" title="Preserved Dashboard Version 1" loading="lazy"></iframe>
+    <div class="legacy-fallback"><a href="dashboard-v1-v2.html">Open the complete preserved V1/V2 dashboard ↗</a></div>
+  </section>
 
-const nicheAliases={
-  'Enquiry-to-Revenue Control':'WhatsApp + CRM Revenue Core',
-  'Fast Quote-to-Cash System':'Instant Quote Generator & Quote-to-Cash System'
-};
-const caseMeta={
-  'Business Blueprints':{
-    subtitle:'Multi-platform digital product: prove the underlying result × niche, package it once, then route the compatible Blueprint across the best revenue endpoints.',
-    assessment:'businesses/business-blueprints/RBF-ASSESSMENT.md',
-    extra:'businesses/business-blueprints/DISTRIBUTION-CHANNELS.md',
-    tests:[['Paid buyers','≥ 5'],['Contribution','≥ 30%'],['Channel set','≥ 2'],['Capital cap','≤ $3K']]
-  },
-  'Enquiry-to-Revenue Control':{
-    subtitle:'Lead case: UAE HVAC/AC service contractors.',
-    assessment:'businesses/whatsapp-crm-revenue-core/RBF-ASSESSMENT-HVAC.md',
-    tests:[['Setup test','≥ AED 2,500'],['Managed fee','≥ AED 750/mo'],['Paid deposits','2 × AED 1,000'],['Timebox','30 days']]
-  },
-  'Fast Quote-to-Cash System':{
-    subtitle:'Lead case: UAE drywall / gypsum / false-ceiling installers.',
-    assessment:'businesses/instant-quote-quote-to-cash/RBF-ASSESSMENT-DRYWALL-GYPSUM.md',
-    tests:[['Setup test','≥ AED 4,000'],['Managed fee','≥ AED 1,250/mo'],['Quote replay','≥ 20'],['Paid deposits','2 × AED 1,000']]
-  }
-};
-function blueprintCandidateNiches(){return [
-  {'Vertical':'MEP / HVAC','Sub-niche / ICP':'First Blueprint candidate: HVAC/AC service contractors','Geography':'UAE, priority Dubai','Core pain / trigger':'Enquiries, quotes and AMC renewals need one reliable next-action system','Niche Score':'92/100','Evidence Confidence':'88%','Decision':'Prove underlying business first','Next evidence':'Run HVAC forward test','Canonical detail':'businesses/whatsapp-crm-revenue-core/RBF-ASSESSMENT-HVAC.md'},
-  {'Vertical':'Specialist construction','Sub-niche / ICP':'Second Blueprint candidate: drywall / gypsum / false-ceiling installers','Geography':'UAE, priority Dubai','Core pain / trigger':'Slow/manual quotation and weak quote/variation follow-up','Niche Score':'87/100','Evidence Confidence':'88%','Decision':'Prove underlying business first','Next evidence':'Run quote replay + forward test','Canonical detail':'businesses/instant-quote-quote-to-cash/RBF-ASSESSMENT-DRYWALL-GYPSUM.md'}
-]}
-function nichesForOpportunity(name,nicheRows){if(name==='Business Blueprints')return blueprintCandidateNiches();const parent=nicheAliases[name]||name;return nicheRows.filter(r=>String(r['Parent opportunity']||'').trim()===parent).sort((a,b)=>(numericValue(b['Niche Score'])||-1)-(numericValue(a['Niche Score'])||-1))}
-function bestNicheLabel(name,rows){if(!rows.length)return{label:'Pending niche research',score:'Pending',meta:'No scored niche linked yet.'};const r=rows[0];return{label:r['Sub-niche / ICP']||r['Vertical']||'Scored niche',score:r['Niche Score']||'Pending',meta:name==='Business Blueprints'?'Underlying Blueprint target; distribution channels are scored and selected separately.':`${r['Vertical']||''}${r['Geography']?` · ${r['Geography']}`:''}`}}
-function decisionClass(v){return /pending|research/i.test(String(v))?'pending':'go'}
-function linkButton(path,label){return `<a class="rbf-link external" target="_blank" rel="noopener noreferrer" href="https://github.com/${REPO}/blob/main/${path}">${labelWithAbbrs(label)} ↗</a>`}
-function renderOpportunityNiches(host,rows){if(!rows.length){host.innerHTML='<div class="empty-state">No scored niches linked yet. Add niche research before treating a target market as selected.</div>';return}const cols=['Vertical','Sub-niche / ICP','Geography','Niche Score','Evidence Confidence','Decision','Next evidence','Canonical detail'];createGrid(host.id,rows,{columns:cols,defaultSort:'Niche Score',defaultDir:'desc'})}
-function renderOpportunityModules(investmentRows,nicheRows,scoreTables){const host=$('v2-opportunity-modules');host.innerHTML='';investmentRows.forEach((r,index)=>{
-  const name=r['Opportunity'];const niches=nichesForOpportunity(name,nicheRows);const best=bestNicheLabel(name,niches);const meta=caseMeta[name]||{};const scoreRows=scoreTables[name]||[];const d=document.createElement('details');d.className='rbf-opportunity';d.id=`rbf-opportunity-${index+1}`;
-  const rbs=r['Revenue Blueprint Score']||'Pending',proof=r['Proof Level']||'Pending',gate=r['Investment Gate']||'RESEARCH',cap=r['Capital unlocked']||'$0',investor=r['Investor-ready']||'No';
-  d.innerHTML=`<summary>
-    <div class="opp-cell opp-result"><b>${escapeHtml(name)}</b><span>${escapeHtml(r['Result / promise']||'Result definition pending.')}</span><div class="opp-expand">Expand full opportunity ↓</div></div>
-    <div class="opp-cell opp-niche"><b>${escapeHtml(best.label)}</b><span>${escapeHtml(best.meta)}</span></div>
-    <div class="opp-cell"><span class="opp-number ${scoreClass(rbs)}">${escapeHtml(rbs)}</span></div>
-    <div class="opp-cell"><span class="opp-number ${scoreClass(best.score)}">${escapeHtml(best.score)}</span></div>
-    <div class="opp-cell"><span class="opp-pill ${decisionClass(proof)}">${escapeHtml(proof)}</span></div>
-    <div class="opp-cell"><span class="opp-pill ${decisionClass(gate)}">${escapeHtml(gate)}</span></div>
-    <div class="opp-cell"><span class="opp-number">${escapeHtml(cap)}</span></div>
-    <div class="opp-cell"><span class="opp-pill ${/yes/i.test(investor)?'go':'pending'}">${escapeHtml(investor)}</span></div>
-    <div class="opp-cell opp-next"><span>${escapeHtml(r['Current action']||'RBF rebuild pending.')}</span></div>
-  </summary><div class="rbf-body">
-    <div class="rbf-body-grid">
-      <div class="rbf-card"><h4>${abbrMarkup('RBF')} decision</h4><p>${labelWithAbbrs(meta.subtitle||'This opportunity has not yet been rebuilt through the new RBF standard. Niche rows below remain useful target-market evidence, but capital stays locked until RBS + Proof + Gate are complete.')}</p>
-        <div class="decision-stats"><div class="decision-stat"><small>${abbrMarkup('RBS')}</small><strong>${escapeHtml(rbs)}</strong></div><div class="decision-stat"><small>Best niche</small><strong>${escapeHtml(best.score)}</strong></div><div class="decision-stat"><small>Proof</small><strong>${escapeHtml(proof)}</strong></div><div class="decision-stat"><small>Gate</small><strong>${escapeHtml(gate)}</strong></div><div class="decision-stat"><small>Capital</small><strong>${escapeHtml(cap)}</strong></div></div>
-        ${meta.tests?`<div class="test-strip">${meta.tests.map(x=>`<div class="test-mini"><small>${escapeHtml(x[0])}</small><strong>${escapeHtml(x[1])}</strong></div>`).join('')}</div>`:''}
-        <p><b>Return profile:</b> ${escapeHtml(r['Return Profile']||'Pending')}</p><div class="rbf-links">${meta.assessment?linkButton(meta.assessment,'Full RBF assessment'):''}${meta.extra?linkButton(meta.extra,'Outcome × niche model'):''}</div>
-      </div>
-      <div class="rbf-card"><h4>Niche logic</h4><p><b>${niches.length} scored niche${niches.length===1?'':'s'}</b> currently linked to this result. The niche score is not the ${abbrMarkup('RBS')}: it answers whether this target market is unusually attractive for the result.</p><p>${name==='Business Blueprints'?'The rows shown here are candidate underlying Blueprint businesses. Distribution is a separate multi-platform layer: Whop is one channel alongside Gumroad, Contra, owned storefronts and specialist marketplaces where the product fits.':'Expand the niche table below to compare the target markets attached to this result.'}</p></div>
-    </div>
-    <div class="rbf-score-wrap"><div class="v2panel"><div class="v2panel-head"><h4>Ranked niches inside this opportunity</h4><span class="count">${niches.length} rows</span></div><div id="opp-niches-${index}"></div></div></div>
-    ${scoreRows.length?`<div class="rbf-score-wrap"><div class="v2panel"><div class="v2panel-head"><h4>Revenue Blueprint Score factors</h4><span class="count">${scoreRows.length} factors</span></div><div id="opp-rbs-${index}"></div></div></div>`:''}
-  </div>`;
-  host.append(d);renderOpportunityNiches($(`opp-niches-${index}`),niches);if(scoreRows.length)createGrid(`opp-rbs-${index}`,scoreRows,{columns:['Factor','Weight','Score /10','Weighted points','Founder read'],defaultSort:'Weight',defaultDir:'desc'});
- });$('v2-portfolio-count').textContent=`${investmentRows.length} rows`;document.querySelectorAll('#v2-opportunity-modules .external').forEach(a=>{a.target='_blank';a.rel='noopener noreferrer'})}
+  <footer class="v3-footer"><div class="v3-wrap v3-footer-inner"><span>DRF — David's Revenue Factory · Dashboard Version 3</span><span>Canonical files → derived dashboard · scores are not guarantees · Pending is not zero</span></div></footer>
 
-async function load(){
-  $('refresh').textContent=`Refreshed ${new Date().toLocaleTimeString()}`;
-  const [readme,version,opps,niches,macro,investment,blueprints,hvac,gypsum,blueprintChannels,openIssues,closedIssues]=await Promise.all([
-    text('README.md','src-readme').catch(()=>''),
-    text('VERSION','src-version').catch(()=>''),
-    text('businesses/OPPORTUNITIES.md','src-opps').catch(()=>''),
-    text('businesses/NICHES.md','src-niches').catch(()=>''),
-    text('research/ai-first-digital-marketplaces-and-service-platforms.md','src-macro').catch(()=>''),
-    text('businesses/INVESTMENT-READINESS.md','src-v2-investment').catch(()=>''),
-    text('businesses/business-blueprints/RBF-ASSESSMENT.md',null).catch(()=>''),
-    text('businesses/whatsapp-crm-revenue-core/RBF-ASSESSMENT-HVAC.md','src-v2-hvac').catch(()=>''),
-    text('businesses/instant-quote-quote-to-cash/RBF-ASSESSMENT-DRYWALL-GYPSUM.md','src-v2-gypsum').catch(()=>''),
-    text('businesses/business-blueprints/DISTRIBUTION-CHANNELS.md','src-v2-whop-model').catch(()=>''),
-    fetchIssues('open','src-open'),fetchIssues('closed','src-closed')
-  ]);
-  setSource('src-v2-niches',!!niches,niches?'Loaded from main':'Failed');setSource('src-v2-market',!!macro,macro?'Loaded from main':'Failed');
+  <noscript><div class="v3-error">Dashboard V3 requires JavaScript to parse the canonical Markdown registers. The source files remain available through the links above.</div></noscript>
+  <script src="assets/v3-dashboard.js" defer></script>
+  <script src="assets/v3-dashboard-policy.js" defer></script>
+  <script src="assets/v3-dashboard-proof-counts.js" defer></script>
+  <script>
+    (() => {
+      const frame = document.getElementById('legacy-v1-frame');
+      if (!frame) return;
 
-  /* Version 1 — preserved */
-  $('version').textContent=version.trim()||'—';
-  $('intro').textContent=(readme.match(/A GitHub-native factory[^\n]+/)||['GitHub-native factory for measurable commercial outcomes.'])[0];
-  $('revenue-loop').textContent=fenced(readme,'Revenue execution loop')||'Revenue loop unavailable.';
-  const ot=parseTables(opps),nt=parseTables(niches),mt=parseTables(macro);
-  const portfolio=findTable(ot,'portfolio summary').rows;
-  const nicheRows=findTable(nt,'ranked niche summary').rows;
-  const scorecard=findTable(ot,'validated scores').rows;
-  const evidence=findTable(ot,'independent evidence controls').rows;
-  const autonomy=findTable(ot,'ai autonomy').rows;
-  const weights=findTable(ot,'factor key').rows;
-  const market=findTable(mt,'master marketplace table').rows;
-  $('opp-count').textContent=portfolio.length||'—';
-  const top=portfolio.reduce((m,r)=>Math.max(m,numericValue(r['Opportunity Score'])||0),0);$('top-score').textContent=top?`${top}/100`:'—';
-  const topMrr=portfolio.reduce((m,r)=>Math.max(m,numericValue(r['MRR'])||0),0);$('top-mrr').textContent=topMrr?`${topMrr}/10`:'—';
-  $('open-count').textContent=openIssues.length;
-  createGrid('portfolio-grid',portfolio,{rank:true,defaultSort:'Opportunity Score',defaultDir:'desc',searchId:'portfolio-search',resetId:'portfolio-reset',countId:'portfolio-count',afterRender:renderMobilePortfolio});renderMobilePortfolio(portfolio);
-  createGrid('niche-grid',nicheRows,{rank:true,defaultSort:'Niche Score',defaultDir:'desc',searchId:'niche-search',resetId:'niche-reset',countId:'niche-count'});
-  createGrid('scorecard-grid',scorecard,{rank:true,defaultSort:'Weighted Score',defaultDir:'desc',searchId:'scorecard-search',resetId:'scorecard-reset',countId:'scorecard-count'});
-  createGrid('evidence-grid',evidence,{rank:true,defaultSort:'Evidence Confidence',defaultDir:'desc',searchId:'evidence-search',resetId:'evidence-reset',countId:'evidence-count'});
-  createGrid('autonomy-grid',autonomy,{rank:true,defaultSort:'AI Autonomy',defaultDir:'desc',searchId:'autonomy-search',resetId:'autonomy-reset',countId:'autonomy-count'});
-  createGrid('weights-grid',weights,{defaultSort:'Weight',defaultDir:'desc'});
-  renderSignals(macroSignals(macro),'macro-grid');createGrid('market-grid',market,{rank:true,searchId:'market-search',resetId:'market-reset',countId:'market-count'});
-  const work=issueRows(openIssues,closedIssues);createGrid('work-grid',work,{defaultSort:'Updated',defaultDir:'desc',searchId:'work-search',resetId:'work-reset',countId:'work-count'});
+      frame.addEventListener('load', () => {
+        try {
+          const doc = frame.contentDocument;
+          const hideDeltaColumns = () => {
+            const table = doc?.querySelector('#portfolio-grid table');
+            if (!table) return;
+            const labels = new Set(['Δ', 'Score Δ', 'Rank Δ']);
+            const headers = [...table.querySelectorAll('thead tr:first-child th')];
+            headers.forEach((header, index) => {
+              if (!labels.has(header.textContent.trim())) return;
+              table.querySelectorAll('tr').forEach(row => {
+                const cell = row.children[index];
+                if (cell) cell.style.display = 'none';
+              });
+            });
+          };
 
-  /* Version 2 — outcome × niche RBF */
-  const investmentRows=findTable(parseTables(investment),'portfolio migration register').rows;
-  const blueprintScore=findTable(parseTables(blueprints),'revenue blueprint score').rows;
-  const hvacScore=findTable(parseTables(hvac),'revenue blueprint score').rows;
-  const gypsumScore=findTable(parseTables(gypsum),'revenue blueprint score').rows;
-  const scoreTables={'Business Blueprints':blueprintScore,'Enquiry-to-Revenue Control':hvacScore,'Fast Quote-to-Cash System':gypsumScore};
-  const rebuilt=investmentRows.filter(r=>r['Revenue Blueprint Score']&&!/pending/i.test(r['Revenue Blueprint Score']));
-  const proofNumber=r=>{const m=String(r['Proof Level']||'').match(/P(\d)/i);return m?Number(m[1]):-1};
-  $('v2-total').textContent=investmentRows.length||portfolio.length||'—';$('v2-rebuilt').textContent=investmentRows.length?`${rebuilt.length}/${investmentRows.length}`:rebuilt.length;$('v2-niche-total').textContent=nicheRows.length||'—';$('v2-p4').textContent=investmentRows.filter(r=>proofNumber(r)>=4).length;$('v2-p6').textContent=investmentRows.filter(r=>proofNumber(r)>=6).length;
-  renderOpportunityModules(investmentRows,nicheRows,scoreTables);
-  const v2NicheColumns=['Niche Score','Evidence Confidence','Vertical','Sub-niche / ICP','Offer / product','Geography','Core pain / trigger','Decision','Next evidence','Canonical detail'];
-  const v2NicheWidths={'Rank':40,'Niche Score':94,'Evidence Confidence':108,'Vertical':132,'Sub-niche / ICP':280,'Offer / product':250,'Geography':118};
-  createGrid('v2-niche-grid',nicheRows,{columns:v2NicheColumns,rank:true,defaultSort:'Niche Score',defaultDir:'desc',defaultWidths:v2NicheWidths,countId:'v2-niche-count'});renderSignals(macroSignals(macro),'v2-macro-grid');createGrid('v2-market-grid',market,{rank:true,countId:'v2-market-count'});createGrid('v2-work-grid',work,{defaultSort:'Updated',defaultDir:'desc',countId:'v2-work-count'});
-}
-
-function initPortfolioGridEnhancements(){
-  const shell=document.querySelector('#v2-portfolio .opp-table-shell');const head=shell?.querySelector('.opp-table-head');const host=$('v2-opportunity-modules');if(!shell||!head||!host)return;
-  const columns=[
-    {label:'Result / promise',index:0,type:'text',width:320},
-    {label:'Best scored niche',index:1,type:'text',width:260},
-    {label:'RBS',index:2,type:'number',width:82},
-    {label:'Niche',index:3,type:'number',width:82},
-    {label:'Proof',index:4,type:'number',width:110},
-    {label:'Gate',index:5,type:'text',width:110},
-    {label:'Capital',index:6,type:'number',width:105},
-    {label:'Investor',index:7,type:'text',width:92},
-    {label:'Next proof milestone',index:8,type:'text',width:300}
-  ];
-  const state={sortIndex:null,dir:'desc',filters:Array(columns.length).fill(''),widths:columns.map(c=>c.width)};
-  try{const saved=JSON.parse(localStorage.getItem('drf-v2-portfolio-widths')||'null');if(Array.isArray(saved)&&saved.length===columns.length)state.widths=saved.map((w,i)=>Math.max(52,Number(w)||columns[i].width))}catch{}
-  const tools=document.createElement('div');tools.className='opp-grid-tools';tools.innerHTML='<span class="opp-grid-help">Click a header to sort · use filters below headers · drag column edges to resize</span><button type="button" data-action="clear">Clear filters</button><button type="button" data-action="reset">Reset widths</button>';shell.before(tools);shell.classList.add('opp-interactive');
-  function applyWidths(){const value=state.widths.map(w=>`${Math.max(52,w)}px`).join(' ');shell.style.setProperty('--opp-cols',value)}
-  function rowValue(row,index){const cell=row.querySelector(`summary .opp-cell:nth-child(${index+1})`);return (cell?.textContent||'').replace(/Expand full opportunity ↓/g,'').trim()}
-  function numberMatches(value,query){const n=numericValue(value);if(n===null)return false;const q=query.replace(/\s/g,'');if(!q)return true;let m=q.match(/^(-?\d+(?:\.\d+)?)-(-?\d+(?:\.\d+)?)$/);if(m)return n>=Number(m[1])&&n<=Number(m[2]);m=q.match(/^(>=|<=|>|<|=)?(-?\d+(?:\.\d+)?)$/);if(!m)return String(value).toLowerCase().includes(query.toLowerCase());const target=Number(m[2]);switch(m[1]||'='){case'>=':return n>=target;case'<=':return n<=target;case'>':return n>target;case'<':return n<target;default:return n===target}}
-  function matches(row,colIndex){const q=state.filters[colIndex].trim();if(!q)return true;const v=rowValue(row,colIndex);return columns[colIndex].type==='number'?numberMatches(v,q):v.toLowerCase().includes(q.toLowerCase())}
-  function compareRows(a,b,index){const av=rowValue(a,index),bv=rowValue(b,index);if(columns[index].type==='number'){const an=numericValue(av),bn=numericValue(bv);if(an===null&&bn===null)return av.localeCompare(bv,undefined,{numeric:true,sensitivity:'base'});if(an===null)return-1;if(bn===null)return 1;return an-bn}return av.localeCompare(bv,undefined,{numeric:true,sensitivity:'base'})}
-  function updateHeaderMarks(){head.querySelectorAll('.opp-head-sortmark').forEach((el,i)=>el.textContent=state.sortIndex===i?(state.dir==='asc'?'▲':'▼'):'↕')}
-  function apply(){const rows=[...host.querySelectorAll(':scope > .rbf-opportunity')];rows.forEach(r=>r.hidden=!columns.every((_,i)=>matches(r,i)));if(state.sortIndex!==null){rows.sort((a,b)=>{const cmp=compareRows(a,b,state.sortIndex);return state.dir==='asc'?cmp:-cmp}).forEach(r=>host.append(r))}const visible=rows.filter(r=>!r.hidden).length;$('v2-portfolio-count').textContent=`${visible}/${rows.length} rows`;updateHeaderMarks()}
-  head.innerHTML='';columns.forEach((col,i)=>{const cell=document.createElement('div');cell.className='opp-head-cell';const btn=document.createElement('button');btn.type='button';btn.className='opp-head-sort';btn.setAttribute('aria-label',`Sort by ${col.label}`);btn.innerHTML=`<span>${escapeHtml(col.label)}</span><span class="opp-head-sortmark">↕</span>`;btn.addEventListener('click',()=>{if(state.sortIndex===i)state.dir=state.dir==='asc'?'desc':'asc';else{state.sortIndex=i;state.dir='desc'}apply()});const input=document.createElement('input');input.className='opp-filter';input.type='text';input.placeholder=col.type==='number'?'e.g. >=80':'Filter…';input.setAttribute('aria-label',`Filter ${col.label}`);input.addEventListener('click',e=>e.stopPropagation());input.addEventListener('input',()=>{state.filters[i]=input.value;apply()});const rz=document.createElement('span');rz.className='opp-col-resizer';rz.setAttribute('role','separator');rz.setAttribute('aria-orientation','vertical');rz.title=`Resize ${col.label}`;rz.addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();rz.classList.add('active');const startX=e.clientX,startW=state.widths[i];const move=ev=>{state.widths[i]=Math.max(52,startW+(ev.clientX-startX));applyWidths()};const up=()=>{rz.classList.remove('active');document.removeEventListener('pointermove',move);document.removeEventListener('pointerup',up);try{localStorage.setItem('drf-v2-portfolio-widths',JSON.stringify(state.widths))}catch{}};document.addEventListener('pointermove',move);document.addEventListener('pointerup',up)});cell.append(btn,input,rz);head.append(cell)});
-  tools.querySelector('[data-action="clear"]').addEventListener('click',()=>{state.filters.fill('');head.querySelectorAll('.opp-filter').forEach(i=>i.value='');apply()});tools.querySelector('[data-action="reset"]').addEventListener('click',()=>{state.widths=columns.map(c=>c.width);try{localStorage.removeItem('drf-v2-portfolio-widths')}catch{}applyWidths()});
-  applyWidths();
-  const observer=new MutationObserver(()=>{if(host.querySelector(':scope > .rbf-opportunity')){observer.disconnect();apply()}});observer.observe(host,{childList:true});if(host.querySelector(':scope > .rbf-opportunity')){observer.disconnect();apply()}
-}
-load();
-initPortfolioGridEnhancements();
-</script>
+          hideDeltaColumns();
+          const target = doc?.querySelector('#portfolio-grid');
+          if (target && frame.contentWindow?.MutationObserver) {
+            new frame.contentWindow.MutationObserver(hideDeltaColumns).observe(target, { childList: true, subtree: true });
+          }
+        } catch (error) {
+          console.warn('Legacy V1 delta-column cleanup skipped:', error);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
