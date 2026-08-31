@@ -1,5 +1,7 @@
 # Research — <decision/topic>
 
+> **Business opportunity exception:** If this research is evaluating or rebuilding a revenue-producing business opportunity, do **not** use this generic template. Use `knowledge/templates/business-opportunity-research.md` plus `knowledge/templates/business-opportunity-readme.md`.
+
 ## Decision required
 State the exact decision this research must enable.
 
