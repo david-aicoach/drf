@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="David's Revenue Factory — a GitHub-native factory for finding, underwriting, testing and packaging revenue-producing businesses.">
+  <meta name="description" content="David's Revenue Factory — A GitHub-native factory for finding, underwriting, testing and packaging revenue-producing businesses.">
   <title>DRF — David's Revenue Factory Dashboard V3</title>
   <link rel="stylesheet" href="assets/v3-dashboard.css">
 </head>
@@ -167,5 +167,38 @@
 
   <noscript><div class="v3-error">Dashboard V3 requires JavaScript to parse the canonical Markdown registers. The source files remain available through the links above.</div></noscript>
   <script src="assets/v3-dashboard.js" defer></script>
+  <script>
+    (() => {
+      const frame = document.getElementById('legacy-v1-frame');
+      if (!frame) return;
+
+      frame.addEventListener('load', () => {
+        try {
+          const doc = frame.contentDocument;
+          const hideDeltaColumns = () => {
+            const table = doc?.querySelector('#portfolio-grid table');
+            if (!table) return;
+            const labels = new Set(['Δ', 'Score Δ', 'Rank Δ']);
+            const headers = [...table.querySelectorAll('thead tr:first-child th')];
+            headers.forEach((header, index) => {
+              if (!labels.has(header.textContent.trim())) return;
+              table.querySelectorAll('tr').forEach(row => {
+                const cell = row.children[index];
+                if (cell) cell.style.display = 'none';
+              });
+            });
+          };
+
+          hideDeltaColumns();
+          const target = doc?.querySelector('#portfolio-grid');
+          if (target && frame.contentWindow?.MutationObserver) {
+            new frame.contentWindow.MutationObserver(hideDeltaColumns).observe(target, { childList: true, subtree: true });
+          }
+        } catch (error) {
+          console.warn('Legacy V1 delta-column cleanup skipped:', error);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
