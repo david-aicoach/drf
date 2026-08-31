@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the DRF Dashboard V3 source, portfolio and preserved legacy contract."""
+"""Validate the DRF Dashboard V3 source, data and preserved legacy contract."""
 
 from __future__ import annotations
 
@@ -95,13 +95,9 @@ NUMERIC_FIELDS = {
 STAGES = {"REJECT", "RESEARCH", "TEST", "PILOT", "FUND", "SCALE", "BLUEPRINT"}
 
 
-def fail(message: str) -> None:
-    raise AssertionError(message)
-
-
 def require(condition: bool, message: str) -> None:
     if not condition:
-        fail(message)
+        raise AssertionError(message)
 
 
 def read(path: Path) -> str:
@@ -192,9 +188,17 @@ def git_blob_sha(path: Path) -> str:
     return hashlib.sha1(header + data, usedforsecurity=False).hexdigest()
 
 
+def parse_score(value: str, *, field: str, row_number: int) -> float:
+    """Accept canonical bare, /100 and percentage score notation."""
+    match = re.fullmatch(r"(-?\d+(?:\.\d+)?)(?:/100|%)?", value.strip())
+    require(match is not None, f"Invalid {field} at row {row_number}: {value}")
+    number = float(match.group(1))
+    require(0 <= number <= 100, f"Out-of-range {field} at row {row_number}: {value}")
+    return number
+
+
 def validate_html() -> None:
     html = read(INDEX)
-
     required_strings = [
         "Dashboard Version 3 is not Workflow Layer 3",
         'id="v3-master"',
@@ -208,6 +212,7 @@ def validate_html() -> None:
         'src="dashboard-v1-v2.html?embedded=v2"',
         'src="dashboard-v1-v2.html?embedded=v1"',
         "A GitHub-native factory for finding, underwriting, testing and packaging revenue-producing businesses.",
+        "#portfolio-grid table",
     ]
     for marker in required_strings:
         require(marker in html, f"Root index is missing required marker: {marker}")
@@ -221,11 +226,12 @@ def validate_html() -> None:
         'id="dashboard-v1"',
     ]
     positions = [html.index(marker) for marker in ordered_markers]
-    require(positions == sorted(positions), "Website order must be V3 Master → Layer 1 → Layer 2 → Layer 3 → V2 → V1")
-
-    require("Score Δ" not in html, "Score Delta must not appear in the new V3 root source")
-    require("Rank Δ" not in html, "Rank Delta must not appear in the new V3 root source")
+    require(
+        positions == sorted(positions),
+        "Website order must be V3 Master → Layer 1 → Layer 2 → Layer 3 → V2 → V1",
+    )
     require(html.count("Dashboard Version 3") >= 3, "Root index must identify Dashboard Version 3 explicitly")
+    require("new Set(['Δ', 'Score Δ', 'Rank Δ'])" in html, "Legacy V1 delta-column handling is missing")
 
 
 def validate_legacy_snapshot() -> None:
@@ -252,18 +258,17 @@ def validate_assets() -> None:
     css = read(CSS)
     js = read(JS)
 
-    css_markers = [
+    for marker in [
         ".v3-table-shell",
         ".v3-resizer",
         ".v3-tip:after",
         ".legacy-frame",
         "position:sticky",
         "overflow:auto",
-    ]
-    for marker in css_markers:
+    ]:
         require(marker in css, f"Dashboard V3 CSS is missing: {marker}")
 
-    js_markers = [
+    for marker in [
         "businesses/PORTFOLIO-V3.md",
         "businesses/NICHES.md",
         "PORTFOLIO_HEADERS",
@@ -274,12 +279,8 @@ def validate_assets() -> None:
         "localStorage",
         "data-proof-filter",
         "configureLegacyFrame",
-        "#portfolio-grid table",
-        "Score Δ",
-        "Rank Δ",
         "Pending",
-    ]
-    for marker in js_markers:
+    ]:
         require(marker in js, f"Dashboard V3 JavaScript is missing contract marker: {marker}")
 
 
@@ -365,39 +366,35 @@ def validate_niches() -> None:
     require(not missing_headers, f"Niche register missing required headers: {', '.join(missing_headers)}")
     require(len(rows) >= MINIMUM_NICHE_COUNT, f"Expected at least {MINIMUM_NICHE_COUNT} ranked niche rows, found {len(rows)}")
 
-    for index, row in enumerate(rows, start=1):
-        score = row["Niche Score"]
-        confidence = row["Evidence Confidence"]
-        require(bool(re.fullmatch(r"\d+(?:\.\d+)?", score)), f"Invalid Niche Score at niche row {index}: {score}")
-        require(bool(re.fullmatch(r"\d+(?:\.\d+)?", confidence)), f"Invalid niche Evidence Confidence at row {index}: {confidence}")
+    for row_number, row in enumerate(rows, start=1):
+        parse_score(row["Niche Score"], field="Niche Score", row_number=row_number)
+        parse_score(row["Evidence Confidence"], field="niche Evidence Confidence", row_number=row_number)
         detail = row["Canonical detail"]
-        require(detail not in MISSING_VALUES and detail != "", f"Niche row {index} has no canonical detail path")
-        require((ROOT / detail).is_file(), f"Niche detail path does not exist at row {index}: {detail}")
+        require(detail not in MISSING_VALUES and detail != "", f"Niche row {row_number} has no canonical detail path")
+        require((ROOT / detail).is_file(), f"Niche detail path does not exist at row {row_number}: {detail}")
 
 
 def validate_architecture_docs() -> None:
     public_arch = read(PUBLIC_ARCH)
     data_contract = read(DATA_CONTRACT)
-    required_public = [
+    for marker in [
         "Dashboard Version 3 is not Workflow Layer 3",
         "Dashboard V3 — Consolidated Master",
         "Dashboard V2 — preserved below V3",
         "dashboard-v1-v2.html",
         EXPECTED_LEGACY_BLOB_SHA,
         "Spreadsheet interaction contract",
-    ]
-    for marker in required_public:
+    ]:
         require(marker in public_arch, f"Public dashboard architecture missing: {marker}")
 
-    required_contract = [
+    for marker in [
         "## V3 master portfolio",
         "Pending",
         "Unknown",
         "Not applicable",
         "verified numerical zero",
         "one parent row per business opportunity",
-    ]
-    for marker in required_contract:
+    ]:
         require(marker.lower() in data_contract.lower(), f"V3 data contract missing: {marker}")
 
 
