@@ -1,9 +1,10 @@
 # DRF Business Investment Readiness
 
 **Status:** Canonical migration and investment-gate register  
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 31 August 2026  
 **Governing issue:** #60  
+**Latest targeted rebuild:** #62 — Whop Business Blueprints  
 **Source portfolio:** `businesses/OPPORTUNITIES.md`
 
 ## Important
@@ -27,7 +28,7 @@ Canonical standard: `knowledge/guidelines/revenue-blueprint-scoring-and-investme
 
 | Rebuild wave | Opportunity | Legacy structural score | Revenue Blueprint Score | Proof Level | Investment Gate | Capital unlocked | Return Profile | Investor-ready | Current action |
 |---:|---|---:|---:|---|---|---:|---|---|---|
-| **1** | **Whop Business Blueprints** | **82** | **72 provisional** | **P1** | **TEST ONLY** | **Up to $3,000** | **Pending sourced Whop model** | **No** | Complete backtest, verify live terms, then run the 30-day Tier 1 test. |
+| **1** | **Whop Business Blueprints** | **82** | **79** | **P2 Backtested** | **FORWARD TEST** | **Up to $3,000** | **Direct-sale backtest complete; live monthly/annual ROI pending P3/P4** | **No** | Run one 30-day $199+ forward test; target CAC ≤ ~$104 and ≥30% direct-sale contribution. |
 | **1** | **WhatsApp + CRM Revenue Core** | **95** | Pending | Pending | RESEARCH | $0 | Pending | No | Re-underwrite money model, current buyer economics and first HVAC test from zero. |
 | **1** | **Revenue Recovery & Reactivation Engine** | **94** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild recovery fee/performance/retainer revenue streams and backtest client data. |
 | **1** | **AI Voice Receptionist & Booking Agent** | **94** | Pending | Pending | RESEARCH | $0 | Pending | No | Build call-economics, telephony, booking value, CAC and failure-cost model. |
