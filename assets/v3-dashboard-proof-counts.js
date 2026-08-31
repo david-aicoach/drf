@@ -23,6 +23,7 @@
       validateNicheParents(portfolio.rows, niches.rows);
       await waitForPolicyFunnel();
       updateProofCounts(portfolio.rows.map(row => row['DRF Proof']));
+      installMasterCountReconciliation(portfolio.rows.length);
     } catch (error) {
       console.error('DRF V3 integrity checks could not initialise:', error);
       showLayer2ContractFailure(error.message);
@@ -153,6 +154,41 @@
       const count = button.querySelector('b');
       if (count && Number.isInteger(value)) count.textContent = String(value);
     });
+  }
+
+  function installMasterCountReconciliation(totalRows) {
+    const grid = document.getElementById('master-grid');
+    const counter = document.getElementById('master-count');
+    const funnel = document.getElementById('proof-funnel');
+    if (!grid || !counter || !funnel) return;
+
+    let scheduled = false;
+    const reconcile = () => {
+      const missingActive = Boolean(funnel.querySelector('[data-policy-proof="MISSING"].active'));
+      if (!missingActive) return;
+
+      const primaryRows = [...grid.querySelectorAll('tbody > tr:not(.v3-detail-row)')];
+      const visibleRows = primaryRows.filter(row => !row.hidden).length;
+      counter.textContent = `${visibleRows} of ${totalRows} rows`;
+    };
+    const schedule = () => {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(() => {
+        scheduled = false;
+        reconcile();
+      });
+    };
+
+    new MutationObserver(schedule).observe(grid, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['hidden']
+    });
+    funnel.addEventListener('click', schedule);
+    grid.addEventListener('input', schedule);
+    schedule();
   }
 
   function showLayer2ContractFailure(message) {
