@@ -14,7 +14,8 @@ Use this pack for every new digital business opportunity, existing-business benc
 6. [`revenue-blueprint-investment-memo.md`](./revenue-blueprint-investment-memo.md) — 12-section investment memo/deck template.
 7. [`revenue-blueprint-specification.md`](./revenue-blueprint-specification.md) — operating recipe and P3–P6 Blueprint certification package.
 8. [`business-benchmark-scorecard.md`](./business-benchmark-scorecard.md) — benchmark an existing client/company, its departments, bottleneck, pivot or added revenue model.
-9. [`business-opportunity-worked-example-whop-blueprints.md`](./business-opportunity-worked-example-whop-blueprints.md) — Whop example showing why a promising opportunity can remain P1, test-only and not investor-ready.
+9. [`revenue-blueprint-factory-dashboard.md`](./revenue-blueprint-factory-dashboard.md) — monthly factory throughput, proof conversion, capital efficiency, portfolio cash and Blueprint revenue dashboard.
+10. [`business-opportunity-worked-example-whop-blueprints.md`](./business-opportunity-worked-example-whop-blueprints.md) — Whop example showing why a promising opportunity can remain P1, test-only and not investor-ready.
 
 ## Canonical order
 
@@ -33,6 +34,9 @@ capital → founder hours → monthly cash → payback → annual ROI → downsi
 
 GATE
 Reject · Research · Test · Pilot · Fund · Scale · Blueprint Certified
+
+MEASURE THE FACTORY
+throughput → conversion → cycle time → cost per proof → portfolio cash → Blueprint revenue
 ```
 
 ## Governing files
