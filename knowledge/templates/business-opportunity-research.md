@@ -252,9 +252,9 @@ Use the companion workbook:
 
 | Tier | New capital | Cumulative | Use of funds | Founder hours | Proof milestone | Stop condition |
 |---|---:|---:|---|---:|---|---|
-| **Validate** | **$3,000** | **$3,000** | | P3–P4 | | |
-| **Launch** | **+$7,000** | **$10,000** | | P5 | | |
-| **Scale** | **+$20,000** | **$30,000** | | P6 | | |
+| **Validate** | **$3,000** | **$3,000** | <test assets/acquisition/delivery/reserve> | <hours> | **P3–P4** | <result/date> |
+| **Launch** | **+$7,000** | **$10,000** | <repeat acquisition/delivery/automation> | <hours> | **P5** | <result/date> |
+| **Scale** | **+$20,000** | **$30,000** | <proven channel/capacity/working capital> | <hours> | **P6** | <result/date> |
 
 Spend less when the evidence can be bought for less.
 
@@ -388,7 +388,7 @@ The previous v1.5 Opportunity Score may be retained as historical screening evid
 **Decision:** <GO / KILL / HOLD / RECYCLE>  
 **Capital released:** <amount>  
 **Founder-time limit:** <hours>  
-**Next evidence milestone:** <exact cash/behaviour/outcome>  
+**Next evidence milestone:** <exact cash/behaviour/result>  
 **Deadline:** <date>  
 **Next capital unlock:** <exact threshold>
 
