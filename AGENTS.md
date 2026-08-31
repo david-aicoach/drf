@@ -63,30 +63,68 @@ Rules:
 3. **Keep the Issue current.** If scope, design or sequencing materially changes, update the checklist before continuing.
 4. **Record material discoveries.** Add newly discovered requirements, blockers or decisions to the Issue so future agents do not depend on chat memory.
 5. **Checklist completion is not enough by itself.** Final acceptance criteria and verification must also pass.
-6. **Do not close with hidden work remaining.** Deferred work must be explicitly removed from scope by founder decision or moved into a properly nested sub-issue.
+6. **Do not close with hidden work remaining.** Deferred work must be explicitly removed from scope by founder decision or moved into a linked stage Issue.
 
-### Native sub-issue rule for large work
+### Master Issue + Linked Stage Issues for large work
 
-Large tasks must be decomposed into **native GitHub sub-issues nested under the controlling parent Issue**. Do not create disconnected standalone Issues and merely write `Parent: #...` or use naming such as `#77.1` as a substitute for a real GitHub parent/sub-issue relationship.
+Large programmes and architecture changes must use **one Master Issue plus clearly interlinked Stage Issues**. This is the default because it works from ChatGPT Web and other DRF operating surfaces that can create and update ordinary GitHub Issues even when native GitHub sub-issue mutations are unavailable.
 
-Create a native sub-issue when a stage is materially independent, for example when it:
+Create a separate Stage Issue when a stage is materially independent, for example when it:
 
 - has its own meaningful implementation checklist and acceptance criteria;
 - is likely to require its own PR or verification cycle;
 - changes a separate subsystem, workflow, architecture layer or major document set;
 - depends on completion of another stage;
-- is large enough that keeping all implementation detail in the parent would make the parent difficult to operate;
+- is large enough that keeping all implementation detail in the Master Issue would make the Master difficult to operate;
 - can be completed and verified as a bounded outcome before the next stage begins.
 
-Parent/sub-issue rules:
+#### Master / Stage naming convention
 
-1. The **parent Issue owns the overall objective, architecture, stage order and final acceptance criteria**.
-2. Each **sub-issue owns one bounded stage** with its own checklist, verification and final outcome.
-3. The parent checklist must visibly track each required sub-issue.
-4. Do not duplicate the same implementation checklist in both parent and child; the parent tracks the stage, the sub-issue tracks the detailed work.
-5. Complete/check off the parent stage only after the required sub-issue is closed and its output is verified.
-6. The parent Issue cannot close until all required native sub-issues are complete and the parent-level end-to-end acceptance criteria pass.
-7. If the current execution surface cannot create or manage native GitHub sub-issues, **do not fan out disconnected Issues and pretend they are sub-issues**. Keep the stage in the parent checklist and record the tooling limitation until a surface with native sub-issue support can establish the hierarchy.
+Use a stable, searchable programme prefix:
+
+```text
+Master GitHub Issue: #77
+Stage 1 actual GitHub Issue: #78
+Stage 1 display prefix: [77.1]
+Stage 1 title: [77.1] Lock DRF architecture, scoring hierarchy and proof semantics
+```
+
+The prefix `[77.1]` is a **programme/stage identifier**, not a GitHub Issue number. The actual GitHub Issue remains `#78`.
+
+Each Stage Issue must begin with:
+
+```text
+Master issue: #77
+Stage: 1 of 5
+```
+
+The Master Issue must contain a stage tracker that links forward to the actual Stage Issues, for example:
+
+```text
+- [ ] [77.1] #78 — Architecture and scoring hierarchy
+- [ ] [77.2] #79 — Master workflow
+- [ ] [77.3] #80 — Research templates and V3 business plan
+```
+
+This creates a deliberate **two-way link**:
+
+```text
+Master #77 → Stage #78
+Stage #78 → Master #77
+```
+
+#### Master / Stage rules
+
+1. The **Master Issue owns the overall founder intent, programme objective, architecture, stage order, dependencies and final end-to-end acceptance criteria**.
+2. Each **Stage Issue owns one bounded stage** with its own implementation checklist, verification checklist and final outcome.
+3. Every Stage Issue must explicitly link back to the Master Issue in its opening lines.
+4. The Master Issue must explicitly link to every required Stage Issue in its live stage tracker.
+5. Do not duplicate the detailed Stage checklist in the Master; the Master tracks the stage outcome while the Stage Issue tracks the work.
+6. Check off a Master stage only after its linked Stage Issue is closed and the stage output is verified.
+7. The Master Issue cannot close until every required linked Stage Issue is complete and the Master-level end-to-end acceptance criteria pass.
+8. If a Stage Issue discovers additional work large enough to become its own stage, update the Master first, then create and two-way-link the new Stage Issue.
+9. Native GitHub sub-issues may be used as an **optional enhancement** when the current surface supports them, but they are never required and must not be a dependency for normal DRF execution.
+10. The Issue hierarchy must remain fully operable from ChatGPT Web using standard GitHub Issue create/read/update operations.
 
 ### Size rule
 
@@ -94,9 +132,9 @@ Use proportional planning:
 
 - **Small/reversible task:** one Issue with a short but explicit checklist.
 - **Standard task:** one Issue with a complete implementation + verification checklist.
-- **Large programme / architecture change:** one parent Issue plus native sub-issues for major stages.
+- **Large programme / architecture change:** one Master Issue plus linked Stage Issues for major stages.
 
-The purpose is not bureaucracy. The purpose is to prevent scope loss, architectural drift and incomplete handoffs.
+The purpose is not bureaucracy. The purpose is to prevent scope loss, architectural drift and incomplete handoffs while remaining operable from the tools agents actually have.
 
 ## Shared contract
 
