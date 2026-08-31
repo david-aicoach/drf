@@ -63,7 +63,7 @@ Structured access should allow an agent to ask questions such as:
 - find website templates for dental clinics under $100;
 - compare five AI automation freelancers with relevant proof;
 - find an API for company enrichment priced per request;
-- find a Whop Business Blueprint for a local-service business;
+- find a Business Blueprint for a local-service business and identify the best available purchase endpoint;
 - return the canonical endpoint and purchase/engagement requirements.
 
 Potential interfaces:
@@ -128,9 +128,10 @@ The current macro supply map is:
 
 That research is not discarded. It becomes seed data and market architecture for this business hypothesis.
 
-Whop Business Blueprints are one specific downstream supply class:
+**Business Blueprints** are one specific downstream digital-product supply class. The Blueprint business is platform-neutral and may be available through Whop, Gumroad, Contra, direct storefronts or specialist marketplaces depending on product fit:
 
-`businesses/whop-business-blueprints/research/whop-business-blueprints-productisation.md`
+- `businesses/business-blueprints/README.md`
+- `businesses/business-blueprints/DISTRIBUTION-CHANNELS.md`
 
 ## Minimum viable test
 
