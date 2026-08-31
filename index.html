@@ -12,9 +12,10 @@
   --line:#d8dee4;--line-strong:#b8c0c8;--accent:#0969da;--accent-soft:#ddf4ff;
   --good:#1a7f37;--warn:#9a6700;--bad:#cf222e;--shadow:0 8px 24px rgba(31,35,40,.07);
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --v2-ink:#101828;--v2-muted:#667085;--v2-line:#e4e7ec;--v2-soft:#f8fafc;--v2-green:#087443;--v2-green-soft:#ecfdf3;--v2-blue:#175cd3;--v2-blue-soft:#eff8ff;--v2-amber:#b54708;--v2-amber-soft:#fffaeb;
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 var(--font);overflow-x:hidden}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,input{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.wrap{width:min(1480px,calc(100% - 28px));margin:auto}
-.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.topin{height:52px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:9px;color:var(--text);font-weight:800;letter-spacing:-.01em}.brandmark{width:26px;height:26px;border-radius:6px;background:var(--text);color:#fff;display:grid;place-items:center;font-size:11px}.nav{display:flex;gap:6px;overflow:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{flex:none;min-height:36px;display:flex;align-items:center;padding:0 10px;border-radius:6px;color:var(--muted);font-size:12px;font-weight:700}.nav a:hover{background:var(--surface-2);color:var(--text);text-decoration:none}
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.topin{height:52px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:9px;color:var(--text);font-weight:800;letter-spacing:-.01em}.brandmark{width:26px;height:26px;border-radius:6px;background:var(--text);color:#fff;display:grid;place-items:center;font-size:11px}.nav{display:flex;gap:6px;overflow:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{flex:none;min-height:36px;display:flex;align-items:center;padding:0 10px;border-radius:6px;color:var(--muted);font-size:12px;font-weight:700}.nav a:hover{background:var(--surface-2);color:var(--text);text-decoration:none}.nav .v2jump{background:var(--v2-green-soft);color:var(--v2-green)}
 .hero{background:linear-gradient(180deg,#fff 0%,#f8fafc 100%);border-bottom:1px solid var(--line)}.hero-in{padding:22px 0 16px}.hero-row{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}.hero h1{margin:0;font-size:clamp(27px,3vw,40px);line-height:1.05;letter-spacing:-.035em}.hero p{max-width:900px;margin:7px 0 0;color:var(--muted);font-size:14px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{min-height:36px;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text);display:inline-flex;align-items:center;font-weight:700;font-size:12px}.btn:hover{border-color:var(--line-strong);text-decoration:none}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:14px}.metric{min-width:0;border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:9px 11px}.metric small{display:block;color:var(--muted);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}.metric strong{display:block;margin-top:2px;font-size:18px;line-height:1.15;overflow-wrap:anywhere}.metric .sub{font-size:11px;color:var(--muted);margin-top:2px}
 main{padding:14px 0 36px}.section{margin-top:14px;scroll-margin-top:60px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px}.section-head h2{margin:0;font-size:17px;letter-spacing:-.015em}.section-head p{margin:2px 0 0;color:var(--muted);font-size:12px}.source-link{flex:none;font-size:11px;font-weight:700}.flow{margin:0;border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap}
@@ -23,11 +24,17 @@ main{padding:14px 0 36px}.section{margin-top:14px;scroll-margin-top:60px}.sectio
 .grid-scroll{overflow:auto;max-height:520px;overscroll-behavior:contain;background:#fff}.data-grid{border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:11px}.data-grid th,.data-grid td{border-right:1px solid #eaeef2;border-bottom:1px solid #eaeef2;padding:6px 7px;vertical-align:top;background:#fff;overflow:hidden;text-overflow:ellipsis}.data-grid td{white-space:normal}.data-grid th{position:sticky;top:0;z-index:6;background:#f3f5f7;color:#4b5563;padding:0;font-weight:800}.data-grid th:last-child,.data-grid td:last-child{border-right:0}.data-grid tbody tr:hover td{background:#f8fbff}.sortbtn{width:100%;min-height:32px;border:0;background:transparent;color:inherit;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:5px 17px 5px 7px;text-align:left;font-weight:800;cursor:pointer}.sortbtn:hover{background:#edf3f9}.sortmark{font-size:9px;color:var(--accent)}.resizer{position:absolute;top:0;right:-2px;width:5px;height:100%;cursor:col-resize;z-index:10}.resizer:hover,.resizer.active{background:rgba(9,105,218,.25)}.rankcell{font-weight:800;color:var(--muted);text-align:right}.num{font-variant-numeric:tabular-nums;font-weight:750}.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}.extlink{font-weight:700;white-space:nowrap}.mobile-cards{display:none}
 .data-panel{margin-top:8px;border:1px solid var(--line);border-radius:7px;background:var(--surface);overflow:hidden}.data-panel summary{list-style:none;cursor:pointer;min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 10px;background:var(--surface-2);font-weight:800}.data-panel summary::-webkit-details-marker{display:none}.data-panel summary::after{content:"＋";color:var(--muted);font-size:16px}.data-panel[open] summary::after{content:"−"}.data-panel[open] summary{border-bottom:1px solid var(--line)}.summary-meta{color:var(--muted);font-size:10px;font-weight:600}.panel-body{background:#fff}
 .work-panel{margin-top:8px}.research-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.research-grid a{min-height:62px;border:1px solid var(--line);border-radius:6px;background:#fff;padding:8px 9px;color:var(--text);font-size:11px;font-weight:800}.research-grid a:hover{border-color:var(--line-strong);text-decoration:none;box-shadow:var(--shadow)}.research-grid span{display:block;margin-top:3px;color:var(--muted);font-weight:500;font-size:10px}.statusbox{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.src{border:1px solid var(--line);border-radius:6px;background:#fff;padding:7px 8px;min-width:0}.src strong{display:block;font-size:10px}.src span{display:block;margin-top:2px;color:var(--muted);font-size:10px;overflow-wrap:anywhere}.src .ok{color:var(--good)}.src .err{color:var(--bad)}
-footer{margin-top:20px;border-top:1px solid var(--line);background:#fff;padding:14px 0;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:1000px){.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.signal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.research-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.statusbox{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:740px){.wrap{width:min(100% - 18px,1480px)}.topin{height:auto;min-height:50px;align-items:flex-start;flex-direction:column;padding:8px 0}.nav{width:100%;margin-top:-2px}.hero-in{padding:14px 0 11px}.hero-row{display:block}.hero h1{font-size:27px}.hero p{font-size:12px}.actions{margin-top:10px}.btn{min-height:38px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-top:10px}.metric{padding:8px}.metric strong{font-size:16px}.metric:last-child{grid-column:1/-1}.section{margin-top:10px}.section-head{align-items:flex-start}.signal-grid,.research-grid,.statusbox{grid-template-columns:1fr}.panel-head{align-items:flex-start;flex-direction:column}.toolbar{width:100%;justify-content:stretch}.search{max-width:none;flex:1;min-width:0}.grid-scroll{max-height:420px}.portfolio-desktop{display:none}.mobile-cards{display:grid;gap:6px;padding:6px}.oppcard{border:1px solid var(--line);border-radius:6px;background:#fff;padding:8px}.oppcard-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}.oppcard h3{margin:0;font-size:13px;line-height:1.25}.stage{flex:none;padding:1px 5px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:9px;font-weight:800}.scoregrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-top:7px}.scorebox{background:#f6f8fa;border-radius:4px;padding:5px}.scorebox small{display:block;color:var(--muted);font-size:8px;text-transform:uppercase;font-weight:800}.scorebox strong{display:block;margin-top:1px;font-size:12px}.opp-copy{margin-top:6px;font-size:10px}.opp-copy strong{display:block;font-size:9px;text-transform:uppercase;color:var(--muted)}.opp-copy p{margin:1px 0 0}.oppcard .extlink{display:inline-flex;min-height:34px;align-items:center;margin-top:4px}.data-grid{font-size:10px}.data-grid th,.data-grid td{padding:5px}.resizer{display:none}.source-link{display:none}}
-@media(max-width:420px){.scoregrid{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:1fr}.metric:last-child{grid-column:auto}}
-@media print{.top,.actions,.toolbar,.resizer,.source-link{display:none!important}.grid-scroll{max-height:none;overflow:visible}.data-grid{width:100%!important;font-size:8px}details{display:block!important}details>summary{display:none!important}.mobile-cards{display:none!important}.portfolio-desktop{display:block!important}}
+
+/* Version 2 comparison preview */
+.version-divider{margin:54px calc(50% - 50vw) 0;width:100vw;background:var(--v2-ink);color:#fff;border-top:8px solid #000;border-bottom:1px solid #344054}.version-divider .inner{width:min(1480px,calc(100% - 28px));margin:auto;padding:28px 0}.version-kicker{font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#98a2b3}.version-divider h2{margin:5px 0 3px;font-size:clamp(25px,3vw,38px);letter-spacing:-.035em}.version-divider p{margin:0;color:#d0d5dd;max-width:900px}.compare-note{margin-top:14px;display:inline-flex;gap:8px;align-items:center;border:1px solid #475467;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800;color:#eaecf0}
+.v2{margin:0 calc(50% - 50vw);width:100vw;background:#fff;color:var(--v2-ink);padding:0 0 50px}.v2wrap{width:min(1480px,calc(100% - 28px));margin:auto}.v2hero{padding:30px 0 20px;border-bottom:1px solid var(--v2-line)}.v2hero-row{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}.v2badge{display:inline-flex;align-items:center;border:1px solid #abefc6;background:var(--v2-green-soft);color:var(--v2-green);border-radius:999px;padding:3px 9px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.v2hero h2{margin:8px 0 6px;font-size:clamp(28px,3.6vw,48px);line-height:1;letter-spacing:-.045em}.v2hero p{margin:0;color:var(--v2-muted);max-width:850px;font-size:14px}.v2actions{display:flex;gap:7px;flex-wrap:wrap}.v2btn{min-height:38px;display:inline-flex;align-items:center;padding:0 12px;border:1px solid var(--v2-line);border-radius:8px;background:#fff;color:var(--v2-ink);font-size:12px;font-weight:800}.v2btn:hover{text-decoration:none;border-color:#98a2b3}.v2btn.primary{background:var(--v2-ink);border-color:var(--v2-ink);color:#fff}.v2metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:18px}.v2metric{border:1px solid var(--v2-line);border-radius:10px;padding:11px;background:#fff;box-shadow:0 1px 2px rgba(16,24,40,.04)}.v2metric small{display:block;color:var(--v2-muted);text-transform:uppercase;font-size:9px;font-weight:900;letter-spacing:.05em}.v2metric strong{display:block;margin-top:3px;font-size:22px;line-height:1.1}.v2metric span{display:block;margin-top:3px;color:var(--v2-muted);font-size:10px}.v2section{padding:22px 0 0;scroll-margin-top:66px}.v2head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin-bottom:10px}.v2head h3{margin:0;font-size:20px;letter-spacing:-.025em}.v2head p{margin:3px 0 0;color:var(--v2-muted);font-size:12px}.v2eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;color:var(--v2-green)}
+.v2decision{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);gap:10px}.decision-main,.decision-side,.v2card{border:1px solid var(--v2-line);border-radius:12px;background:#fff;padding:14px}.decision-main{background:linear-gradient(135deg,#101828 0%,#1d2939 100%);color:#fff;border:0}.decision-main .label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;font-weight:900}.decision-main .decisionline{margin-top:6px;font-size:clamp(20px,2.3vw,32px);font-weight:900;line-height:1.14;letter-spacing:-.03em}.decision-main .decisioncopy{margin-top:7px;color:#d0d5dd;font-size:12px}.decision-main .decisiongrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:14px}.dstat{padding:9px;border:1px solid #344054;border-radius:8px;background:rgba(255,255,255,.03)}.dstat small{display:block;color:#98a2b3;font-size:9px;text-transform:uppercase;font-weight:900}.dstat strong{display:block;margin-top:2px;font-size:15px}.decision-side h4,.v2card h4{margin:0 0 8px;font-size:13px}.money-list{display:grid;gap:7px}.money-item{border:1px solid var(--v2-line);border-radius:8px;padding:9px}.money-item b{display:block;font-size:12px}.money-item span{display:block;margin-top:2px;color:var(--v2-muted);font-size:10px}.money-item .money-type{display:inline-block;margin-top:5px;padding:2px 6px;border-radius:999px;background:var(--v2-green-soft);color:var(--v2-green);font-weight:900;font-size:9px;text-transform:uppercase}.v2grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.v2grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.v2grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.testbox{border:1px solid var(--v2-line);border-radius:10px;padding:11px;background:var(--v2-soft)}.testbox small{display:block;color:var(--v2-muted);font-size:9px;text-transform:uppercase;font-weight:900}.testbox strong{display:block;margin-top:3px;font-size:19px}.testbox span{display:block;margin-top:2px;color:var(--v2-muted);font-size:10px}.proof-ladder{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.proof{border:1px solid var(--v2-line);border-radius:9px;padding:9px;background:#fff;min-height:88px}.proof.current{border:2px solid var(--v2-green);background:var(--v2-green-soft)}.proof.done{background:#f9fafb}.proof .pnum{font-size:11px;font-weight:900}.proof b{display:block;margin-top:3px;font-size:11px}.proof span{display:block;margin-top:4px;color:var(--v2-muted);font-size:9px}.proof.current .pnum,.proof.current b{color:var(--v2-green)}
+.v2panel{border:1px solid var(--v2-line);border-radius:12px;background:#fff;overflow:hidden}.v2panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-bottom:1px solid var(--v2-line);background:#fcfcfd}.v2panel-head h4{margin:0;font-size:13px}.v2panel .data-grid th{background:#f9fafb;color:#344054}.v2panel .data-grid tbody tr:hover td{background:#f9fafb}.v2mobile-cards{display:none}.v2opp{border:1px solid var(--v2-line);border-radius:10px;padding:10px;background:#fff}.v2opp h4{margin:0;font-size:13px}.v2opp .v2oppstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-top:7px}.v2oppstat{background:#f9fafb;border-radius:6px;padding:6px}.v2oppstat small{display:block;font-size:8px;text-transform:uppercase;color:var(--v2-muted);font-weight:900}.v2oppstat strong{display:block;margin-top:2px;font-size:11px}.v2opp p{font-size:10px;color:var(--v2-muted);margin:7px 0 0}.v2links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.v2link{border:1px solid var(--v2-line);border-radius:10px;padding:10px;background:#fff;color:var(--v2-ink);font-size:11px;font-weight:900;min-height:70px}.v2link:hover{text-decoration:none;border-color:#98a2b3;box-shadow:0 2px 8px rgba(16,24,40,.06)}.v2link span{display:block;margin-top:4px;color:var(--v2-muted);font-weight:500;font-size:10px}.v2source{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.v2source .src{border-color:var(--v2-line);border-radius:9px}.v2backtop{display:flex;justify-content:center;margin-top:25px}.v2backtop a{display:inline-flex;padding:7px 12px;border:1px solid var(--v2-line);border-radius:999px;color:var(--v2-muted);font-size:11px;font-weight:800}.v2backtop a:hover{text-decoration:none;color:var(--v2-ink)}
+footer{margin-top:0;border-top:1px solid var(--line);background:#fff;padding:14px 0;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:1000px){.metrics,.v2metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.signal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.research-grid,.v2links{grid-template-columns:repeat(2,minmax(0,1fr))}.statusbox,.v2source{grid-template-columns:repeat(3,minmax(0,1fr))}.v2decision{grid-template-columns:1fr}.proof-ladder{grid-template-columns:repeat(4,minmax(0,1fr))}.v2grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:740px){.wrap,.v2wrap,.version-divider .inner{width:min(100% - 18px,1480px)}.topin{height:auto;min-height:50px;align-items:flex-start;flex-direction:column;padding:8px 0}.nav{width:100%;margin-top:-2px}.hero-in{padding:14px 0 11px}.hero-row,.v2hero-row{display:block}.hero h1{font-size:27px}.hero p{font-size:12px}.actions,.v2actions{margin-top:10px}.btn,.v2btn{min-height:38px}.metrics,.v2metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-top:10px}.metric,.v2metric{padding:8px}.metric strong{font-size:16px}.metric:last-child{grid-column:1/-1}.section{margin-top:10px}.section-head{align-items:flex-start}.signal-grid,.research-grid,.statusbox,.v2links,.v2source,.v2grid2,.v2grid3,.v2grid4{grid-template-columns:1fr}.panel-head,.v2panel-head{align-items:flex-start;flex-direction:column}.toolbar{width:100%;justify-content:stretch}.search{max-width:none;flex:1;min-width:0}.grid-scroll{max-height:420px}.portfolio-desktop,.v2portfolio-desktop{display:none}.mobile-cards,.v2mobile-cards{display:grid;gap:6px;padding:6px}.oppcard{border:1px solid var(--line);border-radius:6px;background:#fff;padding:8px}.oppcard-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}.oppcard h3{margin:0;font-size:13px;line-height:1.25}.stage{flex:none;padding:1px 5px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:9px;font-weight:800}.scoregrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-top:7px}.scorebox{background:#f6f8fa;border-radius:4px;padding:5px}.scorebox small{display:block;color:var(--muted);font-size:8px;text-transform:uppercase;font-weight:800}.scorebox strong{display:block;margin-top:1px;font-size:12px}.opp-copy{margin-top:6px;font-size:10px}.opp-copy strong{display:block;font-size:9px;text-transform:uppercase;color:var(--muted)}.opp-copy p{margin:1px 0 0}.oppcard .extlink{display:inline-flex;min-height:34px;align-items:center;margin-top:4px}.data-grid{font-size:10px}.data-grid th,.data-grid td{padding:5px}.resizer{display:none}.source-link{display:none}.version-divider{margin-top:36px}.version-divider .inner{padding:24px 0}.v2hero{padding:24px 0 16px}.v2hero h2{font-size:30px}.v2metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.v2metric strong{font-size:18px}.decision-main .decisiongrid{grid-template-columns:repeat(2,minmax(0,1fr))}.proof-ladder{grid-template-columns:repeat(2,minmax(0,1fr))}.v2head{align-items:flex-start;flex-direction:column}.v2section{padding-top:18px}}
+@media(max-width:420px){.scoregrid{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics,.v2metrics{grid-template-columns:1fr}.metric:last-child{grid-column:auto}.decision-main .decisiongrid{grid-template-columns:1fr}}
+@media print{.top,.actions,.v2actions,.toolbar,.resizer,.source-link{display:none!important}.grid-scroll{max-height:none;overflow:visible}.data-grid{width:100%!important;font-size:8px}details{display:block!important}details>summary{display:none!important}.mobile-cards,.v2mobile-cards{display:none!important}.portfolio-desktop,.v2portfolio-desktop{display:block!important}}
 </style>
 </head>
 <body>
@@ -35,7 +42,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:#fff;padding:
   <div class="wrap topin">
     <a class="brand" href="./"><span class="brandmark">DRF</span><span>Revenue Factory</span></a>
     <nav class="nav" aria-label="Dashboard navigation">
-      <a href="#overview">Overview</a><a href="#opportunities">Opportunities</a><a href="#niches">Niches</a><a href="#market">Market Data</a><a href="#work">Work</a><a href="#research">Research</a><a href="#sources">Sources</a>
+      <a href="#overview">Overview</a><a href="#opportunities">Opportunities</a><a href="#niches">Niches</a><a href="#market">Market Data</a><a href="#work">Work</a><a href="#research">Research</a><a href="#sources">Sources</a><a class="v2jump" href="#v2-preview">V2 Preview ↓</a>
     </nav>
   </div>
 </header>
@@ -136,8 +143,163 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:#fff;padding:
       <div class="src"><strong>Closed Issues</strong><span id="src-closed">Loading…</span></div>
     </div>
   </section>
+
+  <section class="version-divider" id="v2-preview" aria-label="Version 2 comparison divider">
+    <div class="inner">
+      <div class="version-kicker">Version 1 ends here · comparison line</div>
+      <h2>Revenue Blueprint Factory — Version 2 Preview</h2>
+      <p>The same DRF data, reorganised around investment decisions: business quality, proof, capital, return and the next evidence milestone.</p>
+      <span class="compare-note">Scroll up for the legacy dashboard · scroll down for the proposed replacement</span>
+    </div>
+  </section>
+
+  <section class="v2" aria-label="Revenue Blueprint Factory Version 2 preview">
+    <div class="v2wrap">
+      <div class="v2hero">
+        <div class="v2hero-row">
+          <div>
+            <span class="v2badge">Proposed standard · comparison preview</span>
+            <h2>Revenue Blueprint Factory</h2>
+            <p>Find the business. Underwrite the money. Backtest the economics. Forward-test demand. Fund only what earns more proof. Package the winners as evidence-backed Blueprints.</p>
+          </div>
+          <div class="v2actions">
+            <a class="v2btn primary external" href="https://github.com/tbhrc/drf/blob/main/businesses/INVESTMENT-READINESS.md">Investment register ↗</a>
+            <a class="v2btn external" href="https://github.com/tbhrc/drf/blob/main/workflows/revenue-blueprint-factory.md">RBF-7 workflow ↗</a>
+            <a class="v2btn external" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md">Scoring standard ↗</a>
+          </div>
+        </div>
+        <div class="v2metrics">
+          <div class="v2metric"><small>Portfolio</small><strong id="v2-total">…</strong><span>business opportunities</span></div>
+          <div class="v2metric"><small>RBF rebuilt</small><strong id="v2-rebuilt">…</strong><span>new standard complete</span></div>
+          <div class="v2metric"><small>P4 revenue proven</small><strong id="v2-p4">…</strong><span>real payment + value</span></div>
+          <div class="v2metric"><small>P5 repeatable</small><strong id="v2-p5">…</strong><span>repeatable small business</span></div>
+          <div class="v2metric"><small>P6 certified</small><strong id="v2-p6">…</strong><span>Blueprint certified</span></div>
+        </div>
+      </div>
+
+      <section class="v2section" id="v2-whop">
+        <div class="v2head">
+          <div><div class="v2eyebrow">Complete worked example</div><h3>Whop Business Blueprints</h3><p>This is what one opportunity looks like after the new factory has actually underwritten and backtested it.</p></div>
+          <a class="v2btn external" href="https://github.com/tbhrc/drf/blob/main/businesses/whop-business-blueprints/RBF-ASSESSMENT.md">Full Whop assessment ↗</a>
+        </div>
+        <div class="v2decision">
+          <div class="decision-main">
+            <div class="label">Current investment decision</div>
+            <div class="decisionline">Strong business potential. Backtested. Ready for a bounded forward test — not scale funding.</div>
+            <div class="decisioncopy">The business must work on direct Blueprint sales before any royalty or Partner commission is counted as required viability.</div>
+            <div class="decisiongrid">
+              <div class="dstat"><small>RBS</small><strong>79/100</strong></div>
+              <div class="dstat"><small>Proof</small><strong>P2 Backtested</strong></div>
+              <div class="dstat"><small>Gate</small><strong>Forward Test</strong></div>
+              <div class="dstat"><small>Capital</small><strong>≤ $3,000</strong></div>
+              <div class="dstat"><small>Investor-ready</small><strong>No</strong></div>
+            </div>
+          </div>
+          <div class="decision-side">
+            <h4>Three core money lines</h4>
+            <div class="money-list" id="v2-money-lines">
+              <div class="money-item"><b>Blueprint sales</b><span>Buyer pays upfront for the packaged business Blueprint/IP.</span><span class="money-type">Upfront sale</span></div>
+              <div class="money-item"><b>Blueprint business royalties</b><span>Whop pays recurring royalty linked to businesses operating from the Blueprint.</span><span class="money-type">Recurring royalty</span></div>
+              <div class="money-item"><b>Whop referral commissions</b><span>Whop pays recurring Partner commission where attribution and eligibility apply.</span><span class="money-type">Recurring commission</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="v2section">
+        <div class="v2head"><div><div class="v2eyebrow">Money test</div><h3>Whop forward-test parameters</h3><p>Concrete numbers replace a vague “good opportunity” score.</p></div></div>
+        <div class="v2grid4">
+          <div class="testbox"><small>Test price</small><strong>$199+</strong><span>meaningful paid demand</span></div>
+          <div class="testbox"><small>Target CAC</small><strong>≤ ~$104</strong><span>direct-sale ceiling</span></div>
+          <div class="testbox"><small>Contribution target</small><strong>≥ 30%</strong><span>after CAC</span></div>
+          <div class="testbox"><small>Paid buyers</small><strong>≥ 5</strong><span>P3 forward-test gate</span></div>
+          <div class="testbox"><small>Capital cap</small><strong>$3,000</strong><span>maximum Tier 1 test</span></div>
+          <div class="testbox"><small>Founder-time cap</small><strong>80 hrs</strong><span>maximum test effort</span></div>
+          <div class="testbox"><small>Timebox</small><strong>30 days</strong><span>after offer goes live</span></div>
+          <div class="testbox"><small>Refund ceiling</small><strong>&lt; 10%</strong><span>during test window</span></div>
+        </div>
+      </section>
+
+      <section class="v2section">
+        <div class="v2head"><div><div class="v2eyebrow">Business quality</div><h3>Whop Revenue Blueprint Score</h3><p>Ten investor-facing factors. The score shows potential; the proof level shows reality.</p></div></div>
+        <div class="v2panel"><div class="v2panel-head"><h4>RBS factor matrix</h4><span class="summary-meta">78.5 weighted points → 79/100</span></div><div id="v2-whop-score-grid"></div></div>
+      </section>
+
+      <section class="v2section">
+        <div class="v2head"><div><div class="v2eyebrow">Proof before capital</div><h3>RBF proof ladder</h3><p>The opportunity can score highly while still being too early for scale funding.</p></div></div>
+        <div class="proof-ladder">
+          <div class="proof done"><span class="pnum">P0</span><b>Idea</b><span>payer + offer + money model</span></div>
+          <div class="proof done"><span class="pnum">P1</span><b>Underwritten</b><span>market + economics researched</span></div>
+          <div class="proof current"><span class="pnum">P2</span><b>Backtested</b><span>current Whop proof level</span></div>
+          <div class="proof"><span class="pnum">P3</span><b>Forward Tested</b><span>real buyers act now</span></div>
+          <div class="proof"><span class="pnum">P4</span><b>Revenue Proven</b><span>payment + first value</span></div>
+          <div class="proof"><span class="pnum">P5</span><b>Repeatable</b><span>same engine works repeatedly</span></div>
+          <div class="proof"><span class="pnum">P6</span><b>Certified</b><span>scale + reproducible Blueprint</span></div>
+        </div>
+      </section>
+
+      <section class="v2section" id="v2-portfolio">
+        <div class="v2head">
+          <div><div class="v2eyebrow">Portfolio decision board</div><h3>Investment readiness</h3><p>Legacy scores remain visible during migration, but the headline becomes RBS + Proof + Gate + Capital + Return.</p></div>
+          <a class="v2btn external" href="https://github.com/tbhrc/drf/blob/main/businesses/INVESTMENT-READINESS.md">Canonical source ↗</a>
+        </div>
+        <div class="v2panel">
+          <div class="v2panel-head"><h4>All business opportunities</h4><div class="toolbar"><input class="search" id="v2-portfolio-search" placeholder="Filter businesses…"><button class="toolbtn" id="v2-portfolio-reset" type="button">Reset columns</button><span class="count" id="v2-portfolio-count">0 rows</span></div></div>
+          <div id="v2-portfolio-grid" class="v2portfolio-desktop"></div>
+          <div id="v2-portfolio-cards" class="v2mobile-cards"></div>
+        </div>
+      </section>
+
+      <section class="v2section" id="v2-intelligence">
+        <div class="v2head"><div><div class="v2eyebrow">Market selection</div><h3>Niches + market intelligence</h3><p>The old supporting dashboards remain available, but they sit underneath the investment decision instead of competing with it.</p></div></div>
+        <div class="v2grid2">
+          <div class="v2panel"><div class="v2panel-head"><h4>Ranked niches</h4><span class="count" id="v2-niche-count">0 rows</span></div><div id="v2-niche-grid"></div></div>
+          <div class="v2card"><h4>Macro signals</h4><div class="signal-grid" id="v2-macro-grid"><div class="signal">Loading macro signals…</div></div></div>
+        </div>
+        <details class="data-panel" style="margin-top:10px">
+          <summary><span>Marketplace master table</span><span class="summary-meta">Supporting distribution and platform intelligence</span></summary>
+          <div class="v2panel"><div class="v2panel-head"><h4>AI-first internet revenue marketplaces</h4><span class="count" id="v2-market-count">0 rows</span></div><div id="v2-market-grid"></div></div>
+        </details>
+      </section>
+
+      <section class="v2section" id="v2-work">
+        <div class="v2head"><div><div class="v2eyebrow">Execution</div><h3>Work in motion</h3><p>Issues remain the execution layer. In V2 they are positioned after the investment decision and proof milestone.</p></div><a class="v2btn external" href="https://github.com/tbhrc/drf/issues">All issues ↗</a></div>
+        <div class="v2panel"><div class="v2panel-head"><h4>Issue workstream</h4><span class="count" id="v2-work-count">0 rows</span></div><div id="v2-work-grid"></div></div>
+      </section>
+
+      <section class="v2section" id="v2-research">
+        <div class="v2head"><div><div class="v2eyebrow">Drill-down</div><h3>Research, models and operating truth</h3><p>The important links remain one click away, grouped by the decision they support.</p></div></div>
+        <div class="v2links">
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/whop-business-blueprints/RBF-ASSESSMENT.md">Whop RBF assessment<span>Full 79/100 P2 underwriting and backtest.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/INVESTMENT-READINESS.md">Investment readiness<span>Portfolio RBS, proof, gate and capital migration register.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/workflows/revenue-blueprint-factory.md">RBF-7 workflow<span>Capture → Underwrite → Backtest → Forward Test → Scale.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md">RBS scoring standard<span>Ten-factor investor score, P0–P6 and capital gates.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/knowledge/templates/revenue-blueprint-financial-model.md">Financial model<span>Monthly return, payback, runway and downside rules.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/businesses/NICHES.md">Niche register<span>Sniper-market selection after parent business quality.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/research/ai-first-digital-marketplaces-and-service-platforms.md">Internet revenue map<span>Marketplace, distribution and macro opportunity evidence.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/knowledge/templates/business-benchmark-scorecard.md">Business benchmark<span>Benchmark an operating business or client before pivoting.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/knowledge/templates/revenue-blueprint-specification.md">Blueprint specification<span>Proof-backed operating package and certification standard.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/blob/main/knowledge/templates/revenue-blueprint-factory-dashboard.md">Factory scorecard<span>Portfolio cash, proof throughput and Blueprint revenue.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/tree/main/businesses">All businesses<span>Every parent opportunity and its durable research.</span></a>
+          <a class="v2link external" href="https://github.com/tbhrc/drf/tree/main/research">Research library<span>All durable research and evidence.</span></a>
+        </div>
+      </section>
+
+      <section class="v2section" id="v2-sources">
+        <div class="v2head"><div><div class="v2eyebrow">Data integrity</div><h3>V2 source health</h3><p>New dashboard data fails visibly rather than silently displaying stale investment decisions.</p></div></div>
+        <div class="v2source">
+          <div class="src"><strong>INVESTMENT-READINESS.md</strong><span id="src-v2-investment">Loading…</span></div>
+          <div class="src"><strong>Whop RBF assessment</strong><span id="src-v2-whop">Loading…</span></div>
+          <div class="src"><strong>NICHES.md</strong><span id="src-v2-niches">Loading…</span></div>
+          <div class="src"><strong>Marketplace research</strong><span id="src-v2-market">Loading…</span></div>
+        </div>
+      </section>
+
+      <div class="v2backtop"><a href="#overview">↑ Back to Version 1</a></div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap foot"><span>DRF — David's Revenue Factory</span><span>Website = live data workspace · Repository = source of truth</span></div></footer>
+<footer><div class="wrap foot"><span>DRF — David's Revenue Factory</span><span>Version 1 + proposed Revenue Blueprint Factory Version 2 comparison · Repository = source of truth</span></div></footer>
 <script>
 const REPO='tbhrc/drf';
 const RAW=`https://raw.githubusercontent.com/${REPO}/main/`;
@@ -152,14 +314,15 @@ function stripMd(s){return (s||'').replace(/\*\*/g,'').replace(/`/g,'').replace(
 function parseRow(line){return line.slice(1,-1).split('|').map(stripMd)}
 function parseTables(md){const lines=md.split('\n');const tables=[];let heading='';for(let i=0;i<lines.length;i++){const hm=lines[i].match(/^(#{1,6})\s+(.+)$/);if(hm){heading=stripMd(hm[2]);continue}if(/^\|.*\|\s*$/.test(lines[i])&&i+1<lines.length&&/^\|[\s:|-]+\|\s*$/.test(lines[i+1])){const headers=parseRow(lines[i]);const rows=[];i+=2;while(i<lines.length&&/^\|.*\|\s*$/.test(lines[i])){const vals=parseRow(lines[i]);const row={};headers.forEach((h,j)=>row[h]=vals[j]||'');rows.push(row);i++}i--;tables.push({heading,headers,rows})}}return tables}
 function findTable(tables,needle){needle=needle.toLowerCase();return tables.find(t=>(t.heading||'').toLowerCase().includes(needle))||{heading:'',headers:[],rows:[]}}
-function section(md,title){const esc=title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const m=md.match(new RegExp(`## ${esc}\\n([\\s\\S]*?)(?=\\n## |$)`));return m?m[1]:''}
+function section(md,title){const esc=title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const m=md.match(new RegExp(`## ${esc}\n([\s\S]*?)(?=\n## |$)`));return m?m[1]:''}
 function fenced(md,heading){const s=section(md,heading);const m=s.match(/```[^\n]*\n([\s\S]*?)```/);return m?m[1].trim():''}
 function macroSignals(md){const block=(md.match(/The macro opportunity is substantial:\s*([\s\S]*?)(?=\n\nThese numbers|\n## )/)||[])[1]||'';return block.split('\n').filter(l=>/^\s*- /.test(l)).map(l=>stripMd(l.replace(/^\s*- /,'')))}
 function numericValue(v){if(v===null||v===undefined)return null;const s=String(v).replace(/,/g,'').trim();const m=s.match(/-?\d+(?:\.\d+)?/);return m?Number(m[0]):null}
 function scoreClass(v){const n=numericValue(v);if(n===null)return'';if(String(v).includes('/10'))return n>=8?'good':n>=6?'warn':'bad';if(n>=80)return'good';if(n>=60)return'warn';return'bad'}
 function sourceLinks(value){const paths=String(value||'').match(/(?:businesses|research|knowledge)\/[A-Za-z0-9_./-]+\.md/g)||[];if(!paths.length)return null;const frag=document.createDocumentFragment();[...new Set(paths)].forEach((p,i)=>{if(i)frag.append(document.createTextNode(' · '));const a=document.createElement('a');a.href=`https://github.com/${REPO}/blob/main/${p}`;a.target='_blank';a.rel='noopener noreferrer';a.className='extlink';a.textContent=paths.length>1?`Source ${i+1} ↗`:'Open ↗';frag.append(a)});return frag}
-function defaultWidth(name){const n=name.toLowerCase();if(n==='rank'||n==='#')return 54;if(n.includes('opportunity'))return 250;if(n.includes('sub-niche')||n.includes('core pain'))return 300;if(n.includes('current read'))return 380;if(n.includes('next action')||n.includes('next evidence'))return 350;if(n.includes('verified evidence')||n.includes('missing evidence'))return 360;if(n.includes('what drf')||n.includes('demand')||n.includes('economics')||n.includes('human/compliance')||n.includes('automation'))return 280;if(n.includes('canonical detail'))return 110;if(n.includes('title'))return 360;if(n.includes('updated'))return 135;if(n.includes('state')||n.includes('stage')||n.includes('priority')||n.includes('mode')||n.includes('discovery')||n.includes('decision'))return 120;if(n.includes('score')||n.includes('confidence'))return 120;if(n.length<=4)return 72;return 150}
+function defaultWidth(name){const n=name.toLowerCase();if(n==='rank'||n==='#')return 54;if(n.includes('opportunity'))return 250;if(n.includes('sub-niche')||n.includes('core pain'))return 300;if(n.includes('current read'))return 380;if(n.includes('current action')||n.includes('next action')||n.includes('next evidence'))return 350;if(n.includes('return profile'))return 330;if(n.includes('verified evidence')||n.includes('missing evidence'))return 360;if(n.includes('what drf')||n.includes('demand')||n.includes('economics')||n.includes('human/compliance')||n.includes('automation')||n.includes('founder read'))return 280;if(n.includes('canonical detail'))return 110;if(n.includes('title'))return 360;if(n.includes('updated'))return 135;if(n.includes('state')||n.includes('stage')||n.includes('priority')||n.includes('mode')||n.includes('discovery')||n.includes('decision')||n.includes('proof')||n.includes('gate')||n.includes('capital'))return 135;if(n.includes('score')||n.includes('confidence'))return 120;if(n.length<=4)return 72;return 150}
 function renderMobilePortfolio(rows){const host=$('portfolio-cards');host.innerHTML='';rows.forEach((r,i)=>{const c=document.createElement('article');c.className='oppcard';const links=sourceLinks(r['Canonical detail']);c.innerHTML=`<div class="oppcard-head"><h3>#${i+1} ${escapeHtml(r['Opportunity'])}</h3><span class="stage">${escapeHtml(r['Stage'])}</span></div><div class="scoregrid"><div class="scorebox"><small>Score</small><strong class="${scoreClass(r['Opportunity Score'])}">${escapeHtml(r['Opportunity Score'])}</strong></div><div class="scorebox"><small>MRR</small><strong class="${scoreClass(r['MRR'])}">${escapeHtml(r['MRR'])}</strong></div><div class="scorebox"><small>AI</small><strong class="${scoreClass(r['AI Autonomy'])}">${escapeHtml(r['AI Autonomy'])}</strong></div><div class="scorebox"><small>Evidence</small><strong class="${scoreClass(r['Evidence Confidence'])}">${escapeHtml(r['Evidence Confidence'])}</strong></div></div><div class="opp-copy"><strong>Current read</strong><p>${escapeHtml(r['Current read'])}</p></div><div class="opp-copy"><strong>Next action</strong><p>${escapeHtml(r['Next action'])}</p></div>`;if(links){const d=document.createElement('div');d.append(links);c.append(d)}host.append(c)})}
+function renderV2Portfolio(rows){const host=$('v2-portfolio-cards');host.innerHTML='';rows.forEach(r=>{const c=document.createElement('article');c.className='v2opp';const rbs=r['Revenue Blueprint Score']||'Pending';const proof=r['Proof Level']||'Pending';const gate=r['Investment Gate']||'Research';const cap=r['Capital unlocked']||'$0';c.innerHTML=`<h4>${escapeHtml(r['Opportunity'])}</h4><div class="v2oppstats"><div class="v2oppstat"><small>RBS</small><strong>${escapeHtml(rbs)}</strong></div><div class="v2oppstat"><small>Proof</small><strong>${escapeHtml(proof)}</strong></div><div class="v2oppstat"><small>Gate</small><strong>${escapeHtml(gate)}</strong></div><div class="v2oppstat"><small>Capital</small><strong>${escapeHtml(cap)}</strong></div></div><p>${escapeHtml(r['Current action']||'Pending RBF rebuild.')}</p>`;host.append(c)})}
 function escapeHtml(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function createGrid(hostId,rows,opts={}){
   const host=$(hostId);if(!host)return;const id=hostId;const state={rows:[...rows],filtered:[...rows],sortKey:opts.defaultSort||null,dir:opts.defaultDir||'desc',query:'',widths:{}};grids[id]=state;
@@ -173,14 +336,25 @@ function createGrid(hostId,rows,opts={}){
   if(opts.searchId){const input=$(opts.searchId);input.addEventListener('input',()=>{state.query=input.value;applyFilter()})}
   if(opts.resetId){$(opts.resetId).addEventListener('click',()=>{state.widths={};try{localStorage.removeItem(`drf-widths-${id}`)}catch{}render()})}
 }
-function renderSignals(items){const g=$('macro-grid');g.innerHTML='';if(!items.length){g.innerHTML='<div class="signal">No macro signals found.</div>';return}items.slice(0,6).forEach((x,i)=>{const d=document.createElement('div');d.className='signal';d.innerHTML=`<strong>${escapeHtml(x)}</strong><span>Canonical macro signal ${i+1}</span>`;g.append(d)})}
+function renderSignals(items,hostId='macro-grid'){const g=$(hostId);g.innerHTML='';if(!items.length){g.innerHTML='<div class="signal">No macro signals found.</div>';return}items.slice(0,6).forEach((x,i)=>{const d=document.createElement('div');d.className='signal';d.innerHTML=`<strong>${escapeHtml(x)}</strong><span>Canonical macro signal ${i+1}</span>`;g.append(d)})}
 async function fetchIssues(state,statusId){try{const r=await fetch(`${API}/issues?state=${state}&sort=updated&direction=desc&per_page=100`,{cache:'no-store',headers:{Accept:'application/vnd.github+json'}});if(!r.ok)throw new Error(String(r.status));const rows=(await r.json()).filter(x=>!x.pull_request);setSource(statusId,true,`${rows.length} ${state}`);return rows}catch(e){setSource(statusId,false,`Failed: ${e.message}`);return[]}}
 function issueRows(openRows,closedRows){return [...openRows,...closedRows.slice(0,40)].map(i=>({Issue:`#${i.number}`,State:i.state==='open'?'Open':'Closed',Title:i.title,Updated:new Date(i.updated_at).toLocaleString(),Link:i.html_url}))}
 async function load(){
   $('refresh').textContent=`Refreshed ${new Date().toLocaleTimeString()}`;
-  const [readme,version,opps,niches,macro,openIssues,closedIssues]=await Promise.all([
-    text('README.md','src-readme').catch(()=>''),text('VERSION','src-version').catch(()=>''),text('businesses/OPPORTUNITIES.md','src-opps').catch(()=>''),text('businesses/NICHES.md','src-niches').catch(()=>''),text('research/ai-first-digital-marketplaces-and-service-platforms.md','src-macro').catch(()=>''),fetchIssues('open','src-open'),fetchIssues('closed','src-closed')
+  const [readme,version,opps,niches,macro,investment,whop,openIssues,closedIssues]=await Promise.all([
+    text('README.md','src-readme').catch(()=>''),
+    text('VERSION','src-version').catch(()=>''),
+    text('businesses/OPPORTUNITIES.md','src-opps').catch(()=>''),
+    text('businesses/NICHES.md','src-niches').catch(()=>''),
+    text('research/ai-first-digital-marketplaces-and-service-platforms.md','src-macro').catch(()=>''),
+    text('businesses/INVESTMENT-READINESS.md','src-v2-investment').catch(()=>''),
+    text('businesses/whop-business-blueprints/RBF-ASSESSMENT.md','src-v2-whop').catch(()=>''),
+    fetchIssues('open','src-open'),fetchIssues('closed','src-closed')
   ]);
+  setSource('src-v2-niches',!!niches,niches?'Loaded from main':'Failed');
+  setSource('src-v2-market',!!macro,macro?'Loaded from main':'Failed');
+
+  /* Version 1 — preserved */
   $('version').textContent=version.trim()||'—';
   $('intro').textContent=(readme.match(/A GitHub-native factory[^\n]+/)||['GitHub-native factory for measurable commercial outcomes.'])[0];
   $('revenue-loop').textContent=fenced(readme,'Revenue execution loop')||'Revenue loop unavailable.';
@@ -202,9 +376,30 @@ async function load(){
   createGrid('evidence-grid',evidence,{rank:true,defaultSort:'Evidence Confidence',defaultDir:'desc',searchId:'evidence-search',resetId:'evidence-reset',countId:'evidence-count'});
   createGrid('autonomy-grid',autonomy,{rank:true,defaultSort:'AI Autonomy',defaultDir:'desc',searchId:'autonomy-search',resetId:'autonomy-reset',countId:'autonomy-count'});
   createGrid('weights-grid',weights,{defaultSort:'Weight',defaultDir:'desc'});
-  renderSignals(macroSignals(macro));
+  renderSignals(macroSignals(macro),'macro-grid');
   createGrid('market-grid',market,{rank:true,searchId:'market-search',resetId:'market-reset',countId:'market-count'});
   const work=issueRows(openIssues,closedIssues);createGrid('work-grid',work,{defaultSort:'Updated',defaultDir:'desc',searchId:'work-search',resetId:'work-reset',countId:'work-count'});
+
+  /* Version 2 — proposed Revenue Blueprint Factory dashboard */
+  const it=parseTables(investment),wt=parseTables(whop);
+  const investmentRows=findTable(it,'portfolio migration register').rows;
+  const whopScore=findTable(wt,'revenue blueprint score').rows;
+  const rebuilt=investmentRows.filter(r=>r['Revenue Blueprint Score']&&!/pending/i.test(r['Revenue Blueprint Score']));
+  const proofNumber=r=>{const m=String(r['Proof Level']||'').match(/P(\d)/i);return m?Number(m[1]):-1};
+  $('v2-total').textContent=investmentRows.length||portfolio.length||'—';
+  $('v2-rebuilt').textContent=investmentRows.length?`${rebuilt.length}/${investmentRows.length}`:rebuilt.length;
+  $('v2-p4').textContent=investmentRows.filter(r=>proofNumber(r)>=4).length;
+  $('v2-p5').textContent=investmentRows.filter(r=>proofNumber(r)>=5).length;
+  $('v2-p6').textContent=investmentRows.filter(r=>proofNumber(r)>=6).length;
+
+  const v2Columns=['Opportunity','Legacy structural score','Revenue Blueprint Score','Proof Level','Investment Gate','Capital unlocked','Return Profile','Investor-ready','Current action'];
+  createGrid('v2-portfolio-grid',investmentRows,{rank:true,columns:v2Columns,defaultSort:'Revenue Blueprint Score',defaultDir:'desc',searchId:'v2-portfolio-search',resetId:'v2-portfolio-reset',countId:'v2-portfolio-count',afterRender:renderV2Portfolio});
+  renderV2Portfolio(investmentRows);
+  createGrid('v2-whop-score-grid',whopScore,{columns:['Factor','Weight','Score /10','Weighted points','Founder read'],defaultSort:'Weight',defaultDir:'desc'});
+  createGrid('v2-niche-grid',nicheRows,{rank:true,defaultSort:'Niche Score',defaultDir:'desc',countId:'v2-niche-count'});
+  renderSignals(macroSignals(macro),'v2-macro-grid');
+  createGrid('v2-market-grid',market,{rank:true,countId:'v2-market-count'});
+  createGrid('v2-work-grid',work,{defaultSort:'Updated',defaultDir:'desc',countId:'v2-work-count'});
 }
 load();
 </script>
