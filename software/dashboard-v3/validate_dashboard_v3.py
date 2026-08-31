@@ -14,6 +14,7 @@ INDEX = ROOT / "index.html"
 LEGACY = ROOT / "dashboard-v1-v2.html"
 CSS = ROOT / "assets" / "v3-dashboard.css"
 JS = ROOT / "assets" / "v3-dashboard.js"
+POLICY_JS = ROOT / "assets" / "v3-dashboard-policy.js"
 PORTFOLIO = ROOT / "businesses" / "PORTFOLIO-V3.md"
 NICHES = ROOT / "businesses" / "NICHES.md"
 PUBLIC_ARCH = ROOT / "knowledge" / "architecture" / "public-dashboard.md"
@@ -79,17 +80,17 @@ MISSING_VALUES = {
     "Conflict",
 }
 
-NUMERIC_FIELDS = {
-    "Rank",
-    "Opportunity Score",
-    "MRR",
-    "AI Autonomy",
-    "Evidence Confidence",
-    "Research Completeness",
-    "EMP Confidence",
-    "Niche Score",
-    "Niche Confidence",
-    "RBS",
+NUMERIC_RANGES = {
+    "Rank": (1, EXPECTED_PARENT_COUNT),
+    "Opportunity Score": (0, 100),
+    "MRR": (0, 10),
+    "AI Autonomy": (0, 100),
+    "Evidence Confidence": (0, 100),
+    "Research Completeness": (0, 100),
+    "EMP Confidence": (0, 100),
+    "Niche Score": (0, 100),
+    "Niche Confidence": (0, 100),
+    "RBS": (0, 100),
 }
 
 STAGES = {"REJECT", "RESEARCH", "TEST", "PILOT", "FUND", "SCALE", "BLUEPRINT"}
@@ -188,12 +189,12 @@ def git_blob_sha(path: Path) -> str:
     return hashlib.sha1(header + data, usedforsecurity=False).hexdigest()
 
 
-def parse_score(value: str, *, field: str, row_number: int) -> float:
+def parse_score(value: str, *, field: str, row_number: int, maximum: float = 100) -> float:
     """Accept canonical bare, /100 and percentage score notation."""
     match = re.fullmatch(r"(-?\d+(?:\.\d+)?)(?:/100|%)?", value.strip())
     require(match is not None, f"Invalid {field} at row {row_number}: {value}")
     number = float(match.group(1))
-    require(0 <= number <= 100, f"Out-of-range {field} at row {row_number}: {value}")
+    require(0 <= number <= maximum, f"Out-of-range {field} at row {row_number}: {value}")
     return number
 
 
@@ -209,6 +210,7 @@ def validate_html() -> None:
         'id="dashboard-v1"',
         'href="assets/v3-dashboard.css"',
         'src="assets/v3-dashboard.js"',
+        'src="assets/v3-dashboard-policy.js"',
         'src="dashboard-v1-v2.html?embedded=v2"',
         'src="dashboard-v1-v2.html?embedded=v1"',
         "A GitHub-native factory for finding, underwriting, testing and packaging revenue-producing businesses.",
@@ -257,6 +259,7 @@ def validate_legacy_snapshot() -> None:
 def validate_assets() -> None:
     css = read(CSS)
     js = read(JS)
+    policy_js = read(POLICY_JS)
 
     for marker in [
         ".v3-table-shell",
@@ -283,6 +286,21 @@ def validate_assets() -> None:
     ]:
         require(marker in js, f"Dashboard V3 JavaScript is missing contract marker: {marker}")
 
+    for marker in [
+        "deriveLayer1Decision",
+        "strongLeverage",
+        "externalProofReady",
+        "GOLDEN CANDIDATE",
+        "ADVANCE CANDIDATE",
+        "data-policy-proof",
+        "Pending / missing",
+        "applyMissingFilter",
+        "All Layer 1 gates passed",
+    ]:
+        require(marker in policy_js, f"Dashboard V3 policy JavaScript is missing: {marker}")
+
+    require("PLACEHOLDER" not in js and "PLACEHOLDER" not in policy_js, "Dashboard JavaScript contains a placeholder")
+
 
 def validate_portfolio() -> None:
     markdown = read(PORTFOLIO)
@@ -300,12 +318,20 @@ def validate_portfolio() -> None:
         for header in EXPECTED_PORTFOLIO_HEADERS:
             require(row[header] != "", f"Blank value in V3 portfolio row {row_number}, field {header}")
 
-        for field in NUMERIC_FIELDS:
+        for field, (minimum, maximum) in NUMERIC_RANGES.items():
             value = row[field]
+            if value in MISSING_VALUES:
+                require(field != "Rank", f"Rank cannot be missing at row {row_number}")
+                continue
+            match = re.fullmatch(r"-?\d+(?:\.\d+)?", value)
+            require(match is not None, f"Invalid numeric value in row {row_number}, {field}: {value}")
+            number = float(value)
             require(
-                value in MISSING_VALUES or bool(re.fullmatch(r"-?\d+(?:\.\d+)?", value)),
-                f"Invalid numeric/missing value in row {row_number}, {field}: {value}",
+                minimum <= number <= maximum,
+                f"Out-of-range value in row {row_number}, {field}: {value}; expected {minimum}–{maximum}",
             )
+            if field == "Rank":
+                require(number.is_integer(), f"Rank must be an integer at row {row_number}: {value}")
 
         rank = int(row["Rank"])
         ranks.append(rank)
@@ -402,7 +428,7 @@ def main() -> int:
     validations = [
         ("root HTML and section order", validate_html),
         ("legacy V1/V2 snapshot", validate_legacy_snapshot),
-        ("V3 CSS/JavaScript contract markers", validate_assets),
+        ("V3 CSS/JavaScript and policy contracts", validate_assets),
         ("27-business V3 portfolio", validate_portfolio),
         ("ranked niche register", validate_niches),
         ("dashboard architecture documentation", validate_architecture_docs),
