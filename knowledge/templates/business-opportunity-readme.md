@@ -1,138 +1,173 @@
 # Business Opportunity — <Opportunity Name>
 
-> **Purpose:** Founder-facing summary. Explain the business, money, proof, required investment and allowed decision in under 20 seconds. Detailed evidence belongs in `RESEARCH.md`.
+**Status:** Canonical 20-second founder summary  
+**Version:** 2.0  
+**Updated:** `<YYYY-MM-DD>`  
+**Issue:** `#<number>`  
+**Dossier:** [`RESEARCH.md`](./RESEARCH.md)
 
-**Updated:** <date>  
-**Issue:** #<number>  
-**Business model:** <Digital Product / SaaS / Marketplace / Service / AI Outcome / Hybrid>
+> **Purpose:** Preserve the complete DRF decision stack in a compact view. Detailed scoring, operator evidence, economics and sources belong in the full dossier.
 
-> **Revenue Blueprint Score: __/100 · Proof: P_ · Gate: ______ · Capital unlocked: $_____ · Investor-ready: Yes/No**
+## Complete decision line
 
-## Business summary — read this first
+> **Opportunity __/100 · MRR __/10 · AI Autonomy __/100 · Evidence __% · Research __% · EMP_ (__% confidence) · Best Niche: `<name>` __/100 · RBS __/100 · DRF Proof P_ · Stage `<stage>` · Capital `<amount/Pending>` · Next Proof `<milestone>`**
 
-**One sentence:** <What we sell + who pays + why they pay.>
+Do not show RBS alone. Do not call a market-proven category unproven merely because DRF is early. Do not convert missing data to zero.
 
-### Money model
+---
 
-| # | Revenue stream | Who pays | Price / calculation basis | When paid | Type | Core or optional | Evidence class |
-|---|---|---|---|---|---|---|---|
-| 1 | | | | | Upfront sale / recurring fee / royalty / commission / usage / licence | | |
-| 2 | | | | | | | |
-| 3 | | | | | | | |
+# 1. The business
+
+**One sentence:**  
+> We sell `<measurable outcome/offer>` to `<payer>` for `<price/basis>` because `<pain/value>`.
+
+**Pain/problem:** `<what hurts>`  
+**Buyer:** `<who chooses>`  
+**Payer:** `<who pays>`  
+**User:** `<if different>`  
+**Business model:** `<service / SaaS / digital product / marketplace / licence / commission / hybrid>`
+
+## Revenue streams
+
+| Revenue stream | Price/basis | Timing | Type | Core/optional | Evidence label |
+|---|---:|---|---|---|---|
+| | | | Upfront / recurring / usage / licence / commission / royalty | | |
+
+---
+
+# 2. Layer 1 — Do we want this business?
+
+| Metric | Result | Founder read |
+|---|---:|---|
+| Opportunity Score | __/100 | Structural attractiveness |
+| MRR | __/10 | Recurring-revenue quality |
+| AI Autonomy | __/100 | AI leverage and human dependency |
+| Evidence Confidence | __% | Trust in the current score |
+| Research Completeness | __% | Research coverage |
+| External Market Proof | EMP_ / __% | Whether comparable businesses already work |
+| Execution Velocity | __/100 or Not assessed | Speed/resistance to first sale and delivery |
+
+**Layer 1 decision:** `<REJECT / HOLD / ADVANCE>`  
+**Why:** `<one sentence>`
+
+---
+
+# 3. External Market Proof
+
+**EMP:** `<EMP0–EMP4 + name>`  
+**What already works elsewhere:** `<operator/category evidence>`  
+**What does not automatically transfer:** `<local/niche/acquisition/delivery unknowns>`  
+**Best comparable operators:** `<names>`  
+**Most important counter-evidence:** `<failure/complaint/margin/platform risk>`
+
+---
+
+# 4. Layer 2 — Best niche and commercial design
+
+**Best niche:** `<vertical + sub-niche + geography + ICP + trigger>`  
+**Niche Score:** `__/100`  
+**Niche Evidence Confidence:** `__%`  
+**Runner-up:** `<name + score>`
+
+## Recommended offer
+
+**Offer name:** `<outcome-led name>`  
+**Promise:** `<measurable result>`  
+**Included:** `<standard scope>`  
+**Excluded:** `<boundary>`  
+**Setup price:** `<amount/range>`  
+**Recurring price:** `<amount/range>`  
+**Usage/commission/licence:** `<if applicable>`  
+**Upsells:** `<optional>`
+
+## Go-to-market
+
+**First 10 customers:** `<exact route>`  
+**First 100:** `<route or Pending after first-10 evidence>`  
+**Primary acquisition:** `<channel>`  
+**Sales cycle:** `<range>`  
+**Test budget:** `<amount>`  
+**Pass/stop threshold:** `<exact>`
+
+## Delivery architecture
 
 ```text
-payer/activity
-→ gross revenue or payment basis
-→ direct fees and delivery cost
-→ CAC
-→ contribution
-→ fixed costs
-→ net cash
+Outcome × Niche × Customer Channel × System of Record × Automation × Agent × Human Recovery
 ```
 
-### Investment and return
+**Customer channel:** `<WhatsApp / voice / email / web / other>`  
+**System of record:** `<CRM/ERP/etc.>`  
+**Deterministic work:** `<workflow/API>`  
+**AI/agent work:** `<judgement/exceptions>`  
+**Human work:** `<approval/recovery>`  
+**Fallback:** `<replaceable alternative>`
 
-| Capital now | Founder hours | Time to first cash | Base Month-12 net cash | Base Year-1 ROI | Maximum downside | Payback month |
-|---:|---:|---|---:|---:|---:|---|
+---
+
+# 5. Underwriting and execution
+
+| Control | Result |
+|---|---|
+| Revenue Blueprint Score | __/100 |
+| DRF Proof | P_ `<name>` |
+| Stage | `<REJECT / RESEARCH / TEST / PILOT / FUND / SCALE / BLUEPRINT>` |
+| Decision | `<GO / KILL / HOLD / RECYCLE>` |
+| Capital currently authorised | `<amount>` |
+| Founder-time limit | `<hours>` |
+| Next Proof | `<exact cash/behaviour/outcome>` |
+| Deadline/timebox | `<date/range>` |
+
+## Return headline
+
+| Capital | Month-12 net cash | Year-1 net cash | Payback | Maximum downside | Founder hours | Evidence label |
+|---:|---:|---:|---|---:|---:|---|
 | | | | | | | |
 
-**Owner monthly-income target:** <amount>  
-**Expected employment-replacement month:** <month / not in Year 1>
+Use `Pending` when the formal financial model is incomplete.
 
-## Customer and value
+---
 
-**Buyer/payer:** <exact ICP/role>  
-**Pain:** <expensive or urgent problem>  
-**Current alternative:** <what happens now>  
-**Outcome sold:** <measurable result>  
-**Customer ROI:** <value created/protected ÷ customer cost>  
-**Why now:** <timing>
+# 6. Layer 3 — Dossier readiness
 
-## Offer and sales
-
-**Core offer:** <what they receive>  
-**Price:** <amount/model>  
-**Beachhead niche:** <specific niche>  
-**First 10 customers:** <exact route>  
-**Primary channel:** <channel>  
-**Paid acquisition:** <test budget, target CAC and break-even ROAS>  
-**Optional upsells:** <separate from core>
-
-## Unit economics
-
-| Metric | Downside | Base | Upside | Actual/evidence |
-|---|---:|---:|---:|---|
-| Average sale / ARPU | | | | |
-| Gross margin | | | | |
-| Contribution after CAC | | | | |
-| CAC payback | | | | |
-| Retention/repeat/churn | | | | |
-| Founder hours/customer/month | | | | |
-| Cost per successful outcome | | | | |
-
-## Proof
-
-**Current Proof Level:** <P0-P6>  
-**What is actually proven:** <cash/behaviour/outcome>  
-**What is not yet proven:** <next uncertainty>  
-**Evidence period/sample:** <dates and sample size>
-
-| Stage | Result | Evidence link |
+| Component | Ready / Partial / Missing | Path / gap |
 |---|---|---|
-| Underwrite | | |
-| Backtest | | |
-| Forward test | | |
-| Live pilot | | |
-| Repeatability | | |
-| Scale | | |
+| Layer 1 structural case | | |
+| Comparable operators / EMP | | |
+| Ranked niche matrix | | |
+| Offer and pricing | | |
+| GTM/customer acquisition | | |
+| Delivery architecture | | |
+| Financial model / Return | | |
+| RBS / DRF Proof / Stage | | |
+| Evidence register | | |
+| Blueprint packaging | | |
 
-## Three capital tiers
+**Blueprint status:** `<Not ready / Experimental / Revenue-Proven / Repeatable / Certified>`
 
-| Tier | New capital | Cumulative | What it buys | Proof milestone |
-|---|---:|---:|---|---|
-| Validate | $3,000 | $3,000 | | P3–P4 |
-| Launch | +$7,000 | $10,000 | | P5 |
-| Scale | +$20,000 | $30,000 | | P6 |
+---
 
-Only the current gate's capital is authorised.
-
-## Delivery and leverage
-
-**Sale to first value:** <simple sequence>  
-**Mandatory human work:** <hours/minutes>  
-**Deterministic automation:** <steps>  
-**AI/agent work:** <judgement>  
-**First capacity constraint:** <constraint>  
-**Founder dependency:** <low/medium/high and why>
-
-## What makes it durable
-
-**Retention/repeat reason:** <continuing value>  
-**Moat today:** <none/early/strong>  
-**Moat that can compound:** <data/workflow/brand/distribution/network/switching cost>  
-**Concentration risk:** <customer/channel/platform/vendor>
+# 7. Risks and next action
 
 ## What can kill it
 
-1. <fatal risk and threshold>
-2. <fatal risk and threshold>
-3. <fatal risk and threshold>
+1. `<fatal risk + threshold>`
+2. `<fatal risk + threshold>`
+3. `<fatal risk + threshold>`
 
-## Decision and next gate
+## One next action
 
-**Decision:** <GO / KILL / HOLD / RECYCLE>  
-**Investment Gate:** <Reject / Research / Test / Pilot / Fund / Scale / Blueprint Certified>  
-**Capital released now:** <amount>  
-**Founder-time limit:** <hours>  
-**Next evidence milestone:** <exact cash/behaviour/result>  
-**Deadline:** <date>  
-**Next capital unlock:** <threshold>
+**Action:** `<single bounded action>`  
+**Evidence purchased:** `<what uncertainty it removes>`  
+**Stop condition:** `<exact>`
 
-## Files
+---
 
-- [`RESEARCH.md`](./RESEARCH.md)
-- `financial-model.xlsx`
-- `investment-memo.md`
-- `blueprint.md`
+# Files
 
-Create only the files required by the current stage.
+Create only what the current Stage requires:
+
+- [`RESEARCH.md`](./RESEARCH.md) — full Layer 1–3 dossier;
+- `financial-model.xlsx` — when financial modelling is required;
+- `investment-memo.md` — when capital decision detail is required;
+- `evidence/` — only real tests/operating evidence;
+- `blueprint.md` — experimental/revenue-proven/repeatable/certified as honestly earned.
