@@ -4,7 +4,7 @@
 **Framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md` v1.5  
 **Niche layer:** `knowledge/guidelines/niche-attractiveness-scoring-framework.md` v1.2  
 **Base portfolio recalculation:** 29 August 2026 — Issue #48  
-**Latest targeted evidence update:** 30 August 2026 — Issue #49 (Whop Business Blueprints)  
+**Latest targeted evidence update:** 31 August 2026 — Issue #67 (Business Blueprints multi-platform generalisation)  
 **Research basis:** all 28 offer dossiers + all 31 canonical niche dossiers at Comprehensive v3, plus subsequent opportunity-specific evidence updates
 
 ## Scoring rule
@@ -22,7 +22,7 @@ This prevents double-counting while still allowing detailed niche evidence to ch
 - Broad platform/container propositions fall when v3 niche research shows stronger incumbents or narrower real wedges: **HighLevel Vertical SaaS 93→89**, **AI Support 93→90**, **Reputation 88→85**, **Grok Bot 87→81**.
 - Talent Bridge managed-service cash lanes become more important operationally even where their structural score is unchanged: **Assessment-as-a-Service 85** and **Partner-Delivered Recruitment 85**.
 - The largest structural downgrades are **AI Job Board 84→76** and **AI Website Template Factory 79→71**. Cheap software/buildability does not solve the commercial bottleneck.
-- **Whop Business Blueprints rises 79→82 on 30 August 2026** after official recurring Whop Partner economics and early Blueprint deployment evidence materially strengthened willingness-to-pay, speed-to-revenue, margin and MRR assumptions. Blueprint-specific contractual terms and DRF live retention remain unproven.
+- **Business Blueprints rises 79→82 on 30 August 2026** after official recurring Whop Partner economics and early Blueprint deployment evidence materially strengthened willingness-to-pay, speed-to-revenue, margin and MRR assumptions. Blueprint-specific contractual terms and DRF live retention remain unproven.
 - Research Completeness is **100% across all 28 parent opportunities** in the framework sense: every structural factor has been investigated. This does **not** mean product-market fit is proven; live CAC, retention, gross margin and outcome data remain the next confidence gate.
 
 ## Portfolio summary
@@ -47,7 +47,7 @@ This prevents double-counting while still allowing detailed niche evidence to ch
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **Researching** | **85/100** | **-3** | **↓3** | **10/10** | **90/100** | **80%** | **100%** | Not yet canonically scored | — | Strong long-term recurring economics, but data rights, sample validity, methodology and buyer willingness remain material gates. | Complete a data-rights/methodology audit and publish one narrow privacy-safe benchmark before product build. | `businesses/uae-gcc-talent-intelligence-salary-data/RESEARCH.md` |
 | **Niche API & Data Product Factory** | **Candidate** | **84/100** | **-3** | **↓2** | **10/10** | **88/100** | **86%** | **100%** | Not yet canonically scored | — | Usage billing is attractive, but without a proprietary lawful recurring dataset/function the business is infrastructure seeking a problem. | Identify one recurring expensive data/function problem and require first paid repeated usage before adding endpoints. | `businesses/niche-api-data-product-factory/RESEARCH.md` |
 | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **Candidate** | **84/100** | **0** | **↑3** | **10/10** | **93/100** | **84%** | **100%** | Not yet canonically scored | — | Structural score holds. Mature recurring model and strong automation fit, but ranking delay and asset-by-asset economics make it a background compounding lane. | Launch one UAE niche/location asset with renter target before deep content investment; measure rankings, leads and renter economics. | `businesses/local-seo-rank-and-rent/RESEARCH.md` |
-| **Whop Business Blueprints** | **Candidate** | **82/100** | **0** | **↑5** | **9/10** | **78/100** | **90%** | **100%** | Not yet canonically scored | — | Recurring economics are now materially better evidenced: Whop officially confirms ongoing Partner revenue, ad-spend and second-tier economics, while an early operator reports 580+ Blueprint referrals and >$400/day. Exact Blueprint-specific terms and durable retention remain unproven. | Launch one DRF-proven Blueprint and measure deployment, actual payout mechanics, downstream activation/retention, support and iMPLEMENTAi implementation conversion. | `businesses/whop-business-blueprints/RESEARCH.md` + `businesses/whop-business-blueprints/research/whop-business-blueprints-evidence-update-2026-08-30.md` |
+| **Business Blueprints** | **Candidate** | **82/100** | **0** | **↑5** | **9/10** | **78/100** | **90%** | **100%** | HVAC/AC Enquiry-to-Revenue Blueprint | **92/100** | Platform-neutral parent opportunity. Existing DRF marketplace research supports multi-channel distribution; Whop is one high-value endpoint with additional channel-specific economics, not the business itself. Core viability must survive direct Blueprint sales without any single-platform subsidy. | Package one proven DRF Blueprint and test it across at least two compatible endpoints; measure traffic, conversion, fees, CAC, refunds, support, activation and contribution by channel. | `businesses/business-blueprints/RESEARCH.md` + `businesses/business-blueprints/DISTRIBUTION-CHANNELS.md` |
 | **Executive Career Accelerator / Job Search Platform** | **Candidate** | **81/100** | **-2** | **↑4** | **7/10** | **83/100** | **88%** | **100%** | Not yet canonically scored | — | Fast to monetise from existing Talent Bridge IP, but finite programme duration weakens recurring-revenue quality versus SaaS/data products. | Package the existing programme digitally and measure paid conversion, support burden, upgrades and retention. | `businesses/executive-career-accelerator-job-search-platform/RESEARCH.md` |
 | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **Candidate** | **81/100** | **-6** | **↓4** | **9/10** | **78/100** | **95%** | **100%** | MEP/HVAC tender & RFQ operations | **84/100** | Major correction. Seven v3 niches show no Sniper niche; best is 84 and several generic back-office theses fall to 70–74. Grok Bot is a specialist delivery rail for high-value cross-system exceptions, not the business itself. | Benchmark one high-value tender/RFQ role against deterministic/native delivery on cost, success and recovery minutes. | `businesses/grok-bot-ai-revenue-operations/RESEARCH.md` + `research/niches/16-grok-tender-rfq-mep-hvac.md` |
 | **Pre-Assessed Talent Pool Subscription** | **Researching** | **81/100** | **-5** | **↓4** | **10/10** | **80/100** | **84%** | **100%** | Not yet canonically scored | — | Attractive asset reuse, but freshness, consent and local employer liquidity are fundamental product costs. Subscription quality was previously overstated. | Build one permissioned, freshness-controlled role pool and test paid employer access. | `businesses/pre-assessed-talent-pool-subscription/RESEARCH.md` |
@@ -109,7 +109,7 @@ All factors are 0–10. Weighted Score is calculated from the canonical weights 
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | 8 | 9 | 8 | 7 | 10 | 7 | 9 | 10 | 9 | 5 | 10 | 10 | 5 | 8 | 10 | **84.6 → 85** |
 | **Niche API & Data Product Factory** | 8 | 9 | 8 | 7 | 9 | 6 | 10 | 10 | 9 | 6 | 10 | 10 | 5 | 7 | 10 | **84.2 → 84** |
 | **Local SEO Rank-and-Rent Lead Asset Portfolio** | 8 | 8 | 6 | 9 | 9 | 10 | 9 | 9 | 8 | 5 | 10 | 9 | 7 | 7 | 10 | **84.2 → 84** |
-| **Whop Business Blueprints** | 9 | 9 | 10 | **7** | 9 | 8 | 7 | 7 | 9 | **8** | **8** | 10 | 5 | 5 | **9** | **81.7 → 82** |
+| **Business Blueprints** | 9 | 9 | 10 | **7** | 9 | 8 | 7 | 7 | 9 | **8** | **8** | 10 | 5 | 5 | **9** | **81.7 → 82** |
 | **Executive Career Accelerator / Job Search Platform** | 9 | 7 | 6 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 9 | 8 | 8 | 8 | 6 | **81.4 → 81** |
 | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | 10 | 10 | 10 | 8 | 10 | 8 | 7 | 6 | 7 | 8 | 7 | 7 | 7 | 5 | 8 | **80.7 → 81** |
 | **Pre-Assessed Talent Pool Subscription** | 9 | 8 | 7 | 7 | 9 | 7 | 8 | 8 | 8 | 6 | 10 | 10 | 6 | 7 | 9 | **80.5 → 81** |
@@ -144,7 +144,7 @@ Evidence Confidence measures trust in the current scoring inputs. Research Compl
 | UAE/GCC Talent Intelligence & Salary Data Subscription | **80%** | **100%** | Data-rights/methodology audit, sample validity and paid recurring buyer demand. |
 | Niche API & Data Product Factory | **86%** | **100%** | One lawful proprietary dataset/function with paid repeated usage. |
 | Local SEO Rank-and-Rent Lead Asset Portfolio | **84%** | **100%** | Ranking, qualified leads, renter acquisition and retention on one asset. |
-| Whop Business Blueprints | **90%** | **100%** | One DRF Blueprint proving actual programme terms, deployment conversion, downstream activation/retention, support and recurring payout economics. |
+| Business Blueprints | **90%** | **100%** | One DRF Blueprint proving actual programme terms, deployment conversion, downstream activation/retention, support and recurring payout economics. |
 | Executive Career Accelerator / Job Search Platform | **88%** | **100%** | Digital paid conversion, support intensity, upgrades and finite-duration retention. |
 | Grok Bot AI-First Revenue Operations Business-in-a-Box | **95%** | **100%** | Controlled cost-per-successful-job benchmark including quota, failures and human recovery. |
 | Pre-Assessed Talent Pool Subscription | **84%** | **100%** | Consent, freshness maintenance economics and recurring employer access demand. |
@@ -179,7 +179,7 @@ Evidence Confidence measures trust in the current scoring inputs. Research Compl
 | UAE/GCC Talent Intelligence & Salary Data Subscription | 10 | 7 | 9 | 10 | **90** |
 | Niche API & Data Product Factory | 9 | 6 | 10 | 10 | **88** |
 | Local SEO Rank-and-Rent Lead Asset Portfolio | 9 | 10 | 9 | 9 | **93** |
-| Whop Business Blueprints | 9 | 8 | 7 | 7 | **78** |
+| Business Blueprints | 9 | 8 | 7 | 7 | **78** |
 | Executive Career Accelerator / Job Search Platform | 9 | 9 | 8 | 7 | **83** |
 | Grok Bot AI-First Revenue Operations Business-in-a-Box | 10 | 8 | 7 | 6 | **78** |
 | Pre-Assessed Talent Pool Subscription | 9 | 7 | 8 | 8 | **80** |
@@ -209,9 +209,9 @@ The niche layer now makes the market priorities concrete: HVAC/AC is the cleares
 
 The parent score remains 91; the ranking rises because v3 research discovered a strong new exact market: drywall/gypsum/false-ceiling installers at 87/100. This is the clearest example of niche research improving portfolio sequencing without mathematically adding a niche score to the parent score.
 
-### 3. Whop Business Blueprints is now a stronger distribution multiplier
+### 3. Business Blueprints is now a stronger distribution multiplier
 
-Whop Business Blueprints rises from 79 to **82** after new evidence reduces uncertainty around recurring downstream economics and early adoption. It now sits above the 81/79 structural cluster, but remains below the 84+ tier because Blueprint-specific contractual terms, typical creator performance and durable downstream retention are still missing.
+Business Blueprints rises from 79 to **82** after new evidence reduces uncertainty around recurring downstream economics and early adoption. It now sits above the 81/79 structural cluster, but remains below the 84+ tier because Blueprint-specific contractual terms, typical creator performance and durable downstream retention are still missing.
 
 The correct operating sequence remains:
 
@@ -260,7 +260,7 @@ No score in this file is product-market-fit proof. The next meaningful score mov
 
 Research should stop increasing scores merely because more desk sources are found. Comprehensive desk research is complete; **live operating evidence is the next gate**.
 
-For Whop Business Blueprints specifically, the next score movement should require actual Blueprint programme terms or a live DRF deployment with conversion, payout and retention evidence.
+For Business Blueprints specifically, the next score movement should require actual Blueprint programme terms or a live DRF deployment with conversion, payout and retention evidence.
 
 ## Canonical supporting research
 
@@ -269,7 +269,7 @@ For Whop Business Blueprints specifically, the next score movement should requir
 - `businesses/NICHES.md`
 - `research/opportunity-execution-velocity-and-staircase-2026-08-29.md`
 - `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`
-- `businesses/whop-business-blueprints/research/whop-business-blueprints-evidence-update-2026-08-30.md`
+- `businesses/business-blueprints/channels/whop/research/whop-business-blueprints-evidence-update-2026-08-30.md`
 - all `businesses/*/RESEARCH.md` offer dossiers
 
 ## Table format rule
