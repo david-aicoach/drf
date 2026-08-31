@@ -22,6 +22,82 @@ Founder instruction
 
 Temporary agent context never overrides newer repository or GitHub truth.
 
+## Mandatory issue planning and execution protocol
+
+**Checklist first. Execution second.** Every substantive DRF task must be planned in the GitHub Issue before implementation begins. The Issue is the live execution control plane, not a short placeholder note.
+
+### Required issue structure
+
+Before substantive work starts, the agent must ensure the controlling Issue contains enough context that another fresh agent can continue the work without relying on chat history. At minimum include:
+
+- **Objective** — the outcome to achieve.
+- **Why / context** — the founder intent, problem, constraints and important decisions already made.
+- **Scope** — what is included and explicitly excluded.
+- **Implementation checklist** — the actual work items the agent plans to perform.
+- **Verification checklist** — how each material output will be checked.
+- **Final outcome / acceptance criteria** — what must be true before the Issue can close.
+- **Dependencies / sequence** — only when ordering materially matters.
+
+Do not reduce a multi-page founder instruction to a few summary lines if those omitted details could change implementation.
+
+### Live checklist rule
+
+The implementation checklist is also the execution checklist.
+
+```text
+Founder instruction
+→ expand/repair the Issue
+→ create the implementation checklist
+→ execute one bounded item
+→ verify the item
+→ check it off
+→ continue
+→ complete final verification
+→ close only when acceptance criteria pass
+```
+
+Rules:
+
+1. **Plan before changing files.** For substantive work, do not start implementation while the controlling Issue is still vague.
+2. **Check off work as it is actually completed.** Do not bulk-check unfinished items at the end.
+3. **Keep the Issue current.** If scope, design or sequencing materially changes, update the checklist before continuing.
+4. **Record material discoveries.** Add newly discovered requirements, blockers or decisions to the Issue so future agents do not depend on chat memory.
+5. **Checklist completion is not enough by itself.** Final acceptance criteria and verification must also pass.
+6. **Do not close with hidden work remaining.** Deferred work must be explicitly removed from scope by founder decision or moved into a properly nested sub-issue.
+
+### Native sub-issue rule for large work
+
+Large tasks must be decomposed into **native GitHub sub-issues nested under the controlling parent Issue**. Do not create disconnected standalone Issues and merely write `Parent: #...` or use naming such as `#77.1` as a substitute for a real GitHub parent/sub-issue relationship.
+
+Create a native sub-issue when a stage is materially independent, for example when it:
+
+- has its own meaningful implementation checklist and acceptance criteria;
+- is likely to require its own PR or verification cycle;
+- changes a separate subsystem, workflow, architecture layer or major document set;
+- depends on completion of another stage;
+- is large enough that keeping all implementation detail in the parent would make the parent difficult to operate;
+- can be completed and verified as a bounded outcome before the next stage begins.
+
+Parent/sub-issue rules:
+
+1. The **parent Issue owns the overall objective, architecture, stage order and final acceptance criteria**.
+2. Each **sub-issue owns one bounded stage** with its own checklist, verification and final outcome.
+3. The parent checklist must visibly track each required sub-issue.
+4. Do not duplicate the same implementation checklist in both parent and child; the parent tracks the stage, the sub-issue tracks the detailed work.
+5. Complete/check off the parent stage only after the required sub-issue is closed and its output is verified.
+6. The parent Issue cannot close until all required native sub-issues are complete and the parent-level end-to-end acceptance criteria pass.
+7. If the current execution surface cannot create or manage native GitHub sub-issues, **do not fan out disconnected Issues and pretend they are sub-issues**. Keep the stage in the parent checklist and record the tooling limitation until a surface with native sub-issue support can establish the hierarchy.
+
+### Size rule
+
+Use proportional planning:
+
+- **Small/reversible task:** one Issue with a short but explicit checklist.
+- **Standard task:** one Issue with a complete implementation + verification checklist.
+- **Large programme / architecture change:** one parent Issue plus native sub-issues for major stages.
+
+The purpose is not bureaucracy. The purpose is to prevent scope loss, architectural drift and incomplete handoffs.
+
 ## Shared contract
 
 This file is the canonical repository-wide agent contract. Surface-specific files such as `.github/copilot-instructions.md` bootstrap executors into this contract but must not become competing governance.
