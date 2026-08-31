@@ -1,0 +1,33 @@
+name: Issue 72 holistic taxonomy second pass
+
+on:
+  push:
+    branches:
+      - issue-72-cohesive-second-pass
+    paths:
+      - .github/workflows/issue-72-second-pass.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: issue-72-cohesive-second-pass
+          fetch-depth: 0
+      - name: Apply cohesive taxonomy pass
+        run: python .github/scripts/issue72_second_pass.py
+      - name: Verify current taxonomy and commit
+        run: |
+          test -f knowledge/templates/business-opportunity-worked-example-business-blueprints.md
+          test ! -f knowledge/templates/business-opportunity-worked-example-whop-blueprints.md
+          ! grep -R -n -F 'businesses/whop-business-blueprints/' knowledge research
+          ! grep -R -n -F 'AI Website Template & Launch Kit Factory' knowledge research businesses --exclude-dir=channels
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Align DRF templates and historical research to Business Blueprints'
+          git push origin HEAD:issue-72-cohesive-second-pass
