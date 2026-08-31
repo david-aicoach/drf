@@ -4,8 +4,18 @@
 from __future__ import annotations
 
 import re
+from datetime import date
 
-from validate_dashboard_v3 import INDEX, NICHES, PORTFOLIO, ROOT, find_table, read, require
+from validate_dashboard_v3 import (
+    INDEX,
+    MISSING_VALUES,
+    NICHES,
+    PORTFOLIO,
+    ROOT,
+    find_table,
+    read,
+    require,
+)
 
 INTEGRITY_JS = ROOT / "assets" / "v3-dashboard-proof-counts.js"
 TOOLTIP_CSS = ROOT / "assets" / "v3-dashboard-tooltip-fix.css"
@@ -18,17 +28,30 @@ def normalise_name(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
-def validate_relationships() -> tuple[int, int]:
+def validate_relationships_and_dates() -> tuple[int, int]:
     _, portfolio_rows = find_table(read(PORTFOLIO), "## V3 master portfolio")
     _, niche_rows = find_table(read(NICHES), "## Ranked niche summary")
 
     names: dict[str, str] = {}
-    for row in portfolio_rows:
+    for row_number, row in enumerate(portfolio_rows, start=1):
         display_name = row["Business Opportunity"]
         key = normalise_name(display_name)
         require(key, f"Blank normalised parent opportunity name: {display_name}")
         require(key not in names, f"Normalised parent-name collision: {names.get(key)} / {display_name}")
         names[key] = display_name
+
+        freshness = row["Evidence Freshness"]
+        if freshness not in MISSING_VALUES:
+            try:
+                parsed = date.fromisoformat(freshness)
+            except ValueError as exc:
+                raise AssertionError(
+                    f"Invalid Evidence Freshness calendar date at portfolio row {row_number}: {freshness}"
+                ) from exc
+            require(
+                parsed.isoformat() == freshness,
+                f"Evidence Freshness must use canonical YYYY-MM-DD at portfolio row {row_number}: {freshness}",
+            )
 
     unmatched = sorted({
         row["Parent opportunity"]
@@ -63,6 +86,9 @@ def validate_browser_safeguards() -> None:
         "installStorageResetFallback",
         "storageAvailable",
         "window.location.reload()",
+        "installMasterCountReconciliation",
+        "attributeFilter: ['hidden']",
+        "visibleRows",
         "^P[0-6]",
     ]:
         require(marker in integrity_js, f"V3 integrity script is missing: {marker}")
@@ -78,10 +104,11 @@ def validate_browser_safeguards() -> None:
 
 
 def main() -> int:
-    parent_count, niche_count = validate_relationships()
+    parent_count, niche_count = validate_relationships_and_dates()
     validate_browser_safeguards()
     print(f"PASS: all {niche_count} niche rows join to {parent_count} V3 parent opportunities")
-    print("PASS: runtime join failure, storage fallback and in-viewport tooltip safeguards are present")
+    print("PASS: evidence freshness values are real canonical calendar dates")
+    print("PASS: runtime join failure, row-count reconciliation, storage fallback and in-viewport tooltips are present")
     return 0
 
 
