@@ -2,27 +2,37 @@
   'use strict';
 
   const PORTFOLIO_PATH = 'businesses/PORTFOLIO-V3.md';
+  const NICHES_PATH = 'businesses/NICHES.md';
   const LEVELS = ['P0', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6'];
 
-  document.addEventListener('DOMContentLoaded', initialiseProofCounts);
+  installStorageResetFallback();
+  document.addEventListener('DOMContentLoaded', initialiseIntegrityChecks);
 
-  async function initialiseProofCounts() {
+  async function initialiseIntegrityChecks() {
     try {
-      const response = await fetch(`${PORTFOLIO_PATH}?proof-counts=${Date.now()}`, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-      const markdown = await response.text();
-      const proofs = readProofColumn(markdown);
+      const [portfolioResponse, nicheResponse] = await Promise.all([
+        fetch(`${PORTFOLIO_PATH}?integrity=${Date.now()}`, { cache: 'no-store' }),
+        fetch(`${NICHES_PATH}?integrity=${Date.now()}`, { cache: 'no-store' })
+      ]);
+      if (!portfolioResponse.ok) throw new Error(`${PORTFOLIO_PATH}: ${portfolioResponse.status} ${portfolioResponse.statusText}`);
+      if (!nicheResponse.ok) throw new Error(`${NICHES_PATH}: ${nicheResponse.status} ${nicheResponse.statusText}`);
+
+      const portfolio = readTable(await portfolioResponse.text(), '## V3 master portfolio');
+      const niches = readTable(await nicheResponse.text(), '## Ranked niche summary');
+
+      validateNicheParents(portfolio.rows, niches.rows);
       await waitForPolicyFunnel();
-      updateCounts(proofs);
+      updateProofCounts(portfolio.rows.map(row => row['DRF Proof']));
     } catch (error) {
-      console.error('DRF V3 proof counts could not initialise:', error);
+      console.error('DRF V3 integrity checks could not initialise:', error);
+      showLayer2ContractFailure(error.message);
     }
   }
 
-  function readProofColumn(markdown) {
+  function readTable(markdown, exactHeading) {
     const lines = markdown.replace(/\r/g, '').split('\n');
-    const headingIndex = lines.findIndex(line => line.trim() === '## V3 master portfolio');
-    if (headingIndex < 0) throw new Error('Missing V3 master portfolio heading');
+    const headingIndex = lines.findIndex(line => line.trim() === exactHeading);
+    if (headingIndex < 0) throw new Error(`Missing heading “${exactHeading}”`);
 
     let headerIndex = -1;
     for (let index = headingIndex + 1; index < lines.length - 1; index += 1) {
@@ -30,22 +40,21 @@
         headerIndex = index;
         break;
       }
+      if (/^#{1,3}\s/.test(lines[index]) && index > headingIndex + 1) break;
     }
-    if (headerIndex < 0) throw new Error('Missing V3 portfolio table');
+    if (headerIndex < 0) throw new Error(`No Markdown table follows “${exactHeading}”`);
 
     const headers = splitRow(lines[headerIndex]).map(cleanCell);
-    const proofIndex = headers.indexOf('DRF Proof');
-    if (proofIndex < 0) throw new Error('Missing DRF Proof column');
-
-    const proofs = [];
+    const rows = [];
     for (let index = headerIndex + 2; index < lines.length; index += 1) {
       const line = lines[index].trim();
       if (!line.startsWith('|')) break;
       const cells = splitRow(line).map(cleanCell);
-      if (cells.length !== headers.length) throw new Error(`Invalid V3 portfolio row ${index + 1}`);
-      proofs.push(cells[proofIndex]);
+      if (cells.length !== headers.length) throw new Error(`${exactHeading} row ${index + 1} has an invalid cell count`);
+      rows.push(Object.fromEntries(headers.map((header, cellIndex) => [header, cells[cellIndex]])));
     }
-    return proofs;
+    if (!rows.length) throw new Error(`Table under “${exactHeading}” contains no rows`);
+    return { headers, rows };
   }
 
   function splitRow(line) {
@@ -84,8 +93,34 @@
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
       .replace(/\*\*|__|`/g, '')
       .replace(/\\\|/g, '|')
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
       .replace(/\s+/g, ' ')
       .trim();
+  }
+
+  function normaliseName(value) {
+    return cleanCell(value)
+      .toLowerCase()
+      .replace(/&/g, ' and ')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .replace(/\bthe\b/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function validateNicheParents(portfolioRows, nicheRows) {
+    const portfolioNames = new Set(portfolioRows.map(row => normaliseName(row['Business Opportunity'])));
+    const unmatched = [...new Set(
+      nicheRows
+        .map(row => row['Parent opportunity'])
+        .filter(parent => !portfolioNames.has(normaliseName(parent)))
+    )];
+
+    if (unmatched.length) {
+      throw new Error(`Niche-parent join contract failed for: ${unmatched.join(', ')}`);
+    }
   }
 
   async function waitForPolicyFunnel() {
@@ -102,7 +137,7 @@
     return match ? match[0].toUpperCase() : '';
   }
 
-  function updateCounts(proofs) {
+  function updateProofCounts(proofs) {
     const counts = Object.fromEntries(LEVELS.map(level => [level, 0]));
     let missing = 0;
 
@@ -118,5 +153,43 @@
       const count = button.querySelector('b');
       if (count && Number.isInteger(value)) count.textContent = String(value);
     });
+  }
+
+  function showLayer2ContractFailure(message) {
+    const host = document.getElementById('layer2-grid');
+    if (host) host.innerHTML = `<div class="v3-error">Business × Niche source contract failed: ${escapeHtml(message)}</div>`;
+    const count = document.getElementById('layer2-count');
+    if (count) count.textContent = 'Contract failure';
+  }
+
+  function installStorageResetFallback() {
+    document.addEventListener('click', event => {
+      const button = event.target.closest('#master-reset,#layer2-reset,#layer3-reset');
+      if (!button || storageAvailable()) return;
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      window.location.reload();
+    }, true);
+  }
+
+  function storageAvailable() {
+    try {
+      const key = '__drf_v3_storage_test__';
+      window.localStorage.setItem(key, key);
+      window.localStorage.removeItem(key);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
   }
 })();
