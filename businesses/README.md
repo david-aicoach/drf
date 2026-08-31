@@ -13,6 +13,8 @@ Canonical deployment model:
 
 `Outcome × Niche × Customer Channel × System of Record × Agent Layer`
 
+For digital products, marketplaces/storefronts are **distribution endpoints**, not parent opportunities. Route one compatible product across the best allowed channels rather than defining the business by one platform.
+
 Do not define a business primarily by a vendor unless the vendor itself is the product. For UAE service businesses, WhatsApp is the default first-class customer channel unless niche evidence says otherwise.
 
 ## Read the right score
@@ -23,7 +25,7 @@ Do not define a business primarily by a vendor unless the vendor itself is the p
 
 > **The scores below are legacy v1.5 structural screens. They are not investor-readiness ratings. Until an opportunity is rebuilt through RBF-7, its Revenue Blueprint Score, Proof Level, Investment Gate and Return Profile are pending.**
 
-## Legacy offer directory — latest targeted update 30 August 2026
+## Legacy offer directory — latest targeted update 31 August 2026
 
 | Rank | Parent opportunity | Legacy structural score | Stage | Best validated niche | Folder |
 |---:|---|---:|---|---|---|
@@ -45,7 +47,7 @@ Do not define a business primarily by a vendor unless the vendor itself is the p
 | **16** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | Researching | Not yet canonically scored | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
 | **17** | **Niche API & Data Product Factory** | **84** | Candidate | Not yet canonically scored | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
 | **18** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84** | Candidate | Not yet canonically scored | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
-| **19** | **Whop Business Blueprints** | **82** | Candidate | Not yet canonically scored | [`whop-business-blueprints/`](./whop-business-blueprints/) |
+| **19** | **Business Blueprints** | **82** | Candidate | HVAC/AC Enquiry-to-Revenue Blueprint (underlying niche 92/100) | [`business-blueprints/`](./business-blueprints/) |
 | **20** | **Executive Career Accelerator / Job Search Platform** | **81** | Candidate | Not yet canonically scored | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
 | **21** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | Candidate | MEP/HVAC tender & RFQ operations (84/100) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
 | **22** | **Pre-Assessed Talent Pool Subscription** | **81** | Researching | Not yet canonically scored | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
@@ -64,7 +66,7 @@ The old Opportunity Score and Niche Attractiveness Score remain separate histori
 
 Wave 1 starts with:
 
-1. Whop Business Blueprints;
+1. Business Blueprints — multi-platform digital product/distribution model;
 2. WhatsApp + CRM Revenue Core;
 3. Revenue Recovery & Reactivation;
 4. AI Voice Receptionist;
