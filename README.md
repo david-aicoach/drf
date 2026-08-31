@@ -1,94 +1,264 @@
-# DRF — David's Revenue Factory
+# DRF — Revenue Factory
 
-A GitHub-native factory for finding, testing, funding, operating, improving and packaging revenue-producing businesses.
+> **A business underwriting, testing and Blueprint factory.**
+>
+> DRF finds business opportunities, works out how the money really works, tests them with increasing levels of evidence, and turns the winners into repeatable revenue-producing Blueprints.
 
-**Public dashboard:** https://tbhrc.github.io/drf/
+**Public dashboard:** https://tbhrc.github.io/drf/  
+**Canonical business portfolio:** [`businesses/OPPORTUNITIES.md`](businesses/OPPORTUNITIES.md)  
+**Investment-readiness register:** [`businesses/INVESTMENT-READINESS.md`](businesses/INVESTMENT-READINESS.md)
 
-## Number-one commercial rule
+---
 
-> **Traction before build. Revenue work before optional build work.**
+## What DRF does
 
-DRF exists to turn founder judgement, market evidence, existing assets and AI capability into measurable cash, customer value and reusable business Blueprints.
+DRF answers a founder's four questions before meaningful capital is committed:
 
-## Revenue Blueprint Factory
+| Question | DRF output |
+|---|---|
+| **Is this a good business?** | **Revenue Blueprint Score /100** |
+| **How much is actually proven?** | **Proof Level P0–P6** |
+| **What are we allowed to do next?** | **Investment Gate** |
+| **What goes in and what can come out?** | **Return Profile** — capital, founder time, monthly cash, annual ROI, payback and downside |
 
-Every business moves through the same seven-stage machine:
+A standalone score is **never** an investment decision.
+
+The standard one-line decision looks like this:
+
+> **RBS 79/100 · Proof P2 · Gate FORWARD TEST · Capital unlocked up to $3,000 · Investor-ready: No**
+
+---
+
+# The Revenue Blueprint Factory
+
+Every business goes through the same simple machine:
 
 ```text
-CAPTURE
-→ UNDERWRITE
-→ BACKTEST
-→ FORWARD TEST
-→ LIVE PILOT
-→ PROVE REPEATABILITY
-→ SCALE AND BLUEPRINT CERTIFY
+1. CAPTURE
+   What is sold, who pays, and why?
+
+2. UNDERWRITE
+   Does the business make commercial sense on paper?
+
+3. BACKTEST
+   Do the economics survive comparable/historical evidence and downside assumptions?
+
+4. FORWARD TEST
+   Will current real buyers take a meaningful commercial action?
+
+5. LIVE PILOT
+   Will somebody pay, receive value and leave positive contribution?
+
+6. PROVE REPEATABILITY
+   Can customers 2, 3 and beyond be acquired and served without founder heroics?
+
+7. SCALE + BLUEPRINT CERTIFY
+   Can another competent operator reproduce the system at meaningful volume?
 ```
 
-Every opportunity displays four separate answers:
+Canonical workflow: [`workflows/revenue-blueprint-factory.md`](workflows/revenue-blueprint-factory.md)
 
-```text
-REVENUE BLUEPRINT SCORE /100
-How strong could the business be?
+---
 
-PROOF LEVEL P0-P6
-How much is actually verified?
+## What makes a strong business?
 
-INVESTMENT GATE
-What decision and capital are allowed now?
+DRF scores the things that ultimately produce durable owner cash:
 
-RETURN PROFILE
-What cash and founder time go in, and what monthly/annual cash may come out?
-```
+| Revenue driver | Founder question |
+|---|---|
+| **Demand** | Are enough real buyers looking for this now? |
+| **Pain + willingness to pay** | Is the problem valuable enough for customers to move money? |
+| **Revenue quality** | Is the income repeatable, recurring, expanding or naturally repurchased? |
+| **Unit economics** | What remains after the real cost of each sale/customer? |
+| **Customer acquisition** | Can we reach buyers predictably and can advertising work profitably? |
+| **Delivery** | Can we repeatedly create the promised customer outcome? |
+| **Scale + leverage** | Can revenue grow faster than labour, cost and founder time? |
+| **Capital return** | How quickly and strongly does invested cash return? |
+| **Durability** | Can the business keep winning despite competitors and dependency? |
+| **Risk** | What can kill the business and is the downside bounded? |
 
-A standalone score is never an investment decision.
+Canonical scoring standard: [`knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`](knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md)
 
-Canonical workflow: `workflows/revenue-blueprint-factory.md`  
-Canonical standard: `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`
+---
 
-## Three staged capital tiers
+## Proof matters as much as potential
+
+| Proof | Meaning | What may be claimed |
+|---:|---|---|
+| **P0** | Idea | Worth capturing |
+| **P1** | Desk Underwritten | Structurally researched |
+| **P2** | Backtested | Economics survive a documented comparable/historical stress test |
+| **P3** | Forward Tested | Real-market demand signal exists |
+| **P4** | Revenue Proven | Somebody paid and received value |
+| **P5** | Repeatable | A repeatable small business exists |
+| **P6** | Scale Proven / Blueprint Certified | The operating system can be reproduced and scaled |
+
+**One sale proves payment, not repeatability.**  
+**A polished report proves research, not a business.**  
+**A Blueprint is certified only when the operating evidence earns the label.**
+
+---
+
+## Capital is released in stages
 
 ```text
 TIER 1 — VALIDATE
-$3,000 cumulative
-Buy P3–P4 demand/payment/delivery evidence
+Up to $3,000 cumulative
+Buy demand, payment and first-delivery evidence.
 
 TIER 2 — LAUNCH
 +$7,000 · $10,000 cumulative
-Prove P5 repeatability and positive contribution
+Prove repeatable acquisition, delivery and positive contribution.
 
 TIER 3 — SCALE
 +$20,000 · $30,000 cumulative
-Scale the proven channel/capacity and reach P6 Blueprint certification
+Scale only what already works and reach Blueprint certification.
 ```
 
-Spend less when the next uncertainty can be removed for less. Capital buys evidence, not activity.
+**Capital buys evidence, not activity.** Spend less whenever the next uncertainty can be removed for less.
 
-## Business success model
+---
 
-A durable business must repeatedly:
+## Money first
 
-1. create value customers will pay for;
-2. acquire customers at an economic cost;
-3. deliver the promised outcome reliably;
-4. retain gross profit and cash after real costs;
-5. repeat and scale without proportional founder labour;
-6. improve faster than competitors without taking fatal risk.
+Every opportunity must explain the cash model before technology, AI, platform features or TAM.
 
-DRF measures the money drivers:
+```text
+WHAT WE SELL
+→ WHO PAYS
+→ PRICE / CALCULATION BASIS
+→ REVENUE STREAMS
+→ PAYMENT / PLATFORM FEES
+→ DELIVERY + SUPPORT COST
+→ CUSTOMER ACQUISITION COST
+→ CONTRIBUTION
+→ FIXED COST
+→ NET CASH
+```
 
-- demand and willingness to pay;
-- revenue streams and pricing;
-- conversion, CAC and paid growth;
+Revenue streams must be named plainly:
+
+- upfront sale;
+- subscription / recurring fee;
+- royalty;
+- commission;
+- usage revenue;
+- licence fee;
+- advertising revenue;
+- optional upsell.
+
+If a founder cannot understand how the business gets paid in 20 seconds, the document is not finished.
+
+---
+
+## Financial output
+
+Every serious opportunity receives a **monthly Year-1 model**, not just an annual headline.
+
+Required outputs include:
+
+- startup and working capital;
+- founder hours;
+- monthly revenue by income stream;
 - gross and contribution margin;
-- retention, repeat purchase and recurring revenue;
-- time to first cash and customer value;
-- founder hours and cost per successful outcome;
-- payback, monthly ROI, annual ROI, runway and downside;
-- repeatability, leverage, moat and concentration.
+- CAC and break-even ROAS;
+- monthly net cash;
+- cumulative cash position;
+- payback month;
+- maximum cash loss and runway;
+- monthly cash-on-cash ROI;
+- annual ROI;
+- cash per founder hour;
+- downside / base / upside cases.
 
-## Strategic commercial architecture
+Financial model: [`knowledge/templates/revenue-blueprint-financial-model.xlsx`](knowledge/templates/revenue-blueprint-financial-model.xlsx)  
+Model guide: [`knowledge/templates/revenue-blueprint-financial-model.md`](knowledge/templates/revenue-blueprint-financial-model.md)
 
-DRF designs businesses **outcome first**, then selects the market and delivery stack.
+---
+
+# What is a Revenue Blueprint?
+
+A DRF Blueprint is **not** merely a PDF, prompt pack, software configuration or business plan.
+
+> **A Revenue Blueprint is an evidence-backed operating recipe for reproducing a business result.**
+
+A mature Blueprint can contain:
+
+```text
+business model + customer + offer + pricing
++ acquisition system
++ sales process
++ delivery process
++ systems / automation / AI
++ unit economics
++ financial model
++ KPIs
++ known failure modes
++ operating checklist
++ proof and evidence
+```
+
+Certification progresses with evidence:
+
+| Proof level | Blueprint label |
+|---:|---|
+| **P3** | Experimental Blueprint |
+| **P4** | Revenue-Proven Blueprint |
+| **P5** | Repeatable Blueprint |
+| **P6** | Blueprint Certified |
+
+Blueprint specification: [`knowledge/templates/revenue-blueprint-specification.md`](knowledge/templates/revenue-blueprint-specification.md)
+
+---
+
+## Existing businesses and departments
+
+DRF can benchmark an existing company before recommending a new model or pivot.
+
+For a live business we measure the 12-month baseline, identify the primary economic constraint, and compare:
+
+```text
+CURRENT BUSINESS
+vs
+IMPROVEMENT
+vs
+ADDED REVENUE MODEL
+vs
+PIVOT / REPLACEMENT BUSINESS
+```
+
+Every department is treated as an **economic value centre**. It must measurably:
+
+1. create revenue;
+2. protect revenue;
+3. improve margin;
+4. accelerate cash; or
+5. enable one of those through a measurable leading indicator.
+
+Benchmark template: [`knowledge/templates/business-benchmark-scorecard.md`](knowledge/templates/business-benchmark-scorecard.md)
+
+---
+
+## Digital businesses first
+
+DRF currently prioritises digital and AI-enabled businesses because they generally offer the strongest combination of:
+
+- low startup capital;
+- fast testing;
+- measurable funnels;
+- global distribution;
+- software/AI leverage;
+- low marginal replication cost;
+- recurring or repeatable revenue;
+- easier Blueprint packaging.
+
+Traditional businesses can use the same core financial/proof logic later with model-specific benchmarks for premises, stock, labour, licences, working capital and local footfall.
+
+---
+
+## Commercial architecture
+
+The business is defined by the **outcome**, not the current software vendor.
 
 ```text
 Outcome
@@ -98,122 +268,61 @@ Outcome
 × Agent Layer
 ```
 
-Use the layers in this order:
+Use deterministic automation for predictable work. Use AI/agents for judgement, research, orchestration and exceptions. Vendors and models remain replaceable wherever practical.
 
-1. **Outcome** — measurable commercial result sold.
-2. **Niche** — vertical, sub-niche, geography, ICP and trigger.
-3. **Customer channel** — where the customer relationship happens.
-4. **System of record** — where durable operational state lives.
-5. **Agent layer** — replaceable AI/agent used for judgement and orchestration.
+Canonical architecture: [`knowledge/architecture/outcome-first-modular-revenue-architecture.md`](knowledge/architecture/outcome-first-modular-revenue-architecture.md)
 
-Vendors are components, not the business.
+---
 
-### UAE default
+# Where to start
 
-For UAE service-business opportunities, assume **WhatsApp is the first-class customer channel unless niche evidence proves otherwise**.
+### Founder / investor
 
-```text
-WhatsApp/customer channel
-→ CRM/system of record
-→ deterministic lifecycle automation
-→ native AI where sufficient
-→ external agent where it adds material value
-```
+1. Open the [public dashboard](https://tbhrc.github.io/drf/).
+2. Review [`businesses/INVESTMENT-READINESS.md`](businesses/INVESTMENT-READINESS.md).
+3. Open the business folder for the opportunity you want to inspect.
+4. Read its founder summary and RBF assessment before the deep research.
 
-Canonical architecture: `knowledge/architecture/outcome-first-modular-revenue-architecture.md`.
+### Agent
 
-## Department economic model
+1. Read [`AGENTS.md`](AGENTS.md).
+2. Resolve or create the governing GitHub Issue.
+3. Use [`workflows/revenue-blueprint-factory.md`](workflows/revenue-blueprint-factory.md).
+4. Use only the templates required by the current proof stage.
+5. Prefer **SELL → USE → INTEGRATE → AUTOMATE → BUILD**.
+6. Spend only enough cash and founder time to remove the next largest uncertainty.
+7. Verify once and preserve the evidence.
 
-Every department is managed as an economic value centre, not given fictional internal revenue.
+---
 
-A department must measurably:
+## Repository map
 
-1. create revenue;
-2. protect revenue;
-3. improve margin;
-4. accelerate cash; or
-5. enable one of the first four through a leading indicator.
+| Folder | Purpose |
+|---|---|
+| [`businesses/`](businesses/) | Business opportunities, commercial truth and investment readiness |
+| [`workflows/`](workflows/) | End-to-end factory processes |
+| [`knowledge/templates/`](knowledge/templates/) | Scan, underwriting, financial, investment and Blueprint templates |
+| [`knowledge/guidelines/`](knowledge/guidelines/) | Scoring, evidence and operating rules |
+| [`knowledge/lessons/`](knowledge/lessons/) | Proven lessons fed back into the factory |
+| [`research/`](research/) | Durable market and benchmark evidence |
+| [`setups/`](setups/) | Reusable configurations |
+| [`agents/`](agents/) | Agent definitions |
+| [`skills/`](skills/) | Reusable capabilities |
+| [`software/`](software/) | Shared code and tools |
+| [`technical/`](technical/) | Runtime, integration and infrastructure evidence |
+| [`lab/`](lab/) | Experiments not yet trusted |
+| [`archive/`](archive/) | Retired history |
 
-```text
-fully loaded department cost
-→ output volume and quality
-→ verified gross profit created/protected, cost removed or cash released
-→ cycle time
-→ department ROI
-```
+---
 
-## Core model
-
-> **Everything important is a folder. Everything durable is a file. GitHub supplies work state, history and automation. Agents remain replaceable.**
-
-- **Business** = revenue-producing venture or operating unit
-- **Blueprint** = evidence-backed operating recipe for reproducing a business result
-- **Setup** = reusable commercial/technical implementation
-- **Agent** = who acts
-- **Skill** = reusable capability
-- **Workflow** = multi-stage journey
-- **SOP** = one repeatable procedure
-- **Guideline** = governing rule/policy
-- **Software** = code/tools produced or used by the factory
-- **Research** = durable evidence before decisions
-- **Technical** = runtime, integrations, automation, infrastructure and observability
-- **Lesson** = proven learning fed back into the system
-
-## Canonical structure
+## Repository truth
 
 ```text
-drf/
-├── .github/       # GitHub-native control and automation
-├── businesses/    # revenue-producing ventures and commercial truth
-├── setups/        # reusable implementation/configuration packages
-├── agents/        # who performs work
-├── skills/        # reusable capabilities
-├── workflows/     # end-to-end multi-stage sequences
-├── software/      # shared tools/products/components
-├── research/      # durable substantial evidence
-├── technical/     # runtime, integrations, automation, infrastructure
-├── knowledge/     # guidelines, SOPs, templates, lessons, architecture
-├── lab/           # experiments not yet trusted
-└── archive/       # retired material
+Founder instruction
+→ GitHub Issue / acceptance criteria
+→ repository files
+→ verified commercial evidence
+→ dashboard / chat / derived views
 ```
 
-## Durable truth
-
-GitHub Issues are work orders. Repository files define the factory. Branches and commits preserve implementation history. Pull Requests preserve review and handoff. Actions provide deterministic evidence. Chat/session state is disposable.
-
-## Governing change flow
-
-```text
-Issue
-→ issue-linked branch
-→ focused changes + commits
-→ Pull Request
-→ checks / review
-→ merge
-→ Issue closes
-```
-
-## Revenue execution loop
-
-```text
-opportunity
-→ money model
-→ evidence and backtest
-→ smallest forward test
-→ payment and customer value
-→ repeatable contribution
-→ controlled scale
-→ proof-backed Blueprint
-```
-
-A completed technical build with no commercial movement is not traction.
-
-## Start here
-
-1. Read `AGENTS.md`.
-2. Resolve the governing GitHub Issue.
-3. Use `workflows/revenue-blueprint-factory.md` for business/opportunity work.
-4. Use the most specific template, Skill or SOP.
-5. Prefer **SELL / USE / INTEGRATE / AUTOMATE / BUILD**.
-6. Spend only enough to remove the next biggest uncertainty.
-7. Verify the smallest useful result.
+**DRF exists to produce better revenue decisions, not more documentation.**
