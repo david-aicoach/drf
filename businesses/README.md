@@ -1,81 +1,103 @@
 # Businesses
 
-`businesses/` is the canonical DRF offer library: **one folder per parent business opportunity**.
+`businesses/` is the canonical DRF opportunity library: **one folder per parent business opportunity**.
 
-Every parent offer has:
+## Start here
 
-- `README.md` — founder-facing commercial truth: customer, money model, proof, capital, return, gate and next action;
-- `RESEARCH.md` — opportunity underwriting: evidence, backtest, economics, competition, risks, unknowns and validation test.
+- **Dashboard V3 joined portfolio:** [`PORTFOLIO-V3.md`](./PORTFOLIO-V3.md)
+- **Layer 1 structural portfolio and factor history:** [`OPPORTUNITIES.md`](./OPPORTUNITIES.md)
+- **Ranked Business × Niche relationships:** [`NICHES.md`](./NICHES.md)
+- **Business × Niche RBS, DRF Proof, Stage, Capital and Return migration:** [`INVESTMENT-READINESS.md`](./INVESTMENT-READINESS.md)
+- **V3 data contract:** [`../knowledge/architecture/drf-v3-portfolio-data-contract.md`](../knowledge/architecture/drf-v3-portfolio-data-contract.md)
 
-Shared evidence may remain under `research/`, but each offer folder must surface the relevant conclusions.
+`PORTFOLIO-V3.md` is the joined founder-comparison register for Dashboard Version 3. It does not replace the detailed dossiers or the complete ranked niche register.
+
+## Critical distinction
+
+- Workflow Layer 1, Layer 2 and Layer 3 describe the process applied to an opportunity.
+- Dashboard Version 1, Version 2 and Version 3 describe website evolution.
+- Dashboard V3 combines all three workflow layers.
+
+## Parent opportunity rule
+
+Create one parent folder for the service/product/outcome and pain solved.
+
+Do not create a new parent merely because the delivery changes between HighLevel, HubSpot, WhatsApp providers, Grok Bot, ChatGPT, Claude or another system. Vendors and models are normally replaceable implementation components.
 
 Canonical deployment model:
 
 `Outcome × Niche × Customer Channel × System of Record × Agent Layer`
 
-For digital products, marketplaces/storefronts are **distribution endpoints**, not parent opportunities. Route one compatible product across the best allowed channels rather than defining the business by one platform.
+For digital products, marketplaces/storefronts are distribution endpoints rather than parent opportunities.
 
-Do not define a business primarily by a vendor unless the vendor itself is the product. For UAE service businesses, WhatsApp is the default first-class customer channel unless niche evidence says otherwise.
+## Current file pattern
 
-## Read the right score
+A mature opportunity may contain:
 
-- **Current investment and migration register:** [`INVESTMENT-READINESS.md`](./INVESTMENT-READINESS.md)
-- **Legacy structural opportunity ranking:** [`OPPORTUNITIES.md`](./OPPORTUNITIES.md)
-- **Niche selection:** [`NICHES.md`](./NICHES.md)
+```text
+businesses/<opportunity-id>/
+├── CURRENT.md                 # optional pointer to the current dossier
+├── README.md                  # founder summary/evidence history
+├── RESEARCH.md                # detailed research/evidence history
+├── V3-BUSINESS-CASE-*.md      # current three-layer dossier where produced
+├── financial-model.xlsx       # when Stage requires it
+├── investment-memo.md         # when capital detail is required
+├── evidence/                  # actual tests/operating evidence only
+└── blueprint.md               # honestly labelled by current DRF Proof
+```
 
-> **The scores below are legacy v1.5 structural screens. They are not investor-readiness ratings. Until an opportunity is rebuilt through RBF-7, its Revenue Blueprint Score, Proof Level, Investment Gate and Return Profile are pending.**
+Create only files required by the current stage. `CURRENT.md`, when present, identifies the governing dossier without deleting useful history.
 
-## Legacy offer directory — latest targeted update 31 August 2026 (Issue #72 taxonomy consolidation)
+## Source precedence
 
-**Current parent opportunity count: 27.** Website/launch-kit assets are a Business Blueprints product type, not a separate parent opportunity.
+```text
+live evidence
+→ CURRENT.md pointer
+→ current dossier
+→ specialised registers
+→ PORTFOLIO-V3.md
+→ dashboard
+```
 
-| Rank | Parent opportunity | Legacy structural score | Stage | Best validated niche | Folder |
-|---:|---|---:|---|---|---|
-| **1** | **WhatsApp + CRM Revenue Core** | **95** | Candidate | HVAC/AC service contractors (92/100) | [`whatsapp-crm-revenue-core/`](./whatsapp-crm-revenue-core/) |
-| **2** | **Revenue Recovery & Reactivation Engine** | **94** | Candidate | HVAC maintenance contractors (91/100) | [`revenue-recovery-reactivation-engine/`](./revenue-recovery-reactivation-engine/) |
-| **3** | **AI Voice Receptionist & Booking Agent** | **94** | Candidate | Emergency HVAC/AC repair (91/100) | [`ai-voice-receptionist-booking-agent/`](./ai-voice-receptionist-booking-agent/) |
-| **4** | **Missed Lead & Appointment Conversion Engine** | **93** | Candidate | Dubai aesthetic clinics (88/100) | [`missed-lead-appointment-conversion-engine/`](./missed-lead-appointment-conversion-engine/) |
-| **5** | **Instant Quote Generator & Quote-to-Cash System** | **91** | Candidate | Drywall / gypsum / false-ceiling installers (87/100) | [`instant-quote-quote-to-cash/`](./instant-quote-quote-to-cash/) |
-| **6** | **AI Support & Sales Assistant** | **90** | Candidate | Dubai holiday-home operators (78/100) | [`ai-support-sales-assistant/`](./ai-support-sales-assistant/) |
-| **7** | **Talent Bridge Assessment & AI Interview Platform** | **89** | Candidate | Not yet canonically scored | [`talent-bridge-assessment-ai-interview-platform/`](./talent-bridge-assessment-ai-interview-platform/) |
-| **8** | **Agentic Commerce Visibility & Conversion Engine** | **89** | Candidate | Not yet canonically scored | [`agentic-commerce-visibility-conversion-engine/`](./agentic-commerce-visibility-conversion-engine/) |
-| **9** | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **89** | Candidate | Dubai holiday-home operators (82/100) | [`highlevel-vertical-saas-snapshot/`](./highlevel-vertical-saas-snapshot/) |
-| **10** | **Vertical AI Operating Systems & Agent Integration Packs** | **88** | Candidate | Not yet canonically scored | [`vertical-ai-operating-systems-agent-integration-packs/`](./vertical-ai-operating-systems-agent-integration-packs/) |
-| **11** | **Recruitment OS / Hiring Intelligence SaaS** | **87** | Candidate | Not yet canonically scored | [`recruitment-os-hiring-intelligence-saas/`](./recruitment-os-hiring-intelligence-saas/) |
-| **12** | **Assessment-as-a-Service Managed Retainer** | **85** | Candidate | Not yet canonically scored | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
-| **13** | **Reputation & Local Visibility Engine** | **85** | Candidate | Dubai dental / aesthetic clinics (79/100) | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
-| **14** | **White-Label Hiring Portal for Employers/Agencies** | **85** | Researching | Not yet canonically scored | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
-| **15** | **Partner-Delivered Recruitment / Score Hire Model** | **85** | Candidate | Not yet canonically scored | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
-| **16** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | Researching | Not yet canonically scored | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
-| **17** | **Niche API & Data Product Factory** | **84** | Candidate | Not yet canonically scored | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
-| **18** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84** | Candidate | Not yet canonically scored | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
-| **19** | **Business Blueprints** | **82** | Candidate | HVAC/AC Enquiry-to-Revenue Blueprint (underlying niche 92/100) | [`business-blueprints/`](./business-blueprints/) |
-| **20** | **Executive Career Accelerator / Job Search Platform** | **81** | Candidate | Not yet canonically scored | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
-| **21** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | Candidate | MEP/HVAC tender & RFQ operations (84/100) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
-| **22** | **Pre-Assessed Talent Pool Subscription** | **81** | Researching | Not yet canonically scored | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
-| **23** | **ChatGPT Plugin / App Factory** | **79** | Candidate | Not yet canonically scored | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
-| **24** | **HowToFindAJobInUAE Media + Recruitment Funnel** | **78** | Researching | Not yet canonically scored | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
-| **25** | **AI Job Board + Screened Talent Marketplace** | **76** | Researching | Not yet canonically scored | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
-| **26** | **Saffa.ae Community + Trusted Local Business Marketplace** | **76** | Researching | Not yet canonically scored | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
-| **27** | **AI-First Marketplace Directory** | **72** | Researching | Not yet canonically scored | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
+If a newer current dossier conflicts with an older summary, reconcile the register. Never let the dashboard become a competing truth source.
 
-### Legacy portfolio rule
+## Current parent opportunity directory
 
-The old Opportunity Score and Niche Attractiveness Score remain separate historical screens. They may guide rebuild order, but no capital or investor-readiness conclusion may be based on these scores alone.
+| Rank | Opportunity ID | Parent opportunity | Opportunity Score | Best current niche | Folder |
+|---:|---|---|---:|---|---|
+| 1 | `whatsapp-crm-revenue-core` | WhatsApp + CRM Revenue Core | 95 | UAE HVAC/AC service contractors 92 | [`whatsapp-crm-revenue-core/`](./whatsapp-crm-revenue-core/) |
+| 2 | `revenue-recovery-reactivation-engine` | Revenue Recovery & Reactivation Engine | 94 | UAE HVAC maintenance contractors 91 | [`revenue-recovery-reactivation-engine/`](./revenue-recovery-reactivation-engine/) |
+| 3 | `ai-voice-receptionist-booking-agent` | AI Voice Receptionist & Booking Agent | 94 | Emergency HVAC/AC repair 91 | [`ai-voice-receptionist-booking-agent/`](./ai-voice-receptionist-booking-agent/) |
+| 4 | `missed-lead-appointment-conversion-engine` | Missed Lead & Appointment Conversion Engine | 93 | Dubai aesthetic clinics 88 | [`missed-lead-appointment-conversion-engine/`](./missed-lead-appointment-conversion-engine/) |
+| 5 | `instant-quote-quote-to-cash` | Instant Quote Generator & Quote-to-Cash System | 91 | Drywall/gypsum/false-ceiling installers 87 | [`instant-quote-quote-to-cash/`](./instant-quote-quote-to-cash/) |
+| 6 | `ai-support-sales-assistant` | AI Support & Sales Assistant | 90 | Dubai holiday-home operators 78 | [`ai-support-sales-assistant/`](./ai-support-sales-assistant/) |
+| 7 | `talent-bridge-assessment-ai-interview-platform` | Talent Bridge Assessment & AI Interview Platform | 89 | Pending | [`talent-bridge-assessment-ai-interview-platform/`](./talent-bridge-assessment-ai-interview-platform/) |
+| 8 | `agentic-commerce-visibility-conversion-engine` | Agentic Commerce Visibility & Conversion Engine | 89 | Pending | [`agentic-commerce-visibility-conversion-engine/`](./agentic-commerce-visibility-conversion-engine/) |
+| 9 | `highlevel-vertical-saas-snapshot` | HighLevel Vertical SaaS Snapshot Business-in-a-Box | 89 | Dubai holiday-home operators 82 | [`highlevel-vertical-saas-snapshot/`](./highlevel-vertical-saas-snapshot/) |
+| 10 | `vertical-ai-operating-systems-agent-integration-packs` | Vertical AI Operating Systems & Agent Integration Packs | 88 | Pending | [`vertical-ai-operating-systems-agent-integration-packs/`](./vertical-ai-operating-systems-agent-integration-packs/) |
+| 11 | `recruitment-os-hiring-intelligence-saas` | Recruitment OS / Hiring Intelligence SaaS | 87 | Pending | [`recruitment-os-hiring-intelligence-saas/`](./recruitment-os-hiring-intelligence-saas/) |
+| 12 | `assessment-as-a-service-managed-retainer` | Assessment-as-a-Service Managed Retainer | 85 | Pending | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
+| 13 | `reputation-local-visibility-engine` | Reputation & Local Visibility Engine | 85 | Dubai dental/aesthetic clinics 79 | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
+| 14 | `white-label-hiring-portal` | White-Label Hiring Portal for Employers/Agencies | 85 | Pending | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
+| 15 | `partner-delivered-recruitment-score-hire` | Partner-Delivered Recruitment / Score Hire Model | 85 | Pending | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
+| 16 | `uae-gcc-talent-intelligence-salary-data` | UAE/GCC Talent Intelligence & Salary Data Subscription | 85 | Pending | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
+| 17 | `niche-api-data-product-factory` | Niche API & Data Product Factory | 84 | Pending | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
+| 18 | `local-seo-rank-and-rent` | Local SEO Rank-and-Rent Lead Asset Portfolio | 84 | Pending | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
+| 19 | `business-blueprints` | Business Blueprints | 82 | HVAC/AC Enquiry-to-Revenue Blueprint 92 | [`business-blueprints/`](./business-blueprints/) |
+| 20 | `executive-career-accelerator-job-search-platform` | Executive Career Accelerator / Job Search Platform | 81 | Pending | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
+| 21 | `grok-bot-ai-revenue-operations` | Grok Bot AI-First Revenue Operations Business-in-a-Box | 81 | MEP/HVAC tender and RFQ operations 84 | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
+| 22 | `pre-assessed-talent-pool-subscription` | Pre-Assessed Talent Pool Subscription | 81 | Pending | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
+| 23 | `chatgpt-plugin-app-factory` | ChatGPT Plugin / App Factory | 79 | Pending | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
+| 24 | `how-to-find-a-job-in-uae-media-funnel` | HowToFindAJobInUAE Media + Recruitment Funnel | 78 | Pending | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
+| 25 | `ai-job-board-screened-talent-marketplace` | AI Job Board + Screened Talent Marketplace | 76 | Pending | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
+| 26 | `saffa-ae-community-marketplace` | Saffa.ae Community + Trusted Local Business Marketplace | 76 | Pending | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
+| 27 | `ai-first-marketplace-directory` | AI-First Marketplace Directory | 72 | Pending | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
 
-### Current rebuild priority
+## Interpretation
 
-Wave 1 starts with:
-
-1. Business Blueprints — multi-platform digital product/distribution model;
-2. WhatsApp + CRM Revenue Core;
-3. Revenue Recovery & Reactivation;
-4. AI Voice Receptionist;
-5. Missed Lead Conversion;
-6. Instant Quote / Quote-to-Cash;
-7. Assessment-as-a-Service;
-8. Partner-Delivered Recruitment.
-
-See [`INVESTMENT-READINESS.md`](./INVESTMENT-READINESS.md) for the complete migration register, current gates and capital controls.
-
-Add campaign, operations, finance or delivery subfolders only when real work exists.
+- Opportunity Score remains the Layer 1 business-attractiveness score.
+- Niche Score remains a separate target-market score.
+- RBS applies after a Business × Niche is commercially designed.
+- External Market Proof and DRF Proof remain separate.
+- `Pending` means required work has not yet been completed; it does not mean zero or rejected.
+- Capital and public claims require the appropriate Stage/DRF Proof and founder approval.
