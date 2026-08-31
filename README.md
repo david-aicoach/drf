@@ -4,6 +4,8 @@
 >
 > DRF finds business opportunities, works out how the money really works, tests them with increasing levels of evidence, and turns the winners into repeatable revenue-producing Blueprints.
 
+A GitHub-native factory for finding, underwriting, testing and packaging revenue-producing businesses.
+
 **Public dashboard:** https://tbhrc.github.io/drf/  
 **Canonical business portfolio:** [`businesses/OPPORTUNITIES.md`](businesses/OPPORTUNITIES.md)  
 **Investment-readiness register:** [`businesses/INVESTMENT-READINESS.md`](businesses/INVESTMENT-READINESS.md)
@@ -28,6 +30,18 @@ The standard one-line decision looks like this:
 > **RBS 79/100 · Proof P2 · Gate FORWARD TEST · Capital unlocked up to $3,000 · Investor-ready: No**
 
 ---
+
+## Revenue execution loop
+
+```text
+CAPTURE
+→ UNDERWRITE
+→ BACKTEST
+→ FORWARD TEST
+→ LIVE PILOT
+→ PROVE REPEATABILITY
+→ SCALE + BLUEPRINT CERTIFY
+```
 
 # The Revenue Blueprint Factory
 
