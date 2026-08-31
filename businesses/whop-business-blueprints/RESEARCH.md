@@ -2,72 +2,45 @@
 
 Updated: 2026-08-31  
 Issue: #49  
-Research status: **Comprehensive; commercial model simplified and evidence boundaries preserved**
+Research status: **Comprehensive; founder-language commercial model clarified**
 
 ## Executive summary — read this first
 
-**Whop Business Blueprints is an 82/100 opportunity. Use it as a distribution and monetisation layer for DRF systems that are already proven.**
+**Whop Business Blueprints is an 82/100 opportunity. The business is simple: build a reusable business blueprint once, distribute/sell it, and earn recurring royalties when businesses use it.**
 
-The commercial model is **not** “Whop takes 10% and we keep 90%.”
+### The three core income streams
 
-There are **three separate income streams**:
-
-| Income stream | What we can earn | Basis | Status |
+| # | Income stream | What we make money from | Evidence status |
 |---|---|---|---|
-| **1. Blueprint creator economics** | Reported **10% of Whop's qualifying profit** generated from businesses deployed through our Blueprint | Whop's profit on qualifying Blueprint-attributed downstream sales — **not 10% of the business's gross revenue** | Strongly corroborated; exact official Docs/creator UI still needs direct capture |
-| **2. Whop Partner/referral economics** | Up to **30% of Whop gross profit** from successfully referred businesses, recurring while they earn, plus **1% of referred-business Whop ad spend** and second-tier commissions | Whop Partners programme | First-party Whop verified; separate eligibility and attribution rules apply |
-| **3. iMPLEMENTAi implementation + MRR** | Our own setup/customisation fee plus optional managed-service/software MRR | Fees charged directly for deployment, integration, support or operation | Controlled by us; commercial terms must be validated per offer |
+| **1** | **Blueprint sales** | Upfront sale of the packaged Blueprint/IP as a paid digital product | Whop officially supports paid digital products. **Native Business Blueprint gallery pricing is not yet verified.** |
+| **2** | **Blueprint business royalties** | Recurring royalty when businesses deploy and operate using our Blueprint | Business Blueprint launch model. Current ecosystem reporting consistently says **10% of Whop's gross profit** from businesses onboarded through the Blueprint. Exact first-party payout wording still needs direct capture. |
+| **3** | **Whop referral commissions** | Recurring commission when businesses are referred to Whop through our Partner attribution | First-party Whop programme. Eligibility and stacking with Blueprint royalties must be verified live. |
 
-### Simple money flow
-
-```text
-A business deploys our Blueprint
-→ that business makes sales
-→ the business owner receives its revenue less applicable Whop/payment fees
-→ Whop earns its qualifying economics
-→ we may receive the Blueprint creator share from Whop
-→ we may separately receive Whop Partner/referral economics where eligible
-→ we can separately charge iMPLEMENTAi implementation and/or recurring service fees
-```
-
-### What the 10% does NOT mean
-
-Do **not** model this:
+### The business in one picture
 
 ```text
-$100 business revenue
-→ Whop takes $10
-→ Blueprint creator keeps $90
+CREATE ONCE
+A proven business system becomes a Whop Business Blueprint
+
+1. SELL IT
+→ upfront Blueprint/digital-product sales
+
+2. BUSINESSES DEPLOY IT
+→ recurring Blueprint business royalties
+
+3. BUSINESSES ARE REFERRED THROUGH US
+→ recurring Whop referral commissions where eligible
 ```
 
-That is wrong.
+### What is optional, not core
 
-The current reported Blueprint economics are closer to:
+**Implementation, consulting and managed services are optional upsells.**
 
-```text
-Business generates sales
-→ Whop earns qualifying profit
-→ Blueprint creator receives 10% of Whop's qualifying profit
-```
-
-Until the exact live Blueprint Docs/creator UI is captured, **do not forecast Blueprint creator revenue as a fixed percentage of gross business sales**.
-
-### The real strategic value
-
-One successful Blueprint could potentially create a revenue stack:
-
-```text
-Blueprint creator share
-+ Whop Partner/referral share where eligible
-+ iMPLEMENTAi implementation revenue
-+ iMPLEMENTAi managed-service/software MRR where justified
-```
-
-Do not assume all layers automatically stack. Verify Whop eligibility and attribution rules before financial modelling.
+They may be commercially useful through iMPLEMENTAi, but they are **not one of the three core Whop Blueprint income streams** and should not be mixed into the headline business model.
 
 ---
 
-## 1. Opportunity decision
+## 1. Founder decision
 
 - Stage: **Candidate**
 - Opportunity score: **82/100**
@@ -77,119 +50,284 @@ Do not assume all layers automatically stack. Verify Whop eligibility and attrib
 - Research completeness: **100%**
 - Previous portfolio score: **79/100**
 
-**Decision:** use Business Blueprints as a monetisation and distribution layer on proven DRF IP, not as a generic “make money” product factory.
+### Decision
 
-The score increased from 79 to 82 because recurring economics and early adoption are now materially better evidenced. It remains below 85 because typical creator earnings, retention, CAC and DRF live economics are still unproven.
+Use Business Blueprints as a **productisation + distribution + royalty engine** for business systems DRF has already proven.
 
----
+Do not create generic information products just to fill a catalogue.
 
-## 2. The three income streams in detail
-
-### Income stream 1 — Blueprint creator economics
-
-Current ecosystem reporting converges on a Blueprint-specific creator formula of approximately **10% of Whop's qualifying profit** generated by downstream businesses deployed through the creator's Blueprint.
-
-Important:
-
-- this is **not 10% of downstream gross sales**;
-- the money is reported as coming from Whop's own economics;
-- exact attribution rules still need direct first-party capture;
-- the exact Blueprint Docs body was not directly retrieved in the 31 August evidence pass.
-
-Evidence classification: **strongly corroborated / pending direct Whop Docs or creator-UI capture**.
-
-Detailed evidence:
-
-- `research/whop-business-blueprints-documentation-update-2026-08-31.md`
-
-### Income stream 2 — Whop Partner/referral economics
-
-Whop's official Partners programme states that eligible partners can earn:
-
-- up to **30% of Whop's gross profit** from successfully referred businesses;
-- recurring revenue for as long as the referred business earns;
-- **1% of referred-business Whop ad spend**;
-- second-tier commissions;
-- programme availability worldwide;
-- more than **$10M paid to Partners** to date.
-
-Source:
-
-- https://whop.com/blog/whop-partners/
-
-Important boundary:
-
-These are official **Whop Partner** terms. They are separate from the Blueprint creator formula. Do not assume every Blueprint creator automatically receives Partner economics or that all referral layers stack without checking eligibility and attribution.
-
-### Income stream 3 — iMPLEMENTAi implementation and recurring services
-
-This is the income stream we control most directly.
-
-A Blueprint buyer may need:
-
-- deployment/setup;
-- integrations;
-- customisation;
-- data migration/configuration;
-- AI agent setup;
-- training;
-- ongoing monitoring/support;
-- managed operations;
-- recurring software or service modules.
-
-These services can be sold as:
+The strongest model is:
 
 ```text
-one-off implementation fee
-+ optional monthly managed-service/software MRR
+prove a business system
+→ package it as a Blueprint
+→ distribute it on Whop
+→ sell the packaged IP where appropriate
+→ earn recurring royalties from businesses that use it
+→ earn separate Whop referral commissions where eligible
 ```
 
-This layer may become more economically important than the Blueprint creator payout itself because it monetises buyers who want the outcome but do not want to implement the system alone.
+---
+
+## 2. Income stream 1 — Blueprint sales
+
+### Plain-English model
+
+We take a proven business system and package it as a digital product:
+
+- business formula;
+- site/configuration;
+- products and pricing;
+- checkout/payment setup;
+- SOPs/playbooks;
+- prompts/agents;
+- templates/assets;
+- launch instructions;
+- operating metrics.
+
+That packaged IP can be sold for an **upfront price**.
+
+### What Whop officially supports
+
+Whop officially supports building, hosting and selling digital products, including one-time and recurring pricing.
+
+Official source:
+
+- https://docs.whop.com/launch-your-business
+
+Whop's broader marketplace already sells digital products, templates, courses, software, memberships and other digital offers.
+
+### Important evidence boundary
+
+We have **not yet directly verified that the new native Business Blueprint gallery itself lets the Blueprint creator set an upfront purchase price on the Blueprint listing**.
+
+Therefore do not write:
+
+> Native Business Blueprints definitely sell for an upfront listing price.
+
+Write instead:
+
+> We can monetise the Blueprint/IP upfront through Whop's paid digital-product commerce layer, while using Business Blueprints as the deployment/distribution primitive.
+
+If Whop later confirms native Blueprint pricing, this distinction disappears and the upfront sale becomes native to the Blueprint listing itself.
+
+### Commercial example
+
+```text
+Paid Blueprint package: $299
+→ buyer pays $299
+→ Whop/payment fees apply
+→ remaining sale proceeds are our upfront Blueprint sale income
+```
+
+That upfront sale income is completely separate from the recurring Blueprint business royalty described below.
 
 ---
 
-## 3. Product thesis
+## 3. Income stream 2 — Blueprint business royalties
 
-> **Prove a workflow in DRF first; package the transferable operating system as a Whop Blueprint second.**
+### Plain-English model
 
-Good candidates include:
+This is the most important native Business Blueprint income stream.
 
-- WhatsApp revenue systems by niche;
-- revenue recovery workflows;
-- instant quote/quote-to-cash systems;
-- rank-and-rent operating systems;
-- recruitment evidence/evaluation workflows;
-- AI commerce readiness processes;
-- agentic operating packs;
-- launch kits backed by real conversion evidence.
+We create the Blueprint once. Other people deploy businesses using it. When those businesses earn, we receive a recurring **Blueprint business royalty** from Whop.
 
-Do not publish client-confidential data, proprietary licences or unsupported income claims.
+Whop's public launch message is:
+
+- select a Blueprint and go from zero to a business quickly;
+- build a Blueprint and get paid when other businesses use it.
+
+Official launch source:
+
+- https://x.com/whop/status/2093042100707135961
+
+Whop later reinforced the model publicly with the message that a creator can **build a Blueprint once and get paid when a business earns using it**.
+
+### Current royalty percentage
+
+Current ecosystem reporting consistently describes the Blueprint creator royalty as:
+
+**10% of Whop's gross profit from each business onboarded through the Blueprint, recurring while the business runs.**
+
+Supporting current ecosystem reports:
+
+- https://zamantika.com/profile/eptwts
+- https://www.twstalker.com/PhedEU
+- https://www.twstalker.com/whop
+
+### Important: what the 10% means
+
+It does **not** mean:
+
+```text
+Business makes $100
+→ Whop takes $10
+→ Blueprint creator keeps $90
+```
+
+It means, based on the current reported formula:
+
+```text
+Business makes sales
+→ Whop earns gross profit from that business
+→ Blueprint creator receives 10% of Whop's gross profit
+```
+
+This is why the term **Blueprint business royalty** is useful: it is recurring income linked to businesses operating on our Blueprint.
+
+### What still needs direct first-party capture
+
+- exact contractual wording;
+- what Whop counts as gross profit;
+- qualifying transactions;
+- payout timing;
+- attribution duration;
+- refunds/chargebacks effect;
+- whether all Blueprint-created businesses qualify automatically.
+
+Until that is captured from the live Docs/creator UI, the 10% rate remains **strongly corroborated rather than fully first-party captured**.
 
 ---
 
-## 4. Marketplace and launch mechanics
+## 4. Income stream 3 — Whop referral commissions
 
-Whop's live Blueprint surface currently exposes:
+This is a separate income stream from the Blueprint business royalty.
 
-- **Blueprints**;
-- a dedicated **Docs** route;
-- **Create a business**;
-- **Community blueprints**;
-- **Trending** discovery.
+Whop officially operates a Partner/referral programme for businesses brought onto the platform.
 
-Source:
+Official sources:
+
+- https://whop.com/blog/whop-partners/
+- https://docs.whop.com/refer-businesses-to-whop
+
+Current first-party programme evidence includes recurring commission tied to referred-business activity, plus additional partner economics such as advertising-related commission and second-tier effects under the current programme structure.
+
+### Founder interpretation
+
+If somebody finds our Blueprint and creates a business through a flow attributed to us, there may be **two recurring Whop-paid revenue lines**:
+
+```text
+Blueprint business royalty
++
+Whop referral commission
+```
+
+Do **not** assume they stack automatically until live attribution confirms it.
+
+### What to measure
+
+For the first DRF Blueprint, record separately:
+
+- Blueprint royalty received;
+- Partner commission received;
+- whether both were paid on the same downstream business;
+- any exclusions or attribution conflicts.
+
+---
+
+## 5. Optional fourth line — services
+
+This is **not part of the core Blueprint model**.
+
+If a buyer wants help, iMPLEMENTAi can optionally sell:
+
+- setup;
+- customisation;
+- integrations;
+- managed operation;
+- support;
+- recurring software/service modules.
+
+Treat this as an **upsell**, not as the explanation of how Business Blueprints make money.
+
+The core business should still make sense without services.
+
+---
+
+## 6. Why this business model is attractive
+
+The economic advantage is leverage.
+
+A normal consulting project is sold once and delivered once.
+
+A Blueprint can potentially be:
+
+```text
+built once
+→ sold many times
+→ deployed many times
+→ pay recurring royalties across many operating businesses
+→ generate separate referral commissions
+```
+
+That changes the economics from labour-led income to **IP-led income**.
+
+The best Blueprint is therefore not merely a document. It is a reusable business asset.
+
+---
+
+## 7. What a Business Blueprint actually contains
+
+Current ecosystem descriptions indicate that a Business Blueprint can cover much more than a PDF or course, including:
+
+- website;
+- products;
+- pricing;
+- checkout;
+- payments;
+- analytics;
+- ad pixel/configuration;
+- deployable operating setup.
+
+The strategic difference is:
+
+```text
+ordinary digital product
+= information about how to build a business
+
+Business Blueprint
+= a business configuration that can be deployed and operated
+```
+
+This is why the recurring royalty model matters.
+
+---
+
+## 8. Marketplace and distribution
+
+Whop's current public platform provides:
+
+- a large commerce marketplace;
+- paid digital products;
+- Business Blueprints;
+- Community Blueprints;
+- Trending discovery;
+- AI-assisted business creation;
+- payment infrastructure;
+- affiliate/referral systems.
+
+Current Whop sources:
 
 - https://whop.com/blueprints/
+- https://web.whop.com/
+- https://docs.whop.com/launch-your-business
 
-The public catalogue remains early. That preserves a category-formation opportunity while the underlying Whop platform already has meaningful commerce infrastructure.
+### Distribution thesis
 
-**Timing / First-Mover Window remains 10/10.**
+The Blueprint itself should be marketed through:
 
-The 31 August evidence also reports that Blueprints are designed as deployable business configurations rather than static PDFs/templates. Source-code portability and CLI operation further strengthen that thesis, but any detailed mechanics that have not been directly captured from Whop Docs remain evidence-gated.
+1. **Whop marketplace/discovery**;
+2. **SEO**;
+3. **social/content**;
+4. **AI answer engines**;
+5. **direct niche outreach**;
+6. **existing iMPLEMENTAi/Talent Bridge distribution where relevant**.
+
+The first mover advantage is not merely being early to the term `Business Blueprints`. It is owning the best Blueprint for a high-value niche before that niche becomes crowded.
 
 ---
 
-## 5. Early adoption evidence
+## 9. Early adoption evidence
 
 An early ecosystem operator, Pierre Koutani, publicly reports:
 
@@ -197,189 +335,215 @@ An early ecosystem operator, Pierre Koutani, publicly reports:
 - those businesses becoming tier-two affiliates;
 - more than **$400/day** recurring/passive earnings at the reported run-rate.
 
-Archived evidence:
+Evidence:
 
 - https://zamantika.com/profile/eptwts
-- https://www.twstalker.com/davidlanex
+- https://www.twstalker.com/thebrettway
 
-Evidence classification: **self-reported / not independently audited**.
+Classification: **self-reported / not independently audited**.
 
-This is not typical-earnings evidence. It is useful because it shows that Blueprint deployments and recurring downstream economics are already occurring at non-trivial volume for at least one early operator.
+Do not use this as typical-income evidence.
+
+Use it only as proof that the model is already being operated at meaningful early volume by at least one ecosystem participant.
 
 ---
 
-## 6. AI, agent and WebMCP opportunity
+## 10. AI, MCP and WebMCP opportunity
 
-Whop's official CLI documentation confirms agent-driven operation of Whop businesses and supports MCP/skills integration paths.
+Whop is increasingly positioning itself as AI-operable business infrastructure.
+
+Official Whop material confirms agent/CLI operation and MCP-style integration paths.
 
 Sources:
 
 - https://whop.com/blog/cli/
 - https://whop.com/blog/cli-guide/
 - https://whop.com/blog/run-business-with-cli/
+- https://docs.whop.com/developer/guides/ai_and_mcp
 
-Whop's public positioning is increasingly AI-first: create or run businesses with AI.
-
-This means a Blueprint can be designed for both humans and machines:
+That means our Blueprints should be written for both humans and AI agents:
 
 - explicit niche;
-- clear prerequisites;
-- structured setup sequence;
-- tool/API/CLI requirements;
-- measurable outcomes;
-- operating constraints;
-- validation metrics.
+- required inputs;
+- pricing rules;
+- setup steps;
+- tools/APIs;
+- operating rules;
+- measurable outputs;
+- validation checks.
 
 ### WebMCP
 
-Chrome's WebMCP origin trial allows websites to expose structured tools to agents rather than relying only on visual UI interpretation.
+Chrome's WebMCP origin trial creates a future route for websites to expose structured tools directly to AI agents.
 
 Source:
 
 - https://developer.chrome.com/blog/ai-webmcp-origin-trial
 
-No native Whop Blueprint-specific WebMCP implementation is currently verified.
+No native Whop Blueprint-specific WebMCP integration is currently verified.
 
-Strategic path:
+Potential future path:
 
 ```text
-SEO / AI discovery
-→ machine-readable Blueprint offer
-→ Whop CLI/MCP operation
-→ future WebMCP-enabled web interaction
-→ deploy / operate / measure business
+AI discovers Blueprint
+→ evaluates it
+→ deploys business
+→ operates Whop through CLI/MCP
+→ interacts with WebMCP-enabled sites/tools
+→ measures performance
 ```
-
-Treat this as future distribution leverage, not current Whop functionality.
 
 ---
 
-## 7. SEO and discoverability
+## 11. SEO and AI discovery
 
-Do not wait for large historic search volume around the newborn term `Whop Business Blueprints`.
+Do not depend on search volume for the new phrase `Whop Business Blueprints`.
 
-Use existing high-intent niche/business searches:
+Target the **business opportunity itself**.
+
+Example:
 
 ```text
-existing commercial query
+"AI receptionist for dental clinic"
 → useful public content
-→ specific deployable Blueprint
-→ Whop deployment
-→ downstream business economics
+→ dental-clinic business Blueprint
+→ paid Blueprint/IP offer where appropriate
+→ one-click/low-friction deployment
+→ recurring Blueprint business royalties
 ```
 
-Discovery currently has three layers:
-
-1. Google/traditional search;
-2. Whop marketplace/internal discovery;
-3. AI/agent discovery and execution.
-
-The strongest Blueprint content should therefore state clearly:
+Every Blueprint page should make these points obvious:
 
 - who it is for;
-- what problem it solves;
-- prerequisites;
-- what is included;
-- setup steps;
-- measurable outcomes;
-- limitations;
-- what it does **not** guarantee.
+- what business it creates;
+- what it sells;
+- how the business makes money;
+- startup requirements;
+- what is already built;
+- what still needs to be done;
+- expected operating effort;
+- risks;
+- what is not guaranteed.
 
 ---
 
-## 8. Score rationale
+## 12. Score rationale
 
-The 29–30 August rescore changed only four factors:
+The 29–30 August rescore changed four factors:
 
 | Factor | Previous | Revised | Why |
 |---|---:|---:|---|
-| Willingness to Pay | 6 | **7** | Early deployment volume is now non-trivial, although still self-reported. |
-| Speed to Revenue | 7 | **8** | Early operator evidence shows a live route from Blueprint deployment to recurring economics. |
-| Margin Potential | 7 | **8** | Whop Partner economics are paid from Whop's share, and the Blueprint thesis similarly points to platform-funded creator economics. |
-| MRR / Recurring Revenue Quality | 8 | **9** | Recurring Whop Partner economics are first-party verified and early Blueprint evidence shows repeat downstream earning potential. |
+| Willingness to Pay | 6 | **7** | Early deployment volume is meaningful enough to improve confidence, though not median-market proof. |
+| Speed to Revenue | 7 | **8** | The model can monetise quickly through distribution, royalties and potentially paid Blueprint sales. |
+| Margin Potential | 7 | **8** | Reusable IP and platform-funded recurring income create strong gross-margin potential. |
+| MRR / Recurring Revenue Quality | 8 | **9** | Blueprint business royalties and referral commissions create potentially durable recurring income across many downstream businesses. |
 
 **Weighted score: 81.7 → 82/100.**
 
-Hold at **82/100** after the 31 August update. The newer evidence improves clarity but does not yet prove stronger median-market economics.
+Hold at **82/100** until live DRF data proves:
+
+- paid Blueprint conversion;
+- native Blueprint pricing mechanics;
+- actual royalty rate and payout;
+- stacking with Partner commission;
+- downstream business retention;
+- support burden.
 
 ---
 
-## 9. Risks and evidence gaps
+## 13. Main risks
 
-Still unproven:
-
-- exact first-party Blueprint creator payout wording;
-- exact attribution window and qualifying-sale rules;
-- whether Blueprint and Partner economics stack automatically;
-- median Blueprint deployments per creator;
-- percentage of deployed businesses that produce revenue;
-- creator payout distribution;
-- downstream business retention/churn;
-- DRF conversion rate;
-- DRF implementation upsell rate;
-- support minutes per deployment;
-- paid CAC/ROAS;
-- native Whop Blueprint WebMCP support.
-
-Main risks:
-
-- generic information-product saturation;
-- buyers expecting effortless income;
-- support/refund burden;
+- native Blueprint upfront pricing may not exist yet;
+- royalty terms may differ from current ecosystem shorthand;
+- Blueprint and Partner income may not stack;
+- downstream businesses may fail or churn quickly;
+- generic Blueprints may become commoditised;
+- buyers may expect effortless income;
+- poor-performing Blueprint businesses damage reputation;
 - platform dependency;
 - copying/piracy;
-- packaging unproven DRF systems too early;
-- overstating the 10% creator formula;
-- assuming multiple Whop income streams stack when they may not.
+- support burden may rise with deployments.
+
+The defence is **proof + niche specialisation + continuous improvement + actual downstream performance data**.
 
 ---
 
-## 10. Validation experiment
+## 14. First DRF experiment
 
-Launch **one** Blueprint based on a DRF workflow that already has operating proof.
+Choose one business system that DRF already understands well.
 
-Measure:
+Package:
 
-- Blueprint views;
-- deployments/starts;
+```text
+business model
++ offer
++ pricing
++ website
++ checkout
++ operating workflow
++ AI/automation
++ launch assets
++ measurement dashboard
+```
+
+Then measure four separate money lines:
+
+| Metric | Why it matters |
+|---|---|
+| **Paid Blueprint sales** | Proves upfront willingness to pay |
+| **Blueprint business royalties** | Proves recurring native Blueprint economics |
+| **Whop referral commissions** | Proves the second recurring Whop income line |
+| **Optional services revenue** | Shows whether buyers want help, but remains secondary |
+
+Also measure:
+
+- views;
+- deployment rate;
 - downstream activation;
 - downstream sales;
-- exact Blueprint creator payout formula and amount;
-- Whop Partner attribution and whether it stacks;
-- time to first downstream revenue;
+- time to first sale;
 - 30/60/90-day active-business retention;
-- support minutes;
-- implementation enquiries;
-- implementation conversion;
-- managed-service/software MRR conversion;
+- support minutes per business;
+- refunds/disputes;
 - net contribution.
 
 ### Pass gate
 
-Scale when one proven DRF Blueprint creates healthy recurring downstream economics and/or profitable iMPLEMENTAi implementation/managed-service revenue without excessive support.
+Scale when one Blueprint proves:
+
+1. people want the business;
+2. the Blueprint deploys with low friction;
+3. downstream businesses actually transact;
+4. recurring Blueprint royalties are real;
+5. the economics remain attractive after support and churn.
 
 ---
 
-## 11. Sources and supporting files
+## 15. Sources and supporting files
 
-### Current Whop sources
+### Official Whop
 
-- Whop Business Blueprints: https://whop.com/blueprints/
+- Business Blueprints launch: https://x.com/whop/status/2093042100707135961
+- Business Blueprints: https://whop.com/blueprints/
+- Whop AI/business platform: https://web.whop.com/
+- Sell digital products on Whop: https://docs.whop.com/launch-your-business
+- Refer businesses to Whop: https://docs.whop.com/refer-businesses-to-whop
 - Whop Partners: https://whop.com/blog/whop-partners/
 - Whop CLI: https://whop.com/blog/cli/
 - Whop CLI guide: https://whop.com/blog/cli-guide/
 - Running Whop via agents: https://whop.com/blog/run-business-with-cli/
 
-### WebMCP
-
-- Chrome WebMCP origin trial: https://developer.chrome.com/blog/ai-webmcp-origin-trial
-
 ### Early ecosystem evidence
 
 - https://zamantika.com/profile/eptwts
-- https://www.twstalker.com/davidlanex
+- https://www.twstalker.com/PhedEU
+- https://www.twstalker.com/thebrettway
 
-### DRF evidence files
+### WebMCP
+
+- https://developer.chrome.com/blog/ai-webmcp-origin-trial
+
+### DRF supporting files
 
 - `research/whop-business-blueprints-documentation-update-2026-08-31.md`
 - `research/whop-business-blueprints-evidence-update-2026-08-30.md`
