@@ -1,7 +1,7 @@
 # Lesson — Revenue documentation must speak sales language
 
 **Date:** 31 August 2026  
-**Origin:** Issue #50 / Whop Business Blueprints clarification  
+**Origin:** Issue #50 / Blueprint revenue clarification; taxonomy aligned by Issues #67 and #72  
 **Applies to:** all DRF business, opportunity, offer, pricing, monetisation and commercial research
 
 ## Lesson
@@ -67,27 +67,26 @@ THEN DETAIL
 
 Do not force the reader to work through research before discovering the business model.
 
-## Example — Whop Business Blueprints
+## Example — Business Blueprints
 
-The confusing version described creator economics, downstream Whop economics and implementation layers before clearly stating what the business earns.
-
-The founder version is:
+The confusing version starts with a marketplace programme or a file format. The founder version starts with the actual business and then separates optional revenue layers:
 
 ```text
-1. BLUEPRINT SALES
-Upfront cash from selling the packaged Blueprint/IP.
+1. BUSINESS BLUEPRINT SALES
+Upfront cash from selling packaged, reusable operating IP.
 
-2. BLUEPRINT BUSINESS ROYALTIES
-Recurring royalties when businesses deploy and operate using our Blueprint.
+2. BUNDLE / LICENCE / UPDATE / SUBSCRIPTION REVENUE
+Additional or recurring buyer revenue only where the product genuinely supports it.
 
-3. WHOP REFERRAL COMMISSIONS
-Recurring referral income where Whop Partner attribution applies.
+3. CHANNEL-SPECIFIC UPSIDE
+Royalty, referral, affiliate or partner income where a selected channel offers it.
+Whop Blueprint/Partner economics are one example.
 
-OPTIONAL UPSIDE
-Implementation, consulting or managed services if we choose to sell them.
+4. OPTIONAL IMPLEMENTATION
+iMPLEMENTAi setup, customisation or managed service when the buyer wants help deploying the Blueprint.
 ```
 
-That immediately answers the business question.
+The platform or product format does not become the parent opportunity. Website/launch-kit, Notion, workflow, Skill and software variants remain Business Blueprint product types.
 
 ## Evidence discipline still applies
 

@@ -1,18 +1,20 @@
 # DRF Business Opportunity Validation — 29 August 2026
 
-**Status:** Current portfolio validation  
+**Status:** Historical portfolio-validation snapshot — **superseded for current taxonomy and scores**  
 **Research date:** 29 August 2026  
 **Governing issue:** #13  
 **Scoring framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md`  
 **Portfolio index:** `businesses/OPPORTUNITIES.md`
 
+> **Current mapping — 31 August 2026 / Issues #67 and #72:** This report predates the current 27-parent portfolio and the platform-neutral **Business Blueprints** model. Its Whop analysis is retained as historical **channel evidence**, not as a Whop-named parent opportunity. Current parent truth is `businesses/business-blueprints/`; current Whop-specific evidence is under `businesses/business-blueprints/channels/whop/`. Do not use the old 83/100 score or the statement that the repository contains only two first-class opportunities as current portfolio truth.
+
 ## Purpose
 
 Re-test every first-class business opportunity currently registered in DRF against current external evidence. This is an adversarial validation pass: evidence that weakens an opportunity is weighted as seriously as evidence that supports it.
 
-The repository currently contains two first-class opportunities:
+At the time of this 29 August validation snapshot, the report evaluated two first-class hypotheses:
 
-1. Whop Business Blueprints.
+1. Business Blueprints — Whop-channel validation (historical).
 2. AI-First Marketplace Directory.
 
 This report does not treat a high score as permission to spend material capital. The canonical 60% Evidence Confidence gate still applies, and neither opportunity has yet produced DRF operating evidence.
@@ -23,14 +25,14 @@ This report does not treat a high score as permission to spend material capital.
 
 | Opportunity | Prior stage | Validated stage | Prior score | Validated score | AI Autonomy | Evidence Confidence | Research Completeness | Decision |
 |---|---|---|---:|---:|---:|---:|---:|---|
-| **Whop Business Blueprints** | Researching | **Candidate** | 86 | **83** | **80** | **78%** | **82%** | Proceed immediately to one bounded real-world test. Platform demand/timing are validated; Blueprint-specific creator economics and conversion remain the main unknowns. |
+| **Business Blueprints — Whop-channel validation (historical)** | Researching | **Candidate** | 86 | **83** | **80** | **78%** | **82%** | Proceed immediately to one bounded real-world test. Platform demand/timing are validated; Blueprint-specific creator economics and conversion remain the main unknowns. |
 | **AI-First Marketplace Directory** | Idea | **Researching** | 81 | **76** | **88** | **72%** | **86%** | Do not build the broad horizontal directory. Validate a narrow, rights-safe vertical supply/routing layer first. |
 
 ## Portfolio conclusion
 
 Both opportunities survive research, but neither survives in exactly its original form.
 
-### Whop Business Blueprints
+### Business Blueprints — Whop-channel validation (historical)
 
 The opportunity remains unusually attractive because the new Blueprint primitive is launching on top of an already scaled commerce network. Whop currently says sellers earned **$300M+ in the last month**, its marketplace has **22M+ monthly active users**, and it powers **27,000+ fast-growing businesses**. Its July 2026 CLI/MCP releases also make substantial business operation agent-accessible.
 
@@ -50,7 +52,7 @@ The largest structural constraint is data rights. Upwork explicitly prohibits sc
 
 ---
 
-# 1. Whop Business Blueprints
+# 1. Business Blueprints — Whop-channel validation (historical)
 
 ## 1.1 Validation verdict
 
@@ -510,7 +512,7 @@ Pause if:
 
 # 3. Portfolio priority after validation
 
-## Priority 1 — Whop Business Blueprints
+## Priority 1 — Business Blueprints — Whop-channel validation (historical)
 
 **Reason:** highest speed-to-test, lowest capital, strongest timing window, direct fit with DRF's existing operating model, and a platform already producing substantial commerce.
 
@@ -526,7 +528,7 @@ The next action is not software build. It is **vertical selection + data-rights 
 
 # 4. Claims that must not be promoted as validated facts yet
 
-## Whop Business Blueprints
+## Business Blueprints — Whop-channel validation (historical)
 
 Do not state as confirmed until first-party terms or live account evidence is captured:
 
@@ -606,7 +608,7 @@ Use these for market colour, not contractual programme terms:
 
 Research Completeness follows the canonical 14-factor checklist.
 
-### Whop Business Blueprints
+### Business Blueprints — Whop-channel validation (historical)
 
 - **Complete:** Market Size, Market Growth, Timing, AI Buildability, AI Marketability, AI Deliverability, Human Dependency, Startup Capital, Scalability = 9 factors.
 - **Partial:** Willingness to Pay, Speed to Revenue, Margin Potential, Paid Growth, Moat = 5 factors.

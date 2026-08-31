@@ -4,8 +4,8 @@
 **Framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md` v1.5  
 **Niche layer:** `knowledge/guidelines/niche-attractiveness-scoring-framework.md` v1.2  
 **Base portfolio recalculation:** 29 August 2026 — Issue #48  
-**Latest targeted evidence update:** 31 August 2026 — Issue #67 (Business Blueprints multi-platform generalisation)  
-**Research basis:** all 28 offer dossiers + all 31 canonical niche dossiers at Comprehensive v3, plus subsequent opportunity-specific evidence updates
+**Latest targeted evidence update:** 31 August 2026 — Issue #72 (Business Blueprints taxonomy consolidation)  
+**Research basis:** 27 current parent-opportunity dossiers + all 31 canonical niche dossiers at Comprehensive v3, plus the absorbed website/launch-kit product-type evidence and subsequent opportunity-specific updates
 
 ## Scoring rule
 
@@ -21,9 +21,9 @@ This prevents double-counting while still allowing detailed niche evidence to ch
 - **Instant Quote / Quote-to-Cash moves from rank #7 to #5** after drywall/gypsum/false ceilings emerged as a new **87/100 Sniper niche**.
 - Broad platform/container propositions fall when v3 niche research shows stronger incumbents or narrower real wedges: **HighLevel Vertical SaaS 93→89**, **AI Support 93→90**, **Reputation 88→85**, **Grok Bot 87→81**.
 - Talent Bridge managed-service cash lanes become more important operationally even where their structural score is unchanged: **Assessment-as-a-Service 85** and **Partner-Delivered Recruitment 85**.
-- The largest structural downgrades are **AI Job Board 84→76** and **AI Website Template Factory 79→71**. Cheap software/buildability does not solve the commercial bottleneck.
+- **Taxonomy correction:** the former standalone website/launch-kit thesis is absorbed into **Business Blueprints** as a product type and is no longer independently ranked. Its old 71/100 screen remains historical only. **AI Job Board 84→76** remains a material standalone downgrade.
 - **Business Blueprints rises 79→82 on 30 August 2026** after official recurring Whop Partner economics and early Blueprint deployment evidence materially strengthened willingness-to-pay, speed-to-revenue, margin and MRR assumptions. Blueprint-specific contractual terms and DRF live retention remain unproven.
-- Research Completeness is **100% across all 28 parent opportunities** in the framework sense: every structural factor has been investigated. This does **not** mean product-market fit is proven; live CAC, retention, gross margin and outcome data remain the next confidence gate.
+- Research Completeness is **100% across all 27 current parent opportunities** in the framework sense: every structural factor has been investigated. This does **not** mean product-market fit is proven; live CAC, retention, gross margin and outcome data remain the next confidence gate.
 
 ## Portfolio summary
 
@@ -56,7 +56,6 @@ This prevents double-counting while still allowing detailed niche evidence to ch
 | **AI Job Board + Screened Talent Marketplace** | **Researching** | **76/100** | **-8** | **↓3** | **9/10** | **78/100** | **88%** | **100%** | Not yet canonically scored | — | Material downgrade. Cheap job-board software does not solve two-sided liquidity. Employer payment and screened-supply density must be proven before platform investment. | Run a no-build concierge/landing test for one role family; require paid employer demand and repeatable screened supply. | `businesses/ai-job-board-screened-talent-marketplace/RESEARCH.md` |
 | **Saffa.ae Community + Trusted Local Business Marketplace** | **Researching** | **76/100** | **-4** | **—** | **8/10** | **83/100** | **82%** | **100%** | Not yet canonically scored | — | Community/trusted-directory thesis remains valid, but traffic, engagement, advertiser willingness and marketplace liquidity are still unproven. | Prove engagement and a paid sponsor/listing cohort before marketplace complexity. | `businesses/saffa-ae-community-marketplace/RESEARCH.md` |
 | **AI-First Marketplace Directory** | **Researching** | **72/100** | **-5** | **↓1** | **8/10** | **80/100** | **92%** | **100%** | Not yet canonically scored | — | Technology is solved cheaply; AI is not a moat. The business only improves after one narrow market proves recurring buyer intent, permissioned supply and monetisable transactions/leads. | Run one rights-safe niche concierge directory/lead test before custom build. | `businesses/ai-first-marketplace-directory/RESEARCH.md` |
-| **AI Website Template & Launch Kit Factory** | **Candidate** | **71/100** | **-8** | **↓1** | **4/10** | **95/100** | **95%** | **100%** | Not yet canonically scored | — | Largest downgrade with AI Job Board. Generic AI websites are commodity. Retain only as a vertical revenue launch kit feeding WhatsApp/CRM/quote/booking/optimisation MRR. | Sell one vertical launch kit bundled with recurring CRM/lead-conversion service; reject standalone scaling if attachment fails. | `businesses/ai-website-template-launch-kit-factory/RESEARCH.md` |
 
 ### How to read the niche column
 
@@ -118,7 +117,6 @@ All factors are 0–10. Weighted Score is calculated from the canonical weights 
 | **AI Job Board + Screened Talent Marketplace** | 10 | 9 | 5 | 7 | 9 | 7 | 8 | 7 | 6 | 4 | 8 | 9 | 6 | 7 | 8 | **75.8 → 76** |
 | **Saffa.ae Community + Trusted Local Business Marketplace** | 7 | 8 | 8 | 6 | 9 | 9 | 8 | 7 | 8 | 5 | 9 | 9 | 5 | 8 | 7 | **75.7 → 76** |
 | **AI-First Marketplace Directory** | 9 | 9 | 4 | 6 | 9 | 7 | 8 | 8 | 7 | 4 | 8 | 9 | 4 | 5 | 7 | **71.8 → 72** |
-| **AI Website Template & Launch Kit Factory** | 6 | 7 | 5 | 5 | 10 | 8 | 10 | 10 | 10 | 7 | 9 | 9 | 5 | 3 | 4 | **71.3 → 71** |
 
 ## Independent evidence controls
 
@@ -153,7 +151,6 @@ Evidence Confidence measures trust in the current scoring inputs. Research Compl
 | AI Job Board + Screened Talent Marketplace | **88%** | **100%** | Paid employer demand plus repeatable screened-supply density in one role family. |
 | Saffa.ae Community + Trusted Local Business Marketplace | **82%** | **100%** | Sustained engagement plus a renewing paid sponsor/listing cohort. |
 | AI-First Marketplace Directory | **92%** | **100%** | Recurring buyer intent, permissioned supply and paid lead/transaction demand in one narrow market. |
-| AI Website Template & Launch Kit Factory | **95%** | **100%** | Paid attachment of recurring CRM/conversion/optimisation service; standalone website sale is insufficient. |
 
 ## AI Autonomy derivation
 
@@ -188,7 +185,6 @@ Evidence Confidence measures trust in the current scoring inputs. Research Compl
 | AI Job Board + Screened Talent Marketplace | 9 | 7 | 8 | 7 | **78** |
 | Saffa.ae Community + Trusted Local Business Marketplace | 9 | 9 | 8 | 7 | **83** |
 | AI-First Marketplace Directory | 9 | 7 | 8 | 8 | **80** |
-| AI Website Template & Launch Kit Factory | 10 | 8 | 10 | 10 | **95** |
 
 ## Strategic portfolio interpretation
 

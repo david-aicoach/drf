@@ -325,7 +325,7 @@ When DRF produces something useful, route it by **economic form**:
 
 | Output created | First marketplace candidates |
 |---|---|
-| Proven business configuration | Whop Business Blueprints |
+| Proven business configuration | Business Blueprints → Whop + Gumroad/Contra + owned/specialist channels by product fit |
 | Business operating template | Notion, Whop, Contra, Gumroad |
 | Website / landing-page system | Framer, Webflow, Contra, Gumroad |
 | Agent skill / prompt | PromptBase, Whop, Contra |
