@@ -27,7 +27,6 @@ jobs:
           grep -q 'not a separate parent opportunity' businesses/business-blueprints/product-types/website-and-launch-kits.md
           ! grep -R -n -F 'AI Website Template & Launch Kit Factory' businesses research
           ! grep -R -n -F 'ai-website-template-launch-kit-factory' businesses research
-          git diff --check
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
