@@ -6,6 +6,8 @@ Read this first before substantive DRF work.
 
 **Do not over-engineer. Traction before build. Revenue work before optional build work.** Use the smallest safe, reversible action that can create or protect measurable commercial value.
 
+**Speak sales language.** In DRF business/revenue work, lead with what is sold, who pays, how much or on what basis, and label each revenue stream plainly as an upfront sale, recurring fee, royalty, commission or optional upsell before using platform, analyst or technical terminology.
+
 ## Canonical truth
 
 ```text
