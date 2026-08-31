@@ -1,13 +1,13 @@
 # DRF Opportunity Execution Velocity & Staircase
 
-> **Current taxonomy notice — 31 August 2026 / Issue #72:** Website/template/launch-kit assets are **not a standalone DRF parent opportunity**. They are a product type inside **Business Blueprints**. Any scores or rankings below that treat the website/launch-kit thesis separately are preserved only as historical research and must not be read as a current portfolio row.
+> **Current taxonomy notice — 31 August 2026 / Issue #72:** Current DRF has **27 parent opportunities**. Website/template/launch-kit assets are a **Business Blueprints product type**, not a ranked parent. Whop is a **channel**, not the parent. This file preserves the 29–30 August execution study while mapping its live terminology to the current taxonomy.
 
 **Date:** 29 August 2026  
 **Governing issues:** #24, #28, #40, #48, #49  
 **Framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md` v1.5  
 **Portfolio source:** `businesses/OPPORTUNITIES.md`  
 **Base structural recalculation:** `research/opportunity-portfolio-rescore-after-niche-v3-2026-08-29.md`  
-**Latest targeted update:** 30 August 2026 — Whop Business Blueprints 79→82
+**Latest targeted update:** 31 August 2026 — Issue #72 Business Blueprints taxonomy consolidation
 
 ## Executive conclusion
 
@@ -19,7 +19,7 @@ The v3 niche research changes sequencing materially. The top structural cluster 
 
 Two Talent Bridge lanes remain unusually important despite 85/100 structural scores: **Assessment-as-a-Service** and **Partner-Delivered Recruitment** can produce cash and commercial evidence faster than the larger Talent Bridge platform/data products.
 
-The 30 August Whop evidence update raises **Whop Business Blueprints from 79 to 82 structurally**. With EV unchanged at 82, its **Execution Priority becomes 82.0**, moving it to priority rank **#15**. This strengthens Blueprints as a distribution multiplier, but it still should package already-proven DRF systems rather than compete with the primary revenue lanes for build attention.
+The 30 August Whop evidence update raises **Business Blueprints from 79 to 82 structurally**. With EV unchanged at 82, its **Execution Priority becomes 82.0**, moving it to priority rank **#15**. This strengthens Blueprints as a distribution multiplier, but it still should package already-proven DRF systems rather than compete with the primary revenue lanes for build attention.
 
 ## Updated execution ranking
 
@@ -39,20 +39,19 @@ The 30 August Whop evidence update raises **Whop Business Blueprints from 79 to 
 | **12** | **Executive Career Accelerator / Job Search Platform** | **81** | **87** | **83.1** | 1–4 weeks | Fast / secondary lane |
 | **13** | **Vertical AI Operating Systems & Agent Integration Packs** | **88** | **70** | **82.7** | 2–6 weeks | Fast / secondary lane |
 | **14** | **Agentic Commerce Visibility & Conversion Engine** | **89** | **67** | **82.5** | 3–8 weeks | Fast / secondary lane |
-| **15** | **Whop Business Blueprints** | **82** | **82** | **82.0** | 1–4 weeks | Build / bounded test lane; distribution multiplier |
+| **15** | **Business Blueprints** | **82** | **82** | **82.0** | 1–4 weeks | Build / bounded test lane; distribution multiplier |
 | **16** | **Recruitment OS / Hiring Intelligence SaaS** | **87** | **62** | **79.8** | 1–3 months | Build / bounded test lane |
 | **17** | **White-Label Hiring Portal for Employers/Agencies** | **85** | **65** | **78.9** | 1–3 months | Build / bounded test lane |
 | **18** | **Niche API & Data Product Factory** | **84** | **60** | **76.9** | 1–3 months | Build / bounded test lane |
-| **19** | **Business Blueprints — website/launch-kit product type (historical working thesis)** | **71** | **90** | **76.9** | 1–3 weeks | Build / bounded test lane; only as attached revenue launch kit |
-| **20** | **ChatGPT Plugin / App Factory** | **79** | **70** | **76.6** | 1–2 months | Build / bounded test lane |
-| **21** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | **65** | **76.0** | 2–6 weeks | Build / bounded test lane |
-| **22** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | **55** | **75.7** | 1–3 months | Build / bounded test lane |
-| **23** | **Pre-Assessed Talent Pool Subscription** | **81** | **60** | **74.4** | 1–3 months | Build / bounded test lane |
-| **24** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84** | **45** | **72.4** | 2–6+ months | Build / bounded test lane |
-| **25** | **HowToFindAJobInUAE Media + Recruitment Funnel** | **78** | **45** | **67.9** | 2–6+ months | Background / research-first lane |
-| **26** | **Saffa.ae Community + Trusted Local Business Marketplace** | **76** | **42** | **65.6** | 2–6+ months | Background / research-first lane |
-| **27** | **AI Job Board + Screened Talent Marketplace** | **76** | **38** | **64.5** | 1–3 months for paid proof / 3–6+ months platform | Background / research-first lane |
-| **28** | **AI-First Marketplace Directory** | **72** | **40** | **62.3** | 1–3 months for paid proof / 3–6+ months platform | Background / research-first lane |
+| **19** | **ChatGPT Plugin / App Factory** | **79** | **70** | **76.6** | 1–2 months | Build / bounded test lane |
+| **19** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | **65** | **76.0** | 2–6 weeks | Build / bounded test lane |
+| **19** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | **55** | **75.7** | 1–3 months | Build / bounded test lane |
+| **19** | **Pre-Assessed Talent Pool Subscription** | **81** | **60** | **74.4** | 1–3 months | Build / bounded test lane |
+| **19** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **84** | **45** | **72.4** | 2–6+ months | Build / bounded test lane |
+| **19** | **HowToFindAJobInUAE Media + Recruitment Funnel** | **78** | **45** | **67.9** | 2–6+ months | Background / research-first lane |
+| **19** | **Saffa.ae Community + Trusted Local Business Marketplace** | **76** | **42** | **65.6** | 2–6+ months | Background / research-first lane |
+| **19** | **AI Job Board + Screened Talent Marketplace** | **76** | **38** | **64.5** | 1–3 months for paid proof / 3–6+ months platform | Background / research-first lane |
+| **19** | **AI-First Marketplace Directory** | **72** | **40** | **62.3** | 1–3 months for paid proof / 3–6+ months platform | Background / research-first lane |
 
 ## Primary staircase
 
@@ -102,9 +101,9 @@ Gate: customer #2 deploys from materially the same vertical foundation+outcome c
 
 These two lanes should precede unnecessary Talent Bridge platform build.
 
-## Whop distribution lane
+## Business Blueprints productisation + distribution lane
 
-**Whop Business Blueprints — Opportunity 82 / EV 82 / Priority 82.0.**
+**Business Blueprints — Opportunity 82 / EV 82 / Priority 82.0.**
 
 Blueprints now have stronger recurring-economics and early-adoption evidence, but the execution rule is unchanged:
 
@@ -118,7 +117,7 @@ prove workflow elsewhere in DRF
 
 Do not create a generic Blueprint catalogue before real DRF systems have operating proof.
 
-Evidence: `businesses/whop-business-blueprints/research/whop-business-blueprints-evidence-update-2026-08-30.md`.
+Evidence: `businesses/business-blueprints/channels/whop/research/whop-business-blueprints-evidence-update-2026-08-30.md`.
 
 ## Full execution-time matrix
 
@@ -138,11 +137,10 @@ Evidence: `businesses/whop-business-blueprints/research/whop-business-blueprints
 | **Executive Career Accelerator / Job Search Platform** | **81** | **87** | **83.1** | 3–7 days | 5–10 days | 1–4 weeks | 1–3 days onboarding | Finite programme duration and support intensity. |
 | **Vertical AI Operating Systems & Agent Integration Packs** | **88** | **70** | **82.7** | 1–3 weeks | 1–3 weeks | 2–6 weeks | 3 days–3 weeks | Bespoke consulting creep; second-client reuse is the gate. |
 | **Agentic Commerce Visibility & Conversion Engine** | **89** | **67** | **82.5** | 2–4 weeks | 2–4 weeks | 3–8 weeks | 3–10 days | Attribution, merchant willingness-to-pay and retention. |
-| **Whop Business Blueprints** | **82** | **82** | **82.0** | 3–10 days after workflow proof | 3–10 days | 1–4 weeks | Mostly digital | Exact Blueprint terms, buyer conversion, downstream activation/retention and support burden. |
+| **Business Blueprints** | **82** | **82** | **82.0** | 3–10 days after workflow proof | 3–10 days | 1–4 weeks | Mostly digital | Exact Blueprint terms, buyer conversion, downstream activation/retention and support burden. |
 | **Recruitment OS / Hiring Intelligence SaaS** | **87** | **62** | **79.8** | 3–8 weeks bounded module | 3–8 weeks | 1–3 months | 3–10 days | ATS integration/scope boundary and external buyer retention. |
 | **White-Label Hiring Portal for Employers/Agencies** | **85** | **65** | **78.9** | 3–8 weeks | 3–8 weeks | 1–3 months | 2–7 days | Portal scope/support and avoiding generic ATS rebuild. |
 | **Niche API & Data Product Factory** | **84** | **60** | **76.9** | 2–6 weeks after lawful niche chosen | 2–6 weeks | 1–3 months | Minutes–1 day after stable | Need proprietary lawful recurring data/function and paid repeated usage. |
-| **Business Blueprints — website/launch-kit product type (historical working thesis)** | **71** | **90** | **76.9** | 2–5 days | 3–7 days | 1–3 weeks | Hours–2 days | Fast to ship but low standalone value; recurring attachment must sell. |
 | **ChatGPT Plugin / App Factory** | **79** | **70** | **76.6** | 1–4 weeks | 1–4 weeks | 1–2 months | Near-instant digital | Recurring backend monetisation and activation/retention. |
 | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | **81** | **65** | **76.0** | 2–7 days bounded role | 3–10 days | 2–6 weeks | 1–5 days + auth/access | Quota, browser/UI fragility, auth recovery, variable spend and support minutes. |
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **85** | **55** | **75.7** | 3–8 weeks narrow benchmark | 3–8 weeks | 1–3 months | Near-instant after product exists | Data rights, sample validity, methodology and buyer WTP. |
@@ -165,7 +163,7 @@ Evidence: `businesses/whop-business-blueprints/research/whop-business-blueprints
 
 ### Distribution multiplier with good execution speed
 
-- **Whop Business Blueprints — 82 structural / 82 EV / 82.0 Priority:** quick to package and distribute once the underlying workflow is proven. The opportunity is stronger after 30 August evidence, but its correct role is to monetise and distribute proven DRF IP rather than become an independent invention backlog.
+- **Business Blueprints — 82 structural / 82 EV / 82.0 Priority:** quick to package and distribute once the underlying workflow is proven. The opportunity is stronger after 30 August evidence, but its correct role is to monetise and distribute proven DRF IP rather than become an independent invention backlog.
 
 ### Lower structural score, fast execution
 

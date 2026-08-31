@@ -1,6 +1,6 @@
 # DRF — Five Golden Business Opportunities
 
-> **Current taxonomy notice — 31 August 2026 / Issue #72:** Website/template/launch-kit assets are **not a standalone DRF parent opportunity**. They are a product type inside **Business Blueprints**. Any scores or rankings below that treat the website/launch-kit thesis separately are preserved only as historical research and must not be read as a current portfolio row.
+> **Current taxonomy notice — 31 August 2026 / Issue #72:** Of the original five working theses in this 29 August document, the website/template/launch-kit thesis is now **product-type research inside Business Blueprints**, not a fifth standalone parent opportunity. The original evidence is preserved below because it still informs Framer/Webflow and launch-kit SKU decisions.
 
 **Research date:** 29 August 2026  
 **Governing issue:** #16  
@@ -411,7 +411,7 @@ Research 20 expensive/repetitive data questions in one DRF-accessible industry, 
 
 ---
 
-# 5. Business Blueprints — website/launch-kit product type (historical working thesis)
+# 5. Business Blueprints product-type research — Website & Revenue Launch Kits
 
 ## Thesis
 

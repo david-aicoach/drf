@@ -1,9 +1,12 @@
 # DRF Public Dashboard vs Revenue Blueprint Factory — Alignment Audit
 
+**Status:** Historical audit — **superseded by later RBF V2 integration and Business Blueprints taxonomy changes**  
 **Date:** 31 August 2026  
 **Issue:** #62  
 **Dashboard:** https://tbhrc.github.io/drf/  
-**Decision:** inspect and preserve current website; do not integrate RBF in this issue.
+**Decision at Issue #62:** inspect and preserve the then-current website; RBF integration was deliberately deferred in that issue.
+
+> **Current mapping:** Subsequent work integrated RBF V2 and generalised the digital-product parent to **Business Blueprints**. Whop is a distribution channel, not the parent business. Current sources are `businesses/business-blueprints/`, `businesses/INVESTMENT-READINESS.md`, and the live `index.html`. Read the body below as a historical design audit, not the current dashboard state.
 
 ## Executive read
 
@@ -112,7 +115,7 @@ Whop's new RBF result is:
 A future public opportunity card should therefore show at minimum:
 
 ```text
-WHOP BUSINESS BLUEPRINTS
+BUSINESS BLUEPRINTS — HISTORICAL WHOP-FOCUSED EXAMPLE
 
 RBS                  79/100
 Proof                P2 Backtested
@@ -147,7 +150,7 @@ After the Whop output is accepted as the standard:
    - founder hours.
 6. Add P0-P6 factory funnel metrics.
 7. Add P4/P5/P6 counts and Blueprint revenue to the hero metrics.
-8. Point Whop research navigation to `businesses/whop-business-blueprints/RBF-ASSESSMENT.md` first.
+8. Point Whop research navigation to `businesses/business-blueprints/RBF-ASSESSMENT.md` first.
 9. Preserve direct links to detailed evidence and legacy scores during transition.
 10. Do not show blank/Pending return numbers as zeros.
 
