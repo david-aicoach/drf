@@ -11,7 +11,7 @@ DRF is a **skills-first operating system**. For every substantive capability tas
 5. execute from the Skill and only the references/scripts/assets it owns plus current domain truth;
 6. when a repeatable lesson or operating method improves, improve the owning Skill instead of creating a loose workflow, template, SOP, prompt or knowledge file.
 
-Do not recreate global `knowledge/`, root AI `workflows/`, `templates/`, `scripts/`, SOP or lessons junk drawers.
+Do not recreate a global knowledge hierarchy, root AI workflow library, global templates/scripts, SOP or lessons junk drawer.
 
 ## Capability router
 
