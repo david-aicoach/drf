@@ -1,182 +1,132 @@
-# DRF V3 Layer 3 Write-Back Contract
+# DRF V3 Write-Back Contract
 
-**Status:** Canonical operating contract  
-**Version:** 1.0  
-**Date:** 1 September 2026  
-**Master programme:** #77  
-**Governing stage:** [77.7] #113
+**Owner:** `skills/drf-opportunity-factory/SKILL.md`
 
 ## Purpose
+Prevent research from becoming stranded in a dossier while the founder dashboard/register remains stale.
 
-Prevent current research, niche work or execution evidence from becoming stranded behind Dashboard V3.
+A material opportunity/niche/commercial/evidence/execution update is not complete until its current state has been reconciled to V3.
 
-The canonical close-out path is:
-
-```text
-new evidence / research / operating result
-→ update the most authoritative source first
-→ update specialised register(s) when their fields changed
-→ update the current Workflow Layer 3 dossier/CURRENT pointer when required
-→ reconcile businesses/PORTFOLIO-V3.md LAST
-→ or record an explicit V3 NO-FIELD-CHANGE reconciliation
-→ run validation
-→ only then close the Issue / merge the PR
-```
-
-Dashboard HTML is a derived view. **Never edit `index.html` to change business truth.**
-
----
-
-# 1. When this contract applies
-
-Apply it to every material change that can affect a DRF business/opportunity decision, including:
-
-- `businesses/<opportunity>/` research, README, CURRENT, V3 business case, assessment, financial or evidence files;
-- `businesses/OPPORTUNITIES.md`;
-- `businesses/NICHES.md`;
-- `businesses/INVESTMENT-READINESS.md` while it remains a supporting migration register;
-- `research/niches/` evidence that changes a current Business × Niche conclusion;
-- live DRF execution evidence affecting EMP, DRF Proof, Stage, Capital, Return or Next Proof;
-- material offer, price, GTM, delivery, economics or provider changes;
-- portfolio refreshes and qualified discovery candidates.
-
-Generic cross-portfolio research does not require 27 artificial row edits. It requires a V3 reconciliation decision only when it materially changes one or more parent fields.
-
----
-
-# 2. Source-first write order
-
-Use the V3 data-contract precedence:
+## Source precedence
 
 ```text
-live operating evidence / test record
-→ CURRENT.md pointer
-→ current opportunity dossier
-→ specialised canonical register
-→ PORTFOLIO-V3.md joined summary
+live evidence / DRF actual
+→ current opportunity source / dossier
+→ specialised register(s)
+→ businesses/PORTFOLIO-V3.md
 → Dashboard V3
 ```
 
-Never reverse this order merely because the dashboard is easier to edit.
+The dashboard is derived only.
 
-## Specialised registers
-
-Update only when their field family changed:
-
-- `OPPORTUNITIES.md` — Layer 1 structural metrics/decision;
-- `NICHES.md` — ranked Business × Niche rows;
-- `INVESTMENT-READINESS.md` — supporting RBS/proof/capital migration fields where still applicable;
-- current V3 dossier — offer, price, GTM, delivery, RBS, Return, EMP, DRF Proof, Stage, Capital, Next Proof and readiness.
-
----
-
-# 3. Mandatory V3 reconciliation decision
-
-Every in-scope change must end in exactly one of two states.
-
-## A. V3 FIELDS CHANGED
-
-Update `businesses/PORTFOLIO-V3.md` last.
-
-Only change fields justified by the new authoritative evidence. Do not change a score merely because more sources were found.
-
-Examples:
-
-- new verified price changes `Price / Commercial Model`;
-- live payment raises DRF Proof from P3 to P4;
-- a stronger niche becomes the current recommended niche;
-- new evidence changes RBS, Stage, Capital or Next Proof;
-- a current dossier replaces a Pending field with a defensible value.
-
-## B. V3 NO-FIELD-CHANGE
-
-When the research was material but no parent founder field should change, do **not** manufacture a no-op edit to `PORTFOLIO-V3.md`.
-
-Record the reconciliation in:
-
-`businesses/V3-RECONCILIATIONS.md`
-
-The record must state:
-
-- date;
-- governing Issue/PR or run ID;
-- opportunity or cross-portfolio scope;
-- authoritative source(s) changed;
-- V3 fields reviewed;
-- decision: `NO FIELD CHANGE`;
-- why no field changed;
-- next proof/current boundary.
-
-Examples:
-
-- a delivery channel becomes better documented but the platform-neutral parent score/RBS/Stage remains unchanged;
-- general inference costs improve across the market but do not materially alter any opportunity score;
-- additional sources increase confidence in an already-current conclusion without changing the parent decision field.
-
----
-
-# 4. Workflow Layer 3 completion rule
-
-Workflow Layer 3 is complete only when all of the following are true for the current stage:
-
-1. the founder-readable dossier/current source is internally consistent;
-2. specialised registers agree with the current source;
-3. V3 record fields have been reviewed against the new evidence;
-4. `PORTFOLIO-V3.md` was updated **or** `V3-RECONCILIATIONS.md` records `NO FIELD CHANGE`;
-5. missing values remain Pending/Unknown/Not applicable rather than false zero;
-6. DRF Proof reflects actual DRF execution only;
-7. the next proof/action remains explicit;
-8. repository/dashboard validation passes.
-
-**Do not close a material research/update Issue before this Layer 3 close-out is complete.**
-
----
-
-# 5. Agent operating rule
-
-All DRF agents — ChatGPT Web/Desktop/Mobile, GitHub-native agents, scheduled research agents and future automation — use the same write-back contract.
-
-A different agent/runtime does not create a different source-of-truth path.
-
-Required final run summary:
+## Mandatory close-out order
 
 ```text
-V3 RECONCILIATION
-Source(s) changed: ...
-Specialised registers changed: ... / none
-Layer 3 dossier changed: ... / none
-PORTFOLIO-V3: UPDATED / NO FIELD CHANGE
-Reconciliation log: path / not required because portfolio updated
-Evidence freshness reviewed: yes/no
-Next Proof reviewed: yes/no
-Validation: pass/fail
+1. update authoritative detailed source first
+2. update CURRENT/current Layer 3 dossier where required
+3. update businesses/OPPORTUNITIES.md if Layer 1 fields changed
+4. update businesses/NICHES.md if niche fields changed
+5. update businesses/INVESTMENT-READINESS.md where RBS/Proof/Stage/Capital migration fields changed
+6. review all V3 founder fields
+7. choose exactly one:
+   A. founder-facing V3 field changed → update businesses/PORTFOLIO-V3.md LAST
+   B. material evidence but no founder field changed → append businesses/V3-RECONCILIATIONS.md NO FIELD CHANGE
+8. run validation / re-read changed paths
+9. only then close Issue / merge / mark scheduled run completed
 ```
 
----
+## Material change
+Treat as material when it may change:
+- Opportunity Score, MRR, AI Autonomy, Evidence or Research;
+- EMP / confidence;
+- best niche / Niche Score / confidence;
+- offer / pricing / revenue model;
+- GTM / acquisition;
+- delivery architecture;
+- RBS / Return;
+- DRF Proof / Stage / Capital;
+- Next Proof / Current Read;
+- Dossier or Blueprint Readiness;
+- evidence freshness;
+- legal/ethical viability;
+- or completes a previously Pending founder field.
 
-# 6. Legacy workflow rule
+## V3 field review
+Review the parent row for:
+- Rank (only if portfolio ranking policy requires recalculation)
+- Business Opportunity / pain-outcome
+- Opportunity Score
+- MRR
+- AI Autonomy
+- Evidence Confidence
+- Research Completeness
+- External Market Proof + confidence
+- Best Niche + score/confidence
+- Recommended Offer
+- Price / Commercial Model
+- GTM Summary
+- Delivery Architecture
+- RBS
+- DRF Proof
+- Stage
+- Capital
+- Return Headline
+- Next Proof
+- Current Read
+- Dossier Readiness
+- Blueprint Readiness
+- Evidence Freshness
+- Canonical Dossier Path
+- Business Folder
 
-`workflows/revenue-blueprint-factory.md` is a compatibility pointer only.
+## No-field-change ledger
+Use `businesses/V3-RECONCILIATIONS.md` only when:
+- evidence/research was materially reviewed/changed;
+- all relevant founder fields were explicitly checked;
+- no V3 value should responsibly change.
 
-The only canonical end-to-end workflow is:
+Record date/run/Issue, scope, authoritative sources changed, V3 fields reviewed, reason for no change and Next Proof.
 
-`workflows/drf-opportunity-factory.md`
+Do not use NO FIELD CHANGE to avoid a real V3 update.
 
-RBS, P0–P6, Stage, Capital and Blueprint packaging remain valid subordinate controls inside the DRF Opportunity Factory. They are not a second workflow.
+## Proof integrity
+- EMP and DRF Proof remain separate.
+- External operators can strengthen EMP, RBS and P1/P2 desk evidence but cannot award P3–P6.
+- Documentation completeness never raises DRF Proof.
+- Refreshing research never resets legitimate DRF Proof.
 
----
+## Missing values
+Keep these distinct:
+- `Pending` — required work not completed
+- `Unknown` — investigated but not currently knowable
+- `Not applicable` — genuinely does not apply
+- `Needs more research` — evidence insufficient
+- `Conflict` — authoritative sources disagree
+- `0` — verified numerical zero
 
-# 7. Verification
+Never convert missing evidence to zero.
 
-The repository CI includes a V3 write-back guard for material business/niche changes.
+## Conflict rule
+If a current source conflicts with V3:
+1. determine source scope/date/authority;
+2. preserve conflict explicitly if not resolvable;
+3. never silently choose the more convenient number;
+4. reconcile the joined V3 row after the detailed source decision.
 
-A qualifying change must include at least one of:
+## Concurrency rule
+Other agents may update `main` while work is in progress. Before final V3 write-back/merge:
+- fetch current `main`/canonical files;
+- compare affected rows/paths;
+- preserve newer valid work;
+- rebase/reconcile instead of overwriting.
 
-- `businesses/PORTFOLIO-V3.md`; or
-- `businesses/V3-RECONCILIATIONS.md`.
+## Scheduled-run rule
+A recurring intelligence run that required GitHub write-back but failed to persist/reconcile is `PARTIAL` or `FAILED`, not `COMPLETED`.
 
-The guard is intentionally a close-out control, not a scoring engine. It does not decide whether a field should change; the evidence and canonical workflow do.
+## Validation
+Use the repository/product tests owned by:
+- `skills/drf-repository-operations/scripts/validate_repository.py`
+- `software/dashboard-v3/`
+- `software/v3-writeback-guard/`
 
-## Final outcome
-
-Every material DRF research or execution update reaches a deliberate Layer 3/V3 conclusion before closure, keeping the current founder dashboard aligned without forcing false score movement.
+Then re-read every changed canonical path once.

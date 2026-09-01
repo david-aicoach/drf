@@ -1,6 +1,6 @@
 # Research — <decision/topic>
 
-> **Business opportunity exception:** If this research is evaluating or rebuilding a revenue-producing business opportunity, do **not** use this generic template. Use `knowledge/templates/business-opportunity-research.md` plus `knowledge/templates/business-opportunity-readme.md`.
+> **Business opportunity exception:** If this research is evaluating or rebuilding a revenue-producing business opportunity, use the owning `skills/drf-opportunity-factory/SKILL.md` capability with `references/market-intelligence-research.md` and `references/business-case-output-contract.md` rather than this generic research structure.
 
 ## Decision required
 State the exact decision this research must enable.

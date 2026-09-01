@@ -21,7 +21,6 @@ while IFS= read -r path; do
       material=true
       ;;
     businesses/*/*)
-      # Opportunity-owned evidence/dossiers. Exclude the V3 reconciliation artefacts themselves.
       case "$path" in
         businesses/PORTFOLIO-V3.md|businesses/V3-RECONCILIATIONS.md) ;;
         *) material=true ;;
@@ -59,6 +58,6 @@ Before merge, do exactly one:
 1. update businesses/PORTFOLIO-V3.md last because founder-facing V3 fields changed; or
 2. add an evidence-backed NO FIELD CHANGE row to businesses/V3-RECONCILIATIONS.md.
 
-See knowledge/architecture/drf-v3-writeback-contract.md.
+See skills/drf-opportunity-factory/references/v3-writeback.md.
 EOF
 exit 1

@@ -2,347 +2,122 @@
 
 > **Find, research, compare, adapt, test, scale and optionally package revenue-producing businesses.**
 
-A GitHub-native factory for finding, underwriting, testing and packaging revenue-producing businesses.
-
 **Public dashboard:** https://tbhrc.github.io/drf/  
-**Canonical business portfolio:** [`businesses/OPPORTUNITIES.md`](businesses/OPPORTUNITIES.md)  
-**Canonical niche register:** [`businesses/NICHES.md`](businesses/NICHES.md)  
-**Business × Niche readiness:** [`businesses/INVESTMENT-READINESS.md`](businesses/INVESTMENT-READINESS.md)
+**Primary AI operating surface:** [`skills/`](skills/)  
+**Canonical portfolio:** [`businesses/PORTFOLIO-V3.md`](businesses/PORTFOLIO-V3.md)  
+**Business opportunities:** [`businesses/OPPORTUNITIES.md`](businesses/OPPORTUNITIES.md)  
+**Niche register:** [`businesses/NICHES.md`](businesses/NICHES.md)
 
-## GitHub creation gate
+## Start here — Skills first
 
-Never create **sacrificial** temp/placeholder/probe GitHub objects merely to obtain IDs, test schemas/permissions or explore a tool. Search/read first, prepare the real durable object, then create it once. Legitimate test-related work and intentional draft PRs are allowed when they have a real governed purpose. Full rule: [`AGENTS.md`](AGENTS.md#github-object-creation-gate).
+DRF is a **skills-first operating system**.
 
----
+A founder or fresh agent should not hunt through hidden prompt/template/workflow folders. Reusable AI work starts by selecting a named Skill from [`skills/README.md`](skills/README.md).
 
-## What DRF is
+| Need | Skill |
+|---|---|
+| New business opportunity, opportunity intake, market intelligence A–Z, scoring, niche selection, commercial underwriting, Layer 3 and V3 | [`DRF Opportunity Factory`](skills/drf-opportunity-factory/SKILL.md) |
+| Golden Opportunity discovery, daily 27-parent calibration, scheduled/specialist market intelligence | [`DRF Recurring Intelligence`](skills/drf-recurring-intelligence/SKILL.md) |
+| Dashboard V3, website/data-contract maintenance, Pages verification | [`DRF Dashboard Operations`](skills/drf-dashboard-operations/SKILL.md) |
+| Repository architecture, Skill maintenance, governance, cleanup and CI | [`DRF Repository Operations`](skills/drf-repository-operations/SKILL.md) |
 
-DRF is not only a Blueprint factory and it is not defined by a software vendor.
+Example founder instruction:
 
-DRF discovers and evaluates business opportunities such as:
+> **“Here is a new business opportunity: `<idea>`. Use the DRF Opportunity Factory Skill. Start the intake and complete the market intelligence A–Z.”**
 
-- WhatsApp + CRM Revenue Core;
-- Revenue Recovery & Reactivation;
-- AI Voice Receptionist;
-- Instant Quote / Quote-to-Cash;
-- Assessment-as-a-Service;
-- Business Blueprints;
-- other service, software, data, marketplace or digital-product businesses.
+That is sufficient. The repository must supply the method.
 
-The opportunity is the **service/product/outcome and pain solved**. HighLevel, WhatsApp, HubSpot, Grok Bot, ChatGPT, Claude, Stripe and future systems are normally replaceable delivery components.
+## Skill ownership rule
 
----
+**One reusable AI capability → one Skill owner.**
 
-## The complete DRF decision stack
+Capability-specific workflows, prompts, output structures, scoring references, operating standards and reusable AI scripts live inside the owning Skill.
 
-| Layer | Founder question | Primary outputs |
-|---|---|---|
-| **1. Opportunity Discovery & Structural Selection** | **Do we want this kind of business?** | Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness, External Market Proof, Execution Velocity |
-| **2. Niche Selection & Commercial Underwriting** | **Where, how and at what economics should it operate?** | Ranked niches, Niche Score, offer, pricing, GTM, delivery architecture, RBS, Return Profile, DRF Proof, Stage, Capital, Next Proof |
-| **3. Structured Factory Output** | **Can it be represented as one complete, comparable business case?** | Founder-readable mini business plan, canonical portfolio data, execution plan and optional Blueprint readiness |
+Do not recreate global `templates/`, AI `workflows/`, SOP, lesson or miscellaneous knowledge folders. When a repeated lesson improves how DRF operates, improve the owning Skill.
+
+## What stays outside Skills
+
+Skills tell agents **how to operate**. They do not replace durable evidence or product code.
+
+- [`businesses/`](businesses/) — canonical opportunity/business truth.
+- [`research/`](research/) — market evidence and recurring run history.
+- [`software/`](software/) — actual product/runtime code and product-local tests.
+- [`assets/`](assets/), [`index.html`](index.html), [`dashboard-v1-v2.html`](dashboard-v1-v2.html) — deployed Dashboard product.
+- [`.github/`](.github/) — GitHub-required repository integration and Actions.
+
+`.github/workflows/` remains because GitHub requires that platform path; it is not a DRF AI workflow library.
+
+## Revenue Factory decision stack
 
 ```text
 BUSINESS OPPORTUNITY
-→ Opportunity Score + MRR + AI Autonomy + Evidence + Research + External Market Proof
-→ NICHE
-→ Niche Score
-→ BUSINESS × NICHE
-→ proven operators + offer + pricing + GTM + delivery + RBS + economics
+→ Opportunity Score + MRR + AI Autonomy + Evidence + Research
+→ External Market Proof
+→ ranked Niche options + Niche Score
+→ selected Business × Niche
+→ offer + pricing + GTM + delivery
+→ RBS + Return Profile
 → DRF Proof + Stage + Capital + Next Proof
-→ structured V3 business case
+→ Workflow Layer 3 business case
+→ V3 reconciliation
 → real execution
 → scale
 → optional Business Blueprint
 ```
 
-Opportunity Score, Niche Score and RBS answer different questions. They must not be blended into one score.
+Opportunity Score, Niche Score and RBS answer different questions. External Market Proof and DRF Proof are separate. A high score never authorises capital.
 
----
+## Three workflow layers
 
-## Revenue execution loop
-
-```text
-DISCOVER / CAPTURE
-→ LAYER 1: SCORE THE BUSINESS OPPORTUNITY
-→ LAYER 1 GATE: REJECT / HOLD / ADVANCE
-→ LAYER 2: RANK NICHES
-→ REVERSE-ENGINEER PROVEN OPERATORS
-→ DESIGN OFFER / PRICE / GTM / DELIVERY
-→ UNDERWRITE BUSINESS × NICHE
-→ LAYER 3: STRUCTURED BUSINESS CASE
-→ BACKTEST
-→ FORWARD TEST
-→ PAID PILOT
-→ PROVE REPEATABILITY
-→ SCALE
-→ OPTIONAL BLUEPRINT PACKAGING
-```
-
-Canonical workflow: [`workflows/drf-opportunity-factory.md`](workflows/drf-opportunity-factory.md)  
-Reusable founder prompt: [`knowledge/templates/drf-opportunity-factory-intake-prompt.md`](knowledge/templates/drf-opportunity-factory-intake-prompt.md)
-
----
-
-## Layer 1 — Choose the business opportunity
-
-Layer 1 protects the original DRF golden-opportunity logic.
-
-Every serious opportunity keeps these founder metrics visible:
-
-| Metric | Question answered |
+| Layer | Founder question |
 |---|---|
-| **Opportunity Score /100** | Is the service/product/outcome structurally attractive? |
-| **MRR /10** | Can it produce durable recurring revenue? |
-| **AI Autonomy /100** | How much build, marketing and delivery can operate with low human dependency? |
-| **Evidence Confidence /100%** | How much should we trust the current scoring inputs? |
-| **Research Completeness /100%** | Has the opportunity actually been investigated? |
-| **External Market Proof** | Do materially similar businesses already succeed in the real market? |
-| **Execution Velocity /100** | How quickly can DRF turn it into a sale and successful delivery? |
+| **Layer 1 — Opportunity Discovery & Structural Selection** | Do we want this kind of business? |
+| **Layer 2 — Niche Selection & Commercial Underwriting** | Where, how and at what economics should it operate? |
+| **Layer 3 — Structured Factory Output + V3 Write-Back** | Can it be represented as one complete comparable business case, and has that current state reached V3? |
 
-Canonical framework: [`knowledge/guidelines/business-opportunity-scoring-framework.md`](knowledge/guidelines/business-opportunity-scoring-framework.md)
-
-A high score does not authorise capital. It earns deeper niche and commercial work.
-
----
+Detailed methodology is owned by the [`DRF Opportunity Factory Skill`](skills/drf-opportunity-factory/SKILL.md).
 
 ## Copy before invent
 
-DRF prefers proven business models over unnecessary invention.
-
-For every material opportunity, agents must study successful comparable operators where they exist:
-
-- what they sell;
-- who pays;
-- their setup and recurring prices;
-- their ads, funnels and acquisition channels;
-- their delivery system;
-- their reviews, case studies, customers and visible traction;
-- their recurring value and retention logic;
-- where operators fail, lose margin, create complaints or become platform-dependent.
+DRF prefers verified market evidence to unnecessary invention:
 
 ```text
 find what works
-→ verify it
-→ reverse-engineer it
+→ verify successful comparable operators
+→ research failures/counter-evidence
 → test transferability
-→ adapt and improve it
-→ execute
+→ adapt and improve
+→ test only remaining DRF-specific uncertainty
 ```
 
-One successful operator is a signal, not a guarantee. DRF seeks multiple independent examples and counter-evidence.
+One successful operator is a signal, not a base rate.
 
----
+## Business truth and Dashboard V3
 
-## External Market Proof is not DRF Proof
-
-These two controls must remain separate.
-
-### External Market Proof — EMP0 to EMP4
-
-Asks whether materially similar businesses already operate successfully.
+Business truth is source-first:
 
 ```text
-EMP0 Unobserved
-EMP1 Emerging signal
-EMP2 Active market
-EMP3 Market proven
-EMP4 Established and transferable
+live evidence
+→ current dossier/CURRENT
+→ specialised registers
+→ businesses/PORTFOLIO-V3.md
+→ Dashboard V3
 ```
 
-### DRF Proof — P0 to P6
+Dashboard Version 3 is the website synthesis of all three workflow layers. **Dashboard V3 is not Workflow Layer 3.** Dashboard V2 and V1 remain visible as evolution history.
 
-Asks how far **our selected adaptation** has progressed.
+Never edit website code to manufacture business scores, ranks, proof or commercial conclusions.
 
-| DRF Proof | Meaning |
-|---:|---|
-| **P0** | Captured |
-| **P1** | Desk Underwritten |
-| **P2** | Backtested |
-| **P3** | Forward Tested |
-| **P4** | Revenue Proven |
-| **P5** | Repeatable |
-| **P6** | Scale Proven / Blueprint Certified |
+## GitHub execution control
 
-A valid state is:
-
-> **External Market Proof: EMP3 Market Proven · DRF Proof: P1 Desk Underwritten**
-
-The category can be proven while DRF's exact niche, offer, price, acquisition and delivery remain early.
-
----
-
-## Layer 2 — Choose the niche and design the business
-
-A strong opportunity should not be sold indiscriminately to every market.
-
-The niche unit is:
-
-`outcome/product × vertical × sub-niche × geography × ICP × trigger/problem`
-
-Example:
-
-`Instant Quote × specialist construction × drywall/gypsum installers × UAE × owner-led contractors × slow/manual quotation`
-
-Layer 2 must produce:
-
-- ranked niche combinations;
-- Niche Score and confidence;
-- beachhead niche;
-- proven-operator reverse engineering;
-- recommended offer and pricing;
-- first-10 and first-100 customer GTM where defensible;
-- acquisition funnel;
-- delivery architecture;
-- Revenue Blueprint Score;
-- downside/base/upside economics;
-- DRF Proof, Stage, Capital and Next Proof.
-
-Niche framework: [`knowledge/guidelines/niche-attractiveness-scoring-framework.md`](knowledge/guidelines/niche-attractiveness-scoring-framework.md)  
-Underwriting/proof standard: [`knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`](knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md)
-
----
-
-## Stage and capital
-
-The founder-facing Stage is:
+Substantive work is Issue-first. Large programmes use a Master Issue plus linked Stage Issues. Standard implementation uses:
 
 ```text
-REJECT
-RESEARCH
-TEST
-PILOT
-FUND
-SCALE
-BLUEPRINT
+Issue → branch → focused change → PR → checks/review → merge → verify
 ```
 
-Capital buys evidence, not activity:
+See [`AGENTS.md`](AGENTS.md) for universal governance and Skill routing.
 
-```text
-TIER 1 — VALIDATE
-Up to $3,000 cumulative
+## Repository principle
 
-TIER 2 — LAUNCH
-+$7,000 · $10,000 cumulative
-
-TIER 3 — SCALE
-+$20,000 · $30,000 cumulative
-```
-
-Spend less whenever the next material uncertainty can be removed for less.
-
----
-
-## Layer 3 — Produce the complete business case
-
-A qualified opportunity ends as a structured founder-readable dossier containing:
-
-- business/outcome and pain;
-- payer and money model;
-- successful operators and External Market Proof;
-- Opportunity Score, MRR, AI Autonomy, Evidence and Research;
-- ranked niches and best Niche Score;
-- offer, pricing and GTM;
-- delivery architecture;
-- RBS and Return Profile;
-- DRF Proof, Stage, Capital and Next Proof;
-- risks, counter-evidence and sources;
-- Blueprint packaging readiness.
-
-The future V3 dashboard will compare these structured outputs without losing the original Layer 1 metrics.
-
----
-
-## What is a Business Blueprint?
-
-A Business Blueprint is **not** merely a PDF, prompt pack or software snapshot.
-
-> **A Business Blueprint is an evidence-backed operating recipe for reproducing a business result.**
-
-Packaging is optional after sufficient understanding/proof.
-
-| DRF Proof | Packaging label |
-|---:|---|
-| **P3** | Experimental Blueprint |
-| **P4** | Revenue-Proven Blueprint |
-| **P5** | Repeatable Blueprint |
-| **P6** | Blueprint Certified |
-
-**Business Blueprints** can also exist as one separate DRF opportunity for selling these packages through the DRF-owned website, Whop, Gumroad, classifieds and other compatible channels. It is not the definition of all DRF businesses.
-
-Blueprint specification: [`knowledge/templates/revenue-blueprint-specification.md`](knowledge/templates/revenue-blueprint-specification.md)
-
----
-
-## Commercial architecture
-
-The business is defined by the outcome, not the vendor.
-
-```text
-Outcome
-× Niche
-× Customer Channel
-× System of Record
-× Agent Layer
-```
-
-Use deterministic automation for predictable work. Use agents for judgement, research, orchestration and exceptions. Vendors and models remain replaceable wherever practical.
-
-Canonical architecture: [`knowledge/architecture/outcome-first-modular-revenue-architecture.md`](knowledge/architecture/outcome-first-modular-revenue-architecture.md)
-
----
-
-## Where to start
-
-### Founder
-
-Use the reusable prompt:
-
-[`knowledge/templates/drf-opportunity-factory-intake-prompt.md`](knowledge/templates/drf-opportunity-factory-intake-prompt.md)
-
-Add the rough opportunity, founder context, source material, optional niche and any operators that inspired it. The agent then runs the maximum defensible workflow stage.
-
-### Agent
-
-1. Read [`AGENTS.md`](AGENTS.md).
-2. Resolve/create the comprehensive controlling GitHub Issue and checklist.
-3. Use [`workflows/drf-opportunity-factory.md`](workflows/drf-opportunity-factory.md).
-4. Search the existing portfolio before creating anything.
-5. Run Layer 1 completely.
-6. Stop cheaply if it fails; otherwise continue automatically through Layers 2 and 3.
-7. Do not take paid/public/legal action without the required approval.
-8. Update canonical files and verify once.
-
----
-
-## Repository map
-
-| Folder | Purpose |
-|---|---|
-| [`businesses/`](businesses/) | Business opportunities, niches, commercial truth and readiness |
-| [`workflows/`](workflows/) | The canonical DRF Opportunity Factory and supporting references |
-| [`knowledge/templates/`](knowledge/templates/) | Intake, research, financial, investment and Blueprint templates |
-| [`knowledge/guidelines/`](knowledge/guidelines/) | Opportunity, niche, RBS, proof, evidence and operating rules |
-| [`knowledge/lessons/`](knowledge/lessons/) | Proven lessons fed back into the factory |
-| [`research/`](research/) | Durable market and benchmark evidence |
-| [`setups/`](setups/) | Reusable configurations |
-| [`agents/`](agents/) | Agent definitions |
-| [`skills/`](skills/) | Reusable capabilities |
-| [`software/`](software/) | Shared code and tools |
-| [`technical/`](technical/) | Runtime, integration and infrastructure evidence |
-| [`lab/`](lab/) | Experiments not yet trusted |
-| [`archive/`](archive/) | Retired history |
-
----
-
-## Repository truth
-
-```text
-Founder instruction
-→ GitHub Issue / acceptance criteria
-→ repository files
-→ verified commercial evidence
-→ dashboard / chat / derived views
-```
-
-**DRF exists to produce better revenue decisions and revenue-producing businesses—not more documentation.**
+**DRF exists to produce better revenue decisions and revenue-producing businesses—not documentation for its own sake. Skills make the operating method obvious, reusable and continuously improvable.**

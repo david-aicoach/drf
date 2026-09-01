@@ -6,7 +6,57 @@
   const LEVELS = ['P0', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6'];
 
   installStorageResetFallback();
+  document.addEventListener('DOMContentLoaded', rewriteSkillSourceLinks);
   document.addEventListener('DOMContentLoaded', initialiseIntegrityChecks);
+
+  function rewriteSkillSourceLinks() {
+    const replacements = [
+      {
+        from: '/workflows/drf-opportunity-factory.md',
+        to: '/skills/drf-opportunity-factory/SKILL.md',
+        sourceLabel: 'Opportunity Factory Skill',
+        heroLabel: 'Factory Skill ↗'
+      },
+      {
+        from: '/workflows/drf-recurring-intelligence-loops.md',
+        to: '/skills/drf-recurring-intelligence/SKILL.md',
+        sourceLabel: 'Recurring intelligence Skill'
+      },
+      {
+        from: '/knowledge/guidelines/business-opportunity-scoring-framework.md',
+        to: '/skills/drf-opportunity-factory/references/business-opportunity-scoring.md'
+      },
+      {
+        from: '/knowledge/templates/business-opportunity-research.md',
+        to: '/skills/drf-opportunity-factory/references/business-case-output-contract.md'
+      },
+      {
+        from: '/knowledge/architecture/drf-v3-portfolio-data-contract.md',
+        to: '/skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md'
+      },
+      {
+        from: '/knowledge/templates/drf-opportunity-factory-intake-prompt.md',
+        to: '/skills/drf-opportunity-factory/SKILL.md',
+        sourceLabel: 'Opportunity intake Skill'
+      }
+    ];
+
+    document.querySelectorAll('a[href*="github.com/tbhrc/drf/blob/main/"]').forEach(anchor => {
+      const replacement = replacements.find(item => anchor.href.endsWith(item.from));
+      if (!replacement) return;
+      anchor.href = anchor.href.slice(0, -replacement.from.length) + replacement.to;
+
+      if (replacement.heroLabel && anchor.closest('.v3-hero-actions')) {
+        anchor.textContent = replacement.heroLabel;
+        return;
+      }
+      if (replacement.sourceLabel && anchor.closest('.v3-links')) {
+        const description = anchor.querySelector('span');
+        const descriptionHtml = description ? description.outerHTML : '';
+        anchor.innerHTML = `${replacement.sourceLabel}${descriptionHtml}`;
+      }
+    });
+  }
 
   async function initialiseIntegrityChecks() {
     try {

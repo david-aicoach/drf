@@ -2,14 +2,14 @@
 
 **Status:** Passed for [77.5] #82  
 **Date:** 31 August 2026  
-**Workflow:** `workflows/drf-recurring-intelligence-loops.md`  
-**Configuration:** `knowledge/guidelines/drf-recurring-intelligence-configuration.md`
+**Workflow reference:** `skills/drf-recurring-intelligence/references/recurring-intelligence-workflow.md`  
+**Configuration:** `skills/drf-recurring-intelligence/references/recurring-intelligence-configuration.md`
 
 ## Architecture validation
 
 | Requirement | Implementation | Result |
 |---|---|---|
-| One processing workflow | Both loops route candidates/opportunities into `workflows/drf-opportunity-factory.md` | Pass |
+| One processing workflow | Both loops route candidates/opportunities into `skills/drf-opportunity-factory/SKILL.md` | Pass |
 | One V3 output contract | Both loops reconcile `businesses/PORTFOLIO-V3.md` last | Pass |
 | No dashboard-only truth | Dashboard HTML is explicitly prohibited as a business-data write path | Pass |
 | Business before vendor | Candidate fingerprint uses pain/outcome, payer, revenue model and workflow | Pass |
@@ -29,7 +29,7 @@
 - Deduplication classifies `NEW_PARENT`, `NEW_NICHE`, `DELIVERY_VARIANT`, `COMMERCIAL_VARIANT`, `REFRESH`, `DUPLICATE` and `RECONSIDER_REJECTED`.
 - Configurable default thresholds match the canonical Layer 1 framework.
 - Rejected/held candidates remain outside the parent portfolio.
-- Qualified candidates continue through the existing three-layer workflow.
+- Qualified candidates continue through the Opportunity Factory Skill's three-layer workflow.
 - A founder digest is emitted only for material Golden candidates, conflicts or approval decisions.
 
 ## Portfolio-refresh validation
@@ -56,18 +56,18 @@
 
 | Record | Path | Initial state |
 |---|---|---|
-| Discovery candidate detail | `knowledge/templates/drf-discovery-candidate-record.md` | Template only |
-| Portfolio refresh detail | `knowledge/templates/drf-portfolio-refresh-record.md` | Template only |
+| Discovery candidate detail | `skills/drf-recurring-intelligence/references/discovery-candidate-record.md` | Skill-owned reusable record |
+| Portfolio refresh detail | `skills/drf-recurring-intelligence/references/portfolio-refresh-record.md` | Skill-owned reusable record |
 | Discovery run history | `research/recurring-intelligence/DISCOVERY-RUNS.md` | Empty register; no invented runs |
 | Rejected/held candidates | `research/recurring-intelligence/DISCOVERY-REJECTIONS.md` | Empty register; no invented candidates |
 | Refresh run history | `research/recurring-intelligence/REFRESH-RUNS.md` | Empty register; no invented refreshes |
 
 ## Production activation boundary
 
-This stage does not activate an external schedule. A production scheduler remains a separate explicit implementation/approval action because it may require credentials, recurring compute, outbound access or paid services.
+This validation does not itself activate an external schedule. A production scheduler remains a separate explicit implementation/approval action because it may require credentials, recurring compute, outbound access or paid services.
 
-The business logic is now ready for that scheduler without being tied to one runtime.
+The business logic is scheduler-independent and the active ChatGPT Web profiles invoke the owning Skill rather than duplicating the workflow.
 
 ## Conclusion
 
-**Pass.** DRF now has complete, implementation-neutral recurring intelligence contracts for daily Golden Opportunity discovery and risk-based portfolio refresh, with strong evidence, write-order, proof and approval safeguards.
+**Pass.** DRF has implementation-neutral recurring intelligence contracts for Golden Opportunity discovery and risk-based portfolio refresh, with strong evidence, write-order, proof and approval safeguards, all owned by Skills.

@@ -1,13 +1,13 @@
-# DRF Template Validation — WhatsApp + CRM Revenue Core × UAE HVAC/AC
+# DRF Output Contract Validation — WhatsApp + CRM Revenue Core × UAE HVAC/AC
 
 **Status:** Passed for [77.3] #80  
 **Date:** 31 August 2026  
-**Template:** `knowledge/templates/business-opportunity-research.md` Version 3.0  
+**Output contract:** `skills/drf-opportunity-factory/references/business-case-output-contract.md`  
 **Representative dossier:** `businesses/whatsapp-crm-revenue-core/V3-BUSINESS-CASE-HVAC.md`
 
 ## Validation purpose
 
-Confirm that one real DRF opportunity can pass through the revised template without losing the original V1 business-attractiveness metrics or the useful V2 commercial, proof and capital controls.
+Confirm that one real DRF opportunity can pass through the revised Skill-owned output contract without losing the original V1 business-attractiveness metrics or the useful V2 commercial, proof and capital controls.
 
 ## Field coverage
 
@@ -54,6 +54,6 @@ The dossier contains an explicit `V3 record summary` with stable labels for [77.
 
 ## Conclusion
 
-**Pass.** The revised template can produce the founder-readable mini business plan required by Master #77 while retaining the complete decision hierarchy and honest proof boundaries.
+**Pass.** The Skill-owned output contract can produce the founder-readable mini business plan required by Master #77 while retaining the complete decision hierarchy and honest proof boundaries.
 
-This is template validation, not a claim that the HVAC offer has passed P3 or generated DRF revenue.
+This is output-contract validation, not a claim that the HVAC offer has passed P3 or generated DRF revenue.

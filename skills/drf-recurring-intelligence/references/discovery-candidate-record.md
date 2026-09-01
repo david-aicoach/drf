@@ -3,7 +3,7 @@
 **Status:** Canonical template  
 **Version:** 1.0  
 **Governing stage:** [77.5] #82  
-**Loop:** `workflows/drf-recurring-intelligence-loops.md`  
+**Owning Skill:** `skills/drf-recurring-intelligence/SKILL.md`  
 **Configuration:** `DRF-INTELLIGENCE-CONFIG-1.0`
 
 Use one record for a credible discovery candidate that requires more than a one-line rejection-log entry. Do not create a parent business folder until the candidate advances.
@@ -78,7 +78,7 @@ primary workflow:
 - [ ] DUPLICATE
 - [ ] RECONSIDER_REJECTED
 
-**Route:** `<stop / parent niche work / architecture evidence / Loop B refresh / continue scan>`
+**Route:** `<stop / parent niche work / architecture evidence / portfolio refresh / continue scan>`
 
 ---
 
@@ -107,7 +107,7 @@ primary workflow:
 
 # 5. Cheap Layer 1 scan
 
-Use `knowledge/templates/revenue-opportunity-scan-card.md` and summarise:
+Use `skills/drf-opportunity-factory/references/revenue-opportunity-scan-card.md` and summarise:
 
 | Metric | Result | Evidence/limitation |
 |---|---:|---|
@@ -159,7 +159,7 @@ Use `knowledge/templates/revenue-opportunity-scan-card.md` and summarise:
 ### If advanced
 
 - create/repair the governing GitHub Issue;
-- run `workflows/drf-opportunity-factory.md` through the maximum defensible Layer 1, Layer 2 and Layer 3 stages;
+- invoke `skills/drf-opportunity-factory/SKILL.md` and continue through the maximum defensible Layer 1, Layer 2 and Layer 3 stages;
 - create a parent folder only after confirming it is a new parent;
 - update detailed sources and registers in canonical order;
 - reconcile `PORTFOLIO-V3.md` last.

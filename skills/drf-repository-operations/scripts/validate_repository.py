@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate DRF durable repository contracts with no third-party dependencies."""
+"""Validate DRF skills-first repository contracts with no third-party dependencies."""
 
 from __future__ import annotations
 
@@ -7,44 +7,31 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 
-REQUIRED_FILES = ["README.md", "AGENTS.md", "VERSION", "CHANGELOG.md"]
-
-FIRST_CLASS_FOLDERS = [
-    ".github",
-    "businesses",
-    "setups",
-    "agents",
-    "skills",
-    "workflows",
-    "software",
-    "research",
-    "technical",
+REQUIRED_ROOT_FILES = ["README.md", "AGENTS.md", "VERSION", "CHANGELOG.md"]
+REQUIRED_SKILLS = {
+    "drf-opportunity-factory",
+    "drf-recurring-intelligence",
+    "drf-dashboard-operations",
+    "drf-repository-operations",
+}
+RETIRED_ROOT_DIRS = {
     "knowledge",
+    "workflows",
+    "technical",
+    "agents",
+    "setups",
     "lab",
     "archive",
-]
-
-V3_WRITEBACK_FILES = [
-    "knowledge/architecture/drf-v3-writeback-contract.md",
-    "knowledge/templates/drf-v3-closeout-checklist.md",
-    "businesses/V3-RECONCILIATIONS.md",
-    "businesses/PORTFOLIO-V3.md",
-]
+    "templates",
+    "scripts",
+}
+REQUIRED_DOMAIN_DIRS = {"businesses", "research", "skills", "software", "assets", ".github"}
 
 
 def fail(errors: list[str], message: str) -> None:
     errors.append(message)
-
-
-def require_unit_readmes(errors: list[str], root_name: str) -> None:
-    root = ROOT / root_name
-    if not root.is_dir():
-        return
-    for unit in sorted(path for path in root.iterdir() if path.is_dir()):
-        if not (unit / "README.md").is_file():
-            fail(errors, f"Unit is missing README.md: {unit.relative_to(ROOT)}")
 
 
 def require_markers(errors: list[str], relative: str, markers: list[str]) -> None:
@@ -58,67 +45,10 @@ def require_markers(errors: list[str], relative: str, markers: list[str]) -> Non
             fail(errors, f"{relative} is missing canonical marker: {marker}")
 
 
-def validate_v3_writeback_contract(errors: list[str]) -> None:
-    for relative in V3_WRITEBACK_FILES:
+def validate_root(errors: list[str]) -> None:
+    for relative in REQUIRED_ROOT_FILES:
         if not (ROOT / relative).is_file():
-            fail(errors, f"Missing V3 write-back artefact: {relative}")
-
-    require_markers(
-        errors,
-        "AGENTS.md",
-        [
-            "workflows/drf-opportunity-factory.md",
-            "knowledge/architecture/drf-v3-writeback-contract.md",
-            "businesses/PORTFOLIO-V3.md",
-            "businesses/V3-RECONCILIATIONS.md",
-            "Do not close material opportunity/niche research",
-        ],
-    )
-    require_markers(
-        errors,
-        ".github/copilot-instructions.md",
-        [
-            "workflows/drf-opportunity-factory.md",
-            "knowledge/architecture/drf-v3-writeback-contract.md",
-            "businesses/PORTFOLIO-V3.md",
-            "businesses/V3-RECONCILIATIONS.md",
-        ],
-    )
-    require_markers(
-        errors,
-        "workflows/drf-opportunity-factory.md",
-        [
-            "LAYER 3 — Structured Factory Output + V3 Write-Back",
-            "businesses/PORTFOLIO-V3.md",
-            "businesses/V3-RECONCILIATIONS.md",
-            "A material Issue/PR is not complete until A or B is recorded",
-        ],
-    )
-
-    workflow = ROOT / "workflows" / "drf-opportunity-factory.md"
-    if workflow.is_file():
-        text = workflow.read_text(encoding="utf-8")
-        stale_markers = [
-            "Until that stage is merged",
-            "[77.4] #81 owns the final stable V3 data contract",
-        ]
-        for marker in stale_markers:
-            if marker in text:
-                fail(errors, f"Canonical workflow still contains stale migration wording: {marker}")
-
-    legacy = ROOT / "workflows" / "revenue-blueprint-factory.md"
-    if legacy.is_file():
-        text = legacy.read_text(encoding="utf-8")
-        if "not the canonical end-to-end workflow" not in text and "compatibility" not in text.lower():
-            fail(errors, "Legacy revenue-blueprint-factory.md must remain an explicit compatibility reference")
-
-
-def main() -> int:
-    errors: list[str] = []
-
-    for relative in REQUIRED_FILES:
-        if not (ROOT / relative).is_file():
-            fail(errors, f"Missing required file: {relative}")
+            fail(errors, f"Missing required root file: {relative}")
 
     version_path = ROOT / "VERSION"
     if version_path.is_file():
@@ -126,25 +56,182 @@ def main() -> int:
         if not re.fullmatch(r"\d+\.\d+\.\d+", version):
             fail(errors, f"VERSION is not SemVer: {version!r}")
 
-    for folder_name in FIRST_CLASS_FOLDERS:
-        folder = ROOT / folder_name
-        if not folder.is_dir():
-            fail(errors, f"Missing first-class folder: {folder_name}/")
-            continue
-        if not (folder / "README.md").is_file():
-            fail(errors, f"First-class folder must explain itself: {folder_name}/README.md")
+    for dirname in REQUIRED_DOMAIN_DIRS:
+        if not (ROOT / dirname).is_dir():
+            fail(errors, f"Missing required domain/product directory: {dirname}/")
 
-    for root_name in ["businesses", "setups", "agents", "software"]:
-        require_unit_readmes(errors, root_name)
+    for dirname in RETIRED_ROOT_DIRS:
+        if (ROOT / dirname).exists():
+            fail(errors, f"Retired global operating directory must not exist: {dirname}/")
 
+
+def validate_skills(errors: list[str]) -> None:
     skills_root = ROOT / "skills"
-    if skills_root.is_dir():
-        for skill in sorted(path for path in skills_root.iterdir() if path.is_dir()):
-            if not (skill / "SKILL.md").is_file():
-                fail(errors, f"Skill is missing SKILL.md: {skill.relative_to(ROOT)}")
-            if not (skill / "agents" / "openai.yaml").is_file():
-                fail(errors, f"Skill is missing agents/openai.yaml: {skill.relative_to(ROOT)}")
+    if not (skills_root / "README.md").is_file():
+        fail(errors, "Missing skills/README.md capability index")
+        return
 
+    skill_dirs = {path.name for path in skills_root.iterdir() if path.is_dir()}
+    missing = sorted(REQUIRED_SKILLS - skill_dirs)
+    if missing:
+        fail(errors, f"Missing canonical DRF Skills: {', '.join(missing)}")
+
+    for skill_name in sorted(REQUIRED_SKILLS):
+        skill = skills_root / skill_name
+        skill_md = skill / "SKILL.md"
+        if not skill_md.is_file():
+            fail(errors, f"Skill is missing SKILL.md: skills/{skill_name}")
+            continue
+        text = skill_md.read_text(encoding="utf-8")
+        if not text.startswith("---\n") or f"name: {skill_name}" not in text:
+            fail(errors, f"Skill frontmatter/name is invalid: skills/{skill_name}/SKILL.md")
+        if "description:" not in text[:1200]:
+            fail(errors, f"Skill is missing description trigger metadata: skills/{skill_name}/SKILL.md")
+        if not (skill / "agents" / "openai.yaml").is_file():
+            fail(errors, f"Skill is missing agents/openai.yaml: skills/{skill_name}")
+
+    require_markers(
+        errors,
+        "skills/README.md",
+        [
+            "Skills are the number-one operating interface",
+            "drf-opportunity-factory",
+            "drf-recurring-intelligence",
+            "drf-dashboard-operations",
+            "drf-repository-operations",
+            "One reusable capability → one Skill owner",
+        ],
+    )
+
+    require_markers(
+        errors,
+        "skills/drf-opportunity-factory/SKILL.md",
+        ["Founder intake", "Layer 1", "Layer 2", "Layer 3", "V3", "Self-improvement rule"],
+    )
+    require_markers(
+        errors,
+        "skills/drf-recurring-intelligence/SKILL.md",
+        ["Portfolio calibration", "Discovery run", "REFRESH-RUNS.md", "Scheduler independence"],
+    )
+    require_markers(
+        errors,
+        "skills/drf-dashboard-operations/SKILL.md",
+        ["Dashboard Version 3 is the website synthesis", "Business truth first; dashboard last"],
+    )
+    require_markers(
+        errors,
+        "skills/drf-repository-operations/SKILL.md",
+        ["Number-one rule — Skills first", "Do not create a new template", "scripts/validate_repository.py"],
+    )
+
+
+def validate_entrypoints(errors: list[str]) -> None:
+    require_markers(
+        errors,
+        "AGENTS.md",
+        [
+            "NUMBER-ONE RULE — SKILLS FIRST",
+            "skills/README.md",
+            "skills/drf-opportunity-factory/SKILL.md",
+            "skills/drf-recurring-intelligence/SKILL.md",
+            "skills/drf-dashboard-operations/SKILL.md",
+            "skills/drf-repository-operations/SKILL.md",
+            "businesses/PORTFOLIO-V3.md",
+            "businesses/V3-RECONCILIATIONS.md",
+        ],
+    )
+    require_markers(
+        errors,
+        ".github/copilot-instructions.md",
+        [
+            "Skills are the operating interface",
+            "skills/drf-opportunity-factory/SKILL.md",
+            "skills/drf-recurring-intelligence/SKILL.md",
+            "skills/drf-dashboard-operations/SKILL.md",
+            "skills/drf-repository-operations/SKILL.md",
+        ],
+    )
+    require_markers(
+        errors,
+        "README.md",
+        ["skills-first operating system", "skills/README.md", "DRF Opportunity Factory"],
+    )
+
+
+def validate_v3_and_profiles(errors: list[str]) -> None:
+    required = [
+        "businesses/PORTFOLIO-V3.md",
+        "businesses/V3-RECONCILIATIONS.md",
+        "skills/drf-opportunity-factory/references/v3-writeback.md",
+        "skills/drf-opportunity-factory/references/v3-closeout-checklist.md",
+        "skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md",
+        "skills/drf-recurring-intelligence/references/portfolio-intelligence-profile.md",
+        "skills/drf-recurring-intelligence/references/business-blueprints-daily-profile.md",
+        "skills/drf-recurring-intelligence/references/autonomous-ai-revenue-operations-profile.md",
+    ]
+    for relative in required:
+        if not (ROOT / relative).is_file():
+            fail(errors, f"Missing required skills-first/V3 artefact: {relative}")
+
+    retired_profiles = [
+        "research/recurring-intelligence/DRF-PORTFOLIO-INTELLIGENCE.md",
+        "research/recurring-intelligence/AUTONOMOUS-AI-REVENUE-OPERATIONS.md",
+        "businesses/business-blueprints/DAILY-INTELLIGENCE.md",
+        "research/niches/_research-standard-v2.md",
+        "research/niches/_research-standard-v3.md",
+    ]
+    for relative in retired_profiles:
+        if (ROOT / relative).exists():
+            fail(errors, f"Operating instruction/profile must live in a Skill, not domain data: {relative}")
+
+
+def validate_ci(errors: list[str]) -> None:
+    require_markers(
+        errors,
+        ".github/workflows/ci.yml",
+        ["python3 skills/drf-repository-operations/scripts/validate_repository.py"],
+    )
+
+
+def validate_active_paths(errors: list[str]) -> None:
+    # Only operating routers/docs are scanned here. Data registers and historical
+    # evidence may retain legacy path text as provenance without acting as runtime instructions.
+    active_routers = [
+        "AGENTS.md",
+        "README.md",
+        ".github/copilot-instructions.md",
+        "skills/README.md",
+        "businesses/README.md",
+        "businesses/business-blueprints/README.md",
+        "research/recurring-intelligence/README.md",
+        "software/dashboard-v3/README.md",
+    ]
+    forbidden_operational_paths = ["knowledge/", "workflows/drf-", "workflows/revenue-blueprint"]
+    for relative in active_routers:
+        path = ROOT / relative
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        for marker in forbidden_operational_paths:
+            if marker in text:
+                fail(errors, f"Active operating router still points to retired global path {marker!r}: {relative}")
+
+    # index.html is preserved as product source; its already-loaded integrity script
+    # rewrites legacy source links to Skill destinations at runtime so the live site
+    # cannot send founders to deleted operating folders.
+    require_markers(
+        errors,
+        "assets/v3-dashboard-proof-counts.js",
+        [
+            "rewriteSkillSourceLinks",
+            "/skills/drf-opportunity-factory/SKILL.md",
+            "/skills/drf-recurring-intelligence/SKILL.md",
+            "/skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md",
+        ],
+    )
+
+
+def validate_filenames_and_secrets(errors: list[str]) -> None:
     forbidden_names = {".env", "id_rsa", "id_ed25519"}
     forbidden_suffixes = {".pem", ".p12", ".pfx"}
     for path in ROOT.rglob("*"):
@@ -156,7 +243,16 @@ def main() -> int:
         if "%" in path.name:
             fail(errors, f"Percent-encoded/unclean filename: {relative}")
 
-    validate_v3_writeback_contract(errors)
+
+def main() -> int:
+    errors: list[str] = []
+    validate_root(errors)
+    validate_skills(errors)
+    validate_entrypoints(errors)
+    validate_v3_and_profiles(errors)
+    validate_ci(errors)
+    validate_active_paths(errors)
+    validate_filenames_and_secrets(errors)
 
     if errors:
         print("DRF repository validation failed:", file=sys.stderr)
@@ -164,7 +260,7 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    print("DRF repository contracts: PASS")
+    print("DRF skills-first repository contracts: PASS")
     return 0
 
 
