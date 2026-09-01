@@ -10,6 +10,7 @@ It is not a workflow or prompt library.
 - [`DISCOVERY-REJECTIONS.md`](./DISCOVERY-REJECTIONS.md) — rejected/held candidates with reason and reconsideration trigger.
 - [`REFRESH-RUNS.md`](./REFRESH-RUNS.md) — portfolio/specialist refresh history.
 - [`AUTONOMOUS-AI-REVENUE-OPERATIONS-RUNS.md`](./AUTONOMOUS-AI-REVENUE-OPERATIONS-RUNS.md) — audit history for the weekly Autonomous AI specialist profile.
+- [`proof-first-application-discovery-evidence-2026-09-02.md`](./proof-first-application-discovery-evidence-2026-09-02.md) — dated evidence/limitations behind the proof-first application discovery lane introduced in #139.
 
 ## Rules
 
@@ -24,6 +25,7 @@ It is not a workflow or prompt library.
 ## Skill-owned operating profiles
 
 - Portfolio daily calibration: `skills/drf-recurring-intelligence/references/portfolio-intelligence-profile.md`
+- Proof-first application discovery: `skills/drf-recurring-intelligence/references/proof-first-application-discovery-profile.md`
 - Business Blueprints daily: `skills/drf-recurring-intelligence/references/business-blueprints-daily-profile.md`
 - Autonomous AI weekly: `skills/drf-recurring-intelligence/references/autonomous-ai-revenue-operations-profile.md`
 
