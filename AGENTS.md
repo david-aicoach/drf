@@ -1,236 +1,153 @@
-# DRF — Root Agent Contract
-
-Read this first before substantive DRF work.
+# DRF Agent Operating Contract
 
 ## NUMBER-ONE RULE — SKILLS FIRST
 
-**Reusable AI work in DRF is operated through Skills.**
+DRF is a **skills-first operating system**. For every substantive capability task:
 
-Before substantive capability work:
+1. read this file;
+2. read [`skills/README.md`](skills/README.md);
+3. select the matching Skill;
+4. read that Skill's `SKILL.md` before substantive work;
+5. execute from the Skill and only the references/scripts/assets it owns plus current domain truth;
+6. when a repeatable lesson or operating method improves, improve the owning Skill instead of creating a loose workflow, template, SOP, prompt or knowledge file.
 
-1. read [`skills/README.md`](skills/README.md);
-2. identify the single best owning Skill;
-3. read that `skills/<skill-name>/SKILL.md` before acting;
-4. load only the Skill references/scripts/assets needed for the task;
-5. improve the owning Skill when a repeatable process changes.
+Do not recreate global `knowledge/`, root AI `workflows/`, `templates/`, `scripts/`, SOP or lessons junk drawers.
 
-Do **not** create loose global templates, AI workflows, SOPs, lessons, guidelines, prompt libraries or miscellaneous knowledge folders. If behaviour belongs to an existing capability, update that Skill. Create a new Skill only for a genuinely distinct reusable capability.
+## Capability router
 
-### Canonical Skill router
-
-| Need | Skill |
+| User intent | Canonical Skill |
 |---|---|
-| New business opportunity, Revenue Factory intake, market intelligence A–Z, scoring, niches, offer/pricing/GTM, underwriting, Layer 3/V3 close-out | [`skills/drf-opportunity-factory/SKILL.md`](skills/drf-opportunity-factory/SKILL.md) |
-| Golden Opportunity discovery, daily portfolio calibration, scheduled refresh, specialist recurring intelligence, ChatGPT Web automation behaviour | [`skills/drf-recurring-intelligence/SKILL.md`](skills/drf-recurring-intelligence/SKILL.md) |
-| Dashboard V3 changes, data-contract maintenance, website troubleshooting, KPI/table/join work, Pages verification | [`skills/drf-dashboard-operations/SKILL.md`](skills/drf-dashboard-operations/SKILL.md) |
-| Repository architecture, Skill maintenance, cleanup, CI/governance, structural migration | [`skills/drf-repository-operations/SKILL.md`](skills/drf-repository-operations/SKILL.md) |
+| New business opportunity, Revenue Factory opportunity intake, market intelligence A-Z, research/score/niche/underwrite a business, build a V3 business case | [`skills/drf-opportunity-factory/SKILL.md`](skills/drf-opportunity-factory/SKILL.md) |
+| Recurring discovery, daily portfolio calibration, scheduled research, refresh/re-score existing opportunities | [`skills/drf-recurring-intelligence/SKILL.md`](skills/drf-recurring-intelligence/SKILL.md) |
+| Dashboard V3, portfolio data contract, dashboard source health/maintenance | [`skills/drf-dashboard-operations/SKILL.md`](skills/drf-dashboard-operations/SKILL.md) |
+| Repository governance, Skills-first structure, validation, refactor/maintenance | [`skills/drf-repository-operations/SKILL.md`](skills/drf-repository-operations/SKILL.md) |
 
-Natural language is enough. A founder may simply say:
+Natural-language shorthand such as **“new business opportunity,” “Revenue Factory intake,” “run RF A-Z,” “follow the Revenue Factory instructions,”** or **“complete market intelligence A-Z”** means: invoke the DRF Opportunity Factory Skill.
 
-> **“Here is a new business opportunity. Use the DRF Opportunity Factory Skill and complete the market intelligence A–Z.”**
+## Canonical domain truth
 
-The agent must discover the Skill from this repository; the founder is not expected to know hidden file paths or prompts.
+- `businesses/` — current business/opportunity truth and founder registers.
+- `research/` — durable evidence and run history, not reusable operating instructions.
+- `software/`, root HTML/JS/CSS and `assets/` — product/runtime code.
+- `.github/` — GitHub-required integrations and Actions.
+- `skills/` — reusable AI operating capability.
 
----
+For V3 founder truth:
 
-## DRF identity
+- `businesses/PORTFOLIO-V3.md` — joined founder comparison register;
+- `businesses/V3-RECONCILIATIONS.md` — evidence-backed no-field-change reconciliations;
+- detailed business folders and current dossiers remain authoritative before aggregate registers.
 
-**DRF is David's Revenue Factory.** Its job is to discover, research, compare, select, adapt, test, improve, scale and optionally package revenue-producing businesses.
+## DRF Opportunity Factory contract
 
-Commercial priority:
-
-> **Traction before build. Revenue work before optional build work.**
-
-Speak sales language first: what is sold, who pays, how much/on what basis, and whether revenue is upfront, recurring, usage, commission, licence, royalty or upsell.
-
-Never collapse a business decision into one score. Preserve:
-
-```text
-Business Opportunity
-→ Opportunity Score + MRR + AI Autonomy + Evidence + Research
-→ External Market Proof
-→ ranked Niche options + Niche Score
-→ selected Business × Niche
-→ offer + pricing + GTM + delivery
-→ RBS + Return Profile
-→ DRF Proof + Stage + Capital + Next Proof
-→ Workflow Layer 3 business case
-→ V3 reconciliation
-→ Dashboard V3
-```
-
-Detailed opportunity logic belongs in the Opportunity Factory Skill, not here.
-
----
-
-## Canonical truth
+A new or materially refreshed business opportunity uses one route:
 
 ```text
-Founder instruction
-→ GitHub Issue / acceptance criteria
-→ repository files
-→ verified commercial/operating evidence
-→ chat/session context
-```
-
-Temporary agent context never overrides newer repository/GitHub truth.
-
-Business truth flows:
-
-```text
-live evidence
-→ CURRENT.md / current dossier
-→ specialised registers
-→ businesses/PORTFOLIO-V3.md
-→ Dashboard V3
-```
-
-The dashboard is derived. **Never edit `index.html` to manufacture business truth.**
-
----
-
-## Repository ownership
-
-Keep the top level simple:
-
-- `skills/` — primary reusable AI operating surface.
-- `businesses/` — canonical business/opportunity truth.
-- `research/` — durable observed evidence and run history.
-- `software/` — actual product/runtime code and product-local tests.
-- `assets/`, `index.html`, `dashboard-v1-v2.html` — deployed Dashboard product.
-- `.github/` — GitHub-required configuration and Actions.
-
-`.github/workflows/` is a GitHub platform requirement; it is **not** a global DRF AI workflow library.
-
-Root `AGENTS.md` is universal governance + Skill routing only. Detailed reusable procedures belong in Skills.
-
----
-
-## GitHub object creation gate
-
-Never use a durable GitHub object as a probe, scratchpad, placeholder or number reservation.
-
-Before creating an Issue, branch, PR, file, release or similar object:
-
-1. determine its durable purpose;
-2. search for an existing equivalent where applicable;
-3. prepare meaningful final-purpose content;
-4. create only the real object needed.
-
-Legitimate governed test work and intentional draft PRs are allowed. Sacrificial objects are not.
-
----
-
-## Issue-first execution
-
-**Checklist first. Execution second.** Every substantive DRF task is controlled by a GitHub Issue before implementation.
-
-The Issue must preserve enough context for a fresh agent to continue without chat:
-
-- objective;
-- founder intent / why;
-- scope and exclusions;
-- implementation checklist;
-- verification checklist;
-- acceptance criteria;
-- dependencies/sequence where material.
-
-Execution loop:
-
-```text
-Founder instruction
-→ create/repair Issue
-→ execute bounded item
-→ verify
-→ check off
-→ continue
-→ final verification
-→ close only when acceptance passes
-```
-
-### Master + Stage
-
-Large programmes use one Master Issue plus linked Stage Issues.
-
-- Master owns founder intent, architecture, sequence and final acceptance.
-- Stage owns one bounded implementation/verification outcome.
-- Link both directions.
-- Check off a Master stage only after the Stage closes verified.
-- Master cannot close until all stages and end-to-end acceptance pass.
-- Native GitHub sub-issues are optional; ordinary linked Issues must remain sufficient from ChatGPT Web.
-
----
-
-## Mandatory opportunity/V3 close-out
-
-For every material opportunity, niche, commercial-model, evidence or execution update, use the **DRF Opportunity Factory Skill** and its V3 write-back reference.
-
-A material research Issue is not complete when only a research file changed.
-
-Required outcome:
-
-```text
-new evidence/result
-→ authoritative source first
-→ affected specialised registers
-→ current Layer 3 dossier/CURRENT where required
-→ V3 founder-field review
-→ exactly one:
-   A. founder fields changed → businesses/PORTFOLIO-V3.md LAST
-   B. no founder field changed → businesses/V3-RECONCILIATIONS.md
+Founder input / discovered signal
+→ classify and deduplicate
+→ Layer 1 — business opportunity selection
+→ Layer 2 — niche + commercial underwriting
+→ Layer 3 — structured business case + V3 write-back
 → validation
-→ only then close/merge
+→ Dashboard V3 derived view
 ```
 
-Rules:
+The Opportunity Factory Skill owns the full process, including adaptive founder intake where required, current web research, successful comparable operators, counter-evidence, External Market Proof, Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness, niche selection, offer/pricing/GTM/delivery, RBS, DRF Proof, Stage, Capital, return profile, Next Proof, dossier output and V3 close-out.
 
-- Do not leave Dashboard V3 stale.
-- Do not manufacture a score/freshness edit merely to touch V3.
-- EMP and DRF Proof remain separate.
-- Documentation completeness never raises DRF Proof.
-- `Pending` never becomes numerical zero.
+### Copy before invent
 
-CI enforces material opportunity/niche write-back.
+Prefer evidence from businesses already succeeding. Find what works, verify it, reverse-engineer it, test transferability, adapt/improve it, then execute. One successful operator is a signal, not a base rate. Seek counter-evidence.
 
----
+### Proof separation
 
-## Change path
+Never blend:
 
-Use the shortest safe lifecycle proportional to risk.
+- Opportunity Score — structural attractiveness of the business;
+- Niche Score — attractiveness of the target market;
+- External Market Proof (EMP0-EMP4) — what the real market proves;
+- Revenue Blueprint Score — deeper Business x Niche underwriting;
+- DRF Proof (P0-P6) — what DRF has actually achieved.
 
-**Simple-file fast path:** only for a low-risk reversible factual Markdown/checklist correction that does not materially alter opportunity/niche evidence, scores, commercial design, proof, Stage, Capital, Return or V3.
+Strong external proof can support desk underwriting but cannot itself award DRF P3-P6.
+
+## Mandatory Layer 3 / V3 close-out
+
+Do not close material opportunity/niche research while decision-relevant evidence is stranded only in a business folder, research file or run log.
+
+Required order:
 
 ```text
-Issue → direct file change on main → verify → close
+current evidence / dossier
+→ specialised register(s) whose field families changed
+→ review parent row in businesses/PORTFOLIO-V3.md
+→ A. update businesses/PORTFOLIO-V3.md last when founder-facing fields changed
+   OR
+→ B. record evidence-backed NO FIELD CHANGE in businesses/V3-RECONCILIATIONS.md
+→ validation
+→ close Issue/run
 ```
 
-**Standard path:** code, Actions, automation, Skills, architecture/governance, security and all material opportunity/niche changes.
+Do not manufacture score/freshness changes merely to touch V3.
 
-```text
-Issue → issue-linked branch → focused changes → PR → checks/review → merge → verify
-```
+## GitHub execution control
 
----
+Use the repository's proportional GitHub workflow:
 
-## Universal commercial and evidence rules
+- small/reversible work: bounded Issue + direct verified change where appropriate;
+- standard multi-file/code/automation work: Issue → branch → PR → checks/review → merge;
+- genuine multi-stage programmes: Master Issue + linked Stage Issues.
 
-1. Prefer **SELL / USE / INTEGRATE / AUTOMATE / BUILD**.
-2. Research successful comparable businesses before invention.
-3. Do not build infrastructure without a current commercial/operating blocker.
-4. Existing warm assets/channels precede paid acquisition unless evidence says otherwise.
-5. Every active opportunity needs one Next Proof/action.
-6. Use deterministic automation for certainty; agents for judgement.
-7. Keep models/vendors replaceable unless the model/vendor is the product.
-8. Separate verified fact, credible estimate, inference, External Market Proof and DRF actual.
-9. Never invent market proof, customer results, deployment, revenue, financial actuals or test results.
-10. Installed/authorised/connected is not proof that an operation works.
-11. Never commit credentials, tokens, keys, customer secrets, payment data or unapproved personal data.
-12. Repeated operating lessons must improve the owning Skill instead of spawning parallel instruction files.
+Before writes, read the latest file/Issue/PR state and assume another agent may be working concurrently. Preserve newer unrelated work.
 
----
+Every substantive Issue must be sufficient for a fresh agent to continue without chat history: objective, context, scope, implementation checklist, verification checklist, acceptance criteria and dependencies where material.
 
-## Founder boundary
+## Research discipline
 
-Escalate for genuine business decisions, material recurring cost/capital release, destructive changes, security/authentication changes, irreversible architecture, legal/regulatory impact, material pricing/guarantees or significant financial/reputation commitments.
+- Use current external research when facts can change.
+- Separate verified fact, credible estimate, inference, DRF actual and missing evidence.
+- Record source dates and material source limitations.
+- Missing research is `Pending`, not zero and not negative evidence.
+- Do not treat social hype, one viral post or one exceptional operator as category proof.
+- For AI-heavy delivery, distinguish technical capability from sustained production economics.
 
-Do not escalate routine research, calculations, Skill routing, reversible implementation or conclusions already governed by the owning Skill.
+## Approval boundaries
+
+Founder approval is required before:
+
+- releasing/increasing capital;
+- paid advertising/external spend;
+- contacting prospects/customers;
+- publishing new public claims/listings;
+- accepting legal/platform terms;
+- exposing customer/personal data;
+- material guarantees or commercial commitments;
+- destructive business/data actions outside an already-approved repository migration scope.
+
+Research, scoring, repository reconciliation and recommendations may proceed within current permissions.
+
+## Business identity rule
+
+A business opportunity is the service/product/measurable outcome and pain solved. A vendor, AI model, CRM, channel or delivery rail is normally replaceable.
+
+Do not create duplicate parent businesses merely because delivery changes between HighLevel, HubSpot, WhatsApp providers, Grok Bot, ChatGPT, Claude or another system.
+
+Canonical deployment lens:
+
+`Outcome x Niche x Customer Channel x System of Record x Agent Layer`
+
+## Dashboard distinction
+
+Dashboard Version 3 is the website synthesis of all three workflow layers. Dashboard V3 is **not** Workflow Layer 3. Dashboard Versions 2 and 1 are preserved as interface evolution history.
+
+Business truth first; dashboard last.
+
+## Skill self-improvement rule
+
+When work reveals a reusable improvement:
+
+1. identify the owning Skill;
+2. update that Skill's `SKILL.md`, `references/`, `scripts/` or `assets/` as appropriate;
+3. validate the Skill/repository;
+4. do not create a parallel loose template/workflow/prompt/SOP.
+
+A one-off business fact belongs in business/research truth, not in a Skill. A repeatable operating lesson belongs in the owning Skill.
