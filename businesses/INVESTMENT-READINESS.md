@@ -18,10 +18,10 @@ The current decision format is:
 
 > **Business opportunity × best scored niche · Opportunity Score __/100 · RBS __/100 · Niche __/100 · DRF Proof P_ · Stage ______ · Capital unlocked $_____ · Return ______**
 
-Canonical workflow: `workflows/drf-opportunity-factory.md`  
-Canonical underwriting standard: `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`
+Canonical operating Skill: `skills/drf-opportunity-factory/SKILL.md`  
+Canonical underwriting standard: `skills/drf-opportunity-factory/references/commercial-underwriting-proof-capital.md`
 
-`workflows/revenue-blueprint-factory.md` is compatibility/history only. RBS, DRF Proof P0–P6, Stage, Capital and Blueprint certification remain subordinate controls inside the Opportunity Factory.
+Legacy Revenue Blueprint Factory workflow references in Git history are compatibility/history only. RBS, DRF Proof P0–P6, Stage, Capital and Blueprint certification remain subordinate controls inside the Opportunity Factory.
 
 ### Outcome × niche × channel rule
 
@@ -119,7 +119,7 @@ Rebuild only after the faster lanes are operating or when new evidence materiall
 
 - Do not create 27 Issues before execution starts.
 - Open one Issue when an opportunity enters active rebuild.
-- Use the current `knowledge/templates/business-opportunity-research.md` / Opportunity Factory structure; do not treat the old RBF workflow as a competing route.
+- Use `skills/drf-opportunity-factory/SKILL.md` and its `references/business-case-output-contract.md` structure; do not treat the old RBF workflow as a competing route.
 - Preserve old research as source history.
 - Define the customer-facing **result/promise before vendor/platform implementation**.
 - For digital products, treat marketplaces/storefronts as a **channel portfolio**, not the business definition.
@@ -128,7 +128,7 @@ Rebuild only after the faster lanes are operating or when new evidence materiall
 - Capital remains `$0` until the required proof gate unlocks it.
 - Update the return profile from the canonical workbook when the stage requires it.
 - Re-rank only after a meaningful cohort of opportunities has been rebuilt; do not compare RBS directly with Opportunity Score.
-- Finish every material update through the mandatory Layer 3 / V3 close-out contract in `knowledge/architecture/drf-v3-writeback-contract.md`.
+- Finish every material update through the mandatory Layer 3 / V3 close-out contract in `skills/drf-opportunity-factory/references/v3-writeback.md`.
 
 ## Completion definition
 
