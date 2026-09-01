@@ -85,16 +85,36 @@ Keep deterministic workflow for timing/routing. Use AI only where conversation m
 | Operational, legal and platform risk | 5 | 8.0 | 4.0 |
 | **Total** | **100** |  | **88.0** |
 
+## P2 comparative backtest
+
+This is a **stress test, not a forecast**. It uses a mid-range recurring fee of **AED2,000/month** and a notional **AED150/hour** internal delivery-cost rate to stress support labour. Messaging/automation cost is modelled conservatively rather than assuming free/unlimited usage. Actual DRF cost and clinic contribution replace these assumptions at P3/P4.
+
+| Scenario | Messaging/AI/tool cost | Support/QA | Notional labour | Fully loaded monthly direct cost | Contribution on AED2,000/month |
+|---|---:|---:|---:|---:|---:|
+| Downside | AED800 | 8 h | AED1,200 | AED2,000 | **AED0** |
+| Base | AED500 | 4 h | AED600 | AED1,100 | **AED900** |
+| Upside | AED250 | 2 h | AED300 | AED550 | **AED1,450** |
+
+### Setup stress test
+
+At a mid-range **AED4,000 setup fee**, 8 hours of workflow/configuration/QA at the AED150/h stress rate plus AED300 of testing/tool cost equals about **AED1,500** direct cost, leaving about **AED2,500** contribution before overhead.
+
+### Break-even and clinic-value sensitivity
+
+- **DRF recurring break-even:** direct delivery cost must remain at or below **AED2,000/month** at the tested fee.
+- With AED500 recurring tooling, break-even support is about **10 hours/month** at the notional AED150/h rate.
+- **Clinic economic break-even:** incremental gross contribution generated/protected must exceed the monthly fee + direct usage + any material clinic handling cost.
+- Illustratively, if one incremental completed appointment/treatment contributes AED500 / AED1,000 / AED2,000 gross profit, a AED2,000 monthly fee requires about **4 / 2 / 1** incremental completed outcomes before usage and clinic effort. These are sensitivity points, not treatment-value or conversion claims.
+
+### Maximum downside
+
+- No paid advertising is required to test this conversion overlay because it acts on the clinic's existing inbound demand.
+- New capital remains capped at **US$3,000** and should be spent only where it buys evidence.
+- In the stressed downside, recurring contribution falls to zero rather than requiring a large cash burn; the main failure mode is excessive support/complexity or no measurable local uplift.
+
 ## Return profile
 
-Exact Dubai clinic cash return remains **Pending live baseline/outcome data**.
-
-Known underwriting:
-
-- messaging/automation cost is low relative to high-value appointment funnels;
-- external cases show material appointment/lead recovery is possible across service categories;
-- fully loaded economics depend mainly on lead volume, incremental booking/show lift, support and downstream treatment contribution;
-- maximum test capital remains **US$3,000**.
+Exact Dubai clinic annual cash return remains **Pending live baseline/outcome data**, but the base/upside model is contribution-positive and the downside has a clear break-even boundary.
 
 ## DRF Proof
 
@@ -105,7 +125,8 @@ Deserved because:
 - EMP3 spans multiple current service/automotive operators with measured missed-lead/appointment outcomes;
 - Dubai aesthetics is an 88/100 selected niche with high lead value and strong response-speed logic;
 - offer, price, GTM, delivery, risk controls and measurement architecture are defined;
-- cost/value logic is strong without assuming an arbitrary uplift percentage.
+- downside/base/upside cost, setup economics, break-even, maximum downside and transferability are documented;
+- the model survives a conservative base stress test without assuming a particular conversion uplift.
 
 Not P3 because DRF has not yet shown paid incremental booking/contribution uplift in a UAE clinic.
 
