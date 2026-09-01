@@ -24,6 +24,10 @@ Do not recreate a global knowledge hierarchy, root AI workflow library, global t
 
 Natural-language shorthand such as **“new business opportunity,” “Revenue Factory intake,” “run RF A-Z,” “follow the Revenue Factory instructions,”** or **“complete market intelligence A-Z”** means: invoke the DRF Opportunity Factory Skill.
 
+## Navigation integrity
+
+All outbound routing follows canonical navigation integrity ([`tbhrc/skills#18`](https://github.com/tbhrc/skills/issues/18)): when DRF routes an agent to another Skill, repository or system, the destination must expose a practical return or onward route; unexplained one-way dead ends are architecture defects.
+
 ## Canonical domain truth
 
 - `businesses/` — current business/opportunity truth and founder registers.
