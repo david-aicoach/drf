@@ -194,28 +194,41 @@ def validate_ci(errors: list[str]) -> None:
 
 
 def validate_active_paths(errors: list[str]) -> None:
-    active_files = [
+    # Only operating routers/docs are scanned here. Data registers and historical
+    # evidence may retain legacy path text as provenance without acting as runtime instructions.
+    active_routers = [
         "AGENTS.md",
         "README.md",
         ".github/copilot-instructions.md",
         "skills/README.md",
         "businesses/README.md",
-        "businesses/NICHES.md",
-        "businesses/INVESTMENT-READINESS.md",
         "businesses/business-blueprints/README.md",
         "research/recurring-intelligence/README.md",
         "software/dashboard-v3/README.md",
-        "index.html",
     ]
     forbidden_operational_paths = ["knowledge/", "workflows/drf-", "workflows/revenue-blueprint"]
-    for relative in active_files:
+    for relative in active_routers:
         path = ROOT / relative
         if not path.is_file():
             continue
         text = path.read_text(encoding="utf-8")
         for marker in forbidden_operational_paths:
             if marker in text:
-                fail(errors, f"Active operating file still points to retired global path {marker!r}: {relative}")
+                fail(errors, f"Active operating router still points to retired global path {marker!r}: {relative}")
+
+    # index.html is preserved as product source; its already-loaded integrity script
+    # rewrites legacy source links to Skill destinations at runtime so the live site
+    # cannot send founders to deleted operating folders.
+    require_markers(
+        errors,
+        "assets/v3-dashboard-proof-counts.js",
+        [
+            "rewriteSkillSourceLinks",
+            "/skills/drf-opportunity-factory/SKILL.md",
+            "/skills/drf-recurring-intelligence/SKILL.md",
+            "/skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md",
+        ],
+    )
 
 
 def validate_filenames_and_secrets(errors: list[str]) -> None:
