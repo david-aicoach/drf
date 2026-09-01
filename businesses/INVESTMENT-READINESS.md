@@ -2,15 +2,15 @@
 
 **Status:** Canonical migration and investment-gate register  
 **Version:** 1.4  
-**Date:** 31 August 2026  
+**Date:** 1 September 2026  
 **Governing issue:** #60  
-**Latest targeted rebuild:** #72 — duplicate website-template parent absorbed into Business Blueprints product taxonomy  
+**Latest targeted rebuild:** Autonomous AI Revenue Operations vendor-neutral parent re-score — 1 September 2026  
 **Source portfolio:** `businesses/OPPORTUNITIES.md`  
 **Niche source:** `businesses/NICHES.md`
 
 ## Important
 
-The existing Opportunity Scores were created under the v1.5 structural-screening framework. They remain useful history, but they are **not investor-readiness ratings**.
+The existing Opportunity Scores were created under the structural-screening framework. They remain useful history, but they are **not investor-readiness ratings**.
 
 Until an opportunity is rebuilt through RBF-7, read it as:
 
@@ -63,13 +63,13 @@ The niche score remains separate from RBS. A niche can be attractive while the d
 | **2** | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | Give a narrow vertical a ready-to-run acquisition, CRM and lifecycle operating system with recurring service revenue. | **89** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild vertical price, MRR, onboarding, churn and platform dependence. |
 | **2** | **Vertical AI Operating Systems & Agent Integration Packs** | Automate one valuable vertical operating workflow end-to-end with a repeatable implementation pack. | **88** | Pending | Pending | RESEARCH | $0 | Pending | No | Define one sellable pack and prove second-client reuse. |
 | **2** | **Recruitment OS / Hiring Intelligence SaaS** | Turn fragmented hiring activity into faster evidence-backed shortlist and hiring decisions. | **87** | Pending | Pending | RESEARCH | $0 | Pending | No | Isolate paid intelligence module from generic ATS scope. |
+| **2** | **Autonomous AI Revenue Operations Business-in-a-Box** | Productise bounded revenue-producing agent workflows that acquire, process or protect revenue while keeping fully loaded cost below customer value. | **87** | Pending | Pending | RESEARCH | $0 | Pending | No | Run one vendor-neutral high-value workflow, measure cost/success/human recovery, then prove second-client reuse and managed-operations renewal. |
 | **2** | **Reputation & Local Visibility Engine** | Generate more trusted local visibility, reviews and attributable enquiries for local businesses. | **85** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild attached-module price, lead impact, retention and paid growth. |
 | **2** | **White-Label Hiring Portal for Employers/Agencies** | Give agencies/employers a branded candidate workflow without requiring them to build an ATS. | **85** | Pending | Pending | RESEARCH | $0 | Pending | No | Test paid delivery wrapper without ATS rebuild. |
 | **2** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | Give employers and recruiters current regional talent and salary intelligence as a recurring decision product. | **85** | Pending | Pending | RESEARCH | $0 | Pending | No | Verify lawful data, price, buyer demand and recurring update cost. |
 | **2** | **Niche API & Data Product Factory** | Sell one recurring high-value function or data feed that removes a costly information/workflow gap. | **84** | Pending | Pending | RESEARCH | $0 | Pending | No | Identify one paid recurring function/data problem before factory scope. |
 | **2** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | Own ranked local demand assets and rent/sell qualified lead flow for recurring cash. | **84** | Pending | Pending | RESEARCH | $0 | Pending | No | Build site-level monthly cash, ranking delay, lead and renter economics. |
 | **3** | **Executive Career Accelerator / Job Search Platform** | Help professionals secure stronger roles faster through a productised career-search system. | **81** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild upfront/recurring/upsell mix and finite-programme economics. |
-| **3** | **Grok Bot AI-First Revenue Operations Business-in-a-Box** | Complete bounded cross-system revenue work with agent labour while keeping cost per successful outcome below customer value. | **81** | Pending | Pending | RESEARCH | $0 | Pending | No | Define the outcome business; benchmark cost per successful production job. |
 | **3** | **Pre-Assessed Talent Pool Subscription** | Give employers faster access to a fresh pool of pre-assessed, consented candidates. | **81** | Pending | Pending | RESEARCH | $0 | Pending | No | Model consent, freshness, supply density, employer demand and churn. |
 | **3** | **ChatGPT Plugin / App Factory** | Launch monetisable AI apps where a recurring backend or transaction stream survives beyond the app build. | **79** | Pending | Pending | RESEARCH | $0 | Pending | No | Define the recurring backend/revenue stream before app production. |
 | **3** | **HowToFindAJobInUAE Media + Recruitment Funnel** | Convert UAE job-search audience attention into career, recruitment and partner revenue. | **78** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild audience-to-cash funnel, content cost, conversion and time to revenue. |
@@ -96,6 +96,7 @@ For renamed outcome-first labels, use the following joins during migration:
 - `Enquiry-to-Revenue Control` ↔ `WhatsApp + CRM Revenue Core`
 - `Fast Quote-to-Cash System` ↔ `Instant Quote Generator & Quote-to-Cash System`
 - `Business Blueprints` ↔ underlying proven Blueprint candidates; distribution channels are selected separately and do not become the niche.
+- `Autonomous AI Revenue Operations Business-in-a-Box` ↔ legacy folder `grok-bot-ai-revenue-operations`; Grok Bot remains a delivery rail, not the parent opportunity.
 
 ---
 
@@ -125,7 +126,7 @@ Rebuild only after the faster lanes are operating or when new evidence materiall
 - Replace `Pending` only with sourced work.
 - Capital remains `$0` until the required proof gate unlocks it.
 - Update the return profile from the canonical workbook when the stage requires it.
-- Re-rank only after a meaningful cohort of opportunities has been rebuilt; do not compare new RBS scores directly with old v1.5 scores.
+- Re-rank only after a meaningful cohort of opportunities has been rebuilt; do not compare new RBS scores directly with old structural scores.
 
 ## Completion definition
 
