@@ -11,10 +11,23 @@ Use a workflow when work crosses multiple stages or decision gates. Do not creat
 ```text
 Layer 1 — Opportunity Discovery & Structural Selection
 → Layer 2 — Niche Selection & Commercial Underwriting
-→ Layer 3 — Structured Factory Output
+→ Layer 3 — Structured Factory Output + V3 reconciliation
 → DRF execution progression P3–P6 where authorised
 → optional Business Blueprint packaging
 ```
+
+Layer 3 close-out is mandatory. A material opportunity/niche update must either:
+
+- update `businesses/PORTFOLIO-V3.md` last because founder-facing fields changed; or
+- record `NO FIELD CHANGE` in `businesses/V3-RECONCILIATIONS.md`.
+
+Canonical write-back contract:
+
+- [`../knowledge/architecture/drf-v3-writeback-contract.md`](../knowledge/architecture/drf-v3-writeback-contract.md)
+
+Close-out checklist:
+
+- [`../knowledge/templates/drf-v3-closeout-checklist.md`](../knowledge/templates/drf-v3-closeout-checklist.md)
 
 Required reusable prompt:
 
@@ -57,11 +70,11 @@ Business Opportunity
 → Business × Niche offer / pricing / GTM / delivery / RBS / economics
 → DRF Proof + Stage + Capital + Next Proof
 → structured Layer 3 business case
-→ PORTFOLIO-V3 joined register
+→ PORTFOLIO-V3 update or explicit NO FIELD CHANGE reconciliation
 → Dashboard Version 3
 → execute / scale / optionally package as Blueprint
 ```
 
 ## Critical terminology
 
-Dashboard Version 3 is the website. Workflow Layer 3 is one opportunity's structured business-case output. Dashboard V3 combines all three workflow layers.
+Dashboard Version 3 is the website. Workflow Layer 3 is one opportunity's structured business-case output plus its V3 reconciliation. Dashboard V3 combines all three workflow layers.
