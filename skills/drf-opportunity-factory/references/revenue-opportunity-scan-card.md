@@ -5,7 +5,7 @@
 **Date:** 31 August 2026  
 **Master programme:** #77  
 **Governing stage:** [77.3] #80  
-**Workflow:** `workflows/drf-opportunity-factory.md`
+**Owning Skill:** `skills/drf-opportunity-factory/SKILL.md`
 
 > Use this card to screen many discoveries cheaply. It answers only **Reject / Hold / Advance**. It does not calculate a final RBS, authorise capital, award DRF Proof beyond P0 or create a full business folder by default.
 
@@ -148,9 +148,9 @@ Use the configured threshold version. Default guidance:
 
 ## Filing rule
 
-- Rejected candidates remain in the future discovery/rejection log; do not clutter the main portfolio.
+- Rejected candidates remain in the discovery/rejection log; do not clutter the main portfolio.
 - Held candidates retain the trigger/evidence gap.
-- Advanced candidates enter the full `business-opportunity-research.md` dossier and the canonical workflow.
+- Advanced candidates invoke `skills/drf-opportunity-factory/SKILL.md` for the full dossier and three-layer execution route.
 
 ---
 
