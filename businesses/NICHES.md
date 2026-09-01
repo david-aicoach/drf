@@ -3,10 +3,10 @@
 **Status:** Canonical niche register  
 **Version:** 1.8  
 **Date:** 1 September 2026  
-**Scoring framework:** `knowledge/guidelines/niche-attractiveness-scoring-framework.md`  
+**Scoring framework:** `skills/drf-opportunity-factory/references/niche-scoring.md`  
 **Governing issues:** #26, #28, #40, #41, #44, #46, #113  
 **Canonical evidence library:** `research/niches/README.md`  
-**Comprehensive dossier standard:** `research/niches/_research-standard-v3.md`
+**Comprehensive dossier standard:** `skills/drf-opportunity-factory/references/niche-research-standard.md`
 
 ## Purpose
 

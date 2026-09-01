@@ -1,8 +1,8 @@
 # DRF Business Opportunities Index
 
 **Status:** Canonical portfolio ranking  
-**Framework:** `knowledge/guidelines/business-opportunity-scoring-framework.md` v2.0  
-**Niche layer:** `knowledge/guidelines/niche-attractiveness-scoring-framework.md` v1.2  
+**Framework:** `skills/drf-opportunity-factory/references/business-opportunity-scoring.md` v2.0  
+**Niche layer:** `skills/drf-opportunity-factory/references/niche-scoring.md` v1.2  
 **Base portfolio recalculation:** 29 August 2026 — Issue #48  
 **Latest targeted evidence update:** 1 September 2026 — Autonomous AI Revenue Operations vendor-neutral parent re-score  
 **Research basis:** 27 current parent-opportunity dossiers + all canonical niche dossiers at Comprehensive v3, plus subsequent opportunity-specific evidence updates

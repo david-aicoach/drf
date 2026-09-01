@@ -5,7 +5,7 @@
 **Date:** 1 September 2026  
 **Master programme:** #77  
 **Governing stage:** [77.4] #81  
-**Data contract:** `knowledge/architecture/drf-v3-portfolio-data-contract.md`  
+**Data contract:** `skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md`  
 **Source snapshot:** `OPPORTUNITIES.md`, `NICHES.md`, `INVESTMENT-READINESS.md` and current business dossiers as at 1 September 2026  
 **Current parent opportunity count:** 27
 
