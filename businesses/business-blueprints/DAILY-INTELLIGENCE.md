@@ -2,10 +2,12 @@
 
 **Status:** Active scheduled research profile  
 **Date:** 1 September 2026  
-**Issue:** #112  
+**Issue:** #115  
 **Parent opportunity:** `businesses/business-blueprints/`  
 **Scheduler:** ChatGPT Web daily condition-watch automation  
-**Governing workflow:** `workflows/drf-recurring-intelligence-loops.md`  
+**Canonical opportunity workflow:** `workflows/drf-opportunity-factory.md`  
+**Recurring-loop contract:** `workflows/drf-recurring-intelligence-loops.md`  
+**Layer 3 write-back:** `knowledge/architecture/drf-v3-writeback-contract.md`  
 **Configuration:** `knowledge/guidelines/drf-recurring-intelligence-configuration.md`
 
 ## Purpose
@@ -14,14 +16,19 @@ Run one integrated daily intelligence pass over the **Business Blueprints parent
 
 Whop is one distribution channel inside Business Blueprints. Gumroad, Contra, Notion Marketplace, Lemon Squeezy, Payhip, Shopify, Framer, Webflow, PromptBase, developer/API marketplaces, owned storefronts and newly emerging relevant channels belong to the same parent-opportunity research loop.
 
-The automation is useful only when research is connected to durable DRF execution:
+The automation must use the current DRF recipe:
 
 ```text
-research current evidence
-→ compare with current DRF canon
-→ decide whether anything materially changes
-→ write the evidence/decision into GitHub
-→ verify the write
+current DRF canon
+→ successful comparable businesses + counter-evidence
+→ External Market Proof + transferability
+→ affected Opportunity/RBS/Stage/Next Proof underwriting
+→ detailed source first
+→ specialised registers when fields changed
+→ Workflow Layer 3
+→ PORTFOLIO-V3.md LAST or explicit V3 NO FIELD CHANGE
+→ REFRESH-RUNS.md
+→ verify once
 → notify David only when material or blocked
 ```
 
@@ -36,23 +43,100 @@ At the start of every scheduled run, use the connected GitHub integration and re
 Read at minimum:
 
 1. `AGENTS.md`
-2. `businesses/business-blueprints/README.md`
-3. `businesses/business-blueprints/RESEARCH.md`
-4. `businesses/business-blueprints/RBF-ASSESSMENT.md`
-5. `businesses/business-blueprints/DISTRIBUTION-CHANNELS.md`
-6. `businesses/business-blueprints/PRODUCT-TYPES.md`
-7. relevant files under `businesses/business-blueprints/channels/`
-8. `knowledge/guidelines/business-opportunity-scoring-framework.md`
-9. `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`
-10. `knowledge/guidelines/drf-recurring-intelligence-configuration.md`
-11. relevant Business Blueprints entries in `businesses/OPPORTUNITIES.md`, `businesses/INVESTMENT-READINESS.md` and `businesses/PORTFOLIO-V3.md`
-12. `research/recurring-intelligence/REFRESH-RUNS.md`
+2. `workflows/drf-opportunity-factory.md`
+3. `knowledge/templates/business-opportunity-research.md`
+4. `knowledge/architecture/drf-v3-writeback-contract.md`
+5. `businesses/business-blueprints/README.md`
+6. `businesses/business-blueprints/RESEARCH.md`
+7. `businesses/business-blueprints/RBF-ASSESSMENT.md`
+8. `businesses/business-blueprints/DISTRIBUTION-CHANNELS.md`
+9. `businesses/business-blueprints/PRODUCT-TYPES.md`
+10. relevant files under `businesses/business-blueprints/channels/`
+11. `knowledge/guidelines/business-opportunity-scoring-framework.md`
+12. `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`
+13. `knowledge/guidelines/drf-recurring-intelligence-configuration.md`
+14. relevant Business Blueprints entries in `businesses/OPPORTUNITIES.md`, `businesses/INVESTMENT-READINESS.md` and `businesses/PORTFOLIO-V3.md`
+15. `research/recurring-intelligence/REFRESH-RUNS.md`
 
-Do not carry an old channel taxonomy, score or conclusion forward merely because it exists in the automation prompt.
+Do not carry an old taxonomy, score, proof state, EMP state, price, Next Proof or channel assumption forward merely because it exists in the automation prompt.
 
 ---
 
-# 2. Daily research scope
+# 2. Non-negotiable evidence recipe — copy before invent
+
+The daily run must treat **successful existing businesses as first-class evidence**, not as optional inspiration.
+
+## Successful comparable operators
+
+Research multiple independent materially similar businesses where practical. Capture:
+
+- operator/business;
+- product/category/niche/geography;
+- exact offer and promise;
+- one-time/setup price;
+- recurring/usage/licence/commission/royalty pricing;
+- acquisition channels, funnel and CTA;
+- public sales, revenue, customers, reviews, transactions, longevity, hiring or expansion evidence;
+- onboarding/delivery pattern;
+- repeat/retention or recurring-value pattern;
+- founder/audience/platform advantages that may not transfer;
+- source date and evidence class.
+
+Do not use one exceptional seller as the base rate.
+
+## Counter-evidence
+
+Actively search for:
+
+- failed or closed products/operators;
+- poor conversion despite traffic;
+- refund/churn/support complaints;
+- commoditisation/copying;
+- weak margins or platform dependence;
+- acquisition dependence on a large personal audience;
+- legal/IP/policy restrictions;
+- evidence that buyers purchase but do not deploy/use the system.
+
+## External Market Proof
+
+Assign or reassess **EMP0–EMP4 + EMP Confidence** using the current Opportunity Factory.
+
+External evidence is allowed to materially strengthen or weaken:
+
+- Opportunity Score factor evidence;
+- RBS factor evidence;
+- Evidence Confidence;
+- price/commercial model;
+- acquisition/GTM assumptions;
+- delivery architecture;
+- Stage/decision where justified;
+- Next Proof.
+
+But external evidence cannot award DRF P3–P6.
+
+### Critical rule
+
+If **EMP3/EMP4 already proves the broad category**, do **not** wait for iMPLEMENTAi/DRF to internally re-prove that the business model can exist.
+
+Instead:
+
+> **Test only the largest remaining DRF-specific uncertainty.**
+
+Examples:
+
+- exact DRF buyer/ICP transferability;
+- local price acceptance;
+- acquisition channel and CAC;
+- activation/deployment quality;
+- direct support burden;
+- contribution margin;
+- repeatability of DRF's adaptation.
+
+Strong external category proof should **shrink the test**, not inflate DRF Proof.
+
+---
+
+# 3. Daily research scope
 
 The daily run must research the **whole commercial opportunity** proportionately. It is not required to rewrite every file every day, but the scan must not be limited to one channel.
 
@@ -60,15 +144,13 @@ The daily run must research the **whole commercial opportunity** proportionately
 
 Research:
 
-- current demand for proof-backed business systems, launch kits, operating systems, templates, digital business assets and deployable businesses;
+- successful comparable Business Blueprint / business-in-a-box / operating-system / template-system / snapshot businesses;
 - buyer willingness to pay and current pricing bands;
-- successful comparable sellers/operators and their offers;
+- actual sales, creator revenue, customers, reviews, adoption or transaction evidence where credible;
 - recurring/update/licence economics;
-- actual sales, creator revenue, reviews, adoption or transaction evidence where credible;
 - buyer activation/deployment evidence;
-- failures, refund/churn complaints, commoditisation and support burden.
-
-Do not use one exceptional seller as the market base rate.
+- acquisition patterns used by successful operators;
+- failures, weak conversion, refund/churn complaints, commoditisation and support burden.
 
 ## B. Distribution-channel portfolio
 
@@ -85,28 +167,26 @@ Review current and emerging channels relevant to Business Blueprint product type
 - Webflow Templates;
 - PromptBase;
 - GitHub Marketplace / RapidAPI / specialist software/API channels;
-- other credible new marketplaces or AI-native commerce/discovery surfaces.
+- credible new marketplaces or AI-native commerce/discovery surfaces.
 
 For each material channel change, check:
 
-- eligibility and publication mechanics;
+- eligibility/publication mechanics;
 - fees and payout economics;
-- native marketplace/discovery strength;
-- creator/seller economics;
-- traffic, sales or adoption evidence;
+- discovery strength;
+- seller economics and public traction;
 - affiliate/referral/royalty economics;
 - customer ownership/data portability;
-- listing/product restrictions;
-- AI-generated-content rules;
-- refund/dispute rules;
+- restrictions and AI-content rules;
+- refunds/disputes/support obligations;
 - APIs, CLI, MCP or automation capability;
 - concentration/dependency risk.
 
-A channel is a **revenue endpoint**, not a new parent opportunity unless the payer/outcome/revenue model itself materially differs.
+A channel is a **revenue endpoint**, not a new parent opportunity unless payer/outcome/revenue model materially differs.
 
 ## C. Product formats
 
-Check whether new evidence changes the attractiveness or packaging of:
+Check whether evidence changes the attractiveness or packaging of:
 
 - complete operating-business bundles;
 - website/revenue launch kits;
@@ -117,18 +197,16 @@ Check whether new evidence changes the attractiveness or packaging of:
 - playbook/checklist/document bundles;
 - subscriptions, update clubs or licences.
 
-Product formats stay downstream of the Business Blueprints parent unless the canonical opportunity framework says otherwise.
-
 ## D. SEO and owned discoverability
 
 Research meaningful changes in:
 
-- search demand for the underlying business/problem, not only the phrase `Business Blueprints`;
+- high-intent underlying problem/business queries;
 - search-result competition and rankability;
-- marketplace pages appearing in organic search;
+- marketplace pages in organic search;
 - owned landing-page opportunities;
-- structured data/indexability changes;
-- high-intent queries that can route into specific Blueprint products.
+- structured data/indexability;
+- content/acquisition patterns used by successful comparable sellers.
 
 ## E. AI discovery and agentic commerce
 
@@ -137,9 +215,9 @@ Track material changes in:
 - AI answer-engine/agent discoverability;
 - `llms.txt`, structured content and machine-readable product information;
 - platform APIs/CLI/MCP capabilities;
-- agentic checkout, deployment or business-operation mechanics;
-- browser-native WebMCP developments relevant to owned/deployed Blueprint sites;
-- new AI-native marketplaces or agent purchasing/discovery surfaces.
+- agentic checkout/deployment/operation;
+- browser-native WebMCP relevant to owned/deployed Blueprint sites;
+- AI-native purchasing/discovery surfaces.
 
 Keep **MCP/API/CLI** separate from **WebMCP**. Do not claim native WebMCP support without direct evidence.
 
@@ -149,48 +227,44 @@ Look for evidence affecting:
 
 - direct-sale contribution;
 - recurring revenue quality;
+- price bands;
 - platform fees;
 - CAC/discovery economics;
 - refund/support burden;
 - buyer activation/deployment;
-- recurring channel economics;
 - platform concentration;
 - IP/copying risk;
 - legal/policy/AI-content restrictions;
 - DRF actual traffic, buyers, deployment, revenue, support and retention when available.
 
-External market evidence may change scores or EMP. It **cannot award DRF P3–P6** without qualifying DRF actuals.
-
 ---
 
-# 3. Material-change test
+# 4. Material-change test
 
-Use the canonical recurring-intelligence configuration.
+Use the canonical recurring-intelligence configuration and Opportunity Factory.
 
-A finding is normally material when it can alter at least one of:
+A finding is material when it can alter at least one of:
 
 - Opportunity Score by **2+ points**;
 - RBS by **2+ points**;
-- EMP;
+- EMP or EMP Confidence materially;
 - DRF Proof;
 - Stage or Capital;
 - best Blueprint candidate/niche;
 - product format;
 - channel priority/routing;
-- price or revenue model;
+- price/revenue model;
 - acquisition/discovery strategy;
 - delivery/activation architecture;
 - legal/platform viability;
 - Next Proof;
-- evidence confidence/freshness in a way that changes the decision.
+- evidence freshness/confidence in a decision-relevant way.
 
-Smaller useful evidence can be preserved without changing the headline score.
-
-A Whop improvement does **not automatically increase the parent Business Blueprints score**. Assess the effect on the multi-channel parent business.
+A Whop improvement does **not automatically increase the parent Business Blueprints score**. A strong external operator does not automatically establish EMP3/EMP4. Use breadth, quality, duration and transferability.
 
 ---
 
-# 4. Mandatory GitHub write-back
+# 5. Mandatory GitHub write-back
 
 Every completed scheduled run must leave durable evidence in DRF.
 
@@ -200,115 +274,116 @@ Append one concise run row to:
 
 `research/recurring-intelligence/REFRESH-RUNS.md`
 
-Use scope `Business Blueprints` and outcome `UNCHANGED`, `STRONGER`, `WEAKER`, `REPOSITION`, `OBSOLETE`, `CONFLICT`, `PROOF ADVANCED` or `PROOF REGRESSED`.
+Use scope `Business Blueprints` and the canonical refresh outcome value.
 
-A no-change run should **not** churn parent score/dossier files merely to change a date.
+A no-change run should not churn dossier/score files merely to change a date.
 
-## Material channel-specific evidence
+## Detailed evidence first
 
-Update the detailed channel evidence first:
+Material evidence belongs first in the most authoritative detailed source:
 
-- existing `businesses/business-blueprints/channels/<channel>/...` files where present;
-- `businesses/business-blueprints/DISTRIBUTION-CHANNELS.md` when channel priority, economics or routing changes.
+- `businesses/business-blueprints/research/` for a dated parent refresh when separately traceable evidence is warranted;
+- `businesses/business-blueprints/channels/<channel>/` for channel-specific evidence;
+- `businesses/business-blueprints/RESEARCH.md` for current parent evidence;
+- `businesses/business-blueprints/DISTRIBUTION-CHANNELS.md` when channel routing/economics changes;
+- `PRODUCT-TYPES.md` only when product taxonomy materially changes.
 
-Create a new channel folder only when the channel has enough durable material to justify it. Do not create ornamental structure.
+## Layer 1 / EMP changes
 
-## Material parent-level evidence
+When Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness, EMP, EMP Confidence or Layer-1 decision changes:
 
-Update:
+1. update detailed parent evidence first;
+2. update `businesses/OPPORTUNITIES.md` only if its represented field family changes;
+3. update `businesses/business-blueprints/README.md` when founder summary changes;
+4. complete Layer 3/V3 reconciliation.
 
-`businesses/business-blueprints/RESEARCH.md`
+## RBS / Proof / Stage / Capital / Next Proof changes
 
-If a distinct historical evidence record is needed, create a dated file under:
-
-`businesses/business-blueprints/research/`
-
-Only do this for genuinely material evidence that should remain separately traceable.
-
-## Product-format change
-
-Update:
-
-- `businesses/business-blueprints/PRODUCT-TYPES.md`
-- the relevant file under `businesses/business-blueprints/product-types/`
-
-only when the product taxonomy/economics materially changes.
-
-## Opportunity Score / Layer 1 change
-
-When the canonical Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness, EMP or Layer-1 decision changes:
-
-1. update the detailed parent research first;
-2. update the Business Blueprints entry in `businesses/OPPORTUNITIES.md`;
-3. update `businesses/business-blueprints/README.md` if the current founder summary/decision changes;
-4. reconcile `businesses/PORTFOLIO-V3.md` **last**.
-
-Preserve before/after values and the evidence/rationale.
-
-## RBS / Proof / Stage / Capital change
-
-When the Revenue Blueprint Score, Return Profile, DRF Proof, Stage, Capital or Next Proof changes:
+When RBS, Return Profile, DRF Proof, Stage, Capital or Next Proof changes:
 
 1. update `businesses/business-blueprints/RBF-ASSESSMENT.md` first;
-2. update `businesses/INVESTMENT-READINESS.md` where applicable;
-3. update `businesses/business-blueprints/README.md` if the current decision changes;
-4. reconcile `businesses/PORTFOLIO-V3.md` **last**.
+2. update `businesses/INVESTMENT-READINESS.md` only when its represented field family needs correction;
+3. update `businesses/business-blueprints/README.md` when the founder decision changes;
+4. complete Layer 3/V3 reconciliation.
 
 Never award P3–P6 from external desk research.
 
-## Cross-marketplace evidence
+---
 
-When the finding materially affects more than Business Blueprints, update the reusable master research where appropriate, including:
+# 6. Mandatory Workflow Layer 3 close-out
 
-`research/ai-first-digital-marketplaces-and-service-platforms.md`
+Every material run must finish under:
 
-Do not duplicate the same evidence across files without a clear canonical reason.
+`knowledge/architecture/drf-v3-writeback-contract.md`
+
+Choose exactly one:
+
+### A. V3 FIELDS CHANGED
+
+Update `businesses/PORTFOLIO-V3.md` **last** after authoritative source/register changes.
+
+Examples include changed:
+
+- EMP / EMP Confidence;
+- price/commercial model;
+- GTM;
+- RBS/Proof/Stage/Capital;
+- Next Proof;
+- evidence freshness;
+- current founder read.
+
+### B. V3 NO FIELD CHANGE
+
+If material research changes detailed evidence but no founder field should change, append the explicit reconciliation to:
+
+`businesses/V3-RECONCILIATIONS.md`
+
+Do not manufacture a no-op `PORTFOLIO-V3.md` edit.
+
+A material research Issue/run is **not complete** until this Layer 3 decision is durable.
 
 ---
 
-# 5. Verification and notification gate
-
-A scheduled run is not complete until repository persistence is verified once.
+# 7. Verification and notification gate
 
 Required order:
 
 ```text
-research
+research / external proof
 → decide
-→ GitHub write(s)
-→ re-read changed path(s)
-→ append/verify REFRESH-RUNS row
+→ detailed GitHub write(s)
+→ specialised register(s) when needed
+→ Layer 3/V3 reconciliation
+→ REFRESH-RUNS row
+→ re-read changed paths once
 → notify if required
 ```
 
-## Notify David only when
+Notify David only when:
 
-- a material decision/economic/market change occurred and is already landed in GitHub;
-- a score, RBS, EMP, Proof, Stage, channel priority or Next Proof materially changed;
-- a major new channel/opportunity or material risk emerged;
-- contradictory authoritative evidence creates `CONFLICT`;
-- GitHub persistence failed or the automation is otherwise blocked.
+- a material market/economic/EMP/decision change is already landed in GitHub;
+- score, RBS, EMP, Proof, Stage, channel priority, price or Next Proof materially changed;
+- a major new channel/opportunity/risk emerged;
+- authoritative evidence conflicts;
+- GitHub persistence/validation is blocked.
 
-## Do not notify when
+If nothing material changed, record `UNCHANGED` and do not notify.
 
-- the run completed successfully;
-- the run was recorded in `REFRESH-RUNS.md`;
-- no material decision changed.
-
-If GitHub write-back fails, **do not describe the research as deployed or complete**. Preserve the last canonical conclusion and report the exact failure.
+If GitHub persistence fails, do not describe the research as deployed or complete.
 
 ---
 
-# 6. Current score boundary
+# 8. Current evidence boundary after first manual run
 
-At creation of this profile:
+As of the first 1 September 2026 manual test:
 
-- Parent Business Blueprints RBS: **82/100**;
+- Opportunity Score: **82/100**;
+- RBS: **82/100**;
+- External Market Proof: **EMP3 Market Proven / 90% confidence**;
 - DRF Proof: **P2 Backtested**;
-- Gate: **FORWARD TEST**;
+- Stage: **TEST**;
 - Capital unlocked: **up to $3,000**;
-- Whop-specific channel assessment remains separate from the parent score.
+- initial self-serve price test band: **US$199–399 one-time**;
+- Next Proof: **2 unrelated paid buyers/deposits at a pre-committed price, at least 1 genuine deployment-intent buyer, and at least 1 non-personal-favour acquisition route**, with source/conversion/fees/CAC/support measured where possible.
 
-Current first-party Whop programme verification improves the Whop channel evidence quality but, by itself, does **not** justify raising the multi-platform parent score. Representative buyer conversion, channel contribution, activation, support and retention remain unproven.
-
-The daily automation must use newer repository truth if any of these values change.
+The automation must use newer repository truth when any of these values change.
