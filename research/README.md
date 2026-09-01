@@ -11,6 +11,12 @@ Shared cross-portfolio research and intelligence controls only.
 - Do not keep a second flat copy of opportunity-owned or niche-owned research here. Move the file and update every reference instead.
 - Supporting historical/deep studies may remain separate from the canonical `RESEARCH.md`, but must live inside the owning opportunity or niche folder.
 
+## Current cross-portfolio economics
+
+- [`autonomous-agent-economics-2026-09.md`](./autonomous-agent-economics-2026-09.md) — September 2026 baseline for inference/API pricing, agent runtime/browser costs, agent-native payments, marketplaces/bounties and self-sustaining agent-business economics.
+- [`ai-delivery-economics-portfolio-rescore-2026-08-29.md`](./ai-delivery-economics-portfolio-rescore-2026-08-29.md) — current portfolio re-score establishing cost per successful production outcome and native/deterministic execution before scarce browser/computer-use labour.
+- [`ai-first-digital-marketplaces-and-service-platforms.md`](./ai-first-digital-marketplaces-and-service-platforms.md) — master map of AI-first digital revenue endpoints and marketplaces.
+
 ## Recurring intelligence
 
 `recurring-intelligence/` contains concise navigation/audit logs for:
