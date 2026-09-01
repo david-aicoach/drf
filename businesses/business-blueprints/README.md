@@ -1,10 +1,11 @@
 # Business Blueprints
 
 **Business model:** Digital Product / IP / Multi-Platform Distribution / Optional Recurring Channel Economics / Implementation Upsell  
-**Legacy structural Opportunity Score:** 82/100  
+**Opportunity Score:** **82/100**  
 **Revenue Blueprint Score:** **82/100**  
-**Proof:** **P2 Backtested**  
-**Gate:** **FORWARD TEST**  
+**External Market Proof:** **EMP3 Market Proven · 90% confidence**  
+**DRF Proof:** **P2 Backtested**  
+**Stage:** **TEST**  
 **Capital unlocked:** **up to $3,000**  
 **Investor-ready:** **No**
 
@@ -39,6 +40,30 @@ DOUBLE DOWN / SYNDICATE / RETIRE
 
 The buyer is paying for compressed learning, tested operating logic and deployment assets — not for loyalty to one marketplace.
 
+## External market proof — do not re-prove the category
+
+The 1 September 2026 daily-intelligence test completed the missing External Market Proof review.
+
+**Current conclusion: EMP3 Market Proven / 90% confidence.**
+
+Multiple independent businesses already prove that buyers pay for reusable operating systems, templates, snapshots and business-in-a-box products:
+
+- Thomas Frank — premium Notion operating systems with a founder-reported business around **$100k/month** average and more than **$2m** reported sales over roughly two years;
+- Easlo — current flagship system with **7,069 Gumroad sales** plus a wider paid-system/bundle catalogue;
+- Webflow creator businesses — thousands of template sales and documented revenue/team expansion;
+- Framer — substantial aggregate creator payouts and 100% direct Marketplace earnings to creators;
+- Business Done Better — a reusable HighLevel "smart snapshot" deployed to close to **200 customers** at a **$199/month** core SaaS price;
+- HighLevel Snapshot Marketplace — native one-time/monthly/yearly sales of reusable CRM/workflow configurations;
+- Business in a Box — **20+ years**, **250k+ businesses**, **190+ countries**, **3,000+** ready-made business templates/processes.
+
+This proves the **broad category**, not DRF's exact buyer, price, CAC or deployment outcome.
+
+Current Opportunity Factory rule:
+
+> **Copy before invent. When EMP3/EMP4 proves the broad category, test only the remaining DRF-specific uncertainty.**
+
+Detailed evidence: [`research/business-blueprints-daily-refresh-2026-09-01.md`](./research/business-blueprints-daily-refresh-2026-09-01.md).
+
 ## Commercial hierarchy
 
 The canonical unit is:
@@ -61,15 +86,21 @@ Distribution comes afterwards.
 | **4** | **Implementation / customisation** | Buyer/operator | iMPLEMENTAi deploys, adapts or integrates the Blueprint | Platform-independent service upsell. |
 | **5** | **Underlying service/software expansion** | End customer or operator | Proven DRF outcome modules, managed service or software attach after deployment | Depends on underlying business, not the Blueprint marketplace. |
 
+## Initial test price
+
+Current comparable pricing supports a bounded self-serve test at:
+
+> **US$199–399 one-time** for the core Blueprint, with optional implementation/customisation separate.
+
+This is a **test range**, not proven DRF pricing.
+
+It is anchored by live Blueprint-style offers around $197–199, premium operating-system templates and bundles up to roughly $389 one-time, and reusable B2B system offers around $199/month.
+
 ## Distribution rule — no platform loyalty
 
-DRF already researched the internet as a fragmented distribution layer. The rule is:
+> **Publish the same compatible digital product to every worthwhile allowed endpoint where economics, audience and terms justify the maintenance cost.**
 
-> **Publish the same compatible digital product to every worthwhile allowed endpoint where the economics, audience and terms justify the extra listing/maintenance cost.**
-
-Do **not** artificially restrict a Blueprint to Whop when Gumroad, Contra, a direct storefront or a specialist template marketplace can reach additional demand.
-
-Equally, do **not** spray every product onto every marketplace. Route by **product-marketplace fit**.
+Do not artificially restrict a Blueprint to Whop. Equally, do not spray every product onto every marketplace. Route by **product-marketplace fit**.
 
 See [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md).
 
@@ -83,20 +114,18 @@ See [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md).
 | **Notion Marketplace** | Native template discovery | Operating systems, CRM/project/recruitment databases | **A when Notion-native** |
 | **Lemon Squeezy** | Strong merchant-of-record checkout | Software, licences, downloads, subscriptions | **A checkout / B discovery** |
 | **Payhip** | Low-friction digital storefront | Downloads, memberships, courses, templates | **B** |
-| **Shopify** | Owned commerce infrastructure and channels | Broader catalogue, bundles, direct brand/store | **A infrastructure** |
+| **Shopify** | Owned commerce infrastructure and AI-discovery channels | Broader catalogue, bundles, direct brand/store | **A infrastructure** |
 | **Framer Marketplace** | Native website-template discovery | Framer website/landing-page assets | **A when Framer-native** |
 | **Webflow Templates** | Native website-template discovery | Webflow templates and vertical site systems | **A/B when Webflow-native** |
 | **PromptBase** | Specialist AI-asset marketplace | Prompts, agent skills and AI workflow components | **A/B when applicable** |
 
-These are not mutually exclusive.
+Notion's current first-party seller fee is **10% + $0.40**, not the older 8% + $0.40 DRF assumption; see `DISTRIBUTION-CHANNELS.md`.
 
 ## Product types — one business, many SKUs
 
 Business Blueprints can be packaged as complete operating-business bundles, website/revenue launch kits, Notion systems, workflow/automation packs, prompt/agent/Skill packs, software/API components, or playbook bundles.
 
 **These are product formats, not separate parent opportunities.**
-
-A website/launch kit is therefore one possible Blueprint SKU when the underlying Outcome × Niche is proven and the assets are genuinely reusable. It is not another business alongside Business Blueprints.
 
 See:
 
@@ -107,45 +136,43 @@ See:
 
 | Priority | Underlying result | Target niche | Niche score | Why it belongs here |
 |---:|---|---|---:|---|
-| **1** | **Enquiry-to-Revenue Control** | UAE HVAC/AC service contractors | **92/100** | Highest validated niche combination already moved to P2 RBF backtest. |
+| **1** | **Enquiry-to-Revenue Control** | UAE HVAC/AC service contractors | **92/100** | Highest validated niche combination already moved to P2 backtest. |
 | **2** | **Fast Quote-to-Cash System** | UAE drywall / gypsum / false-ceiling installers | **87/100** | Strong standardisable workflow and repeatable operating logic. |
 
-## Current RBF decision
+## Current decision
 
-**GO to one bounded multi-channel forward test. Do not scale capital yet.**
+**GO to one bounded DRF-specific transferability test. Do not scale capital yet.**
 
-The parent multi-platform business scores **82/100**, but remains **P2 Backtested** because DRF has not yet measured real channel-by-channel sales, CAC, refunds or support for one canonical Blueprint.
+The category is externally market-proven, while DRF remains **P2 Backtested** because our exact buyer, price, channel CAC and deployment economics are not yet live-proven.
 
-### P3 forward-test design
+### P3 test design — revised after EMP3
 
-Use one identical core Blueprint SKU and:
+The old five-buyer test was too broad because it implicitly re-proved the category.
 
-1. publish it on at least **one discovery marketplace**;
-2. publish it on at least **one independent/hybrid digital-product storefront**;
-3. preferably add a third product-specific channel if the asset naturally fits;
-4. keep price and core promise materially comparable;
-5. attribute traffic, fees, conversion, refunds and support by channel;
-6. keep the total test capital at or below **$3,000**.
+Pre-commit one launch price inside **US$199–399**, then use one canonical Blueprint SKU across at least:
+
+1. **one discovery marketplace**;
+2. **one independent/hybrid storefront or owned checkout**;
+3. a specialist third channel only if the asset naturally fits.
 
 ### P3 pass indicators
 
-- **≥5 genuine paid buyers/deposits** in the test window;
-- **≥30% contribution after attributable acquisition cost** on the direct product sale;
-- refund/credit rate **<10%** during the test;
-- measured support/activation burden;
-- at least **2 buyers intending to deploy/use** the system;
-- no fatal marketplace policy/rights issue;
-- channel economics recorded separately so DRF can decide where to syndicate harder.
+- **2 unrelated paid buyers/deposits** at the pre-committed price, or equivalent founder-approved commercial commitments;
+- at least **1 buyer with genuine deployment/activation intent**;
+- at least **1 buyer from a channel that is not merely a direct personal favour/relationship**;
+- source, conversion, fees and attributable CAC captured where possible;
+- refund signal and expected support captured;
+- no fatal marketplace policy/rights issue.
 
-No Whop royalty, Partner commission or other platform-specific upside is required for the core Business Blueprint to pass viability.
+P4 then requires actual paid delivery/activation and actual cost capture.
+
+No Whop royalty, Partner commission or other platform-specific upside is required for the core Blueprint to pass viability.
 
 ## Whop-specific economics
 
-Whop remains strategically important because it currently provides channel-specific features/economics not generally available elsewhere, including the Business Blueprint surface and separately verified Whop Partner economics.
+Whop remains strategically important because it currently provides channel-specific Blueprint features and separately verified Partner economics.
 
-Current Whop programme mechanics are first-party verified at the channel level; live DRF payout attribution/stacking and representative market performance remain unproven.
-
-Those details are retained as **channel research**, not parent-business truth:
+Those details remain channel research:
 
 - [`channels/whop/WHOP-RESEARCH.md`](./channels/whop/WHOP-RESEARCH.md)
 - [`channels/whop/WHOP-RBF-ASSESSMENT.md`](./channels/whop/WHOP-RBF-ASSESSMENT.md)
@@ -153,27 +180,28 @@ Those details are retained as **channel research**, not parent-business truth:
 
 ## Daily intelligence and GitHub deployment
 
-The active ChatGPT Web daily research loop is governed by:
+The active daily research loop is governed by:
 
 - [`DAILY-INTELLIGENCE.md`](./DAILY-INTELLIGENCE.md)
-- [`../../knowledge/guidelines/drf-recurring-intelligence-configuration.md`](../../knowledge/guidelines/drf-recurring-intelligence-configuration.md)
+- [`../../workflows/drf-opportunity-factory.md`](../../workflows/drf-opportunity-factory.md)
+- [`../../knowledge/architecture/drf-v3-writeback-contract.md`](../../knowledge/architecture/drf-v3-writeback-contract.md)
 
-It researches the **full parent opportunity in one run**, including parent demand/economics, all relevant distribution channels, product formats, SEO, AI discovery, MCP/WebMCP opportunities, platform/IP risk and DRF actuals.
+Future runs must use **successful comparable operators + counter-evidence + EMP** as first-class inputs, not wait for DRF to internally re-prove broad market facts.
 
-Every completed run must land in GitHub, including an `UNCHANGED` entry in `research/recurring-intelligence/REFRESH-RUNS.md` when no material decision changes. Material findings update the detailed source first and `PORTFOLIO-V3.md` last.
+Every material run must complete Workflow Layer 3: update `PORTFOLIO-V3.md` when founder fields change, or write an explicit V3 `NO FIELD CHANGE` reconciliation.
 
-A chat notification is not a substitute for repository persistence.
+Every completed scheduled run is also persisted in `research/recurring-intelligence/REFRESH-RUNS.md`.
 
 ## Canonical supporting evidence
 
-- [`RESEARCH.md`](./RESEARCH.md) — Business Blueprint parent underwriting
-- [`RBF-ASSESSMENT.md`](./RBF-ASSESSMENT.md) — 10-factor RBF assessment and forward-test gate
-- [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md) — product-format taxonomy; website/launch kits are one SKU type, not another parent business
-- [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md) — product-to-channel routing matrix
-- [`DAILY-INTELLIGENCE.md`](./DAILY-INTELLIGENCE.md) — scheduled research + GitHub write-back contract
-- [`../../research/ai-first-digital-marketplaces-and-service-platforms.md`](../../research/ai-first-digital-marketplaces-and-service-platforms.md) — DRF master marketplace map
-- [`../INVESTMENT-READINESS.md`](../INVESTMENT-READINESS.md) — portfolio gate register
+- [`RESEARCH.md`](./RESEARCH.md)
+- [`RBF-ASSESSMENT.md`](./RBF-ASSESSMENT.md)
+- [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md)
+- [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md)
+- [`DAILY-INTELLIGENCE.md`](./DAILY-INTELLIGENCE.md)
+- [`research/business-blueprints-daily-refresh-2026-09-01.md`](./research/business-blueprints-daily-refresh-2026-09-01.md)
+- [`../../research/ai-first-digital-marketplaces-and-service-platforms.md`](../../research/ai-first-digital-marketplaces-and-service-platforms.md)
 
 ## Next action
 
-**Package one DRF-proven Outcome × Niche system as the canonical Business Blueprint, syndicate it across compatible channels, and compare the real economics before allocating scale capital.**
+**Package the first DRF-proven Outcome × Niche system, choose a US$199–399 self-serve launch price, publish through the best compatible channel pair, and seek 2 unrelated paid buyers/deposits with at least one genuine deployment-intent buyer.**
