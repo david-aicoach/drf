@@ -1,21 +1,25 @@
 # DRF Recurring Intelligence Configuration
 
-**Status:** Canonical defaults — first scheduled profile active  
-**Version:** 1.1  
+**Status:** Canonical defaults — DRF-wide daily portfolio calibration active  
+**Version:** 1.2  
 **Date:** 1 September 2026  
 **Governing stage:** [77.5] #82  
-**Activation issue:** #112  
+**Activation issues:** #112, #118  
 **Workflow:** `workflows/drf-recurring-intelligence-loops.md`
 
 ## Purpose
 
 Keep discovery thresholds, research cadence and alert behaviour visible, versioned and independent from any particular scheduler or AI model.
 
-Schedulers must read these defaults and the opportunity-specific scheduled profile before execution. They must not silently change scoring, evidence or cadence rules. Material threshold/cadence changes require an Issue and documented rationale.
+Schedulers must read these defaults and the relevant scheduled profile before execution. They must not silently change scoring, evidence or cadence rules. Material threshold/cadence changes require an Issue and documented rationale.
 
-The first active scheduled profile is the ChatGPT Web **Business Blueprints daily intelligence loop** governed by:
+Active scheduled profiles include:
 
-`businesses/business-blueprints/DAILY-INTELLIGENCE.md`
+1. DRF-wide daily portfolio intelligence/calibration: `research/recurring-intelligence/DRF-PORTFOLIO-INTELLIGENCE.md`
+2. Business Blueprints daily specialist intelligence: `businesses/business-blueprints/DAILY-INTELLIGENCE.md`
+3. Autonomous AI Revenue Operations weekly specialist intelligence: `research/recurring-intelligence/AUTONOMOUS-AI-REVENUE-OPERATIONS.md`
+
+Dedicated specialist loops feed the portfolio calibration loop; they do not remove their parent opportunities from daily DRF-wide review.
 
 ---
 
@@ -68,23 +72,70 @@ Recommended scheduler window: once daily outside core UAE working hours where pr
 - Missing research is `Pending`, not EMP0.
 - EMP confidence remains a separate 0–100 value.
 - EMP never awards DRF P3–P6.
+- Strong EMP is a first-class underwriting input and should reduce redundant DRF validation when broad market facts are already established.
+- If EMP3/EMP4 proves the category, the next internal test targets only the largest remaining DRF-specific uncertainty.
 
 ---
 
-# 4. Refresh cadence
+# 4. Portfolio calibration and refresh cadence
 
-| Portfolio state | Deep-refresh default | Daily event watch |
+## Daily all-parent calibration
+
+Every active parent opportunity in `businesses/PORTFOLIO-V3.md` receives a daily review under:
+
+`research/recurring-intelligence/DRF-PORTFOLIO-INTELLIGENCE.md`
+
+The daily review checks:
+
+- missing/Pending founder fields;
+- stale evidence;
+- external operator/EMP gaps;
+- score/evidence inconsistencies;
+- missing/weak niche, offer, price, GTM, delivery, RBS, Return, Proof, Stage or Next Proof fields;
+- material new external or DRF evidence;
+- dedicated-loop evidence that has not yet reached portfolio truth;
+- broken canonical paths or source conflicts.
+
+Already-current, complete opportunities receive a concise calibration check rather than artificial full re-research. Decision-relevant gaps are actively deep-researched and completed in priority order.
+
+If the full deep-completion backlog cannot be responsibly completed in one run, the run records the remaining highest-priority targets and the next daily run continues from them rather than restarting.
+
+## Deep-refresh defaults
+
+| Portfolio state | Deep-refresh default | Daily calibration |
 |---|---|---|
-| TEST / PILOT | Weekly and after each evidence event | Yes |
-| FUND / SCALE / BLUEPRINT | Weekly operating review; monthly external-market review | Yes |
-| Golden Opportunity in RESEARCH | Monthly | Yes |
-| Other active opportunity | Quarterly | Yes |
-| Long-horizon / parked | Every six months | Yes, material events only |
 | Conflict / broken canonical source | Immediate | Yes |
+| TEST / PILOT | Weekly minimum and after each evidence event; sooner when the daily gap review finds a material missing field | Yes |
+| FUND / SCALE / BLUEPRINT | Weekly operating review; monthly external-market review; immediate material-gap work | Yes |
+| Golden Opportunity in RESEARCH | Monthly minimum; earlier when high-value fields are Pending/stale | Yes |
+| Other active opportunity | Risk/gap driven; no longer allowed to remain indefinitely incomplete merely because quarterly refresh is not due | Yes |
+| Long-horizon / parked | Six-month deep refresh unless a material trigger/gap justifies earlier work | Yes, lightweight |
+
+The prior quarterly-only ordinary refresh model is superseded for incomplete active opportunities. A current and complete parent need not be fully re-researched daily, but a material `Pending`/stale/conflicting field is an active research backlog item.
+
+## Active scheduled profile — DRF Portfolio Intelligence & Calibration
+
+Canonical profile:
+
+`research/recurring-intelligence/DRF-PORTFOLIO-INTELLIGENCE.md`
+
+The scheduled run must:
+
+- review **every active parent opportunity** daily;
+- use `PORTFOLIO-V3.md` and authoritative dossiers to identify gaps/staleness/conflicts;
+- actively research successful comparable businesses/operators and negative evidence;
+- assign/reassess EMP and transferability;
+- complete missing high-value business-case fields rather than waiting for founder prompts;
+- recalibrate Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness, niche, offer/price/GTM/delivery, RBS, Return, DRF Proof, Stage, Capital and Next Proof only where evidence justifies it;
+- use strong external evidence instead of re-proving established category facts internally;
+- keep dedicated parent loops as specialist inputs, not exclusions;
+- persist every completed run to `research/recurring-intelligence/REFRESH-RUNS.md`;
+- complete mandatory Layer 3/V3 reconciliation for every material change;
+- notify David only after material changes are landed/verified, or when persistence/trust is blocked.
 
 ## Active scheduled profile — Business Blueprints
 
-Business Blueprints has a dedicated daily ChatGPT Web refresh profile because the category and its distribution channels are moving quickly.
+Business Blueprints has a dedicated daily ChatGPT Web specialist profile because the category and its distribution channels are moving quickly.
 
 Canonical profile:
 
@@ -95,9 +146,10 @@ The scheduled run must:
 - research the **Business Blueprints parent opportunity**, not Whop alone;
 - treat Whop and other marketplaces/storefronts as distribution channels;
 - read current DRF canon before research;
+- use successful comparable operators and EMP as first-class evidence;
 - persist every completed run to `research/recurring-intelligence/REFRESH-RUNS.md`;
 - update detailed evidence and canonical decision files when material evidence changes them;
-- reconcile `businesses/PORTFOLIO-V3.md` last;
+- complete Layer 3/V3 reconciliation;
 - notify the founder only after material changes are landed/verified, or when persistence/trust is blocked.
 
 A no-change scheduled run records `UNCHANGED` in the refresh register but does not churn dossier/score files.
@@ -111,7 +163,7 @@ A no-change scheduled run records `UNCHANGED` in the refresh register but does n
 | More than 180 days | Stale |
 | No reliable date | Unknown freshness |
 
-A material event overrides the calendar.
+A material event, missing founder field or source conflict overrides the calendar.
 
 ---
 
@@ -139,10 +191,11 @@ Trigger an event refresh for:
 | 1 | Conflict, broken source or legal/safety concern |
 | 2 | New DRF actual or active customer evidence |
 | 3 | TEST / PILOT / FUND / SCALE opportunity |
-| 4 | Stale Golden Opportunity or high-ranked opportunity |
+| 4 | High-ranked opportunity with missing/Pending founder fields or stale comparable-operator/EMP evidence |
 | 5 | Material new external market signal |
-| 6 | Scheduled ordinary refresh |
-| 7 | Long-horizon background opportunity |
+| 6 | Missing niche/offer/price/GTM/delivery/RBS/Return/Next Proof work |
+| 7 | Remaining incomplete active parents |
+| 8 | Current/complete background opportunities |
 
 Within a priority tier, use capital/exposure, evidence age, Opportunity Score and Next Proof urgency. Do not invent an opaque combined score without demonstrated need.
 
@@ -168,11 +221,15 @@ Within a priority tier, use capital/exposure, evidence age, Opportunity Score an
 - counter-evidence/failure modes;
 - documented transferability limits.
 
-## Portfolio refresh
+## DRF-wide portfolio calibration
 
-Coverage is proportional to the trigger. A narrow platform-price event does not require a full market rewrite, but every affected field and downstream assumption must be checked.
+Every daily run reviews all active parent rows. Deep research is proportional to the identified gap/signal, but for selected deep-work opportunities the agent should cover the full decision-relevant chain needed to resolve the gap rather than performing a token update.
 
-For Business Blueprints, the daily scan is parent-wide: parent demand/economics, channel portfolio, product formats, SEO/AI discovery, agentic/MCP/WebMCP opportunities, platform/IP risk and DRF actuals are all in scope. Deep rewriting remains evidence-triggered.
+Where fields are missing, actively seek enough evidence to complete them defensibly, including successful comparable operators, counter-evidence, revenue/pricing, acquisition, delivery and transferability.
+
+A narrow platform-price event does not require a full market rewrite, but every affected downstream assumption must be checked.
+
+For Business Blueprints, the dedicated daily scan remains parent-wide: parent demand/economics, channel portfolio, product formats, SEO/AI discovery, agentic/MCP/WebMCP opportunities, platform/IP risk and DRF actuals are all in scope.
 
 ---
 
@@ -188,7 +245,10 @@ Treat a change as material when it may alter:
 - capital, maximum downside or return headline;
 - legal/ethical viability;
 - Next Proof;
+- dossier/Blueprint readiness;
 - public/private disclosure status.
+
+Completing a previously `Pending` founder field can be material even if no numeric score changes.
 
 Smaller observations may be appended to evidence history without changing the V3 summary.
 
@@ -201,6 +261,7 @@ Smaller observations may be appended to evidence history without changing the V3
 | Maximum one active run per idempotency key | Yes |
 | Partial/failed run may change canonical decisions | No |
 | Completed scheduled refresh recorded in run history | Required |
+| All active parent rows reviewed in DRF portfolio run | Required |
 | Detailed source updated before aggregate | Required |
 | V3 register reconciled last | Required |
 | Dashboard HTML used as write source | Prohibited |
@@ -271,7 +332,16 @@ A new configuration version must record:
 
 ## Current version
 
-`DRF-INTELLIGENCE-CONFIG-1.1`
+`DRF-INTELLIGENCE-CONFIG-1.2`
+
+### 1.1 → 1.2
+
+- **Reason:** the broad DRF Opportunity Score Watch only waited for material signals and did not actively complete missing/stale opportunity research across the whole portfolio.
+- **Change:** activate a dedicated daily DRF Portfolio Intelligence & Calibration profile; review every active parent each run; make `Pending`/stale/conflicting founder fields an active research backlog; require successful-comparable-operator/EMP research; allow strong external proof to reduce redundant DRF validation; keep dedicated parent loops as specialist inputs rather than exclusions; require source-first Layer 3/V3 write-back and durable run history.
+- **Affected opportunities:** all active DRF parent opportunities.
+- **Effective date:** 1 September 2026.
+- **Issue:** #118.
+- **Historical comparability:** preserved; scoring formulas/thresholds are unchanged, but refresh cadence and completeness expectations are stronger.
 
 ### 1.0 → 1.1
 
