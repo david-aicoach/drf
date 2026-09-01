@@ -9,8 +9,9 @@
 - **Ranked Business × Niche relationships:** [`NICHES.md`](./NICHES.md)
 - **Business × Niche RBS, DRF Proof, Stage, Capital and Return migration:** [`INVESTMENT-READINESS.md`](./INVESTMENT-READINESS.md)
 - **V3 no-field-change reconciliation ledger:** [`V3-RECONCILIATIONS.md`](./V3-RECONCILIATIONS.md)
-- **V3 data contract:** [`../knowledge/architecture/drf-v3-portfolio-data-contract.md`](../knowledge/architecture/drf-v3-portfolio-data-contract.md)
-- **V3 write-back contract:** [`../knowledge/architecture/drf-v3-writeback-contract.md`](../knowledge/architecture/drf-v3-writeback-contract.md)
+- **Opportunity operating Skill:** [`../skills/drf-opportunity-factory/SKILL.md`](../skills/drf-opportunity-factory/SKILL.md)
+- **V3 data contract:** [`../skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md`](../skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md)
+- **V3 write-back reference:** [`../skills/drf-opportunity-factory/references/v3-writeback.md`](../skills/drf-opportunity-factory/references/v3-writeback.md)
 
 `PORTFOLIO-V3.md` is the joined founder-comparison register for Dashboard Version 3. It does not replace the detailed dossiers or the complete ranked niche register.
 
@@ -50,6 +51,8 @@ businesses/<opportunity-id>/
 
 Create only files required by the current stage. `CURRENT.md`, when present, identifies the governing dossier without deleting useful history.
 
+Reusable operating structures belong in the Opportunity Factory Skill; do not create global templates for these files.
+
 ## Source precedence
 
 ```text
@@ -65,7 +68,7 @@ If a newer current dossier conflicts with an older summary, reconcile the regist
 
 ## Mandatory V3 close-out
 
-Every **material** business, niche, score, proof, pricing, GTM, delivery, economics or evidence update must finish through Workflow Layer 3 before its Issue/run is considered complete.
+Every **material** business, niche, score, proof, pricing, GTM, delivery, economics or evidence update must finish through the [`DRF Opportunity Factory Skill`](../skills/drf-opportunity-factory/SKILL.md) before its Issue/run is considered complete.
 
 Required order:
 
@@ -80,8 +83,6 @@ current evidence / dossier
 ```
 
 Do not manufacture a score or freshness change merely to touch V3. Do not leave material new evidence stranded only in a business folder, research file or automation run history.
-
-Canonical route: [`../workflows/drf-opportunity-factory.md`](../workflows/drf-opportunity-factory.md).
 
 ## Current parent opportunity directory
 
