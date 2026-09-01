@@ -1,22 +1,26 @@
 # Research — Business Blueprints
 
-**Updated:** 31 August 2026  
-**Issue:** #67  
-**Status:** Parent opportunity re-underwritten as a multi-platform digital-product business
+**Updated:** 1 September 2026  
+**Issue:** #112  
+**Status:** Parent opportunity underwritten as a multi-platform digital-product business; daily intelligence profile active
 
 ## Executive conclusion
 
 The prior **Whop Business Blueprints** framing was too narrow.
 
-DRF's existing marketplace research already states the correct higher-level model:
+DRF's marketplace research establishes the correct higher-level model:
 
 > platforms are **revenue endpoints** for assets/capabilities produced by the Revenue Factory; DRF should route a product to the best marketplace(s), publish compliantly, measure contribution and syndicate or retire based on evidence.
 
-Therefore the parent business is now:
+Therefore the parent business is:
 
 > **Business Blueprints — proof-backed digital business systems packaged once and distributed across multiple compatible marketplaces/storefronts.**
 
 Whop remains a high-priority channel because it has unusually strong fit for digital businesses and channel-specific recurring economics. It is **not** the exclusive route to market.
+
+Current daily intelligence contract:
+
+`DAILY-INTELLIGENCE.md`
 
 ## 1. Business definition
 
@@ -101,17 +105,25 @@ Strengths:
 - digital-business/product positioning;
 - marketplace + hybrid discovery;
 - software/services/community support;
-- emerging native Business Blueprint surface;
+- native Business Blueprint surface;
 - agentic CLI/API/MCP direction;
+- first-party-verified Blueprint programme mechanics;
 - Whop-specific Blueprint/Partner recurring upside.
+
+Current evidence boundary:
+
+- the Blueprint creator mechanism is now first-party programme evidence rather than secondary-only;
+- model Blueprint creator economics as a share of Whop's qualifying economics on Blueprint-attributed sales, **not 10% of downstream gross sales**;
+- separate Whop Partner economics are first-party verified;
+- live DRF payout attribution, exact qualifying-profit basis, stacking, representative conversion, creator-income distribution and downstream retention remain unproven.
 
 Weakness/risk:
 
 - platform-specific terms and attribution;
-- still-unresolved exact Blueprint royalty wording;
-- single-platform concentration if treated as the whole model.
+- single-platform concentration if treated as the whole model;
+- representative Blueprint marketplace economics are not yet public enough to model as a market base rate.
 
-Whop evidence remains preserved under `channels/whop/`.
+Whop evidence remains preserved under `channels/whop/`, with `channels/whop/WHOP-RESEARCH.md` as the current channel research.
 
 ### Gumroad
 
@@ -292,9 +304,9 @@ The platform-neutral architecture is stronger than the Whop-only parent framing 
 - owned distribution can be developed;
 - platform-specific recurring income becomes upside rather than a dependency.
 
-The parent has therefore been re-underwritten at **82/100**, while remaining **P2 Backtested**.
+The parent remains underwritten at **82/100**, while remaining **P2 Backtested**.
 
-This is not proof of higher realised revenue. The increased score reflects **structural diversification and capital efficiency**, not live performance.
+The 1 September first-party Whop evidence improves confidence in one high-priority channel but does not justify parent score inflation by itself. Representative buyer conversion, channel contribution, activation, support and retention remain unproven.
 
 ## 10. Main risks
 
@@ -335,7 +347,19 @@ It is:
 
 > **Can one proof-backed Business Blueprint generate positive contribution when syndicated across the best compatible distribution portfolio, and which channels deserve more capital?**
 
-## 13. Sources
+## 13. Daily intelligence and persistence
+
+The active scheduled research profile is:
+
+`DAILY-INTELLIGENCE.md`
+
+Every completed scheduled run must be persisted to:
+
+`research/recurring-intelligence/REFRESH-RUNS.md`
+
+Material evidence is written to the detailed source first, specialised registers second and `businesses/PORTFOLIO-V3.md` last. Chat notification is downstream of verified GitHub persistence.
+
+## 14. Sources
 
 ### Canonical DRF
 
@@ -346,7 +370,8 @@ It is:
 - `../instant-quote-quote-to-cash/RBF-ASSESSMENT-DRYWALL-GYPSUM.md`
 - `channels/whop/WHOP-RESEARCH.md`
 - `channels/whop/WHOP-RBF-ASSESSMENT.md`
+- `DAILY-INTELLIGENCE.md`
 
 ### Evidence classification
 
-The marketplace economics above are inherited from the current DRF master research and its original sources. They are **channel evidence**, not guarantees of realised DRF sales. Re-verify fees/terms before a live paid launch.
+Marketplace economics inherited from DRF master research remain **channel evidence**, not guarantees of realised DRF sales. Re-verify fees/terms before a live paid launch. Whop's current programme mechanics are first-party verified at the channel level; live DRF payouts and representative market performance are not.
