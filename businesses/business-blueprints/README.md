@@ -180,17 +180,15 @@ Those details remain channel research:
 
 ## Daily intelligence and GitHub deployment
 
-The active daily research loop is governed by:
+The active scheduled loop is owned by the **DRF Recurring Intelligence Skill**, not by a business-folder workflow file:
 
-- [`DAILY-INTELLIGENCE.md`](./DAILY-INTELLIGENCE.md)
-- [`../../workflows/drf-opportunity-factory.md`](../../workflows/drf-opportunity-factory.md)
-- [`../../knowledge/architecture/drf-v3-writeback-contract.md`](../../knowledge/architecture/drf-v3-writeback-contract.md)
+- [`../../skills/drf-recurring-intelligence/SKILL.md`](../../skills/drf-recurring-intelligence/SKILL.md)
+- [`../../skills/drf-recurring-intelligence/references/business-blueprints-daily-profile.md`](../../skills/drf-recurring-intelligence/references/business-blueprints-daily-profile.md)
+- [`../../skills/drf-opportunity-factory/SKILL.md`](../../skills/drf-opportunity-factory/SKILL.md) for any material Layer 1/2/3 and V3 write-back.
 
-Future runs must use **successful comparable operators + counter-evidence + EMP** as first-class inputs, not wait for DRF to internally re-prove broad market facts.
+Future runs use successful comparable operators + counter-evidence + EMP as first-class inputs, then test only remaining DRF-specific uncertainty.
 
-Every material run must complete Workflow Layer 3: update `PORTFOLIO-V3.md` when founder fields change, or write an explicit V3 `NO FIELD CHANGE` reconciliation.
-
-Every completed scheduled run is also persisted in `research/recurring-intelligence/REFRESH-RUNS.md`.
+Every completed scheduled run is persisted in `research/recurring-intelligence/REFRESH-RUNS.md`. Material runs must complete Layer 3/V3 reconciliation before they are considered complete.
 
 ## Canonical supporting evidence
 
@@ -198,7 +196,6 @@ Every completed scheduled run is also persisted in `research/recurring-intellige
 - [`RBF-ASSESSMENT.md`](./RBF-ASSESSMENT.md)
 - [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md)
 - [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md)
-- [`DAILY-INTELLIGENCE.md`](./DAILY-INTELLIGENCE.md)
 - [`research/business-blueprints-daily-refresh-2026-09-01.md`](./research/business-blueprints-daily-refresh-2026-09-01.md)
 - [`../../research/ai-first-digital-marketplaces-and-service-platforms.md`](../../research/ai-first-digital-marketplaces-and-service-platforms.md)
 
