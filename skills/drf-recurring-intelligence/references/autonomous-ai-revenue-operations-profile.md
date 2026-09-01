@@ -1,330 +1,63 @@
-# Autonomous AI Revenue Operations — Recurring Research Contract
+# Autonomous AI Revenue Operations — Weekly Specialist Profile
 
-**Status:** Canonical recurring-intelligence contract  
+**Status:** Active scheduled specialist profile  
 **Cadence:** Weekly deep research, Monday morning UAE time  
 **Parent opportunity:** Autonomous AI Revenue Operations Business-in-a-Box  
 **Canonical parent folder:** `businesses/grok-bot-ai-revenue-operations/`  
-**Repository:** `tbhrc/drf`
+**Owning Skill:** `skills/drf-recurring-intelligence/SKILL.md`
 
-## Taxonomy rule
+## Taxonomy
+The folder slug is retained for history/link stability. **Grok Bot is a delivery rail, not the parent business.** Relevant delivery rails include OpenAI/ChatGPT agents, Claude, Gemini, Grok/xAI, HighLevel-native AI, browser/computer-use systems and future runtimes.
 
-The folder slug is retained for link/history stability, but **Grok Bot is not the parent business opportunity**. Grok Bot, ChatGPT/OpenAI agents, Claude, Gemini, HighLevel-native AI, browser/computer-use systems and future agent runtimes are interchangeable delivery rails where appropriate.
+Parent opportunity:
 
-The parent opportunity is:
+> Productised, measurable revenue-producing workflows and AI-agent operating systems that can acquire, process, fulfil, optimise or protect revenue with low human intervention, sold through deployment fees, recurring management/usage, performance-aligned upside or reusable operating IP.
 
-> **Autonomous AI Revenue Operations Business-in-a-Box** — productised, measurable revenue-producing workflows and AI-agent operating systems that can acquire, process, fulfil, optimise or protect revenue with low human intervention, sold through deployment fees, recurring management/usage, performance-aligned upside or reusable operating IP.
+## Thin scheduler prompt
 
-The scheduled ChatGPT automation is only the trigger. **GitHub is the durable output. A chat-only run is a failed run.**
+> Work in `tbhrc/drf`. Use the **DRF Recurring Intelligence Skill** in **Autonomous AI Revenue Operations specialist** mode. Research the whole parent opportunity, persist the weekly rolling research/run history and complete any required V3 reconciliation. Notify David only after verified material change/blocker.
 
-## Why weekly
+## Research pillars
+Track the whole commercial category, not only token cost:
+1. market/category development and real paid adoption;
+2. revenue models/offers and public pricing;
+3. model/API/inference economics;
+4. agent infrastructure/orchestration and fully loaded cost per successful outcome;
+5. agent-to-agent commerce/payments and real economic usage;
+6. marketplaces/bounties/distribution;
+7. autonomous acquisition/sales;
+8. fulfilment/self-sustaining operation, exception rate and human minutes;
+9. high-value niches/use cases;
+10. competition/substitutes including deterministic automation/BPO/human labour;
+11. security/identity/legal/platform constraints;
+12. real-world benchmark evidence and failures.
 
-The category is changing too quickly for a monthly-only watch: model/API pricing, agent runtimes, computer-use products, payment rails, marketplace liquidity and commercial case studies can change materially within weeks. Daily research would create excessive noise and repository churn. Weekly is the current balance between freshness and evidence quality.
+Prefer first-party pricing/technical docs, public-company/audited evidence, demonstrated operator workflows and clearly labelled operator financial outcomes. Community claims are weak evidence unless corroborated.
 
-## Start-of-run canon
-
-Before external research, read current versions of:
-
-1. `AGENTS.md`;
-2. this contract;
-3. `businesses/grok-bot-ai-revenue-operations/CURRENT.md` when present;
-4. `businesses/grok-bot-ai-revenue-operations/README.md`;
-5. `businesses/grok-bot-ai-revenue-operations/RESEARCH.md`;
-6. latest `research/autonomous-ai-revenue-operations-YYYY-MM.md` and/or prior `research/autonomous-agent-economics-YYYY-MM.md`;
-7. `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md` unless superseded by a newer economics re-score;
-8. `research/ai-first-digital-marketplaces-and-service-platforms.md`;
-9. `businesses/OPPORTUNITIES.md`;
-10. `businesses/PORTFOLIO-V3.md`;
-11. `knowledge/guidelines/business-opportunity-scoring-framework.md`;
-12. any niche dossier or opportunity file materially affected by the new evidence.
-
-Newer repository truth overrides this contract and the ChatGPT automation prompt.
-
-## Research scope — mandatory
-
-Research the **whole parent opportunity**, not only agent API cost.
-
-### 1. Market/category development
-
-Track whether autonomous AI workers are becoming a real commercial category:
-
-- new vendors and agent platforms;
-- adoption signals;
-- enterprise/SMB usage;
-- operator case studies;
-- actual paid deployments;
-- failures, shutdowns, backlash or churn;
-- category terminology and buyer behaviour.
-
-### 2. Revenue models and offers
-
-Track what is actually being sold and paid for:
-
-- deployment/setup fees;
-- managed-agent retainers;
-- usage-based pricing;
-- per-outcome/per-task fees;
-- performance/revenue-share models;
-- agent subscriptions;
-- agent-as-a-service;
-- reusable templates/skills/configurations;
-- data/API/tool sales to agents;
-- agent marketplaces and transaction fees.
-
-Capture public pricing and credible transaction/revenue evidence separately.
-
-### 3. Inference and model economics
-
-Track major model/API changes across OpenAI, Anthropic, Google, xAI and other relevant providers:
-
-- input/output/cache pricing;
-- subscriptions and quotas;
-- batch/priority discounts;
-- tool/computer-use charges;
-- quality/capability changes that materially alter cost per successful task;
-- routing opportunities between cheap, mid-tier and frontier models.
-
-Never optimise token price at the expense of retries, failure or human recovery.
-
-### 4. Agent infrastructure and orchestration
-
-Track:
-
-- agent runtimes;
-- browser/computer-use infrastructure;
-- sandboxes/code execution;
-- MCP/API gateways;
-- memory/state;
-- observability/evaluation;
-- scheduler/event systems;
-- proxy/search/data costs;
-- orchestration/platform fees;
-- reliability and recovery economics.
-
-Use **fully loaded cost per successful commercial outcome**, not headline subscription price.
-
-### 5. Agent-to-agent commerce and payments
-
-Track x402, MPP, AP2 and competing approaches plus wallet/payment infrastructure, including:
-
-- machine purchasing of APIs/MCP/data/content;
-- machine-to-machine settlement;
-- spending controls;
-- KYC/custody/identity constraints;
-- payment fees;
-- real transaction adoption;
-- agent-accessible paid-resource discovery.
-
-Protocol activity without real economic usage is not market proof.
-
-### 6. Distribution, marketplaces and bounties
-
-Track places where agents or AI-operated businesses can obtain revenue or distribution:
-
-- agent marketplaces;
-- API/tool marketplaces;
-- freelance/service markets where AI-assisted delivery is permitted;
-- app marketplaces;
-- digital-product marketplaces;
-- bounties/hackathons;
-- revenue-sharing programmes;
-- referral/affiliate channels;
-- agent-native discovery systems.
-
-Treat one-off bounties as non-recurring revenue unless evidence proves otherwise.
-
-### 7. Autonomous customer acquisition and sales
-
-Research the ability of agents to:
-
-- discover prospects;
-- qualify demand;
-- research accounts;
-- personalise outreach within platform rules;
-- manage inbound opportunities;
-- quote/propose;
-- negotiate within approved bounds;
-- follow up;
-- convert and collect payment.
-
-Separate technically possible from compliant, reliable and economically proven.
-
-### 8. Fulfilment and self-sustaining operation
-
-Research whether an agent business can reliably:
-
-```text
-find demand
-→ win work
-→ fulfil outcome
-→ collect money
-→ buy required inputs
-→ support customer
-→ improve from evidence
-→ repeat profitably
-```
-
-Track human minutes, exception rate, approval burden, repeatability and contribution margin.
-
-### 9. Niches and use cases
-
-Look for revenue-linked niches where autonomous agent economics are strongest. Prioritise:
-
-- high-value intermittent judgement work;
-- cross-system revenue operations;
-- inbound revenue handling;
-- research/preparation;
-- quoting/proposals;
-- recovery/reactivation;
-- sponsorship/media sales;
-- specialised data/API work;
-- other new niches supported by evidence.
-
-Do not force high-frequency deterministic work through expensive browser agents when native workflow/API execution is better.
-
-### 10. Competition and substitute analysis
-
-Compare:
-
-- general autonomous agents;
-- vertical agent products;
-- CRM-native AI;
-- deterministic automation;
-- human virtual assistants/BPO;
-- agencies/consultants;
-- custom software;
-- marketplace-native workers;
-- cheap offshore labour where relevant.
-
-The business must beat the best practical substitute on value, speed, reliability or total cost.
-
-### 11. Security, identity, legal and platform constraints
-
-Track material changes involving:
-
-- authentication/2FA/CAPTCHA;
-- account sharing;
-- platform automation terms;
-- KYC/KYB;
-- financial authority;
-- privacy/data handling;
-- public communications;
-- contract authority;
-- refunds/disputes;
-- regulated activities;
-- security boundaries and credential exposure.
-
-These are unit-economic constraints because human intervention and risk controls create real cost.
-
-### 12. Real-world benchmark evidence
-
-Prefer:
-
-1. first-party pricing/technical documentation;
-2. audited/public company evidence;
-3. operator-demonstrated workflows;
-4. operator-reported financial outcomes clearly labelled;
-5. community reports as weak evidence only.
-
-Capture failures and counter-evidence as seriously as success stories.
-
-## Required durable output every run
-
-Every weekly run must create or update the current month's rolling file:
+## Rolling durable output
+Every successful weekly run creates/updates:
 
 `research/autonomous-ai-revenue-operations-YYYY-MM.md`
 
-If the file already exists, add or update a clearly dated weekly-run section rather than creating another monthly file.
+Use a clearly dated weekly section. Record executive conclusion, changes since prior run, evidence across applicable pillars, source labels, commercial impact, factor/score impact, exact repository changes, unresolved unknowns and operating strategy.
 
-The rolling monthly file must contain:
-
-- executive conclusion;
-- dated weekly changes since the prior successful run;
-- full research across the applicable pillars above;
-- source links/evidence labels;
-- practical impact on the parent opportunity;
-- score-factor assessment;
-- exact repository changes made;
-- unresolved unknowns / next proof;
-- operating strategy decision.
-
-## Parent-opportunity reconciliation
-
-After research, determine whether new evidence changes the current parent opportunity.
-
-When material, update the relevant current parent files under:
-
-`businesses/grok-bot-ai-revenue-operations/`
-
-At minimum reconcile:
-
-- business definition;
-- offer/pricing;
-- economics;
-- delivery rails;
-- real operator proof;
-- risks;
-- first commercial experiment;
-- next proof.
-
-Do not rewrite useful Grok-specific evidence merely because the parent has broadened. Preserve it as delivery-rail evidence.
-
-## Score-change rule
-
-Use `knowledge/guidelines/business-opportunity-scoring-framework.md`.
-
-A score must change only when evidence materially changes one or more underlying factors. For every proposed change record:
-
-```text
-factor
-previous value
-new value
-new evidence
-why evidence changes the factor
-weighted score impact
-```
-
-If score/AI Autonomy/MRR/Evidence Confidence/Research Completeness/Stage/next action changes materially, update the canonical parent row wherever DRF currently requires it, including as applicable:
-
-- `businesses/OPPORTUNITIES.md`;
-- `businesses/PORTFOLIO-V3.md`;
-- parent README/current dossier;
-- relevant niche register/dossier when the evidence is niche-specific.
-
-Do not change a score merely because research volume increased. Higher Evidence Confidence can coexist with a lower score.
-
-## Run history
-
-Append one concise row to:
+Append run history to:
 
 `research/recurring-intelligence/AUTONOMOUS-AI-REVENUE-OPERATIONS-RUNS.md`
 
-Record:
+## Parent/V3 reconciliation
+After research, reconcile any changed business definition, offer/pricing, economics, delivery rails, operator proof, risks and Next Proof in the parent source first. Change scores only when evidence changes underlying factors; preserve before → after + rationale.
 
-`Run date | Status | Monthly rolling file | Material change | Score change | Parent files changed | Verification`
+If founder fields change, update affected registers and `businesses/PORTFOLIO-V3.md` last through the Opportunity Factory Skill. If material evidence changes but no founder field changes, record explicit V3 `NO FIELD CHANGE`.
 
-A failed/partial run must be recorded truthfully and must not replace the last successful conclusion.
+External evidence may support DRF P1/P2; it cannot award P3–P6.
 
-## Verification — mandatory
+## Verification
+Before completion:
+- re-read each changed path;
+- confirm rolling monthly file + dated weekly section;
+- confirm run-history row;
+- confirm score changes reached canonical register/V3 where required;
+- confirm unsupported market/revenue claims were not promoted to fact.
 
-Before completing:
-
-1. re-read every GitHub file changed by the run;
-2. confirm the current monthly rolling research file exists in `tbhrc/drf`;
-3. confirm the dated weekly section and run-history row both exist;
-4. confirm any score change is also reflected in the canonical portfolio files, not only the rolling report;
-5. confirm no unsupported market/revenue claim was promoted to fact;
-6. report exact changed paths and persistence status.
-
-If GitHub writeback is unavailable or fails, the automation must report **PERSISTENCE FAILED**. It must not present a chat summary as successful completion.
-
-## Chat output
-
-Chat is a concise weekly founder summary only:
-
-- most important changes;
-- practical commercial impact;
-- score/strategy change or no change;
-- exact DRF paths changed;
-- GitHub persistence status.
-
-Do not dump the full research into chat when it has been durably written to GitHub.
+GitHub persistence failure means the run is **PERSISTENCE FAILED**, not completed.
