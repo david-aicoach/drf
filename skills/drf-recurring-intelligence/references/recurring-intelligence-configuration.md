@@ -1,8 +1,8 @@
 # DRF Recurring Intelligence Configuration
 
 **Status:** Canonical Skill-owned defaults  
-**Version:** 2.0  
-**Date:** 1 September 2026  
+**Version:** 2.1  
+**Date:** 2 September 2026  
 **Governing Skill:** `skills/drf-recurring-intelligence/SKILL.md`
 
 ## Purpose
@@ -15,10 +15,11 @@ Schedulers are triggers only. They must point at `tbhrc/drf`, invoke the **DRF R
 | Profile | Cadence | Skill reference |
 |---|---|---|
 | DRF Portfolio Intelligence & Calibration | Daily | `references/portfolio-intelligence-profile.md` |
+| Proof-First Application Discovery | Daily signal lane inside Golden Opportunity Discovery | `references/proof-first-application-discovery-profile.md` |
 | Business Blueprints specialist intelligence | Daily | `references/business-blueprints-daily-profile.md` |
 | Autonomous AI Revenue Operations specialist intelligence | Weekly | `references/autonomous-ai-revenue-operations-profile.md` |
 
-Dedicated specialist loops feed the whole-portfolio loop; they never make a parent invisible to portfolio calibration.
+Dedicated specialist loops feed the whole-portfolio loop; they never make a parent invisible to portfolio calibration. Proof-First Application Discovery is a discovery sub-profile, not a separate parent-opportunity loop and not a separate score.
 
 ## Discovery cadence
 
@@ -26,9 +27,27 @@ Dedicated specialist loops feed the whole-portfolio loop; they never make a pare
 |---|---|
 | Lightweight signal scan | Daily |
 | Candidate deduplication / triage | Daily |
+| Proof-first application scan | Daily within Golden Opportunity Discovery |
 | Deep candidate research | Event/threshold-driven |
 | Founder digest | Material change only |
 | Evidence cutoff | Run start time |
+
+## Proof-first application defaults
+For mobile/web application discovery, load `references/proof-first-application-discovery-profile.md`.
+
+Default high-signal mobile-app screen:
+- estimated monthly revenue **≥ US$50,000/month**;
+- launch age **≤ 12 months**;
+- prefer stable/positive revenue direction;
+- require a clear monetisation mechanism;
+- prefer observable acquisition evidence;
+- treat third-party revenue/download values as estimates, not audited revenue;
+- require first-party product/store verification, at least one independent corroborating traction/commercial signal and one deliberate counter-evidence search before `ADVANCE`;
+- deduplicate by payer + pain/outcome + revenue mechanism before creating any parent opportunity.
+
+A lower-revenue candidate may still enter triage for exceptional growth, recency, simplicity, recurring economics, geography/niche whitespace or strong DRF asset fit, but the exception and reason must be explicit.
+
+No “App Score” exists. Application intelligence contributes evidence only to the existing Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness and EMP framework, then to normal Layer 2/3 fields if the candidate advances.
 
 ## Layer 1 discovery thresholds
 
@@ -53,6 +72,7 @@ Thresholds do not override fatal gates. EMP remains independent; never add it me
 
 Safeguards:
 - one viral post or exceptional operator cannot establish EMP3/EMP4;
+- one app-intelligence revenue estimate cannot establish EMP2+ by itself;
 - missing research is `Pending`, not EMP0;
 - EMP confidence is separate 0–100;
 - EMP never awards DRF P3–P6;
@@ -98,6 +118,8 @@ Before Advance where available:
 - evidence dates/quality;
 - duplicate classification.
 
+For proof-first application candidates, the originating app-intelligence estimate counts as one directional signal only. Apply the application profile's cross-validation rule before Advance.
+
 EMP3/EMP4 requires multiple independent operators/contexts, sustained activity, current offer/pricing/customer evidence, recurring/repeat evidence where relevant, counter-evidence and transferability limits.
 
 ## Material change
@@ -138,6 +160,9 @@ Do not alert on unchanged routine review.
 
 ## Approval boundary
 Founder approval is required before capital/spend, paid ads, outreach, public listings/claims, legal/platform commitments, exposure of personal/customer data, material guarantees or destructive actions.
+
+## Version 2.1 change
+Added Proof-First Application Discovery as a vendor-independent Golden Opportunity discovery lane, with AppKittie-style revenue/launch filters, estimate-boundary safeguards, cross-validation requirements and no new competing score.
 
 ## Version 2.0 change
 The operating configuration moved from global guideline/profile paths into the owning Skill. Thresholds and business semantics are unchanged; discovery and scheduled behaviour now resolve through Skills first.
