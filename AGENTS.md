@@ -66,7 +66,9 @@ Before any create action:
 3. prepare the final meaningful title/body/content first;
 4. create only when the intended durable object is ready.
 
-Never create objects named or described as `temp`, `test`, `placeholder`, `probe`, `ignore`, `draft`, or equivalent. Never create an object merely to obtain an Issue number/ID, test a schema, test permissions, or discover how a tool behaves.
+Never create **sacrificial** objects whose only purpose is temporary testing, placeholder state, probing, tool/schema discovery, number reservation or permission checks. Names such as `temp`, `test`, `placeholder`, `probe` or `ignore` are warning signs when they indicate that sacrificial intent.
+
+This rule is about **purpose, not vocabulary or GitHub status**. Legitimate durable test work, test-related Issues/branches and intentional draft PRs are allowed when they have a real governed objective and acceptance criteria.
 
 If an Issue number is needed in the final title/body, create the Issue once with complete number-neutral content, receive the assigned number, then update that real Issue. Do not create a sacrificial Issue to reserve/discover a number.
 
