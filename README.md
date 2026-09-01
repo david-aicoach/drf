@@ -11,7 +11,7 @@ A GitHub-native factory for finding, underwriting, testing and packaging revenue
 
 ## GitHub creation gate
 
-Never create `temp`, `test`, `placeholder`, `probe`, `ignore` or other sacrificial GitHub objects. Search/read first, prepare the real durable object, then create it once. Never create an Issue merely to obtain an Issue number or test a tool/schema. Full rule: [`AGENTS.md`](AGENTS.md#github-object-creation-gate).
+Never create **sacrificial** temp/placeholder/probe GitHub objects merely to obtain IDs, test schemas/permissions or explore a tool. Search/read first, prepare the real durable object, then create it once. Legitimate test-related work and intentional draft PRs are allowed when they have a real governed purpose. Full rule: [`AGENTS.md`](AGENTS.md#github-object-creation-gate).
 
 ---
 
