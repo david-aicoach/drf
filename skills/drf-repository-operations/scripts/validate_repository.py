@@ -185,17 +185,59 @@ def validate_v3_and_profiles(errors: list[str]) -> None:
             fail(errors, f"Operating instruction/profile must live in a Skill, not domain data: {relative}")
 
 
+def validate_canonical_register_paths(errors: list[str]) -> None:
+    """Keep current business registers pointed at Skill-owned operating standards."""
+    require_markers(
+        errors,
+        "businesses/OPPORTUNITIES.md",
+        [
+            "skills/drf-opportunity-factory/references/business-opportunity-scoring.md",
+            "skills/drf-opportunity-factory/references/niche-scoring.md",
+        ],
+    )
+    require_markers(
+        errors,
+        "businesses/NICHES.md",
+        [
+            "skills/drf-opportunity-factory/references/niche-scoring.md",
+            "skills/drf-opportunity-factory/references/niche-research-standard.md",
+        ],
+    )
+    require_markers(
+        errors,
+        "businesses/INVESTMENT-READINESS.md",
+        [
+            "skills/drf-opportunity-factory/SKILL.md",
+            "skills/drf-opportunity-factory/references/commercial-underwriting-proof-capital.md",
+            "skills/drf-opportunity-factory/references/v3-writeback.md",
+        ],
+    )
+    require_markers(
+        errors,
+        "businesses/PORTFOLIO-V3.md",
+        ["skills/drf-dashboard-operations/references/v3-portfolio-data-contract.md"],
+    )
+    require_markers(
+        errors,
+        "businesses/V3-RECONCILIATIONS.md",
+        ["skills/drf-opportunity-factory/references/v3-writeback.md"],
+    )
+
+
 def validate_ci(errors: list[str]) -> None:
     require_markers(
         errors,
         ".github/workflows/ci.yml",
-        ["python3 skills/drf-repository-operations/scripts/validate_repository.py"],
+        [
+            "python3 skills/drf-repository-operations/scripts/validate_repository.py",
+            "python3 skills/drf-repository-operations/scripts/validate_skill_references.py",
+        ],
     )
 
 
 def validate_active_paths(errors: list[str]) -> None:
-    # Only operating routers/docs are scanned here. Data registers and historical
-    # evidence may retain legacy path text as provenance without acting as runtime instructions.
+    # Only operating routers/docs are scanned here. Historical evidence may retain
+    # legacy path text as provenance without acting as runtime instructions.
     active_routers = [
         "AGENTS.md",
         "README.md",
@@ -250,6 +292,7 @@ def main() -> int:
     validate_skills(errors)
     validate_entrypoints(errors)
     validate_v3_and_profiles(errors)
+    validate_canonical_register_paths(errors)
     validate_ci(errors)
     validate_active_paths(errors)
     validate_filenames_and_secrets(errors)
