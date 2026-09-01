@@ -19,8 +19,8 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Validate repository contracts
-        run: python3 technical/automation/validate_repository.py
+      - name: Validate skills-first repository contracts
+        run: python3 skills/drf-repository-operations/scripts/validate_repository.py
 
       - name: Validate YAML syntax
         shell: bash
