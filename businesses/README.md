@@ -8,7 +8,9 @@
 - **Layer 1 structural portfolio and factor history:** [`OPPORTUNITIES.md`](./OPPORTUNITIES.md)
 - **Ranked Business × Niche relationships:** [`NICHES.md`](./NICHES.md)
 - **Business × Niche RBS, DRF Proof, Stage, Capital and Return migration:** [`INVESTMENT-READINESS.md`](./INVESTMENT-READINESS.md)
+- **V3 no-field-change reconciliation ledger:** [`V3-RECONCILIATIONS.md`](./V3-RECONCILIATIONS.md)
 - **V3 data contract:** [`../knowledge/architecture/drf-v3-portfolio-data-contract.md`](../knowledge/architecture/drf-v3-portfolio-data-contract.md)
+- **V3 write-back contract:** [`../knowledge/architecture/drf-v3-writeback-contract.md`](../knowledge/architecture/drf-v3-writeback-contract.md)
 
 `PORTFOLIO-V3.md` is the joined founder-comparison register for Dashboard Version 3. It does not replace the detailed dossiers or the complete ranked niche register.
 
@@ -60,6 +62,26 @@ live evidence
 ```
 
 If a newer current dossier conflicts with an older summary, reconcile the register. Never let the dashboard become a competing truth source.
+
+## Mandatory V3 close-out
+
+Every **material** business, niche, score, proof, pricing, GTM, delivery, economics or evidence update must finish through Workflow Layer 3 before its Issue/run is considered complete.
+
+Required order:
+
+```text
+current evidence / dossier
+→ specialised register(s) whose field families changed
+→ review the parent row in PORTFOLIO-V3.md
+→ either update PORTFOLIO-V3.md last
+   OR record an evidence-backed NO FIELD CHANGE in V3-RECONCILIATIONS.md
+→ validation
+→ close Issue/run
+```
+
+Do not manufacture a score or freshness change merely to touch V3. Do not leave material new evidence stranded only in a business folder, research file or automation run history.
+
+Canonical route: [`../workflows/drf-opportunity-factory.md`](../workflows/drf-opportunity-factory.md).
 
 ## Current parent opportunity directory
 
