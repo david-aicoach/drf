@@ -1,8 +1,9 @@
 # Business Blueprints — Distribution Channel Portfolio
 
-**Date:** 31 August 2026  
-**Issue:** #67  
-**Source:** `research/ai-first-digital-marketplaces-and-service-platforms.md`
+**Date:** 1 September 2026  
+**Issue:** #112  
+**Source:** `research/ai-first-digital-marketplaces-and-service-platforms.md`  
+**Daily intelligence:** `DAILY-INTELLIGENCE.md`
 
 ## Rule
 
@@ -24,7 +25,7 @@ The goal is **distribution breadth without indiscriminate duplication**.
 
 | Platform | Discovery type | Suitable Blueprint components | Current DRF economics/evidence | Use |
 |---|---|---|---|---|
-| **Whop** | Marketplace + hybrid | Full digital business systems, agency setups, software, communities, courses | Native digital-business positioning; Whop-specific Blueprint/Partner economics tracked separately | **Primary discovery test** |
+| **Whop** | Marketplace + hybrid | Full digital business systems, agency setups, software, communities, courses | Native digital-business positioning; Blueprint programme mechanics and separate Partner economics now first-party verified at programme level; live DRF payout/stacking and representative market performance remain unproven | **Primary discovery test** |
 | **Gumroad** | Marketplace + storefront | PDF/Markdown/ZIP playbooks, templates, files, software, memberships | Direct sales currently recorded by DRF at 10% + $0.50; Discover sales 30% | **General digital-product syndication** |
 | **Contra Digital Products** | Marketplace + profile storefront | Workflows, templates, files, subscriptions, implementation-adjacent assets | Product + service ecosystem; useful where Blueprint can lead into implementation | **Hybrid product/service channel** |
 | **Notion Marketplace** | Marketplace | Notion operating systems, databases, CRM/project/recruitment templates | DRF master research records 8% + $0.40 per transaction | **Native channel for Notion components** |
@@ -33,7 +34,7 @@ The goal is **distribution breadth without indiscriminate duplication**.
 | **Shopify** | Owned storefront + channels | Catalogue, bundles, licences, digital products | Strong owned-commerce infrastructure; little reason to depend on one marketplace if direct demand develops | **Owned brand/store layer** |
 | **Framer Marketplace** | Marketplace | Framer websites, landing pages, components/plugins | DRF research records creators keeping 100% on paid Marketplace products | **Template-specific syndication** |
 | **Webflow Templates** | Marketplace | Webflow sites/templates | DRF research records 95% creator commissions | **Template-specific syndication** |
-| **PromptBase** | Marketplace | Prompts, agent skills, AI workflow components | Specialist AI-asset marketplace; 20% marketplace fee recorded in DRF research | **Specialist component channel** |
+| **PromptBase** | Marketplace | Prompts, agent skills and AI workflow components | Specialist AI-asset marketplace; 20% marketplace fee recorded in DRF research | **Specialist component channel** |
 | **Etsy** | Marketplace | Eligible original creative digital downloads | Useful only where product satisfies Etsy's human-creative-role and AI disclosure rules; prompt bundles specifically constrained | **Conditional** |
 | **GitHub Marketplace / RapidAPI** | Marketplace | Developer apps, APIs, recurring technical components | High fit only when the Blueprint includes a true software/API product | **Specialist software extension** |
 
@@ -93,7 +94,14 @@ A dominant channel can be economically rational. The risk is **unexamined depend
 
 Whop is a high-priority channel because its current digital-business orientation, marketplace, agentic tooling and channel-specific recurring economics can make it unusually valuable.
 
-But the correct formula is:
+Current channel evidence now distinguishes:
+
+- first-party-verified Blueprint programme mechanics;
+- first-party-verified separate Partner economics;
+- unproven live DRF payout attribution/stacking;
+- unproven representative conversion, payout distribution and downstream retention.
+
+The correct formula remains:
 
 `Business Blueprint economics + Whop-specific upside`
 
@@ -102,6 +110,14 @@ not:
 `Business Blueprint = Whop`
 
 Whop evidence lives under `channels/whop/`.
+
+## Daily channel watch
+
+`DAILY-INTELLIGENCE.md` governs the scheduled parent-opportunity run.
+
+The automation scans this whole channel portfolio plus credible new/emerging channels during the same daily run. Material channel changes update detailed channel evidence first and this portfolio only when routing, economics, eligibility, risk or priority materially changes.
+
+A new marketplace does not automatically become a new parent business.
 
 ## Website and launch kits as a product type
 
