@@ -13,9 +13,10 @@ Shared cross-portfolio research and intelligence controls only.
 
 ## Current cross-portfolio economics and agent-business research
 
-- [`autonomous-agent-economics-2026-09.md`](./autonomous-agent-economics-2026-09.md) — September 2026 economics baseline for inference/API pricing, agent runtime/browser costs, agent-native payments, marketplaces/bounties and self-sustaining agent-business economics.
-- [`recurring-intelligence/AUTONOMOUS-AI-REVENUE-OPERATIONS.md`](./recurring-intelligence/AUTONOMOUS-AI-REVENUE-OPERATIONS.md) — recurring monthly contract that broadens the economics watch into holistic research for the vendor-neutral **Autonomous AI Revenue Operations Business-in-a-Box** parent opportunity and requires durable GitHub writeback.
-- [`ai-delivery-economics-portfolio-rescore-2026-08-29.md`](./ai-delivery-economics-portfolio-rescore-2026-08-29.md) — current portfolio re-score establishing cost per successful production outcome and native/deterministic execution before scarce browser/computer-use labour.
+- [`autonomous-ai-revenue-operations-2026-09.md`](./autonomous-ai-revenue-operations-2026-09.md) — current September 2026 rolling weekly research for the vendor-neutral **Autonomous AI Revenue Operations Business-in-a-Box** parent opportunity; includes the 1 September re-score from 81→87.
+- [`autonomous-agent-economics-2026-09.md`](./autonomous-agent-economics-2026-09.md) — supporting September economics baseline for inference/API pricing, agent runtime/browser costs, agent-native payments, marketplaces/bounties and self-sustaining agent-business economics; no longer the complete parent-opportunity conclusion.
+- [`recurring-intelligence/AUTONOMOUS-AI-REVENUE-OPERATIONS.md`](./recurring-intelligence/AUTONOMOUS-AI-REVENUE-OPERATIONS.md) — canonical **weekly** recurring-research contract requiring holistic parent research and durable GitHub writeback.
+- [`ai-delivery-economics-portfolio-rescore-2026-08-29.md`](./ai-delivery-economics-portfolio-rescore-2026-08-29.md) — portfolio re-score establishing cost per successful production outcome and native/deterministic execution before scarce browser/computer-use labour.
 - [`ai-first-digital-marketplaces-and-service-platforms.md`](./ai-first-digital-marketplaces-and-service-platforms.md) — master map of AI-first digital revenue endpoints and marketplaces.
 
 ## Recurring intelligence
@@ -25,7 +26,7 @@ Shared cross-portfolio research and intelligence controls only.
 - Golden Opportunity Discovery runs;
 - rejected and held discovery candidates;
 - existing-portfolio refresh runs;
-- Autonomous AI Revenue Operations monthly research.
+- Autonomous AI Revenue Operations weekly research.
 
 These logs do not replace detailed source evidence, opportunity dossiers or `businesses/PORTFOLIO-V3.md`. A partial/failed run preserves the last successful conclusion.
 
