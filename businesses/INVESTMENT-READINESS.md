@@ -1,27 +1,27 @@
 # DRF Business Investment Readiness
 
 **Status:** Canonical migration and investment-gate register  
-**Version:** 1.4  
+**Version:** 1.5  
 **Date:** 1 September 2026  
 **Governing issue:** #60  
-**Latest targeted rebuild:** Autonomous AI Revenue Operations vendor-neutral parent re-score — 1 September 2026  
+**Latest targeted rebuild:** Business Blueprints EMP3 transferability test + Autonomous AI Revenue Operations vendor-neutral parent re-score — 1 September 2026  
 **Source portfolio:** `businesses/OPPORTUNITIES.md`  
 **Niche source:** `businesses/NICHES.md`
 
 ## Important
 
-The existing Opportunity Scores were created under the structural-screening framework. They remain useful history, but they are **not investor-readiness ratings**.
+Opportunity Scores are the current **Layer 1 structural business-attractiveness scores**. They remain first-class DRF decision inputs, but they are **not investor-readiness ratings** and do not replace Niche Score, RBS, DRF Proof, Stage, Capital or Return.
 
-Until an opportunity is rebuilt through RBF-7, read it as:
+Until a selected Business × Niche has completed the relevant commercial underwriting in the canonical Opportunity Factory, read deeper underwriting fields as Pending rather than zero or failure.
 
-> **Legacy structural score — not investor-ready; Revenue Blueprint Score, Proof Level and Return Profile pending.**
+The current decision format is:
 
-The new decision format is:
+> **Business opportunity × best scored niche · Opportunity Score __/100 · RBS __/100 · Niche __/100 · DRF Proof P_ · Stage ______ · Capital unlocked $_____ · Return ______**
 
-> **Result / promise × best scored niche · RBS __/100 · Niche __/100 · Proof P_ · Gate ______ · Capital unlocked $_____ · Investor-ready Yes/No**
+Canonical workflow: `workflows/drf-opportunity-factory.md`  
+Canonical underwriting standard: `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`
 
-Canonical workflow: `workflows/revenue-blueprint-factory.md`  
-Canonical standard: `knowledge/guidelines/revenue-blueprint-scoring-and-investment-readiness.md`
+`workflows/revenue-blueprint-factory.md` is compatibility/history only. RBS, DRF Proof P0–P6, Stage, Capital and Blueprint certification remain subordinate controls inside the Opportunity Factory.
 
 ### Outcome × niche × channel rule
 
@@ -32,11 +32,12 @@ A platform, CRM, AI model or delivery vendor is not the commercial opportunity. 
 For digital products, distribution is a separate downstream layer:
 
 ```text
-Outcome / Result
+Business opportunity / result
 → ranked niches
-→ best Outcome × Niche combination
-→ RBF underwriting and proof
-→ productisation / Blueprint
+→ selected Business × Niche
+→ offer / pricing / GTM / delivery
+→ RBS / Return / DRF Proof / Stage / Capital
+→ optional Blueprint productisation
 → compatible distribution channels
 → channel-level economics
 ```
@@ -47,14 +48,14 @@ The niche score remains separate from RBS. A niche can be attractive while the d
 
 ## Portfolio migration register
 
-| Rebuild wave | Opportunity | Result / promise | Legacy structural score | Revenue Blueprint Score | Proof Level | Investment Gate | Capital unlocked | Return Profile | Investor-ready | Current action |
+| Rebuild wave | Opportunity | Result / promise | Opportunity Score | Revenue Blueprint Score | Proof Level | Investment Gate | Capital unlocked | Return Profile | Investor-ready | Current action |
 |---:|---|---|---:|---:|---|---|---:|---|---|---|
-| **1** | **Business Blueprints** | **Launch a ready-to-run, proof-backed revenue business instead of starting from a blank page; distribute the compatible Blueprint across the best marketplaces/storefronts rather than tying the business to one platform.** | **82** | **82** | **P2 Backtested** | **FORWARD TEST** | **Up to $3,000** | **Multi-platform digital-product model underwritten; direct sale remains core viability, while Whop royalties/Partner economics and other channel-specific monetisation remain upside.** | **No** | Package one proven Outcome × Niche system, publish it across the best compatible channel portfolio, and compare real traffic, conversion, fees, CAC, refunds, activation and contribution by channel. |
-| **1** | **Enquiry-to-Revenue Control** | **Capture every legitimate enquiry, give every qualified opportunity an owner/next action, and surface recoverable quotes/AMC renewals before they go cold.** | **95** | **86** | **P2 Backtested** | **FORWARD TEST** | **Up to $3,000** | **HVAC service-model backtest complete; live CAC, support load, churn and recovered gross profit pending P3/P4.** | **No** | Run the 30-day HVAC/AC test: up to 60 qualified accounts, 8 audits/conversations and 2 paid AED1,000 pilot deposits against ≥AED2,500 setup + ≥AED750/month. |
+| **1** | **Business Blueprints** | **Launch a ready-to-run, proof-backed revenue business instead of starting from a blank page; distribute the compatible Blueprint across the best marketplaces/storefronts rather than tying the business to one platform.** | **82** | **82** | **P2 Backtested** | **TEST** | **Up to $3,000** | **EMP3 Market Proven / 90% externally; multi-platform digital-product model underwritten. Live DRF buyer/price/channel transferability, CAC, refunds, support, activation and contribution remain pending.** | **No** | Pre-write a **US$199–399** self-serve test price, then obtain **2 unrelated paid buyers/deposits**, with at least **1 genuine deployment-intent buyer** and at least **1 buyer not sourced through a direct personal favour/relationship**; measure channel contribution and support. |
+| **1** | **Enquiry-to-Revenue Control** | **Capture every legitimate enquiry, give every qualified opportunity an owner/next action, and surface recoverable quotes/AMC renewals before they go cold.** | **95** | **86** | **P2 Backtested** | **TEST** | **Up to $3,000** | **HVAC service-model backtest complete; live CAC, support load, churn and recovered gross profit pending P3/P4.** | **No** | Run the 30-day HVAC/AC test: up to 60 qualified accounts, 8 audits/conversations and 2 paid AED1,000 pilot deposits against ≥AED2,500 setup + ≥AED750/month. |
 | **1** | **Revenue Recovery & Reactivation Engine** | Recover stale quotes, dormant customers, renewals and abandoned pipeline into measurable cash. | **94** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild recovery fee/performance/retainer revenue streams and backtest client data. |
 | **1** | **AI Voice Receptionist & Booking Agent** | Answer, qualify and book revenue-generating calls 24/7 without losing urgent inbound demand. | **94** | Pending | Pending | RESEARCH | $0 | Pending | No | Build call-economics, telephony, booking value, CAC and failure-cost model. |
 | **1** | **Missed Lead & Appointment Conversion Engine** | Convert more paid and inbound leads into booked appointments before they go cold. | **93** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild price, attribution, conversion uplift and client ROI case. |
-| **1** | **Fast Quote-to-Cash System** | **Turn qualified enquiries into a safe commercial number/next step faster, then follow every quote, revision and variation until decision or payment.** | **91** | **82** | **P2 Backtested** | **FORWARD TEST** | **Up to $3,000** | **Gypsum/drywall quote-leak and estimator-time backtest complete; live quote replay, CAC and support economics pending P3/P4.** | **No** | Run the 30-day gypsum test: 6 qualified audits, replay ≥20 historic quotes, and obtain 2 paid AED1,000 pilot deposits against ≥AED4,000 setup + ≥AED1,250/month. |
+| **1** | **Fast Quote-to-Cash System** | **Turn qualified enquiries into a safe commercial number/next step faster, then follow every quote, revision and variation until decision or payment.** | **91** | **82** | **P2 Backtested** | **TEST** | **Up to $3,000** | **Gypsum/drywall quote-leak and estimator-time backtest complete; live quote replay, CAC and support economics pending P3/P4.** | **No** | Run the 30-day gypsum test: 6 qualified audits, replay ≥20 historic quotes, and obtain 2 paid AED1,000 pilot deposits against ≥AED4,000 setup + ≥AED1,250/month. |
 | **1** | **Assessment-as-a-Service Managed Retainer** | Continuously assess and evidence candidate quality without rebuilding the assessment process for every vacancy. | **85** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild existing Talent Bridge service economics, capacity and retainer return. |
 | **1** | **Partner-Delivered Recruitment / Score Hire Model** | Fill vacancies through a controlled recruitment service while partner delivery reduces founder/team fulfilment load. | **85** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild fee, partner split, replacement risk, cycle time and cash conversion. |
 | **2** | **AI Support & Sales Assistant** | Resolve buyer questions and move qualified conversations toward purchase 24/7 at lower service cost. | **90** | Pending | Pending | RESEARCH | $0 | Pending | No | Re-underwrite incremental value beyond native vertical software. |
@@ -83,13 +84,13 @@ The niche score remains separate from RBS. A niche can be attractive while the d
 
 The dashboard must not hard-code a single niche into the parent opportunity. It joins each portfolio row to `businesses/NICHES.md` by parent opportunity/result and ranks those niche rows independently.
 
-Collapsed view should show:
+Collapsed V3 comparisons should preserve the full decision stack rather than replacing Layer 1 with underwriting:
 
 ```text
-Result / promise | Best scored niche | RBS | Niche score | Proof | Gate | Capital | Investor-ready | Next milestone
+Business Opportunity | Opportunity Score | MRR | AI Autonomy | Evidence | Research | Best Niche | Niche Score | EMP | RBS | DRF Proof | Stage | Capital | Next Proof
 ```
 
-Expanded view should show the complete ranked niche table for that result plus the RBF underwriting/evidence for rebuilt variants.
+Expanded view should show the complete ranked niche table for that result plus the commercial underwriting/evidence for rebuilt variants.
 
 For renamed outcome-first labels, use the following joins during migration:
 
@@ -118,28 +119,29 @@ Rebuild only after the faster lanes are operating or when new evidence materiall
 
 - Do not create 27 Issues before execution starts.
 - Open one Issue when an opportunity enters active rebuild.
-- Start from the Version 2.0 template; do not edit the old score into a new result.
+- Use the current `knowledge/templates/business-opportunity-research.md` / Opportunity Factory structure; do not treat the old RBF workflow as a competing route.
 - Preserve old research as source history.
 - Define the customer-facing **result/promise before vendor/platform implementation**.
 - For digital products, treat marketplaces/storefronts as a **channel portfolio**, not the business definition.
-- Keep Niche Attractiveness Score separate from Revenue Blueprint Score.
+- Keep Opportunity Score, Niche Attractiveness Score and Revenue Blueprint Score separate.
 - Replace `Pending` only with sourced work.
 - Capital remains `$0` until the required proof gate unlocks it.
 - Update the return profile from the canonical workbook when the stage requires it.
-- Re-rank only after a meaningful cohort of opportunities has been rebuilt; do not compare new RBS scores directly with old structural scores.
+- Re-rank only after a meaningful cohort of opportunities has been rebuilt; do not compare RBS directly with Opportunity Score.
+- Finish every material update through the mandatory Layer 3 / V3 close-out contract in `knowledge/architecture/drf-v3-writeback-contract.md`.
 
 ## Completion definition
 
-The portfolio migration is complete when every active opportunity shows:
+The deeper underwriting migration is complete when every active opportunity has, as applicable to its current stage:
 
 - customer-facing result/promise;
 - ranked niche list and best current niche;
 - Revenue Blueprint Score;
-- Proof Level;
-- Investment Gate;
+- DRF Proof;
+- Stage;
 - capital and founder-time requirement;
 - monthly/annual Return Profile;
-- correct model card;
+- current offer/pricing/GTM/delivery architecture;
 - next proof milestone;
-- investor-ready yes/no;
-- linked evidence and financial model.
+- linked evidence and financial model;
+- reconciled `businesses/PORTFOLIO-V3.md` founder state.
