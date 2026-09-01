@@ -9,3 +9,26 @@
   border-top-color:transparent;
   border-bottom-color:#17202a;
 }
+
+/* Founder KPI: make the canonical parent-opportunity count impossible to miss.
+   The number itself remains populated from the live V3 portfolio row count. */
+.v3-metric:has(#metric-total){
+  border-color:var(--gold);
+  background:linear-gradient(145deg,#fff 0%,var(--gold-soft) 100%);
+  box-shadow:0 10px 28px rgba(121,87,22,.14);
+}
+.v3-metric:has(#metric-total) small{
+  color:var(--gold-deep);
+  font-size:9px;
+}
+#metric-total{
+  margin-top:1px;
+  color:var(--gold-deep);
+  font-size:42px;
+  font-weight:700;
+  letter-spacing:-.035em;
+}
+#metric-total + span{
+  color:#594822;
+  font-weight:800;
+}
