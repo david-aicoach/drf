@@ -9,6 +9,10 @@ A GitHub-native factory for finding, underwriting, testing and packaging revenue
 **Canonical niche register:** [`businesses/NICHES.md`](businesses/NICHES.md)  
 **Business × Niche readiness:** [`businesses/INVESTMENT-READINESS.md`](businesses/INVESTMENT-READINESS.md)
 
+## GitHub creation gate
+
+Never create `temp`, `test`, `placeholder`, `probe`, `ignore` or other sacrificial GitHub objects. Search/read first, prepare the real durable object, then create it once. Never create an Issue merely to obtain an Issue number or test a tool/schema. Full rule: [`AGENTS.md`](AGENTS.md#github-object-creation-gate).
+
 ---
 
 ## What DRF is
