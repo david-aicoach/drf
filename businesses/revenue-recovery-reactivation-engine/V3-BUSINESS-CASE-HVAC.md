@@ -79,16 +79,38 @@ Preserve existing CRM/FSM/accounting systems where usable. Do not rebuild paymen
 | Operational, legal and platform risk | 5 | 8.0 | 4.0 |
 | **Total** | **100** |  | **87.0** |
 
+## P2 comparative backtest
+
+This is a **comparative stress test, not a forecast**. It uses the current mid-range pilot price and current known low messaging/tool economics, with an explicit notional internal delivery-cost rate of **AED150/hour** only to stress founder/service labour. Actual DRF cost must replace this assumption at P3/P4.
+
+**Test product:** one controlled recovery campaign at **AED2,500** fixed fee + direct usage.
+
+| Scenario | Tool/messaging cash | Human delivery | Notional labour | Fully loaded DRF direct cost | DRF contribution on AED2,500 fee |
+|---|---:|---:|---:|---:|---:|
+| Downside | AED600 | 16 h | AED2,400 | AED3,000 | **-AED500** |
+| Base | AED400 | 8 h | AED1,200 | AED1,600 | **AED900** |
+| Upside | AED300 | 4 h | AED600 | AED900 | **AED1,600** |
+
+### Break-even and sensitivity
+
+- **DRF fee break-even:** fully loaded delivery cost must stay at or below **AED2,500** for the fixed-fee pilot before any performance component.
+- At the AED150/h stress rate with AED400 tools, break-even is about **14 delivery hours**.
+- **Client economic break-even:** incremental recovered **gross contribution** must exceed the pilot fee + any direct usage. At AED2,500 + AED400 usage, that is about **AED2,900** before considering internal client effort.
+- A sensible live pass threshold should therefore require more than mere fee recovery; the pilot should show a commercially meaningful contribution multiple after all costs.
+- Performance-fee upside is excluded from this backtest so core viability does not depend on attribution-sensitive variable fees.
+
+### Maximum downside
+
+- No paid acquisition is required for the first design-partner test.
+- Pre-authorised new capital remains capped at **US$3,000**, but this is a ceiling, not a spending target.
+- Under the downside case above, direct external cash exposure is about **AED600** plus founder/service time; the fixed-fee campaign itself would be slightly contribution-negative if labour reaches 16 hours.
+- This exposes the principal business risk correctly: **data cleanup and human exception work**, not message cost.
+
 ## Return profile
 
-Exact cash return remains **Pending client data**; do not manufacture a recoverable-pool forecast.
+Exact annual cash return remains **Pending live client data**; do not manufacture a recoverable-pool forecast.
 
-Known underwriting:
-
-- technical/messaging cost is low relative to high-value recovered jobs/contracts;
-- primary margin risks are data cleanup, support, human exceptions and attribution work;
-- MRR is only durable where new quotes/renewals/dormant cohorts replenish continuously;
-- maximum test capital remains bounded at **US$3,000**.
+The P2 backtest shows the fixed-fee pilot survives under base/upside service-load assumptions and fails visibly if data/support labour becomes excessive. MRR is only durable where new quotes/renewals/dormant cohorts replenish continuously.
 
 ## DRF Proof
 
@@ -99,7 +121,8 @@ Deserved because:
 - category has EMP3 commercial proof;
 - HVAC niche is 91/100 with explicit buyer/trigger/economic model;
 - offer, pricing, GTM, delivery, cost drivers, attribution logic and test gates are defined;
-- unit economics survive a bounded scenario without relying on exceptional conversion claims.
+- downside/base/upside delivery cost, break-even, maximum downside and transferability are now explicitly documented;
+- the model survives the base comparative stress test without relying on exceptional recovery-rate claims.
 
 Not P3 because DRF has not yet recovered paid incremental contribution from a live UAE HVAC account.
 
