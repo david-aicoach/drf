@@ -6,13 +6,19 @@ Standard structures for recurring DRF outputs. Create only files required by the
 
 1. [`drf-opportunity-factory-intake-prompt.md`](./drf-opportunity-factory-intake-prompt.md) — reusable founder-to-agent prompt, including Automated Discovery and Portfolio Refresh variants.
 2. [`../../workflows/drf-opportunity-factory.md`](../../workflows/drf-opportunity-factory.md) — the one canonical end-to-end DRF opportunity workflow.
-3. [`../../workflows/drf-recurring-intelligence-loops.md`](../../workflows/drf-recurring-intelligence-loops.md) — recurring Golden Opportunity Discovery and Existing Portfolio Refresh routing.
+3. [`drf-v3-closeout-checklist.md`](./drf-v3-closeout-checklist.md) — mandatory Layer 3/V3 close-out for material opportunity/niche updates.
+4. [`../../workflows/drf-recurring-intelligence-loops.md`](../../workflows/drf-recurring-intelligence-loops.md) — recurring Golden Opportunity Discovery and Existing Portfolio Refresh routing.
+
+Write-back contract:
+
+- [`../architecture/drf-v3-writeback-contract.md`](../architecture/drf-v3-writeback-contract.md) — source-first update order, `PORTFOLIO-V3.md` final write and explicit `NO FIELD CHANGE` reconciliation rule.
 
 ## Critical distinction
 
 - Workflow Layer 1, Layer 2 and Layer 3 describe the progression applied to each opportunity.
 - Dashboard Version 1, Version 2 and Version 3 describe website evolution.
 - Dashboard V3 displays all three workflow layers; Dashboard V3 is not Workflow Layer 3.
+- Workflow Layer 3 is not complete until the V3 reconciliation decision is recorded.
 
 ---
 
@@ -88,9 +94,9 @@ Layer 2 governing standards:
 
 ---
 
-# Layer 3 — Structured Factory Output
+# Layer 3 — Structured Factory Output + V3 Write-Back
 
-Core question: **Can the opportunity be represented as one complete, comparable and executable business case?**
+Core question: **Can the opportunity be represented as one complete, comparable and executable business case, and has that current state reached V3?**
 
 The Layer 3 section inside [`business-opportunity-research.md`](./business-opportunity-research.md) produces:
 
@@ -101,14 +107,31 @@ The Layer 3 section inside [`business-opportunity-research.md`](./business-oppor
 - Blueprint packaging readiness;
 - one explicit decision and next proof milestone.
 
+Then [`drf-v3-closeout-checklist.md`](./drf-v3-closeout-checklist.md) requires exactly one V3 result:
+
+```text
+V3 FIELDS CHANGED
+→ update businesses/PORTFOLIO-V3.md LAST
+
+or
+
+V3 NO-FIELD-CHANGE
+→ record businesses/V3-RECONCILIATIONS.md
+```
+
 Supporting outputs:
 
-- [`DRF-V3-RECORD-FIELDS.md`](./DRF-V3-RECORD-FIELDS.md) — dossier field hand-off to the final V3 data contract.
+- [`DRF-V3-RECORD-FIELDS.md`](./DRF-V3-RECORD-FIELDS.md) — dossier field hand-off to the V3 data contract.
 - [`revenue-blueprint-specification.md`](./revenue-blueprint-specification.md) — operating recipe and P3–P6 packaging/certification structure.
 - [`revenue-blueprint-factory-dashboard.md`](./revenue-blueprint-factory-dashboard.md) — factory throughput, proof conversion, capital efficiency, portfolio cash and Blueprint revenue metrics.
 - [`business-opportunity-worked-example-business-blueprints.md`](./business-opportunity-worked-example-business-blueprints.md) — Business Blueprints example; one opportunity/packaging route, not the identity of DRF.
 
-The stable data contract is [`../architecture/drf-v3-portfolio-data-contract.md`](../architecture/drf-v3-portfolio-data-contract.md). Dashboard Version 3 is implemented under [77.6] #87.
+Stable data contract:
+
+- [`../architecture/drf-v3-portfolio-data-contract.md`](../architecture/drf-v3-portfolio-data-contract.md)
+- [`../architecture/drf-v3-writeback-contract.md`](../architecture/drf-v3-writeback-contract.md)
+
+Dashboard Version 3 is the derived website view implemented under [77.6] #87.
 
 ---
 
@@ -129,15 +152,16 @@ rank niches → select beachhead → reverse-engineer operators
 → offer → pricing → GTM → delivery → RBS → Return
 → DRF Proof → Stage → Capital → Next Proof
 
-LAYER 3 — STRUCTURE THE OUTPUT
-founder-readable mini business plan
-→ canonical V3 record
-→ execution plan
-→ optional Blueprint packaging
+LAYER 3 — STRUCTURE + WRITE BACK
+founder-readable business case
+→ V3 record review
+→ PORTFOLIO-V3 update OR explicit NO FIELD CHANGE
+→ validation
+→ Dashboard V3
 
 REFRESH
 watch material change → update affected source → preserve history
-→ reconcile PORTFOLIO-V3 last
+→ Layer 3/V3 reconciliation last
 ```
 
 ## Evidence rule
@@ -162,6 +186,8 @@ A category can be `EMP3 Market Proven` while DRF remains `P1 Desk Underwritten`.
 ## Governing files
 
 - Opportunity workflow: [`../../workflows/drf-opportunity-factory.md`](../../workflows/drf-opportunity-factory.md)
+- V3 write-back: [`../architecture/drf-v3-writeback-contract.md`](../architecture/drf-v3-writeback-contract.md)
+- Close-out: [`drf-v3-closeout-checklist.md`](./drf-v3-closeout-checklist.md)
 - Recurring loops: [`../../workflows/drf-recurring-intelligence-loops.md`](../../workflows/drf-recurring-intelligence-loops.md)
 - Founder intake: [`drf-opportunity-factory-intake-prompt.md`](./drf-opportunity-factory-intake-prompt.md)
 - Intelligence configuration: [`../guidelines/drf-recurring-intelligence-configuration.md`](../guidelines/drf-recurring-intelligence-configuration.md)
