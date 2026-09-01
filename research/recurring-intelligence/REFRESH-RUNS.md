@@ -2,7 +2,7 @@
 
 **Status:** Canonical concise refresh history  
 **Governing stage:** [77.5] #82  
-**Configuration:** `DRF-INTELLIGENCE-CONFIG-1.0`
+**Configuration:** `DRF-INTELLIGENCE-CONFIG-1.1`
 
 No refreshes are recorded at creation. Add rows only for real scheduled or event-triggered executions.
 
@@ -22,3 +22,4 @@ No refreshes are recorded at creation. Add rows only for real scheduled or event
 5. `PORTFOLIO-V3.md` is reconciled after detailed source files and specialised registers.
 6. If nothing material changes, record `UNCHANGED`; do not manufacture activity.
 7. Do not store private customer evidence in this summary log; link to the permissioned canonical record.
+8. Scheduled Business Blueprints runs follow `businesses/business-blueprints/DAILY-INTELLIGENCE.md` and are incomplete until the run row is landed and verified.
