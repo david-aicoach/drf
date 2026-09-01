@@ -3,7 +3,7 @@
 **Status:** Canonical template  
 **Version:** 1.0  
 **Governing stage:** [77.5] #82  
-**Loop:** `workflows/drf-recurring-intelligence-loops.md`  
+**Owning Skill:** `skills/drf-recurring-intelligence/SKILL.md`  
 **Configuration:** `DRF-INTELLIGENCE-CONFIG-1.0`
 
 Use this record for a scheduled or event-triggered refresh of an existing parent opportunity. Read current canonical truth before searching. Preserve prior values and DRF Proof.
