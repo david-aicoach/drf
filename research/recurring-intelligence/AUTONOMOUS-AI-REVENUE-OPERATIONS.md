@@ -1,7 +1,7 @@
 # Autonomous AI Revenue Operations — Recurring Research Contract
 
 **Status:** Canonical recurring-intelligence contract  
-**Cadence:** Monthly deep research, first day of each month  
+**Cadence:** Weekly deep research, Monday morning UAE time  
 **Parent opportunity:** Autonomous AI Revenue Operations Business-in-a-Box  
 **Canonical parent folder:** `businesses/grok-bot-ai-revenue-operations/`  
 **Repository:** `tbhrc/drf`
@@ -15,6 +15,10 @@ The parent opportunity is:
 > **Autonomous AI Revenue Operations Business-in-a-Box** — productised, measurable revenue-producing workflows and AI-agent operating systems that can acquire, process, fulfil, optimise or protect revenue with low human intervention, sold through deployment fees, recurring management/usage, performance-aligned upside or reusable operating IP.
 
 The scheduled ChatGPT automation is only the trigger. **GitHub is the durable output. A chat-only run is a failed run.**
+
+## Why weekly
+
+The category is changing too quickly for a monthly-only watch: model/API pricing, agent runtimes, computer-use products, payment rails, marketplace liquidity and commercial case studies can change materially within weeks. Daily research would create excessive noise and repository churn. Weekly is the current balance between freshness and evidence quality.
 
 ## Start-of-run canon
 
@@ -225,14 +229,16 @@ Capture failures and counter-evidence as seriously as success stories.
 
 ## Required durable output every run
 
-Every run must create or update:
+Every weekly run must create or update the current month's rolling file:
 
 `research/autonomous-ai-revenue-operations-YYYY-MM.md`
 
-The monthly file must contain:
+If the file already exists, add or update a clearly dated weekly-run section rather than creating another monthly file.
+
+The rolling monthly file must contain:
 
 - executive conclusion;
-- material changes since prior successful run;
+- dated weekly changes since the prior successful run;
 - full research across the applicable pillars above;
 - source links/evidence labels;
 - practical impact on the parent opportunity;
@@ -240,8 +246,6 @@ The monthly file must contain:
 - exact repository changes made;
 - unresolved unknowns / next proof;
 - operating strategy decision.
-
-If the current month file already exists, update it rather than creating a duplicate.
 
 ## Parent-opportunity reconciliation
 
@@ -296,7 +300,7 @@ Append one concise row to:
 
 Record:
 
-`Run date | Status | Monthly file | Material change | Score change | Parent files changed | Verification`
+`Run date | Status | Monthly rolling file | Material change | Score change | Parent files changed | Verification`
 
 A failed/partial run must be recorded truthfully and must not replace the last successful conclusion.
 
@@ -305,16 +309,17 @@ A failed/partial run must be recorded truthfully and must not replace the last s
 Before completing:
 
 1. re-read every GitHub file changed by the run;
-2. confirm the monthly research file exists in `tbhrc/drf`;
-3. confirm any score change is also reflected in the canonical portfolio files, not only the monthly report;
-4. confirm no unsupported market/revenue claim was promoted to fact;
-5. report exact changed paths and persistence status.
+2. confirm the current monthly rolling research file exists in `tbhrc/drf`;
+3. confirm the dated weekly section and run-history row both exist;
+4. confirm any score change is also reflected in the canonical portfolio files, not only the rolling report;
+5. confirm no unsupported market/revenue claim was promoted to fact;
+6. report exact changed paths and persistence status.
 
 If GitHub writeback is unavailable or fails, the automation must report **PERSISTENCE FAILED**. It must not present a chat summary as successful completion.
 
 ## Chat output
 
-Chat is a concise founder summary only:
+Chat is a concise weekly founder summary only:
 
 - most important changes;
 - practical commercial impact;
