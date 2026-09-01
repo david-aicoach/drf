@@ -1,10 +1,10 @@
 # DRF Discovery Candidate Record
 
 **Status:** Canonical template  
-**Version:** 1.0  
+**Version:** 1.1  
 **Governing stage:** [77.5] #82  
 **Owning Skill:** `skills/drf-recurring-intelligence/SKILL.md`  
-**Configuration:** `DRF-INTELLIGENCE-CONFIG-1.0`
+**Configuration:** `DRF-INTELLIGENCE-CONFIG-2.1`
 
 Use one record for a credible discovery candidate that requires more than a one-line rejection-log entry. Do not create a parent business folder until the candidate advances.
 
@@ -29,6 +29,26 @@ Use one record for a credible discovery candidate that requires more than a one-
 **Source date:** `<date>`  
 **Source quality:** `<Tier A / B / C / D>`  
 **Why it may matter:** `<one paragraph>`
+
+## Optional proof-first application signal
+Use this block when the candidate originated from a mobile/web application intelligence source. Load `proof-first-application-discovery-profile.md`.
+
+| Signal | Evidence |
+|---|---|
+| Product/store URL | |
+| Launch/release date | |
+| Estimated monthly revenue | |
+| Revenue estimate source/date | |
+| Revenue direction/growth | |
+| Estimated downloads/traffic | |
+| Pricing/subscription/IAP/usage model | |
+| Active ads/ad-spend/intensity signal | |
+| Organic/viral/ASO signal | |
+| Reviews/rank/user complaints | |
+| Independent corroborating signal | |
+| Estimate limitation | |
+
+**Important:** third-party app revenue/download figures are estimates unless independently verified. They are never DRF actuals.
 
 ---
 
@@ -103,6 +123,8 @@ primary workflow:
 **What the market already proves:** `<one sentence>`  
 **What it does not prove for DRF:** `<one sentence>`
 
+For proof-first application candidates, one app-intelligence estimate alone cannot establish EMP2+.
+
 ---
 
 # 5. Cheap Layer 1 scan
@@ -129,6 +151,17 @@ Use `skills/drf-opportunity-factory/references/revenue-opportunity-scan-card.md`
 | Delivery cost below value | | |
 | No fatal legal/platform/data issue | | |
 | Not a duplicate/vendor relabel | | |
+
+### Additional application gates when relevant
+
+| Gate | Pass / Fail / Unknown | Evidence |
+|---|---|---|
+| Paid problem transfers beyond original brand | | |
+| Monetisation model is reproducible | | |
+| At least one acquisition route is transferable | | |
+| MVP is buildable within acceptable time/capital | | |
+| Credible differentiation wedge exists | | |
+| No fatal store-policy/IP/trademark/privacy barrier | | |
 
 ---
 
@@ -196,6 +229,7 @@ Use `skills/drf-opportunity-factory/references/revenue-opportunity-scan-card.md`
 - [ ] EMP is separate from DRF Proof.
 - [ ] Opportunity Score, not RBS, controls cheap screening.
 - [ ] Threshold version and fatal gates are explicit.
+- [ ] App-intelligence estimates, when used, are labelled and cross-checked.
 - [ ] Rejected/held candidates remain outside the main portfolio.
 - [ ] No paid/outreach/public/legal action was executed without approval.
 - [ ] Completed/failed run history is updated.
