@@ -122,3 +122,4 @@ Estimated third-party app revenue affects evidence and commercial judgement; it 
 Use this profile as a lane inside Golden Opportunity Discovery. A scheduler does not need a separate application-only automation unless later evidence shows that a dedicated cadence materially improves decisions.
 
 Each run should prefer a small number of high-signal candidates over a large list of unexamined apps. Persist candidate decisions and run history under the normal recurring-intelligence contracts.
+
