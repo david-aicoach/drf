@@ -76,16 +76,16 @@ If a newer current dossier conflicts with an older summary, reconcile the regist
 | 9 | `highlevel-vertical-saas-snapshot` | HighLevel Vertical SaaS Snapshot Business-in-a-Box | 89 | Dubai holiday-home operators 82 | [`highlevel-vertical-saas-snapshot/`](./highlevel-vertical-saas-snapshot/) |
 | 10 | `vertical-ai-operating-systems-agent-integration-packs` | Vertical AI Operating Systems & Agent Integration Packs | 88 | Pending | [`vertical-ai-operating-systems-agent-integration-packs/`](./vertical-ai-operating-systems-agent-integration-packs/) |
 | 11 | `recruitment-os-hiring-intelligence-saas` | Recruitment OS / Hiring Intelligence SaaS | 87 | Pending | [`recruitment-os-hiring-intelligence-saas/`](./recruitment-os-hiring-intelligence-saas/) |
-| 12 | `assessment-as-a-service-managed-retainer` | Assessment-as-a-Service Managed Retainer | 85 | Pending | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
-| 13 | `reputation-local-visibility-engine` | Reputation & Local Visibility Engine | 85 | Dubai dental/aesthetic clinics 79 | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
-| 14 | `white-label-hiring-portal` | White-Label Hiring Portal for Employers/Agencies | 85 | Pending | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
-| 15 | `partner-delivered-recruitment-score-hire` | Partner-Delivered Recruitment / Score Hire Model | 85 | Pending | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
-| 16 | `uae-gcc-talent-intelligence-salary-data` | UAE/GCC Talent Intelligence & Salary Data Subscription | 85 | Pending | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
-| 17 | `niche-api-data-product-factory` | Niche API & Data Product Factory | 84 | Pending | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
-| 18 | `local-seo-rank-and-rent` | Local SEO Rank-and-Rent Lead Asset Portfolio | 84 | Pending | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
-| 19 | `business-blueprints` | Business Blueprints | 82 | HVAC/AC Enquiry-to-Revenue Blueprint 92 | [`business-blueprints/`](./business-blueprints/) |
-| 20 | `executive-career-accelerator-job-search-platform` | Executive Career Accelerator / Job Search Platform | 81 | Pending | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
-| 21 | `grok-bot-ai-revenue-operations` | Grok Bot AI-First Revenue Operations Business-in-a-Box | 81 | MEP/HVAC tender and RFQ operations 84 | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
+| 12 | `grok-bot-ai-revenue-operations` | Autonomous AI Revenue Operations Business-in-a-Box | 87 | MEP/HVAC tender and RFQ operations 84 (delivery-rail evidence) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
+| 13 | `assessment-as-a-service-managed-retainer` | Assessment-as-a-Service Managed Retainer | 85 | Pending | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
+| 14 | `reputation-local-visibility-engine` | Reputation & Local Visibility Engine | 85 | Dubai dental/aesthetic clinics 79 | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
+| 15 | `white-label-hiring-portal` | White-Label Hiring Portal for Employers/Agencies | 85 | Pending | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
+| 16 | `partner-delivered-recruitment-score-hire` | Partner-Delivered Recruitment / Score Hire Model | 85 | Pending | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
+| 17 | `uae-gcc-talent-intelligence-salary-data` | UAE/GCC Talent Intelligence & Salary Data Subscription | 85 | Pending | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
+| 18 | `niche-api-data-product-factory` | Niche API & Data Product Factory | 84 | Pending | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
+| 19 | `local-seo-rank-and-rent` | Local SEO Rank-and-Rent Lead Asset Portfolio | 84 | Pending | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
+| 20 | `business-blueprints` | Business Blueprints | 82 | HVAC/AC Enquiry-to-Revenue Blueprint 92 | [`business-blueprints/`](./business-blueprints/) |
+| 21 | `executive-career-accelerator-job-search-platform` | Executive Career Accelerator / Job Search Platform | 81 | Pending | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
 | 22 | `pre-assessed-talent-pool-subscription` | Pre-Assessed Talent Pool Subscription | 81 | Pending | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
 | 23 | `chatgpt-plugin-app-factory` | ChatGPT Plugin / App Factory | 79 | Pending | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
 | 24 | `how-to-find-a-job-in-uae-media-funnel` | HowToFindAJobInUAE Media + Recruitment Funnel | 78 | Pending | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
