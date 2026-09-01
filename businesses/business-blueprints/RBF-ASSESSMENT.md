@@ -1,9 +1,9 @@
 # Business Blueprints — Revenue Blueprint Factory Assessment
 
-**Date:** 31 August 2026  
-**Issue:** #67  
+**Date:** 1 September 2026  
+**Issue:** #112  
 **Model:** RBF-7  
-**Status:** Platform-neutral parent underwriting
+**Status:** Platform-neutral parent underwriting; daily intelligence profile active
 
 > **Revenue Blueprint Score: 82/100 · Proof: P2 Backtested · Gate: FORWARD TEST · Capital unlocked: up to $3,000 · Investor-ready: No**
 
@@ -15,13 +15,13 @@ A **proof-backed business operating system** packaged into a reusable digital Bu
 
 ### What changed
 
-The earlier assessment over-concentrated the business around Whop. DRF's own marketplace research already establishes that platforms should be treated as **revenue endpoints**.
+The earlier assessment over-concentrated the business around Whop. DRF's own marketplace research establishes that platforms should be treated as **revenue endpoints**.
 
 The parent business is therefore:
 
 > **Business Blueprints — multi-platform digital products built from proven DRF operating systems.**
 
-Whop is now one high-value distribution channel with unique optional economics, not the business definition.
+Whop is one high-value distribution channel with unique optional economics, not the business definition.
 
 ## 2. Money model
 
@@ -50,6 +50,19 @@ The business must survive on **direct Blueprint contribution** without requiring
 | Durability, moat and concentration | 5 | 7 | 3.5 | Multi-channel distribution reduces platform concentration; proof/data/brand can compound, but files remain copyable. |
 | Operational, legal and platform risk | 5 | 7 | 3.5 | Diversification reduces single-platform risk but increases policy/version-management complexity. |
 | **TOTAL** | **100** |  | **81.5 → 82/100** | **Strong test candidate, not yet a proven investment.** |
+
+### 1 September score decision
+
+Current first-party Whop programme verification improves evidence quality for one important channel, but it does **not** yet change the parent RBS.
+
+Why the RBS remains **82/100**:
+
+- parent viability is deliberately multi-platform and does not depend on Whop recurring economics;
+- representative buyer conversion and channel contribution are still unproven;
+- buyer deployment/activation and support burden remain unproven;
+- live DRF royalty/Partner attribution and downstream retention remain unproven.
+
+A stronger single channel can improve the portfolio without mechanically increasing the parent score.
 
 ## 4. Proof Level — P2 Backtested
 
@@ -186,19 +199,25 @@ See `PRODUCT-TYPES.md`.
 
 ## 9. Whop as a channel
 
-Whop keeps special strategic value because existing DRF evidence includes:
+Whop keeps special strategic value because current DRF evidence includes:
 
 - native digital-business/Blueprint positioning;
 - marketplace discovery;
 - CLI/API/MCP/agentic direction;
-- reported Blueprint-specific recurring economics still requiring exact first-party contractual capture;
+- **first-party-verified Blueprint programme mechanics**;
 - separately first-party-verified Partner economics.
 
-The previous Whop-specific 79/100 assessment is retained under:
+Current evidence boundary:
+
+- Blueprint creator economics are modelled as Whop-funded economics on qualifying Blueprint-attributed sales, not 10% of downstream gross sales;
+- live DRF payout basis, attribution duration, refunds/chargebacks treatment and stacking with Partner economics still require execution evidence;
+- representative Blueprint conversion, creator-income distribution and downstream retention remain unavailable.
+
+The Whop-specific **79/100** assessment is retained under:
 
 `channels/whop/WHOP-RBF-ASSESSMENT.md`
 
-It is now read as **channel underwriting**, not the parent opportunity score.
+It is **channel underwriting**, not the parent opportunity score.
 
 ## 10. Risks
 
@@ -216,10 +235,18 @@ It is now read as **channel underwriting**, not the parent opportunity score.
 
 **FORWARD TEST.**
 
-Business Blueprints now has a stronger architecture than the Whop-only framing because it can route one proven asset across multiple demand and checkout surfaces while retaining Whop-specific upside.
+Business Blueprints has a stronger architecture than the Whop-only framing because it can route one proven asset across multiple demand and checkout surfaces while retaining Whop-specific upside.
 
 However, the score does not unlock scale capital. DRF still needs real buyers, contribution and activation evidence.
 
-## 12. Next action
+## 12. Daily intelligence contract
+
+The scheduled parent-opportunity research profile is:
+
+`DAILY-INTELLIGENCE.md`
+
+It researches the full Business Blueprints opportunity, persists every completed run in `research/recurring-intelligence/REFRESH-RUNS.md`, and updates this RBF only when evidence materially affects RBS, Return Profile, Proof, Stage, Capital or Next Proof.
+
+## 13. Next action
 
 Package one proven DRF result × niche system as a canonical Blueprint, publish it to the best compatible channel set, and measure **channel-by-channel demand and contribution** before funding scale.
