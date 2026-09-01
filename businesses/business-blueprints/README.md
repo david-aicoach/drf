@@ -141,7 +141,9 @@ No Whop royalty, Partner commission or other platform-specific upside is require
 
 ## Whop-specific economics
 
-Whop remains strategically important because it currently provides channel-specific features/economics not generally available elsewhere, including the emerging Business Blueprint surface and separately verified Whop Partner economics.
+Whop remains strategically important because it currently provides channel-specific features/economics not generally available elsewhere, including the Business Blueprint surface and separately verified Whop Partner economics.
+
+Current Whop programme mechanics are first-party verified at the channel level; live DRF payout attribution/stacking and representative market performance remain unproven.
 
 Those details are retained as **channel research**, not parent-business truth:
 
@@ -149,12 +151,26 @@ Those details are retained as **channel research**, not parent-business truth:
 - [`channels/whop/WHOP-RBF-ASSESSMENT.md`](./channels/whop/WHOP-RBF-ASSESSMENT.md)
 - [`channels/whop/research/`](./channels/whop/research/)
 
+## Daily intelligence and GitHub deployment
+
+The active ChatGPT Web daily research loop is governed by:
+
+- [`DAILY-INTELLIGENCE.md`](./DAILY-INTELLIGENCE.md)
+- [`../../knowledge/guidelines/drf-recurring-intelligence-configuration.md`](../../knowledge/guidelines/drf-recurring-intelligence-configuration.md)
+
+It researches the **full parent opportunity in one run**, including parent demand/economics, all relevant distribution channels, product formats, SEO, AI discovery, MCP/WebMCP opportunities, platform/IP risk and DRF actuals.
+
+Every completed run must land in GitHub, including an `UNCHANGED` entry in `research/recurring-intelligence/REFRESH-RUNS.md` when no material decision changes. Material findings update the detailed source first and `PORTFOLIO-V3.md` last.
+
+A chat notification is not a substitute for repository persistence.
+
 ## Canonical supporting evidence
 
 - [`RESEARCH.md`](./RESEARCH.md) — Business Blueprint parent underwriting
 - [`RBF-ASSESSMENT.md`](./RBF-ASSESSMENT.md) — 10-factor RBF assessment and forward-test gate
 - [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md) — product-format taxonomy; website/launch kits are one SKU type, not another parent business
 - [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md) — product-to-channel routing matrix
+- [`DAILY-INTELLIGENCE.md`](./DAILY-INTELLIGENCE.md) — scheduled research + GitHub write-back contract
 - [`../../research/ai-first-digital-marketplaces-and-service-platforms.md`](../../research/ai-first-digital-marketplaces-and-service-platforms.md) — DRF master marketplace map
 - [`../INVESTMENT-READINESS.md`](../INVESTMENT-READINESS.md) — portfolio gate register
 
