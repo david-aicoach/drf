@@ -55,6 +55,27 @@ The dashboard is derived. **Never edit `index.html` to change business truth.**
 
 ---
 
+# GitHub object creation gate
+
+**Never use a durable GitHub object as a probe, scratchpad or placeholder.** This applies before creating an Issue, PR, branch, file, release or any other persistent GitHub object.
+
+Before any create action:
+
+1. determine the exact durable purpose;
+2. search for an existing equivalent when applicable;
+3. prepare the final meaningful title/body/content first;
+4. create only when the intended durable object is ready.
+
+Never create objects named or described as `temp`, `test`, `placeholder`, `probe`, `ignore`, `draft`, or equivalent. Never create an object merely to obtain an Issue number/ID, test a schema, test permissions, or discover how a tool behaves.
+
+If an Issue number is needed in the final title/body, create the Issue once with complete number-neutral content, receive the assigned number, then update that real Issue. Do not create a sacrificial Issue to reserve/discover a number.
+
+Use read/list/search/schema-discovery actions for tool exploration. Writes are for intentional durable state only.
+
+If an accidental object is created despite this gate, close/delete it immediately where safe, state the reason clearly, and return to the real controlling work object. Cleanup is an exception, not a workflow step.
+
+---
+
 # Mandatory Issue planning and execution
 
 **Checklist first. Execution second.** Every substantive DRF task must be controlled by a GitHub Issue before implementation.
