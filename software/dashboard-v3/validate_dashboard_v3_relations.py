@@ -20,12 +20,20 @@ from validate_dashboard_v3 import (
 INTEGRITY_JS = ROOT / "assets" / "v3-dashboard-proof-counts.js"
 TOOLTIP_CSS = ROOT / "assets" / "v3-dashboard-tooltip-fix.css"
 
+# Current canonical parent names may supersede an older vendor-led label while
+# historical niche evidence remains valid only as delivery-rail evidence.
+PARENT_ALIASES = {
+    "grok bot ai first revenue operations business in a box":
+        "autonomous ai revenue operations business in a box",
+}
+
 
 def normalise_name(value: str) -> str:
     value = value.lower().replace("&", " and ")
     value = re.sub(r"[^a-z0-9]+", " ", value)
     value = re.sub(r"\bthe\b", " ", value)
-    return re.sub(r"\s+", " ", value).strip()
+    key = re.sub(r"\s+", " ", value).strip()
+    return PARENT_ALIASES.get(key, key)
 
 
 def validate_relationships_and_dates() -> tuple[int, int]:
@@ -81,6 +89,7 @@ def validate_browser_safeguards() -> None:
 
     for marker in [
         "validateNicheParents",
+        "PARENT_ALIASES",
         "Niche-parent join contract failed",
         "showLayer2ContractFailure",
         "installStorageResetFallback",
