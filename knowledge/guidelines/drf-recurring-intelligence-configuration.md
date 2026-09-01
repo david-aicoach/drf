@@ -1,16 +1,21 @@
 # DRF Recurring Intelligence Configuration
 
-**Status:** Canonical defaults — founder-reviewable  
-**Version:** 1.0  
-**Date:** 31 August 2026  
+**Status:** Canonical defaults — first scheduled profile active  
+**Version:** 1.1  
+**Date:** 1 September 2026  
 **Governing stage:** [77.5] #82  
+**Activation issue:** #112  
 **Workflow:** `workflows/drf-recurring-intelligence-loops.md`
 
 ## Purpose
 
 Keep discovery thresholds, research cadence and alert behaviour visible, versioned and independent from any particular scheduler or AI model.
 
-A future scheduler may read these defaults, but it must not silently change them. Material threshold/cadence changes require an Issue and documented rationale.
+Schedulers must read these defaults and the opportunity-specific scheduled profile before execution. They must not silently change scoring, evidence or cadence rules. Material threshold/cadence changes require an Issue and documented rationale.
+
+The first active scheduled profile is the ChatGPT Web **Business Blueprints daily intelligence loop** governed by:
+
+`businesses/business-blueprints/DAILY-INTELLIGENCE.md`
 
 ---
 
@@ -24,7 +29,7 @@ A future scheduler may read these defaults, but it must not silently change them
 | Founder digest | Material change only | No daily noise when nothing important changes |
 | Discovery evidence cutoff | Run start time | Sources newer than cutoff belong to a later run |
 
-Recommended scheduler window when later activated: once daily outside core UAE working hours. The exact runtime is an implementation choice, not business logic.
+Recommended scheduler window: once daily outside core UAE working hours where practical. The exact runtime is an implementation choice, not business logic.
 
 ---
 
@@ -76,6 +81,26 @@ Recommended scheduler window when later activated: once daily outside core UAE w
 | Other active opportunity | Quarterly | Yes |
 | Long-horizon / parked | Every six months | Yes, material events only |
 | Conflict / broken canonical source | Immediate | Yes |
+
+## Active scheduled profile — Business Blueprints
+
+Business Blueprints has a dedicated daily ChatGPT Web refresh profile because the category and its distribution channels are moving quickly.
+
+Canonical profile:
+
+`businesses/business-blueprints/DAILY-INTELLIGENCE.md`
+
+The scheduled run must:
+
+- research the **Business Blueprints parent opportunity**, not Whop alone;
+- treat Whop and other marketplaces/storefronts as distribution channels;
+- read current DRF canon before research;
+- persist every completed run to `research/recurring-intelligence/REFRESH-RUNS.md`;
+- update detailed evidence and canonical decision files when material evidence changes them;
+- reconcile `businesses/PORTFOLIO-V3.md` last;
+- notify the founder only after material changes are landed/verified, or when persistence/trust is blocked.
+
+A no-change scheduled run records `UNCHANGED` in the refresh register but does not churn dossier/score files.
 
 ## Staleness defaults
 
@@ -147,6 +172,8 @@ Within a priority tier, use capital/exposure, evidence age, Opportunity Score an
 
 Coverage is proportional to the trigger. A narrow platform-price event does not require a full market rewrite, but every affected field and downstream assumption must be checked.
 
+For Business Blueprints, the daily scan is parent-wide: parent demand/economics, channel portfolio, product formats, SEO/AI discovery, agentic/MCP/WebMCP opportunities, platform/IP risk and DRF actuals are all in scope. Deep rewriting remains evidence-triggered.
+
 ---
 
 # 8. Material-change thresholds
@@ -173,14 +200,18 @@ Smaller observations may be appended to evidence history without changing the V3
 |---|---|
 | Maximum one active run per idempotency key | Yes |
 | Partial/failed run may change canonical decisions | No |
+| Completed scheduled refresh recorded in run history | Required |
 | Detailed source updated before aggregate | Required |
 | V3 register reconciled last | Required |
 | Dashboard HTML used as write source | Prohibited |
 | Founder alert on no material change | No |
 | Founder alert on Golden candidate | Yes |
+| Founder alert on material existing-opportunity change | Yes, after GitHub persistence |
 | Founder alert on conflict/blocked trust | Yes |
 | Founder alert on approval-required action | Yes |
 | Paid/outreach/public/legal action automatically executed | No |
+
+A scheduled automation that researches but does not persist the required GitHub record is `PARTIAL` or `FAILED`, not `COMPLETED`.
 
 ---
 
@@ -240,6 +271,15 @@ A new configuration version must record:
 
 ## Current version
 
-`DRF-INTELLIGENCE-CONFIG-1.0`
+`DRF-INTELLIGENCE-CONFIG-1.1`
 
-Until a production scheduler is explicitly approved and implemented, this file governs manual/specification runs only.
+### 1.0 → 1.1
+
+- **Reason:** the existing ChatGPT Whop watcher was too narrow and did not require GitHub deployment.
+- **Change:** activate a dedicated daily Business Blueprints parent-opportunity profile through ChatGPT Web; require GitHub read/write/verification in the same run; record every completed refresh in `REFRESH-RUNS.md`; retain material-change-only founder alerts.
+- **Affected opportunity:** Business Blueprints.
+- **Effective date:** 1 September 2026.
+- **Issue:** #112.
+- **Historical comparability:** preserved; scoring thresholds are unchanged.
+
+Other recurring-intelligence schedules may be added later without changing business logic, provided they invoke the canonical workflow/configuration and document their opportunity-specific profile.
