@@ -97,6 +97,8 @@ Use the repository's proportional GitHub workflow:
 - standard multi-file/code/automation work: Issue → branch → PR → checks/review → merge;
 - genuine multi-stage programmes: Master Issue + linked Stage Issues.
 
+DRF agent execution and review inherit the canonical provider-failover policy in `tbhrc/skills/github-agent-workflow`. Provider quota or budget exhaustion and unavailability must not be treated as a reason to wait when another authorised executor or reviewer is available. Local DRF Level 1/2/3 workflow and domain rules are preserved.
+
 Before writes, read the latest file/Issue/PR state and assume another agent may be working concurrently. Preserve newer unrelated work.
 
 Every substantive Issue must be sufficient for a fresh agent to continue without chat history: objective, context, scope, implementation checklist, verification checklist, acceptance criteria and dependencies where material.
