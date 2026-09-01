@@ -1,26 +1,31 @@
 # Research — Business Blueprints
 
 **Updated:** 1 September 2026  
-**Issue:** #112  
-**Status:** Parent opportunity underwritten as a multi-platform digital-product business; daily intelligence profile active
+**Issue:** #115  
+**Status:** Platform-neutral parent underwritten with explicit EMP3 external market proof; daily intelligence active
 
 ## Executive conclusion
 
-The prior **Whop Business Blueprints** framing was too narrow.
-
-DRF's marketplace research establishes the correct higher-level model:
-
-> platforms are **revenue endpoints** for assets/capabilities produced by the Revenue Factory; DRF should route a product to the best marketplace(s), publish compliantly, measure contribution and syndicate or retire based on evidence.
-
-Therefore the parent business is:
+The parent business is:
 
 > **Business Blueprints — proof-backed digital business systems packaged once and distributed across multiple compatible marketplaces/storefronts.**
 
-Whop remains a high-priority channel because it has unusually strong fit for digital businesses and channel-specific recurring economics. It is **not** the exclusive route to market.
+Whop remains a high-priority channel, not the business itself.
+
+The 1 September manual daily-intelligence run materially improves the parent evidence state:
+
+- **External Market Proof: EMP3 Market Proven · 90% confidence**;
+- multiple independent operators already sell reusable operating systems, template systems, snapshots and business-in-a-box products with sustained revenue, thousands of sales, recurring customers or long operating history;
+- this means DRF should **not** re-prove the broad category from zero;
+- the next test should focus only on DRF-specific transferability: exact buyer, price, channel, CAC and activation/support burden.
 
 Current daily intelligence contract:
 
 `DAILY-INTELLIGENCE.md`
+
+Latest detailed refresh evidence:
+
+`research/business-blueprints-daily-refresh-2026-09-01.md`
 
 ## 1. Business definition
 
@@ -43,20 +48,11 @@ Possible components:
 - financial model/test gates;
 - evidence and limitations.
 
-The asset should be built from **real DRF proof**, not from generic business-plan content.
+The asset should be built from **real DRF proof**, not generic business-plan content.
 
 ## 2. Why multi-platform distribution is the correct architecture
 
-Single-platform framing creates avoidable concentration risk:
-
-- one marketplace's algorithm controls discovery;
-- fee changes affect all sales;
-- product-policy changes can remove access;
-- the platform may be strong for one asset type but weak for another;
-- buyers on other marketplaces never see the product;
-- platform-specific monetisation can distort the product design.
-
-The better model is:
+Single-platform framing creates avoidable concentration risk. The better model is:
 
 ```text
 canonical Blueprint source
@@ -68,7 +64,7 @@ canonical Blueprint source
 → channel contribution comparison
 ```
 
-This is analogous to distributing content across several appropriate networks rather than building the business around one social platform.
+The platform is a revenue endpoint. The product and proof remain portable.
 
 ## 3. Existing DRF marketplace evidence
 
@@ -76,213 +72,189 @@ The canonical master map is:
 
 `research/ai-first-digital-marketplaces-and-service-platforms.md`
 
-It already researched a broad distribution surface including:
+It covers Whop, Gumroad, Contra, Notion Marketplace, Framer, Webflow, Lemon Squeezy, Payhip, Shopify, PromptBase, Etsy, developer/API marketplaces and emerging AI-native surfaces.
 
-- Whop;
-- Gumroad;
-- Contra / Contra Digital Products;
-- Notion Marketplace;
-- Framer Marketplace;
-- Webflow Templates;
-- Lemon Squeezy;
-- Payhip;
-- Shopify;
-- PromptBase;
-- Etsy;
-- Creative Market / Envato constraints;
-- Amazon KDP / course platforms for content variants;
-- RapidAPI / GitHub Marketplace for software/API variants;
-- emerging AI-native directories.
+The research conclusion is explicitly **route to the best marketplace(s)**, not select one exclusive platform.
 
-The research conclusion is explicitly **route to the best marketplace(s)**, not select one permanent exclusive platform.
+Important current correction: the reusable master marketplace map still contains an older Notion Marketplace fee assumption. For Business Blueprints, this file and the dated 1 September refresh are the newer source until the master map is safely reconciled.
 
-## 4. Channel evidence relevant to Business Blueprints
+## 4. External Market Proof — EMP3 Market Proven
+
+**EMP:** **EMP3 Market Proven**  
+**EMP Confidence:** **90%**
+
+### Why EMP3 is justified
+
+Multiple independent businesses and creator ecosystems demonstrate sustained demand for reusable operating systems and packaged digital business IP:
+
+| Comparable | Offer / model | Current or reported proof | Transferable lesson |
+|---|---|---|---|
+| **Thomas Frank** | Premium Notion operating systems such as Ultimate Brain / Creator's Companion | Founder-owned site says roughly **$100k/month** average template business; detailed operator interview reported **$2.1m sales in about two years** | Deep operating system + documentation + owned content can sell repeatedly at high margin |
+| **Easlo** | Notion systems and bundles | Current Gumroad Second Brain shows **7,069 sales** at **$79**; current Pro bundle around **$389 one-time**; Indie Hackers reported about **$20k/month** average | One canonical system can scale through free content + premium systems/bundles |
+| **Webflow creators** | Reusable website/template systems | First-party Webflow case evidence: one creator business sold **4,000+ templates**, grew team **15→30** and describes steady template revenue | Specialist marketplace can create product revenue plus service leads |
+| **Framer Creator ecosystem** | Templates/plugins/components | Current first-party creator surface advertises **$753k total paid to creators in November** and 100% direct Marketplace revenue to creators | Significant aggregate marketplace payouts exist for reusable digital assets |
+| **Business Done Better** | Reusable HighLevel "smart snapshot" deployed repeatedly to coaching clients | Current HighLevel case study: **close to 200 customers**, **25-person team**, core snapshot SaaS at **$199/month** plus AI add-on | Very close B2B analogue: build once, deploy repeatedly, attach support/fulfilment |
+| **HighLevel Snapshot Marketplace** | Packaged CRM/workflow configurations | First-party marketplace supports one-time, monthly and yearly snapshot sales plus IP protection | Packaged business configurations are explicitly productised and sold |
+| **Business in a Box** | Ready-made business operating knowledge and business OS | First-party site: **20+ years**, **250k+ businesses**, **190+ countries**, **3,000+ templates** | Long-duration adjacent proof that buyers pay for ready-made operating structure |
+
+### Counter-evidence
+
+The market is proven but uneven:
+
+- small Notion creators can receive thousands of Marketplace views/free downloads while producing very little paid revenue;
+- leading sellers often benefit from owned audiences, SEO/content or strong ecosystem visibility;
+- Business Done Better shows repeatable delivery but openly lacks a repeatable marketing engine, proving acquisition remains a separate risk;
+- paid template marketplaces impose support, fee, refund and policy burdens;
+- generic templates are easy to copy and commoditise.
+
+### Transferability boundary
+
+EMP3 proves:
+
+- buyers pay for reusable systems/templates;
+- one system can sell repeatedly at high gross margin;
+- recurring and upsell models are viable;
+- marketplaces, owned content and specialist ecosystems can all acquire buyers.
+
+EMP3 does **not** prove:
+
+- DRF's exact buyer and price;
+- DRF's CAC by channel;
+- UAE/GCC transferability for the selected Blueprint;
+- activation/deployment quality;
+- support burden and contribution.
+
+That is why EMP3 does not become EMP4 yet.
+
+## 5. Channel evidence relevant to Business Blueprints
 
 ### Whop
 
 Strengths:
 
-- digital-business/product positioning;
+- native Business Blueprint surface;
 - marketplace + hybrid discovery;
 - software/services/community support;
-- native Business Blueprint surface;
-- agentic CLI/API/MCP direction;
+- CLI/API/MCP direction;
 - first-party-verified Blueprint programme mechanics;
-- Whop-specific Blueprint/Partner recurring upside.
+- separate Whop Partner economics.
+
+Current public Blueprint-style products also provide live self-serve pricing anchors around **$197–$199**.
 
 Current evidence boundary:
 
-- the Blueprint creator mechanism is now first-party programme evidence rather than secondary-only;
-- model Blueprint creator economics as a share of Whop's qualifying economics on Blueprint-attributed sales, **not 10% of downstream gross sales**;
-- separate Whop Partner economics are first-party verified;
-- live DRF payout attribution, exact qualifying-profit basis, stacking, representative conversion, creator-income distribution and downstream retention remain unproven.
+- Blueprint creator economics are Whop-funded economics on qualifying Blueprint-attributed sales, not 10% of downstream gross sales;
+- live DRF payout basis, attribution duration, refund/chargeback treatment and stacking remain execution questions;
+- representative Blueprint creator-income distribution and downstream retention remain unavailable.
 
-Weakness/risk:
-
-- platform-specific terms and attribution;
-- single-platform concentration if treated as the whole model;
-- representative Blueprint marketplace economics are not yet public enough to model as a market base rate.
-
-Whop evidence remains preserved under `channels/whop/`, with `channels/whop/WHOP-RESEARCH.md` as the current channel research.
+Whop evidence remains under `channels/whop/`.
 
 ### Gumroad
 
-DRF master research classifies Gumroad as a mature general digital-product marketplace + storefront.
+Current official pricing remains:
 
-Relevant recorded economics:
-
-- direct sales: **10% + $0.50** plus applicable processing model reflected in current research;
+- direct/profile-link sales: **10% + $0.50** plus applicable payment processing;
 - Discover sales: **30%**.
 
-Best use:
-
-- Blueprint ZIP/file bundle;
-- guide/playbook;
-- software/download;
-- membership/update product;
-- direct audience checkout.
+Easlo's current Gumroad sales count provides concrete evidence that high-volume operating-system/template sales are possible through this channel.
 
 ### Contra Digital Products
 
-Useful because it combines digital products with a professional-service reputation surface.
+Current first-party documentation supports:
 
-Best use:
-
-- templates;
-- workflows;
+- one-time digital products;
 - subscriptions;
-- digital files;
-- Blueprint sale that can lead directly to iMPLEMENTAi implementation/customisation.
+- product tiers;
+- merchant-of-record handling;
+- digital files/links/workflows/prompts;
+- seller fees that are price-banded/capped plus processing.
+
+Best use remains a product/service bridge where Blueprint buyers can become implementation clients.
 
 ### Notion Marketplace
 
-DRF research records:
+Current first-party economics are:
 
 - merchant-of-record model;
-- **8% + $0.40** per transaction;
-- native marketplace discovery.
+- **10% + $0.40 per transaction**;
+- creators outside the United States pay an additional **1% FX fee** when payout currency is converted from USD;
+- **14-day** payout eligibility hold;
+- paid templates require approval and ongoing commercially reasonable creator support.
 
-Best use:
+This corrects the older DRF **8% + $0.40** assumption.
 
-- Notion-native CRM/OS/database/workflow components inside a Blueprint.
+Best use remains Notion-native CRM/OS/database/workflow components because native discovery, reviews, analytics, updates and access locking can justify the higher fee.
 
 ### Lemon Squeezy
 
-DRF research records:
+Current first-party base transaction pricing remains **5% + $0.50** with merchant-of-record infrastructure.
 
-- strong merchant-of-record software/digital checkout;
-- base fee around **5% + $0.50** plus applicable additions;
-- strong technical/API fit but limited native demand discovery.
-
-Best use:
-
-- software/licence component;
-- subscriptions;
-- direct owned-funnel checkout.
+Best use: software/licence/subscription or owned-funnel checkout.
 
 ### Payhip
 
-DRF research records:
+Current first-party pricing remains:
 
-- Free: **5%** platform fee;
+- Free: **5%**;
 - Plus: **$29/month + 2%**;
 - Pro: **$99/month + 0%**;
-- payment processing remains separate.
+- processor charges separate.
 
-Best use:
+### Shopify / owned commerce
 
-- low-friction alternate storefront for downloads/templates/memberships.
+Shopify remains important as the owned commerce layer. Its 2026 Agentic Storefronts / UCP / Catalog API direction strengthens machine-readable product distribution into AI surfaces.
 
-### Shopify
-
-Best use:
-
-- owned storefront;
-- catalogue/bundles;
-- long-term direct customer relationship;
-- additional commerce/AI channels.
-
-This is important strategically because an owned channel reduces dependence on marketplace discovery.
+This supports an owned product-data/store strategy but does not yet prove DRF Blueprint AI-referred conversion.
 
 ### Framer / Webflow
 
-These become especially relevant when the Business Blueprint contains reusable website/launch-kit assets.
+Current first-party evidence remains strong:
 
-DRF research records:
+- Framer creators keep **100%** of direct paid Marketplace product revenue and can earn eligible template referral commissions;
+- Webflow advertises **95% creator commissions** and publishes creator businesses with thousands of template sales.
 
-- Framer creators keeping **100%** on paid Marketplace products;
-- Webflow advertising **95% creator commissions**.
-
-Best use:
-
-- vertical website templates;
-- landing-page systems;
-- conversion components.
+Use only when the Blueprint contains genuine website/template assets.
 
 ### PromptBase / developer channels
 
-Use only when the Blueprint contains a true specialist component:
+Use only when the Blueprint contains a true specialist component such as a prompt/agent skill, API, developer app or software licence.
 
-- prompt/agent skill;
-- API;
-- developer app;
-- software licence.
+## 6. Product-marketplace fit matters more than maximum listing count
 
-This is a routing decision, not a requirement for every Blueprint.
+The strategy is **multi-platform, not indiscriminate**.
 
-## 5. Product-marketplace fit matters more than maximum listing count
+A complete HVAC Enquiry-to-Revenue Blueprint might use Whop + Gumroad + Contra/owned checkout. If it includes a Notion OS or Framer template, those components can additionally use the native specialist marketplace.
 
-The correct strategy is **multi-platform, not indiscriminate**.
+Do not force every asset onto every marketplace.
 
-Example:
+## 7. Business Blueprint niche layer
 
-A complete HVAC Enquiry-to-Revenue Blueprint may be listed on:
-
-- Whop;
-- Gumroad;
-- Contra;
-- Payhip/owned checkout.
-
-If it includes a Notion operations template, that component can additionally live on Notion Marketplace.
-
-If it includes a Framer site template, that component can additionally live on Framer Marketplace.
-
-There is no strategic value in forcing a product onto a marketplace where buyer intent or policy fit is poor.
-
-## 6. Business Blueprint niche layer
-
-For this opportunity, the niche is the **underlying business/result × vertical** being packaged.
-
-Current strongest candidates from existing DRF evidence:
+For this opportunity, the niche is the underlying **business/result × vertical** being packaged.
 
 | Blueprint candidate | Underlying niche | Niche score | Evidence status |
 |---|---|---:|---|
 | Enquiry-to-Revenue Control Blueprint | UAE HVAC/AC service contractors | **92/100** | Comprehensive niche research + P2 RBF assessment |
 | Fast Quote-to-Cash Blueprint | UAE drywall / gypsum / false-ceiling installers | **87/100** | Comprehensive niche research + P2 RBF assessment |
 
-The buyer market for the Blueprint itself must still be separately forward-tested. A strong end-customer niche does not automatically prove digital-product buyer demand.
+Strong category EMP does not automatically prove the selected buyer/niche transferability.
 
-## 7. Product types inside Business Blueprints
+## 8. Product types inside Business Blueprints
 
-A Blueprint can be packaged in several formats without creating a new parent opportunity.
-
-Examples include:
+Product formats include:
 
 - complete operating-business bundles;
 - website + revenue launch kits;
 - Notion/database operating systems;
-- workflow and automation packs;
+- workflow/automation packs;
 - prompt/agent/Skill packs;
-- software, licence or API components;
+- software/licence/API components;
 - playbook/checklist bundles.
 
-The website/launch-kit research is therefore retained as a **Business Blueprint product-type evidence module**, not a client-service business with a separate portfolio score.
+These remain downstream product formats, not separate parent opportunities.
 
-See `PRODUCT-TYPES.md` and `product-types/website-and-launch-kits.md`.
+See `PRODUCT-TYPES.md`.
 
-## 8. One business, multiple monetisation layers
-
-The same Blueprint IP can create several revenue layers without becoming several parent opportunities:
+## 9. Revenue model
 
 ```text
 Business Blueprint sale
@@ -292,23 +264,61 @@ Business Blueprint sale
 + optional underlying service/software expansion
 ```
 
-These are revenue streams and delivery options of **Business Blueprints**. They should be measured separately, but they do not require a second parent business merely because one SKU contains a website or launch kit.
+Core viability must survive on direct Blueprint contribution without requiring channel subsidy.
 
-## 9. Parent RBF score implication
+## 10. Parent score implication
 
-The platform-neutral architecture is stronger than the Whop-only parent framing because:
+Current state:
 
-- acquisition is not structurally tied to one marketplace;
-- checkout can be separated from discovery;
-- product-specific specialist marketplaces can add demand;
-- owned distribution can be developed;
-- platform-specific recurring income becomes upside rather than a dependency.
+- Opportunity Score: **82/100**;
+- RBS: **82/100**;
+- Evidence Confidence: **90%**;
+- Research Completeness: **100%**;
+- External Market Proof: **EMP3 Market Proven / 90%**;
+- DRF Proof: **P2 Backtested**;
+- Stage: **TEST**.
 
-The parent remains underwritten at **82/100**, while remaining **P2 Backtested**.
+The new EMP3 evidence does **not** mechanically increase Opportunity Score or RBS. Those scores already reflected a strong digital-product/category thesis, and EMP is an independent dimension under the canonical framework.
 
-The 1 September first-party Whop evidence improves confidence in one high-priority channel but does not justify parent score inflation by itself. Representative buyer conversion, channel contribution, activation, support and retention remain unproven.
+The material change is that the category is now explicitly market-proven rather than V3 `Pending`.
 
-## 10. Main risks
+## 11. Initial commercial test band
+
+Current external anchors support a bounded initial self-serve test at:
+
+> **US$199–399 one-time** for the core self-serve Blueprint, with optional implementation/customisation separate.
+
+This is an **inferred test range**, not a proven DRF price.
+
+It is anchored by:
+
+- current Whop Blueprint-style products around $197–199;
+- Easlo systems at $39–79 and a $389 lifetime bundle;
+- Business Done Better's reusable B2B system at $199/month;
+- premium operating-system templates generating substantial sales at low-hundreds pricing.
+
+Channel-specific referral/royalty economics should remain upside, not required core viability.
+
+## 12. Revised Next Proof — test only remaining uncertainty
+
+Because EMP3 proves the broad reusable-system/template category, DRF should not use a five-buyer test merely to prove the category can sell.
+
+The next P3 test should ask:
+
+> **Can DRF sell the selected proof-backed Blueprint to the intended buyer at the pre-committed price through a repeatable channel, and does at least one buyer genuinely intend to deploy it without excessive support?**
+
+Recommended P3 threshold:
+
+- choose one launch price within **US$199–399** before traffic;
+- obtain **2 unrelated paid buyers/deposits** at that price or equivalent founder-approved commercial commitments;
+- at least **1** buyer reaches genuine deployment/activation intent;
+- at least **1** buyer comes through a channel that is not merely a direct personal favour/relationship;
+- measure source, conversion, fees, attributable CAC where possible, refund signal and expected support;
+- no fatal rights/platform issue.
+
+P4 then requires actual paid delivery/activation and actual cost capture.
+
+## 13. Main risks
 
 - generic/low-proof Blueprints become commodity information products;
 - piracy/copying;
@@ -317,51 +327,49 @@ The 1 September first-party Whop evidence improves confidence in one high-priori
 - marketplace traffic does not convert;
 - direct traffic remains expensive;
 - buyer deployment/activation is poor;
-- platform-specific claims or rights policies differ;
-- one platform still becomes economically dominant;
-- implementation requests convert a digital product into bespoke consulting.
+- platform-specific policy differs;
+- implementation silently becomes bespoke consulting.
 
-## 11. Operating controls
+## 14. Operating controls
 
 Maintain:
 
 - one canonical product source;
-- version number/release notes;
+- version/release notes;
 - channel compatibility matrix;
-- listing checklist per platform;
-- rights/compliance checklist;
+- listing/rights checklist;
 - channel-specific price/fee table;
-- UTM/referral/channel attribution;
+- UTM/referral attribution;
 - refund/dispute tracker;
 - activation/deployment tracker;
 - support minutes per buyer;
 - contribution per channel.
 
-## 12. Forward-test research question
+## 15. Daily intelligence and Layer 3 persistence
 
-The next experiment is no longer:
+The active scheduled research profile is `DAILY-INTELLIGENCE.md`.
 
-> Can we sell on Whop?
+Every material run must follow the current Opportunity Factory and Layer 3 write-back contract:
 
-It is:
+```text
+external/comparable evidence
+→ EMP + affected underwriting
+→ detailed source first
+→ specialised registers when fields change
+→ Workflow Layer 3 dossier/current state
+→ PORTFOLIO-V3.md last, or explicit NO FIELD CHANGE reconciliation
+→ validation
+```
 
-> **Can one proof-backed Business Blueprint generate positive contribution when syndicated across the best compatible distribution portfolio, and which channels deserve more capital?**
+Completed scheduled runs are recorded in `research/recurring-intelligence/REFRESH-RUNS.md`.
 
-## 13. Daily intelligence and persistence
+## 16. Sources
 
-The active scheduled research profile is:
+Detailed source/evidence register:
 
-`DAILY-INTELLIGENCE.md`
+`research/business-blueprints-daily-refresh-2026-09-01.md`
 
-Every completed scheduled run must be persisted to:
-
-`research/recurring-intelligence/REFRESH-RUNS.md`
-
-Material evidence is written to the detailed source first, specialised registers second and `businesses/PORTFOLIO-V3.md` last. Chat notification is downstream of verified GitHub persistence.
-
-## 14. Sources
-
-### Canonical DRF
+Canonical DRF:
 
 - `../../research/ai-first-digital-marketplaces-and-service-platforms.md`
 - `PRODUCT-TYPES.md`
@@ -372,6 +380,4 @@ Material evidence is written to the detailed source first, specialised registers
 - `channels/whop/WHOP-RBF-ASSESSMENT.md`
 - `DAILY-INTELLIGENCE.md`
 
-### Evidence classification
-
-Marketplace economics inherited from DRF master research remain **channel evidence**, not guarantees of realised DRF sales. Re-verify fees/terms before a live paid launch. Whop's current programme mechanics are first-party verified at the channel level; live DRF payouts and representative market performance are not.
+Marketplace economics are channel evidence, not guarantees of realised DRF sales. Re-verify fees/terms before a live launch.
