@@ -4,6 +4,9 @@
   const PORTFOLIO_PATH = 'businesses/PORTFOLIO-V3.md';
   const NICHES_PATH = 'businesses/NICHES.md';
   const LEVELS = ['P0', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6'];
+  const PARENT_ALIASES = Object.freeze({
+    'grok bot ai first revenue operations business in a box': 'autonomous ai revenue operations business in a box'
+  });
 
   installStorageResetFallback();
   document.addEventListener('DOMContentLoaded', initialiseIntegrityChecks);
@@ -102,13 +105,14 @@
   }
 
   function normaliseName(value) {
-    return cleanCell(value)
+    const key = cleanCell(value)
       .toLowerCase()
       .replace(/&/g, ' and ')
       .replace(/[^a-z0-9]+/g, ' ')
       .replace(/\bthe\b/g, ' ')
       .replace(/\s+/g, ' ')
       .trim();
+    return PARENT_ALIASES[key] || key;
   }
 
   function validateNicheParents(portfolioRows, nicheRows) {
