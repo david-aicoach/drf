@@ -26,7 +26,7 @@ Natural-language shorthand such as **“new business opportunity,” “Revenue 
 
 ## Navigation integrity
 
-All outbound routing follows the canonical [GitHub navigation-integrity rule](https://github.com/tbhrc/skills/tree/main/github-agent-workflow#navigation-integrity): when DRF routes an agent to another Skill, repository or system, the destination must expose a practical return or onward route; unexplained one-way dead ends are architecture defects. Provider unavailability, quota or budget exhaustion is a routing event under the same canonical GitHub Agent Workflow, not a blocker when another authorised route is available.
+All outbound routing follows canonical navigation integrity ([`tbhrc/skills#18`](https://github.com/tbhrc/skills/issues/18)): when DRF routes an agent to another Skill, repository or system, the destination must expose a practical return or onward route; unexplained one-way dead ends are architecture defects.
 
 ## Canonical domain truth
 
