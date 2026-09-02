@@ -13,8 +13,19 @@ THIS_FILE = Path(__file__).resolve()
 # as `tbhrc/drf`, `tbhrc/drf-mainland`, `tbhrc/drf-main_foo` or
 # `tbhrc/drf-main-foo` are invalid active routing targets.
 RETIRED_REPO = re.compile(r"tbhrc/drf(?!-main(?:$|[^A-Za-z0-9_-]))")
-ACTIVE_ROOT_FILES = [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / ".github" / "copilot-instructions.md"]
-ACTIVE_TREES = [ROOT / "skills", ROOT / ".github" / "actions", ROOT / ".github" / "workflows"]
+ACTIVE_ROOT_FILES = [
+    ROOT / "README.md",
+    ROOT / "AGENTS.md",
+    ROOT / ".github" / "copilot-instructions.md",
+    ROOT / "index.html",
+    ROOT / "dashboard-v1-v2.html",
+]
+ACTIVE_TREES = [
+    ROOT / "skills",
+    ROOT / ".github" / "actions",
+    ROOT / ".github" / "workflows",
+    ROOT / "assets",
+]
 TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".json", ".js", ".html"}
 
 
