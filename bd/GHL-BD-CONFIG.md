@@ -265,16 +265,6 @@ Do not add more automation until this loop produces evidence about what actually
 
 ## 14. Human setup sequence
 
-For the exact click-by-click/business setup order, use [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md).
+For the exact setup order, use [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md).
 
-That guide covers:
-- location confirmation;
-- pipeline creation;
-- fields and tags;
-- email verification;
-- discovery calendar;
-- disposable test opportunity;
-- safe internal automations;
-- master MCP/API handoff;
-- `ghl-operator` verification;
-- Pilot 001 activation gate.
+For the reasoning and recommended rollout boundaries, use [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md).
