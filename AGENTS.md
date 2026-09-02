@@ -17,6 +17,10 @@ Do not recreate a global knowledge hierarchy, root AI workflow library, global t
 
 Follow the canonical [GitHub navigation-integrity rule](https://github.com/tbhrc/skills/tree/main/github-agent-workflow#navigation-integrity): when DRF routes an agent to another Skill, repository or system, the destination must expose a practical return or onward route to DRF, the Skill Bank/index or the owning canon; unexplained one-way dead ends are architecture defects. Provider unavailability, quota or budget exhaustion is a routing event under the same canonical GitHub Agent Workflow, not a blocker when another authorised route is available.
 
+## Secret-transfer safety
+
+Before any credential/token/secret transfer, confirm repository visibility and the exact transfer surface. Secret names/references may be documented; actual secret values may not enter repository files, commits, Issues, PRs, comments, logs or artifacts. Any temporary cross-repository transfer bridge is incomplete until transfer is verified, the bridge is disabled/deleted, and teardown is verified. If an actual secret value reaches a public GitHub surface, revoke/rotate it; history cleanup alone is not remediation.
+
 ## Capability router
 
 | User intent | Canonical Skill |
