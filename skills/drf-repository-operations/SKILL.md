@@ -1,6 +1,6 @@
 ---
 name: drf-repository-operations
-description: Operate, govern, restructure, validate or improve the tbhrc/drf GitHub repository itself. Use for DRF architecture/folder changes, Skill creation or improvement, repository cleanup, Issue/PR governance, CI/repository validation, canonical-path migrations, removal of stale folders, or any request about how DRF agents should work in GitHub.
+description: Operate, govern, restructure, validate or improve the tbhrc/drf-main GitHub repository itself. Use for DRF architecture/folder changes, Skill creation or improvement, repository cleanup, Issue/PR governance, CI/repository validation, canonical-path migrations, removal of stale folders, or any request about how DRF agents should work in GitHub.
 ---
 
 # DRF Repository Operations
