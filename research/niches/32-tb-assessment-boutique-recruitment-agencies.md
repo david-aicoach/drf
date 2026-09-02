@@ -1,11 +1,11 @@
 # Talent Bridge Assessment & AI Interview Platform × UAE/GCC Boutique Recruitment Agencies
 
-**Research version:** 1.0  
+**Research version:** 1.1 — arithmetic reconciliation  
 **Date:** 2 September 2026  
 **Issue:** #142  
 **Commercial layer:** Talent / hiring intelligence  
 **Decision:** **Sniper — bounded paid pilot**  
-**Niche Score:** **87/100**  
+**Niche Score:** **86/100** (85.8 weighted; previous displayed 87 was arithmetic inconsistency)  
 **Evidence Confidence:** **86%**
 
 ## Atomic niche
@@ -51,7 +51,9 @@ The agency keeps its ATS and client relationship. Talent Bridge supplies the evi
 | Recurring pain / retention | 10 | New candidates/vacancies continuously recreate the need. |
 | Sales + fulfilment simplicity | 9 | One role pack can be reused; API/ATS depth can wait until paid demand. |
 
-**Weighted Niche Score: ~87/100.**
+Canonical weighted score:
+
+`(9×15 + 8×12 + 9×10 + 8×8 + 7×10 + 7×10 + 9×12 + 10×10 + 10×8 + 9×5) / 10 = 85.8 → 86/100`
 
 ## Pricing hypothesis
 
@@ -112,6 +114,7 @@ Pass when:
 ## Sources
 
 - `../../businesses/talent-bridge-assessment-ai-interview-platform/research/external-market-proof-calibration-2026-09-02.md`
+- `../..//skills/drf-opportunity-factory/references/niche-scoring.md`
 - TestGorilla pricing: https://www.testgorilla.com/pricing/
 - Talogy UAE: https://talogy.com/en-ae/
 - Qabil: https://qabil.ai/
