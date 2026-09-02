@@ -131,6 +131,7 @@ def validate_entrypoints(errors: list[str]) -> None:
         "AGENTS.md",
         [
             "NUMBER-ONE RULE — SKILLS FIRST",
+            "Navigation integrity backlink rule",
             "skills/README.md",
             "skills/drf-opportunity-factory/SKILL.md",
             "skills/drf-recurring-intelligence/SKILL.md",

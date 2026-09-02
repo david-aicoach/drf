@@ -13,6 +13,10 @@ DRF is a **skills-first operating system**. For every substantive capability tas
 
 Do not recreate a global knowledge hierarchy, root AI workflow library, global templates/scripts, SOP or lessons junk drawer.
 
+## Navigation integrity backlink rule
+
+Follow the canonical [GitHub navigation-integrity policy (tbhrc/skills#18)](https://github.com/tbhrc/skills/issues/18): when DRF routes an agent to another Skill, repository, or external system, the destination must expose a practical return or onward route to DRF, the Skill Bank/index, or the owning canon. Unexplained one-way dead ends are architecture defects.
+
 ## Capability router
 
 | User intent | Canonical Skill |
