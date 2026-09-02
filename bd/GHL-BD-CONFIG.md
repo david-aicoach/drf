@@ -3,7 +3,9 @@
 **Status:** Target configuration — founder setup pending  
 **Governing programme:** [DRF #150](https://github.com/tbhrc/drf-main/issues/150)  
 **BD Skill:** [tbhrc/skills#158](https://github.com/tbhrc/skills/issues/158)  
-**GHL operator:** [tbhrc/skills#159](https://github.com/tbhrc/skills/issues/159)
+**GHL operator:** [tbhrc/skills#159](https://github.com/tbhrc/skills/issues/159)  
+**Founder setup guide:** [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md)  
+**Operating recommendations:** [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md)
 
 This file defines **iMPLEMENTAi.ae's intended GHL business configuration**. It is domain configuration, not a reusable GHL operating workflow.
 
@@ -260,3 +262,19 @@ After GHL + email + MCP are ready:
 ```
 
 Do not add more automation until this loop produces evidence about what actually works.
+
+## 14. Human setup sequence
+
+For the exact click-by-click/business setup order, use [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md).
+
+That guide covers:
+- location confirmation;
+- pipeline creation;
+- fields and tags;
+- email verification;
+- discovery calendar;
+- disposable test opportunity;
+- safe internal automations;
+- master MCP/API handoff;
+- `ghl-operator` verification;
+- Pilot 001 activation gate.
