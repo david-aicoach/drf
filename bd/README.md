@@ -20,6 +20,10 @@ Durable GHL/domain docs:
 
 Recommended first proof: [`Pilot 001 — UAE Multi-Location Restaurants — Digital Visibility`](campaigns/001-uae-multi-location-restaurants-visibility.md)
 
+## Durable-guidance rule
+
+Keep setup instructions, architecture decisions and non-secret implementation recommendations durable in this DRF BD area. When a recommendation becomes a proven reusable operating method, promote it into the correct canonical Skill rather than allowing DRF documentation to become a competing workflow library.
+
 ## Ownership model
 
 | Surface | Owns |
