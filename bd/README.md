@@ -14,6 +14,8 @@ Governing programme: [`DRF #150 — Build DRF Business Development operating lay
 
 Founder GHL setup contract: [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md)
 
+Recommended first proof: [`Pilot 001 — UAE Multi-Location Restaurants — Digital Visibility`](campaigns/001-uae-multi-location-restaurants-visibility.md)
+
 ## Ownership model
 
 | Surface | Owns |
@@ -84,6 +86,8 @@ public evidence
 ```
 
 This is a **BD acquisition motion**, not proof that the prospect is already a client.
+
+The recommended first controlled proof is [`Pilot 001`](campaigns/001-uae-multi-location-restaurants-visibility.md): 10 UAE multi-location restaurant targets, one clear audit-led offer, founder-reviewed first outbound batch, and full reply → meeting → Won measurement.
 
 Use the canonical specialist Skills for the underlying research/report/copy work rather than writing a second workflow here.
 
