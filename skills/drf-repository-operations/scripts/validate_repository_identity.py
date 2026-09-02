@@ -33,14 +33,19 @@ def iter_active_files():
 def main() -> int:
     errors = []
     for path in iter_active_files():
-        text = path.read_text(encoding="utf-8")
-        if RETIRED_REPO.search(text):
-            errors.append(path.relative_to(ROOT).as_posix())
+        relative = path.relative_to(ROOT).as_posix()
+        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+            if RETIRED_REPO.search(line):
+                errors.append((relative, line_number))
+                break
 
     if errors:
         print("DRF repository identity validation failed:", file=sys.stderr)
-        for relative in sorted(errors):
-            print(f"- active file contains a retired/non-canonical DRF repository identity: {relative}", file=sys.stderr)
+        for relative, line_number in sorted(errors):
+            print(
+                f"- active file contains a retired/non-canonical DRF repository identity: {relative}:{line_number}",
+                file=sys.stderr,
+            )
         return 1
 
     print("DRF active repository identity: PASS (tbhrc/drf-main)")
