@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
+THIS_FILE = Path(__file__).resolve()
 RETIRED_REPO = re.compile(r"tbhrc/drf(?!-main)")
 ACTIVE_ROOT_FILES = [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / ".github" / "copilot-instructions.md"]
 ACTIVE_TREES = [ROOT / "skills", ROOT / ".github" / "actions", ROOT / ".github" / "workflows"]
@@ -22,7 +23,7 @@ def iter_active_files():
         if not root.is_dir():
             continue
         for path in root.rglob("*"):
-            if path.is_file() and path.suffix.lower() in TEXT_SUFFIXES:
+            if path.is_file() and path.resolve() != THIS_FILE and path.suffix.lower() in TEXT_SUFFIXES:
                 yield path
 
 
