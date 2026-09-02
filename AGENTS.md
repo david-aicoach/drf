@@ -13,6 +13,10 @@ DRF is a **skills-first operating system**. For every substantive capability tas
 
 Do not recreate a global knowledge hierarchy, root AI workflow library, global templates/scripts, SOP or lessons junk drawer.
 
+## Navigation integrity
+
+Follow the canonical [GitHub navigation-integrity rule](https://github.com/tbhrc/skills/tree/main/github-agent-workflow#navigation-integrity): when DRF routes an agent to another Skill, repository or system, the destination must expose a practical return or onward route to DRF, the Skill Bank/index or the owning canon; unexplained one-way dead ends are architecture defects. Provider unavailability, quota or budget exhaustion is a routing event under the same canonical GitHub Agent Workflow, not a blocker when another authorised route is available.
+
 ## Capability router
 
 | User intent | Canonical Skill |
