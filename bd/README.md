@@ -12,7 +12,11 @@ GHL operator dependency: [`tbhrc/skills#159 — ghl-operator`](https://github.co
 
 Governing programme: [`DRF #150 — Build DRF Business Development operating layer on GHL`](https://github.com/tbhrc/drf-main/issues/150)
 
-Founder GHL setup contract: [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md)
+Durable GHL/domain docs:
+
+- [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) — target business configuration contract.
+- [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md) — founder step-by-step GHL setup and MCP readiness guide.
+- [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md) — architecture, rollout, autonomy and implementation recommendations identified during design.
 
 Recommended first proof: [`Pilot 001 — UAE Multi-Location Restaurants — Digital Visibility`](campaigns/001-uae-multi-location-restaurants-visibility.md)
 
@@ -53,9 +57,13 @@ GHL is intended to become the **tool operations interface plane** for BD after D
 4. master AI API/MCP control;
 5. live verification of the `ghl-operator` capability.
 
-Use [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) for the current target pipeline, minimum custom fields, tags, calendar and initial automation gates.
+Use:
 
-Until that is verified, agents must not claim that GHL write/send automation is operational merely because a connector exists.
+- [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) for the target pipeline, fields, tags, calendar and automation policy;
+- [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md) for the exact human setup sequence;
+- [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md) for the recommended rollout and architecture rationale.
+
+Until the live route is verified, agents must not claim that GHL write/send automation is operational merely because a connector exists.
 
 ## No shadow CRM in GitHub
 
