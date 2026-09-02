@@ -12,6 +12,8 @@ GHL operator dependency: [`tbhrc/skills#159 — ghl-operator`](https://github.co
 
 Governing programme: [`DRF #150 — Build DRF Business Development operating layer on GHL`](https://github.com/tbhrc/drf-main/issues/150)
 
+Founder GHL setup contract: [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md)
+
 ## Ownership model
 
 | Surface | Owns |
@@ -48,6 +50,8 @@ GHL is intended to become the **tool operations interface plane** for BD after D
 3. the BD pipeline/minimum fields;
 4. master AI API/MCP control;
 5. live verification of the `ghl-operator` capability.
+
+Use [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) for the current target pipeline, minimum custom fields, tags, calendar and initial automation gates.
 
 Until that is verified, agents must not claim that GHL write/send automation is operational merely because a connector exists.
 
