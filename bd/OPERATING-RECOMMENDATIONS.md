@@ -450,3 +450,7 @@ David:
 4. create the master MCP/API route.
 
 Then agents can verify the live control surface and finish `ghl-operator` against reality.
+
+## Durable-change rule
+
+When a recommendation here becomes a proven reusable operating method, promote it into the correct canonical Skill rather than allowing this file to become a second workflow manual.
