@@ -9,7 +9,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 THIS_FILE = Path(__file__).resolve()
-RETIRED_REPO = re.compile(r"tbhrc/drf(?!-main)")
+# Allow only the exact canonical `tbhrc/drf-main` repository token. Strings such
+# as `tbhrc/drf`, `tbhrc/drf-mainland`, `tbhrc/drf-main_foo` or
+# `tbhrc/drf-main-foo` are invalid active routing targets.
+RETIRED_REPO = re.compile(r"tbhrc/drf(?!-main(?:$|[^A-Za-z0-9_-]))")
 ACTIVE_ROOT_FILES = [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / ".github" / "copilot-instructions.md"]
 ACTIVE_TREES = [ROOT / "skills", ROOT / ".github" / "actions", ROOT / ".github" / "workflows"]
 TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".json", ".js", ".html"}
@@ -37,7 +40,7 @@ def main() -> int:
     if errors:
         print("DRF repository identity validation failed:", file=sys.stderr)
         for relative in sorted(errors):
-            print(f"- active file still points to retired repository tbhrc/drf: {relative}", file=sys.stderr)
+            print(f"- active file contains a retired/non-canonical DRF repository identity: {relative}", file=sys.stderr)
         return 1
 
     print("DRF active repository identity: PASS (tbhrc/drf-main)")
