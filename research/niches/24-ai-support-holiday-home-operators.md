@@ -1,12 +1,12 @@
 # AI Support × Dubai Holiday-Home Operators
 
-**Research version:** 3.0 — comprehensive dossier  
-**Date:** 29 August 2026  
-**Governing issue:** #46  
+**Research version:** 3.1 — arithmetic reconciliation  
+**Date:** 2 September 2026  
+**Governing issues:** #46, #142  
 **Commercial layer:** Outcome  
 **Geography:** Dubai  
 **Decision:** **Strong/Testable — native-PMS-first, external AI only for gaps**  
-**Niche Score:** **78/100 provisional** (previously 85)  
+**Niche Score:** **75/100** (75.4 weighted; previous displayed 78 was arithmetic inconsistency; earlier 85)  
 **Evidence Confidence:** **95%** (previously 82%)
 
 ## 1. Executive conclusion
@@ -128,7 +128,15 @@ QA/knowledge upkeep recurs, but standalone retention is weaker. Bundle with dire
 
 ## 20. Score
 
-Pain8; Pay9; Reach9; Growth9; Volume8; Competition Gap3; ROI7; Product Fit6; Recurring10; Simplicity6 = **~78/100**.
+Canonical weights: Pain15; Pay12; Reach10; Growth8; Volume10; Underserved10; ROI12; Product Fit10; Recurring8; Simplicity5.
+
+Pain8; Pay9; Reach9; Growth9; Volume8; Competition Gap/Underserved3; ROI7; Product Fit6; Recurring10; Simplicity6.
+
+Weighted score:
+
+`(8×15 + 9×12 + 9×10 + 9×8 + 8×10 + 3×10 + 7×12 + 6×10 + 10×8 + 6×5) / 10 = 75.4 → 75/100`
+
+The former `~78/100` display was not consistent with the recorded factor inputs and canonical weights; Issue #142 corrects the arithmetic without changing the underlying evidence.
 
 ## 21. Evidence
 
@@ -140,6 +148,7 @@ Verified dense market and strong current native AI competition. Missing exact me
 - Guesty Unified Inbox: https://www.guesty.com/features/unified-inbox/
 - Hostaway AI Guest Messaging: https://support.hostaway.com/hc/en-us/articles/16948038685851-Hostaway-AI-Guest-Messaging
 - AirDNA: https://www.airdna.co/vacation-rental-data/app/ae/default/dubai/overview
+- canonical niche scoring: `../../skills/drf-opportunity-factory/references/niche-scoring.md`
 - shared SEO/GEO: `_shared/seo-ai-discovery-playbook-2026-08-29.md`
 
 ## 23. Live validation
