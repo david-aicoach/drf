@@ -1,9 +1,9 @@
 # Business Blueprints — Distribution Channel Portfolio
 
-**Date:** 1 September 2026  
-**Issue:** #115  
+**Date:** 2 September 2026  
+**Latest intelligence issue:** #143  
 **Source:** `research/ai-first-digital-marketplaces-and-service-platforms.md` + current first-party channel documentation  
-**Daily intelligence:** `DAILY-INTELLIGENCE.md`
+**Scheduled profile:** `../../skills/drf-recurring-intelligence/references/business-blueprints-daily-profile.md`
 
 ## Rule
 
@@ -25,18 +25,38 @@ The goal is **distribution breadth without indiscriminate duplication**.
 
 | Platform | Discovery type | Suitable Blueprint components | Current DRF economics/evidence | Use |
 |---|---|---|---|---|
-| **Whop** | Marketplace + hybrid | Full digital business systems, agency setups, software, communities, courses | Native digital-business positioning; Blueprint programme mechanics and separate Partner economics now first-party verified at programme level; live DRF payout/stacking and representative market performance remain unproven | **Primary discovery test** |
-| **Gumroad** | Marketplace + storefront | PDF/Markdown/ZIP playbooks, templates, files, software, memberships | Current first-party pricing: direct/profile-link sales 10% + $0.50 plus applicable card/payment processing; Discover sales 30% | **General digital-product syndication** |
-| **Contra Digital Products** | Marketplace + profile storefront | Workflows, templates, files, subscriptions, implementation-adjacent assets | One-time/subscription products; merchant of record; current seller product fees are price-banded and capped, plus processing fees; strong bridge into implementation services | **Hybrid product/service channel** |
-| **Notion Marketplace** | Marketplace | Notion operating systems, databases, CRM/project/recruitment templates | **Current first-party pricing: 10% + $0.40 per transaction; +1% FX for creators outside the US when payout currency is converted; 14-day payout eligibility hold.** Native discovery, reviews, analytics, customer updates and access locking remain strategically useful | **Native channel for Notion components** |
-| **Lemon Squeezy** | Storefront | Software, licences, digital downloads, subscriptions | Current first-party base transaction fee remains 5% + $0.50; strong merchant-of-record infrastructure | **Checkout/software distribution** |
+| **Whop** | Marketplace + hybrid | Full digital business systems, agency setups, software, communities, courses | Native digital-business positioning; Blueprint programme mechanics and separate Partner economics first-party verified at programme level; live DRF payout/stacking and representative market performance remain unproven | **Primary discovery test** |
+| **Gumroad** | Marketplace + storefront | PDF/Markdown/ZIP playbooks, templates, files, software, memberships | Direct/profile-link sales **10% + $0.50** plus applicable processing; Discover **30%**. Current Help also gives an automatic high-volume direct-sales discount to **5% + $0.50 for new direct sales after paid sales reach $20,000 in a calendar month**, resetting monthly. The discount is scale upside, not current P3 economics. | **General digital-product syndication** |
+| **Contra Digital Products** | Marketplace + profile storefront | Workflows, templates, files, subscriptions, implementation-adjacent assets | One-time/subscription products; merchant of record; **current first-party fee sources conflict**. Pricing currently says Free digital-product fee capped 5% (min $3 / max $29) and Pro no digital-product fee, while current Help/product docs still show fixed price bands for Non-Pro/Pro plus processing. **Verify exact fee at launch; do not choose the cheaper source by assumption.** | **Hybrid product/service channel** |
+| **Notion Marketplace** | Marketplace | Notion operating systems, databases, CRM/project/recruitment templates | Current first-party pricing: **10% + $0.40 per transaction; +1% FX for creators outside the US when payout currency is converted; 14-day payout eligibility hold.** Native discovery, reviews, analytics, customer updates and access locking remain strategically useful | **Native channel for Notion components** |
+| **Lemon Squeezy** | Storefront | Software, licences, digital downloads, subscriptions | Base first-party fee remains **5% + $0.50**, but fully loaded cost can include **+1.5% international payments, +1.5% PayPal, +0.5% subscriptions**, plus payout/optional marketing fees depending on method. Model actual payment and payout mix for UAE economics. | **Checkout/software distribution** |
 | **Payhip** | Storefront | Downloads, memberships, courses, templates | Free 5%; Plus $29/mo + 2%; Pro $99/mo + 0%, before processor | **Low-friction alternate storefront** |
-| **Shopify** | Owned storefront + channels | Catalogue, bundles, licences, digital products | Strong owned-commerce infrastructure; 2026 Agentic Storefronts/UCP/Catalog API direction strengthens machine-readable AI discovery and transaction distribution, but DRF Blueprint-specific AI-referred conversion remains unproven | **Owned brand/store layer** |
-| **Framer Marketplace** | Marketplace | Framer websites, landing pages, components/plugins | Current first-party Creator Program states creators keep 100% of paid Marketplace template revenue; template referrals can add separate platform-specific upside | **Template-specific syndication** |
-| **Webflow Templates** | Marketplace | Webflow sites/templates | Current first-party template-designer material advertises 95% creator commissions | **Template-specific syndication** |
-| **PromptBase** | Marketplace | Prompts, agent skills and AI workflow components | Specialist AI-asset marketplace; 20% marketplace fee recorded in DRF research | **Specialist component channel** |
+| **Shopify** | Owned storefront + AI channels | Catalogue, bundles, licences, digital products | Strong owned-commerce infrastructure. Current Agentic Storefronts expose eligible Shopify Catalog products to AI channels including ChatGPT/Copilot, centralise controls/attribution and support direct checkout where available. Shopify states no extra agentic-channel fee beyond normal processing for the described flows. This is distribution infrastructure evidence, **not Blueprint conversion proof**. | **A infrastructure** |
+| **Framer Marketplace** | Marketplace | Framer websites, landing pages, components/plugins | Current first-party Creator Program: creators keep **100%** of paid Marketplace product revenue; eligible template referrals can add separate subscription commission | **A when Framer-native** |
+| **Webflow Templates** | Marketplace | Webflow sites/templates | Current first-party template-designer material advertises **95% creator payout** | **A/B when Webflow-native** |
+| **PromptBase** | Marketplace | Prompts, agent skills and AI workflow components | Current support: **20% marketplace fee**, **0% through seller referral link**, **10% custom-job fee** | **A/B when applicable** |
 | **Etsy** | Marketplace | Eligible original creative digital downloads | Useful only where product satisfies Etsy's human-creative-role and AI disclosure rules; prompt bundles specifically constrained | **Conditional** |
 | **GitHub Marketplace / RapidAPI** | Marketplace | Developer apps, APIs, recurring technical components | High fit only when the Blueprint includes a true software/API product | **Specialist software extension** |
+
+## Material 2 September channel findings
+
+Detailed evidence: [`research/business-blueprints-daily-refresh-2026-09-02.md`](./research/business-blueprints-daily-refresh-2026-09-02.md).
+
+### Gumroad scale discount
+
+The $20,000/calendar-month high-volume threshold can materially improve direct-sale contribution **after scale**, but it must not be used to make the two-buyer forward test look cheaper than it is. Model the normal 10% + $0.50 direct fee during the P3 test unless the threshold is actually reached.
+
+### Contra fee conflict
+
+Contra now requires launch-time fee verification because first-party pricing and Help surfaces disagree. The routing role remains valid because the parent thesis values Contra primarily as a product/service bridge, not merely as the lowest-fee checkout.
+
+### Lemon Squeezy fully loaded fee
+
+The base fee is not always the total fee. Payment geography/method, subscription use and payout method can change effective contribution. DRF should calculate the actual checkout/payout stack before choosing Lemon Squeezy over an owned Shopify/other checkout for the final launch configuration.
+
+### Shopify agentic distribution
+
+Shopify's AI-channel infrastructure is stronger than a simple owned storefront: eligible products can be syndicated into AI discovery channels with centralized controls and attribution. This improves the strategic value of machine-readable owned commerce but does not replace the need to prove Blueprint buyer conversion.
 
 ## Product-to-channel routing
 
@@ -59,6 +79,7 @@ The goal is **distribution breadth without indiscriminate duplication**.
 - preserve identical core promise and evidence claims;
 - use channel-specific tracking and discount codes/UTMs where possible;
 - calculate contribution after the exact platform fee and support burden;
+- verify current fee/plan/processing/payout terms immediately before launch;
 - preserve customer ownership/contact rights where terms permit;
 - retain an owned landing page/storefront so marketplace demand is not the only acquisition source.
 
@@ -69,6 +90,8 @@ The goal is **distribution breadth without indiscriminate duplication**.
 - duplicate AI-generated spam across marketplaces;
 - rely on a marketplace's internal discovery without measuring it;
 - make Whop royalty/Partner economics a prerequisite for Business Blueprint viability;
+- model scale discounts before they are actually earned;
+- treat a base transaction fee as fully loaded cost when processing/payout/subscription add-ons apply;
 - let one channel become an unmeasured single point of failure.
 
 ## Platform concentration metric
@@ -94,7 +117,7 @@ A dominant channel can be economically rational. The risk is **unexamined depend
 
 Whop is a high-priority channel because its current digital-business orientation, marketplace, agentic tooling and channel-specific recurring economics can make it unusually valuable.
 
-Current channel evidence now distinguishes:
+Current channel evidence distinguishes:
 
 - first-party-verified Blueprint programme mechanics;
 - first-party-verified separate Partner economics;
@@ -113,11 +136,13 @@ Whop evidence lives under `channels/whop/`.
 
 ## Daily channel watch
 
-`DAILY-INTELLIGENCE.md` governs the scheduled parent-opportunity run.
+The scheduled parent-opportunity run is governed by the Skill-owned profile:
 
-The automation scans this whole channel portfolio plus credible new/emerging channels during the same daily run. Material channel changes update detailed channel evidence first and this portfolio only when routing, economics, eligibility, risk or priority materially changes.
+`../../skills/drf-recurring-intelligence/references/business-blueprints-daily-profile.md`
 
-The 1 September manual test detected and corrected the Notion Marketplace fee assumption from **8% + $0.40** to the current first-party **10% + $0.40**. This weakens Notion channel contribution slightly but does not change its specialist routing role or the parent Business Blueprints RBS.
+The automation scans this whole channel portfolio plus credible new/emerging channels in the same run. Material channel changes update detailed evidence first and this portfolio only when routing, economics, eligibility, risk or priority materially changes.
+
+The 1 September manual test corrected Notion Marketplace from the old DRF 8% + $0.40 assumption to 10% + $0.40. The 2 September run added Gumroad's high-volume discount, Lemon Squeezy's fully loaded fee caveats, and an explicit Contra first-party fee-source conflict. None changes the current parent Opportunity Score/RBS/Stage/Next Proof.
 
 A new marketplace does not automatically become a new parent business.
 
@@ -133,4 +158,5 @@ See [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md) and [`product-types/website-and-lau
 
 ## Current evidence record
 
-- `research/business-blueprints-daily-refresh-2026-09-01.md` — first manual run; Notion fee correction and current channel verification.
+- `research/business-blueprints-daily-refresh-2026-09-01.md` — EMP3/manual refresh and Notion fee correction.
+- `research/business-blueprints-daily-refresh-2026-09-02.md` — Gumroad scale-fee evidence, Lemon Squeezy fully loaded fees, Contra fee conflict, Shopify agentic-channel confirmation and Skill-profile repair.
