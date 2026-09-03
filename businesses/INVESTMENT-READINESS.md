@@ -1,10 +1,10 @@
 # DRF Business Investment Readiness
 
 **Status:** Canonical migration and investment-gate register  
-**Version:** 1.7  
-**Date:** 2 September 2026  
+**Version:** 1.8  
+**Date:** 3 September 2026  
 **Governing issue:** #60  
-**Latest targeted rebuild:** DRF Portfolio Intelligence calibration — Instant Quote EMP and Recruitment OS underwriting — Issue #142 — 2 September 2026  
+**Latest targeted rebuild:** AI Commerce Conversion & Merchant Operations Agent — Issue #158 — 3 September 2026  
 **Source portfolio:** `businesses/OPPORTUNITIES.md`  
 **Niche source:** `businesses/NICHES.md`
 
@@ -27,7 +27,7 @@ Legacy Revenue Blueprint Factory workflow references in Git history are compatib
 
 A platform, CRM, AI model or delivery vendor is not the commercial opportunity. DRF first defines the **measurable result sold**, then ranks the niches where that result has the strongest pain, economics and reachability.
 
-**Current parent opportunity count: 27.** Website/launch-kit assets are downstream Business Blueprint product formats and are not separately ranked.
+**Current parent opportunity count: 28.** Website/launch-kit assets are downstream Business Blueprint product formats and are not separately ranked.
 
 For digital products, distribution is a separate downstream layer:
 
@@ -70,6 +70,7 @@ The niche score remains separate from RBS. A niche can be attractive while the d
 | **2** | **UAE/GCC Talent Intelligence & Salary Data Subscription** | Give employers and recruiters current regional talent and salary intelligence as a recurring decision product. | **85** | Pending | Pending | RESEARCH | $0 | Pending | No | Verify lawful data, price, buyer demand and recurring update cost. |
 | **2** | **Niche API & Data Product Factory** | Sell one recurring high-value function or data feed that removes a costly information/workflow gap. | **84** | Pending | Pending | RESEARCH | $0 | Pending | No | Identify one paid recurring function/data problem before factory scope. |
 | **2** | **Local SEO Rank-and-Rent Lead Asset Portfolio** | Own ranked local demand assets and rent/sell qualified lead flow for recurring cash. | **84** | Pending | Pending | RESEARCH | $0 | Pending | No | Build site-level monthly cash, ranking delay, lead and renter economics. |
+| **2** | **AI Commerce Conversion & Merchant Operations Agent** | Give ecommerce shoppers a source-grounded branded product expert while reducing repetitive commerce support/catalogue/merchant-operations work, without replacing the existing commerce platform. | **84** | **79** | **P1 Desk Underwritten** | **TEST** | **$0 until founder-authorised paid-pilot test; then up to $3,000** | **EMP3 Market Proven / 90%. Best niche is UAE/GCC Shopify Plus fashion/sportswear at 83/100 / 82% confidence. Illustrative base case: 3 managed clients × AED8,000/month = AED24,000 MRR plus setup; no DRF actual revenue. Native Shopify/specialist SaaS substitution and reusable integration/support economics are the live gates.** | **No** | After founder approval, present a bounded sandbox/demo to 15 qualified UAE/GCC targets; require 2 unrelated written paid-pilot commitments at AED12,500+ each. |
 | **3** | **Executive Career Accelerator / Job Search Platform** | Help professionals secure stronger roles faster through a productised career-search system. | **81** | Pending | Pending | RESEARCH | $0 | Pending | No | Rebuild upfront/recurring/upsell mix and finite-programme economics. |
 | **3** | **Pre-Assessed Talent Pool Subscription** | Give employers faster access to a fresh pool of pre-assessed, consented candidates. | **81** | Pending | Pending | RESEARCH | $0 | Pending | No | Model consent, freshness, supply density, employer demand and churn. |
 | **3** | **ChatGPT Plugin / App Factory** | Launch monetisable AI apps where a recurring backend or transaction stream survives beyond the app build. | **79** | Pending | Pending | RESEARCH | $0 | Pending | No | Define the recurring backend/revenue stream before app production. |
@@ -98,6 +99,7 @@ For renamed outcome-first labels, use the following joins during migration:
 - `Fast Quote-to-Cash System` ↔ `Instant Quote Generator & Quote-to-Cash System`
 - `Business Blueprints` ↔ underlying proven Blueprint candidates; distribution channels are selected separately and do not become the niche.
 - `Autonomous AI Revenue Operations Business-in-a-Box` ↔ legacy folder `grok-bot-ai-revenue-operations`; Grok Bot remains a delivery rail, not the parent opportunity.
+- `AI Commerce Conversion & Merchant Operations Agent` ↔ `businesses/ai-commerce-conversion-merchant-operations-agent/`; Claude Commerce Agents remains an implementation accelerator, not the parent identity.
 
 ---
 
@@ -117,7 +119,7 @@ Rebuild only after the faster lanes are operating or when new evidence materiall
 
 ## Migration rules
 
-- Do not create 27 Issues before execution starts.
+- Do not create 28 Issues before execution starts.
 - Open one Issue when an opportunity enters active rebuild.
 - Use `skills/drf-opportunity-factory/SKILL.md` and its `references/business-case-output-contract.md` structure; do not treat the old RBF workflow as a competing route.
 - Preserve old research as source history.
