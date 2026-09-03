@@ -56,6 +56,8 @@ Multiple independent businesses already prove that buyers pay for reusable opera
 - HighLevel Snapshot Marketplace — native one-time/monthly/yearly sales of reusable CRM/workflow configurations;
 - Business in a Box — **20+ years**, **250k+ businesses**, **190+ countries**, **3,000+** ready-made business templates/processes.
 
+Current Whop first-party guidance additionally treats Blueprints as deployable businesses and states creators earn **10% of Whop's profit** on attributed downstream sales. This strengthens channel evidence, not the parent EMP level.
+
 This proves the **broad category**, not DRF's exact buyer, price, CAC or deployment outcome.
 
 Current Opportunity Factory rule:
@@ -119,7 +121,7 @@ See [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md).
 | **Webflow Templates** | Native website-template discovery | Webflow templates and vertical site systems | **A/B when Webflow-native** |
 | **PromptBase** | Specialist AI-asset marketplace | Prompts, agent skills and AI workflow components | **A/B when applicable** |
 
-Notion's current first-party seller fee is **10% + $0.40**, not the older 8% + $0.40 DRF assumption; see `DISTRIBUTION-CHANNELS.md`.
+Notion's **current English first-party seller fee is 8% + $0.40**, plus 1% FX where applicable, and the UAE is currently listed as eligible for direct Marketplace selling. This **supersedes the active 1–2 September 10% interpretation**; an older localized Notion Help surface still shows 10%, so re-verify immediately before launch. See `DISTRIBUTION-CHANNELS.md` and the 3 September refresh evidence.
 
 ## Product types — one business, many SKUs
 
@@ -170,7 +172,9 @@ No Whop royalty, Partner commission or other platform-specific upside is require
 
 ## Whop-specific economics
 
-Whop remains strategically important because it currently provides channel-specific Blueprint features and separately verified Partner economics.
+Whop remains strategically important because it currently provides channel-specific Blueprint features and separately available Partner economics.
+
+Current first-party Blueprints guidance explicitly states that Blueprint creators earn **10% of Whop's profit on sales attributed to businesses that deploy the Blueprint**, and that this cut comes from Whop's share rather than the deploying seller's proceeds. Realised DRF payout/attribution/stacking still requires live evidence.
 
 Those details remain channel research:
 
@@ -197,6 +201,8 @@ Every completed scheduled run is persisted in `research/recurring-intelligence/R
 - [`PRODUCT-TYPES.md`](./PRODUCT-TYPES.md)
 - [`DISTRIBUTION-CHANNELS.md`](./DISTRIBUTION-CHANNELS.md)
 - [`research/business-blueprints-daily-refresh-2026-09-01.md`](./research/business-blueprints-daily-refresh-2026-09-01.md)
+- [`research/business-blueprints-daily-refresh-2026-09-02.md`](./research/business-blueprints-daily-refresh-2026-09-02.md)
+- [`research/business-blueprints-daily-refresh-2026-09-03.md`](./research/business-blueprints-daily-refresh-2026-09-03.md)
 - [`../../research/ai-first-digital-marketplaces-and-service-platforms.md`](../../research/ai-first-digital-marketplaces-and-service-platforms.md)
 
 ## Next action

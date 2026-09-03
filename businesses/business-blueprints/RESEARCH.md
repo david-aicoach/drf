@@ -1,7 +1,7 @@
 # Research — Business Blueprints
 
-**Updated:** 2 September 2026  
-**Latest intelligence issue:** #143  
+**Updated:** 3 September 2026  
+**Latest intelligence issue:** #155  
 **Status:** Platform-neutral parent underwritten at EMP3 / P2; daily specialist intelligence active through the DRF Recurring Intelligence Skill
 
 ## Executive conclusion
@@ -39,6 +39,7 @@ The former `businesses/business-blueprints/DAILY-INTELLIGENCE.md` path is retire
 
 - `research/business-blueprints-daily-refresh-2026-09-01.md` — EMP3/comparable-operator and parent-test calibration.
 - `research/business-blueprints-daily-refresh-2026-09-02.md` — channel-economics refresh, Contra fee-source conflict, Shopify agentic-channel confirmation and Skill-path repair.
+- `research/business-blueprints-daily-refresh-2026-09-03.md` — current Notion Marketplace fee correction/UAE eligibility, stronger Whop first-party Blueprint creator-economics confirmation and expanded Shopify agentic-channel scope.
 
 ## 1. Business definition
 
@@ -99,6 +100,7 @@ Multiple independent businesses and creator ecosystems demonstrate sustained dem
 | **Business Done Better** | Reusable HighLevel smart snapshot | HighLevel case evidence shows deployment to close to 200 customers around a recurring US$199/month core offer | Close B2B analogue: configure once, deploy repeatedly, attach support/fulfilment |
 | **HighLevel Snapshot Marketplace** | Packaged CRM/workflow configurations | Native one-time/monthly/yearly snapshot sales and IP-protection mechanisms | Packaged operating configurations are an explicit product category |
 | **Business in a Box** | Ready-made business operating knowledge/business OS | 20+ years, 250k+ clients/businesses and 3,000+ templates; current recurring SaaS plans reinforce durable WTP for structured business operating IP | Long-duration adjacent proof that businesses pay for ready-made operating structure |
+| **Whop Blueprints** | Deployable digital businesses with copied products, pricing and website | Current first-party Blueprints guide explicitly treats Blueprints as running businesses and states creators receive 10% of Whop's profit on attributed downstream sales | Strong channel-level confirmation that deployable packaged business systems are now a first-class marketplace product format |
 
 ### Counter-evidence
 
@@ -142,6 +144,7 @@ Strengths:
 - software/services/community support;
 - CLI/API/MCP direction;
 - first-party-verified Blueprint programme mechanics;
+- current first-party Blueprints guide states creators earn **10% of Whop's profit on sales attributed to businesses that deploy their Blueprint**, paid from Whop's share;
 - separate Whop Partner economics.
 
 Evidence boundary remains:
@@ -166,7 +169,7 @@ The discount is **conditional scale upside** and must not be used in the current
 
 Contra supports one-time products, subscriptions, merchant-of-record handling and a strong product-to-service bridge.
 
-As of 2 September, exact digital-product fees are a **first-party source conflict**:
+As of 3 September, exact digital-product fees remain a **first-party source conflict**:
 
 - current pricing page: Free product fee capped 5% (min US$3 / max US$29), Pro no product fee;
 - current Help/product docs: price-band Non-Pro/Pro product fees plus processing.
@@ -175,13 +178,16 @@ DRF must verify the live seller-account/checkout fee immediately before launch a
 
 ### Notion Marketplace
 
-Current first-party economics remain:
+Current English first-party seller documentation now states:
 
 - merchant-of-record model;
-- **10% + US$0.40 per transaction**;
+- **8% + US$0.40 per transaction**;
 - creators outside the US can pay **+1% FX** when payout currency is converted;
 - **14-day** payout eligibility hold;
-- paid templates require approval and commercially reasonable creator support.
+- paid templates require approval and commercially reasonable creator support;
+- **United Arab Emirates is currently listed as eligible** for direct Marketplace selling/payment onboarding.
+
+This supersedes the active 1–2 September DRF interpretation of 10% + US$0.40. An older localized Notion Help surface still exposes 10%, so the fee and seller terms must be verified again immediately before launch.
 
 Best use remains Notion-native CRM/OS/database/workflow components.
 
@@ -209,15 +215,16 @@ Current first-party pricing remains:
 
 ### Shopify / owned commerce / agentic distribution
 
-Shopify remains important as the owned commerce layer. Current Agentic Storefronts/Shopify Catalog/UCP evidence strengthens its machine-readable AI distribution role:
+Shopify remains important as the owned commerce layer. Current Agentic Storefronts evidence now makes the channel map more explicit:
 
-- eligible catalogue products can be exposed to AI channels including ChatGPT and Copilot;
-- AI-channel controls and attribution are centralized in Shopify admin;
-- direct checkout exists where supported;
-- merchant remains merchant of record;
-- Shopify states no additional agentic-channel transaction fee beyond standard processing for the described flows.
+- eligible catalogue products can be exposed to **ChatGPT, Google AI Mode/Gemini, Microsoft Copilot and Meta**;
+- products are supplied through Shopify Catalog, or the Google & YouTube / Merchant Center route for Google AI Mode and Gemini;
+- ChatGPT currently acts as a discovery/referrer surface and buyers complete checkout through the merchant's Shopify checkout;
+- supported Google AI Mode/Gemini, Copilot and Meta flows can use Shopify-powered direct checkout when enabled;
+- the merchant retains the customer relationship and post-purchase experience;
+- Shopify admin retains channel/referrer attribution.
 
-This is stronger infrastructure evidence, but **not DRF Blueprint conversion proof**.
+This is stronger infrastructure evidence, but **not DRF Blueprint conversion proof**. Live use also requires acceptance of Shopify's supplemental Agentic Storefronts terms, which remains a founder-approval boundary.
 
 ### Framer / Webflow
 
@@ -297,7 +304,7 @@ Current state remains:
 - DRF Proof: **P2 Backtested**;
 - Stage: **TEST**.
 
-The 2 September channel-economics evidence does **not** mechanically increase Opportunity Score or RBS. It improves execution accuracy and reveals a Contra fee-source conflict, while the core parent decision remains unchanged.
+The 2–3 September channel-economics evidence does **not** mechanically increase Opportunity Score or RBS. It improves execution accuracy, reveals a persistent Contra fee-source conflict and corrects the current Notion fee assumption, while the core parent decision remains unchanged.
 
 ## 10. Initial commercial test band
 
@@ -335,7 +342,7 @@ P4 then requires actual paid delivery/activation and actual cost capture.
 - marketplace traffic does not convert;
 - direct traffic remains expensive;
 - buyer deployment/activation is poor;
-- platform-specific fee/policy surfaces change or conflict;
+- platform-specific fee/policy surfaces change or conflict across locales/documents;
 - base fee assumptions understate processing/payout/subscription economics;
 - implementation silently becomes bespoke consulting.
 
@@ -347,7 +354,7 @@ Maintain:
 - version/release notes;
 - channel compatibility matrix;
 - listing/rights checklist;
-- launch-time fee/plan verification;
+- launch-time fee/plan/eligibility verification;
 - channel-specific price/fee table;
 - UTM/referral attribution;
 - refund/dispute tracker;
@@ -379,7 +386,7 @@ Completed scheduled runs are recorded in `../../research/recurring-intelligence/
 
 **GO / TEST — unchanged.**
 
-The category is externally market-proven. Channel economics are now better calibrated, but no new DRF actual changes the price, RBS, proof, Stage or test design.
+The category is externally market-proven. Channel economics are more accurate after the current Notion correction and expanded Whop/Shopify confirmation, but no new DRF actual changes the price, RBS, proof, Stage or test design.
 
 ## 16. Sources
 
@@ -387,6 +394,7 @@ Detailed source/evidence registers:
 
 - `research/business-blueprints-daily-refresh-2026-09-01.md`
 - `research/business-blueprints-daily-refresh-2026-09-02.md`
+- `research/business-blueprints-daily-refresh-2026-09-03.md`
 
 Canonical DRF:
 
@@ -398,4 +406,4 @@ Canonical DRF:
 - `channels/whop/WHOP-RESEARCH.md`
 - `channels/whop/WHOP-RBF-ASSESSMENT.md`
 
-Marketplace economics are channel evidence, not guarantees of realised DRF sales. Re-verify fees/terms before a live launch.
+Current external channel sources are listed in the dated 3 September refresh. Marketplace economics are channel evidence, not guarantees of realised DRF sales. Re-verify fees/terms before a live launch.
