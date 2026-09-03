@@ -4,8 +4,8 @@
 **Framework:** `skills/drf-opportunity-factory/references/business-opportunity-scoring.md` v2.0  
 **Niche layer:** `skills/drf-opportunity-factory/references/niche-scoring.md` v1.2  
 **Base portfolio recalculation:** 29 August 2026 — Issue #48  
-**Latest targeted evidence update:** 1 September 2026 — Autonomous AI Revenue Operations vendor-neutral parent re-score  
-**Research basis:** 27 current parent-opportunity dossiers + all canonical niche dossiers at Comprehensive v3, plus subsequent opportunity-specific evidence updates
+**Latest targeted evidence update:** 3 September 2026 — AI Commerce Conversion & Merchant Operations Agent underwriting — Issue #158  
+**Research basis:** 28 current parent-opportunity dossiers + canonical niche dossiers and subsequent opportunity-specific evidence updates
 
 ## Scoring rule
 
@@ -20,10 +20,11 @@ This prevents double-counting while still allowing detailed evidence to change t
 - The top four remain unchanged: **WhatsApp + CRM**, **Revenue Recovery**, **AI Voice**, **Missed Lead**.
 - **Instant Quote / Quote-to-Cash remains #5** after drywall/gypsum/false ceilings emerged as an 87/100 Sniper niche.
 - Broad platform/container propositions remain penalised where incumbents or weak exact-market fit reduce the business case.
-- **Autonomous AI Revenue Operations rises 81 → 87 on 1 September 2026** after correcting the parent from Grok Bot-specific delivery economics to the vendor-neutral revenue-operations business. Salesforce, Workday and Microsoft now provide substantial commercial/adoption evidence; current UAE managed-agent offers strengthen willingness-to-pay and recurring-service evidence. Grok Bot remains one delivery rail.
-- The Autonomous AI Revenue Operations MRR inconsistency is reconciled: the old summary showed 9/10 while the old factor table held 8/10. Both are now **9/10**.
+- **Autonomous AI Revenue Operations remains 87** after the 1 September vendor-neutral correction; Grok Bot remains one delivery rail.
+- **AI Commerce Conversion & Merchant Operations Agent enters at 84/100.** The category, timing and buildability are strong, but native Shopify/Sidekick and specialist ecommerce AI create substitution pressure, while production integrations remain more human-dependent than top DRF outcome businesses.
+- The AI Commerce parent is distinct from **Agentic Commerce Visibility & Conversion Engine**: visibility owns external AI-shopping discoverability/catalogue truth/attribution; the new parent owns the merchant's branded shopping experience plus commerce-specific merchant operations.
 - **Business Blueprints remains 82** as a platform-neutral parent opportunity; Whop is one distribution channel rather than the business itself.
-- Research Completeness remains **100% across all 27 current parent opportunities** in the framework sense. This does not mean product-market fit is proven; live CAC, retention, gross margin and outcome data remain the next confidence gate.
+- Research Completeness remains **100% across all 28 current parent opportunities** in the framework sense. This does not mean product-market fit is proven; live CAC, retention, gross margin and outcome data remain the next confidence gate.
 
 ## Portfolio summary
 
@@ -36,7 +37,7 @@ This prevents double-counting while still allowing detailed evidence to change t
 | **Instant Quote Generator & Quote-to-Cash System** | **Candidate** | **91/100** | **0** | **↑2** | **9/10** | **98/100** | **95%** | **100%** | Drywall / gypsum / false-ceiling installers | **87/100** | Deterministic pricing rules plus a strong exact niche keep it top five. | Replay historical quotes, define survey gates, then test live estimate-to-quote. | `businesses/instant-quote-quote-to-cash/RESEARCH.md` |
 | **AI Support & Sales Assistant** | **Candidate** | **90/100** | **-3** | **—** | **10/10** | **88/100** | **96%** | **100%** | Dubai holiday-home operators | **78/100** | Strong category, but native vertical software already absorbs much routine support. | Choose a vertical where native software leaves a measurable gap. | `businesses/ai-support-sales-assistant/RESEARCH.md` |
 | **Talent Bridge Assessment & AI Interview Platform** | **Candidate** | **89/100** | **-2** | **↑1** | **10/10** | **85/100** | **90%** | **100%** | Not yet canonically scored | — | Strong proprietary assets; licensing, privacy, fairness and human review remain gates. | Run one employer self-service pilot with human review. | `businesses/talent-bridge-assessment-ai-interview-platform/RESEARCH.md` |
-| **Agentic Commerce Visibility & Conversion Engine** | **Candidate** | **89/100** | **-1** | **↑2** | **9/10** | **83/100** | **90%** | **100%** | Not yet canonically scored | — | High structural opportunity; paid merchant retention and attributable conversion remain unproven. | Run 3–5 merchant baseline/optimisation tests. | `businesses/agentic-commerce-visibility-conversion-engine/RESEARCH.md` |
+| **Agentic Commerce Visibility & Conversion Engine** | **Candidate** | **89/100** | **-1** | **↑2** | **9/10** | **83/100** | **90%** | **100%** | UAE/GCC multi-channel retailers and DTC brands | **83/100** | High structural opportunity; paid merchant retention and attributable conversion remain unproven. | Run 3–5 merchant baseline/optimisation tests. | `businesses/agentic-commerce-visibility-conversion-engine/CURRENT.md` |
 | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **Candidate** | **89/100** | **-4** | **↓4** | **10/10** | **85/100** | **96%** | **100%** | Dubai holiday-home operators | **82/100** | Excellent delivery mechanics; generic SaaS resale is weakened by vertical incumbents. | Prove a foundation+outcome vertical, then require client #2 to reuse materially the same product. | `businesses/highlevel-vertical-saas-snapshot/RESEARCH.md` |
 | **Vertical AI Operating Systems & Agent Integration Packs** | **Candidate** | **88/100** | **0** | **↑1** | **9/10** | **78/100** | **90%** | **100%** | Not yet canonically scored | — | Strong when fixed around repeatable vertical workflows. | Sell one fixed workflow pack and require second-client reuse. | `businesses/vertical-ai-operating-systems-agent-integration-packs/RESEARCH.md` |
 | **Recruitment OS / Hiring Intelligence SaaS** | **Candidate** | **87/100** | **-4** | **↓2** | **10/10** | **78/100** | **88%** | **100%** | Not yet canonically scored | — | Attractive as differentiated intelligence around an existing ATS. | Sell one intelligence/evaluation module before expanding platform scope. | `businesses/recruitment-os-hiring-intelligence-saas/RESEARCH.md` |
@@ -48,6 +49,7 @@ This prevents double-counting while still allowing detailed evidence to change t
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | **Researching** | **85/100** | **-3** | **↓3*** | **10/10** | **90/100** | **80%** | **100%** | Not yet canonically scored | — | Strong recurring economics; data rights and validity remain material gates. | Complete data-rights/methodology audit and publish one narrow benchmark. | `businesses/uae-gcc-talent-intelligence-salary-data/RESEARCH.md` |
 | **Niche API & Data Product Factory** | **Candidate** | **84/100** | **-3** | **↓2*** | **10/10** | **88/100** | **86%** | **100%** | Not yet canonically scored | — | Attractive usage model; currently infrastructure seeking a proprietary recurring problem. | Require first paid repeated usage before adding endpoints. | `businesses/niche-api-data-product-factory/RESEARCH.md` |
 | **Local SEO Rank-and-Rent Lead Asset Portfolio** | **Candidate** | **84/100** | **0** | **↑3*** | **10/10** | **93/100** | **84%** | **100%** | Not yet canonically scored | — | Mature recurring model with ranking delay and asset-specific economics. | Launch one UAE niche/location asset with renter target. | `businesses/local-seo-rank-and-rent/RESEARCH.md` |
+| **AI Commerce Conversion & Merchant Operations Agent** | **Candidate** | **84/100** | **New** | **New** | **9/10** | **78/100** | **90%** | **100%** | UAE/GCC Shopify Plus fashion/sportswear ecommerce brands | **83/100** | Strong category and implementation accelerator, but the managed custom wedge is constrained by native Shopify/specialist SaaS and integration variance. | After founder approval, run 15 qualified merchant conversations; require 2 unrelated AED12,500+ paid-pilot commitments. | `businesses/ai-commerce-conversion-merchant-operations-agent/CURRENT.md` |
 | **Business Blueprints** | **Candidate** | **82/100** | **0** | **↑5*** | **9/10** | **78/100** | **90%** | **100%** | HVAC/AC Enquiry-to-Revenue Blueprint | **92/100** | Platform-neutral parent; Whop is one endpoint rather than the business definition. | Package one proven DRF Blueprint and test it across at least two compatible endpoints. | `businesses/business-blueprints/RESEARCH.md` |
 | **Executive Career Accelerator / Job Search Platform** | **Candidate** | **81/100** | **-2** | **↑4*** | **7/10** | **83/100** | **88%** | **100%** | Not yet canonically scored | — | Fast to monetise; finite programme duration weakens MRR. | Package digitally and measure paid conversion, support burden, upgrades and retention. | `businesses/executive-career-accelerator-job-search-platform/RESEARCH.md` |
 | **Pre-Assessed Talent Pool Subscription** | **Researching** | **81/100** | **-5** | **↓4** | **10/10** | **80/100** | **84%** | **100%** | Not yet canonically scored | — | Attractive asset reuse; consent, freshness and liquidity are fundamental costs. | Build one permissioned role pool and test paid employer access. | `businesses/pre-assessed-talent-pool-subscription/RESEARCH.md` |
@@ -57,7 +59,7 @@ This prevents double-counting while still allowing detailed evidence to change t
 | **Saffa.ae Community + Trusted Local Business Marketplace** | **Researching** | **76/100** | **-4** | **—** | **8/10** | **83/100** | **82%** | **100%** | Not yet canonically scored | — | Trust thesis remains valid; traffic, engagement and monetisation are unproven. | Prove engagement and a paid sponsor/listing cohort. | `businesses/saffa-ae-community-marketplace/RESEARCH.md` |
 | **AI-First Marketplace Directory** | **Researching** | **72/100** | **-5** | **↓1** | **8/10** | **80/100** | **92%** | **100%** | Not yet canonically scored | — | Technology is cheap; a narrow market and distribution are the business. | Run one rights-safe niche concierge directory/lead test. | `businesses/ai-first-marketplace-directory/RESEARCH.md` |
 
-\* Rank-Δ values marked with an asterisk retain the 29 August base-comparison history; the 1 September targeted Autonomous AI insertion changes their current physical rank without rewriting historical base deltas.
+\* Rank-Δ values marked with an asterisk retain the 29 August base-comparison history; targeted insertions after that base recalculation change physical rank without rewriting historical base deltas.
 
 ### How to read the niche column
 
@@ -87,7 +89,7 @@ This prevents double-counting while still allowing detailed evidence to change t
 | **MRR** | **MRR / Recurring Revenue Quality** | **11** |
 | **Total** |  | **100** |
 
-## Validated scores — latest targeted update 1 September 2026
+## Validated scores — latest targeted update 3 September 2026
 
 All factors are 0–10. Weighted Score uses the canonical weights above.
 
@@ -112,6 +114,7 @@ All factors are 0–10. Weighted Score uses the canonical weights above.
 | **UAE/GCC Talent Intelligence & Salary Data Subscription** | 8 | 9 | 8 | 7 | 10 | 7 | 9 | 10 | 9 | 5 | 10 | 10 | 5 | 8 | 10 | **84.6 → 85** |
 | **Niche API & Data Product Factory** | 8 | 9 | 8 | 7 | 9 | 6 | 10 | 10 | 9 | 6 | 10 | 10 | 5 | 7 | 10 | **84.2 → 84** |
 | **Local SEO Rank-and-Rent Lead Asset Portfolio** | 8 | 8 | 6 | 9 | 9 | 10 | 9 | 9 | 8 | 5 | 10 | 9 | 7 | 7 | 10 | **84.2 → 84** |
+| **AI Commerce Conversion & Merchant Operations Agent** | **9** | **10** | **9** | **8** | **9** | **8** | **8** | **6** | **9** | **8** | **8** | **8** | **7** | **7** | **9** | **83.9 → 84** |
 | **Business Blueprints** | 9 | 9 | 10 | 7 | 9 | 8 | 7 | 7 | 9 | 8 | 8 | 10 | 5 | 5 | 9 | **81.7 → 82** |
 | **Executive Career Accelerator / Job Search Platform** | 9 | 7 | 6 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 9 | 8 | 8 | 8 | 6 | **81.4 → 81** |
 | **Pre-Assessed Talent Pool Subscription** | 9 | 8 | 7 | 7 | 9 | 7 | 8 | 8 | 8 | 6 | 10 | 10 | 6 | 7 | 9 | **80.5 → 81** |
@@ -146,6 +149,7 @@ Evidence Confidence measures trust in the scoring inputs. Research Completeness 
 | UAE/GCC Talent Intelligence & Salary Data Subscription | **80%** | **100%** | Data-rights/methodology audit, sample validity and paid recurring buyer demand. |
 | Niche API & Data Product Factory | **86%** | **100%** | One lawful proprietary dataset/function with paid repeated usage. |
 | Local SEO Rank-and-Rent Lead Asset Portfolio | **84%** | **100%** | Ranking, qualified leads, renter acquisition and retention on one asset. |
+| **AI Commerce Conversion & Merchant Operations Agent** | **90%** | **100%** | UAE/GCC paid-pilot willingness to pay plus reusable integration/support economics and measured conversion/support value. |
 | Business Blueprints | **90%** | **100%** | Actual deployment conversion, downstream activation/retention, support and channel economics. |
 | Executive Career Accelerator / Job Search Platform | **88%** | **100%** | Digital paid conversion, support intensity, upgrades and finite-duration retention. |
 | Pre-Assessed Talent Pool Subscription | **84%** | **100%** | Consent, freshness maintenance economics and recurring employer access demand. |
@@ -180,6 +184,7 @@ Evidence Confidence measures trust in the scoring inputs. Research Completeness 
 | UAE/GCC Talent Intelligence & Salary Data Subscription | 10 | 7 | 9 | 10 | **90** |
 | Niche API & Data Product Factory | 9 | 6 | 10 | 10 | **88** |
 | Local SEO Rank-and-Rent Lead Asset Portfolio | 9 | 10 | 9 | 9 | **93** |
+| **AI Commerce Conversion & Merchant Operations Agent** | **9** | **8** | **8** | **6** | **78** |
 | Business Blueprints | 9 | 8 | 7 | 7 | **78** |
 | Executive Career Accelerator / Job Search Platform | 9 | 9 | 8 | 7 | **83** |
 | Pre-Assessed Talent Pool Subscription | 9 | 7 | 8 | 8 | **80** |
@@ -204,13 +209,15 @@ WhatsApp + CRM foundation
 
 HVAC/AC remains the clearest first beachhead, followed by specialist MEP, aesthetic/dental and selected quote-heavy service niches.
 
-### 2. Autonomous AI Revenue Operations is now a top-12 structural opportunity
+### 2. Autonomous AI Revenue Operations remains a top-12 structural opportunity
 
-The vendor-neutral parent rises from 81 to **87** because the evidence base is no longer one new computer-use product. Current enterprise ARR/ACV and adoption evidence confirms agents are becoming a real paid operating layer; current service-market pricing confirms a managed implementation/operations model exists.
+The vendor-neutral parent is strong because current enterprise and service-market evidence confirms agents are becoming a real paid operating layer. It still does **not** outrank the proven outcome-specific revenue businesses. Its next gate is to turn category strength into one repeatable, paid, low-support workflow.
 
-The opportunity still does **not** outrank the proven outcome-specific revenue businesses. Its next gate is to turn category strength into one repeatable, paid, low-support workflow.
+### 3. AI Commerce is strategically useful but must stay outcome-specific
 
-### 3. Business Blueprints remains a distribution multiplier
+The new 84/100 parent is not “Claude Commerce consulting” and does not replace Shopify. The commercial wedge is a merchant-owned shopping/conversion experience plus commerce-specific merchant operations, integrated with the existing commerce system. If paid-pilot demand or client #2 reuse fails, recycle it under the broader Vertical AI Operating Systems parent rather than preserve a weak duplicate.
+
+### 4. Business Blueprints remains a distribution multiplier
 
 The correct sequence remains:
 
@@ -222,15 +229,15 @@ prove a DRF business system
 → attach implementation/managed service where valuable
 ```
 
-### 4. Platform wrappers are secondary to the outcome
+### 5. Platform wrappers are secondary to the outcome
 
 HighLevel, Grok Bot, ChatGPT, Claude, Gemini, job boards and marketplaces are delivery/distribution mechanisms, not evidence of customer demand. Outcome proof comes first.
 
-### 5. Talent Bridge should run a parallel cash-and-data lane
+### 6. Talent Bridge should run a parallel cash-and-data lane
 
 Assessment-as-a-Service and Partner-Delivered Recruitment remain useful because their execution speed and existing assets can generate cash and evidence while slower platform/data products remain in research.
 
-### 6. Commodity software remains penalised
+### 7. Commodity software remains penalised
 
 Generic websites, job boards, marketplaces and prompts are easy to build or rent. That does not solve buyer acquisition, liquidity, recurring value or moat.
 
@@ -257,6 +264,8 @@ No score in this file is product-market-fit proof. Further material score moveme
 
 For **Autonomous AI Revenue Operations**, do not raise the score further from additional desk research alone. Require paid/repeatable delivery evidence and managed-operations retention.
 
+For **AI Commerce Conversion & Merchant Operations Agent**, do not raise the score from more launch/category evidence alone. Require local paid-pilot demand, measurable production value and materially reusable client #2 delivery.
+
 ## Canonical supporting research
 
 - `research/opportunity-portfolio-rescore-after-niche-v3-2026-08-29.md`
@@ -265,6 +274,8 @@ For **Autonomous AI Revenue Operations**, do not raise the score further from ad
 - `research/opportunity-execution-velocity-and-staircase-2026-08-29.md`
 - `research/ai-delivery-economics-portfolio-rescore-2026-08-29.md`
 - `research/autonomous-ai-revenue-operations-2026-09.md`
+- `businesses/ai-commerce-conversion-merchant-operations-agent/CURRENT.md`
+- `research/niches/34-ai-commerce-agent-shopify-fashion-gcc.md`
 - all current `businesses/*/RESEARCH.md` / `CURRENT.md` opportunity dossiers
 
 ## Table format rule
