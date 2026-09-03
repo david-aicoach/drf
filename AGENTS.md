@@ -13,6 +13,12 @@ DRF is a **skills-first operating system**. For every substantive capability tas
 
 Do not recreate a global knowledge hierarchy, root AI workflow library, global templates/scripts, SOP or lessons junk drawer.
 
+## Founder north star
+
+DRF is the ecosystem's commercial factory, but revenue is part of a wider mission rather than an isolated scoreboard. For the current **1,000-business AI-implementation mission**, founder story, ethical value → revenue → reinvestment → evolution flywheel, and safe autonomous-evolution direction, use the canonical [`Founder Story, Mission & Vision`](https://github.com/tbhrc/skills/tree/main/founder-story-mission-vision) Skill.
+
+DRF remains authoritative for current opportunity/business truth, scoring and proof. The founder north star does **not** grant blanket authority for capital, paid advertising, external spend, prospect contact, legal/platform acceptance or commercial commitments; the approval boundaries below remain in force.
+
 ## Navigation integrity
 
 Follow the canonical [GitHub navigation-integrity rule](https://github.com/tbhrc/skills/tree/main/github-agent-workflow#navigation-integrity): when DRF routes an agent to another Skill, repository or system, the destination must expose a practical return or onward route to DRF, the Skill Bank/index or the owning canon; unexplained one-way dead ends are architecture defects. Provider unavailability, quota or budget exhaustion is a routing event under the same canonical GitHub Agent Workflow, not a blocker when another authorised route is available.
@@ -27,7 +33,7 @@ Before any credential/token/secret transfer, confirm repository visibility and t
 |---|---|
 | New business opportunity, Revenue Factory opportunity intake, market intelligence A-Z, research/score/niche/underwrite a business, build a V3 business case | [`skills/drf-opportunity-factory/SKILL.md`](skills/drf-opportunity-factory/SKILL.md) |
 | Recurring discovery, daily portfolio calibration, scheduled research, refresh/re-score existing opportunities | [`skills/drf-recurring-intelligence/SKILL.md`](skills/drf-recurring-intelligence/SKILL.md) |
-| **Business development: target accounts, qualification, value-upfront audit outreach, CRM pipeline, follow-up, meetings and Won-client handoff** | **[`tbhrc/skills/drf-business-development`](https://github.com/tbhrc/skills/tree/issue-158-drf-business-development/drf-business-development)** — canonical central Skill under `tbhrc/skills#158`; start at [`bd/README.md`](bd/README.md) for DRF ownership/routing |
+| **Business development: target accounts, qualification, value-upfront outreach, live CRM pipeline, follow-up, meetings and Won-client handoff** | **[`tbhrc/skills/drf-business-development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)** — canonical central Skill; start at [`bd/README.md`](bd/README.md) for DRF ownership/routing |
 | Dashboard V3, portfolio data contract, dashboard source health/maintenance | [`skills/drf-dashboard-operations/SKILL.md`](skills/drf-dashboard-operations/SKILL.md) |
 | Repository governance, Skills-first structure, validation, refactor/maintenance | [`skills/drf-repository-operations/SKILL.md`](skills/drf-repository-operations/SKILL.md) |
 
@@ -39,13 +45,13 @@ Natural-language shorthand such as **“run BD,” “find prospects,” “buil
 
 - `businesses/` — current business/opportunity truth and founder registers.
 - `research/` — durable evidence and run history, not reusable operating instructions.
-- `bd/` — pre-sale Business Development domain map, campaign/control routing and GHL/AI Ops ownership boundary; **not** a lead database.
-- **GHL / GoHighLevel** — intended live BD CRM and communication/action system of record once the correct iMPLEMENTAi.ae location, email and master MCP/API route are verified.
-- [`tbhrc/skills`](https://github.com/tbhrc/skills) — central reusable HOW/capability canon, including `drf-business-development` and future `ghl-operator`.
+- `bd/` — pre-sale Business Development domain map, campaign/control routing and live-CRM/AI Ops ownership boundary; **not** a lead database.
+- **Selected live CRM** — ordinary company/contact/opportunity/activity/next-action truth. Current CRM selection/proof is owned by [`#157`](https://github.com/tbhrc/drf-main/issues/157); use one live CRM only and never dual-maintain competing truth.
+- [`tbhrc/skills`](https://github.com/tbhrc/skills) — central reusable HOW/capability canon, including `drf-business-development`; platform mechanics route to the currently verified CRM capability/operator.
 - [`tbhrc/ai-ops`](https://github.com/tbhrc/ai-ops) — iMPLEMENTAi client operating canon after genuine acquisition / Won; do not promote research-stage prospects merely because they were contacted.
 - `software/`, root HTML/JS/CSS and `assets/` — product/runtime code.
 - `.github/` — GitHub-required integrations and Actions.
-- `skills/` — existing DRF-local reusable capability pending any separately governed centralisation/migration work.
+- `skills/` — reusable AI operating capability.
 
 For V3 founder truth:
 
