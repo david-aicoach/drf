@@ -13,13 +13,13 @@
 
 DRF is a **skills-first operating system**.
 
-A founder or fresh agent should not hunt through hidden prompt/template/workflow folders. Reusable AI work starts by selecting a named Skill from [`skills/README.md`](skills/README.md) or, for the new cross-portfolio BD capability, the canonical central Skill in `tbhrc/skills`.
+A founder or fresh agent should not hunt through hidden prompt/template/workflow folders. Reusable AI work starts by selecting a named Skill from [`skills/README.md`](skills/README.md) or, for cross-portfolio Business Development, the canonical central Skill in `tbhrc/skills`.
 
 | Need | Skill |
 |---|---|
 | New business opportunity, opportunity intake, market intelligence A–Z, scoring, niche selection, commercial underwriting, Layer 3 and V3 | [`DRF Opportunity Factory`](skills/drf-opportunity-factory/SKILL.md) |
 | Golden Opportunity discovery, daily 27-parent calibration, scheduled/specialist market intelligence | [`DRF Recurring Intelligence`](skills/drf-recurring-intelligence/SKILL.md) |
-| **Target accounts, qualification, value-upfront audit outreach, CRM pipeline, follow-up, sales meetings and Won-client handoff** | **[`DRF Business Development`](https://github.com/tbhrc/skills/tree/issue-158-drf-business-development/drf-business-development)** — central Skill; DRF front door: [`bd/README.md`](bd/README.md) |
+| **Target accounts, qualification, value-upfront outreach, live CRM pipeline, follow-up, sales meetings and Won-client handoff** | **[`DRF Business Development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)** — central Skill; DRF front door: [`bd/README.md`](bd/README.md) |
 | Dashboard V3, website/data-contract maintenance, Pages verification | [`DRF Dashboard Operations`](skills/drf-dashboard-operations/SKILL.md) |
 | Repository architecture, Skill maintenance, governance, cleanup and CI | [`DRF Repository Operations`](skills/drf-repository-operations/SKILL.md) |
 
@@ -29,32 +29,32 @@ Example founder instruction:
 
 For commercial execution:
 
-> **“Run BD for `<offer/niche>`. Use DRF Business Development, qualify the best targets and work the GHL pipeline.”**
+> **“Run BD for `<offer/niche>`. Use DRF Business Development, qualify the best targets and work the live CRM pipeline.”**
 
 That is sufficient. The repository and canonical Skill Bank must supply the method.
 
 ## Business Development ownership
 
-DRF now distinguishes **business selection** from **business development execution**.
+DRF distinguishes **business selection** from **business development execution**.
 
 ```text
 DRF opportunity / niche truth
 → DRF Business Development
-→ GHL live CRM + communication/action state
+→ selected live CRM + communication/action state
 → qualified meeting / commercial progression
 → Won
 → AI Ops client handoff
 ```
 
 - **DRF / GitHub** owns pre-sale campaign strategy, experiments, system work and aggregate proof.
-- **GHL / GoHighLevel** is the intended live CRM + communication/action system of record once the correct iMPLEMENTAi.ae location, email and master MCP/API route are verified.
-- **`tbhrc/skills`** owns the reusable Business Development and future `ghl-operator` methods.
+- **Selected live CRM** owns ordinary live company/contact/opportunity/activity/next-action truth. Current selection/proof is governed by [`#157`](https://github.com/tbhrc/drf-main/issues/157); never dual-maintain competing CRM truth.
+- **`tbhrc/skills`** owns the reusable Business Development method and routes platform mechanics to the currently verified CRM capability/operator.
 - **AI Ops** begins at genuine acquisition / Won.
 - **OneDrive** owns private/prospect/client-facing files when required.
 
-Do not create a second GitHub CRM or one Issue/file per ordinary lead. Start at [`bd/README.md`](bd/README.md) for the detailed ownership boundary and current GHL readiness state.
+Do not create a second GitHub CRM or one Issue/file per ordinary lead. Start at [`bd/README.md`](bd/README.md) for the detailed ownership boundary and current CRM route.
 
-Governing programme: [`#150 — Build DRF Business Development operating layer on GHL`](https://github.com/tbhrc/drf-main/issues/150).
+Governing programme: [`#150 — Build DRF Business Development operating layer on GHL`](https://github.com/tbhrc/drf-main/issues/150). Current CRM selection/proof: [`#157`](https://github.com/tbhrc/drf-main/issues/157).
 
 ## Skill ownership rule
 
