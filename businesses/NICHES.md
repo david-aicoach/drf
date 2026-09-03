@@ -1,10 +1,10 @@
 # DRF Niche Opportunity Register
 
 **Status:** Canonical niche register  
-**Version:** 1.10  
-**Date:** 2 September 2026  
+**Version:** 1.11  
+**Date:** 3 September 2026  
 **Scoring framework:** `skills/drf-opportunity-factory/references/niche-scoring.md`  
-**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142  
+**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142, #158  
 **Canonical evidence library:** `research/niches/README.md`  
 **Comprehensive dossier standard:** `skills/drf-opportunity-factory/references/niche-research-standard.md`
 
@@ -32,6 +32,7 @@ Scores are desk-research scores until live prospect/customer evidence exists. **
 - **Outcome** — measurable commercial result such as Revenue Recovery, Missed Lead, Voice, Instant Quote, Support or Reputation.
 - **Vertical Platform** — bundled vertical operating product such as HighLevel Rentals + Direct Booking.
 - **Agentic Operations** — persistent cross-system work where a general agent creates enough incremental value to justify variable execution cost.
+- **Commerce conversion / agentic operations** — merchant-owned guided shopping plus commerce-specific internal agent work layered over the existing commerce system.
 
 ### Autonomous AI parent migration
 
@@ -63,6 +64,7 @@ The seven niche rows originally researched under **Grok Bot AI-First Revenue Ope
 | **Agentic Operations** | **Autonomous AI Revenue Operations Business-in-a-Box** | Recruitment research + screening operations worker | Recruitment / talent | Boutique recruitment agencies and lean internal TA teams with recurring vacancies | UAE / GCC | Recruiters spend large time on research, evidence extraction, screening prep and pipeline admin | **83/100** | **94%** | **Strong — narrow to cross-system research/evidence preparation** | **Legacy Grok-heavy delivery-rail evidence.** Score remains historical until a vendor-neutral parent niche pass revalidates the workflow/economics. | Benchmark 10 vacancies vendor-neutrally for minutes saved, errors, fully loaded cost/workflow and human recovery. | `research/niches/17-grok-recruitment-research-screening.md` |
 | **Agentic Operations** | **Autonomous AI Revenue Operations Business-in-a-Box** | Account/lead research + pipeline preparation worker | Real estate brokerage | Broker teams/agencies with roughly 5–50 brokers and large active lead databases | Dubai | Brokers waste time researching/prioritising leads while opportunities decay | **83/100** | **93%** | **Strong — high-value research brief only** | **Legacy Grok-heavy delivery-rail evidence.** Score remains historical until a vendor-neutral parent niche pass revalidates the workflow/economics. | Run a review-first vendor-neutral benchmark on completed jobs, fully loaded cost and broker minutes saved. | `research/niches/20-grok-real-estate-lead-research.md` |
 | **Commerce growth / AI discovery** | **Agentic Commerce Visibility & Conversion Engine** | AI Commerce Readiness & Revenue Attribution | Ecommerce / retail | Mid-market multi-channel retailers and DTC brands with roughly 500–50,000 SKUs and meaningful existing SEO/paid spend | UAE / GCC | Product truth and AI-discovery visibility are fragmented; merchant cannot reliably connect AI-origin discovery to revenue | **83/100** | **85%** | **Strong/Testable — instrument before scale** | Shopify Catalog removes a simple ChatGPT feed-onboarding wedge; the viable product is cross-platform catalogue truth + monitoring + attribution. | 3–5 merchants; require measurable improvement on at least one, ≥2 recurring paid commitments and bounded delivery effort. | `research/niches/33-agentic-commerce-multichannel-retailers-uae-gcc.md` |
+| **Commerce conversion / agentic operations** | **AI Commerce Conversion & Merchant Operations Agent** | Branded shopping + merchant-operations agent | Fashion / sportswear ecommerce | Shopify Plus / similarly mature brands with meaningful traffic, multi-variant catalogues and recurring sizing, fit and product-comparison questions | UAE first, then GCC | Product-choice friction slows purchase decisions while support/merchandising teams repeatedly answer product questions and perform routine commerce analysis | **83/100** | **82%** | **Strong/Testable — paid-pilot gate** | Category and fashion/sportswear use-case evidence are strong, but native Shopify/specialist SaaS, local WTP and repeatable integration economics remain the key gates. | After founder approval, 15 qualified merchant conversations; require 2 unrelated AED12,500+ paid-pilot commitments. | `research/niches/35-ai-commerce-agent-shopify-fashion-gcc.md` |
 | **Vertical Platform** | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | HighLevel Rentals + owned direct-booking website + guest CRM | Hospitality / property | Professional holiday-home operators/property managers managing roughly 10–100 units | Dubai | OTA dependence and weak owned repeat-demand channel | **82/100** | **94%** | **Strong/Testable — reposition; do not build a replacement PMS** | Comprehensive v3 research reconciles this niche to **82/100** with **94%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Validate PMS stack, direct-booking share and switching friction. | `research/niches/14-highlevel-rentals-holiday-home-operators.md` |
 | **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp enquiry + guest/customer lifecycle CRM core | Hospitality / property | Professional holiday-home operators/property managers managing roughly 10–100 units | Dubai | Direct/guest enquiries need one follow-up layer while PMS owns booking state | **82/100** | **94%** | **Strong — first-party enquiry/repeat layer only** | Comprehensive v3 research reconciles this niche to **82/100** with **94%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Validate direct-enquiry volume and system-of-record split. | `research/niches/21-whatsapp-crm-holiday-home-operators.md` |
 | **Outcome** | **Instant Quote Generator & Quote-to-Cash System** | Structured instant range/estimate + booking follow-up | Moving / relocation | Residential and SME office movers with repeatable local-move enquiries | UAE, priority Dubai | Staff repeatedly estimate similar jobs while prospects comparison-shop | **82/100** | **92%** | **Strong — instant range + survey routing, not universal final price** | Comprehensive v3 research reconciles this niche to **82/100** with **92%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Test 100 historical quotes against final invoices and survey thresholds. | `research/niches/22-instant-quote-movers.md` |
@@ -109,6 +111,7 @@ All factor scores are 0–10. Weighted scoring follows the canonical niche frame
 | Holiday homes × AI Support | 8 | 9 | 9 | 9 | 8 | 6 | 8 | 10 | 10 | 8 | **84.6 → 85** |
 | Grok Bot × Car-rental Ops | 8 | 8 | 10 | 10 | 9 | 8 | 8 | 7 | 10 | 5 | **83.7 → 84** |
 | Agentic Commerce × Multi-channel retailers | 8 | 9 | 9 | 10 | 8 | 6 | 8 | 9 | 9 | 6 | **82.6 → 83** |
+| AI Commerce Agent × Shopify Plus fashion/sportswear | 9 | 9 | 8 | 9 | 7 | 6 | 9 | 9 | 9 | 7 | **83.0 → 83** |
 | Drywall/gypsum/ceilings × Instant Quote | 8 | 7 | 9 | 9 | 9 | 8 | 9 | 9 | 7 | 7 | **82.5 → 83** |
 | Veterinary clinics × Missed Lead | 9 | 8 | 8 | 8 | 6 | 7 | 9 | 9 | 10 | 8 | **82.3 → 82** |
 | Grok Bot × Holiday-home Ops | 8 | 9 | 9 | 9 | 8 | 7 | 8 | 8 | 10 | 5 | **82.1 → 82** |
@@ -147,5 +150,6 @@ Aesthetic and dental scores did **not** rise despite stronger evidence because l
 8. **Holiday-home stack** — Direct Booking **88** + WhatsApp + CRM **85** → AI Support **85** → optional Owner Ops **82**.
 9. **Automotive-workshop stack** — capable DMS is often the foundation; Revenue Recovery **86** → CRM overlay **85** only for legacy/weak-DMS segment → AI Voice **85** after live call validation.
 10. **Recruitment-agency stack** — Talent Bridge Assessment **87** → Recruitment OS intelligence layer **81**; keep the existing ATS as system of record and avoid product overlap.
+11. **Ecommerce stack** — external Agentic Commerce Visibility **83** can cross-sell with merchant-owned AI Commerce Conversion & Merchant Operations **83**; neither should replace a capable commerce platform.
 
-The **first recommended beachhead remains HVAC/AC** and its lead over the most crowded verticals is now better substantiated.
+The **first recommended beachhead remains HVAC/AC**. AI Commerce is a strong testable ecommerce lane, not a reason to displace the higher-ranked near-term service-business revenue stack.
