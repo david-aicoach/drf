@@ -23,6 +23,7 @@ jobs:
         run: |
           python3 skills/drf-repository-operations/scripts/validate_repository.py
           python3 skills/drf-repository-operations/scripts/validate_skill_references.py
+          python3 skills/drf-repository-operations/scripts/validate_repository_identity.py
 
       - name: Validate YAML syntax
         shell: bash

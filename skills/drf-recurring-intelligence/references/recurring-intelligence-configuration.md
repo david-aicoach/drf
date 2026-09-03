@@ -8,7 +8,7 @@
 ## Purpose
 Keep cadence, thresholds, evidence standards and alert behaviour versioned independently from any scheduler/model.
 
-Schedulers are triggers only. They must point at `tbhrc/drf`, invoke the **DRF Recurring Intelligence Skill**, and specify the intended profile/mode. Newer repository truth overrides scheduler prompt text.
+Schedulers are triggers only. They must point at `tbhrc/drf-main`, invoke the **DRF Recurring Intelligence Skill**, and specify the intended profile/mode. Newer repository truth overrides scheduler prompt text.
 
 ## Active profiles
 

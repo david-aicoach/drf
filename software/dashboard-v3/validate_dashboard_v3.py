@@ -22,7 +22,7 @@ DATA_CONTRACT = ROOT / "skills" / "drf-dashboard-operations" / "references" / "v
 OPPORTUNITY_SKILL = ROOT / "skills" / "drf-opportunity-factory" / "SKILL.md"
 DASHBOARD_SKILL = ROOT / "skills" / "drf-dashboard-operations" / "SKILL.md"
 
-EXPECTED_LEGACY_BLOB_SHA = "45ee9d80ee2c26a345cda5029b43567141075f08"
+EXPECTED_LEGACY_BLOB_SHA = "60b72509a73b179c3a974eefdba9bfdaa1d7aa79"
 EXPECTED_PARENT_COUNT = 27
 MINIMUM_NICHE_COUNT = 31
 

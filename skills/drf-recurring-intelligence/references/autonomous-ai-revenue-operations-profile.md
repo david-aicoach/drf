@@ -15,7 +15,7 @@ Parent opportunity:
 
 ## Thin scheduler prompt
 
-> Work in `tbhrc/drf`. Use the **DRF Recurring Intelligence Skill** in **Autonomous AI Revenue Operations specialist** mode. Research the whole parent opportunity, persist the weekly rolling research/run history and complete any required V3 reconciliation. Notify David only after verified material change/blocker.
+> Work in `tbhrc/drf-main`. Use the **DRF Recurring Intelligence Skill** in **Autonomous AI Revenue Operations specialist** mode. Research the whole parent opportunity, persist the weekly rolling research/run history and complete any required V3 reconciliation. Notify David only after verified material change/blocker.
 
 ## Research pillars
 Track the whole commercial category, not only token cost:
