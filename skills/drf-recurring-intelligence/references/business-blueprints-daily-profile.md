@@ -8,7 +8,7 @@
 
 ## Thin scheduler prompt
 
-> Work in `tbhrc/drf`. Use the **DRF Recurring Intelligence Skill** in **Business Blueprints specialist** mode. Research the parent opportunity, not Whop alone; persist all required GitHub write-back and notify David only after a material change/blocker is verified.
+> Work in `tbhrc/drf-main`. Use the **DRF Recurring Intelligence Skill** in **Business Blueprints specialist** mode. Research the parent opportunity, not Whop alone; persist all required GitHub write-back and notify David only after a material change/blocker is verified.
 
 ## Scope
 Business Blueprints is the parent business. Whop, Gumroad, Contra, Notion Marketplace, Lemon Squeezy, Payhip, Shopify, Framer, Webflow, PromptBase and future compatible endpoints are distribution channels/storefronts.

@@ -39,7 +39,7 @@ runs:
       run: |
         set -euo pipefail
 
-        query='query($number: Int!) { viewer { projectsV2(first: 100) { nodes { id number title fields(first: 50) { nodes { ... on ProjectV2SingleSelectField { id name options { id name } } } } items(first: 100) { nodes { id content { ... on Issue { number repository { nameWithOwner } } } fieldValueByName(name: "Status") { ... on ProjectV2ItemFieldSingleSelectValue { name } } } } } } } repository(owner: "tbhrc", name: "drf") { issue(number: $number) { id } } }'
+        query='query($number: Int!) { viewer { projectsV2(first: 100) { nodes { id number title fields(first: 50) { nodes { ... on ProjectV2SingleSelectField { id name options { id name } } } } items(first: 100) { nodes { id content { ... on Issue { number repository { nameWithOwner } } } fieldValueByName(name: "Status") { ... on ProjectV2ItemFieldSingleSelectValue { name } } } } } } } repository(owner: "tbhrc", name: "drf-main") { issue(number: $number) { id } } }'
         data="$(gh api graphql -f query="$query" -F number="$ISSUE_NUMBER" --jq '.data')"
         project="$(jq -c --arg title "$PROJECT_TITLE" '.viewer.projectsV2.nodes[] | select(.title == $title)' <<<"$data" | head -n1)"
 
@@ -52,7 +52,7 @@ runs:
         status_field_id="$(jq -r '.fields.nodes[] | select(.name == "Status") | .id' <<<"$project" | head -n1)"
         option_id="$(jq -r --arg target "$TARGET_STATUS" '.fields.nodes[] | select(.name == "Status") | .options[] | select(.name == $target) | .id' <<<"$project" | head -n1)"
         issue_node_id="$(jq -r '.repository.issue.id // empty' <<<"$data")"
-        item="$(jq -c --argjson issue "$ISSUE_NUMBER" '.items.nodes[] | select(.content.number == $issue and .content.repository.nameWithOwner == "tbhrc/drf")' <<<"$project" | head -n1)"
+        item="$(jq -c --argjson issue "$ISSUE_NUMBER" '.items.nodes[] | select(.content.number == $issue and .content.repository.nameWithOwner == "tbhrc/drf-main")' <<<"$project" | head -n1)"
 
         if [ -z "$status_field_id" ] || [ -z "$option_id" ]; then
           echo "Status field or target option '${TARGET_STATUS}' is missing." >&2

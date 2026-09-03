@@ -71,7 +71,7 @@ Run history remains in:
 Notify David only after verified persistence when there is a material decision change, a major field completion that changes the decision, a materially stronger/weaker priority opportunity, a real conflict/blocker, or a persistence failure. No-change runs remain in run history without noise.
 
 ## Scheduler independence
-ChatGPT Web or another scheduler is only the runtime trigger. The business logic lives here and in bundled references. Scheduler prompts should be thin: point to `tbhrc/drf`, instruct the agent to use this Skill and specify the scheduled mode/profile.
+ChatGPT Web or another scheduler is only the runtime trigger. The business logic lives here and in bundled references. Scheduler prompts should be thin: point to `tbhrc/drf-main`, instruct the agent to use this Skill and specify the scheduled mode/profile.
 
 ## Self-improvement
 If recurring runs reveal a repeated failure, missing classification, better source minimum or better cadence rule, update this Skill/reference through a governed Issue. Do not proliferate standalone watcher prompts or workflow files.

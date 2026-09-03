@@ -41,7 +41,7 @@
       }
     ];
 
-    document.querySelectorAll('a[href*="github.com/tbhrc/drf/blob/main/"]').forEach(anchor => {
+    document.querySelectorAll('a[href*="github.com/tbhrc/drf-main/blob/main/"]').forEach(anchor => {
       const replacement = replacements.find(item => anchor.href.endsWith(item.from));
       if (!replacement) return;
       anchor.href = anchor.href.slice(0, -replacement.from.length) + replacement.to;

@@ -2,14 +2,14 @@
 
 **Status:** Active scheduled profile  
 **Cadence:** Daily  
-**Repository:** `tbhrc/drf`  
+**Repository:** `tbhrc/drf-main`  
 **Scheduler:** ChatGPT Web condition-watch automation  
 **Owning Skill:** `skills/drf-recurring-intelligence/SKILL.md`
 
 ## Thin scheduler prompt
 A scheduler only needs to say:
 
-> Work in `tbhrc/drf`. Use the **DRF Recurring Intelligence Skill** in **DRF Portfolio Intelligence & Calibration** mode. Follow current repository truth, persist the run to GitHub, and notify David only on a material change/blocker.
+> Work in `tbhrc/drf-main`. Use the **DRF Recurring Intelligence Skill** in **DRF Portfolio Intelligence & Calibration** mode. Follow current repository truth, persist the run to GitHub, and notify David only on a material change/blocker.
 
 The Skill and repository—not the scheduler text—own the method.
 
