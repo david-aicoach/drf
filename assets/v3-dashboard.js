@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const REPO = 'tbhrc/drf';
+  const REPO = 'tbhrc/drf-main';
   const BRANCH = 'main';
   const PATHS = Object.freeze({
     portfolio: 'businesses/PORTFOLIO-V3.md',
