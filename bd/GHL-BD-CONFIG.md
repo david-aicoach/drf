@@ -1,270 +1,153 @@
 # GHL Business Development Configuration — iMPLEMENTAi.ae
 
-**Status:** Target configuration — founder setup pending  
+**Status:** Target configuration only — not proof that GHL is the current live CRM  
 **Governing programme:** [DRF #150](https://github.com/tbhrc/drf-main/issues/150)  
-**BD Skill:** [tbhrc/skills#158](https://github.com/tbhrc/skills/issues/158)  
-**GHL operator:** [tbhrc/skills#159](https://github.com/tbhrc/skills/issues/159)  
-**Founder setup guide:** [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md)  
-**Operating recommendations:** [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md)
+**Current CRM selection/proof:** [DRF #157](https://github.com/tbhrc/drf-main/issues/157)  
+**Canonical BD Skill:** [`tbhrc/skills/drf-business-development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)  
+**Future GHL operator:** [tbhrc/skills#159](https://github.com/tbhrc/skills/issues/159)
 
-This file defines **iMPLEMENTAi.ae's intended GHL business configuration**. It is domain configuration, not a reusable GHL operating workflow.
+This file defines the **preferred GHL target configuration if/when GHL is selected and proven**. It is DRF domain configuration, not reusable GHL operating HOW and not a prerequisite for using another currently selected live CRM.
 
-Reusable GHL HOW belongs in the future canonical `ghl-operator` Skill.
+Current live-CRM truth is governed by #157. Do not buy/upgrade GHL or stall BD solely to satisfy this target configuration.
 
-## 1. Location / account
+## 1. Account / location
 
-Use one clearly identifiable iMPLEMENTAi.ae GHL location for the first BD implementation.
+Use one clearly identifiable iMPLEMENTAi.ae GHL location.
 
-Record the exact live location/account identity after setup and MCP verification. Do not place API keys or secret values here.
+Before agent writes are promoted, prove from the live account that the available route can resolve the intended location and perform the required operations. Do not infer account/API authority from UI access or plan marketing.
 
-Required before agent writes are promoted:
-- correct iMPLEMENTAi.ae location confirmed;
-- approved sender mailbox connected;
-- pipeline created;
-- calendar created/selected;
-- master MCP/API can read the exact location identity;
-- basic contact + opportunity reads/writes are verified.
+Never store API keys, tokens or secret values here.
 
-## 2. Primary pipeline
+## 2. Recommended pipeline
 
-**Recommended pipeline name:** `iMPLEMENTAi Business Development`
+**Suggested pipeline:** `iMPLEMENTAi Business Development`
 
-Keep stages simple. Do not encode every internal action as a pipeline stage.
+Keep the relationship-state model compact:
 
 | # | Stage | Meaning |
 |---:|---|---|
 | 1 | **Target** | Account identified; research/qualification may still be in progress. |
 | 2 | **Qualified** | ICP/offer fit and a credible reason to contact are established. |
-| 3 | **Value Upfront Ready** | Audit/brief/diagnostic or other useful first-touch asset is prepared when the motion requires it. |
+| 3 | **Value Upfront Ready** | Audit/brief/diagnostic is ready when the motion requires it. |
 | 4 | **Contacted** | First approved outreach was actually sent. |
-| 5 | **Engaged** | Prospect replied positively or entered a real two-way commercial conversation. |
+| 5 | **Engaged** | Real two-way commercial engagement exists. |
 | 6 | **Meeting Booked** | Discovery/commercial meeting is scheduled. |
-| 7 | **Discovery** | Discovery is underway/complete and the opportunity is being diagnosed. |
-| 8 | **Recommendation / Proposal** | Commercial recommendation, scope or proposal is being presented/decided. |
-| 9 | **Won** | Explicit engagement authority / acquisition confirmed. Handoff to AI Ops is allowed. |
-| 10 | **Nurture** | Valid fit but timing is not active; future next action/date exists. |
-| 11 | **Lost** | Opportunity closed with a useful reason. |
+| 7 | **Discovery** | Discovery is underway/complete. |
+| 8 | **Recommendation / Proposal** | Commercial recommendation/scope/proposal is being decided. |
+| 9 | **Won** | Explicit acquisition/engagement authority exists; AI Ops handoff is allowed. |
+| 10 | **Nurture** | Valid fit but timing is not active; a future next action exists. |
+| 11 | **Lost** | Opportunity is closed with a useful reason. |
 
-### Why this is shorter than the working process list
+Exact live labels may differ. Preserve the business states rather than forcing unnecessary customisation.
 
-States such as `Researching`, `Audit prepared`, `Audit sent`, `Follow-up` and `Discovery completed` are better represented by fields/tags/activity/next action rather than 15+ pipeline columns.
+## 3. Minimum useful data
 
-The pipeline should answer one question quickly:
+Prefer native GHL fields where they already fit. Add custom fields only when needed.
 
-> **Where is this commercial relationship now?**
+Minimum useful identity/context:
+- company name and website/domain;
+- primary contact name/role and legitimate contact route;
+- geography;
+- source/campaign;
+- DRF offer;
+- vertical/niche;
+- why fit / trigger;
+- priority;
+- current stage;
+- one next action;
+- value-upfront status/link where relevant;
+- grounded setup revenue/MRR estimate only when useful;
+- Lost/Hold reason where applicable.
 
-## 3. Minimum contact/company data
+Do not require every optional field before a clearly qualified opportunity can advance.
 
-Use native GHL fields where they already exist. Add custom fields only for business information GHL does not already represent cleanly.
+## 4. Email and calendar
 
-Minimum useful account/contact information:
-- company name;
-- website/domain;
-- primary contact name;
-- job title / role;
-- email;
-- phone when legitimately available;
-- country / emirate;
-- LinkedIn/company URL when useful;
-- source.
+If GHL becomes the selected live CRM:
 
-Do not require every field before creating a legitimate qualified record.
+- connect only the approved iMPLEMENTAi business-development sender identity;
+- verify send/receive/reply threading before relying on automation;
+- verify delivery/failure visibility;
+- use the approved discovery calendar and discover real IDs from live state;
+- never guess account, pipeline, calendar, user or location IDs.
 
-## 4. Recommended BD custom fields
+Connecting a mailbox does not authorise bulk or autonomous outbound.
 
-Map these to the simplest native/custom field type available in the live GHL UI.
+## 5. Automation policy
 
-| Field | Suggested type | Purpose |
-|---|---|---|
-| **DRF Offer** | dropdown/text | Outcome/offer being tested or sold. |
-| **Vertical / Niche** | dropdown/text | Campaign/ICP grouping. |
-| **Why Fit / Trigger** | long text | Specific reason this company is worth contacting. |
-| **BD Priority** | dropdown | `Priority`, `Qualified`, `Hold`. |
-| **Value-Upfront Type** | dropdown | `None`, `Digital Presence Brief Audit`, or later approved diagnostic type. |
-| **Value-Upfront Status** | dropdown | `Not needed`, `Planned`, `In progress`, `Ready`, `Sent`. |
-| **Value-Upfront Link** | URL/text | Stable report/file/reference link when appropriate. |
-| **Research Date** | date | Last material qualification/public research date. |
-| **Campaign ID** | text | Links the opportunity to a DRF campaign/experiment without duplicating CRM state in GitHub. |
-| **Estimated Setup Revenue** | currency/number | Commercial estimate when sufficiently real. |
-| **Estimated MRR** | currency/number | Recurring revenue estimate when sufficiently real. |
-| **Lost / Hold Reason** | dropdown/text | Useful learning instead of unexplained dead opportunities. |
+Safe first internal proofs:
 
-Do not create a custom field merely because it could exist. Prefer native fields where possible.
+1. value-upfront asset sent → follow-up task;
+2. positive reply → stop outbound + Engaged + owner task;
+3. meeting booked → stop prospecting + meeting-prep task;
+4. Won → verified AI Ops handoff task.
 
-## 5. Tags — keep few
-
-Suggested initial tags only:
-- `drf-bd`
-- `value-upfront`
-- `audit-prepared`
-- `audit-sent`
-- `positive-reply`
-- `nurture`
-
-Use custom fields for stable structured categories such as offer and vertical rather than generating dozens of dynamic tags.
-
-## 6. Opportunity minimum state
-
-Every active opportunity should have:
-- pipeline stage;
-- company/contact link;
-- offer;
-- source/campaign when known;
-- next action or task;
-- owner when ownership matters;
-- latest meaningful context;
-- value estimate only when grounded enough to be useful.
-
-Avoid empty active opportunities with no next action.
-
-## 7. Email
-
-Connect the approved **iMPLEMENTAi.ae business-development sender identity**.
-
-Before any automation:
-1. verify send and receive in the GHL UI;
-2. verify reply threading/conversation history;
-3. verify sender name/signature;
-4. verify delivery/failure visibility;
-5. verify the future MCP can read the resulting conversation state.
-
-Do not enable bulk outbound simply because the mailbox is connected.
-
-## 8. Calendar
-
-Recommended initial calendar:
-
-**`iMPLEMENTAi Discovery`**
-
-Suggested default meeting type:
-- 30 minutes;
-- correct UAE timezone handling;
-- buffer/availability chosen by David;
-- booking confirmation/reminder copy kept simple and human.
-
-The final calendar/user ID must be discovered from GHL after creation; never hard-code or guess it in a Skill.
-
-## 9. Initial automation policy
-
-### Safe to configure internally
-
-These may be prepared, but external-action workflows should remain inactive until tested/authorised:
-- internal task/reminder creation;
-- owner notification;
-- stage hygiene;
-- audit-ready internal notification;
-- meeting-prep task creation.
-
-### Keep OFF initially
-
-Do not activate by default:
-- automatic cold email sequences;
+Keep OFF until separately proven/authorised:
+- automatic cold-email sequences;
 - automatic SMS/WhatsApp prospecting;
-- bulk contact enrolment;
-- automatic follow-up after an indeterminate send;
-- automatic proposal/commercial commitments;
+- bulk enrolment;
+- retrying indeterminate external sends without fresh-read reconciliation;
+- automatic material commercial commitments;
 - destructive cleanup/merges.
 
-## 10. First automations to prove after MCP is operational
+## 6. Required agent-control proof
 
-Promote one at a time after a bounded live test.
+Before GHL can be declared the live agent-operated CRM, verify the actual available route for the needed actions, proportionally including:
 
-### A. Audit sent → follow-up task
+- exact account/location identity;
+- contacts search/read/create/update;
+- duplicate prevention/upsert behaviour;
+- pipelines/stages read;
+- opportunities search/read/create/update/move stage;
+- notes/tasks/next action where needed;
+- conversations/activity read where exposed;
+- calendar/appointments where needed;
+- fresh-read verification after material writes;
+- timeout/indeterminate-write reconciliation;
+- no secret exposure.
 
-```text
-Value-Upfront Status = Sent
-→ create follow-up task for approved interval
-→ no automatic external message yet
-```
+Platform mechanics belong in the future canonical `ghl-operator` once the live interface is genuinely proven.
 
-### B. Positive reply → stop outbound + human attention
+## 7. Reporting
 
-```text
-positive reply detected/confirmed
-→ tag positive-reply
-→ move to Engaged when appropriate
-→ stop any active outbound sequence
-→ create next-action task / notify owner
-```
-
-### C. Meeting booked → meeting preparation
-
-```text
-appointment created
-→ move to Meeting Booked
-→ stop prospecting sequence
-→ create meeting-prep task
-→ surface latest report + thread + trigger
-```
-
-### D. Won → AI Ops handoff trigger
-
-Initially create an **internal handoff task**, not an autonomous client onboarding mutation:
-
-```text
-opportunity = Won
-→ verify explicit engagement authority
-→ create AI Ops handoff task
-→ authorised agent creates/updates client canon
-```
-
-Only automate the cross-system handoff after the manual handoff has been proven cleanly.
-
-## 11. Reporting dashboard — minimum
-
-GHL should make these visible/derivable:
-- targets;
-- qualified;
-- value-upfront assets prepared/sent;
-- contacted;
-- engaged;
-- meetings booked;
-- discovery;
+If GHL is selected, derive campaign metrics from GHL wherever possible:
+- targets and qualified accounts;
+- value assets prepared/sent;
+- contacted/engaged;
+- meetings/discovery;
 - proposals;
 - Won/Lost/Nurture;
-- setup revenue;
-- MRR;
-- conversion by campaign/offer/vertical/source;
-- cycle time.
+- setup revenue/MRR;
+- cycle time and conversion by campaign/offer/vertical/source.
 
-DRF should receive **aggregate campaign proof**, not a manually duplicated live lead table.
+DRF receives aggregate campaign proof, not a manually duplicated per-lead CRM table.
 
-## 12. Master MCP/API readiness checklist
+## 8. No-shadow-CRM and migration rule
 
-When David creates the master GHL control route, the `ghl-operator` implementation should verify:
-- [ ] exact account/location identity;
-- [ ] contacts read/search/create/update;
-- [ ] duplicate prevention/upsert behaviour;
-- [ ] pipelines/stages read;
-- [ ] opportunities read/create/update;
-- [ ] conversations/messages read;
-- [ ] email send/reply only with explicit test authority;
-- [ ] calendars/appointments read/create/update where required;
-- [ ] tasks/notes/tags/custom fields where exposed;
-- [ ] workflow read/update/activation scope where exposed;
-- [ ] permission and rate-limit behaviour;
-- [ ] fresh-read verification after material writes;
-- [ ] timeout/indeterminate-write reconciliation;
-- [ ] no secret value appears in GitHub or logs.
+If #157 selects HubSpot as interim live CRM, keep HubSpot authoritative until a later explicit decision promotes GHL. Do not dual-maintain.
 
-## 13. First live proof
+When migration is justified:
 
-After GHL + email + MCP are ready:
+1. define source/destination ownership;
+2. pause competing writes;
+3. deduplicate company/contact/opportunity records;
+4. migrate only decision-useful current state/history;
+5. verify the destination;
+6. declare the new single live CRM owner;
+7. stop dual maintenance.
+
+## 9. First controlled proof
+
+Once the **selected live CRM** and approved email route are operational:
 
 ```text
 1 selected UAE vertical
 → 10 targeted companies
 → qualify all 10
-→ prepare value-upfront assets for suitable Priority accounts
+→ prepare value-upfront assets for suitable targets
 → founder-review first outbound batch
-→ send controlled batch
+→ send only under current authority
 → track reply → meeting → opportunity → proposal → Won
 ```
 
-Do not add more automation until this loop produces evidence about what actually works.
-
-## 14. Human setup sequence
-
-For the exact setup order, use [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md).
-
-For the reasoning and recommended rollout boundaries, use [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md).
+Pilot 001 is defined separately at [`campaigns/001-uae-multi-location-restaurants-visibility.md`](campaigns/001-uae-multi-location-restaurants-visibility.md).
