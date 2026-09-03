@@ -38,7 +38,7 @@ This parent owns the specific **merchant-owned shopping/conversion experience + 
 - Current dossier: [`CURRENT.md`](./CURRENT.md)
 - Full V3 business case: [`V3-BUSINESS-CASE-SHOPIFY-FASHION.md`](./V3-BUSINESS-CASE-SHOPIFY-FASHION.md)
 - External research: [`tbhrc/research — Claude Commerce Agents`](https://github.com/tbhrc/research/blob/main/research/open-source/claude-commerce-agents.md)
-- Best-niche evidence: [`../../research/niches/34-ai-commerce-agent-shopify-fashion-gcc.md`](../../research/niches/34-ai-commerce-agent-shopify-fashion-gcc.md)
+- Best-niche evidence: [`../../research/niches/35-ai-commerce-agent-shopify-fashion-gcc.md`](../../research/niches/35-ai-commerce-agent-shopify-fashion-gcc.md)
 
 ## Next Proof
 
