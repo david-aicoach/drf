@@ -1,38 +1,33 @@
 # DRF Business Development
 
-DRF owns **pre-sale business development** for iMPLEMENTAi.ae and DRF commercial opportunities until a prospect is genuinely acquired / Won.
+DRF owns **pre-sale business-development strategy, campaigns, experiments and aggregate proof** for iMPLEMENTAi.ae and DRF commercial opportunities until a prospect is genuinely acquired / Won.
 
-The reusable operating method is owned centrally by `tbhrc/skills`, not duplicated here.
+The reusable operating method is canonical in `tbhrc/skills`, not duplicated here.
 
 ## Start here
 
-Canonical BD Skill work: [`tbhrc/skills#158 — drf-business-development`](https://github.com/tbhrc/skills/issues/158)
+- Canonical Skill: [`tbhrc/skills/drf-business-development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)
+- Skill provenance: [`tbhrc/skills#158`](https://github.com/tbhrc/skills/issues/158)
+- Governing BD programme: [`DRF #150`](https://github.com/tbhrc/drf-main/issues/150)
+- Current live-CRM selection/proof: [`DRF #157`](https://github.com/tbhrc/drf-main/issues/157)
+- Future GHL platform operator: [`tbhrc/skills#159`](https://github.com/tbhrc/skills/issues/159)
 
-GHL operator dependency: [`tbhrc/skills#159 — ghl-operator`](https://github.com/tbhrc/skills/issues/159)
+Domain artifacts:
 
-Governing programme: [`DRF #150 — Build DRF Business Development operating layer on GHL`](https://github.com/tbhrc/drf-main/issues/150)
-
-Durable GHL/domain docs:
-
-- [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) — target business configuration contract.
-- [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md) — founder step-by-step GHL setup and MCP readiness guide.
-- [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md) — architecture, rollout, autonomy and implementation recommendations identified during design.
-
-Recommended first proof: [`Pilot 001 — UAE Multi-Location Restaurants — Digital Visibility`](campaigns/001-uae-multi-location-restaurants-visibility.md)
-
-## Durable-guidance rule
-
-Keep setup instructions, architecture decisions and non-secret implementation recommendations durable in this DRF BD area. When a recommendation becomes a proven reusable operating method, promote it into the correct canonical Skill rather than allowing DRF documentation to become a competing workflow library.
+- [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) — target GHL configuration if/when GHL is selected and proven; it is not a same-day prerequisite for BD.
+- [`Pilot 001 — UAE Multi-Location Restaurants — Digital Visibility`](campaigns/001-uae-multi-location-restaurants-visibility.md) — bounded first campaign, draft/not activated.
 
 ## Ownership model
 
 | Surface | Owns |
 |---|---|
-| **DRF / GitHub** | BD campaign strategy, offer/niche/ICP, experiments, decisions, blockers, system work and aggregate commercial proof |
-| **GHL / GoHighLevel** | Intended live CRM: companies, contacts, opportunities, stages, communication history, next actions, appointments and Won/Lost/Nurture state |
-| **`tbhrc/skills`** | Reusable HOW: BD orchestration, research/report methods, outreach methods and GHL operating method |
+| **DRF / GitHub** | Offer/niche/ICP, campaign decisions, experiments, blockers, system work and aggregate commercial proof |
+| **Selected live CRM** | Ordinary companies, contacts, opportunities, stages, communication/activity, next actions, appointments and Won/Lost/Nurture state |
+| **`tbhrc/skills`** | Reusable HOW: BD orchestration plus specialist research/report/outreach methods and the currently verified CRM capability/operator |
 | **OneDrive** | Private evidence and human/prospect/client-facing files where required |
 | **AI Ops** | Won/acquired iMPLEMENTAi clients and post-sale client operating truth |
+
+Use **one live CRM only**. The current decision is governed by #157: prove the inherited GHL route; if it is insufficient today, HubSpot may be the interim live CRM until a documented migration trigger is met. Never dual-maintain competing CRM truth.
 
 ## Core flow
 
@@ -40,7 +35,7 @@ Keep setup instructions, architecture decisions and non-secret implementation re
 DRF offer / niche
 → targeted company discovery
 → qualify / prioritise
-→ live CRM opportunity
+→ selected live CRM opportunity
 → company/public research
 → useful value-upfront asset when justified
 → governed outreach
@@ -51,87 +46,71 @@ DRF offer / niche
 → AI Ops handoff
 ```
 
-## GHL target state
-
-GHL is intended to become the **tool operations interface plane** for BD after David completes:
-
-1. the correct iMPLEMENTAi.ae GHL account/location setup;
-2. approved email integration;
-3. the BD pipeline/minimum fields;
-4. master AI API/MCP control;
-5. live verification of the `ghl-operator` capability.
-
-Use:
-
-- [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) for the target pipeline, fields, tags, calendar and automation policy;
-- [`GHL-SETUP-GUIDE.md`](GHL-SETUP-GUIDE.md) for the exact human setup sequence;
-- [`OPERATING-RECOMMENDATIONS.md`](OPERATING-RECOMMENDATIONS.md) for the recommended rollout and architecture rationale.
-
-Until the live route is verified, agents must not claim that GHL write/send automation is operational merely because a connector exists.
-
 ## No shadow CRM in GitHub
 
-Do not create one Issue, Markdown file or row per ordinary lead just to mirror GHL.
+Do not create one Issue, Markdown file or row per ordinary lead just to mirror the live CRM.
 
 GitHub should record:
 - why a campaign exists;
-- who/what the ICP is;
-- the offer being tested;
-- material decisions and exceptions;
-- automation/system changes;
+- the ICP and offer being tested;
+- material decisions/exceptions;
+- system changes;
 - aggregate results and learning.
 
-GHL should record the live commercial relationship and next action.
+The selected live CRM records the commercial relationship and next action.
+
+## GHL target state
+
+GHL remains the preferred longer-term tool-operations target when its actual account/location authority, email route and required agent/API/MCP actions are proven. [`GHL-BD-CONFIG.md`](GHL-BD-CONFIG.md) records that target configuration without claiming it is currently operational.
+
+Do not buy/upgrade GHL or delay current BD merely because the target architecture prefers it. Paid upgrades remain founder-authorised external spend, and current CRM selection is owned by #157.
 
 ## Value-upfront acquisition
 
-The VB World test established a useful first-touch pattern for appropriate targets:
+For suitable targets, use the canonical specialist Skills rather than creating another workflow here:
 
 ```text
 public evidence
-→ meaningful numbers
+→ meaningful current findings
 → clickable sources
-→ specific findings
-→ 3+ Quick Wins the prospect can implement immediately
-→ short branded report
+→ 3+ useful Quick Wins where justified
+→ short client-facing value asset
 → commercial conversation
 ```
 
-This is a **BD acquisition motion**, not proof that the prospect is already a client.
-
 The recommended first controlled proof is [`Pilot 001`](campaigns/001-uae-multi-location-restaurants-visibility.md): 10 UAE multi-location restaurant targets, one clear audit-led offer, founder-reviewed first outbound batch, and full reply → meeting → Won measurement.
-
-Use the canonical specialist Skills for the underlying research/report/copy work rather than writing a second workflow here.
 
 ## Won boundary
 
-A researched/contacted/meeting-stage prospect stays in DRF + GHL.
+A researched/contacted/meeting-stage prospect stays in DRF + the selected live CRM.
 
 Only after genuine acquisition / Won and explicit engagement authority:
 
 ```text
-GHL Won opportunity
+live CRM Won opportunity
 → verify company/contact/stakeholders + accepted scope
-→ preserve durable discovery/commitments/shared-artifact references
+→ preserve decision-useful discovery/commitments/shared-artifact references
 → create/update AI Ops client canon
-→ invoke the appropriate iMPLEMENTAi onboarding lifecycle
+→ invoke the authorised iMPLEMENTAi onboarding lifecycle
 ```
 
-GHL remains the live commercial CRM/history unless later canon explicitly changes that ownership.
+The selected CRM remains commercial history unless later canon explicitly changes that ownership.
 
 ## Proof loop
 
-At campaign level measure from GHL wherever possible:
-- targets;
-- qualified accounts;
-- audits prepared/sent;
+At campaign level derive from the selected live CRM wherever possible:
+- targets and qualified accounts;
+- value assets prepared/sent;
 - replies / positive engagement;
 - meetings;
 - qualified opportunities;
 - proposals;
 - Won/Lost/Nurture;
 - setup revenue + MRR;
-- cycle time;
-- conversion by offer, niche, source and value-upfront motion.
+- cycle time and conversion by offer/niche/source.
 
 Feed validated business/niche evidence back into DRF and reusable operating lessons back into the owning canonical Skill.
+
+## Durable-guidance rule
+
+Keep only DRF-specific configuration, campaigns, decisions and proof here. When a recommendation becomes reusable operating method, promote it into the correct canonical Skill rather than allowing `bd/` to become a competing SOP/workflow library.
