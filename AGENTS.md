@@ -33,15 +33,22 @@ Before any credential/token/secret transfer, confirm repository visibility and t
 |---|---|
 | New business opportunity, Revenue Factory opportunity intake, market intelligence A-Z, research/score/niche/underwrite a business, build a V3 business case | [`skills/drf-opportunity-factory/SKILL.md`](skills/drf-opportunity-factory/SKILL.md) |
 | Recurring discovery, daily portfolio calibration, scheduled research, refresh/re-score existing opportunities | [`skills/drf-recurring-intelligence/SKILL.md`](skills/drf-recurring-intelligence/SKILL.md) |
+| **Business development: target accounts, qualification, value-upfront outreach, live CRM pipeline, follow-up, meetings and Won-client handoff** | **[`tbhrc/skills/drf-business-development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)** — canonical central Skill; start at [`bd/README.md`](bd/README.md) for DRF ownership/routing |
 | Dashboard V3, portfolio data contract, dashboard source health/maintenance | [`skills/drf-dashboard-operations/SKILL.md`](skills/drf-dashboard-operations/SKILL.md) |
 | Repository governance, Skills-first structure, validation, refactor/maintenance | [`skills/drf-repository-operations/SKILL.md`](skills/drf-repository-operations/SKILL.md) |
 
 Natural-language shorthand such as **“new business opportunity,” “Revenue Factory intake,” “run RF A-Z,” “follow the Revenue Factory instructions,”** or **“complete market intelligence A-Z”** means: invoke the DRF Opportunity Factory Skill.
 
+Natural-language shorthand such as **“run BD,” “find prospects,” “build a target list,” “send value-upfront audits,” “work the pipeline,” “follow up leads,”** or **“book sales meetings”** means: start at [`bd/README.md`](bd/README.md) and invoke the canonical central `drf-business-development` Skill.
+
 ## Canonical domain truth
 
 - `businesses/` — current business/opportunity truth and founder registers.
 - `research/` — durable evidence and run history, not reusable operating instructions.
+- `bd/` — pre-sale Business Development domain map, campaign/control routing and live-CRM/AI Ops ownership boundary; **not** a lead database.
+- **Selected live CRM** — ordinary company/contact/opportunity/activity/next-action truth. Current CRM selection/proof is owned by [`#157`](https://github.com/tbhrc/drf-main/issues/157); use one live CRM only and never dual-maintain competing truth.
+- [`tbhrc/skills`](https://github.com/tbhrc/skills) — central reusable HOW/capability canon, including `drf-business-development`; platform mechanics route to the currently verified CRM capability/operator.
+- [`tbhrc/ai-ops`](https://github.com/tbhrc/ai-ops) — iMPLEMENTAi client operating canon after genuine acquisition / Won; do not promote research-stage prospects merely because they were contacted.
 - `software/`, root HTML/JS/CSS and `assets/` — product/runtime code.
 - `.github/` — GitHub-required integrations and Actions.
 - `skills/` — reusable AI operating capability.
