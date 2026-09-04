@@ -1,17 +1,17 @@
 # DRF Agent Operating Contract
 
-**Fast links:** [Sniper](https://github.com/tbhrc/skills/blob/main/human-ai-operations-map/references/ai-sniper-entry-map.md) · [North Star](https://github.com/tbhrc/skills/tree/main/founder-story-mission-vision) · [Opportunities](skills/drf-opportunity-factory/SKILL.md) · [BD](bd/README.md) · [Intelligence](skills/drf-recurring-intelligence/SKILL.md) · [Portfolio](businesses/PORTFOLIO-V3.md) · [CRM](https://github.com/tbhrc/drf-main/issues/157) · [Research](https://github.com/tbhrc/research) · [Workflow](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) · [Issues](https://github.com/tbhrc/drf-main/issues)
+**Fast links:** [Sniper](https://github.com/tbhrc/skills/blob/main/human-ai-operations-map/references/ai-sniper-entry-map.md) · [North Star](https://github.com/tbhrc/skills/tree/main/founder-story-mission-vision) · [Opportunities](https://github.com/tbhrc/skills/tree/main/drf-opportunity-factory) · [BD](bd/README.md) · [Intelligence](https://github.com/tbhrc/skills/tree/main/automations-drf-intelligence) · [Portfolio](businesses/PORTFOLIO-V3.md) · [CRM](https://github.com/tbhrc/drf-main/issues/157) · [Research](https://github.com/tbhrc/research) · [Workflow](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) · [Issues](https://github.com/tbhrc/drf-main/issues)
 
 ## NUMBER-ONE RULE — SKILLS FIRST
 
-DRF is a **skills-first operating system**. For every substantive capability task:
+DRF is a **skills-first operating system**. `tbhrc/skills` is the sole editable reusable Skill canon. For every substantive capability task:
 
 1. read this file;
-2. read [`skills/README.md`](skills/README.md);
-3. select the matching Skill;
-4. read that Skill's `SKILL.md` before substantive work;
-5. execute from the Skill and only the references/scripts/assets it owns plus current domain truth;
-6. when a repeatable lesson or operating method improves, improve the owning Skill instead of creating a loose workflow, template, SOP, prompt or knowledge file.
+2. read [`skills/README.md`](skills/README.md) only as the DRF-to-central compatibility router;
+3. select the matching canonical Skill in `tbhrc/skills`;
+4. read that central Skill's `SKILL.md` before substantive work;
+5. execute from the central Skill and only the references/scripts/assets it owns plus current DRF domain truth;
+6. when a repeatable lesson or operating method improves, improve the owning central Skill instead of creating or editing a local reusable copy, loose workflow, template, SOP, prompt or knowledge file.
 
 Do not recreate a global knowledge hierarchy, root AI workflow library, global templates/scripts, SOP or lessons junk drawer.
 
@@ -33,13 +33,15 @@ Before any credential/token/secret transfer, confirm repository visibility and t
 
 | User intent | Canonical Skill |
 |---|---|
-| New business opportunity, Revenue Factory opportunity intake, market intelligence A-Z, research/score/niche/underwrite a business, build a V3 business case | [`skills/drf-opportunity-factory/SKILL.md`](skills/drf-opportunity-factory/SKILL.md) |
-| Recurring discovery, daily portfolio calibration, scheduled research, refresh/re-score existing opportunities | [`skills/drf-recurring-intelligence/SKILL.md`](skills/drf-recurring-intelligence/SKILL.md) |
+| New business opportunity, Revenue Factory opportunity intake, market intelligence A-Z, research/score/niche/underwrite a business, build a V3 business case | [`tbhrc/skills/drf-opportunity-factory`](https://github.com/tbhrc/skills/tree/main/drf-opportunity-factory) |
+| Recurring discovery, daily portfolio calibration, scheduled research, refresh/re-score existing opportunities | [`tbhrc/skills/automations-drf-intelligence`](https://github.com/tbhrc/skills/tree/main/automations-drf-intelligence) |
 | **Business development: target accounts, qualification, value-upfront outreach, live CRM pipeline, follow-up, meetings and Won-client handoff** | **[`tbhrc/skills/drf-business-development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)** — canonical central Skill; start at [`bd/README.md`](bd/README.md) for DRF ownership/routing |
-| Dashboard V3, portfolio data contract, dashboard source health/maintenance | [`skills/drf-dashboard-operations/SKILL.md`](skills/drf-dashboard-operations/SKILL.md) |
-| Repository governance, Skills-first structure, validation, refactor/maintenance | [`skills/drf-repository-operations/SKILL.md`](skills/drf-repository-operations/SKILL.md) |
+| Dashboard V3, portfolio data contract, dashboard source health/maintenance | [`tbhrc/skills/drf-dashboard-operations`](https://github.com/tbhrc/skills/tree/main/drf-dashboard-operations) |
+| Repository execution/lifecycle | [`tbhrc/skills/github-agent-workflow`](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) |
+| Skill creation, migration or maintenance | [`tbhrc/skills/github-skill-builder`](https://github.com/tbhrc/skills/tree/main/github-skill-builder) |
+| GitHub architecture/capability selection | [`tbhrc/skills/github-power-user`](https://github.com/tbhrc/skills/tree/main/github-power-user) |
 
-Natural-language shorthand such as **“new business opportunity,” “Revenue Factory intake,” “run RF A-Z,” “follow the Revenue Factory instructions,”** or **“complete market intelligence A-Z”** means: invoke the DRF Opportunity Factory Skill.
+Natural-language shorthand such as **“new business opportunity,” “Revenue Factory intake,” “run RF A-Z,” “follow the Revenue Factory instructions,”** or **“complete market intelligence A-Z”** means: invoke the central DRF Opportunity Factory Skill.
 
 Natural-language shorthand such as **“run BD,” “find prospects,” “build a target list,” “send value-upfront audits,” “work the pipeline,” “follow up leads,”** or **“book sales meetings”** means: start at [`bd/README.md`](bd/README.md) and invoke the canonical central `drf-business-development` Skill.
 
@@ -49,11 +51,11 @@ Natural-language shorthand such as **“run BD,” “find prospects,” “buil
 - `research/` — durable evidence and run history, not reusable operating instructions.
 - `bd/` — pre-sale Business Development domain map, campaign/control routing and live-CRM/AI Ops ownership boundary; **not** a lead database.
 - **Selected live CRM** — ordinary company/contact/opportunity/activity/next-action truth. Current CRM selection/proof is owned by [`#157`](https://github.com/tbhrc/drf-main/issues/157); use one live CRM only and never dual-maintain competing truth.
-- [`tbhrc/skills`](https://github.com/tbhrc/skills) — central reusable HOW/capability canon, including `drf-business-development`; platform mechanics route to the currently verified CRM capability/operator.
+- [`tbhrc/skills`](https://github.com/tbhrc/skills) — sole editable reusable HOW/capability canon, including DRF Opportunity Factory, recurring intelligence, Dashboard Operations and Business Development.
 - [`tbhrc/ai-ops`](https://github.com/tbhrc/ai-ops) — iMPLEMENTAi client operating canon after genuine acquisition / Won; do not promote research-stage prospects merely because they were contacted.
 - `software/`, root HTML/JS/CSS and `assets/` — product/runtime code.
 - `.github/` — GitHub-required integrations and Actions.
-- `skills/` — reusable AI operating capability.
+- `skills/` — migration/compatibility pointers plus DRF-local validation implementation only; not a second editable Skill Bank.
 
 For V3 founder truth:
 
@@ -75,7 +77,7 @@ Founder input / discovered signal
 → Dashboard V3 derived view
 ```
 
-The Opportunity Factory Skill owns the full process, including adaptive founder intake where required, current web research, successful comparable operators, counter-evidence, External Market Proof, Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness, niche selection, offer/pricing/GTM/delivery, RBS, DRF Proof, Stage, Capital, return profile, Next Proof, dossier output and V3 close-out.
+The central Opportunity Factory Skill owns the full process, including adaptive founder intake where required, current web research, successful comparable operators, counter-evidence, External Market Proof, Opportunity Score, MRR, AI Autonomy, Evidence Confidence, Research Completeness, niche selection, offer/pricing/GTM/delivery, RBS, DRF Proof, Stage, Capital, return profile, Next Proof, dossier output and V3 close-out.
 
 ### Copy before invent
 
@@ -114,11 +116,7 @@ Do not manufacture score/freshness changes merely to touch V3.
 
 ## GitHub execution control
 
-Use the repository's proportional GitHub workflow:
-
-- small/reversible work: bounded Issue + direct verified change where appropriate;
-- standard multi-file/code/automation work: Issue → branch → PR → checks/review → merge;
-- genuine multi-stage programmes: Master Issue + linked Stage Issues.
+Use the canonical [`github-agent-workflow`](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) and choose the lowest sufficient lane. Level 0 / trunk-first direct `main` is the normal path for safe bounded work; branches/PRs are temporary isolation tools only when they materially reduce risk.
 
 Before writes, read the latest file/Issue/PR state and assume another agent may be working concurrently. Preserve newer unrelated work.
 
@@ -168,9 +166,9 @@ Business truth first; dashboard last.
 
 When work reveals a reusable improvement:
 
-1. identify the owning Skill;
+1. identify the owning central Skill in `tbhrc/skills`;
 2. update that Skill's `SKILL.md`, `references/`, `scripts/` or `assets/` as appropriate;
-3. validate the Skill/repository;
-4. do not create a parallel loose template/workflow/prompt/SOP.
+3. validate the central Skill and affected consumer repository;
+4. do not recreate a parallel local Skill, loose template/workflow/prompt/SOP.
 
-A one-off business fact belongs in business/research truth, not in a Skill. A repeatable operating lesson belongs in the owning Skill.
+A one-off business fact belongs in business/research truth, not in a Skill. A repeatable operating lesson belongs in the owning central Skill.
