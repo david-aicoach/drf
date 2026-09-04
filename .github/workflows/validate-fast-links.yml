@@ -1,0 +1,59 @@
+name: Validate Fast Links
+
+on:
+  pull_request:
+    paths: ["**/*.md", ".github/workflows/validate-fast-links.yml"]
+  push:
+    branches: [main]
+    paths: ["**/*.md", ".github/workflows/validate-fast-links.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-fast-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Fast Links
+        shell: bash
+        run: |
+          python - <<'PY'
+          import re, sys
+          from pathlib import Path
+          from urllib.parse import unquote
+          link_re = re.compile(r'\[[^\]]+\]\(([^)]+)\)')
+          fast_re = re.compile(r'^\s*\*\*Fast links:\*\*\s*(.*)$', re.I)
+          root = Path.cwd().resolve(); errors = []; rows = {}
+          def fast_rows(path):
+              out=[]; fenced=False
+              for n,line in enumerate(path.read_text(encoding='utf-8').splitlines(),1):
+                  if line.lstrip().startswith('```'): fenced = not fenced; continue
+                  if not fenced:
+                      m=fast_re.match(line)
+                      if m: out.append((n,m.group(1)))
+              return out
+          for path in root.rglob('*.md'):
+              if '.git' in path.parts: continue
+              rel=path.relative_to(root); found=fast_rows(path)
+              if found: rows[str(rel)]=found
+              for n,row in found:
+                  for target in link_re.findall(row):
+                      target=target.strip().split()[0]
+                      if target.startswith(('http://','https://','mailto:','#')): continue
+                      clean=unquote(target.split('#',1)[0].split('?',1)[0])
+                      if not clean: continue
+                      resolved=(path.parent/clean).resolve()
+                      try: resolved.relative_to(root)
+                      except ValueError: errors.append(f'{rel}:{n}: unsafe target {target}'); continue
+                      if not resolved.exists(): errors.append(f'{rel}:{n}: missing target {target}')
+          agents=root/'AGENTS.md'
+          if not agents.exists(): errors.append('AGENTS.md: mandatory P0 router missing')
+          else:
+              found=fast_rows(agents)
+              if len(found)!=1: errors.append(f'AGENTS.md: expected one Fast links row, found {len(found)}')
+              elif not 7 <= len(link_re.findall(found[0][1])) <= 10: errors.append(f'AGENTS.md: expected 7-10 Fast Links, found {len(link_re.findall(found[0][1]))}')
+          if errors:
+              print('Fast Links validation FAILED:'); print('\n'.join(f'- {e}' for e in errors)); sys.exit(1)
+          print(f'Fast Links validation PASSED: {len(rows)} Markdown file(s); root AGENTS.md protected')
+          PY
