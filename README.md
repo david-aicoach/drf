@@ -2,10 +2,11 @@
 
 > **Find, research, compare, adapt, test, scale and optionally package revenue-producing businesses.**
 
-**Fast links:** [Sniper](https://github.com/tbhrc/skills/blob/main/human-ai-operations-map/references/ai-sniper-entry-map.md) · [North Star](https://github.com/tbhrc/skills/tree/main/founder-story-mission-vision) · [Skills](https://github.com/tbhrc/skills/blob/main/INDEX.md) · [Workflow](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) · [DRF Skills](skills/README.md) · [Portfolio](businesses/PORTFOLIO-V3.md) · [BD](bd/README.md) · [Root Contract](AGENTS.md) · [Issues](https://github.com/tbhrc/drf-main/issues)
+**Fast links:** [Sniper](https://github.com/tbhrc/skills/blob/main/human-ai-operations-map/references/ai-sniper-entry-map.md) · [North Star](https://github.com/tbhrc/skills/tree/main/founder-story-mission-vision) · [Skills](https://github.com/tbhrc/skills/blob/main/INDEX.md) · [Workflow](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) · [DRF Skill Router](skills/README.md) · [Portfolio](businesses/PORTFOLIO-V3.md) · [BD](bd/README.md) · [Root Contract](AGENTS.md) · [Issues](https://github.com/tbhrc/drf-main/issues)
 
 **Public dashboard:** https://tbhrc.github.io/drf/  
-**Primary AI operating surface:** [`skills/`](skills/)  
+**Reusable Skill canon:** [`tbhrc/skills`](https://github.com/tbhrc/skills)  
+**DRF compatibility router:** [`skills/README.md`](skills/README.md)  
 **Business Development:** [`bd/`](bd/)  
 **Canonical portfolio:** [`businesses/PORTFOLIO-V3.md`](businesses/PORTFOLIO-V3.md)  
 **Business opportunities:** [`businesses/OPPORTUNITIES.md`](businesses/OPPORTUNITIES.md)  
@@ -13,27 +14,29 @@
 
 ## Start here — Skills first
 
-DRF is a **skills-first operating system**.
+DRF is a **skills-first operating system**, and **`tbhrc/skills` is the sole editable reusable Skill canon**.
 
-A founder or fresh agent should not hunt through hidden prompt/template/workflow folders. Reusable AI work starts by selecting a named Skill from [`skills/README.md`](skills/README.md) or, for cross-portfolio Business Development, the canonical central Skill in `tbhrc/skills`.
+A founder or fresh agent should not hunt through hidden prompt/template/workflow folders or maintain a second DRF-local Skill Bank. Use [`skills/README.md`](skills/README.md) only as the DRF-to-central compatibility router, then load the most-specific canonical Skill in `tbhrc/skills`.
 
-| Need | Skill |
+| Need | Canonical Skill |
 |---|---|
-| New business opportunity, opportunity intake, market intelligence A–Z, scoring, niche selection, commercial underwriting, Layer 3 and V3 | [`DRF Opportunity Factory`](skills/drf-opportunity-factory/SKILL.md) |
-| Golden Opportunity discovery, daily 27-parent calibration, scheduled/specialist market intelligence | [`DRF Recurring Intelligence`](skills/drf-recurring-intelligence/SKILL.md) |
-| **Target accounts, qualification, value-upfront outreach, live CRM pipeline, follow-up, sales meetings and Won-client handoff** | **[`DRF Business Development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)** — central Skill; DRF front door: [`bd/README.md`](bd/README.md) |
-| Dashboard V3, website/data-contract maintenance, Pages verification | [`DRF Dashboard Operations`](skills/drf-dashboard-operations/SKILL.md) |
-| Repository architecture, Skill maintenance, governance, cleanup and CI | [`DRF Repository Operations`](skills/drf-repository-operations/SKILL.md) |
+| New business opportunity, opportunity intake, market intelligence A-Z, scoring, niche selection, commercial underwriting, Layer 3 and V3 | [`DRF Opportunity Factory`](https://github.com/tbhrc/skills/tree/main/drf-opportunity-factory) |
+| Golden Opportunity discovery, daily portfolio calibration, scheduled/specialist market intelligence | [`DRF Intelligence`](https://github.com/tbhrc/skills/tree/main/automations-drf-intelligence) |
+| **Target accounts, qualification, value-upfront outreach, live CRM pipeline, follow-up, sales meetings and Won-client handoff** | **[`DRF Business Development`](https://github.com/tbhrc/skills/tree/main/drf-business-development)** — DRF front door: [`bd/README.md`](bd/README.md) |
+| Dashboard V3, website/data-contract maintenance, Pages verification | [`DRF Dashboard Operations`](https://github.com/tbhrc/skills/tree/main/drf-dashboard-operations) |
+| Repository execution/lifecycle | [`GitHub Agent Workflow`](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) |
+| Skill creation, migration or maintenance | [`GitHub Skill Builder`](https://github.com/tbhrc/skills/tree/main/github-skill-builder) |
+| GitHub architecture/capability selection | [`GitHub Power User`](https://github.com/tbhrc/skills/tree/main/github-power-user) |
 
 Example founder instruction:
 
-> **“Here is a new business opportunity: `<idea>`. Use the DRF Opportunity Factory Skill. Start the intake and complete the market intelligence A–Z.”**
+> **“Here is a new business opportunity: `<idea>`. Use the DRF Opportunity Factory Skill. Start the intake and complete the market intelligence A-Z.”**
 
 For commercial execution:
 
 > **“Run BD for `<offer/niche>`. Use DRF Business Development, qualify the best targets and work the live CRM pipeline.”**
 
-That is sufficient. The repository and canonical Skill Bank must supply the method.
+That is sufficient. The repository owns DRF business/product truth; the central Skill Bank supplies reusable method.
 
 ## Business Development ownership
 
@@ -62,9 +65,11 @@ Governing programme: [`#150 — Build DRF Business Development operating layer o
 
 **One reusable AI capability → one Skill owner.**
 
-Capability-specific workflows, prompts, output structures, scoring references, operating standards and reusable AI scripts live inside the owning Skill.
+Reusable workflows, prompts, output structures, scoring references, operating standards and reusable AI scripts belong in the owning central Skill in `tbhrc/skills`.
 
-Do not recreate global `templates/`, AI `workflows/`, SOP, lesson or miscellaneous knowledge folders. When a repeated lesson improves how DRF operates, improve the owning Skill.
+The local `skills/` tree is retained only for compatibility pointers, migration/provenance evidence and DRF-specific validation implementation. It is **not** a second editable Skill Bank.
+
+Do not recreate global `templates/`, AI `workflows/`, SOP, lesson or miscellaneous knowledge folders. When a repeated lesson improves how DRF operates, improve the owning central Skill.
 
 ## What stays outside Skills
 
@@ -76,6 +81,7 @@ Skills tell agents **how to operate**. They do not replace durable evidence or p
 - [`software/`](software/) — actual product/runtime code and product-local tests.
 - [`assets/`](assets/), [`index.html`](index.html), [`dashboard-v1-v2.html`](dashboard-v1-v2.html) — deployed Dashboard product.
 - [`.github/`](.github/) — GitHub-required repository integration and Actions.
+- [`skills/`](skills/) — local compatibility/migration pointers and DRF-specific validation implementation only.
 
 `.github/workflows/` remains because GitHub requires that platform path; it is not a DRF AI workflow library.
 
@@ -107,7 +113,7 @@ Opportunity Score, Niche Score and RBS answer different questions. External Mark
 | **Layer 2 — Niche Selection & Commercial Underwriting** | Where, how and at what economics should it operate? |
 | **Layer 3 — Structured Factory Output + V3 Write-Back** | Can it be represented as one complete comparable business case, and has that current state reached V3? |
 
-Detailed methodology is owned by the [`DRF Opportunity Factory Skill`](skills/drf-opportunity-factory/SKILL.md).
+Detailed methodology is owned by the central [`DRF Opportunity Factory Skill`](https://github.com/tbhrc/skills/tree/main/drf-opportunity-factory).
 
 Business Development sits **after/alongside the commercial decision stack when an offer/niche is ready to test or sell**; it is not a fourth underwriting layer.
 
@@ -144,14 +150,10 @@ Never edit website code to manufacture business scores, ranks, proof or commerci
 
 ## GitHub execution control
 
-Substantive work is Issue-first. Large programmes use a Master Issue plus linked Stage Issues. Standard implementation uses:
+Substantive work is Issue-first. Use the canonical [`github-agent-workflow`](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) and choose the lowest sufficient lane. Level 0 / trunk-first direct `main` is the normal path for safe bounded work; branch/PR isolation is used only when it materially reduces risk.
 
-```text
-Issue → branch → focused change → PR → checks/review → merge → verify
-```
-
-See [`AGENTS.md`](AGENTS.md) for universal governance and Skill routing.
+See [`AGENTS.md`](AGENTS.md) for DRF-specific governance and central Skill routing.
 
 ## Repository principle
 
-**DRF exists to produce better revenue decisions and revenue-producing businesses—not documentation for its own sake. Skills make the operating method obvious, reusable and continuously improvable.**
+**DRF exists to produce better revenue decisions and revenue-producing businesses—not documentation for its own sake. The central Skill Bank makes the operating method obvious, reusable and continuously improvable without creating a competing local canon.**
