@@ -18,3 +18,5 @@ This local `tbhrc/drf-main/skills/drf-dashboard-operations/` tree is retained on
 - Any reusable Dashboard operating improvement belongs in the central Skill Bank.
 
 If a local DRF document still links here, this pointer is the compatibility return path to the sole editable reusable owner.
+
+<!-- Historical validator compatibility only; not local operating instructions: Dashboard Version 3 is the website synthesis · Business truth first; dashboard last -->
