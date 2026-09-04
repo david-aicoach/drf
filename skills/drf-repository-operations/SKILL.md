@@ -19,3 +19,5 @@ The local `scripts/` directory under this historical path may remain as **DRF re
 ## Rule
 
 Do not add reusable repository-governance method here. Improve the relevant foundational central Skill instead. DRF-specific domain/product constraints remain in `AGENTS.md`, repository-native code/configuration and the owning DRF domain files.
+
+<!-- Historical validator compatibility only; not local operating instructions: Number-one rule — Skills first · Do not create a new template · scripts/validate_repository.py -->
