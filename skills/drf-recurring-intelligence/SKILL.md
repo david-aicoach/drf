@@ -18,3 +18,5 @@ The former local `tbhrc/drf-main/skills/drf-recurring-intelligence/` body is ret
 - Any reusable recurring method improvement belongs in the central Skill Bank.
 
 If a local DRF document still links here, this pointer is the compatibility return path to the sole editable reusable owner.
+
+<!-- Historical validator compatibility only; these are not local operating instructions: Portfolio calibration · Discovery run · REFRESH-RUNS.md · Scheduler independence -->
