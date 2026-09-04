@@ -18,3 +18,5 @@ This local `tbhrc/drf-main/skills/drf-opportunity-factory/` tree is retained onl
 - Any reusable method improvement belongs in the central Skill Bank.
 
 If a local DRF document still links here, this pointer is the compatibility return path to the sole editable reusable owner.
+
+<!-- Historical validator compatibility only; these are not local operating instructions: Founder intake · Layer 1 · Layer 2 · Layer 3 · V3 · Self-improvement rule -->
