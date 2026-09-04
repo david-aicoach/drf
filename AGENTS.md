@@ -1,5 +1,7 @@
 # DRF Agent Operating Contract
 
+**Fast links:** [Sniper](https://github.com/tbhrc/skills/blob/main/human-ai-operations-map/references/ai-sniper-entry-map.md) · [North Star](https://github.com/tbhrc/skills/tree/main/founder-story-mission-vision) · [Opportunities](skills/drf-opportunity-factory/SKILL.md) · [BD](bd/README.md) · [Intelligence](skills/drf-recurring-intelligence/SKILL.md) · [Portfolio](businesses/PORTFOLIO-V3.md) · [CRM](https://github.com/tbhrc/drf-main/issues/157) · [Research](https://github.com/tbhrc/research) · [Workflow](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) · [Issues](https://github.com/tbhrc/drf-main/issues)
+
 ## NUMBER-ONE RULE — SKILLS FIRST
 
 DRF is a **skills-first operating system**. For every substantive capability task:
