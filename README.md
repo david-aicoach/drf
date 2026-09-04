@@ -2,6 +2,8 @@
 
 > **Find, research, compare, adapt, test, scale and optionally package revenue-producing businesses.**
 
+**Fast links:** [Sniper](https://github.com/tbhrc/skills/blob/main/human-ai-operations-map/references/ai-sniper-entry-map.md) · [North Star](https://github.com/tbhrc/skills/tree/main/founder-story-mission-vision) · [Skills](https://github.com/tbhrc/skills/blob/main/INDEX.md) · [Workflow](https://github.com/tbhrc/skills/tree/main/github-agent-workflow) · [DRF Skills](skills/README.md) · [Portfolio](businesses/PORTFOLIO-V3.md) · [BD](bd/README.md) · [Root Contract](AGENTS.md) · [Issues](https://github.com/tbhrc/drf-main/issues)
+
 **Public dashboard:** https://tbhrc.github.io/drf/  
 **Primary AI operating surface:** [`skills/`](skills/)  
 **Business Development:** [`bd/`](bd/)  
