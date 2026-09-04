@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail when Skill-owned references route agents to retired global DRF paths."""
+"""Fail when retained DRF compatibility references route agents to retired global paths."""
 
 from __future__ import annotations
 
@@ -21,16 +21,16 @@ def main() -> int:
             if matches:
                 relative = path.relative_to(ROOT)
                 errors.append(
-                    f"{relative}:{line_number}: retired operating path in Skill reference: {line.strip()}"
+                    f"{relative}:{line_number}: retired operating path in retained compatibility reference: {line.strip()}"
                 )
 
     if errors:
-        print("DRF Skill reference validation failed:", file=sys.stderr)
+        print("DRF compatibility-reference validation failed:", file=sys.stderr)
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    print("DRF Skill references: PASS — no retired global operating paths")
+    print("DRF compatibility references: PASS — no retired global operating paths")
     return 0
 
 
