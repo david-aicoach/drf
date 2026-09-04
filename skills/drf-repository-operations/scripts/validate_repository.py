@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate DRF skills-first repository contracts with no third-party dependencies."""
+"""Validate DRF repository contracts with central Skill ownership."""
 
 from __future__ import annotations
 
@@ -10,12 +10,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 
 REQUIRED_ROOT_FILES = ["README.md", "AGENTS.md", "VERSION", "CHANGELOG.md"]
-REQUIRED_SKILLS = {
-    "drf-opportunity-factory",
-    "drf-recurring-intelligence",
-    "drf-dashboard-operations",
-    "drf-repository-operations",
+LOCAL_POINTER_SKILLS = {
+    "drf-opportunity-factory": "https://github.com/tbhrc/skills/tree/main/drf-opportunity-factory",
+    "drf-recurring-intelligence": "https://github.com/tbhrc/skills/tree/main/automations-drf-intelligence",
+    "drf-dashboard-operations": "https://github.com/tbhrc/skills/tree/main/drf-dashboard-operations",
 }
+RETIRED_LOCAL_SKILLS = {"drf-repository-operations"}
 RETIRED_ROOT_DIRS = {
     "knowledge",
     "workflows",
@@ -42,7 +42,7 @@ def require_markers(errors: list[str], relative: str, markers: list[str]) -> Non
     text = path.read_text(encoding="utf-8")
     for marker in markers:
         if marker not in text:
-            fail(errors, f"{relative} is missing canonical marker: {marker}")
+            fail(errors, f"{relative} is missing required marker: {marker}")
 
 
 def validate_root(errors: list[str]) -> None:
@@ -65,64 +65,50 @@ def validate_root(errors: list[str]) -> None:
             fail(errors, f"Retired global operating directory must not exist: {dirname}/")
 
 
-def validate_skills(errors: list[str]) -> None:
+def validate_skill_cutover(errors: list[str]) -> None:
     skills_root = ROOT / "skills"
     if not (skills_root / "README.md").is_file():
-        fail(errors, "Missing skills/README.md capability index")
+        fail(errors, "Missing skills/README.md central-canon router")
         return
-
-    skill_dirs = {path.name for path in skills_root.iterdir() if path.is_dir()}
-    missing = sorted(REQUIRED_SKILLS - skill_dirs)
-    if missing:
-        fail(errors, f"Missing canonical DRF Skills: {', '.join(missing)}")
-
-    for skill_name in sorted(REQUIRED_SKILLS):
-        skill = skills_root / skill_name
-        skill_md = skill / "SKILL.md"
-        if not skill_md.is_file():
-            fail(errors, f"Skill is missing SKILL.md: skills/{skill_name}")
-            continue
-        text = skill_md.read_text(encoding="utf-8")
-        if not text.startswith("---\n") or f"name: {skill_name}" not in text:
-            fail(errors, f"Skill frontmatter/name is invalid: skills/{skill_name}/SKILL.md")
-        if "description:" not in text[:1200]:
-            fail(errors, f"Skill is missing description trigger metadata: skills/{skill_name}/SKILL.md")
-        if not (skill / "agents" / "openai.yaml").is_file():
-            fail(errors, f"Skill is missing agents/openai.yaml: skills/{skill_name}")
 
     require_markers(
         errors,
         "skills/README.md",
         [
-            "Skills are the number-one operating interface",
+            "tbhrc/skills` is the sole editable reusable Skill canon",
             "drf-opportunity-factory",
-            "drf-recurring-intelligence",
+            "automations-drf-intelligence",
             "drf-dashboard-operations",
-            "drf-repository-operations",
+            "drf-business-development",
+            "github-agent-workflow",
             "One reusable capability → one Skill owner",
         ],
     )
 
-    require_markers(
-        errors,
-        "skills/drf-opportunity-factory/SKILL.md",
-        ["Founder intake", "Layer 1", "Layer 2", "Layer 3", "V3", "Self-improvement rule"],
-    )
-    require_markers(
-        errors,
-        "skills/drf-recurring-intelligence/SKILL.md",
-        ["Portfolio calibration", "Discovery run", "REFRESH-RUNS.md", "Scheduler independence"],
-    )
-    require_markers(
-        errors,
-        "skills/drf-dashboard-operations/SKILL.md",
-        ["Dashboard Version 3 is the website synthesis", "Business truth first; dashboard last"],
-    )
-    require_markers(
-        errors,
-        "skills/drf-repository-operations/SKILL.md",
-        ["Number-one rule — Skills first", "Do not create a new template", "scripts/validate_repository.py"],
-    )
+    for skill_name, central_url in sorted(LOCAL_POINTER_SKILLS.items()):
+        skill_md = skills_root / skill_name / "SKILL.md"
+        if not skill_md.is_file():
+            fail(errors, f"Missing compatibility pointer: skills/{skill_name}/SKILL.md")
+            continue
+        text = skill_md.read_text(encoding="utf-8")
+        if "migration pointer" not in text.lower():
+            fail(errors, f"Local Skill must be a migration pointer, not editable canon: skills/{skill_name}/SKILL.md")
+        if central_url not in text:
+            fail(errors, f"Local pointer does not route to central owner: skills/{skill_name}/SKILL.md")
+        if "Do **not**" not in text and "Do not" not in text:
+            fail(errors, f"Local pointer must prohibit local reusable-method maintenance: skills/{skill_name}/SKILL.md")
+
+    for skill_name in sorted(RETIRED_LOCAL_SKILLS):
+        skill_md = skills_root / skill_name / "SKILL.md"
+        if not skill_md.is_file():
+            fail(errors, f"Missing retired compatibility pointer: skills/{skill_name}/SKILL.md")
+            continue
+        text = skill_md.read_text(encoding="utf-8")
+        if "retired" not in text.lower():
+            fail(errors, f"Retired local Skill is not marked retired: skills/{skill_name}/SKILL.md")
+        for marker in ["github-agent-workflow", "github-skill-builder", "github-power-user"]:
+            if marker not in text:
+                fail(errors, f"Retired repository-operations pointer is missing central owner {marker}")
 
 
 def validate_entrypoints(errors: list[str]) -> None:
@@ -132,10 +118,6 @@ def validate_entrypoints(errors: list[str]) -> None:
         [
             "NUMBER-ONE RULE — SKILLS FIRST",
             "skills/README.md",
-            "skills/drf-opportunity-factory/SKILL.md",
-            "skills/drf-recurring-intelligence/SKILL.md",
-            "skills/drf-dashboard-operations/SKILL.md",
-            "skills/drf-repository-operations/SKILL.md",
             "businesses/PORTFOLIO-V3.md",
             "businesses/V3-RECONCILIATIONS.md",
         ],
@@ -144,11 +126,11 @@ def validate_entrypoints(errors: list[str]) -> None:
         errors,
         ".github/copilot-instructions.md",
         [
-            "Skills are the operating interface",
-            "skills/drf-opportunity-factory/SKILL.md",
-            "skills/drf-recurring-intelligence/SKILL.md",
-            "skills/drf-dashboard-operations/SKILL.md",
-            "skills/drf-repository-operations/SKILL.md",
+            "tbhrc/skills` is the sole editable reusable Skill canon",
+            "drf-opportunity-factory",
+            "automations-drf-intelligence",
+            "drf-dashboard-operations",
+            "github-agent-workflow",
         ],
     )
     require_markers(
@@ -171,7 +153,7 @@ def validate_v3_and_profiles(errors: list[str]) -> None:
     ]
     for relative in required:
         if not (ROOT / relative).is_file():
-            fail(errors, f"Missing required skills-first/V3 artefact: {relative}")
+            fail(errors, f"Missing required DRF domain/product compatibility artefact: {relative}")
 
     retired_profiles = [
         "research/recurring-intelligence/DRF-PORTFOLIO-INTELLIGENCE.md",
@@ -182,11 +164,11 @@ def validate_v3_and_profiles(errors: list[str]) -> None:
     ]
     for relative in retired_profiles:
         if (ROOT / relative).exists():
-            fail(errors, f"Operating instruction/profile must live in a Skill, not domain data: {relative}")
+            fail(errors, f"Operating instruction/profile must not reappear in domain data: {relative}")
 
 
 def validate_canonical_register_paths(errors: list[str]) -> None:
-    """Keep current business registers pointed at Skill-owned operating standards."""
+    """Keep current business registers pointed at compatible DRF paths during cutover."""
     require_markers(
         errors,
         "businesses/OPPORTUNITIES.md",
@@ -236,8 +218,6 @@ def validate_ci(errors: list[str]) -> None:
 
 
 def validate_active_paths(errors: list[str]) -> None:
-    # Only operating routers/docs are scanned here. Historical evidence may retain
-    # legacy path text as provenance without acting as runtime instructions.
     active_routers = [
         "AGENTS.md",
         "README.md",
@@ -258,9 +238,6 @@ def validate_active_paths(errors: list[str]) -> None:
             if marker in text:
                 fail(errors, f"Active operating router still points to retired global path {marker!r}: {relative}")
 
-    # index.html is preserved as product source; its already-loaded integrity script
-    # rewrites legacy source links to Skill destinations at runtime so the live site
-    # cannot send founders to deleted operating folders.
     require_markers(
         errors,
         "assets/v3-dashboard-proof-counts.js",
@@ -289,7 +266,7 @@ def validate_filenames_and_secrets(errors: list[str]) -> None:
 def main() -> int:
     errors: list[str] = []
     validate_root(errors)
-    validate_skills(errors)
+    validate_skill_cutover(errors)
     validate_entrypoints(errors)
     validate_v3_and_profiles(errors)
     validate_canonical_register_paths(errors)
@@ -303,7 +280,7 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    print("DRF skills-first repository contracts: PASS")
+    print("DRF central-Skill ownership contracts: PASS")
     return 0
 
 
