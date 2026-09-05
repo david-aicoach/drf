@@ -1,10 +1,10 @@
 # DRF Niche Opportunity Register
 
 **Status:** Canonical niche register  
-**Version:** 1.11  
+**Version:** 1.12  
 **Date:** 5 September 2026  
 **Scoring framework:** `skills/drf-opportunity-factory/references/niche-scoring.md`  
-**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142, #166  
+**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142, #166, #167  
 **Canonical evidence library:** `research/niches/README.md`  
 **Comprehensive dossier standard:** `skills/drf-opportunity-factory/references/niche-research-standard.md`
 
@@ -30,12 +30,16 @@ Scores are desk-research scores until live prospect/customer evidence exists. **
 
 - **Foundation** — persistent customer/revenue infrastructure such as WhatsApp + CRM Revenue Core.
 - **Outcome** — measurable commercial result such as Revenue Recovery, Missed Lead, Voice, Instant Quote, Support, Reputation or AI Recommendation Visibility.
-- **Vertical Platform** — bundled vertical operating product such as HighLevel Rentals + Direct Booking.
+- **Vertical Platform** — bundled vertical operating product where the bundle itself has independent payer/outcome/revenue logic; a delivery rail alone is not a parent.
 - **Agentic Operations** — persistent cross-system work where a general agent creates enough incremental value to justify variable execution cost.
 
 ### Autonomous AI parent migration
 
 The seven niche rows originally researched under **Grok Bot AI-First Revenue Operations Business-in-a-Box** now join the current parent **Autonomous AI Revenue Operations Business-in-a-Box**. Their existing scores remain **delivery-rail evidence from the Grok-heavy thesis**, not a claim that those niches have been revalidated for every autonomous-agent architecture. The dossier paths and detailed factor labels preserve the historical Grok-specific evidence.
+
+### HighLevel parent retirement
+
+Under #166 and recovery #167, **HighLevel Vertical SaaS Snapshot Business-in-a-Box is retired as a standalone parent** and HighLevel remains a replaceable delivery/rebilling rail. The prior `research/niches/14-highlevel-rentals-holiday-home-operators.md` dossier is retained as historical delivery-rail evidence and is no longer an active ranked niche. The active holiday-home foundation route is **WhatsApp + CRM Revenue Core** via `research/niches/21-whatsapp-crm-holiday-home-operators.md`; future HighLevel implementation belongs inside an active outcome parent that independently satisfies buyer + pain/outcome + revenue-mechanism identity.
 
 ## Ranked niche summary
 
@@ -64,7 +68,6 @@ The seven niche rows originally researched under **Grok Bot AI-First Revenue Ope
 | **Agentic Operations** | **Autonomous AI Revenue Operations Business-in-a-Box** | Recruitment research + screening operations worker | Recruitment / talent | Boutique recruitment agencies and lean internal TA teams with recurring vacancies | UAE / GCC | Recruiters spend large time on research, evidence extraction, screening prep and pipeline admin | **83/100** | **94%** | **Strong — narrow to cross-system research/evidence preparation** | **Legacy Grok-heavy delivery-rail evidence.** Score remains historical until a vendor-neutral parent niche pass revalidates the workflow/economics. | Benchmark 10 vacancies vendor-neutrally for minutes saved, errors, fully loaded cost/workflow and human recovery. | `research/niches/17-grok-recruitment-research-screening.md` |
 | **Agentic Operations** | **Autonomous AI Revenue Operations Business-in-a-Box** | Account/lead research + pipeline preparation worker | Real estate brokerage | Broker teams/agencies with roughly 5–50 brokers and large active lead databases | Dubai | Brokers waste time researching/prioritising leads while opportunities decay | **83/100** | **93%** | **Strong — high-value research brief only** | **Legacy Grok-heavy delivery-rail evidence.** Score remains historical until a vendor-neutral parent niche pass revalidates the workflow/economics. | Run a review-first vendor-neutral benchmark on completed jobs, fully loaded cost and broker minutes saved. | `research/niches/20-grok-real-estate-lead-research.md` |
 | **Commerce growth / AI discovery** | **Agentic Commerce Visibility & Conversion Engine** | AI Commerce Readiness & Revenue Attribution | Ecommerce / retail | Mid-market multi-channel retailers and DTC brands with roughly 500–50,000 SKUs and meaningful existing SEO/paid spend | UAE / GCC | Product truth and AI-discovery visibility are fragmented; merchant cannot reliably connect AI-origin discovery to revenue | **83/100** | **85%** | **Strong/Testable — instrument before scale** | Shopify Catalog removes a simple ChatGPT feed-onboarding wedge; the viable product is cross-platform catalogue truth + monitoring + attribution. | 3–5 merchants; require measurable improvement on at least one, ≥2 recurring paid commitments and bounded delivery effort. | `research/niches/33-agentic-commerce-multichannel-retailers-uae-gcc.md` |
-| **Vertical Platform** | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | HighLevel Rentals + owned direct-booking website + guest CRM | Hospitality / property | Professional holiday-home operators/property managers managing roughly 10–100 units | Dubai | OTA dependence and weak owned repeat-demand channel | **82/100** | **94%** | **Strong/Testable — reposition; do not build a replacement PMS** | Comprehensive v3 research reconciles this niche to **82/100** with **94%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Validate PMS stack, direct-booking share and switching friction. | `research/niches/14-highlevel-rentals-holiday-home-operators.md` |
 | **Foundation** | **WhatsApp + CRM Revenue Core** | WhatsApp enquiry + guest/customer lifecycle CRM core | Hospitality / property | Professional holiday-home operators/property managers managing roughly 10–100 units | Dubai | Direct/guest enquiries need one follow-up layer while PMS owns booking state | **82/100** | **94%** | **Strong — first-party enquiry/repeat layer only** | Comprehensive v3 research reconciles this niche to **82/100** with **94%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Validate direct-enquiry volume and system-of-record split. | `research/niches/21-whatsapp-crm-holiday-home-operators.md` |
 | **Outcome** | **Instant Quote Generator & Quote-to-Cash System** | Structured instant range/estimate + booking follow-up | Moving / relocation | Residential and SME office movers with repeatable local-move enquiries | UAE, priority Dubai | Staff repeatedly estimate similar jobs while prospects comparison-shop | **82/100** | **92%** | **Strong — instant range + survey routing, not universal final price** | Comprehensive v3 research reconciles this niche to **82/100** with **92%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Test 100 historical quotes against final invoices and survey thresholds. | `research/niches/22-instant-quote-movers.md` |
 | **Agentic Operations** | **Autonomous AI Revenue Operations Business-in-a-Box** | Accounts-receivable coordination worker | MEP / FM / B2B services | SME contractors with recurring invoices, statements, promises-to-pay and disputes | UAE | Finance/admin repeatedly reconcile aging and lose collection follow-up continuity | **81/100** | **95%** | **Strong — exceptions/dispute evidence only** | **Legacy Grok-heavy delivery-rail evidence.** Score remains historical until vendor-neutral delivery economics are revalidated. | Run a controlled vendor-neutral AR workflow and measure DSO/cash/admin impact, fully loaded cost and approvals. | `research/niches/18-grok-accounts-receivable-mep-fm.md` |
@@ -93,7 +96,6 @@ All factor scores are 0–10. Weighted scoring follows the canonical niche frame
 | WhatsApp + CRM × Real-estate broker teams | 9 | 9 | 9 | 10 | 10 | 5 | 9 | 10 | 10 | 7 | **88.6 → 89** |
 | WhatsApp + CRM × Car rental | 9 | 8 | 10 | 10 | 9 | 5 | 9 | 9 | 10 | 8 | **86.9 → 87** |
 | MEP contractors × Revenue Recovery | 9 | 9 | 8 | 9 | 9 | 8 | 10 | 9 | 9 | 7 | **88.2 → 88** |
-| Holiday homes × HighLevel Rentals | 9 | 9 | 9 | 9 | 8 | 7 | 10 | 9 | 10 | 6 | **87.5 → 88** |
 | Aesthetic clinics × Missed Lead | 10 | 9 | 9 | 9 | 8 | 5 | 10 | 9 | 10 | 7 | **87.5 → 88** |
 | Car rental × Missed Lead | 9 | 8 | 10 | 10 | 9 | 6 | 9 | 9 | 10 | 7 | **87.4 → 87** |
 | Grok Bot × MEP tender/RFQ | 9 | 9 | 8 | 9 | 8 | 9 | 9 | 9 | 10 | 6 | **87.3 → 87** |
@@ -146,7 +148,7 @@ Aesthetic and dental scores did **not** rise despite stronger evidence because l
 5. **Movers stack** — WhatsApp + CRM **89** → Instant Quote **85**.
 6. **Real-estate broker stack** — WhatsApp + CRM **89** → optional Grok Research/Pipeline Prep **86**.
 7. **Dubai car-rental stack** — use incumbent rental OS as foundation where capable; WhatsApp/CRM overlay **87** only when an acquisition gap exists → Missed Lead **87** → optional Back-office Ops **84**.
-8. **Holiday-home stack** — Direct Booking **88** + WhatsApp + CRM **85** → AI Support **85** → optional Owner Ops **82**.
+8. **Holiday-home stack** — WhatsApp + CRM **82** → AI Support **78** → optional Owner Ops **70**; the former HighLevel/direct-booking row is historical delivery-rail evidence, not an active parent/niche.
 9. **Automotive-workshop stack** — capable DMS is often the foundation; Revenue Recovery **86** → CRM overlay **85** only for legacy/weak-DMS segment → AI Voice **85** after live call validation.
 10. **Recruitment-agency stack** — Talent Bridge Assessment **87** → Recruitment OS intelligence layer **81**; keep the existing ATS as system of record and avoid product overlap.
 11. **Dubai company-formation stack** — AI Recommendation Visibility **86** as a bounded demand-visibility test; conventional SEO/reputation remain complementary foundations, not replaced.
