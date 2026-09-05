@@ -1,0 +1,20 @@
+name: Founder approval gate
+
+on:
+  issue_comment:
+    types: [created]
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/founder-approval.yml"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  founder-approval:
+    uses: tbhrc/skills/.github/workflows/founder-approval-core.yml@main
+    with:
+      founder_login: david-aicoach
+      bootstrap_priority: false
