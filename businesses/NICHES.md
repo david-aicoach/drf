@@ -1,10 +1,10 @@
 # DRF Niche Opportunity Register
 
 **Status:** Canonical niche register  
-**Version:** 1.10  
-**Date:** 2 September 2026  
+**Version:** 1.11  
+**Date:** 5 September 2026  
 **Scoring framework:** `skills/drf-opportunity-factory/references/niche-scoring.md`  
-**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142  
+**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142, #166  
 **Canonical evidence library:** `research/niches/README.md`  
 **Comprehensive dossier standard:** `skills/drf-opportunity-factory/references/niche-research-standard.md`
 
@@ -29,7 +29,7 @@ Scores are desk-research scores until live prospect/customer evidence exists. **
 ### Commercial layers
 
 - **Foundation** — persistent customer/revenue infrastructure such as WhatsApp + CRM Revenue Core.
-- **Outcome** — measurable commercial result such as Revenue Recovery, Missed Lead, Voice, Instant Quote, Support or Reputation.
+- **Outcome** — measurable commercial result such as Revenue Recovery, Missed Lead, Voice, Instant Quote, Support, Reputation or AI Recommendation Visibility.
 - **Vertical Platform** — bundled vertical operating product such as HighLevel Rentals + Direct Booking.
 - **Agentic Operations** — persistent cross-system work where a general agent creates enough incremental value to justify variable execution cost.
 
@@ -57,6 +57,7 @@ The seven niche rows originally researched under **Grok Bot AI-First Revenue Ope
 | **Outcome** | **Instant Quote Generator & Quote-to-Cash System** | Rules-based instant estimate/range + follow-up | Specialist construction | Drywall, gypsum partition and false-ceiling installers receiving standardisable enquiries | UAE, priority Dubai | Manual quotation is slow and estimators repeatedly calculate similar scopes | **87/100** | **88%** | **Sniper candidate — prioritise for live validation** | Comprehensive v3 research reconciles this niche to **87/100** with **88%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Test 100 historical quotes and site-survey price changes. | `research/niches/26-instant-quote-drywall-gypsum-ceilings.md` |
 | **Talent / hiring intelligence** | **Talent Bridge Assessment & AI Interview Platform** | White-label role-specific assessment + AI interview + human-reviewed candidate evidence pack | Recruitment / staffing | Boutique recruitment agencies and RPO providers with roughly 5–50 recruiters and recurring professional vacancies | UAE / GCC | Screening/reporting consumes recruiter time and agencies need stronger client-ready evidence without replacing their ATS | **87/100** | **86%** | **Sniper — bounded paid pilot** | External category proof is EMP4; the wedge is reusable role packs + human-reviewed evidence, not a generic test library. | One unrelated agency, one recurring professional role, 10–20 candidates; require paid/recurring commitment and bounded QA. | `research/niches/32-tb-assessment-boutique-recruitment-agencies.md` |
 | **Outcome** | **Revenue Recovery & Reactivation Engine** | Declined-estimate + service-recall + dormant-customer recovery | Automotive services | Organised independent/multi-brand workshops with usable DMS/customer history | UAE, priority Dubai | Declined repairs, overdue service and dormant customers are not systematically monetised | **86/100** | **91%** | **Sniper outcome — preferably delivered through the workshop's existing management system/data** | Score falls from 89 because Garij, GRX, AutoFixia and other UAE DMS already include reminders/win-back features. The opportunity is managed recovery through incumbent data, not feature duplication. | Audit 10 workshops across DMS types and run one declined-work campaign tied to completed gross profit. | `research/niches/08-revenue-recovery-automotive-workshops.md` |
+| **Outcome / AI discovery** | **AI Recommendation Visibility & GEO Engine** | AI Recommendation Visibility Growth System | Business services / company formation | Company-formation/business-setup consultancies serving foreign founders and SMEs | Dubai | Prospects increasingly compare/recommend providers through AI/search before requesting setup consultations, while firms lack controlled prompt/citation measurement | **86/100** | **82%** | **Sniper — bounded paid transferability test** | Upstream category proof is EMP3; public local buyer economics support WTP, but Dubai managed-service price and recurring retention remain unproven. | After founder approval, test 10 qualified consultancies with one fixed instrument; require 2 unrelated paid deposits at ≥AED2,500 setup + ≥AED1,500/month and bounded delivery. | `research/niches/35-ai-visibility-business-setup-consultancies-dubai.md` |
 | **Foundation** | **WhatsApp + CRM Revenue Core** | Customer/communication layer only where workshop DMS is weak | Automotive services | Organised independent/multi-brand workshops still relying materially on paper/Excel/WhatsApp or weak legacy DMS | UAE, priority Dubai | Booking, approvals, updates and reminders lack one usable system | **85/100** | **92%** | **Sniper only for workshops whose existing DMS lacks a strong customer/communication layer** | Score falls from 89: Garij, GRX and AutoFixia already provide customer history, WhatsApp, approvals and reminders at low SME prices. Prefer vertical DMS optimisation over a second CRM. | Build 200-workshop software map and validate what share of organised independents remain in legacy/basic systems. | `research/niches/10-whatsapp-crm-automotive-workshops.md` |
 | **Agentic Operations** | **Autonomous AI Revenue Operations Business-in-a-Box** | Tender/RFQ research + bid-preparation worker | MEP / HVAC | Specialist MEP/HVAC subcontractors repeatedly bidding for projects/maintenance contracts | UAE, priority Dubai | Opportunities, deadlines and requirements are scattered across portals, inboxes and documents | **84/100** | **92%** | **Strong/Testable — bounded cross-system tender worker** | **Legacy Grok-heavy delivery-rail evidence.** Comprehensive v3 research reconciled this niche to **84/100** with **92%** evidence confidence; a wider vendor-neutral niche pass remains required before treating the score as architecture-independent. | Benchmark one real vendor-neutral tender workflow: failures, recovery, fully loaded cost/job and human minutes. | `research/niches/16-grok-tender-rfq-mep-hvac.md` |
 | **Outcome** | **AI Voice Receptionist & Booking Agent** | Inbound booking/quote/status voice assistant | Automotive services | Organised independent/multi-brand workshops with significant inbound call volume | UAE, priority Dubai | Calls compete with front-desk/workshop operations | **84/100** | **88%** | **Strong — bounded overflow/after-hours test** | Comprehensive v3 research reconciles this niche to **84/100** with **88%** evidence confidence after market, incumbent-software, SEO and AI-discovery analysis; see dossier for the current wedge. | Instrument 3–5 workshops before productising; measure call mix, missed rate and value. | `research/niches/23-ai-voice-automotive-workshops.md` |
@@ -85,24 +86,25 @@ All factor scores are 0–10. Weighted scoring follows the canonical niche frame
 | WhatsApp + CRM × HVAC/AC service contractors | 10 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 10 | 9 | **91.5 → 92** |
 | Emergency HVAC/AC × AI Voice | 10 | 9 | 9 | 9 | 8 | 7 | 10 | 10 | 10 | 8 | **91.0 → 91** |
 | HVAC maintenance × Revenue Recovery | 9 | 9 | 9 | 9 | 9 | 8 | 10 | 9 | 10 | 8 | **90.5 → 91** |
-| WhatsApp + CRM × Specialist MEP | 9 | 9 | 8 | 9 | 9 | **7** | 10 | **9** | 10 | **7** | **89.5 → 90** |
+| WhatsApp + CRM × Specialist MEP | 9 | 9 | 8 | 9 | 9 | 7 | 10 | 9 | 10 | 7 | **89.5 → 90** |
 | WhatsApp + CRM × Aesthetic clinics | 10 | 9 | 9 | 9 | 8 | 5 | 10 | 10 | 10 | 9 | **89.5 → 90** |
 | WhatsApp + CRM × Dental implant/full-arch | 10 | 10 | 9 | 8 | 8 | 5 | 10 | 10 | 9 | 9 | **89.1 → 89** |
 | WhatsApp + CRM × Movers | 9 | 8 | 9 | 9 | 8 | 8 | 9 | 10 | 10 | 9 | **88.6 → 89** |
 | WhatsApp + CRM × Real-estate broker teams | 9 | 9 | 9 | 10 | 10 | 5 | 9 | 10 | 10 | 7 | **88.6 → 89** |
-| WhatsApp + CRM × Car rental | 9 | 8 | 10 | 10 | 9 | **5** | 9 | **9** | 10 | **8** | **86.9 → 87** |
+| WhatsApp + CRM × Car rental | 9 | 8 | 10 | 10 | 9 | 5 | 9 | 9 | 10 | 8 | **86.9 → 87** |
 | MEP contractors × Revenue Recovery | 9 | 9 | 8 | 9 | 9 | 8 | 10 | 9 | 9 | 7 | **88.2 → 88** |
 | Holiday homes × HighLevel Rentals | 9 | 9 | 9 | 9 | 8 | 7 | 10 | 9 | 10 | 6 | **87.5 → 88** |
 | Aesthetic clinics × Missed Lead | 10 | 9 | 9 | 9 | 8 | 5 | 10 | 9 | 10 | 7 | **87.5 → 88** |
-| Car rental × Missed Lead | 9 | 8 | 10 | 10 | 9 | **6** | 9 | 9 | 10 | **7** | **87.4 → 87** |
+| Car rental × Missed Lead | 9 | 8 | 10 | 10 | 9 | 6 | 9 | 9 | 10 | 7 | **87.4 → 87** |
 | Grok Bot × MEP tender/RFQ | 9 | 9 | 8 | 9 | 8 | 9 | 9 | 9 | 10 | 6 | **87.3 → 87** |
 | Talent Bridge Assessment × Boutique recruitment agencies | 9 | 8 | 9 | 8 | 7 | 7 | 9 | 10 | 10 | 9 | **86.8 → 87** |
 | Grok Bot × Recruitment Ops | 9 | 9 | 9 | 8 | 8 | 8 | 9 | 9 | 10 | 7 | **87.0 → 87** |
 | Grok Bot × MEP/FM Accounts Receivable | 10 | 8 | 8 | 8 | 9 | 8 | 10 | 8 | 10 | 5 | **86.5 → 87** |
 | Dental implant/full-arch × Missed Lead | 10 | 10 | 9 | 8 | 8 | 5 | 10 | 9 | 9 | 7 | **87.1 → 87** |
-| Automotive workshops × Revenue Recovery | 9 | 8 | 9 | 8 | 9 | **6** | 10 | 9 | 10 | **7** | **86.0 → 86** |
+| Automotive workshops × Revenue Recovery | 9 | 8 | 9 | 8 | 9 | 6 | 10 | 9 | 10 | 7 | **86.0 → 86** |
+| AI Visibility × Dubai business-setup consultancies | 8 | 9 | 9 | 9 | 9 | 7 | 9 | 9 | 9 | 8 | **86.0 → 86** |
 | Grok Bot × Real-estate broker teams | 9 | 9 | 9 | 10 | 10 | 5 | 9 | 8 | 10 | 5 | **85.6 → 86** |
-| WhatsApp + CRM × Automotive workshops | 9 | 8 | 9 | 8 | 9 | **6** | 9 | **9** | 10 | **8** | **85.3 → 85** |
+| WhatsApp + CRM × Automotive workshops | 9 | 8 | 9 | 8 | 9 | 6 | 9 | 9 | 10 | 8 | **85.3 → 85** |
 | WhatsApp + CRM × Holiday-home operators | 8 | 9 | 9 | 9 | 8 | 7 | 9 | 9 | 10 | 7 | **85.3 → 85** |
 | Movers × Instant Quote | 9 | 8 | 9 | 9 | 8 | 8 | 9 | 10 | 6 | 9 | **85.4 → 85** |
 | Automotive workshops × AI Voice | 8 | 8 | 9 | 8 | 9 | 7 | 9 | 9 | 10 | 8 | **84.8 → 85** |
@@ -147,5 +149,6 @@ Aesthetic and dental scores did **not** rise despite stronger evidence because l
 8. **Holiday-home stack** — Direct Booking **88** + WhatsApp + CRM **85** → AI Support **85** → optional Owner Ops **82**.
 9. **Automotive-workshop stack** — capable DMS is often the foundation; Revenue Recovery **86** → CRM overlay **85** only for legacy/weak-DMS segment → AI Voice **85** after live call validation.
 10. **Recruitment-agency stack** — Talent Bridge Assessment **87** → Recruitment OS intelligence layer **81**; keep the existing ATS as system of record and avoid product overlap.
+11. **Dubai company-formation stack** — AI Recommendation Visibility **86** as a bounded demand-visibility test; conventional SEO/reputation remain complementary foundations, not replaced.
 
 The **first recommended beachhead remains HVAC/AC** and its lead over the most crowded verticals is now better substantiated.
