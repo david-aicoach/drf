@@ -4,8 +4,8 @@
 **Framework:** `skills/drf-opportunity-factory/references/business-opportunity-scoring.md` v2.0  
 **Niche layer:** `skills/drf-opportunity-factory/references/niche-scoring.md` v1.2  
 **Base portfolio recalculation:** 29 August 2026 — Issue #48  
-**Latest targeted evidence update:** 5 September 2026 — AI Recommendation Visibility & GEO Engine promotion — Issue #166  
-**Research basis:** 28 current parent-opportunity dossiers + all canonical niche dossiers, plus subsequent opportunity-specific evidence updates
+**Latest targeted evidence update:** 5 September 2026 — AI Recommendation Visibility promotion + HighLevel parent retirement — Issue #166  
+**Research basis:** 27 active parent-opportunity dossiers + 1 retired vendor-rail history + all canonical niche dossiers, plus subsequent opportunity-specific evidence updates
 
 ## Scoring rule
 
@@ -20,11 +20,12 @@ This prevents double-counting while still allowing detailed evidence to change t
 - The top four remain unchanged: **WhatsApp + CRM**, **Revenue Recovery**, **AI Voice**, **Missed Lead**.
 - **Instant Quote / Quote-to-Cash remains #5** after drywall/gypsum/false ceilings emerged as an 87/100 Sniper niche.
 - **AI Recommendation Visibility & GEO Engine enters at 88/100** after the 4 September upstream Research completion and 5 September DRF underwriting. The business is recommendation/citation measurement → optimisation → fixed-instrument re-test → recurring monitoring for service brands; it is deliberately distinct from commerce-catalogue AI visibility and from review/Maps reputation operations.
+- **HighLevel Vertical SaaS Snapshot Business-in-a-Box is retired as a standalone parent on 5 September 2026.** HighLevel remains strong delivery/rebilling infrastructure inside active outcome-first parents; the historical 89/100 structural score is retained only for audit/history.
 - Broad platform/container propositions remain penalised where incumbents or weak exact-market fit reduce the business case.
 - **Autonomous AI Revenue Operations rose 81 → 87 on 1 September 2026** after correcting the parent from Grok Bot-specific delivery economics to the vendor-neutral revenue-operations business. Grok Bot remains one delivery rail.
 - The Autonomous AI Revenue Operations MRR inconsistency is reconciled: the old summary showed 9/10 while the old factor table held 8/10. Both are now **9/10**.
 - **Business Blueprints remains 82** as a platform-neutral parent opportunity; Whop is one distribution channel rather than the business itself.
-- Research Completeness remains **100% across all 28 current parent opportunities** in the framework sense. This does not mean product-market fit is proven; live CAC, retention, gross margin and outcome data remain the next confidence gate.
+- Research Completeness remains **100% across all 27 active parent opportunities** in the framework sense. This does not mean product-market fit is proven; live CAC, retention, gross margin and outcome data remain the next confidence gate.
 
 ## Portfolio summary
 
@@ -38,7 +39,7 @@ This prevents double-counting while still allowing detailed evidence to change t
 | **AI Support & Sales Assistant** | **Candidate** | **90/100** | **-3** | **—** | **10/10** | **88/100** | **96%** | **100%** | Dubai holiday-home operators | **78/100** | Strong category, but native vertical software already absorbs much routine support. | Choose a vertical where native software leaves a measurable gap. | `businesses/ai-support-sales-assistant/RESEARCH.md` |
 | **Talent Bridge Assessment & AI Interview Platform** | **Candidate** | **89/100** | **-2** | **↑1** | **10/10** | **85/100** | **90%** | **100%** | UAE/GCC boutique recruitment agencies / RPOs | **87/100** | Strong proprietary assets; licensing, privacy, fairness and bounded human review remain gates. | Run one recurring agency evidence-pack pilot with human review. | `businesses/talent-bridge-assessment-ai-interview-platform/CURRENT.md` |
 | **Agentic Commerce Visibility & Conversion Engine** | **Candidate** | **89/100** | **-1** | **↑2** | **9/10** | **83/100** | **90%** | **100%** | UAE/GCC multi-channel retailers and DTC brands | **83/100** | High structural commerce opportunity; paid merchant retention and attributable conversion remain unproven. | Run 3–5 merchant baseline/optimisation tests. | `businesses/agentic-commerce-visibility-conversion-engine/CURRENT.md` |
-| **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **Candidate** | **89/100** | **-4** | **↓4** | **10/10** | **85/100** | **96%** | **100%** | Dubai holiday-home operators *(legacy niche evidence)* | **82/100** | Platform economics remain strong, but the parent identity conflicts with outcome-first canon and overlaps existing DRF businesses. | Resolve atomically as a vendor-neutral distinct outcome or merge/retire while preserving HighLevel as delivery/rebilling infrastructure. | `businesses/highlevel-vertical-saas-snapshot/CURRENT.md` |
+| **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | **Retired** | **89/100 historical** | — | — | **10/10 historical** | **85/100 historical** | **96%** | **100%** | Dubai holiday-home operators *(legacy niche evidence)* | **82/100** | Vendor-defined parent retired to eliminate double-counting; HighLevel remains delivery/rebilling infrastructure inside outcome-first parents. | No standalone underwriting/build. Capture HighLevel economics inside whichever active outcome parent uses the rail. | `businesses/highlevel-vertical-saas-snapshot/CURRENT.md` |
 | **AI Recommendation Visibility & GEO Engine** | **Candidate** | **88/100** | **NEW** | **NEW** | **9/10** | **88/100** | **90%** | **100%** | Dubai company-formation / business-setup consultancies | **86/100** | Golden emerging recurring service: recommendation/citation measurement, evidence-led optimisation, fixed-instrument re-test and monitoring. No ranking guarantees. | After founder approval, run one 10-account fixed-instrument test and require 2 unrelated paid deposits at ≥AED2,500 setup + ≥AED1,500/month. | `businesses/ai-recommendation-visibility-geo-engine/CURRENT.md` |
 | **Vertical AI Operating Systems & Agent Integration Packs** | **Candidate** | **88/100** | **0** | **↑1** | **9/10** | **78/100** | **90%** | **100%** | Not yet canonically scored | — | Strong when fixed around repeatable vertical workflows. | Sell one fixed workflow pack and require second-client reuse. | `businesses/vertical-ai-operating-systems-agent-integration-packs/RESEARCH.md` |
 | **Recruitment OS / Hiring Intelligence SaaS** | **Candidate** | **87/100** | **-4** | **↓2** | **10/10** | **78/100** | **88%** | **100%** | UAE/GCC boutique recruitment agencies / executive-search firms / RPOs | **81/100** | Attractive as differentiated intelligence around an existing ATS. | Sell one intelligence/evaluation module before expanding platform scope. | `businesses/recruitment-os-hiring-intelligence-saas/CURRENT.md` |
@@ -67,6 +68,7 @@ This prevents double-counting while still allowing detailed evidence to change t
 - A high parent score with only a **Strong/Testable niche (<85)** must be narrowed before scaling.
 - **Not yet canonically scored** means no dedicated v3 product×niche dossier exists; it receives no artificial bonus or penalty.
 - The Autonomous AI row's 84 niche remains **delivery-rail evidence from the prior Grok-heavy thesis**, not a fresh vendor-neutral niche score.
+- Retired rows preserve historical scoring evidence but are excluded from active portfolio calibration counts.
 
 ## Factor key
 
@@ -91,7 +93,7 @@ This prevents double-counting while still allowing detailed evidence to change t
 
 ## Validated scores — latest targeted update 5 September 2026
 
-All factors are 0–10. Weighted Score uses the canonical weights above.
+All factors are 0–10. Weighted Score uses the canonical weights above. **The retired HighLevel row is retained below only as historical structural evidence and is not an active portfolio score.**
 
 | Opportunity | MS | MG | TW | WP | AB | AM | AD | HD | SC | SR | MP | SCALE | PG | MOAT | MRR | Weighted Score |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -103,9 +105,9 @@ All factors are 0–10. Weighted Score uses the canonical weights above.
 | **AI Support & Sales Assistant** | 10 | 10 | 8 | 8 | 9 | 8 | 10 | 8 | 9 | 8 | 10 | 10 | 7 | 6 | 10 | **89.7 → 90** |
 | **Talent Bridge Assessment & AI Interview Platform** | 9 | 9 | 8 | 9 | 9 | 8 | 9 | 8 | 9 | 8 | 10 | 10 | 8 | 8 | 10 | **89.1 → 89** |
 | **Agentic Commerce Visibility & Conversion Engine** | 10 | 10 | 10 | 9 | 9 | 9 | 8 | 7 | 9 | 8 | 9 | 9 | 8 | 8 | 9 | **89.1 → 89** |
-| **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | 10 | 9 | 8 | 8 | 9 | 8 | 9 | 8 | 9 | 8 | 10 | 10 | 8 | 7 | 10 | **88.8 → 89** |
-| **AI Recommendation Visibility & GEO Engine** | 8 | 10 | 10 | 8 | 9 | 9 | 9 | 8 | 10 | 9 | 9 | 9 | 7 | 6 | 9 | **87.7 → 88** |
+| **HighLevel Vertical SaaS Snapshot Business-in-a-Box (retired historical)** | 10 | 9 | 8 | 8 | 9 | 8 | 9 | 8 | 9 | 8 | 10 | 10 | 8 | 7 | 10 | **88.8 → 89 historical** |
 | **Vertical AI Operating Systems & Agent Integration Packs** | 10 | 10 | 9 | 9 | 9 | 8 | 8 | 6 | 9 | 9 | 9 | 9 | 8 | 8 | 9 | **88.1 → 88** |
+| **AI Recommendation Visibility & GEO Engine** | 8 | 10 | 10 | 8 | 9 | 9 | 9 | 8 | 10 | 9 | 9 | 9 | 7 | 6 | 9 | **87.7 → 88** |
 | **Recruitment OS / Hiring Intelligence SaaS** | 10 | 9 | 8 | 9 | 9 | 7 | 8 | 7 | 9 | 7 | 10 | 10 | 8 | 8 | 10 | **87.4 → 87** |
 | **Autonomous AI Revenue Operations Business-in-a-Box** | 10 | 10 | 10 | 9 | 10 | 9 | 8 | 7 | 9 | 9 | 8 | 8 | 7 | 5 | 9 | **87.4 → 87** |
 | **Assessment-as-a-Service Managed Retainer** | 9 | 8 | 7 | 9 | 9 | 8 | 8 | 6 | 10 | 10 | 9 | 8 | 8 | 8 | 9 | **85.0 → 85** |
@@ -138,7 +140,7 @@ Evidence Confidence measures trust in the scoring inputs. Research Completeness 
 | AI Support & Sales Assistant | **96%** | **100%** | Incremental resolution/booking beyond native vertical software and escalation burden. |
 | Talent Bridge Assessment & AI Interview Platform | **90%** | **100%** | Employer/agency paid use, bounded human-review burden, compliance controls and renewal. |
 | Agentic Commerce Visibility & Conversion Engine | **90%** | **100%** | Paid merchant retention and attributable conversion uplift. |
-| HighLevel Vertical SaaS Snapshot Business-in-a-Box | **96%** | **100%** | Parent identity/dedup resolution before further commercial underwriting. |
+| HighLevel Vertical SaaS Snapshot Business-in-a-Box | **96%** | **100%** | **Retired as standalone parent; no active proof gate. HighLevel evidence belongs inside consuming outcome parents.** |
 | **AI Recommendation Visibility & GEO Engine** | **90%** | **100%** | Dubai paid price acceptance, bounded human delivery, fixed-instrument outcome change and recurring renewal. |
 | Vertical AI Operating Systems & Agent Integration Packs | **90%** | **100%** | Second-client reuse without bespoke consulting creep. |
 | Recruitment OS / Hiring Intelligence SaaS | **88%** | **100%** | External paid use of one intelligence module around an existing ATS. |
@@ -173,7 +175,7 @@ Evidence Confidence measures trust in the scoring inputs. Research Completeness 
 | AI Support & Sales Assistant | 9 | 8 | 10 | 8 | **88** |
 | Talent Bridge Assessment & AI Interview Platform | 9 | 8 | 9 | 8 | **85** |
 | Agentic Commerce Visibility & Conversion Engine | 9 | 9 | 8 | 7 | **83** |
-| HighLevel Vertical SaaS Snapshot Business-in-a-Box | 9 | 8 | 9 | 8 | **85** |
+| HighLevel Vertical SaaS Snapshot Business-in-a-Box *(retired historical)* | 9 | 8 | 9 | 8 | **85** |
 | **AI Recommendation Visibility & GEO Engine** | 9 | 9 | 9 | 8 | **88** |
 | Vertical AI Operating Systems & Agent Integration Packs | 9 | 8 | 8 | 6 | **78** |
 | Recruitment OS / Hiring Intelligence SaaS | 9 | 7 | 8 | 7 | **78** |
@@ -215,11 +217,15 @@ The upstream Research investigation completed on 4 September and current 5 Septe
 
 The opportunity enters at **88/100**, with an initial **86/100 Dubai business-setup consultancy** niche and RBS81/P1/TEST downstream. Its live gate is paid local transferability and bounded delivery, not whether AI-visibility tools exist.
 
-### 3. Autonomous AI Revenue Operations is a top structural opportunity
+### 3. HighLevel is infrastructure, not an extra business parent
+
+The prior HighLevel parent is retired after resolving the 2 September taxonomy conflict. HighLevel snapshots, SaaS Mode, rebilling and AI remain available inside outcome-first businesses whenever they improve deployment speed or economics. Retiring the duplicate parent does not reduce the value of HighLevel as a rail; it prevents the portfolio from counting the same customer outcome twice.
+
+### 4. Autonomous AI Revenue Operations is a top structural opportunity
 
 The vendor-neutral parent is **87** because the evidence base is no longer one new computer-use product. Current adoption and service-market pricing confirm agents are becoming a real paid operating layer. The opportunity still does not outrank proven outcome-specific revenue businesses; its next gate is one repeatable paid low-support workflow.
 
-### 4. Business Blueprints remains a distribution multiplier
+### 5. Business Blueprints remains a distribution multiplier
 
 ```text
 prove a DRF business system
@@ -229,15 +235,15 @@ prove a DRF business system
 → attach implementation/managed service where valuable
 ```
 
-### 5. Platform wrappers are secondary to the outcome
+### 6. Platform wrappers are secondary to the outcome
 
 HighLevel, Grok Bot, ChatGPT, Claude, Gemini, job boards and marketplaces are delivery/distribution mechanisms, not evidence of customer demand. Outcome proof comes first.
 
-### 6. Talent Bridge should run a parallel cash-and-data lane
+### 7. Talent Bridge should run a parallel cash-and-data lane
 
 Assessment-as-a-Service and Partner-Delivered Recruitment remain useful because their execution speed and existing assets can generate cash and evidence while slower platform/data products remain in research.
 
-### 7. Commodity software remains penalised
+### 8. Commodity software remains penalised
 
 Generic websites, job boards, marketplaces, prompts and monitoring dashboards are easy to build or rent. That does not solve buyer acquisition, implementation, recurring decision value or moat.
 
