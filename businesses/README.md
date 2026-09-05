@@ -23,15 +23,21 @@
 
 ## Parent opportunity rule
 
-Create one parent folder for the service/product/outcome and pain solved.
+Create one parent folder for each independently testable commercial business opportunity.
 
-Do not create a new parent merely because the delivery changes between HighLevel, HubSpot, WhatsApp providers, Grok Bot, ChatGPT, Claude or another system. Vendors and models are normally replaceable implementation components.
+DRF is **expansion-first**. There is no fixed maximum number of active opportunities. A new qualifying opportunity adds to the portfolio; another opportunity is not removed merely to keep an old count unchanged. **50+ qualified opportunities is a near-term expansion milestone, not a cap.**
 
-Canonical deployment model:
+Vendors and models are normally replaceable implementation components, so do not create a new parent merely because delivery changes between HighLevel, HubSpot, WhatsApp providers, Grok Bot, ChatGPT, Claude or another system.
+
+However, vendor neutrality is a classification aid rather than a deletion rule. A platform-led opportunity remains valid when the platform materially defines the sellable packaging, reusable deployment assets, recurring economics, automated provisioning, rebilling, marketplace/distribution or buyer proposition. Shared technology or overlapping outcomes do not by themselves make two businesses duplicates.
+
+Founder-origin or strategically designated core opportunities must not be retired, merged or demoted through taxonomy cleanup without explicit founder approval unless they are provably exact commercial duplicates with unique commercial value preserved.
+
+Canonical deployment model remains useful for ordinary outcome-first businesses:
 
 `Outcome × Niche × Customer Channel × System of Record × Agent Layer`
 
-For digital products, marketplaces/storefronts are distribution endpoints rather than parent opportunities.
+For digital products, marketplaces/storefronts are usually distribution endpoints rather than parent opportunities unless the distribution/platform mechanics materially define an independently testable commercial model.
 
 ## Current file pattern
 
@@ -86,6 +92,8 @@ Do not manufacture a score or freshness change merely to touch V3. Do not leave 
 
 ## Current active parent opportunity directory
 
+**Current active parent count: 28.** This is a state count, not a target or ceiling.
+
 | Rank | Opportunity ID | Parent opportunity | Opportunity Score | Best current niche | Folder |
 |---:|---|---|---:|---|---|
 | 1 | `whatsapp-crm-revenue-core` | WhatsApp + CRM Revenue Core | 95 | UAE HVAC/AC service contractors 92 | [`whatsapp-crm-revenue-core/`](./whatsapp-crm-revenue-core/) |
@@ -96,31 +104,32 @@ Do not manufacture a score or freshness change merely to touch V3. Do not leave 
 | 6 | `ai-support-sales-assistant` | AI Support & Sales Assistant | 90 | Dubai holiday-home operators 78 | [`ai-support-sales-assistant/`](./ai-support-sales-assistant/) |
 | 7 | `talent-bridge-assessment-ai-interview-platform` | Talent Bridge Assessment & AI Interview Platform | 89 | UAE/GCC boutique recruitment agencies/RPOs 87 | [`talent-bridge-assessment-ai-interview-platform/`](./talent-bridge-assessment-ai-interview-platform/) |
 | 8 | `agentic-commerce-visibility-conversion-engine` | Agentic Commerce Visibility & Conversion Engine | 89 | UAE/GCC multi-channel retailers/DTC 83 | [`agentic-commerce-visibility-conversion-engine/`](./agentic-commerce-visibility-conversion-engine/) |
-| 9 | `vertical-ai-operating-systems-agent-integration-packs` | Vertical AI Operating Systems & Agent Integration Packs | 88 | Pending | [`vertical-ai-operating-systems-agent-integration-packs/`](./vertical-ai-operating-systems-agent-integration-packs/) |
-| 10 | `ai-recommendation-visibility-geo-engine` | AI Recommendation Visibility & GEO Engine | 88 | Dubai company-formation/business-setup consultancies 86 | [`ai-recommendation-visibility-geo-engine/`](./ai-recommendation-visibility-geo-engine/) |
-| 11 | `recruitment-os-hiring-intelligence-saas` | Recruitment OS / Hiring Intelligence SaaS | 87 | UAE/GCC boutique recruitment agencies/RPOs 81 | [`recruitment-os-hiring-intelligence-saas/`](./recruitment-os-hiring-intelligence-saas/) |
-| 12 | `grok-bot-ai-revenue-operations` | Autonomous AI Revenue Operations Business-in-a-Box | 87 | MEP/HVAC tender and RFQ operations 84 (delivery-rail evidence) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
-| 13 | `assessment-as-a-service-managed-retainer` | Assessment-as-a-Service Managed Retainer | 85 | Pending | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
-| 14 | `reputation-local-visibility-engine` | Reputation & Local Visibility Engine | 85 | Dubai dental/aesthetic clinics 79 | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
-| 15 | `white-label-hiring-portal` | White-Label Hiring Portal for Employers/Agencies | 85 | Pending | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
-| 16 | `partner-delivered-recruitment-score-hire` | Partner-Delivered Recruitment / Score Hire Model | 85 | Pending | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
-| 17 | `uae-gcc-talent-intelligence-salary-data` | UAE/GCC Talent Intelligence & Salary Data Subscription | 85 | Pending | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
-| 18 | `niche-api-data-product-factory` | Niche API & Data Product Factory | 84 | Pending | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
-| 19 | `local-seo-rank-and-rent` | Local SEO Rank-and-Rent Lead Asset Portfolio | 84 | Pending | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
-| 20 | `business-blueprints` | Business Blueprints | 82 | HVAC/AC Enquiry-to-Revenue Blueprint 92 | [`business-blueprints/`](./business-blueprints/) |
-| 21 | `executive-career-accelerator-job-search-platform` | Executive Career Accelerator / Job Search Platform | 81 | Pending | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
-| 22 | `pre-assessed-talent-pool-subscription` | Pre-Assessed Talent Pool Subscription | 81 | Pending | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
-| 23 | `chatgpt-plugin-app-factory` | ChatGPT Plugin / App Factory | 79 | Pending | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
-| 24 | `how-to-find-a-job-in-uae-media-funnel` | HowToFindAJobInUAE Media + Recruitment Funnel | 78 | Pending | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
-| 25 | `ai-job-board-screened-talent-marketplace` | AI Job Board + Screened Talent Marketplace | 76 | Pending | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
-| 26 | `saffa-ae-community-marketplace` | Saffa.ae Community + Trusted Local Business Marketplace | 76 | Pending | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
-| 27 | `ai-first-marketplace-directory` | AI-First Marketplace Directory | 72 | Pending | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
+| 9 | `highlevel-vertical-saas-snapshot` | Vertical SaaS / Snapshot Business-in-a-Box — GoHighLevel Anchor | 89 | Pending current refresh | [`highlevel-vertical-saas-snapshot/`](./highlevel-vertical-saas-snapshot/) |
+| 10 | `vertical-ai-operating-systems-agent-integration-packs` | Vertical AI Operating Systems & Agent Integration Packs | 88 | Pending | [`vertical-ai-operating-systems-agent-integration-packs/`](./vertical-ai-operating-systems-agent-integration-packs/) |
+| 11 | `ai-recommendation-visibility-geo-engine` | AI Recommendation Visibility & GEO Engine | 88 | Dubai company-formation/business-setup consultancies 86 | [`ai-recommendation-visibility-geo-engine/`](./ai-recommendation-visibility-geo-engine/) |
+| 12 | `recruitment-os-hiring-intelligence-saas` | Recruitment OS / Hiring Intelligence SaaS | 87 | UAE/GCC boutique recruitment agencies/RPOs 81 | [`recruitment-os-hiring-intelligence-saas/`](./recruitment-os-hiring-intelligence-saas/) |
+| 13 | `grok-bot-ai-revenue-operations` | Autonomous AI Revenue Operations Business-in-a-Box | 87 | MEP/HVAC tender and RFQ operations 84 (delivery-rail evidence) | [`grok-bot-ai-revenue-operations/`](./grok-bot-ai-revenue-operations/) |
+| 14 | `assessment-as-a-service-managed-retainer` | Assessment-as-a-Service Managed Retainer | 85 | Pending | [`assessment-as-a-service-managed-retainer/`](./assessment-as-a-service-managed-retainer/) |
+| 15 | `reputation-local-visibility-engine` | Reputation & Local Visibility Engine | 85 | Dubai dental/aesthetic clinics 79 | [`reputation-local-visibility-engine/`](./reputation-local-visibility-engine/) |
+| 16 | `white-label-hiring-portal` | White-Label Hiring Portal for Employers/Agencies | 85 | Pending | [`white-label-hiring-portal/`](./white-label-hiring-portal/) |
+| 17 | `partner-delivered-recruitment-score-hire` | Partner-Delivered Recruitment / Score Hire Model | 85 | Pending | [`partner-delivered-recruitment-score-hire/`](./partner-delivered-recruitment-score-hire/) |
+| 18 | `uae-gcc-talent-intelligence-salary-data` | UAE/GCC Talent Intelligence & Salary Data Subscription | 85 | Pending | [`uae-gcc-talent-intelligence-salary-data/`](./uae-gcc-talent-intelligence-salary-data/) |
+| 19 | `niche-api-data-product-factory` | Niche API & Data Product Factory | 84 | Pending | [`niche-api-data-product-factory/`](./niche-api-data-product-factory/) |
+| 20 | `local-seo-rank-and-rent` | Local SEO Rank-and-Rent Lead Asset Portfolio | 84 | Pending | [`local-seo-rank-and-rent/`](./local-seo-rank-and-rent/) |
+| 21 | `business-blueprints` | Business Blueprints | 82 | HVAC/AC Enquiry-to-Revenue Blueprint 92 | [`business-blueprints/`](./business-blueprints/) |
+| 22 | `executive-career-accelerator-job-search-platform` | Executive Career Accelerator / Job Search Platform | 81 | Pending | [`executive-career-accelerator-job-search-platform/`](./executive-career-accelerator-job-search-platform/) |
+| 23 | `pre-assessed-talent-pool-subscription` | Pre-Assessed Talent Pool Subscription | 81 | Pending | [`pre-assessed-talent-pool-subscription/`](./pre-assessed-talent-pool-subscription/) |
+| 24 | `chatgpt-plugin-app-factory` | ChatGPT Plugin / App Factory | 79 | Pending | [`chatgpt-plugin-app-factory/`](./chatgpt-plugin-app-factory/) |
+| 25 | `how-to-find-a-job-in-uae-media-funnel` | HowToFindAJobInUAE Media + Recruitment Funnel | 78 | Pending | [`how-to-find-a-job-in-uae-media-funnel/`](./how-to-find-a-job-in-uae-media-funnel/) |
+| 26 | `ai-job-board-screened-talent-marketplace` | AI Job Board + Screened Talent Marketplace | 76 | Pending | [`ai-job-board-screened-talent-marketplace/`](./ai-job-board-screened-talent-marketplace/) |
+| 27 | `saffa-ae-community-marketplace` | Saffa.ae Community + Trusted Local Business Marketplace | 76 | Pending | [`saffa-ae-community-marketplace/`](./saffa-ae-community-marketplace/) |
+| 28 | `ai-first-marketplace-directory` | AI-First Marketplace Directory | 72 | Pending | [`ai-first-marketplace-directory/`](./ai-first-marketplace-directory/) |
 
-### Retired parent / delivery-rail history
+## GoHighLevel restoration
 
-| Opportunity ID | Historical parent | Historical score | Current treatment | Folder |
-|---|---|---:|---|---|
-| `highlevel-vertical-saas-snapshot` | HighLevel Vertical SaaS Snapshot Business-in-a-Box | 89 | **Retired 5 September 2026.** Preserve HighLevel snapshots, SaaS Mode, rebilling, AI and Marketplace economics as implementation evidence inside outcome-first parents. | [`highlevel-vertical-saas-snapshot/`](./highlevel-vertical-saas-snapshot/) |
+The 5 September 2026 retirement of `highlevel-vertical-saas-snapshot` under #166 is superseded by founder direction in #169. The opportunity is active again under the category-normalised name **Vertical SaaS / Snapshot Business-in-a-Box — GoHighLevel Anchor**.
+
+GoHighLevel remains usable as implementation infrastructure for other outcome-first businesses as well. That reuse does not eliminate this separately testable commercial model.
 
 ## Interpretation
 
@@ -130,4 +139,4 @@ Do not manufacture a score or freshness change merely to touch V3. Do not leave 
 - External Market Proof and DRF Proof remain separate.
 - `Pending` means required work has not yet been completed; it does not mean zero or rejected.
 - Capital and public claims require the appropriate Stage/DRF Proof and founder approval.
-- Retired vendor-defined parents remain as research history and delivery-rail evidence; they are excluded from active portfolio calibration counts.
+- Exact commercial duplicates may be consolidated; shared vendor/platform/technology/outcome overlap alone is not a retirement reason.
