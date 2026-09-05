@@ -1,10 +1,10 @@
 # DRF Niche Opportunity Register
 
 **Status:** Canonical niche register  
-**Version:** 1.12  
+**Version:** 1.13  
 **Date:** 5 September 2026  
 **Scoring framework:** `skills/drf-opportunity-factory/references/niche-scoring.md`  
-**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142, #166, #167  
+**Governing issues:** #26, #28, #40, #41, #44, #46, #113, #142, #166, #167, #169, #171  
 **Canonical evidence library:** `research/niches/README.md`  
 **Comprehensive dossier standard:** `skills/drf-opportunity-factory/references/niche-research-standard.md`
 
@@ -37,9 +37,13 @@ Scores are desk-research scores until live prospect/customer evidence exists. **
 
 The seven niche rows originally researched under **Grok Bot AI-First Revenue Operations Business-in-a-Box** now join the current parent **Autonomous AI Revenue Operations Business-in-a-Box**. Their existing scores remain **delivery-rail evidence from the Grok-heavy thesis**, not a claim that those niches have been revalidated for every autonomous-agent architecture. The dossier paths and detailed factor labels preserve the historical Grok-specific evidence.
 
-### HighLevel parent retirement
+### GoHighLevel parent restoration
 
-Under #166 and recovery #167, **HighLevel Vertical SaaS Snapshot Business-in-a-Box is retired as a standalone parent** and HighLevel remains a replaceable delivery/rebilling rail. The prior `research/niches/14-highlevel-rentals-holiday-home-operators.md` dossier is retained as historical delivery-rail evidence and is no longer an active ranked niche. The active holiday-home foundation route is **WhatsApp + CRM Revenue Core** via `research/niches/21-whatsapp-crm-holiday-home-operators.md`; future HighLevel implementation belongs inside an active outcome parent that independently satisfies buyer + pain/outcome + revenue-mechanism identity.
+Under founder correction #169 and post-merge reconciliation #171, **Vertical SaaS / Snapshot Business-in-a-Box — GoHighLevel Anchor is active again as a first-class founder-origin opportunity**. The #166/#167 retirement conclusion is superseded.
+
+The prior `research/niches/14-highlevel-rentals-holiday-home-operators.md` dossier remains historical niche evidence and is **not automatically restored as the current best niche**. GoHighLevel's active parent now requires a fresh cross-vertical niche comparison; until that work is completed, its best niche remains `Pending` in V3. The active holiday-home foundation route under **WhatsApp + CRM Revenue Core** remains valid as a separate opportunity and does not replace or cancel the GoHighLevel parent.
+
+GoHighLevel may simultaneously be used as delivery/rebilling infrastructure inside other active outcome parents. Shared platform usage is not sufficient grounds to retire the separately testable snapshot/SaaS productisation business.
 
 ## Ranked niche summary
 
@@ -148,7 +152,7 @@ Aesthetic and dental scores did **not** rise despite stronger evidence because l
 5. **Movers stack** — WhatsApp + CRM **89** → Instant Quote **85**.
 6. **Real-estate broker stack** — WhatsApp + CRM **89** → optional Grok Research/Pipeline Prep **86**.
 7. **Dubai car-rental stack** — use incumbent rental OS as foundation where capable; WhatsApp/CRM overlay **87** only when an acquisition gap exists → Missed Lead **87** → optional Back-office Ops **84**.
-8. **Holiday-home stack** — WhatsApp + CRM **82** → AI Support **78** → optional Owner Ops **70**; the former HighLevel/direct-booking row is historical delivery-rail evidence, not an active parent/niche.
+8. **Holiday-home stack** — WhatsApp + CRM **82** → AI Support **78** → optional Owner Ops **70**. The separate **GoHighLevel Vertical SaaS / Snapshot Business-in-a-Box** parent is active again under #169/#171, with its best niche deliberately Pending until a fresh cross-vertical comparison is completed.
 9. **Automotive-workshop stack** — capable DMS is often the foundation; Revenue Recovery **86** → CRM overlay **85** only for legacy/weak-DMS segment → AI Voice **85** after live call validation.
 10. **Recruitment-agency stack** — Talent Bridge Assessment **87** → Recruitment OS intelligence layer **81**; keep the existing ATS as system of record and avoid product overlap.
 11. **Dubai company-formation stack** — AI Recommendation Visibility **86** as a bounded demand-visibility test; conventional SEO/reputation remain complementary foundations, not replaced.
