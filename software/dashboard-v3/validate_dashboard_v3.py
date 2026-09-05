@@ -23,7 +23,6 @@ OPPORTUNITY_SKILL = ROOT / "skills" / "drf-opportunity-factory" / "SKILL.md"
 DASHBOARD_SKILL = ROOT / "skills" / "drf-dashboard-operations" / "SKILL.md"
 
 EXPECTED_LEGACY_BLOB_SHA = "45ee9d80ee2c26a345cda5029b43567141075f08"
-EXPECTED_PARENT_COUNT = 27
 MINIMUM_NICHE_COUNT = 31
 
 EXPECTED_PORTFOLIO_HEADERS = [
@@ -45,8 +44,8 @@ REQUIRED_NICHE_HEADERS = [
 
 MISSING_VALUES = {"Pending", "Unknown", "Not applicable", "Needs more research", "Conflict"}
 NUMERIC_RANGES = {
-    "Rank": (1, EXPECTED_PARENT_COUNT), "Opportunity Score": (0, 100),
-    "MRR": (0, 10), "AI Autonomy": (0, 100), "Evidence Confidence": (0, 100),
+    "Opportunity Score": (0, 100), "MRR": (0, 10),
+    "AI Autonomy": (0, 100), "Evidence Confidence": (0, 100),
     "Research Completeness": (0, 100), "EMP Confidence": (0, 100),
     "Niche Score": (0, 100), "Niche Confidence": (0, 100), "RBS": (0, 100),
 }
@@ -180,22 +179,21 @@ def validate_portfolio() -> None:
     markdown = read(PORTFOLIO)
     headers, rows = find_table(markdown, "## V3 master portfolio")
     require(headers == EXPECTED_PORTFOLIO_HEADERS, "V3 portfolio header/order does not match the canonical 30-field contract")
-    require(len(rows) == EXPECTED_PARENT_COUNT, f"Expected {EXPECTED_PARENT_COUNT} parent rows, found {len(rows)}")
     declared = re.search(r"\*\*Current parent opportunity count:\*\*\s*(\d+)", markdown)
     require(declared is not None and int(declared.group(1)) == len(rows), "Declared parent count does not match the table")
     ranks, ids = [], set()
     for row_number, row in enumerate(rows, start=1):
         for header in EXPECTED_PORTFOLIO_HEADERS:
             require(row[header] != "", f"Blank value in V3 portfolio row {row_number}, field {header}")
+        rank_number = parse_score(row["Rank"], field="Rank", row_number=row_number, maximum=len(rows))
+        require(rank_number >= 1 and rank_number.is_integer(), f"Rank must be an integer from 1 to {len(rows)} at row {row_number}: {row['Rank']}")
         for field, (minimum, maximum) in NUMERIC_RANGES.items():
             value = row[field]
             if value in MISSING_VALUES:
-                require(field != "Rank", f"Rank cannot be missing at row {row_number}"); continue
+                continue
             number = parse_score(value, field=field, row_number=row_number, maximum=maximum)
             require(number >= minimum, f"Out-of-range {field} at row {row_number}: {value}")
-            if field == "Rank":
-                require(number.is_integer(), f"Rank must be an integer at row {row_number}: {value}")
-        ranks.append(int(row["Rank"]))
+        ranks.append(int(rank_number))
         opportunity_id = row["Opportunity ID"]
         require(bool(re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", opportunity_id)), f"Invalid opportunity ID: {opportunity_id}")
         require(opportunity_id not in ids, f"Duplicate opportunity ID: {opportunity_id}"); ids.add(opportunity_id)
@@ -208,8 +206,8 @@ def validate_portfolio() -> None:
         dossier = row["Canonical Dossier Path"]
         if dossier not in MISSING_VALUES:
             require((ROOT / dossier).is_file(), f"Missing current dossier for {opportunity_id}: {dossier}")
-    require(ranks == list(range(1, EXPECTED_PARENT_COUNT + 1)), "V3 portfolio ranks must be continuous 1–27")
-    require(len(ids) == EXPECTED_PARENT_COUNT, "Every V3 parent row must have one unique stable ID")
+    require(ranks == list(range(1, len(rows) + 1)), f"V3 portfolio ranks must be continuous 1–{len(rows)}")
+    require(len(ids) == len(rows), "Every V3 parent row must have one unique stable ID")
     representative = next(row for row in rows if row["Opportunity ID"] == "whatsapp-crm-revenue-core")
     expected = {"Opportunity Score": "95", "MRR": "10", "AI Autonomy": "95", "Evidence Confidence": "96", "Research Completeness": "100", "External Market Proof": "EMP3 Market proven", "EMP Confidence": "90", "Niche Score": "92", "Niche Confidence": "88", "RBS": "86", "DRF Proof": "P2 Backtested", "Stage": "TEST"}
     for field, value in expected.items():
@@ -242,7 +240,7 @@ def validate_skill_owned_contracts() -> None:
 def main() -> int:
     validate_html(); validate_legacy_snapshot(); validate_assets(); validate_portfolio(); validate_niches(); validate_skill_owned_contracts()
     print("PASS: Dashboard V3 source and preserved V1/V2 ordering")
-    print("PASS: 27-parent V3 portfolio, niche population and representative founder row")
+    print("PASS: dynamic parent-count V3 portfolio, niche population and representative founder row")
     print("PASS: Dashboard operating/data contracts resolve through Skills")
     return 0
 

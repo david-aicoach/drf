@@ -1,20 +1,57 @@
-# HighLevel Vertical SaaS Snapshot Business-in-a-Box — Current
+# Vertical SaaS / Snapshot Business-in-a-Box — GoHighLevel Anchor — Current
 
 **Current as of:** 5 September 2026  
-**Governing Issue:** #166  
-**State:** **RETIRED AS STANDALONE PARENT — retained as delivery/rebilling infrastructure**
+**Governing Issue:** #169  
+**State:** **ACTIVE CORE OPPORTUNITY — category-normalised, GoHighLevel remains the anchor platform**
 
-Canonical reconciliation:
+## Founder decision
 
-`research/parent-identity-conflict-2026-09-02.md`
+The 5 September retirement under #166 is superseded by founder direction in #169.
 
-Historical comprehensive research remains in `RESEARCH.md`. Its earlier 93/100 and later canonical 89/100 scores are retained as historical structural analysis of the vendor-defined proposition, but the proposition is no longer an active DRF parent opportunity.
+GoHighLevel is a **foundational/origin DRF opportunity**. It must remain a first-class active business opportunity. Category normalisation improves comparison, but it does not erase the platform-led commercial model.
 
-## Decision
+Canonical category:
 
-HighLevel is **not** a first-class business opportunity in DRF because the parent is defined by a vendor/delivery rail rather than a distinct payer + pain/outcome + revenue mechanism.
+**Vertical SaaS / Snapshot Business-in-a-Box — GoHighLevel Anchor**
 
-HighLevel remains a strong implementation capability for active DRF parents, including:
+Historical/source identity remains:
+
+**HighLevel Vertical SaaS Snapshot Business-in-a-Box**
+
+## Commercial thesis
+
+Sell a fixed vertical outcome stack from a reusable GoHighLevel foundation/snapshot as a recurring operating system rather than generic CRM resale.
+
+The opportunity is commercially distinct because GoHighLevel materially shapes:
+
+- reusable snapshot packaging;
+- SaaS Mode and recurring subscription economics;
+- automated sub-account provisioning;
+- rebilling/markup of eligible services and AI;
+- Marketplace distribution and reusable deployment assets;
+- the speed and repeatability of launching the same vertical package for additional customers.
+
+These characteristics make GoHighLevel more than a hidden backend rail for this opportunity, even though individual downstream outcome modules may also use HighLevel.
+
+## Current underwriting
+
+Preserve the latest pre-retirement canonical structural state pending the next dedicated refresh:
+
+- Opportunity Score: **89/100**
+- MRR: **10/10**
+- AI Autonomy: **85/100**
+- Evidence Confidence: **96%**
+- Research Completeness: **100%**
+- External Market Proof: **Pending formal current reconciliation**
+- RBS / DRF Proof: **Pending current niche/commercial refresh**
+- Stage: **RESEARCH / active**
+- Capital: **US$0**
+
+The older 93/100 research score remains historical evidence in `RESEARCH.md`; 89/100 remains the latest canonical structural score until new evidence justifies a change.
+
+## Relationship to other DRF opportunities
+
+GoHighLevel may also be used as delivery infrastructure inside:
 
 - WhatsApp + CRM Revenue Core;
 - Revenue Recovery & Reactivation;
@@ -25,25 +62,10 @@ HighLevel remains a strong implementation capability for active DRF parents, inc
 - Reputation & Local Visibility;
 - selected Vertical AI Operating System packs.
 
-Snapshots, SaaS Mode, rebilling, AI Employee and Marketplace distribution remain useful implementation/economic primitives. They should be evaluated inside the outcome parent where they improve speed, economics or repeatability.
+That overlap does **not** retire this opportunity. The separately testable business here is the reusable vertical SaaS/snapshot package and its recurring deployment/rebilling economics.
 
-## Why retirement is now the canonical resolution
+## Next proof
 
-The Opportunity Factory defines a parent by **payer + pain/outcome + revenue mechanism** and treats CRMs/platforms/models/runtimes as normally replaceable delivery components. The HighLevel parent materially duplicates active outcome-first businesses and the broader Vertical AI OS parent. Keeping it ranked independently double-counts the same customer value merely because HighLevel can package and rebill delivery.
+Pick one vertical, define one repeatable package and prove that a second unrelated paying customer can be deployed from substantially the same GoHighLevel foundation with bounded onboarding/support and attractive recurring gross contribution.
 
-The 2 September conflict review already established that stronger HighLevel capabilities make the **rail** more attractive, not the vendor label more distinct as a business. No new evidence is required to re-prove HighLevel's platform strength before resolving the taxonomy conflict.
-
-## Historical state preserved
-
-- Historical Opportunity Score: **89/100**
-- Historical MRR: **10/10**
-- Historical AI Autonomy: **85/100**
-- Evidence Confidence at retirement: **96%**
-- Research Completeness: **100%**
-- EMP / RBS / DRF Proof: **Not applicable to the retired vendor-defined parent**
-- Stage: **RETIRED**
-- Capital: **US$0**
-
-## Next action
-
-Do not build or sell a generic “HighLevel SaaS Snapshot Business-in-a-Box”. When an active outcome parent selects HighLevel as the best rail, capture HighLevel-specific deployment/rebilling economics inside that parent's delivery architecture and proof evidence.
+Historical conflict analysis remains at `research/parent-identity-conflict-2026-09-02.md`, but its retirement conclusion is superseded by #169.
