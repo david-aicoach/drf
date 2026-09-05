@@ -1,0 +1,14 @@
+name: Normalize approved issue labels
+on:
+  workflow_dispatch:
+  push:
+    paths: [.github/workflows/normalize-approved-labels.yml, .github/label-normalizer-trigger]
+permissions: {issues: write}
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - env: {GH_TOKEN: "${{ github.token }}", REPO: "${{ github.repository }}"}
+        run: |
+          set -euo pipefail
+          S=('P0|B60205|Immediate / strategically critical' 'P1|D93F0B|Next / high priority' 'P2|FBCA04|Normal priority' 'P3|C5DEF5|Low priority / backlog' 'founder-action|B60205|Blocking founder action required' 'founder-review|1D76DB|Non-blocking founder review requested; work may continue' 'founder-approved|0E8A16|Explicit founder approval evidence exists' 'audit-required|5319E7|KISSS / policy auditor review required' 'blocked-external|E99695|Blocked by external dependency' 'security|D73A4A|Security or access-control handling required'); K='|P0|P1|P2|P3|founder-action|founder-review|founder-approved|audit-required|blocked-external|security|'; for s in "${S[@]}"; do IFS='|' read -r n c d<<<"$s"; gh label create "$n" -R "$REPO" -c "$c" -d "$d" --force; done; gh label list -R "$REPO" -L 1000 --json name -q '.[].name'|while read -r n; do [[ "$K" == *"|$n|"* ]]||gh label delete "$n" -R "$REPO" --yes; done
