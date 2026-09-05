@@ -1,10 +1,10 @@
 # DRF Business Investment Readiness
 
 **Status:** Canonical migration and investment-gate register  
-**Version:** 1.7  
-**Date:** 2 September 2026  
+**Version:** 1.8  
+**Date:** 5 September 2026  
 **Governing issue:** #60  
-**Latest targeted rebuild:** DRF Portfolio Intelligence calibration — Instant Quote EMP and Recruitment OS underwriting — Issue #142 — 2 September 2026  
+**Latest targeted rebuild:** DRF Daily Intelligence — AI Recommendation Visibility & GEO Engine — Issue #166 — 5 September 2026  
 **Source portfolio:** `businesses/OPPORTUNITIES.md`  
 **Niche source:** `businesses/NICHES.md`
 
@@ -27,7 +27,7 @@ Legacy Revenue Blueprint Factory workflow references in Git history are compatib
 
 A platform, CRM, AI model or delivery vendor is not the commercial opportunity. DRF first defines the **measurable result sold**, then ranks the niches where that result has the strongest pain, economics and reachability.
 
-**Current parent opportunity count: 27.** Website/launch-kit assets are downstream Business Blueprint product formats and are not separately ranked.
+**Current parent opportunity count: 28.** Website/launch-kit assets are downstream Business Blueprint product formats and are not separately ranked.
 
 For digital products, distribution is a separate downstream layer:
 
@@ -61,6 +61,7 @@ The niche score remains separate from RBS. A niche can be attractive while the d
 | **2** | **AI Support & Sales Assistant** | Resolve repetitive guest/service conversations safely, reduce staff workload and improve response quality without creating a second disconnected inbox. | **90** | **80** | **P1 Desk Underwritten** | **TEST** | **$0 until native-gap proof; then up to $3,000 with founder approval** | **EMP4 / 94% validates the category. Base desk case: 3 managed clients × AED3,000/month = AED9,000 MRR; native-PMS substitution, escalation/support and incremental-value proof are the live gates. No DRF actual revenue claimed.** | **No** | Benchmark ≥1,000 messages each across 3 Dubai holiday-home operators/PMS contexts; require ≥25% incremental safe-resolution or staff-time value on at least 2/3 plus one paid managed-layer commitment. |
 | **2** | **Talent Bridge Assessment & AI Interview Platform** | Give recruitment agencies recurring role-specific assessment/interview evidence and client-ready comparative candidate reports without replacing their ATS. | **89** | **85** | **P1 Desk Underwritten** | **TEST** | **$0 new platform build; up to $3,000 only after founder approval if required** | **EMP4 / 94% validates assessment/interview spend. Base desk case: 5 agencies × AED2,500/month = AED12,500 MRR plus usage; licensed-assessment cost, human QA, compliance and renewal are the key economics gates.** | **No** | Secure one unrelated UAE/GCC recruitment agency for one recurring professional role family, process 10–20 candidates where volume allows, and require paid/recurring commitment, bounded QA and real shortlist/client usage. |
 | **2** | **Agentic Commerce Visibility & Conversion Engine** | Keep complex merchant catalogue truth AI-ready, measure AI discovery/referral and improve attributable conversion across emerging AI shopping surfaces. | **89** | **82** | **P1 Desk Underwritten** | **TEST** | **$0 until merchant access; then up to $3,000 with founder approval** | **EMP3 / 91% validates a paid AI-visibility/optimisation market. Base desk case: 5 merchants × AED4,000/month = AED20,000 MRR; attribution, regional AI traffic, native-platform substitution and integration effort remain the live gates.** | **No** | Run 3–5 merchant baseline/optimisation studies, including at least two complex multi-channel/non-simple-Shopify catalogues; require measurable improvement on at least one merchant, ≥2 recurring paid commitments and bounded delivery effort. |
+| **2** | **AI Recommendation Visibility & GEO Engine** | Measure whether a service brand is accurately recommended/cited in AI answers, improve evidence-backed discoverability gaps, re-test with the same instrument and monitor it monthly. | **88** | **81** | **P1 Desk Underwritten** | **TEST** | **$0 now; up to $3,000 only after founder approval if required** | **EMP3 Market Proven / 90%. Best current niche is Dubai company-formation/business-setup consultancies at 86/100 / 82% confidence. Base estimate: 3 clients × AED1,500/month = AED4,500 MRR plus AED7,500 setup; local CAC, human delivery minutes, outcome change, attribution and renewal remain live gates.** | **No** | After founder approval, test 10 qualified Dubai business-setup consultancies using one versioned public baseline; require 2 unrelated paid deposits at ≥AED2,500 setup + ≥AED1,500/month, at least one non-personal-favour acquisition and baseline delivery ≤3 human hours/account. |
 | **2** | **HighLevel Vertical SaaS Snapshot Business-in-a-Box** | Current parent is vendor-defined and overlaps outcome-first DRF parents; HighLevel remains an attractive deployment/rebilling rail but the standalone business identity is unresolved. | **89** | Pending | Pending | **RESEARCH** | **$0** | **CONFLICT: current Opportunity Factory canon defines businesses by payer + outcome + revenue mechanism, while this parent is defined by a vendor rail. HighLevel economics are strong, but further underwriting would double-count WhatsApp + CRM / Vertical AI OS / outcome modules until deduplicated.** | **No** | Resolve parent identity: redefine vendor-neutrally as a distinct outcome/revenue mechanism or merge/retire the parent and keep HighLevel snapshots/SaaS/rebilling as delivery infrastructure. |
 | **2** | **Vertical AI Operating Systems & Agent Integration Packs** | Automate one valuable vertical operating workflow end-to-end with a repeatable implementation pack. | **88** | Pending | Pending | RESEARCH | $0 | Pending | No | Define one sellable pack and prove second-client reuse. |
 | **2** | **Recruitment OS / Hiring Intelligence SaaS** | Standardise role calibration, interview evidence, shortlist comparison and client decision packs around the agency's existing ATS. | **87** | **82** | **P1 Desk Underwritten** | **TEST** | **$0 new platform build; up to $3,000 only after founder-approved paid commitment if required** | **EMP3 Market Proven / 91%. Best niche is UAE/GCC boutique recruitment agencies / RPOs at 81/100 / 90% confidence. Illustrative base case 5 agencies × AED2,500/month = AED12,500 MRR; no DRF revenue actual. Integration variance, human QA, incumbent substitution and renewal are the live gates.** | **No** | Sell one fixed Hiring Intelligence module to one unrelated UAE/GCC agency around its existing ATS; require paid/current-market commitment, real client-facing shortlist use, bounded onboarding/QA, measurable recruiter/evidence improvement and renewal or second-role reuse. |
@@ -117,7 +118,7 @@ Rebuild only after the faster lanes are operating or when new evidence materiall
 
 ## Migration rules
 
-- Do not create 27 Issues before execution starts.
+- Do not create 28 Issues before execution starts.
 - Open one Issue when an opportunity enters active rebuild.
 - Use `skills/drf-opportunity-factory/SKILL.md` and its `references/business-case-output-contract.md` structure; do not treat the old RBF workflow as a competing route.
 - Preserve old research as source history.
