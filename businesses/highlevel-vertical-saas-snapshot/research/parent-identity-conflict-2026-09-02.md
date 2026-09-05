@@ -1,72 +1,65 @@
 # HighLevel Vertical SaaS Snapshot — Parent Identity Conflict Review
 
-**Date:** 2 September 2026  
-**Issue:** #142
+**Opened:** 2 September 2026  
+**Resolved:** 5 September 2026  
+**Original Issue:** #142  
+**Resolution Issue:** #166
 
-## Decision
+## Final decision
 
-**CONFLICT — do not deepen commercial underwriting as a standalone parent until the parent identity is reconciled.**
+**RESOLVED — retire `HighLevel Vertical SaaS Snapshot Business-in-a-Box` as a standalone DRF parent and retain HighLevel as a delivery/rebilling rail inside outcome-first parents.**
 
-Current DRF Opportunity Factory canon defines a business by **payer + pain/outcome + revenue mechanism** and states that AI models, CRMs, marketplaces and agent runtimes are normally replaceable delivery components. `HighLevel Vertical SaaS Snapshot Business-in-a-Box` is currently named around a vendor/delivery mechanism and materially overlaps existing outcome-first parents, especially:
+The current Opportunity Factory defines a business by **payer + pain/outcome + revenue mechanism** and treats CRMs/platforms/models/runtimes as normally replaceable delivery components. The vendor-defined HighLevel parent materially overlaps:
 
-- `WhatsApp + CRM Revenue Core` — persistent enquiry/pipeline/revenue foundation;
-- `Vertical AI Operating Systems & Agent Integration Packs` — repeatable vertical workflow/product packs;
-- outcome modules such as Missed Lead, Revenue Recovery, Voice, Support, Reputation and Quote-to-Cash.
+- `WhatsApp + CRM Revenue Core`;
+- `Vertical AI Operating Systems & Agent Integration Packs`;
+- `Revenue Recovery & Reactivation Engine`;
+- `Missed Lead & Appointment Conversion Engine`;
+- `AI Voice Receptionist & Booking Agent`;
+- `AI Support & Sales Assistant`;
+- `Instant Quote Generator & Quote-to-Cash System`;
+- `Reputation & Local Visibility Engine`.
 
-## What the fresh evidence says
+Keeping HighLevel ranked as an additional parent therefore double-counts customer value simply because one implementation rail supports snapshots, SaaS billing and rebilling.
 
-HighLevel itself has become **more capable**, not less:
+## Platform evidence remains positive
 
-- Agency Pro remains **US$497/month** and includes SaaS Mode, automated sub-account creation and rebilling with markup.
-- AI Employee Unlimited is **US$97/month per enabled location** subject to fair use; Agency Pro can rebill AI usage.
-- HighLevel added guided bulk SaaS activation for eligible Pro agencies in August 2026.
-- Snapshots can be sold through the App Marketplace using one-time, monthly or yearly pricing and can be attached to SaaS plans.
+HighLevel itself remains attractive infrastructure:
 
-Sources:
+- Agency Pro supports SaaS Mode, automated sub-account creation and rebilling with markup;
+- AI Employee plans can be enabled/rebilled per location on eligible agency plans;
+- snapshots are reusable deployment assets;
+- Marketplace snapshots can use one-time/monthly/yearly pricing and can attach to SaaS plans.
+
+Original sources reviewed in the 2 September pass:
 - https://help.gohighlevel.com/support/solutions/articles/48001208376-billing-related-questions-for-agencies
 - https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing-update
 - https://help.gohighlevel.com/support/solutions/articles/155000005614
 - https://help.gohighlevel.com/support/solutions/articles/155000003709-selling-snapshots-on-the-app-marketplace
 - https://help.gohighlevel.com/support/solutions/articles/155000004187-selling-marketplace-snapshots-with-saas-plans
 
-These facts strengthen **HighLevel as a deployment/economics rail**. They do not prove that “HighLevel SaaS” is an independent customer outcome.
+Those facts strengthen HighLevel as a **factory/deployment primitive**. They do not create a separate payer/outcome.
 
 ## Counter-evidence / overlap
 
-Vertical service software is also increasingly crowded:
+Vertical service software remains crowded. Housecall Pro, Podium and UAE-local FSM/CAFM products already solve substantial workflow slices. Therefore DRF should not sell or rebuild a generic CRM/FSM/PMS replacement merely because HighLevel can package it quickly.
 
-- Housecall Pro currently starts around US$59/month billed annually for FSM and directly includes scheduling, dispatch, estimates, invoicing, payments and review management for home-service firms.
-- Podium now markets a full AI operating system/FSM for HVAC, plumbing and electrical with AI phone/job/customer workflows.
-- UAE-local alternatives include OptifyServe (AED500–3,000/month), JobPilot, PurpleFM, Reflexion and other FSM/CAFM products.
+The correct architecture remains:
 
-Sources:
-- https://www.housecallpro.com/pricing/
-- https://homeservices.podium.com/
-- https://optifyserve.com/pricing
-- https://www.jobpiloterp.com/
-- https://www.purplesoft.ae/purplefm-facility-management-erp-uae
+`Outcome × Niche × Customer Channel × System of Record × Agent Layer`
 
-Therefore HighLevel should not be sold as a replacement for a capable FSM/ERP/PMS merely because snapshots make deployment easy.
+If HighLevel is the best system-of-record/automation/billing rail for a selected outcome, use it. If an incumbent system already solves the workflow well, integrate with that instead.
 
-## Current conflict
+## Portfolio treatment from 5 September 2026
 
-Two truths coexist:
+- Standalone parent state: **RETIRED**.
+- Historical structural score: **89/100** retained as history only.
+- Historical MRR: **10/10**; AI Autonomy **85/100**; Evidence Confidence **96%**; Research Completeness **100%**.
+- EMP / RBS / DRF Proof for the vendor-defined parent: **Not applicable after retirement**.
+- Capital: **US$0**.
+- No further standalone HighLevel parent underwriting.
+- Preserve the business folder as research/history and as a source for HighLevel-specific delivery economics.
 
-1. **HighLevel is unusually attractive infrastructure for recurring vertical products.**
-2. **Current DRF governance says infrastructure/vendor rails should not normally be first-class parent opportunities.**
+## Migration rule
 
-The current parent also carries an older detailed research score of 93/100 while canonical `OPPORTUNITIES.md` / V3 hold **89/100**, so a score-source conflict exists too.
-
-## Required reconciliation
-
-Before further RBS/Proof/Stage underwriting, run a focused parent-identity/deduplication decision:
-
-- either redefine the parent vendor-neutrally by a distinct payer + outcome + revenue mechanism that does not duplicate WhatsApp+CRM or Vertical AI OS;
-- or merge/retire the parent and treat HighLevel Snapshots/SaaS/rebilling as a delivery/factory capability attached to the relevant outcome parents.
-
-Until that decision lands:
-
-- preserve Opportunity Score **89/100** as the current canonical historical structural score;
-- keep Stage **RESEARCH** and Capital **US$0**;
-- do not award EMP/RBS/Proof merely from HighLevel platform capabilities;
-- do not build more snapshot infrastructure.
+Future HighLevel evidence should land in the active outcome parent that consumes the capability. Do not create another parent for a HighLevel feature, snapshot, Marketplace listing or SaaS plan unless it independently satisfies payer + pain/outcome + revenue mechanism without duplicating an existing business.
