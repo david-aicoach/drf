@@ -3,10 +3,6 @@ name: Founder approval gate
 on:
   issue_comment:
     types: [created]
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/founder-approval.yml"
 
 permissions:
   contents: read
@@ -16,28 +12,7 @@ jobs:
   founder-approval:
     runs-on: ubuntu-latest
     steps:
-      - name: Ensure shared labels
-        shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-        run: |
-          set -euo pipefail
-          ensure_label() {
-            local name="$1"; local color="$2"; local description="$3"
-            if gh api "repos/${REPO}/labels/${name}" --silent >/dev/null 2>&1; then
-              gh api --method PATCH "repos/${REPO}/labels/${name}" -f new_name="$name" -f color="$color" -f description="$description" >/dev/null
-            else
-              gh api --method POST "repos/${REPO}/labels" -f name="$name" -f color="$color" -f description="$description" >/dev/null
-            fi
-          }
-          ensure_label "founder-action" "B60205" "Founder decision, approval, irreducible input or human-only action required"
-          ensure_label "founder-approved" "0E8A16" "Explicit founder approval evidence exists for the currently scoped gate"
-          ensure_label "blocked-external" "D93F0B" "Blocked by a real dependency outside the GitHub Issue dependency graph"
-          ensure_label "security" "D73A4A" "Material security, credential, access-control or vulnerability handling"
-
       - name: Apply founder approval or revocation
-        if: ${{ github.event_name == 'issue_comment' }}
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -50,7 +25,11 @@ jobs:
           set -euo pipefail
           body="$(printf '%s' "$COMMENT_BODY" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
           [[ "$ACTOR" == "$FOUNDER_LOGIN" ]] || exit 0
-          has_label() { gh api "repos/${REPO}/issues/${ISSUE_NUMBER}" --jq '.labels[].name' | grep -Fxq "$1"; }
+
+          has_label() {
+            gh api "repos/${REPO}/issues/${ISSUE_NUMBER}" --jq '.labels[].name' | grep -Fxq "$1"
+          }
+
           if [[ "$body" == "👍" || "$body" == "/approve" ]]; then
             has_label "founder-action" || exit 0
             gh api --method POST "repos/${REPO}/issues/${ISSUE_NUMBER}/labels" -f 'labels[]=founder-approved' >/dev/null
